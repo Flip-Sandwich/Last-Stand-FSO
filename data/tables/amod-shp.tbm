@@ -1,0 +1,5419 @@
+#Ship Classes
+
+;fredding thing, should only be used as a dummy
+$Name: Commander 
+$Short name: Commander
+$Species: Terran
+$POF file: dup.pof
+$Detail distance: ( 0 )
+$Show damage: NO
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 0.35
+$Max Velocity: 0.0, 0.0, 100.0
+$Rotation time: 3.0, 3.0, 3.0
+$Rear Velocity: 0.0
+$Forward accel: 3.0
+$Forward decel: 1.5
+$Warpin type: Hyperspace
+$Expl inner rad: 25.0
+$Expl outer rad: 75.0
+$Expl damage: 25.0
+$Expl blast: 1000.0
+$Expl Propagates: NO
+$Shockwave Speed: 0.0
+$Shields: 0
+$Shield Color: 100 100 255
+$Power Output: 3.0
+$Weapon Regeneration Rate: 0.05
+$Max Oclk Speed: 200.0
+$Max Weapon Eng: 150.0
+$Hitpoints: 999999999999
+$Flags: ( "player_ship" "default_player_ship" "fighter" )
+$AI Class: Captain
+$Afterburner: NO
+$Countermeasures: 25
+$Scan time: 2000
+$EngineSnd: 126
+$Closeup_pos: 0.0, 0.0, -30
+$Closeup_zoom: 0.5
+$Score: 0
+
+;;UNION SMALL SHIPS
+
+$Name: UN Leto
+$Alt Name: Light Fighter
+$Short name: CivFighter
+$Species: Terran
++Type: XSTR("Light Fighter", -1)
++Maneuverability: XSTR("Good", -1)
++Armor: XSTR("Light", -1)
++Manufacturer: XSTR("Nankam Aeronautical", -1)
++Tech Title: UN Leto
++Tech Description: XSTR("
+UN Leto
+Light Fighter
+
+The Leto is a reliable and versatile multi-role light fighter used by the Union's interplanetary fighter corps.
+", -1)
+$end_multi_text
++Gun Mounts: 2 (2, 2)
++Missile Banks: 2 (40, 40)
+$POF file: Leto.pof
+$Detail distance: (0, 67, 202, 632)
+$Density: 1
+$Damp: 0.25
+$Rotdamp: 0.35
+$Max Velocity: 0.0, 0.0, 135.0
+$Rotation time: 3.6, 3.5, 4.0
+$Rear Velocity: 0.0
+$Forward accel: 3.0
+$Forward decel: 2.5
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Expl inner rad: 5.0
+$Expl outer rad: 15.0
+$Expl damage: 25.0
+$Expl blast: 100.0
+$Expl Propagates: NO
+$Shockwave Speed: 0.0
+$Allowed PBanks: ( "Torrika KB-1" "Darsij P-294" "Portanis C-12" )
+$Default PBanks: ( "Torrika KB-1" "Portanis C-12" )
+$Pbank Capacity: ( 30, 30 )
+$Allowed SBanks: ( "Djinn" "Neutron" "Spear" )
+$Default SBanks: ( "Djinn" "Spear" )
+$SBank Capacity: ( 40, 40 )
+$Shields: 150
+$Shield Color: 100 100 255
+$Power Output: 3.0
+$Shield Regeneration Rate: 0.02
+$Weapon Regeneration Rate: 0.04
+$Max Oclk Speed: 75.0
+$Max Weapon Eng: 150.0
+$Hitpoints: 300
+$Armor Type: Fighter Plate
+$Flags: ( "player_ship" "generate icon" "in tech database" "fighter" )
+$AI Class: Captain
+$Afterburner: YES
+ +Aburn Max Vel: 0.0, 0.0, 210.0
+ +Aburn For accel: 1.1
+ +Aburn Fuel: 300.0
+ +Aburn Burn Rate: 4.0
+ +Aburn Rec Rate: 0.0
+$Countermeasures: 15
+$Scan time: 2000
+$EngineSnd: 126
+$Closeup_pos: 0.0, 0.0, -30
+$Closeup_zoom: 0.5
+$Score: 0
+$Trail:
+ +Offset: 0.0 0.0 0.0
+ +Start Width: 0.25
+ +End Width: 0.05
+ +Start Alpha: 1.0
+ +End Alpha: 0.0
+ +Max Life: 1.0
+ +Spew Time: 120
+ +Bitmap: Contrail01
+$Subsystem: sensors, 10, 0.0
+$Subsystem: communications, 10, 0.0
+$Subsystem: weapons, 10, 0.0
+$Subsystem: navigation, 10, 0.0
+$Subsystem: engine, 35, 0.0
+
+$Name: UN Claymore
+$Alt Name: Strike Fighter
+$Short name: CivFighter
+$Species: Terran
++Type: XSTR("Strike Fighter", -1)
++Maneuverability: XSTR("Moderate", -1)
++Armor: XSTR("Heavy", -1)
++Manufacturer: XSTR("Nankam Aeronautical", -1)
++Tech Title: UN Claymore
++Tech Description: XSTR("
+UN Claymore
+Strike Fighter
+
+The Claymore is a strike fighter currently in service with the Union Interplanetary Fighter Corps. The Claymore is well armoured and armed but possesses limited maneuverability. The fighter excels at attack missions and escort duties but performs poorly in fighter combat.
+", -1)
+$end_multi_text
++Gun Mounts: 2 (4, 2)
++Missile Banks: 2 (60, 60)
+$POF file: Claymore.pof
+$Detail distance: (0, 180, 300)
+$Density: 1
+$Damp: 0.25
+$Rotdamp: 0.35
+$Max Velocity: 0.0, 0.0, 110.0 
+$Rotation time: 4.5, 4.0, 3.8
+$Rear Velocity: 0.0
+$Forward accel: 3.0 
+$Forward decel: 2.0
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Expl inner rad: 5.0
+$Expl outer rad: 15.0
+$Expl damage: 25.0
+$Expl blast: 100.0
+$Expl Propagates: NO
+$Shockwave Speed: 0.0
+$Allowed PBanks: ( "Torrika KB-1" "Darsij P-294" "Portanis C-12" ) ( "Vigilante GC-13" )
+$Default PBanks: ( "Portanis C-12" "Vigilante GC-13" )
+$Pbank Capacity: ( 50, 0 )
+$Allowed SBanks: ( "Djinn" "Neutron" "Spear" )
+$Default SBanks: ( "Djinn" "Neutron" )
+$SBank Capacity: ( 60, 60 )
+$Shields: 150
+$Shield Color: 100 100 255
+$Power Output: 4.0
+$Shield Regeneration Rate: 0.027
+$Weapon Regeneration Rate: 0.027
+$Max Oclk Speed: 95.0
+$Max Weapon Eng: 150.0
+$Hitpoints: 700
+$Armor Type: Fighter Plate
+$Flags: ( "generate icon" "player_ship" "in tech database" "fighter" )
+$AI Class: Jouster-Lvl2
+$Afterburner: YES
+ +Aburn Max Vel: 0.0, 0.0, 160.0
+ +Aburn For accel: 0.4
+ +Aburn Fuel: 300.0
+ +Aburn Burn Rate: 50.0
+ +Aburn Rec Rate: 15.0
+$Countermeasures: 15
+$Scan time: 2000
+$EngineSnd: 126
+$Closeup_pos: 0.0, 0.0, -30
+$Closeup_zoom: 0.5
+$Score: 0
+$Trail:
+ +Offset: 0.0 0.0 0.0
+ +Start Width: 0.25
+ +End Width: 0.05
+ +Start Alpha: 1.0
+ +End Alpha: 0.0
+ +Max Life: 1.0
+ +Spew Time: 120
+ +Bitmap: Contrail01
+$Subsystem: sensors, 10, 0.0
+$Subsystem: communications, 10, 0.0
+$Subsystem: weapons, 10, 0.0
+$Subsystem: navigation, 10, 0.0
+$Subsystem: engine, 40, 0.0
+
+
+$Name: UN Hercules
+$Alt Name: Heavy Fighter
+$Short name: INFHerc3
+$Species: Terran
++Type: XSTR("Heavy Fighter", -1)
++Maneuverability: XSTR("Moderate", -1)
++Armor: XSTR("Heavy", -1)
++Manufacturer: XSTR("RNI Systems", -1)
++Tech Title: UN Hercules
++Tech Description: XSTR("
+UN Hercules
+Heavy Fighter
+
+RNI's Hercules is the Union's most advanced and heaviest fighter in active service. It is capable of carrying most heavy weapons and has a large capacity ammunition magazine for ballistic guns, as well as quad rotary missile racks for supporting a large number of missiles. With the emphasis on heavy firepower rather than speed and agility, the Hercules is at its best when a target is in its sights, rather than in a dogfight where light fighters can effectively outmaneuver it. Hercules fighters are normally used for assaults on bigger ships or bomber escort duty, where their heavy armour plating can absorb a lot of turret fire and flak.
+", -1)
+$end_multi_text
++Gun Mounts: 1 (4)
++Missile Banks: 3 (50, 50, 60)
+$POF file: INF_Herc3.pof
+$Detail distance: (0, 180, 500, 1900)
+$Show damage: YES
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 0.35
+$Max Velocity: 0.0, 0.0, 105.0 
+$Rotation time: 4.3, 4.3, 4.8
+$Rear Velocity: 0.0
+$Forward accel: 3.0
+$Forward decel: 1.3
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Expl inner rad: 25.0
+$Expl outer rad: 75.0
+$Expl damage: 25.0
+$Expl blast: 1000.0
+$Expl Propagates: NO 
+$Shockwave Speed: 0.0 
+$Allowed PBanks: ( "Torrika KB-1" "Darsij P-294" "Portanis C-12" )
+$Default PBanks: ( "Torrika KB-1" )
+$Pbank Capacity: ( 100 )
+$Allowed SBanks: ( "Djinn" "Neutron" "Spear" )
+$Default SBanks: ( "Neutron" "Djinn" "Spear" )
+$SBank Capacity: ( 50, 50, 60 )
+$Shields: 250
+$Shield Color: 100 100 255
+$Power Output: 8.0
+$Shield Regeneration Rate: 0.054
+$Weapon Regeneration Rate: 0.08
+$Max Oclk Speed: 80.0
+$Max Weapon Eng: 200.0
+$Hitpoints: 700
+$Armor Type: Fighter Plate
+$Flags: ( "generate icon" "player_ship" "fighter" "in tech database" )
+$AI Class: Captain
+$Afterburner: YES
+ +Aburn Max Vel: 0.0, 0.0, 140.0
+ +Aburn For accel: 0.75
+ +Aburn Fuel: 500.0
+ +Aburn Burn Rate: 50.0
+ +Aburn Rec Rate: 35.0
+$Countermeasures: 60
+$Scan time: 2000
+$EngineSnd: 126
+$Closeup_pos: 0.0, 0.0, -35
+$Closeup_zoom: 0.5
+$Score: 0
+$Trail:
+ +Offset: 6.05 4.62 -7.5
+ +Start Width: 0.25
+ +End Width: 0.05
+ +Start Alpha: 1.0
+ +End Alpha: 0.0
+ +Max Life: 1.0
+ +Spew Time: 120
+ +Bitmap: Contrail01
+$Trail:
+ +Offset: -6.05 4.62 -7.5
+ +Start Width: 0.25
+ +End Width: 0.05
+ +Start Alpha: 1.0
+ +End Alpha: 0.0
+ +Max Life: 1.0
+ +Spew Time: 120
+ +Bitmap: Contrail01
+$Trail:
+ +Offset: 6.05 -4.62 -7.5
+ +Start Width: 0.25
+ +End Width: 0.05
+ +Start Alpha: 1.0
+ +End Alpha: 0.0
+ +Max Life: 1.0
+ +Spew Time: 120
+ +Bitmap: Contrail01
+$Trail:
+ +Offset: -6.05 -4.62 -7.5
+ +Start Width: 0.25
+ +End Width: 0.05
+ +Start Alpha: 1.0
+ +End Alpha: 0.0
+ +Max Life: 1.0
+ +Spew Time: 120
+ +Bitmap: Contrail01
+$Trail:
+ +Offset: 0 -6.8 -5.5
+ +Start Width: 0.25
+ +End Width: 0.05
+ +Start Alpha: 1.0
+ +End Alpha: 0.0
+ +Max Life: 1.0
+ +Spew Time: 120
+ +Bitmap: Contrail01
+$Subsystem: sensors, 10,0.0
+$Subsystem: communications, 10,0.0
+$Subsystem: weapons, 10,0.0
+$Subsystem: navigation, 10,0.0
+$Subsystem: engine, 35,0.0
+
+$Name: UN Medusa
+$Alt Name: Tactical Bomber
+$Short name: TBomb4
+$Species: Terran
++Type: XSTR("Tactical Bomber", -1)
++Maneuverability: XSTR("Poor", -1)
++Armor: XSTR("Very Heavy", -1)
++Manufacturer: XSTR("Boeing", -1)
++Tech Title: UN Medusa
++Tech Description: XSTR("
+UN Medusa
+Tactical Bomber
+
+The Medusa is the workhorse of the Union's bomber fleet. Its large bomb capacity enables it to take out cruiser-class warships, while its heavy armour plating ensures it can get close enough to deliver the punch. The first bomber to carry the potent Typhoon bomb, the Medusa is sure to be one of the highlights of a bomber pilot's career.
+", -1)
+$end_multi_text
++Gun Mounts: 1 (2)
++Missile Banks: 3 (40, 80, 80)
+$POF File: Medusa.pof
+$Detail distance: ( 0, 100, 233, 580 )
+$Show damage: YES
+$Density: 1
+$Damp: 0.35
+$Rotdamp: 0.55
+$Max Velocity: 0.0, 0.0, 90.0 
+$Rotation time: 4.0, 5.2, 5.2
+$Forward accel: 3.5
+$Forward decel: 0.55
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Expl inner rad: 50.0
+$Expl outer rad: 100.0
+$Expl damage: 25.0
+$Expl blast: 2000.0
+$Expl Propagates: NO
+$Shockwave Speed: 0.0
+$Allowed PBanks: ( "Torrika KB-1" "Darsij P-294" "Portanis C-12" )
+$Default PBanks: ( "Portanis C-12" )
+$Pbank Capacity: ( 60 )
+$Allowed SBanks: ( "Djinn" "Neutron" "Spear" "Typhoon" )
+$Default SBanks: ( "Djinn" "Typhoon" "Typhoon" )
+$SBank Capacity: ( 40, 80, 80 )
+$Shields: 400
+$Shield Color: 100 100 255
+$Power Output: 4.0
+$Max Oclk Speed: 65.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 950
+$Armor Type: Bomber Plate
+$Flags: ( "generate icon" "player_ship" "in tech database" "bomber" )
+$AI Class: Jouster-Lvl2
+$Afterburner: YES
+ +Aburn Max Vel: 0.0, 0.0, 120.0
+ +Aburn For accel: 0.7
+ +Aburn Fuel: 300.0
+ +Aburn Burn Rate: 50.0
+ +Aburn Rec Rate: 25.0
+$Countermeasures: 35
+$Scan time: 2000
+$EngineSnd: 127
+$Closeup_pos: 0.0, 0.0, -51
+$Closeup_zoom: 0.5
+$Score: 0
+$Thruster Normal Flame: thruster01
+$Thruster Afterburner Flame: thruster01a
+$Trail:
+ +Offset: 11 -3.4 -2.93
+ +Start Width: 0.25
+ +End Width: 0.05
+ +Start Alpha: 1.0
+ +End Alpha: 0.0
+ +Max Life: 1.0
+ +Spew Time: 120
+ +Bitmap: Contrail01
+$Trail:
+ +Offset: -11 -3.4 -2.93
+ +Start Width: 0.25
+ +End Width: 0.05
+ +Start Alpha: 1.0
+ +End Alpha: 0.0
+ +Max Life: 1.0
+ +Spew Time: 120
+ +Bitmap: Contrail01
+$Subsystem: turret01a,5,1.0
+ $Default PBanks: ( "Torrika KB-1" )
+ $Turret Reset Delay: 1500
+ $Flags: ( "check hull" "salvo mode" "fire down normals" "fire on target" "reset when idle" "play fire sound for player" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 90, 180, 0
+$Subsystem: communications, 10, 0.0
+$Subsystem: navigation, 10, 0.0
+$Subsystem: weapons, 20, 0.0
+$Subsystem: sensors, 10, 0.0
+$Subsystem: engine, 35, 0.0
+$Subsystem: FlapTopPort, 0, 1.0
+ $animation: triggered
+ $type: afterburner
+ +delay: 0
+ +relative_angle: -35, 0, 0
+ +velocity: 100, 0, 0
+ +acceleration: 250, 0, 0
+ +time: 500
+$Subsystem: FlapBtmPort, 0, 0.0
+ $animation: triggered
+ $type: afterburner
+ +delay: 0
+ +relative_angle: 25, -25, 0
+ +velocity: 100, 100, 0
+ +acceleration: 250, 250, 0
+ +time: 500
+$Subsystem: FlapTopStarboard, 0, 1.0
+ $animation: triggered
+ $type: afterburner
+ +delay: 0
+ +relative_angle: -35, 0, 0
+ +velocity: 100, 0, 0
+ +acceleration: 250, 0, 0
+ +time: 500
+$Subsystem: FlapBtmStarboard, 0, 0.0
+ $animation: triggered
+ $type: afterburner
+ +delay: 0
+ +relative_angle: 25, 25, 0
+ +velocity: 100, 100, 0
+ +acceleration: 250, 250, 0
+ +time: 500
+
+;;UNION BIG SHIPS
+
+$Name: UN Strident
+$Alt Name: Frigate
+$Short name: Torrent
+$Species: Terran
++Tech Title: UN Strident
++Tech Description: XSTR("
+UN Strident
+Corvette
+
+The venerable Strident class corvette has constituted the bulk of the Union's navy for over a decade. Designed to be built quickly and cheaply, the Strident class is capable of both interception and close range fire support. Although planned to be succeeded by the new Cape Town class, the Strident class continues to play an important role in escorting survey and logistics ships, maintaining pickets, and carrying out combat operations.
+", -1)
+$end_multi_text
+$POF file: strident.pof
+$Detail distance: (0)
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 0.6
+$Max Velocity: 0.0, 0.0, 45.0
+$Rotation time: 20.0, 20.0, 20.0
+$Rear Velocity: 0.0
+$Forward accel: 6.0
+$Forward decel: 3.0
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Expl inner rad: 25.0
+$Expl outer rad: 100.0
+$Expl damage: 50.0
+$Expl blast: 1000.0
+$Expl Propagates: yes
+$Shockwave Speed: 85.0
+$Shockwave Count: 3
+$Default PBanks: ()
+$Default SBanks: ()
+$SBank Capacity: ()
+$Shields: 0
+$Power Output: 60.0
+$Max Oclk Speed: 45.0
+$Max Weapon Eng: 60.0
+$Hitpoints: 20000
+$Armor Type: Light Plate
+$Flags: ( "cruiser" "generate icon" "in tech database" )
+$AI Class: Captain
+$Afterburner: NO
+$Countermeasures: 0
+$Scan time: 1500
+$EngineSnd: 205
+$Closeup_pos: 0.0, 0, -170
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: engine, 15, 0
+$Subsystem: navigation, 5.0, 0
+$Subsystem: communications, 10, 0
+$Subsystem: sensors, 10.0, 0
+$Subsystem: weapons, 5.0, 0
+$Subsystem: turret01, 3.0, 20.0
+ $Default SBanks: ( "Mosquito" )
+$Subsystem: turret02, 3.0, 20.0
+ $Default SBanks: ( "Mosquito" )
+$Subsystem: turret03, 3.0, 20.0
+ $Default SBanks: ( "Mosquito" )
+$Subsystem: turret04, 3.0, 20.0
+ $Default SBanks: ( "Mosquito" )
+$Subsystem: turret05, 3.0, 20.0
+ $Default SBanks: ( "Mosquito" )
+$Subsystem: turret06, 3.0, 20.0
+ $Default SBanks: ( "Mosquito" )
+
+$Name: UN Strident#Hornetts
+$Alt Name: Frigate
+$Species: Terran
+$POF file: strident.pof
+$Detail distance: (0)
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 0.6
+$Max Velocity: 0.0, 0.0, 45.0
+$Rotation time: 20.0, 20.0, 20.0
+$Rear Velocity: 0.0
+$Forward accel: 6.0
+$Forward decel: 3.0
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Expl inner rad: 25.0
+$Expl outer rad: 100.0
+$Expl damage: 50.0
+$Expl blast: 1000.0
+$Expl Propagates: yes
+$Shockwave Speed: 85.0
+$Shockwave Count: 3
+$Default PBanks: ()
+$Default SBanks: ()
+$SBank Capacity: ()
+$Shields: 0
+$Power Output: 60.0
+$Max Oclk Speed: 45.0
+$Max Weapon Eng: 60.0
+$Hitpoints: 20000
+$Armor Type: Light Plate
+$Flags: ( "cruiser" "generate icon" )
+$AI Class: Captain
+$Afterburner: NO
+$Countermeasures: 0
+$Scan time: 1500
+$EngineSnd: 205
+$Closeup_pos: 0.0, 0, -170
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: engine, 15, 0
+$Subsystem: navigation, 5.0, 0
+$Subsystem: communications, 10, 0
+$Subsystem: sensors, 10.0, 0
+$Subsystem: weapons, 5.0, 0
+$Subsystem: turret01, 3.0, 20.0
+ $Default SBanks: ( "Hornet SSM" )
+$Subsystem: turret02, 3.0, 20.0
+ $Default SBanks: ( "Hornet SSM" )
+$Subsystem: turret03, 3.0, 20.0
+ $Default SBanks: ( "Hornet SSM" )
+$Subsystem: turret04, 3.0, 20.0
+ $Default SBanks: ( "Hornet SSM" )
+$Subsystem: turret05, 3.0, 20.0
+ $Default SBanks: ( "Hornet SSM" )
+$Subsystem: turret06, 3.0, 20.0
+ $Default SBanks: ( "Hornet SSM" )
+
+$Name: UN Dauntless
+$Alt Name: Fleet Cruiser
+$Short name: UNSC_Orion
+$Species: Terran
++Tech Title: UN Dauntless
++Tech Description: XSTR("
+UN Dauntless
+Fleet Cruiser
+
+One of the oldest ship classes still in service with the Union, the Dauntless design dates back
+", -1)
+$end_multi_text
+$POF file: UNSC_orion.pof
+$Detail distance: (0)
+$Show damage: YES
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 2.0
+$Max Velocity: 0.0, 0.0, 30.0
+$Rotation time: 100.0, 100.0, 80.0
+$Rear Velocity: 0.0
+$Forward accel: 8.0
+$Forward decel: 4.0
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Expl inner rad: 150.0
+$Expl outer rad: 750.0
+$Expl damage: 200.0
+$Expl blast: 11000.0
+$Expl Propagates: YES
+$Shockwave Speed: 400.0
+$Shockwave Count: 2
+$Default PBanks: ()
+$Default SBanks: ()
+$SBank Capacity: ()
+$Shields: 0
+$Power Output: 100.0
+$Max Oclk Speed: 40.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 65000
+$Armor Type: Heavy Plate
+$Flags: ( "generate icon" "cruiser" "in tech database" )
+$AI Class: Captain
+$Afterburner: NO
+$Countermeasures: 0
+$Scan time: 2000
+$EngineSnd: 128
+$Closeup_pos: 0.0, 0.0, -1215
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: turret01,4.0,1.0
+ $Alt Subsystem Name: Railgun
+ $Default PBanks: ( "Railgun" ) 
+ $Flags: ( "check hull" "no subsystem targeting" )
+$Subsystem: turret02,4.0,1.0
+ $Alt Subsystem Name: Railgun
+ $Default PBanks: ( "Railgun" ) 
+ $Flags: ( "check hull" "no subsystem targeting" )
+$Subsystem: turret03,5.0,1.0
+ $Alt Subsystem Name: VLS Launcher
+ $Default SBanks: ( "Albatross SSM" ) 
+$Subsystem: turret04,5.0,1.0
+ $Alt Subsystem Name: VLS Launcher
+ $Default SBanks: ( "Albatross SSM" ) 
+$Subsystem: turret05,5.0,1.0
+ $Alt Subsystem Name: VLS Launcher
+ $Default SBanks: ( "Albatross SSM" ) 
+$Subsystem: turret06,2.0,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 90, 0
+$Subsystem: turret07,2.0,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 90, 0
+$Subsystem: turret08,2.0,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 90, 0
+$Subsystem: turret09,2.0,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 270, 0
+$Subsystem: turret10,2.0,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 270, 0
+$Subsystem: turret11,2.0,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 270, 0
+$Subsystem: engine, 5,0.0
+$Subsystem: communications, 5,0.0
+$Subsystem: sensors, 5,0.0
+$Subsystem: navigation, 5,0.0
+$Subsystem: weapons, 5,0.0
+
+$Name: UN Canberra
+$Alt Name: Strategic Carrier
+$Short name: LHD
+$Species: Terran
++Tech Title: UN Canberra
++Tech Description: XSTR("
+UN Canberra
+Strategic Carrier
+
+One of the oldest designs in service, the Canberra was originally designed by the Union as a response to the development of the Federation's Kirov class cruiser. These vessels have been, in one upgraded iteration after another, a common sight in Union fleets for almost two decades. The key to their longevity is their simplicity of design - the Canberra is barely more than a box with a warp drive. They are weakly armoured and minimally armed, with a quartet of missile turrets their only deterrent against enemy warships. Their true strength, of course, lies in their fighter complement. A fully loaded Canberra can deploy two full squadrons of fighters or bombers, and several accessory craft, and can be stocked with enough fuel, ammunition and supplies to stay running for nearly two months without support.
+", -1)
+$end_multi_text
+$POF file: canberra.pof
+$Detail distance: (0)
+$Show damage: YES
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 0.2
+$Max Velocity: 0.0, 0.0, 30.0
+$Rotation time: 60.0, 80.0, 80.0
+$Rear Velocity: 0.0
+$Forward accel: 9.0
+$Forward decel: 4.5
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Expl inner rad: 125.0
+$Expl outer rad: 675.0
+$Expl damage: 250.0
+$Expl blast: 3500.0
+$Expl Propagates: YES 
+$Shockwave Speed: 600.0 
+$Shockwave Count: 2
+$Default PBanks: ()
+$Default SBanks: ()
+$SBank Capacity: ()
+$Shields: 0
+$Power Output: 90.0
+$Max Oclk Speed: 30.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 65000
+$Armor Type: Heavy Plate
+$Flags: ( "cruiser" "generate icon" "in tech database" )
+$AI Class: Captain
+$Afterburner: NO
+$Countermeasures: 0
+$Scan time: 2000
+$EngineSnd: 206
+$Closeup_pos: 0.0, 0.0, -503
+$Closeup_zoom: 0.55
+$Score: 0
+$Subsystem: turret01, 5.0, 10.0
+ $Default SBanks: ( "Mosquito" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "reset when idle" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 0, 0
+$Subsystem: turret02, 5.0, 10.0
+ $Default SBanks: ( "Mosquito" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "reset when idle" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 0, 0
+$Subsystem: turret03, 5.0, 10.0
+ $Default SBanks: ( "Mosquito" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "reset when idle" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 0, 0
+$Subsystem: turret04, 5.0, 10.0
+ $Default SBanks: ( "Mosquito" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "reset when idle" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 0, 0
+$Subsystem: engine01, 10,0.0
+$Subsystem: engine02, 10,0.0
+$Subsystem: communications, 5,0.0
+$Subsystem: sensors, 5,0.0
+$Subsystem: navigation, 5,0.0
+$Subsystem: weapons, 15,0.0
+$Subsystem: fighterbay1, 0,0.0
+
+$Name: UN Florence
+$Alt Name: Light Carrier
+$Short name: Medfrigate
+$Species: Terran
++Tech Title: UN Florence
++Tech Description: XSTR("
+UN Florence
+Light Carrier
+
+Recognising the need for a carrier vessel with a greater direct combat potential than the Canberra and a lower cost, the Union navy commissioned the Florence class of light carriers to supplement the fleet's overall deployment capabilities in the event of a war or another emergency similar to the Mars Crisis. The Florence is faster in both realspace and warpspeed terms than the Canberra, and carries a heavier conventional armament and is capable of deploying its entire fighter complement rapidly.
+", -1)
+$end_multi_text
+$POF file: florence2.pof
+$Detail distance: (0, 1913)
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 2.0
+$Max Velocity: 0.0, 0.0, 40.0
+$Rotation time: 60.0, 60.0, 60.0
+$Rear Velocity: 0.0
+$Forward accel: 8.0
+$Forward decel: 4.0
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Expl inner rad: 125.0
+$Expl outer rad: 650.0
+$Expl damage: 200.0
+$Expl blast: 3500.0
+$Expl Propagates: YES
+$Shockwave Speed: 195.0
+$Shockwave Count: 2
+$Default PBanks: ()
+$Default SBanks: ()
+$SBank Capacity: ()
+$Shields: 0
+$Power Output: 100.0
+$Max Oclk Speed: 60.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 50000
+$Armor Type: Medium Plate
+$Flags: ( "cruiser" "generate icon" "in tech database" )
+$AI Class: Captain
+$Afterburner: NO
+$Countermeasures: 0
+$Scan time: 2000
+$EngineSnd: 128
+$Closeup_pos: 0.0, 0.0, -700
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: turret01, 2.0, 3.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 0, 0
+$Subsystem: turret02, 2.0, 3.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 180, 0
+$Subsystem: turret03, 2.0, 3.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 0, 0
+$Subsystem: turret04, 2.0, 3.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 180, 0
+$Subsystem: turret05, 2.0, 3.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 0, 0
+$Subsystem: turret06, 2.0, 3.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 180, 0
+$Subsystem: turret07, 2.0, 3.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 0, 0
+$Subsystem: turret08, 2.0, 3.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 180, 0
+$Subsystem: engines, 30, 0.0
+$Subsystem: navigation, 15, 0.0
+$Subsystem: weapons, 15, 0.0
+$Subsystem: sensors, 15, 0.0
+$Subsystem: communication, 15, 0.0
+$Subsystem: fighterbay, 0, 0.0
+
+$Name: UN Moscow
+$Alt Name: Heavy Cruiser
+$Short name: Moscow
+$Species: Terran
++Tech Title: UN Moscow
++Tech Description: XSTR("
+UN Moscow
+Heavy Cruiser
+
+The Moscow class of cruisers were devised after the Mars Crisis as the Union's primary combat space craft, intended to secure control over colonies and wormholes. The Moscow relies on its versatility and firepower to break an attack before the enemy can return fire. The Moscow integrates beams, railguns, and missiles into a powerful craft, capable of punching significantly above its weight class.
+
+Only three Moscow-class cruisers were completed before the MIND incursion began, making these powerful warships a vital strategic asset.
+", -1)
+$end_multi_text
+$POF file: moscow.pof
+$Detail distance: (0, 2000)
+$Show damage: YES
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 1.0
+$Max Velocity: 0.0, 0.0, 40.0
+$Rotation time: 35.0, 35.0, 20.0
+$Rear Velocity: 0.0
+$Forward accel: 4.0
+$Forward decel: 2.0
+$Warpin Speed: 220.0
+$Expl inner rad: 225.0
+$Expl outer rad: 600.0
+$Expl damage: 300.0
+$Expl blast: 4500.0
+$Expl Propagates: YES 
+$Shockwave Speed: 500.0 
+$Default PBanks: ()
+$Default SBanks: ()
+$Shields: 0
+$Power Output: 90.0
+$Max Oclk Speed: 60.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 90000
+$Armor Type: Heavy Plate
+$Flags: ( "in tech database" "cruiser" "generate icon" )
+$AI Class: Captain
+$Afterburner: NO
+$Scan time: 2000
+$EngineSnd: 128 
+$Closeup_pos: 0.0, 0.0, -440
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: weapons, 5, 0.0
+$Subsystem: communication, 5, 0.0
+$Subsystem: sensors, 5, 0.0
+$Subsystem: navigation, 5, 0.0
+$Subsystem: engine01, 5, 0.0
+$Subsystem: engine02, 5, 0.0
+$Subsystem: Turret01, 2, 1.0
+ $Alt Subsystem Name: Pulse Beam
+ $Default PBanks: ( "MRed#Auto" ) 
+ $Flags: ( "check hull" ) 
+$Subsystem: Turret02, 2, 1.0
+ $Alt Subsystem Name: Pulse Beam
+ $Default PBanks: ( "MRed#Auto" ) 
+ $Flags: ( "check hull" ) 
+$Subsystem: Turret03,1, 2.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 70,0,0
+$Subsystem: Turret04,1, 2.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 70,0,0
+$Subsystem: Turret05,1, 2.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 70,180,0
+$Subsystem: Turret06, 2, 1.0
+ $Alt Subsystem Name: VLS Launcher
+ $Default SBanks: ( "Eagle SSM#NPC" ) 
+$Subsystem: Turret07, 2, 1.0
+ $Alt Subsystem Name: VLS Launcher
+ $Default SBanks: ( "Eagle SSM#NPC" ) 
+$Subsystem: Turret08, 2, 1.0
+ $Alt Subsystem Name: Railgun
+ $Default PBanks: ( "Railgun" ) 
+ $Flags: ( "check hull" ) 
+$Subsystem: Turret09, 2, 1.0
+ $Alt Subsystem Name: Railgun
+ $Default PBanks: ( "Railgun" ) 
+ $Flags: ( "check hull" ) 
+$Subsystem: Turret10, 2, 1.0
+ $Alt Subsystem Name: Railgun
+ $Default PBanks: ( "Railgun" ) 
+ $Flags: ( "check hull" ) 
+$Subsystem: Turret11, 2, 1.0
+ $Alt Subsystem Name: Railgun
+ $Default PBanks: ( "Railgun" ) 
+ $Flags: ( "check hull" ) 
+
+$Name: UN Moscow#PLAYEr
+$Short name: Moscow
+$Species: Terran
++Type: XSTR("Heavy Cruiser", -1)
++Maneuverability: XSTR("Extremely Poor", -1)
++Armor: XSTR("Extremely Heavy", -1)
++Manufacturer: XSTR("European Cruiser Alliance", -1)
+$POF file: moscow_PLAYER.pof
+$Detail distance: (0, 2000)
+$Show damage: YES
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 1.0
+$Max Velocity: 0.0, 0.0, 40.0
+$Rotation time: 35.0, 35.0, 20.0
+$Rear Velocity: 30.0
+$Forward accel: 4.0
+$Forward decel: 2.0
+$Glide: YES
+ +Dynamic Glide Cap: NO
+ +Max Glide Speed: 30
+$Autoaim FOV: 4
+ +Converging Autoaim
+ +Minimum Distance: 500
+$Warpin Speed: 220.0
+$Expl inner rad: 225.0
+$Expl outer rad: 600.0
+$Expl damage: 300.0
+$Expl blast: 4500.0
+$Expl Propagates: YES 
+$Shockwave Speed: 500.0 
+$Allowed PBanks: ( "Railgun" "Cluster Flak Array" )
+$Default PBanks: ( "Railgun" "Cluster Flak Array" )
+$Allowed SBanks: ( "Eagle SSM" "Trantor" )
+$Default SBanks: ( "Eagle SSM" "Trantor" )
+$SBank Capacity: ( 240, 240 )
+$Shields: 0.000001
+$Power Output: 90.0
+$Shield Regeneration Rate: 0
+$Weapon Regeneration Rate: 0.03
+$Max Oclk Speed: 60.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 90000
+$Armor Type: Heavy Plate
+$Flags: ( "player_ship" "cruiser" "gun convergence" "generate icon" "no pain flash" "show ship" "no primary linking" )
+$AI Class: Captain
+$Afterburner: YES
+ +Aburn Max Vel: 0.0, 0.0, 90.0
+ +Aburn For accel: 1.2
+ +Aburn Fuel: 100.0
+ +Aburn Burn Rate: 10.0
+ +Aburn Rec Rate: 6.0
+$Scan time: 2000
+$EngineSnd: 128 
+$Closeup_pos: 0.0, 0.0, -440
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: weapons, 5, 0.0
+$Subsystem: communication, 5, 0.0
+$Subsystem: sensors, 5, 0.0
+$Subsystem: navigation, 5, 0.0
+$Subsystem: engine01, 5, 0.0
+$Subsystem: engine02, 5, 0.0
+$Subsystem: Turret01, 2, 1.0
+ $Alt Subsystem Name: Pulse Beam
+ $Default PBanks: ( "MRed" ) 
+ $Flags: ( "check hull" ) 
+$Subsystem: Turret02, 2, 1.0
+ $Alt Subsystem Name: Pulse Beam
+ $Default PBanks: ( "MRed" ) 
+ $Flags: ( "check hull" ) 
+$Subsystem: Turret03,1, 2.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "play fire sound for player" "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 70,0,0
+$Subsystem: Turret04,1, 2.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "play fire sound for player" "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 70,0,0
+$Subsystem: Turret05,1, 2.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "play fire sound for player" "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 70,180,0
+
+$Name: UN Moscow#Warp
+$Short name: Moscow
+$Species: Terran
+$POF file: moscow_PLAYER.pof
+$Detail distance: (0, 2000)
+$Show damage: YES
+$Density: 1
+$Damp: 0.0
+$Rotdamp: 0.0
+$Max Velocity: 50000.0, 50000.0, 50000.0
+$Rotation time: 0.02, 0.02, 0.02
+$Rear Velocity: 50000.0
+$Forward accel: 0.0
+$Forward decel: 0.0
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Autoaim FOV: 4
+ +Converging Autoaim
+ +Minimum Distance: 500
+$Warpin Speed: 220.0
+$Expl inner rad: 225.0
+$Expl outer rad: 600.0
+$Expl damage: 300.0
+$Expl blast: 4500.0
+$Expl Propagates: YES 
+$Shockwave Speed: 500.0 
+$Allowed PBanks: ( "Railgun" "Cluster Flak Array" )
+$Default PBanks: ( "Railgun" "Cluster Flak Array" )
+$Allowed SBanks: ( "Eagle SSM" "Trantor" )
+$Default SBanks: ( "Eagle SSM" "Trantor" )
+$SBank Capacity: ( 240, 240 )
+$Shields: 0.000001
+$Power Output: 90.0
+$Shield Regeneration Rate: 0
+$Weapon Regeneration Rate: 0.03
+$Max Oclk Speed: 100000.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 90000
+$Armor Type: Heavy Plate
+$Flags: ( "player_ship" "cruiser" "gun convergence" "no_collide" "generate icon" "no pain flash" "show ship" "no primary linking" )
+$AI Class: Captain
+$Afterburner: YES
+ +Aburn Max Vel: 0.0, 0.0, 90.0
+ +Aburn For accel: 1.2
+ +Aburn Fuel: 100.0
+ +Aburn Burn Rate: 10.0
+ +Aburn Rec Rate: 0.0
+$Scan time: 2000
+$EngineSnd: 128 
+$Closeup_pos: 0.0, 0.0, -440
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: weapons, 5, 0.0
+$Subsystem: communication, 5, 0.0
+$Subsystem: sensors, 5, 0.0
+$Subsystem: navigation, 5, 0.0
+$Subsystem: engine01, 5, 0.0
+$Subsystem: engine02, 5, 0.0
+$Subsystem: Turret01, 2, 1.0
+ $Alt Subsystem Name: Pulse Beam
+ $Default PBanks: ( "MRed" ) 
+ $Flags: ( "check hull" ) 
+$Subsystem: Turret02, 2, 1.0
+ $Alt Subsystem Name: Pulse Beam
+ $Default PBanks: ( "MRed" ) 
+ $Flags: ( "check hull" ) 
+$Subsystem: Turret03,1, 2.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "play fire sound for player" "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 70,0,0
+$Subsystem: Turret04,1, 2.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "play fire sound for player" "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 70,0,0
+$Subsystem: Turret05,1, 2.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "play fire sound for player" "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 70,180,0
+
+$Name: UN Magellan
+$Alt Name: Battleship
+$Short name: SuperCarrierWarlock
+$Species: Terran
++Tech Title: UN Magellan
++Tech Description: XSTR("
+Magellan
+Battleship
+
+Project Magellan resulted from the aftermath of the Mars Crisis, where the Union's aging fleet of Dauntless and Surigao-class ships were proven to be soundly inferior to the modern Federation fleet. Seeing the relative lack of combat in the Mars Crisis, Union admirals concieved the Magellan to be the centerpiece of the next-generation Union space warfare doctrine.
+
+When the MIND incursion began, the Magellan was hurried to completion with Federation assistance and pressed into service as soon as it was spaceworthy. The Magellan now serves as the flagship of the UN fleet, guarding Sol against the MIND as a last line of defence.
+", -1)
+$end_multi_text
+$POF file: warlock.pof
+$Detail distance: (0, 5000, 15000, 20000)
+$Show damage: YES
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 1.8
+$Max Velocity: 0.0, 0.0, 40.0
+$Rotation time: 60.0, 60.0, 60.0
+$Rear Velocity: 0.0
+$Forward accel: 6.0
+$Forward decel: 2.0
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Expl inner rad: 400.0
+$Expl outer rad: 1600.0
+$Expl damage: 200.0
+$Expl blast: 18000.0
+$Expl Propagates: YES 
+$Shockwave Speed: 600.0 
+$Shockwave Count: 3
+$Default PBanks: ()
+$Default SBanks: ()
+$SBank Capacity: ()
+$Shields: 0
+$Power Output: 100.0
+$Max Oclk Speed: 15.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 200000
+$Armor Type: Heavy Plate
+$Flags: ( "capital" "generate icon" "in tech database" )
+$AI Class: Captain
+$Afterburner: NO
+$Countermeasures: 0
+$Scan time: 6000
+$EngineSnd: 106 
+$Closeup_pos: 0.0, 0.0, -1250
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: turret01,1,3.5
+ $Alt Subsystem Name: Pulse Beam
+ $Default PBanks: ( "MRed#Auto" )
+ $Flags: ( "check hull" )
+$Subsystem: turret02,1,3.5
+ $Alt Subsystem Name: Pulse Beam
+ $Default PBanks: ( "MRed#Auto" )
+ $Flags: ( "check hull" )
+$Subsystem: turret03,1,3.5
+ $Alt Subsystem Name: Pulse Beam
+ $Default PBanks: ( "MRed#Auto" )
+ $Flags: ( "check hull" )
+$Subsystem: turret04,1,3.5
+ $Alt Subsystem Name: Pulse Beam
+ $Default PBanks: ( "MRed#Auto" )
+ $Flags: ( "check hull" )
+$Subsystem: turret05,1,3.5
+ $Alt Subsystem Name: Pulse Beam
+ $Default PBanks: ( "MRed#Auto" )
+ $Flags: ( "check hull" )
+$Subsystem: turret06,1,3.5
+ $Alt Subsystem Name: Railgun
+ $Default PBanks: ( "Railgun#Magellan" )
+ $Turret Base RotationSnd: 256
+ $Turret Gun RotationSnd: 257
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Flags: ( "no subsystem targeting" "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 70,0,0
+$Subsystem: turret07,1,3.5
+ $Alt Subsystem Name: Railgun
+ $Default PBanks: ( "Railgun#Magellan" )
+ $Turret Base RotationSnd: 256
+ $Turret Gun RotationSnd: 257
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Flags: ( "no subsystem targeting" "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 70,0,0
+$Subsystem: turret08,1,3.5
+ $Alt Subsystem Name: Railgun
+ $Default PBanks: ( "Railgun#Magellan" )
+ $Turret Base RotationSnd: 256
+ $Turret Gun RotationSnd: 257
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Flags: ( "no subsystem targeting" "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 70,180,0
+$Subsystem: turret09,1,3.5
+ $Alt Subsystem Name: Railgun
+ $Default PBanks: ( "Railgun#Magellan" )
+ $Turret Base RotationSnd: 256
+ $Turret Gun RotationSnd: 257
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Flags: ( "no subsystem targeting" "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 70,180,0
+$Subsystem: turret10,0.5,1
+ $Default PBanks: ( "Cluster Fuck Array" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 70,0,0
+$Subsystem: turret11,0.5,1
+ $Default PBanks: ( "Cluster Fuck Array" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 70,180,0
+$Subsystem: turret12,1,3.5
+ $Alt Subsystem Name: Railgun
+ $Default PBanks: ( "Railgun#Magellan" )
+ $Turret Base RotationSnd: 256
+ $Turret Gun RotationSnd: 257
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Flags: ( "no subsystem targeting" "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 70,0,0
+$Subsystem: turret13,1,3.5
+ $Alt Subsystem Name: Railgun
+ $Default PBanks: ( "Railgun#Magellan" )
+ $Turret Base RotationSnd: 256
+ $Turret Gun RotationSnd: 257
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Flags: ( "no subsystem targeting" "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 70,0,0
+$Subsystem: turret14,0.5,1.0
+ $Default PBanks: ( "Cluster Fuck Array" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 70,0,0
+$Subsystem: turret15,1,3.5
+ $Alt Subsystem Name: Railgun
+ $Default PBanks: ( "Railgun#Magellan" )
+ $Turret Base RotationSnd: 256
+ $Turret Gun RotationSnd: 257
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Flags: ( "no subsystem targeting" "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 70,180,0
+$Subsystem: turret16,0.5,1.0
+ $Default PBanks: ( "Cluster Fuck Array" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 70,0,0
+$Subsystem: turret17,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret18,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret19,1,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret20,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret21,1,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret22,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret23,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret24,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret25,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret26,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret27,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret28,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret29,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret30,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret31,1,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret32,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret33,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret34,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret35,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret36,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret37,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret38,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret39,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret40,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret41,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret42,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret43,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret44,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret45,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret46,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret47,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret48,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret49,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret50,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret51,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: turret52,0.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak MG" )
+ $Flags: ( "check hull" )
+$Subsystem: enginesa, 20,0.0
+$Subsystem: radar01, 0.25, 10.0
+$Subsystem: radar02, 0.25, 10.0
+$Subsystem: radar03, 0.25, 10.0
+$Subsystem: communications, 5,0.0
+$Subsystem: sensors, 5,0.0
+$Subsystem: navigation, 5,0.0
+$Subsystem: weapons, 5,0.0
+$Subsystem: fighterbay, 0,0.0
+
+$Name: UN Asteria
+$Alt Name: Installation
+$Short name: TInst
+$Species: Terran
++Tech Title: UN Asteria
++Tech Description: XSTR("
+Asteria-type
+Installation
+
+The Asteria was originally designed as a lighter, less militarised sibling to the Arcadia and Endymion. With nine docking points and a fighterbay, the station is well fitted to serve as a hub for local trade. The Asteria's self-defence is adequate with four heavy railgun turrets, but its primary functions are as a logistical node and civilian space station.
+", -1)
+$end_multi_text
+$POF file: GTI_Asteria.pof
+$Detail distance: (0, 2000, 5000, 10000)
+$Show damage: NO
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 0.2
+$Max Velocity: 0.0, 0.0, 0.0
+$Rotation time: 200.0, 200.0, 200.0
+$Rear Velocity: 0.0
+$Forward accel: 0.0
+$Forward decel: 0.0
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Expl inner rad: 100.0
+$Expl outer rad: 2400.0
+$Expl damage: 400.0
+$Expl blast: 6500.0
+$Expl Propagates: YES
+$Shockwave Speed: 600.0
+$Shockwave Count: 3
+$Default PBanks: ()
+$Default SBanks: ()
+$SBank Capacity: ()
+$Shields: 0
+$Power Output: 1.0
+$Max Oclk Speed: 0.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 85000
+$Armor Type: Heavy Plate
+$Flags: ( "capital" "generate icon" "in tech database" )
+$AI Class: Captain
+$Afterburner: NO
+$Countermeasures: 0
+$Scan time: 2000
+$EngineSnd: 191
+$Closeup_pos: 0.0, 0.0, -1900
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: Turret01, 1,2.0
+ $Alt Subsystem Name: Railgun
+ $Default PBanks: ( "Railgun#Magellan" )
+ $Turret Base RotationSnd: 256
+ $Turret Gun RotationSnd: 257
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Flags: ( "no subsystem targeting" "check hull" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+$Subsystem: Turret02, 1,2.0
+ $Alt Subsystem Name: Railgun
+ $Default PBanks: ( "Railgun#Magellan" )
+ $Turret Base RotationSnd: 256
+ $Turret Gun RotationSnd: 257
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Flags: ( "no subsystem targeting" "check hull" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+$Subsystem: Turret03, 1,2.0
+ $Alt Subsystem Name: Railgun
+ $Default PBanks: ( "Railgun#Magellan" )
+ $Turret Base RotationSnd: 256
+ $Turret Gun RotationSnd: 257
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Flags: ( "no subsystem targeting" "check hull" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+$Subsystem: Turret04, 1,2.0
+ $Alt Subsystem Name: Railgun
+ $Default PBanks: ( "Railgun#Magellan" )
+ $Turret Base RotationSnd: 256
+ $Turret Gun RotationSnd: 257
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Flags: ( "no subsystem targeting" "check hull" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+$Subsystem: sensors, 5, 0
+$Subsystem: weapons, 5, 0
+$Subsystem: communication, 5, 0
+$Subsystem: fighterbay, 0,0.0
+
+$Name: UN Endymion
+$Alt Name: Fortress
+$Short name: TStation
+$Species: Terran
++Tech Title: UN Endymion
++Tech Description: XSTR("
+UN Endymion
+Fortress
+
+The Endymion is a Union stellar fortress design, dating back to the early stages of solar colonisation. Faced with a pressing need to coordinate forces across and potentially even between systems, the nascent Union devised the Endymion as a theatre command and control platform, incorporating sophisticated long-range sensors, secure communications arrays, and Exocet SSM launchers. Endymion-class fortresses currently serve as a last line of defence, filling Earth's orbital slots should the MIND incursion ever breach the inner fortress systems.
+", -1)
+$end_multi_text
+$POF file: CommStat.pof
+$Detail distance: (0, 3700, 5800)
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 0.2
+$Max Velocity: 0.0, 0.0, 0.0
+$Rotation time: 200.0, 200.0, 200.0
+$Rear Velocity: 0.0
+$Forward accel: 0.0
+$Forward decel: 0.0
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Expl inner rad: 750.0
+$Expl outer rad: 1500.0
+$Expl damage: 800.0
+$Expl blast: 8000.0
+$Expl Propagates: YES
+$Shockwave Speed: 600.0
+$Shockwave Count: 3
+$Default PBanks: ()
+$Default SBanks: ()
+$SBank Capacity: ()
+$Shields: 0
+$Power Output: 1.0
+$Max Oclk Speed: 0.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 250000
+$Armor Type: Heavy Plate
+$Flags: ( "capital" "big damage" "in tech database" )
+$AI Class: Captain
+$Afterburner: NO
+$Countermeasures: 0
+$Scan time: 9000
+$EngineSnd: -191 
+$Closeup_pos: 0.0, 1.0, -1500
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: Turret01,4,0.0 
+ $Default SBanks: ( "Exocet SSM" ) 
+ $Flags: ( "check hull" "no subsystem targeting" )
+$Subsystem: Turret02,4,0.0 
+ $Default SBanks: ( "Exocet SSM" ) 
+ $Flags: ( "check hull" "no subsystem targeting" )
+$Subsystem: Turret03,4,0.0 
+ $Default SBanks: ( "Exocet SSM" ) 
+ $Flags: ( "check hull" "no subsystem targeting" )
+$Subsystem: Turret04,4,0.0 
+ $Default SBanks: ( "Exocet SSM" ) 
+ $Flags: ( "check hull" "no subsystem targeting" )
+$Subsystem: Turret05,4,0.0 
+ $Default SBanks: ( "Exocet SSM" ) 
+ $Flags: ( "check hull" "no subsystem targeting" )
+$Subsystem: Turret06,4,0.0 
+ $Default SBanks: ( "Exocet SSM" ) 
+ $Flags: ( "check hull" "no subsystem targeting" )
+$Subsystem: RotDish01,2.5,0.0 
+;ARMS ROTATE ON THE Y AXIS (SECOND VALUE)
+$Subsystem: Arm01,100,20.0 
+ $Flags: ( "untargetable" "damage as hull" )
+ $animation: triggered
+ $type: scripted
+ +delay: 0
+ +relative_angle: 0.0, 90.0, 0.0
+ +velocity: 0.0, 10.0, 0.0
+ +acceleration: 0.0, 0.5, 0.0
+ +time: 1
+$Subsystem: Arm02,100,20.0 
+ $Flags: ( "untargetable" "damage as hull" ) 
+ $animation: triggered
+ $type: scripted
+ +delay: 0
+ +relative_angle: 0.0, 180.0, 0.0
+ +velocity: 0.0, 10.0, 0.0
+ +acceleration: 0.0, 0.5, 0.0
+ +time: 1
+$Subsystem: Arm03,100,20.0 
+ $Flags: ( "untargetable" "damage as hull" ) 
+ $animation: triggered
+ $type: scripted
+ +delay: 0
+ +relative_angle: 0.0, 75.0, 0.0
+ +velocity: 0.0, 10.0, 0.0
+ +acceleration: 0.0, 0.5, 0.0
+ +time: 1
+;DISHES ROTATE ON THE X AXIS (FIRST VALUE)
+$Subsystem: Dish01,10,15.0 
+ $animation: triggered
+ $type: scripted
+ +delay: 0
+ +relative_angle: -60.0, 0.0, 0.0
+ +velocity: 10.0, 0.0, 0.0
+ +acceleration: 0.5, 0.0, 0.0
+ +time: 1
+$Subsystem: Dish02,10,15.0 
+ $animation: triggered
+ $type: scripted
+ +delay: 0
+ +relative_angle: -25.0, 0.0, 0.0
+ +velocity: 10.0, 0.0, 0.0
+ +acceleration: 0.5, 0.0, 0.0
+ +time: 1
+$Subsystem: Dish03,10,15.0 
+ $animation: triggered
+ $type: scripted
+ +delay: 0
+ +relative_angle: -90.0, 0.0, 0.0
+ +velocity: 10.0, 0.0, 0.0
+ +acceleration: 0.5, 0.0, 0.0
+ +time: 1
+$Subsystem: Tank01,3,20.0 
+ $Flags: ( "untargetable" )
+$Subsystem: Tank02,3,20.0 
+ $Flags: ( "untargetable" )
+$Subsystem: Tank03,3,20.0 
+ $Flags: ( "untargetable" )
+$Subsystem: communication, 5,0.0 
+$Subsystem: sensors, 20,0.0 
+$Subsystem: weapons, 10,0.0 
+
+;FEDERAL SMALL SHIPS
+
+$Name: UN Lancer
+$Alt Name: Light Fighter
+$Short name: FTFLANCER
+$Species: Terran-IFN
++Type: XSTR("Light Fighter", -1)
++Maneuverability: XSTR("Very Good", -1)
++Armor: XSTR("Light", -1)
++Manufacturer: XSTR("Mikoyan", -1)
++Tech Title: UN Lancer
++Tech Description: XSTR("
+Lancer-type
+Light Fighter
+
+The Lancer is the Federation's light fighter design, roughly comparable to the Union's Leto class. With a great maneuverability profile, the Lancer
+", -1)
+$end_multi_text
+$POF file: LancerXF.pof
+$Detail distance: (0)
+$ND: 253 253 168
+$Show damage: YES
+$Density: 1
+$Damp: 0.25
+$Rotdamp: 0.40
+$Max Velocity: 0.0, 0.0, 125.0 
+$Rotation time: 3.0, 3.0, 3.0
+$Forward accel: 2.7
+$Forward decel: 2.3
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Warpin type: Galactica
+$Warpin Start Sound: 218
+$Warpin time: 0.3667
+$Warpin animation: FTL
+$Warpout type: Galactica
+$Warpout Start Sound: 219
+$Warpout time: 0.3667
+$Warpout animation: FTL
+$Expl inner rad: 25.0
+$Expl outer rad: 75.0
+$Expl damage: 25.0
+$Expl blast: 1000.0
+$Expl Propagates: NO
+$Shockwave Speed: 0.0 
+$Allowed PBanks: ( "Reaper" "Thresher" "Scythe" ) ( "Reaper" "Scythe" )
+$Default PBanks: ( "Thresher" "Reaper" )
+$Pbank Capacity: ( 50, 50 )
+$Show Primary Models: ( yes yes )
+$Allowed SBanks: ( "MK-122" "Hegemony" )
+$Default SBanks: ( "MK-122" "Hegemony" )
+$SBank Capacity: ( 40, 40 )
+$Shields: 300
+$Power Output: 2.4
+$Max Oclk Speed: 145.0
+$Max Weapon Eng: 130.0
+$Hitpoints: 280
+$Armor Type: Fighter Plate
+$Flags: ( "generate icon" "player_ship" "in tech database" "fighter" )
+$AI Class: Captain
+$Afterburner: YES
+ +Aburn Max Vel: 0.0, 0.0, 220.0
+ +Aburn For accel: 0.6
+ +Aburn Fuel: 340.0
+ +Aburn Burn Rate: 32.0
+ +Aburn Rec Rate: 25.0
+$Trails:
+ +Bitmap: ABTrail
+ +Width: 1.0
+ +Alpha: 1.0
+ +Life: 1
+$Countermeasures: 15
+$Scan time: 2000
+$EngineSnd: 126 
+$Closeup_pos: 0.0, 0.0, -30
+$Closeup_zoom: 0.5
+$Score: 0
+$thruster01 radius factor: 1.8
+$thruster02 length factor: 4.0
+$Thruster03 Radius factor: 1.8
+$Subsystem: sensors, 25,0.0
+$Subsystem: communication, 25,0.0
+$Subsystem: weapons, 35,0.0
+$Subsystem: navigation, 25,0.0
+$Subsystem: engine01, 35,0.0
+$Subsystem: engine02, 35,0.0
+
+$Name: UN Jackal
+$Alt Name: Heavy Fighter
+$Short name: FTFJackal
+$Species: Terran-IFN
++Type: XSTR("Heavy Fighter", -1)
++Maneuverability: XSTR("Average", -1)
++Armor: XSTR("Medium", -1)
++Manufacturer: XSTR("Mikoyan", -1)
++Tech Title: UN Jackal
++Tech Description: XSTR("
+Jackal-type
+Heavy Fighter
+
+A relatively recent development, the Jackal was the first next-generation Federation fightercraft observed in service by the Union. Combining heavy armour plating and an energy shield generator with a powerful engine array, the Jackal is designed to hit hard, hit fast, and return to base alive. The Jackal is equally adept at neutralising small craft and even lighter capital ships.
+", -1)
+$end_multi_text
+$POF file: JackalXF.pof
+$Detail distance: (0, 250)
+$ND: 144 234 237
+$ND: 60 231 239
+$ND: 78 151 156
+$ND: 30 179 189
+$Show damage: YES
+$Density: 1
+$Damp: 0.11
+$Rotdamp: 0.30
+$Max Velocity: 0.0, 0.0, 100.0 
+$Rotation time: 4.3, 4.3, 4.3
+$Forward accel: 2.6
+$Forward decel: 1.7
+$Warpin type: Galactica
+$Warpin Start Sound: 218
+$Warpin time: 0.3667
+$Warpin animation: FTL
+$Warpout type: Galactica
+$Warpout Start Sound: 219
+$Warpout time: 0.3667
+$Warpout animation: FTL
+$Expl inner rad: 25.0
+$Expl outer rad: 75.0
+$Expl damage: 25.0
+$Expl blast: 1000.0
+$Expl Propagates: NO 
+$Shockwave Speed: 0.0 
+$Allowed PBanks: ( "Reaper" "Scythe" "Thresher" ) ( "Thresher" ) 
+$Default PBanks: ( "Reaper" "Thresher" )
+$Pbank Capacity: ( 100, 0 )
+$Show Primary Models: ( yes no )
+$Allowed SBanks: ( "Hegemony" ) ( "MK-122" )
+$Default SBanks: ( "Hegemony" "MK-122" )
+$SBank Capacity: ( 60, 40 )
+$Shields: 500
+$Power Output: 3.0
+$Max Oclk Speed: 170.0
+$Max Weapon Eng: 50.0
+$Hitpoints: 450
+$Armor Type: Fighter Plate
+$Flags: ( "generate icon" "player_ship" "in tech database" "fighter")
+$AI Class: Jouster-Lvl2
+$Afterburner: YES
+ +Aburn Max Vel: 0.0, 0.0, 170.0
+ +Aburn For accel: 1.80
+ +Aburn Fuel: 300.0
+ +Aburn Burn Rate: 60.0
+ +Aburn Rec Rate: 10.0
+$Trails:
+ +Bitmap: ABTrail
+ +Width: 1.0
+ +Alpha: 1.0
+ +Life: 1
+$Countermeasures: 20
+$Scan time: 2000
+$EngineSnd: 126 
+$Closeup_pos: 0.0, 0.0, -40
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: sensors, 15,0.0
+$Subsystem: communications, 15,0.0
+$Subsystem: weapons, 25,0.0
+$Subsystem: navigation, 15,0.0
+$Subsystem: engine, 35,0.0
+;/////////////////////////////////////////////AFTERBURN\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+$Subsystem: intaker,15,2 ;<--- how to read the names, "coverlto" = cover left top outer
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0
+ +reverse_delay: 1000 ;<--- see above, but backwards
+ +relative_angle: -11.40,4.68,-0.50 ;<--- derp
+ +velocity: 11.40,4.68,0.50 ;<--- degrees per second matching angle = 1 second for 24.26
+ +acceleration: 11.40,4.68,0.50 ;<--- degreed per second squared
+ +time: 2000 
+$Subsystem: intakel,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: -11.40,-4.68,0.50 
+ +velocity: 11.40,4.68,0.50 
+ +acceleration: 11.40,4.68,0.50 
+ +time: 2000 
+$Subsystem: coverlto,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: 7,20,0 
+ +velocity: 7,20,0 
+ +acceleration: 7,20,0 
+ +time: 2000 
+$Subsystem: coverlti,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: 20,-10,0 
+ +velocity: 20,10,0 
+ +acceleration: 20,10,0 
+ +time: 2000 
+$Subsystem: coverlbo,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: -20,10,0 
+ +velocity: 20,10,0 
+ +acceleration: 20,10,0 
+ +time: 2000 
+$Subsystem: coverlbi,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: -10,-20,0 
+ +velocity: 10,20,0 
+ +acceleration: 10,20,0 
+ +time: 2000 
+$Subsystem: coverrti,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: 20,10,0 
+ +velocity: 20,10,0 
+ +acceleration: 20,10,0 
+ +time: 2000 
+$Subsystem: coverrto,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: 7,-20,0 
+ +velocity: 7,20,0 
+ +acceleration: 7,20,0 
+ +time: 2000 
+$Subsystem: coverrbi,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: -10,20,0 
+ +velocity: 10,20,0 
+ +acceleration: 10,20,0 
+ +time: 2000 
+$Subsystem: coverrbo,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: -20,-10,0 
+ +velocity: 20,10,0 
+ +acceleration: 20,10,0 
+ +time: 2000 
+$Subsystem: tailbr,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: 0,0,-55 
+ +velocity: 0,0,55 
+ +acceleration: 0,0,55 
+ +time: 2000 
+$Subsystem: tailtr,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: 0,0,54.39 
+ +velocity: 0,0,54.39 
+ +acceleration: 0,0,54.39 
+ +time: 2000 
+$Subsystem: tailbl,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: 0,0,55 
+ +velocity: 0,0,55 
+ +acceleration: 0,0,55 
+ +time: 2000 
+$Subsystem: tailtl,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: 0,0,-54.39 
+ +velocity: 0,0,54.39 
+ +acceleration: 0,0,54.39 
+ +time: 2000 
+$Subsystem: tdl1,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: 33.5,0,0 
+ +velocity: 33.5,0,0 
+ +acceleration: 33.5,0,0 
+ +time: 2000 
+$Subsystem: tdl2,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: -33.5,0,0 
+ +velocity: 33.5,0,0 
+ +acceleration: 33.5,0,0 
+ +time: 2000 
+$Subsystem: tdl3,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: -16,30,4 
+ +velocity: 16,30,4 
+ +acceleration: 16,30,4 
+ +time: 2000 
+$Subsystem: tdl4,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: -16,-30,4 
+ +velocity: 16,30,4 
+ +acceleration: 16,30,4 
+ +time: 2000 
+$Subsystem: tdl5,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: 16,30,-4 
+ +velocity: 16,30,4 
+ +acceleration: 16,30,4 
+ +time: 2000 
+$Subsystem: tdl6,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: 16,-30,-4 
+ +velocity: 16,30,4 
+ +acceleration: 16,30,4 
+ +time: 2000 
+$Subsystem: tdr1,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: 33.5,0,0 
+ +velocity: 33.5,0,0 
+ +acceleration: 33.5,0,0 
+ +time: 2000 
+$Subsystem: tdr2,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: -33.5,0,0 
+ +velocity: 33.5,0,0 
+ +acceleration: 33.5,0,0 
+ +time: 2000 
+$Subsystem: tdr3,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: -16,30,4 
+ +velocity: 16,30,4 
+ +acceleration: 16,30,4 
+ +time: 2000 
+$Subsystem: tdr4,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: -16,-30,4 
+ +velocity: 16,30,4 
+ +acceleration: 16,30,4 
+ +time: 2000 
+$Subsystem: tdr5,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: 16,30,-4 
+ +velocity: 16,30,4 
+ +acceleration: 16,30,4 
+ +time: 2000 
+$Subsystem: tdr6,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Afterburner
+ +delay: 0 
+ +reverse_delay: 1000 
+ +relative_angle: 16,-30,-4 
+ +velocity: 16,30,4 
+ +acceleration: 16,30,4 
+ +time: 2000 
+$Subsystem: tachpnltr,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Primary_bank
+ +sub_type: 1
+ +delay: 0
+ +reverse_delay: 1000 
+ +relative_angle: 0,0,130.44
+ +velocity: 0,0,130.44
+ +acceleration: 0,0,130.44
+ +time: 2000
+$Subsystem: tachpnltl,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Primary_bank
+ +sub_type: 1
+ +delay: 0
+ +reverse_delay: 1000 
+ +relative_angle: 0,0,-130.44
+ +velocity: 0,0,130.44
+ +acceleration: 0,0,130.44
+ +time: 2000
+$Subsystem: tachpnlfr,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Primary_bank
+ +sub_type: 1
+ +delay: 0
+ +reverse_delay: 1000 
+ +relative_angle: 49.68,-30.89,118.07
+ +velocity: 49.68,30.89,118.07
+ +acceleration: 49.68,30.89,118.07
+ +time: 2000
+$Subsystem: tachpnlfl,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Primary_bank
+ +sub_type: 1
+ +delay: 0
+ +reverse_delay: 1000 
+ +relative_angle: 49.68,30.89,-118.07
+ +velocity: 49.68,30.89,118.07
+ +acceleration: 49.68,30.89,118.07
+ +time: 2000
+$Subsystem: guns,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Primary_bank
+ +sub_type: 1
+ +delay: 1000
+ +reverse_delay: 300 
+ +relative_angle: 180,0,0
+ +velocity: 180,0,0
+ +acceleration: 90,0,0
+ +time: 2000
+$Subsystem: amps,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Primary_bank
+ +sub_type: 1
+ +delay: 1300
+ +reverse_delay: 0 
+ +relative_angle: 0.61,0,0
+ +velocity: 0.61,0,0
+ +acceleration: 0.61,0,0
+ +time: 2000
+$Subsystem: launcher,15,2
+$Alt Damage Popup Subsystem Name: name
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: secondary_bank
+ +sub_type: 1
+ +delay: 0
+ +reverse_delay: 0 
+ +relative_angle: -0.39,0,0
+ +velocity: 0.39,0,0
+ +acceleration: 0.195,0,0
+ +time: 2000
+
+$Name: UN Wraith
+$Alt Name: Assault Fighter
+$Short name: Wraith
+$Species: Terran-IFN
++Type: XSTR("Assault Fighter", -1)
++Maneuverability: XSTR("Poor", -1)
++Armor: XSTR("Heavy", -1)
++Manufacturer: XSTR("Mikoyan", -1)
++Tech Title: UN Wraith
++Tech Description: XSTR("
+Wraith-type
+Heavy Assault Fighter
+
+The Federal Wraith is the heaviest fightercraft currently in service with either the Union or Federation, and borders on bomber classification. The Wraith mounts a minaturised meson beam in a spinal mount, as well as several racks of heavy missiles, making it a threat to all capital ships and bombercraft.
+", -1)
+$end_multi_text
+$POF file: WraithXF.pof
+$Detail distance: (0, 80)
+$ND: 193 185 241
+$ND: 173 169 225
+$ND: 133 151 204
+$Show damage: YES
+$Density: 1
+$Damp: 0.40
+$Rotdamp: 0.37
+$Max Velocity: 0.0, 0.0, 100.0 
+$Rotation time: 5.0, 5.0, 5.0
+$Forward accel: 3.0
+$Forward decel: 0.4
+$Warpin type: Galactica
+$Warpin Start Sound: 218
+$Warpin time: 0.3667
+$Warpin animation: FTL
+$Warpout type: Galactica
+$Warpout Start Sound: 219
+$Warpout time: 0.3667
+$Warpout animation: FTL
+$Expl inner rad: 100.0
+$Expl outer rad: 300.0
+$Expl damage: 200.0
+$Expl blast: 1000.0
+$Expl Propagates: NO 
+$Shockwave Speed: 0.0
+$Allowed PBanks: ( "Reaper" "Scythe" "Thresher" ) ( "Reaper" "Scythe" ) ( "TRed#Uriel" ) 
+$Default PBanks: ( "Thresher" "Scythe" "TRed#Uriel" )
+$Pbank Capacity: ( 100, 200, 0 )
+$Show Primary Models: ( yes yes no )
+$Allowed SBanks: ( "MK-122" "Hegemony" "Paveway" )
+$Default SBanks: ( "Paveway" "Paveway" "Hegemony" )
+$SBank Capacity: ( 40, 40, 80 )
+$Show Secondary Models: ( yes yes yes )
+$Shields: 500
+$Shield Color: 100 100 255
+$Power Output: 5.0
+$Max Oclk Speed: 120.0
+$Max Weapon Eng: 210.0
+$Hitpoints: 740
+$Armor Type: Bomber Plate
+$Flags: ( "bomber" "generate icon" "player_ship" "in tech database" )
+$AI Class: Captain
+$Afterburner: YES
+ +Aburn Max Vel: 0.0, 0.0, 175.0
+ +Aburn For accel: 0.6
+ +Aburn Fuel: 465.0
+ +Aburn Burn Rate: 72.0
+ +Aburn Rec Rate: 35.0
+$Trails:
+ +Bitmap: ABTrail
+ +Width: 1.0
+ +Alpha: 1.0
+ +Life: 1
+$Countermeasures: 30
+$Scan time: 2000
+$EngineSnd: 126 
+;$CockpitEngineSnd: <--- Cpit Engine Sound
+;$AfterburnerSnd: <--- looping sound
+;$AfterburnerEngageSnd: <--- burners start sound
+;$AfterburnerFailedSnd: <--- burners broke sound
+;$PrimaryCycleSnd: <--- Cycle sound, guns
+;$SecondaryCycleSnd: <--- Cycle Sound, Bottle rockets
+$Closeup_pos: 0.0, 0.0, -40
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: sensors, 25,0.0
+$Subsystem: communications, 25,0.0
+$Subsystem: weapons, 25,0.0
+$Subsystem: navigation, 25,0.0
+$Subsystem: engine01, 35,0.0
+$Subsystem: engine02, 35,0.0
+$Subsystem: Turret01, 35.0, 2.5 
+$Alt Damage Popup Subsystem Name: Turret
+ $Default PBanks: ( "Scythe" ) 
+ $Turret Reset Delay: 1500
+ $Flags: ( "check hull" "salvo mode" "fire down normals" "fire on target" "reset when idle" "play fire sound for player" )
+ $animation: triggered 
+ $type: initial 
+ +relative_angle: 90,180,0 
+$Subsystem: poddoorf,15,2
+ $Alt Damage Popup Subsystem Name: POD DOOR
+ $Flags: ( "untargetable" ) 
+ $animation: triggered
+ $type: Primary_bank
+ +sub_type: 2 ;<--- defines weapon bank to tie animation to, 0-2
+ +delay: 200
+ +reverse_delay: 1000 ;<--- see above, but backwards
+ +relative_angle: 24.26,0,0 ;<--- derp
+ +velocity: 36.38,0,0 ;<--- degrees per second matching angle = 1 second for 24.26
+ +acceleration: 20,0,0 ;<--- degreed per second squared
+ +time: 2000 ;<--- defines time animation starts to when you can fire, milliseconds
+$Subsystem: poddoorl,15,2
+ $Alt Damage Popup Subsystem Name: POD DOOR
+ $Flags: ( "untargetable" ) 
+ $animation: triggered
+ $type: Primary_bank
+ +sub_type: 2
+ +delay: 0
+ +reverse_delay: 800 
+ +relative_angle: 0,0,-90
+ +velocity: 0,0,135
+ +acceleration: 0,0,100
+ +time: 2000
+$Subsystem: poddoorr,15,2
+$Alt Damage Popup Subsystem Name: POD DOOR
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Primary_bank
+ +sub_type: 2
+ +delay: 0
+ +reverse_delay: 800 
+ +relative_angle: 0,0,90
+ +velocity: 0,0,135
+ +acceleration: 0,0,100
+ +time: 2000
+$Subsystem: armcoverl,6,2
+ $Alt Damage Popup Subsystem Name: COVER PLATE
+ $Flags: ( "untargetable" ) 
+ $animation: triggered
+ $type: Primary_bank
+ +sub_type: 2
+ +delay: 0
+ +reverse_delay: 1000 
+ +relative_angle: 0,0,-90
+ +velocity: 0,0,180
+ +acceleration: 0,0,100
+ +time: 2000
+$Subsystem: armcoverr,6,2
+$Alt Damage Popup Subsystem Name: COVER PLATE
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Primary_bank
+ +sub_type: 2
+ +delay: 0
+ +reverse_delay: 1000 
+ +relative_angle: 0,0,90
+ +velocity: 0,0,180
+ +acceleration: 0,0,100
+ +time: 2000
+$Subsystem: barrel,100,2
+$Alt Damage Popup Subsystem Name: ARCHER BARREL
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Primary_bank
+ +sub_type: 2
+ +delay: 900
+ +relative_angle: 0.80,0,0 
+ +velocity: 0.80,0,0
+ +acceleration: 0.44,0,0
+ +time: 2000
+$Subsystem: barrelclamp,100,2
+$Alt Damage Popup Subsystem Name: MAGNETIC BOOSTER
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Primary_bank
+ +sub_type: 2
+ +delay: 1100
+ +relative_angle: 0.22,0,0
+ +velocity: 0.22,0,0
+ +acceleration: 0.12,0,0
+ +time: 2000
+$Subsystem: gunbzrdr,10,2
+$Alt Damage Popup Subsystem Name: BUZZARD
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Primary_bank
+ +sub_type: 2
+ +delay: 0
+ +relative_angle: 3,8,0
+ +velocity: 3,8,0
+ +acceleration: 3,8,0
+ +time: 2000
+$Subsystem: gunbzrdl,10,2
+$Alt Damage Popup Subsystem Name: BUZZARD
+$Flags: ( "untargetable" ) 
+$animation: triggered
+ $type: Primary_bank
+ +sub_type: 2
+ +delay: 0
+ +relative_angle: 3,-8,0
+ +velocity: 3,8,0
+ +acceleration: 3,8,0
+ +time: 2000
+ 
+;FEDERAL BIG SHIPS
+ 
+$Name: UN Beijing
+$Alt Name: Corvette
+$Short name: Ship
+$Species: Terran-IFN
++Tech Title: UN Beijing
++Tech Description: XSTR("
+Beijing-class
+Corvette
+
+The Beijing class corvettes constitute the bulk of the Federation Fleet. Designed to be built quickly and cheaply, the Beijing class is capable of both missile interception and close range fire support. Although planned to be succeeded by the new Skory class frigate, the MIND incursion forced the cancellation of the Skory project and the continued production of the Beijing. The Beijing class plays an important role in escorting survey and logistics ships, maintaining pickets, and carrying out combat operations.
+", -1)
+$end_multi_text
+$POF file: GunshipT1-Prominence.pof
+$Detail distance: (0, 600, 1500, 5000)
+$Show damage: YES
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 1.0
+$Max Velocity: 0.0, 0.0, 55.0
+$Rotation time: 30.0, 30.0, 30.0
+$Rear Velocity: 0.0
+$Forward accel: 5.0
+$Forward decel: 2.5
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Warpin type: Galactica
+$Warpin Start Sound: 216
+$Warpin time: 0.3667
+$Warpin animation: FTL
+$Warpout type: Galactica
+$Warpout Start Sound: 217
+$Warpout time: 0.3667
+$Warpout animation: FTL
+$Expl inner rad: 100.0
+$Expl outer rad: 500.0
+$Expl damage: 100.0
+$Expl blast: 800.0
+$Expl Propagates: YES
+$Shockwave Speed: 400.0
+$Default PBanks: ()
+$Default SBanks: ()
+$SBank Capacity: ()
+$Shields: 0
+$Power Output: 90.0
+$Max Oclk Speed: 55.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 20000
+$Armor Type: Light Plate
+$Flags: ( "cruiser" "generate icon" "in tech database" )
+$AI Class: Captain
+$Afterburner: NO
+$Countermeasures: 0
+$Scan time: 2000
+$EngineSnd: 128
+$Closeup_pos: 0.0, 0.0, -190
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: Turret01, 2, 1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak Turret" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+$animation: triggered
+$type: initial
+ +relative_angle: 80,0,0
+$Subsystem: Turret02, 2, 1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak Turret" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+$animation: triggered
+$type: initial
+ +relative_angle: 80,180,0
+$Subsystem: Turret03, 2, 1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak Turret" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+$animation: triggered
+$type: initial
+ +relative_angle: 80,0,0
+$Subsystem: Turret04, 2, 1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak Turret" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+$animation: triggered
+$type: initial
+ +relative_angle: 80,0,0
+$Subsystem: Turret05, 2, 1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak Turret" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+$animation: triggered
+$type: initial
+ +relative_angle: 80,0,0
+$Subsystem: Turret06, 2, 1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak Turret" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+$animation: triggered
+$type: initial
+ +relative_angle: 80,0,0
+$Subsystem: Turret07, 2, 1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Weak Turret" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "salvo mode" "reset when idle" "fire on target" "only target if can fire" "target requires fov" )
+$animation: triggered
+$type: initial
+ +relative_angle: 80,0,0
+$Subsystem: Turret08a, 2.5, 0.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Plasma Turret" )
+ $Flags: ("check hull")
+$Subsystem: Turret09a, 2.5, 0.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Plasma Turret" )
+ $Flags: ("check hull")
+$Subsystem: Turret10a, 5, 3.0
+ $Alt Subsystem Name: Meson Beam
+ $Default PBanks: ( "TRed" )
+ $Flags: ("check hull")
+$animation: triggered
+$type: initial
+ +relative_angle: 80,180,0
+$Subsystem: Turret11a, 7.5, 0.0
+ $Alt Subsystem Name: Meson Beam
+ $Default PBanks: ( "HMeson" )
+ $Flags: ("check hull")
+$Subsystem: Radararray, 1, 0.0
+$Subsystem: Sensors, 5, 0
+$Subsystem: Communication, 5, 0.0
+$Subsystem: Navigation, 5, 0.0
+$Subsystem: Weapons, 10, 0.0
+$Subsystem: Engine01a, 5, 0.0
+$Subsystem: Engine02a, 5, 0.0
+
+$Name: UN Vishnu
+$Alt Name: Heavy Frigate
+$Short name: EACorv2
+$Species: Terran-IFN
++Tech Title: UN Vishnu
++Tech Description: XSTR("
+Vishnu-class
+Heavy Frigate
+
+The Federation's next generation of warships, the Vishnu-class frigate is intended to provide a medium-range warship capable of bridging the lack of heavy fire capabilities of the Beijing and the high cost of the Borisov. Designed to supplement both ships, the Vishnu's heavy firepower made it invaluable against the MIND during the first stages of the incursion, even in spite of heavy losses due to its relatively weak armour plating.
+", -1)
+$end_multi_text
+$POF file: Impervious_REV.pof
+$Detail distance: (0, 4300, 8000, 22000)
+$Show damage: YES
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 2.0
+$Max Velocity: 0.0, 0.0, 60.0
+$Rotation time: 50.0, 50.0, 45.0
+$Forward accel: 8.0
+$Forward decel: 4.0
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Warpin type: Galactica
+$Warpin Start Sound: 216
+$Warpin time: 0.3667
+$Warpin animation: FTL
+$Warpout type: Galactica
+$Warpout Start Sound: 217
+$Warpout time: 0.3667
+$Warpout animation: FTL
+$Expl inner rad: 100.0
+$Expl outer rad: 300.0
+$Expl damage: 120.0
+$Expl blast: 6500.0
+$Expl Propagates: YES
+$Shockwave Speed: 200.0
+$Shockwave Count: 2
+$Default PBanks: ()
+$Default SBanks: ()
+$SBank Capacity: ()
+$Shields: 0
+$Power Output: 100.0
+$Max Oclk Speed: 60.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 50000
+$Armor Type: Medium Plate
+$Flags: ( "generate icon" "cruiser" "in tech database" )
+$AI Class: Captain
+$Afterburner: NO
+$Countermeasures: 0
+$Scan time: 2000
+$EngineSnd: 128
+$Closeup_pos: 0.0, 0.0, -380
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: turret01,15.0,1.0
+ $Alt Subsystem Name: Heavy Cannon
+ $Default PBanks: ( "VishnuCannon" )
+ $Flags: ( "check hull" "no subsystem targeting" )
+$Subsystem: turret02,2.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Plasma Turret" )
+ $Flags: ("check hull")
+$Subsystem: turret03,2.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Plasma Turret" )
+ $Flags: ("check hull")
+$Subsystem: turret04,2.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Plasma Turret" )
+ $Flags: ("check hull")
+$Subsystem: turret05,2.5,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Plasma Turret" )
+ $Flags: ("check hull")
+$Subsystem: turret06,15.0,1.0
+ $Alt Subsystem Name: Heavy Cannon
+ $Default PBanks: ( "VishnuCannon" )
+ $Flags: ( "check hull" "no subsystem targeting" )
+$Subsystem: engines, 15,0.0
+$Subsystem: communications, 5,0.0
+$Subsystem: sensors, 5,0.0
+$Subsystem: navigation, 5,0.0
+$Subsystem: weapons, 10,0.0
+$Subsystem: rotatora, 33,0.0
+
+$Name: UN Kirov
+$Alt Name: Armoured Cruiser
+$Short name: TCov_Inter
+$Species: Terran-IFN
++Tech Title: UN Kirov
++Tech Description: XSTR("
+Kirov-class
+Armoured Cruiser
+
+The Kirov's heavy armour plating makes it a good ship
+", -1)
+$end_multi_text
+$POF file: Kadmos.pof
+$Detail distance: (0, 2500)
+$Show damage: YES
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 2.0
+$Max Velocity: 0.0, 0.0, 30.0
+$Rotation time: 38.0, 38.0, 45.0
+$Rear Velocity: 0.0
+$Forward accel: 8.0
+$Forward decel: 4.0
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Warpin type: Galactica
+$Warpin Start Sound: 216
+$Warpin time: 0.3667
+$Warpin animation: FTL
+$Warpout type: Galactica
+$Warpout Start Sound: 217
+$Warpout time: 0.3667
+$Warpout animation: FTL
+$Expl inner rad: 150.0
+$Expl outer rad: 750.0
+$Expl damage: 200.0
+$Expl blast: 11000.0
+$Expl Propagates: YES 
+$Shockwave Speed: 400.0
+$Shockwave Count: 2
+$Default PBanks: ()
+$Default SBanks: ()
+$SBank Capacity: ()
+$Shields: 0
+$Power Output: 100.0
+$Max Oclk Speed: 40.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 90000
+$Armor Type: Heavy Plate
+$Flags: ( "generate icon" "cruiser" "in tech database" )
+$AI Class: Captain
+$Afterburner: NO
+$Countermeasures: 0
+$Scan time: 2000
+$EngineSnd: 128
+$Closeup_pos: 0.0, 0.0, -1215
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: turret01,15.0,1.0
+ $Alt Subsystem Name: Heavy Cannon
+ $Default PBanks: ( "VishnuCannon" )
+ $Flags: ( "check hull" "no subsystem targeting" )
+$Subsystem: turret02,15.0,1.0
+ $Alt Subsystem Name: Heavy Cannon
+ $Default PBanks: ( "VishnuCannon" )
+ $Flags: ( "check hull" "no subsystem targeting" )
+$Subsystem: turret03,15.0,1.0
+ $Alt Subsystem Name: Heavy Cannon
+ $Default PBanks: ( "VishnuCannon" )
+ $Flags: ( "check hull" "no subsystem targeting" )
+$Subsystem: turret04,2.0,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Plasma Turret" )
+ $Flags: ("check hull")
+$Subsystem: turret05,2.0,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Plasma Turret" )
+ $Flags: ("check hull")
+$Subsystem: turret06,2.0,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Plasma Turret" )
+ $Flags: ("check hull")
+$Subsystem: turret07,2.0,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Plasma Turret" )
+ $Flags: ("check hull")
+$Subsystem: turret08,2.0,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Plasma Turret" )
+ $Flags: ("check hull")
+$Subsystem: turret09,2.0,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Plasma Turret" )
+ $Flags: ("check hull")
+$Subsystem: turret10,2.0,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Plasma Turret" )
+ $Flags: ("check hull")
+$Subsystem: turret11,2.0,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Plasma Turret" )
+ $Flags: ("check hull")
+$Subsystem: turret12,2.0,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Plasma Turret" )
+ $Flags: ("check hull")
+$Subsystem: turret13,2.0,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Plasma Turret" )
+ $Flags: ("check hull")
+$Subsystem: turret14,2.0,1.0
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Plasma Turret" )
+ $Flags: ("check hull")
+$Subsystem: engine, 5,0.0
+$Subsystem: communications, 5,0.0
+$Subsystem: sensors, 5,0.0
+$Subsystem: navigation, 5,0.0
+$Subsystem: weapons, 5,0.0
+
+$Name: UN Borisov
+$Alt Name: Heavy Cruiser
+$Short name: FTEscort
+$Species: Terran-IFN
++Tech Title: UN Borisov
++Tech Description: XSTR("
+Borisov-class
+Heavy Cruiser
+
+The Borisov class cruiser is the Federation's most powerful warship design. Upon entering service, it was superior to anything in the Union's fleet, and capable of destroying anything in the Union fleet with ease. Its only weaknesses are a lack of anti-strikecraft defence weapons, and a vulnerability to flanking attacks as the bulk of its firepower is concentrated in its forward quarter.
+", -1)
+$end_multi_text
+$POF file: NeoRheaZ.pof
+$Detail distance: (0, 2000, 8000, 16000)
+$Show damage: YES
+$Density: 1.2
+$Damp: 0.4
+$Rotdamp: 2.4
+$Max Velocity: 0.0, 0.0, 60.0
+$Rotation time: 45.0, 45.0, 45.0
+$Rear Velocity: 0.0
+$Forward accel: 9.0
+$Forward decel: 4.5
+$Expl inner rad: 150.0
+$Expl outer rad: 450.0
+$Expl damage: 125.0
+$Expl blast: 12500.0
+$Expl Propagates: YES
+$Shockwave Speed: 180.0
+$Shockwave Count: 4
+$Default PBanks: ()
+$Default SBanks: ()
+$SBank Capacity: ()
+$Power Output: 100.0
+$Max Oclk Speed: 60.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 70000
+$Armor Type: Heavy Plate
+$Flags: ( "cruiser" "generate icon" "in tech database" )
+$AI Class: Captain
+$Afterburner: NO
+$Countermeasures: 0
+$Scan time: 2000
+$EngineSnd: 136
+$Closeup_pos: 0.0, 0.0, -600
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: engine01, 5,0.0
+$Subsystem: engine02, 5,0.0
+$Subsystem: sensors, 5, 0 
+$Subsystem: weapons, 5, 0 
+$Subsystem: communication, 5, 0
+$Subsystem: navigation, 5, 0
+$Subsystem: turret01,5.0,1.0 
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Plasma Turret" "UN Plasma Turret" "UN Plasma Turret" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+$animation: triggered
+$type: initial
+ +relative_angle: 80,0,0
+$Subsystem: turret02,5.0,1.0 
+ $Alt Subsystem Name: AA Gun
+ $Default PBanks: ( "UN Plasma Turret" "UN Plasma Turret" "UN Plasma Turret" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+$animation: triggered
+$type: initial
+ +relative_angle: 80,0,0
+$Subsystem: turret03,5.0,1.0 
+$Default SBanks: ( "Hammer SSM" ) 
+ $Flags: ( "check hull" )
+$Subsystem: turret04,5.0,1.0 
+$Default SBanks: ( "Hammer SSM" ) 
+ $Flags: ( "check hull" )
+$Subsystem: turret05,5.0,1.0 
+$Default SBanks: ( "Hammer SSM" ) 
+ $Flags: ( "check hull" )
+$Subsystem: turret06,5.0,1.0 
+$Default SBanks: ( "Hammer SSM" ) 
+ $Flags: ( "check hull" )
+
+$Name: Federal Garrison
+$Alt Name: Garrison
+$Short name: gefbase
+$Species: Terran-IFN
+$POF file: gefhabitat.pof
+$Detail distance: (0)
+$Density: 2
+$Damp: 0.2
+$Rotdamp: 0.2
+$Max Velocity: 0.0, 0.0, 0.0
+$Rotation time: 100.0, 100.0, 100.0
+$Rear Velocity: 0.0
+$Forward accel: 0.0
+$Forward decel: 0.0
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Expl inner rad: 50.0
+$Expl outer rad: 400.0
+$Expl damage: 50.0
+$Expl blast: 1000.0
+$Expl Propagates: YES
+$Shockwave Speed: 250.0
+$Default PBanks: ()
+$Default SBanks: ()
+$SBank Capacity: ()
+$Shields: 0
+$Power Output: 0.0
+$Max Oclk Speed: 0.0
+$Max Weapon Eng: 0.0
+$Hitpoints: 40000
+$Armor Type: Medium Plate
+$Flags: ( "capital" "generate icon" )
+$AI Class: None
+$Afterburner: NO
+$Countermeasures: 0
+$Scan time: 2000
+$EngineSnd: -1
+$Closeup_pos: 0.0, 1.0, -800
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: sensors, 7.5, 0
+$Subsystem: communication, 5, 0
+
+;;MIND SMALL SHIPS
+
+$Name: MIND Serapis
+$Alt Name: Attack Fighter
+$Short name: VFight21
+$Species: Shivan
++Tech Title: MIND Serapis
++Tech Description: XSTR("
+Serapis-type
+Attack fighter
+ 
+onths without support.
+", -1)
+$end_multi_text
+$POF file: Serapis.pof
+$Detail distance: ( 0, 68, 201, 617 )
+$Show damage: YES
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 0.4
+$Max Velocity: 0.0, 0.0, 130.0
+$Rotation time: 4.0, 3.2, 4.4
+$Rear Velocity: 0.0
+$Forward accel: 3.0
+$Forward decel: 1.5
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Warpin Type: Knossos
+$Warpin Start Sound: 222
+$Warpin End Sound: 223
+$Warpout Type: Knossos
+$Warpout Start Sound: 222
+$Warpout End Sound: 223
+$Expl inner rad: 25.0
+$Expl outer rad: 55.0
+$Expl damage: 15.0
+$Expl blast: 1000.0
+$Expl Propagates: NO
+$Shockwave Speed: 0.0
+$Allowed PBanks: ( "MIND Gun" ) ( "MIND Ripper" )
+$Default PBanks: ( "MIND Gun" "MIND Ripper" )
+$Allowed SBanks: ( "MIND FoF" "MIND Seeker")
+$Default SBanks: ( "MIND FoF" "MIND Seeker")
+$SBank Capacity: ( 40, 40 )
+$Shields: 0
+$Power Output: 3.4
+$Max Oclk Speed: 150.0
+$Max Weapon Eng: 150.0
+$Hitpoints: 375
+$Armor Type: Fighter Plate
+$Flags: ( "generate icon" "in tech database" "fighter" )
+$AI Class: Captain
+$Afterburner: YES
+ +Aburn Max Vel: 0.0, 0.0, 170.0
+ +Aburn For accel: 0.7
+ +Aburn Fuel: 300.0
+ +Aburn Burn Rate: 50.0
+ +Aburn Rec Rate: 25.0
+ $Trails:
+ +Bitmap: ABvastrail
+ +Width: 1.0
+ +Alpha: 1.0
+ +Life: 1
+$Countermeasures: 20
+$Scan time: 2000
+$EngineSnd: 129
+$Closeup_pos: 0.0, 0.0, -27
+$Closeup_zoom: 0.5
+$Score: 0
+$Trail:
+ +Offset: 9.9 -0.2 2
+ +Start Width: 0.25
+ +End Width: 0.05
+ +Start Alpha: 1.0
+ +End Alpha: 0.0
+ +Max Life: 1.0
+ +Spew Time: 120
+ +Bitmap: Contrail01
+$Trail:
+ +Offset: -9.9 -0.2 2
+ +Start Width: 0.25
+ +End Width: 0.05
+ +Start Alpha: 1.0
+ +End Alpha: 0.0
+ +Max Life: 1.0
+ +Spew Time: 120
+ +Bitmap: Contrail01
+$Subsystem: weapons, 25,0.0
+$Subsystem: sensors, 15,0.0
+$Subsystem: communication, 15,0.0
+$Subsystem: navigation, 15,0.0
+$Subsystem: engine, 35,0.0
+
+$Name: MIND Thoth
+$Alt Name: Heavy Fighter
+$Short name: VFight9
+$Species: Shivan
++Tech Title: MIND Thoth
++Tech Description: XSTR("
+Thoth-type
+Heavy Fighter
+
+onths without support.
+", -1)
+$end_multi_text
+$POF file: fighter09.pof
+$Detail distance: ( 0, 66, 202, 636 )
+$Show damage: YES
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 0.4
+$Max Velocity: 0.0, 0.0, 115.0
+$Rotation time: 3.7, 3.7, 3.0
+$Rear Velocity: 0.0
+$Forward accel: 3.0
+$Forward decel: 1.5
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Warpin Type: Knossos
+$Warpin Start Sound: 222
+$Warpin End Sound: 223
+$Warpout Type: Knossos
+$Warpout Start Sound: 222
+$Warpout End Sound: 223
+$Expl inner rad: 25.0
+$Expl outer rad: 55.0
+$Expl damage: 15.0
+$Expl blast: 1000.0
+$Expl Propagates: NO
+$Shockwave Speed: 0.0
+$Allowed PBanks: ( "MIND Gun" )
+$Default PBanks: ( "MIND Gun" )
+$Allowed SBanks: ( "MIND FoF" "MIND Seeker" )
+$Default SBanks: ( "MIND Seeker" )
+$SBank Capacity: ( 60 )
+$Shields: 0
+$Power Output: 2.5
+$Max Oclk Speed: 140.0
+$Max Weapon Eng: 150.0
+$Hitpoints: 500
+$Armor Type: Fighter Plate
+$Flags: ( "generate icon" "in tech database" "fighter" )
+$AI Class: Captain
+$Afterburner: YES
+ +Aburn Max Vel: 0.0, 0.0, 160.0
+ +Aburn For accel: 0.7
+ +Aburn Fuel: 300.0
+ +Aburn Burn Rate: 50.0
+ +Aburn Rec Rate: 25.0
+ $Trails:
+ +Bitmap: ABvastrail
+ +Width: 1.0
+ +Alpha: 1.0
+ +Life: 1
+$Countermeasures: 20
+$Scan time: 2000
+$EngineSnd: 129
+$Closeup_pos: 0.0, 0.0, -27
+$Closeup_zoom: 0.5
+$Score: 0
+$Trail:
+ +Offset: -6.2 .20 -2.18
+ +Start Width: 0.25
+ +End Width: 0.05
+ +Start Alpha: 1.0
+ +End Alpha: 0.0
+ +Max Life: 1.0
+ +Spew Time: 120
+ +Bitmap: Contrail01
+$Trail:
+ +Offset: 6.2 .20 -2.18
+ +Start Width: 0.25
+ +End Width: 0.05
+ +Start Alpha: 1.0
+ +End Alpha: 0.0
+ +Max Life: 1.0
+ +Spew Time: 120
+ +Bitmap: Contrail01
+$Subsystem: weapons, 25,0.0
+$Subsystem: sensors, 15,0.0
+$Subsystem: communications, 15,0.0
+$Subsystem: navigation, 15,0.0
+$Subsystem: engine, 35,0.0
+
+$Name: MIND Osiris
+$Alt Name: Heavy Bomber
+$Short name: VBomb6
+$Species: Shivan
++Tech Title: MIND Osiris
++Tech Description: XSTR("
+Osiris-type
+Heavy Bomber
+
+onths without support.
+", -1)
+$end_multi_text
+$POF file: Osiris.pof
+$Detail distance: ( 0, 119, 266, 622 )
+$Show damage: YES
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 0.55
+$Max Velocity: 0.0, 0.0, 105.0
+$Rotation time: 5.5, 5.5, 5.5
+$Rear Velocity: 0.0
+$Forward accel: 4.0
+$Forward decel: 2.0
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Warpin Type: Knossos
+$Warpin Start Sound: 222
+$Warpin End Sound: 223
+$Warpout Type: Knossos
+$Warpout Start Sound: 222
+$Warpout End Sound: 223
+$Expl inner rad: 75.0
+$Expl outer rad: 125.0
+$Expl damage: 20.0
+$Expl blast: 1500.0
+$Expl Propagates: NO
+$Shockwave Speed: 0.0
+$Allowed PBanks: ( "MIND Heavy Gun" )
+$Default PBanks: ( "MIND Heavy Gun" )
+$Allowed SBanks: ( "MIND Bomb" ) ( "MIND Bomb" ) ( "MIND FoF" "MIND Seeker" )
+$Default SBanks: ( "MIND Bomb" "MIND Bomb" "MIND Seeker" )
+$SBank Capacity: ( 10, 10, 40 )
+$Shields: 0
+$Power Output: 3.0
+$Max Oclk Speed: 120.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 1000
+$Armor Type: Bomber Plate
+$Flags: ( "bomber" "in tech database" "generate icon" )
+$AI Class: Captain
+$Afterburner: YES
+ +Aburn Max Vel: 0.0, 0.0, 140.0
+ +Aburn For accel: 0.7
+ +Aburn Fuel: 300.0
+ +Aburn Burn Rate: 50.0
+ +Aburn Rec Rate: 25.0
+$Countermeasures: 35
+$Scan time: 2000
+$EngineSnd: 130
+$Closeup_pos: 0.0, 0.0, -64
+$Closeup_zoom: 0.5
+$Score: 0
+$Trail:
+ +Offset: 12.23 -7.32 -10.66
+ +Start Width: 0.25
+ +End Width: 0.05
+ +Start Alpha: 1.0
+ +End Alpha: 0.0
+ +Max Life: 1.0
+ +Spew Time: 120
+ +Bitmap: Contrail01
+$Trail:
+ +Offset: -12.23 -7.32 -10.66
+ +Start Width: 0.25
+ +End Width: 0.05
+ +Start Alpha: 1.0
+ +End Alpha: 0.0
+ +Max Life: 1.0
+ +Spew Time: 120
+ +Bitmap: Contrail01
+$Subsystem: Turret01,5,1.0
+ $Default PBanks: ( "MIND Gun" )
+ $Turret Base RotationSnd: 250
+ $Turret Gun RotationSnd: 251
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+$Subsystem: Turret02,5,1.0
+ $Default PBanks: ( "MIND Gun" )
+ $Turret Base RotationSnd: 250
+ $Turret Gun RotationSnd: 251
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+$Subsystem: weapons, 25,0.0
+$Subsystem: sensors, 15,0.0
+$Subsystem: navigation, 15,0.0
+$Subsystem: communication, 15,0.0
+$Subsystem: engine, 35,0.0
+$Subsystem: uflap01-L, 0, 2
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: secondary-bank
+ +sub_type: 0
+ +delay: 0
+ +relative_angle: -54.736,-30.0,54.736
+ +velocity: 80,80,0
+ +acceleration: 40,40,0
+ +time: 250
+$Subsystem: uflap02-L, 0, 2
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: secondary-bank
+ +sub_type: 0
+ +delay: 0
+ +relative_angle: 54.736,-30.0,54.736
+ +velocity: 80,80,0
+ +acceleration: 40,40,0
+ +time: 250
+$Subsystem: uflap03-L, 0, 2
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: secondary-bank
+ +sub_type: 0
+ +delay: 0
+ +relative_angle: -54.736,30.0,-54.736
+ +velocity: 80,80,0
+ +acceleration: 40,40,0
+ +time: 250
+$Subsystem: uflap04-L, 0, 2
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: secondary-bank
+ +sub_type: 0
+ +delay: 0
+ +relative_angle: 54.736,30.0,-54.736
+ +velocity: 80,80,0
+ +acceleration: 40,40,0
+ +time: 250
+$Subsystem: uflap01-R, 0, 2
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: secondary-bank
+ +sub_type: 0
+ +delay: 0
+ +relative_angle: -54.736,-30.0,54.736
+ +velocity: 80,80,0
+ +acceleration: 40,40,0
+ +time: 250
+$Subsystem: uflap02-R, 0, 2
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: secondary-bank
+ +sub_type: 0
+ +delay: 0
+ +relative_angle: 54.736,-30.0,54.736
+ +velocity: 80,80,0
+ +acceleration: 40,40,0
+ +time: 250
+$Subsystem: uflap03-R, 0, 2
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: secondary-bank
+ +sub_type: 0
+ +delay: 0
+ +relative_angle: -54.736,30.0,-54.736
+ +velocity: 80,80,0
+ +acceleration: 40,40,0
+ +time: 250
+$Subsystem: uflap04-R, 0, 2
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: secondary-bank
+ +sub_type: 0
+ +delay: 0
+ +relative_angle: 54.736,30.0,-54.736
+ +velocity: 80,80,0
+ +acceleration: 40,40,0
+ +time: 250
+;---Animation : Middle Pod ========================================
+$Subsystem: mflap01-L, 0, 2
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: secondary-bank
+ +sub_type: 1
+ +delay: 0
+ +relative_angle: -54.736,-30.0,54.736
+ +velocity: 80,80,0
+ +acceleration: 40,40,0
+ +time: 250
+$Subsystem: mflap02-L, 0, 2
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: secondary-bank
+ +sub_type: 1
+ +delay: 0
+ +relative_angle: 54.736,-30.0,54.736
+ +velocity: 80,80,0
+ +acceleration: 40,40,0
+ +time: 250
+$Subsystem: mflap03-L, 0, 2
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: secondary-bank
+ +sub_type: 1
+ +delay: 0
+ +relative_angle: -54.736,30.0,-54.736
+ +velocity: 80,80,0
+ +acceleration: 40,40,0
+ +time: 250
+$Subsystem: mflap04-L, 0, 2
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: secondary-bank
+ +sub_type: 1
+ +delay: 0
+ +relative_angle: 54.736,30.0,-54.736
+ +velocity: 80,80,0
+ +acceleration: 40,40,0
+ +time: 250
+$Subsystem: mflap01-R, 0, 2
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: secondary-bank
+ +sub_type: 1
+ +delay: 0
+ +relative_angle: -54.736,-30.0,54.736
+ +velocity: 80,80,0
+ +acceleration: 40,40,0
+ +time: 250
+$Subsystem: mflap02-R, 0, 2
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: secondary-bank
+ +sub_type: 1
+ +delay: 0
+ +relative_angle: 54.736,-30.0,54.736
+ +velocity: 80,80,0
+ +acceleration: 40,40,0
+ +time: 250
+$Subsystem: mflap03-R, 0, 2
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: secondary-bank
+ +sub_type: 1
+ +delay: 0
+ +relative_angle: -54.736,30.0,-54.736
+ +velocity: 80,80,0
+ +acceleration: 40,40,0
+ +time: 250
+$Subsystem: mflap04-R, 0, 2
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: secondary-bank
+ +sub_type: 1
+ +delay: 0
+ +relative_angle: 54.736,30.0,-54.736
+ +velocity: 80,80,0
+ +acceleration: 40,40,0
+ +time: 250
+;---Animation : Lower Bank ========================================
+$Subsystem: dflap01-L, 0, 2
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: secondary-bank
+ +sub_type: 2
+ +delay: 0
+ +relative_angle: -54.736,-30.0,54.736
+ +velocity: 80,80,0
+ +acceleration: 40,40,0
+ +time: 250
+$Subsystem: dflap02-L, 0, 2
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: secondary-bank
+ +sub_type: 2
+ +delay: 0
+ +relative_angle: 54.736,-30.0,54.736
+ +velocity: 80,80,0
+ +acceleration: 40,40,0
+ +time: 250
+$Subsystem: dflap03-L, 0, 2
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: secondary-bank
+ +sub_type: 2
+ +delay: 0
+ +relative_angle: -54.736,30.0,-54.736
+ +velocity: 80,80,0
+ +acceleration: 40,40,0
+ +time: 250
+$Subsystem: dflap04-L, 0, 2
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: secondary-bank
+ +sub_type: 2
+ +delay: 0
+ +relative_angle: 54.736,30.0,-54.736
+ +velocity: 80,80,0
+ +acceleration: 40,40,0
+ +time: 250
+$Subsystem: dflap01-R, 0, 2
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: secondary-bank
+ +sub_type: 2
+ +delay: 0
+ +relative_angle: -54.736,-30.0,54.736
+ +velocity: 80,80,0
+ +acceleration: 40,40,0
+ +time: 250
+$Subsystem: dflap02-R, 0, 2
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: secondary-bank
+ +sub_type: 2
+ +delay: 0
+ +relative_angle: 54.736,-30.0,54.736
+ +velocity: 80,80,0
+ +acceleration: 40,40,0
+ +time: 250
+$Subsystem: dflap03-R, 0, 2
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: secondary-bank
+ +sub_type: 2
+ +delay: 0
+ +relative_angle: -54.736,30.0,-54.736
+ +velocity: 80,80,0
+ +acceleration: 40,40,0
+ +time: 250
+$Subsystem: dflap04-R, 0, 2
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: secondary-bank
+ +sub_type: 2
+ +delay: 0
+ +relative_angle: 54.736,30.0,-54.736
+ +velocity: 80,80,0
+ +acceleration: 40,40,0
+ +time: 250
+;---Animation : Afterburner ========================================
+$Subsystem: Spoiler01, 0, 1.0
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: afterburner
+ +delay: 0
+ +relative_angle: -35, 0, 0
+ +velocity: 100, 0, 0
+ +acceleration: 250, 0, 0
+ +time: 500
+$Subsystem: L_flap, 0, 1.0
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: afterburner
+ +delay: 0
+ +relative_angle: 0, 24, 0
+ +velocity: 100, 100, 0
+ +acceleration: 250, 250, 0
+ +time: 500
+$Subsystem: R_flap, 0, 1.0
+ $Flags: ( "untargetable" )
+ $animation: triggered
+ $type: afterburner
+ +delay: 0
+ +relative_angle: 0, -24, 0
+ +velocity: 100, 100, 0
+ +acceleration: 250, 250, 0
+ +time: 500
+
+$Name: MIND Setep
+$Alt Name: Superbomber
+$Short name: INFSetep
+$Species: Shivan
++Tech Title: MIND Setep
++Tech Description: XSTR("
+Setep-type
+Superbomber
+
+onths without support.
+", -1)
+$end_multi_text
+$POF file: INF_Setep.pof
+$Detail distance: (0, 100, 300, 900)
+$Show damage: YES
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 0.55
+$Max Velocity: 0.0, 0.0, 130.0
+$Rotation time: 7.2, 7.2, 7.2
+$Rear Velocity: 0.0
+$Forward accel: 6.0
+$Forward decel: 1.0
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Warpin Type: Knossos
+$Warpin Start Sound: 220
+$Warpin End Sound: 221
+$Warpout Type: Knossos
+$Warpout Start Sound: 220
+$Warpout End Sound: 221
+$Expl inner rad: 55.0
+$Expl outer rad: 105.0
+$Expl damage: 20.0
+$Expl blast: 1500.0
+$Expl Propagates: NO
+$Shockwave Speed: 0.0
+$Allowed PBanks: ( "MIND Ripper" ) ( "MIND Super Gun" )
+$Default PBanks: ( "MIND Ripper" "MIND Super Gun" )
+$Allowed SBanks: ( "MIND FoF" "MIND Seeker" ) ( "MIND Super Bomb" "MIND Bomb" ) ( "MIND Super Bomb" "MIND Bomb" )
+$Default SBanks: ( "MIND FoF" "MIND Super Bomb" "MIND Super Bomb" )
+$SBank Capacity: ( 100, 24, 18 )
+$Shields: 0
+$Shield Color: 100 255 100
+$Power Output: 3.0
+$Max Oclk Speed: 105.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 5000
+$Armor Type: Light Plate
+$Flags: ( "bomber" "generate icon" )
+$AI Class: Captain
+$Afterburner: YES
+ +Aburn Max Vel: 0.0, 0.0, 200.0
+ +Aburn For accel: 1.1
+ +Aburn Fuel: 300.0
+ +Aburn Burn Rate: 30.0
+ +Aburn Rec Rate: 20.0
+$Countermeasures: 35
+$Scan time: 2000
+$EngineSnd: 130
+$Closeup_pos: 0.0, 0.0, -80
+$Closeup_zoom: 0.5
+$Score: 0
+$Trail:
+ +Offset: 4.8 2.0 -23.8
+ +Start Width: 0.25
+ +End Width: 0.05
+ +Start Alpha: 1.0
+ +End Alpha: 0.0
+ +Max Life: 1.0
+ +Spew Time: 120
+ +Bitmap: Contrail01
+$Trail:
+ +Offset: -4.8 2.0 -23.8
+ +Start Width: 0.25
+ +End Width: 0.05
+ +Start Alpha: 1.0
+ +End Alpha: 0.0
+ +Max Life: 1.0
+ +Spew Time: 120
+ +Bitmap: Contrail01
+$Subsystem: weapons, 10,0.0
+$Subsystem: sensors, 5,0.0
+$Subsystem: navigation, 5,0.0
+$Subsystem: communication, 5,0.0
+$Subsystem: engine, 20,0.0
+
+;;MIND BIG SHIPS
+
+$Name: MIND Hemsut
+$Alt Name: Gunship
+$Short name: VGShip
+$Species: Shivan
++Tech Title: MIND Hemsut
++Tech Description: XSTR("
+Hemsut-type
+Gunship
+
+onths without support.
+", -1)
+$end_multi_text
+$POF file: VasGS.pof
+$Detail distance: (0)
+$Show damage: YES
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 1.0
+$Max Velocity: 0.0, 0.0, 65.0
+$Rotation time: 9.0, 9.0, 10.0
+$Rear Velocity: 0.0
+$Forward accel: 12.0
+$Forward decel: 7.0
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Warpin Type: Knossos
+$Warpin Start Sound: 220
+$Warpin End Sound: 221
+$Warpout Type: Knossos
+$Warpout Start Sound: 220
+$Warpout End Sound: 221
+$Expl inner rad: 255.0
+$Expl outer rad: 550.0
+$Expl damage: 220.0
+$Expl blast: 2500.0
+$Expl Propagates: YES
+$Shockwave Speed: 500.0
+$Default PBanks: ()
+$Default SBanks: ()
+$SBank Capacity: ()
+$Shields: 0
+$Shield Color: 100 100 255
+$Power Output: 90.0
+$Max Oclk Speed: 55.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 30000
+$Armor Type: Medium Plate
+$Flags: ( "cruiser" "in tech database" "generate icon" )
+$AI Class: Captain
+$Afterburner: NO
+$Countermeasures: 0
+$Scan time: 2000
+$EngineSnd: 137
+$Closeup_pos: 0.0, 0.0, -195
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: turret01, 10, 2.0
+ $Alt Subsystem Name: Heavy Cannons
+ $Default PBanks: ( "MIND Ripper#LR" )
+ $Flags: ( "salvo mode" )
+$Subsystem: turret02, 10, 2.0
+ $Alt Subsystem Name: Heavy Cannons
+ $Default PBanks: ( "MIND Ripper#LR" )
+ $Flags: ( "salvo mode" )
+$Subsystem: turret03, 5, 1.2
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret04, 5, 2.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret05, 5, 2.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret06, 5, 2.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: sensors, 7, 0
+$Subsystem: communication, 7, 0.0
+$Subsystem: navigation, 7, 0.0
+$Subsystem: weapons, 7, 0.0
+$Subsystem: engine, 30, 0.0
+
+$Name: MIND Cleopatra
+$Alt Name: Light Carrier
+$Short name: Zod-Fg
+$Species: Shivan
++Tech Title: MIND Cleopatra
++Tech Description: XSTR("
+Cleopatra-type
+Light Carrier
+
+The Cleopatra is a MIND carrier vessel, roughly comparable to the Federal Vishnu class frigate in firepower and apparently designed for long term independent operations. Although roughly the same size as the Newet cruiser, the Cleopatra is considerably smaller in terms of internal volume, and its weapons systems are considerably less powerful.
+
+Its small fighterbay is an anomaly among MIND vessels – considerably smaller than any other yet encountered. UN intelligence believes that it could not practically hold more than four fighters at any one time, yet field evidence suggests that a more typical complement is often twice that number.
+", -1) 
+$end_multi_text 
+$POF file: Cleopatra.pof 
+$Detail distance: (0, 1000, 4000, 9000) 
+$Density: 1 
+$Damp: 3
+$Rotdamp: 9
+$Banking Constant: 0.3
+$Max Velocity: 0.0, 0.0, 25.0 
+$Rotation time: 35.0, 35.0, 35.0 
+$Rear Velocity: 0.0 
+$Forward accel: 12.0 
+$Forward decel: 10.0 
+$Slide accel: 0.0 
+$Slide decel: 0.0 
+$Warpin Type: Knossos
+$Warpin Start Sound: 220
+$Warpin End Sound: 221
+$Warpout Type: Knossos
+$Warpout Start Sound: 220
+$Warpout End Sound: 221
+$Expl inner rad: 80.0 
+$Expl outer rad: 350.0 
+$Expl damage: 200.0 
+$Expl blast: 980.0 
+$Expl Propagates: YES 
+$Expl Visual Rad: 487
+$Shockwave Speed: 400.0 
+$Shockwave Count: 5 
+$Default PBanks: () 
+$Default SBanks: () 
+$SBank Capacity: () 
+$Shields: 0 
+$Power Output: 200.0 
+$Max Oclk Speed: 30.0 
+$Max Weapon Eng: 200.0 
+$Hitpoints: 40000
+$Armor Type: Medium Plate
+$Flags: ( "cruiser" "in tech database" "generate icon" )
+$AI Class: Colonel 
+$Afterburner: NO 
+$Countermeasures: 0 
+$Scan time: 2500 
+$EngineSnd: 138
+$Closeup_pos: 0.0, 0.0, -400 
+$Closeup_zoom: 0.5 
+$Score: 0
+$Subsystem: TurretMaina,4.25, 2.0
+ $Alt Subsystem Name: Light Beam
+$Default PBanks: ( "SMind" ) 
+ $Flags: ( "Check Hull" )
+$Subsystem: Turret01a,2.0, 2.0
+$Default PBanks: ( "Shivan Turret Laser" ) 
+ $Flags: ( "Check Hull" )
+$Subsystem: Turret02a,2.0, 2.0
+$Default PBanks: ( "Shivan Turret Laser" ) 
+ $Flags: ( "Check Hull" )
+$Subsystem: Turret03a,2.0, 2.0
+$Default PBanks: ( "Shivan Turret Laser" ) 
+ $Flags: ( "Check Hull" )
+$Subsystem: Turret04a,1.25, 2.0
+$Default PBanks: ( "Shivan Turret Laser" ) 
+ $Flags: ( "Check Hull" )
+$Subsystem: Turret05a,1.25,1.0 
+$Default PBanks: ( "Shivan Turret Laser" ) 
+ $Flags: ( "Check Hull" )
+$Subsystem: Turret06a,1.25,1.0 
+$Default PBanks: ( "Shivan Turret Laser" ) 
+ $Flags: ( "Check Hull" )
+$Subsystem: Turret07a,1.25,1.0 
+$Default PBanks: ( "Shivan Turret Laser" ) 
+ $Flags: ( "Check Hull" )
+$Subsystem: Fighterbay, 7,0.0
+$Subsystem: Sensors, 4,0.0 
+$Subsystem: Navigation01a, 1.5,0.0 
+$Subsystem: Navigation02a, 1.5,0.0 
+$Subsystem: Navigation03a, 1.5,0.0 
+$Subsystem: Navigation04a, 1.5,0.0 
+$Subsystem: Door01a, 0.75,0.0 
+ $Flags: ( "untargetable" )
+$Subsystem: Door02a, 0.75,0.0 
+ $Flags: ( "untargetable" )
+$Subsystem: Blister01a, 2.75,0.0 
+$Subsystem: Blister02a, 2.75,0.0 
+$Subsystem: Fan01a, 1.25,0.0 
+ $Flags: ( "untargetable" )
+$Subsystem: Fan02a, 1.25,0.0 
+ $Flags: ( "untargetable" )
+$Subsystem: Fan03a, 1.25,0.0 
+ $Flags: ( "untargetable" )
+$Subsystem: Fan04a, 1.25,0.0 
+ $Flags: ( "untargetable" )
+$Subsystem: Fan05a, 1.25,0.0 
+ $Flags: ( "untargetable" )
+$Subsystem: Fan06a, 1.25,0.0 
+ $Flags: ( "untargetable" )
+$Subsystem: Pipes01a, 2.5,0.0 
+ $Flags: ( "untargetable" )
+$Subsystem: Pipes02a, 2.5,0.0 
+ $Flags: ( "untargetable" )
+$Subsystem: Reactor01a, 2.75,0.0 
+ $Flags: ( "untargetable" )
+$Subsystem: Reactor02a, 2.75,0.0 
+ $Flags: ( "untargetable" )
+$Subsystem: Communication, 8,0.0 
+$Subsystem: Weapons, 8,0.0 
+$Subsystem: Engine01a, 13.0,0.0 
+$Subsystem: Engine02a, 13.0,0.0 
+
+$Name: MIND Khopesh
+$Alt Name: Attack Cruiser
+$Short name: INFSelket
+$Species: Shivan
++Tech Title: MIND Khopesh
++Tech Description: XSTR("
+Khopesh-class
+Attack Cruiser
+
+onths without support.
+", -1)
+$end_multi_text
+$POF file: INF_Selket.pof
+$Detail distance: (0, 800, 1600, 6000)
+$Show damage: YES
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 1.0
+$Max Velocity: 0.0, 0.0, 60.0
+$Rotation time: 30.0, 20.0, 30.0
+$Rear Velocity: 0.0
+$Forward accel: 5.0
+$Forward decel: 2.0
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Warpin Type: Knossos
+$Warpin Start Sound: 220
+$Warpin End Sound: 221
+$Warpout Type: Knossos
+$Warpout Start Sound: 220
+$Warpout End Sound: 221
+$Expl inner rad: 100.0
+$Expl outer rad: 400.0
+$Expl damage: 200.0
+$Expl blast: 10000.0
+$Expl Propagates: YES
+$Shockwave Speed: 300.0
+$Shockwave Count: 2
+$Default PBanks: ()
+$Default SBanks: ()
+$SBank Capacity: ()
+$Shields: 0
+$Power Output: 90.0
+$Max Oclk Speed: 90.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 75000
+$Armor Type: Heavy Plate
+$Flags: ( "cruiser" "in tech database" "generate icon" )
+$AI Class: Captain
+$Afterburner: NO
+$Countermeasures: 0
+$Scan time: 8000
+$EngineSnd: 137
+$Closeup_pos: 0.0, 0.0, -390
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: turret01,15,1.0
+ $Alt Subsystem Name: Tri-Beam
+ $Default PBanks: ( "SMind" )
+ $flags: ( "collide submodel" "check hull" "salvo mode" )
+$Subsystem: turret02,3.0,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret03,3.0,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret04,3.0,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret05,3.0,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret06-base,2.0,1.0
+ $Alt Subsystem Name: Heavy Turret
+ $Default PBanks: ( "Shivan Megafunk Turret" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "reset when idle" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 45,0,0
+$Subsystem: turret07-base,2.0,1.0
+ $Alt Subsystem Name: Heavy Turret
+ $Default PBanks: ( "Shivan Megafunk Turret" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "reset when idle" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 45,0,0
+$Subsystem: turret08-base,2.0,1.0
+ $Alt Subsystem Name: Heavy Turret
+ $Default PBanks: ( "Shivan Megafunk Turret" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "reset when idle" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 45,0,0
+$Subsystem: turret09-base,2.0,1.0
+ $Alt Subsystem Name: Heavy Turret
+ $Default PBanks: ( "Shivan Megafunk Turret" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "reset when idle" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 45,0,0
+$Subsystem: turret10-base,2.0,1.0
+ $Alt Subsystem Name: Heavy Turret
+ $Default PBanks: ( "Shivan Megafunk Turret" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "reset when idle" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 45,180,0
+$Subsystem: turret11-base,2.0,1.0
+ $Alt Subsystem Name: Heavy Turret
+ $Default PBanks: ( "Shivan Megafunk Turret" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "reset when idle" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 45,180,0
+$Subsystem: turret12-base,2.5,1.0
+ $Default PBanks: ( "MIND Flak" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "reset when idle" "fire down normals" )
+$animation: triggered
+$type: initial
+ +relative_angle: 45,0,0
+$Subsystem: turret13-base,2.5,1.0
+ $Default PBanks: ( "MIND Flak" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "reset when idle" "fire down normals" )
+$animation: triggered
+$type: initial
+ +relative_angle: 45,0,0
+$Subsystem: turret14-base,2.5,1.0
+ $Default PBanks: ( "MIND Flak" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "reset when idle" "fire down normals" )
+$animation: triggered
+$type: initial
+ +relative_angle: 45,180,0
+$Subsystem: turret15-base,2.5,1.0
+ $Default PBanks: ( "MIND Flak" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "reset when idle" "fire down normals" )
+$animation: triggered
+$type: initial
+ +relative_angle: 45,180,0
+$Subsystem: turret16-base,2.5,1.0
+ $Default PBanks: ( "MIND Flak" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "reset when idle" "fire down normals" )
+$animation: triggered
+$type: initial
+ +relative_angle: 45,180,0
+$Subsystem: turret17-base,2.5,1.0
+ $Default PBanks: ( "MIND Flak" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "reset when idle" "fire down normals" )
+$animation: triggered
+$type: initial
+ +relative_angle: 45,180,0
+$Subsystem: turret18-base,4.0,1.0
+ $Default PBanks: ( "MIND LR Flak" "MIND LR Flak" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+$animation: triggered
+$type: initial
+ +relative_angle: 45,0,0
+$Subsystem: engine, 25,0.0
+$Subsystem: communication, 5,0.0
+$Subsystem: sensors, 5,0.0
+$Subsystem: navigation, 5,0.0
+$Subsystem: weapons, 15,0.0
+
+$Name: MIND Newet
+$Alt Name: Fleet Cruiser
+$Short name: Vcruiser
+$Species: Shivan
++Tech Title: MIND Newet
++Tech Description: XSTR("
+Newet-type
+Fleet Cruiser
+
+onths without support.
+", -1)
+$end_multi_text
+$POF file: GVC_Newet.pof
+$Detail distance: (0, 800, 1250, 3000)
+$Show damage: YES
+$Rotdamp: 1.0
+$Max Velocity: 0.0, 0.0, 50.0
+$Rotation time: 25.0, 40.0, 40.0
+$Rear Velocity: 0.0
+$Forward accel: 4.0
+$Forward decel: 2.0
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Warpin Type: Knossos
+$Warpin Start Sound: 220
+$Warpin End Sound: 221
+$Warpout Type: Knossos
+$Warpout Start Sound: 220
+$Warpout End Sound: 221
+$Expl inner rad: 170.0
+$Expl outer rad: 625.0
+$Expl damage: 250.0
+$Expl blast: 10000.0
+$Expl Propagates: YES
+$Shockwave Speed: 150.0
+$Shockwave Count: 2
+$Default PBanks: ()
+$Default SBanks: ()
+$SBank Capacity: ()
+$Shields: 0
+$Power Output: 100.0
+$Max Oclk Speed: 75.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 90000
+$Armor Type: Heavy Plate
+$Flags: ( "cruiser" "in tech database" "generate icon" )
+$AI Class: Captain
+$Afterburner: NO
+$Countermeasures: 0
+$Scan time: 2000
+$EngineSnd: 137
+$Closeup_pos: 0.0, 0.0, -317
+$Closeup_zoom: 0.75
+$Score: 0
+$Subsystem: turret01,4.0,1.0
+ $Default PBanks: ( "MIND Flak" "MIND Flak" "MIND Flak" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+$animation: triggered
+$type: initial
+ +relative_angle: 80,0,0
+$Subsystem: turret02,4.0,1.0
+ $Default PBanks: ( "MIND Flak" "MIND Flak" "MIND Flak" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+$animation: triggered
+$type: initial
+ +relative_angle: 80,0,0
+$Subsystem: turret03,7.5,1.0
+ $Alt Subsystem Name: Medium Beam
+ $Default PBanks: ( "MMind" )
+$Subsystem: turret04,2.0,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret05,2.0,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret06,2.0,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret07,2.0,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret08,2.0,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret09,2.0,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret10,4.0,1.0
+ $Default PBanks: ( "MIND Flak" "MIND Flak" "MIND Flak" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+$animation: triggered
+$type: initial
+ +relative_angle: 80,0,0
+$Subsystem: turret11,4.0,1.0
+ $Default PBanks: ( "MIND Flak" "MIND Flak" "MIND Flak" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+$animation: triggered
+$type: initial
+ +relative_angle: 80,180,0
+$Subsystem: turret12,4.0,1.0
+ $Default PBanks: ( "MIND Flak" "MIND Flak" "MIND Flak" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+$animation: triggered
+$type: initial
+ +relative_angle: 80,180,0
+$Subsystem: turret13,2.0,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret14,2.0,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret15,2.0,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret16,2.0,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: engine, 15, 0.0
+$Subsystem: communication, 5,0.0
+$Subsystem: sensors, 5,0.0
+$Subsystem: navigation, 5,0.0
+$Subsystem: weapons, 5,0.0
+
+$Name: MIND Sobek
+$Alt Name: Battlecruiser
+$Short name: VCorvette
+$Species: Shivan
++Tech Title: MIND Sobek
++Tech Description: XSTR("
+Sobek-class
+Battlecruiser
+
+", -1)
+$end_multi_text
+$POF file: Sobek.pof
+$Detail distance: ( 0, 1348, 2698, 5404 )
+$ND: 244 243 243
+$ND: 212 212 212
+$ND: 229 229 226
+$ND: 207 206 204
+$Show damage: YES
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 1.0
+$Max Velocity: 0.0, 0.0, 55.0
+$Rotation time: 40.0, 40.0, 30.0
+$Rear Velocity: 0.0
+$Forward accel: 8.0
+$Forward decel: 4.0
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Warpin Type: Knossos
+$Warpin Start Sound: 220
+$Warpin End Sound: 221
+$Warpout Type: Knossos
+$Warpout Start Sound: 220
+$Warpout End Sound: 221
+$Expl inner rad: 150.0
+$Expl outer rad: 750.0
+$Expl damage: 200.0
+$Expl blast: 11000.0
+$Expl Propagates: YES
+$Shockwave Speed: 450.0
+$Shockwave Count: 3
+$Default PBanks: ()
+$Default SBanks: ()
+$SBank Capacity: ()
+$Shields: 0
+$Power Output: 100.0
+$Max Oclk Speed: 60.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 110000
+$Armor Type: Heavy Plate
+$Flags: ( "cruiser" "in tech database" "generate icon" )
+$AI Class: Captain
+$Afterburner: NO
+$Countermeasures: 0
+$Scan time: 2000
+$EngineSnd: 131
+$Closeup_pos: 0.0, 0.0, -725
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: turret01,0.833,1.0
+ $Default PBanks: ( "MIND LR Flak" "MIND LR Flak" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 270, 0
+$Subsystem: turret02,0.833,1.0
+ $Default PBanks: ( "MIND LR Flak" "MIND LR Flak" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 90, 0
+$Subsystem: turret03,0.833,1.0
+ $Default PBanks: ( "MIND LR Flak" "MIND LR Flak" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 0, 0
+$Subsystem: turret04,0.833,1.0
+ $Default PBanks: ( "MIND LR Flak" "MIND LR Flak" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 5000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 0, 0
+$Subsystem: turret05,0.833,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret06,0.833,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret07,0.833,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret08,0.833,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret09,0.833,1.0
+ $Alt Subsystem Name: Medium Beam
+ $Default PBanks: ( "BMind" )
+ $Flags: ( "check hull" )
+$Subsystem: turret10,0.833,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret11,0.833,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret12,0.833,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret13,0.833,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret14,0.833,1.0
+ $Alt Subsystem Name: Medium Beam
+ $Default PBanks: ( "BMind" )
+ $Flags: ( "check hull" )
+$Subsystem: turret15,0.833,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret16,0.833,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret17,0.833,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret18,0.833,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret19,0.833,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret20,0.833,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret21,0.833,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret22,0.833,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: engine, 15,0.0
+$Subsystem: communications, 5,0.0
+$Subsystem: sensors, 5,0.0
+$Subsystem: navigation, 5,0.0
+$Subsystem: weapons, 5,0.0
+
+$Name: MIND Ramses
+$Alt Name: Carrier-Cruiser
+$Short name: Zod-Car
+$Species: Shivan 
++Tech Title: MIND Ramses
++Tech Description: XSTR("
+Ramses-type
+Carrier-Cruiser
+
+onths without support.
+", -1)
+$end_multi_text
+$POF file: ZodCarrier.pof 
+$Detail distance: (0, 2000) 
+$Density: 1 
+$Damp: 3
+$Rotdamp: 9
+$Banking Constant: 0.3
+$Max Velocity: 0.0, 0.0, 40.0 
+$Rotation time: 50.0, 50.0, 50.0 
+$Rear Velocity: 0.0 
+$Forward accel: 5.0 
+$Forward decel: 2.0 
+$Slide accel: 0.0 
+$Slide decel: 0.0 
+$Warpin Type: Knossos
+$Warpin Start Sound: 220
+$Warpin End Sound: 221
+$Warpout Type: Knossos
+$Warpout Start Sound: 220
+$Warpout End Sound: 221
+$Expl inner rad: 80.0 
+$Expl outer rad: 350.0 
+$Expl damage: 200.0 
+$Expl blast: 980.0 
+$Expl Propagates: YES 
+$Expl Visual Rad: 487
+$Shockwave Speed: 375.0 
+$Shockwave Count: 5 
+$Default PBanks: () 
+$Default SBanks: () 
+$SBank Capacity: () 
+$Shields: 0 
+$Power Output: 200.0 
+$Max Oclk Speed: 60.0 
+$Max Weapon Eng: 200.0 
+$Hitpoints: 120000 
+$Armor Type: Heavy Plate
+$Flags: ( "corvette" "in tech database" "generate icon" ) 
+$AI Class: Colonel
+$Afterburner: NO 
+$Countermeasures: 0 
+$Scan time: 2500 
+$EngineSnd: 137
+$Closeup_pos: 0.0, 0.0, -750 
+$Closeup_zoom: 0.5 
+$Score: 0
+$Subsystem: Turret01,4.0, 2.0
+ $Alt Subsystem Name: Heavy Turret
+ $Default PBanks: ( "Shivan Megafunk Turret" )
+ $Flags: ( "check hull" )
+$Subsystem: Turret02,2.0, 2.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: Turret03,2.0, 2.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: Turret04,2.0, 2.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: Turret05,2.0,1.0 
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: Turret06,2.0,1.0 
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: Turret07,2.0,1.0 
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: Turret08,4.0,1.0 
+ $Alt Subsystem Name: Heavy Turret
+ $Default PBanks: ( "Shivan Megafunk Turret" )
+ $Flags: ( "check hull" )
+$Subsystem: Turret09,7.5,1.0 
+ $Alt Subsystem Name: Medium Beam
+ $Default PBanks: ( "MMIND" )
+ $Flags: ( "check hull" )
+$Subsystem: Fighterbay01, 0,0.0
+$Subsystem: Fighterbay02, 0,0.0
+$Subsystem: Sensors01, 4,0.0 
+$Subsystem: Sensors02, 4,0.0 
+$Subsystem: Navigation01, 1.5,0.0 
+$Subsystem: Navigation02, 1.5,0.0 
+$Subsystem: Navigation03, 1.5,0.0 
+$Subsystem: Navigation04, 1.5,0.0 
+$Subsystem: Navigation05, 1.5,0.0 
+$Subsystem: Navigation06, 1.5,0.0 
+$Subsystem: Navigation07, 1.5,0.0 
+$Subsystem: Navigation08, 1.5,0.0 
+$Subsystem: Navigation09, 1.5,0.0 
+$Subsystem: Navigation10, 1.5,0.0 
+$Subsystem: Communications, 5,0.0 
+$Subsystem: Weapons, 5,0.0 
+$Subsystem: Engine01, 5.0,0.0 
+$Subsystem: Engine02, 5.0,0.0 
+
+$Name: MIND Udjat
+$Alt Name: Fast Battleship
+$Short name: VCorvette2
+$Species: Shivan
++Tech Title: MIND Udjat
++Tech Description: XSTR("
+Udjat
+Fast Battleship
+
+The Udjat is a recently discovered MIND warship class. It is roughly comparable to the Magellan in terms of size and volume, however initial scans show that it surpasses the Magellan in firepower.
+", -1)
+$end_multi_text
+$POF file: udjat4.pof
+$Detail distance: (0, 1200, 2000, 3000)
+$ND: 244 243 243
+$ND: 212 212 212
+$ND: 229 229 226
+$ND: 207 206 204
+$Show damage: YES
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 1.0
+$Max Velocity: 0.0, 0.0, 55.0
+$Rotation time: 45.0, 45.0, 35.0
+$Rear Velocity: 0.0
+$Forward accel: 8.0
+$Forward decel: 4.0
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Warpin Type: Knossos
+$Warpin Start Sound: 220
+$Warpin End Sound: 221
+$Warpout Type: Knossos
+$Warpout Start Sound: 220
+$Warpout End Sound: 221
+$Expl inner rad: 300.0
+$Expl outer rad: 1000.0
+$Expl damage: 200.0
+$Expl blast: 11000.0
+$Expl Propagates: YES
+$Shockwave Speed: 450.0
+$Shockwave Count: 3
+$Default PBanks: ()
+$Default SBanks: ()
+$SBank Capacity: ()
+$Shields: 0
+$Power Output: 120.0
+$Max Oclk Speed: 60.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 175000
+$Armor Type: Heavy Plate
+$Flags: ( "generate icon" "corvette" )
+$AI Class: Captain
+$Afterburner: NO
+$Countermeasures: 0
+$Scan time: 2000
+$EngineSnd: 131
+$Closeup_pos: 0.0, 0.0, -1400
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: turret01,2.5,1.0
+ $Alt Subsystem Name: Heavy Beam
+ $Default PBanks: ( "BMIND" )
+ $Flags: ( "check hull" )
+$Subsystem: turret02,0.5,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret03,0.5,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret04,0.7,1.0
+ $Default PBanks: ( "MIND Flak" )
+ $Flags: ( "check hull" )
+$Subsystem: turret05,0.7,1.0
+ $Default PBanks: ( "MIND Flak" )
+ $Flags: ( "check hull" )
+$Subsystem: turret06,0.5,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret07,0.5,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret08,0.833,1.0
+ $Alt Subsystem Name: Heavy Turret
+ $Default PBanks: ( "Shivan Megafunk Turret" )
+ $Flags: ( "check hull" )
+$Subsystem: turret09,0.833,1.0
+ $Alt Subsystem Name: Heavy Turret
+ $Default PBanks: ( "Shivan Megafunk Turret" )
+ $Flags: ( "check hull" )
+$Subsystem: turret10,0.833,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret11,0.833,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret12,0.833,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret13,0.833,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret14,0.7,1.0
+ $Alt Subsystem Name: Heavy Turret
+ $Default PBanks: ( "Shivan Megafunk Turret" )
+ $Flags: ( "check hull" )
+$Subsystem: turret15,1,1.0
+ $Alt Subsystem Name: Medium Beam
+ $Default PBanks: ( "MMIND" )
+ $Flags: ( "check hull" )
+$Subsystem: turret16,1,1.0
+ $Alt Subsystem Name: Medium Beam
+ $Default PBanks: ( "MMIND" )
+ $Flags: ( "check hull" )
+$Subsystem: turret17,1,1.0
+ $Alt Subsystem Name: Light Beam
+ $Default PBanks: ( "SMIND" )
+ $Flags: ( "check hull" )
+$Subsystem: turret18,1,1.0
+ $Alt Subsystem Name: Light Beam
+ $Default PBanks: ( "SMIND" )
+ $Flags: ( "check hull" )
+$Subsystem: turret19,0.7,1.0
+ $Default PBanks: ( "MIND Flak" )
+ $Flags: ( "check hull" )
+$Subsystem: turret20,0.7,1.0
+ $Default PBanks: ( "MIND Flak" )
+ $Flags: ( "check hull" )
+$Subsystem: turret21,0.5,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret22,0.5,1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret23,1,1.0
+ $Alt Subsystem Name: Light Beam
+ $Default PBanks: ( "SMIND" )
+ $Flags: ( "check hull" )
+$Subsystem: engine, 25,0.0
+$Subsystem: communications, 5,0.0
+$Subsystem: sensors, 5,0.0
+$Subsystem: navigation, 5,0.0
+$Subsystem: weapons, 15,0.0
+$Subsystem: reactor01, 5,0.0
+$Subsystem: reactor02, 5,0.0
+$Subsystem: fighterbay, 0,0.0
+
+$Name: MIND Pharaoh
+$Alt Name: Destroyer
+$Short name: VDestroy
+$Species: Shivan
++Tech Title: MIND Pharaoh
++Tech Description: XSTR("
+Pharaoh
+Destroyer
+
+The only known vessel of destroyer classification, the Pharaoh is the most powerful space-faring warship ever encountered. It wields three massive main beam cannons, which when focused on a single target can destroy one of our heavy cruisers in just a single salvo. We have also observed the Pharaoh acting as a fleet carrier when not directly engaged in combat, capable of carrying over a hundred fighters or bombers. 
+
+The firepower of the Pharaoh is greater than that of most UN task forces, and scans indicate that the Pharaoh has considerable excess energy reserves, the purpose of which is unknown. If we cannot stop the Pharaoh, we do not expect to be able to defeat the MIND.
+", -1)
+$end_multi_text
+$POF file: capital2V-01.pof
+$Detail distance: ( 0, 4104, 8208, 16419 )
+$Show damage: NO
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 1.5
+$Max Velocity: 0.0, 0.0, 35.0
+$Rotation time: 100.0, 100.0, 75.0
+$Rear Velocity: 0.0
+$Forward accel: 8.0
+$Forward decel: 4.0
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Warpin Type: Knossos
+$Warpin Start Sound: 220
+$Warpin End Sound: 221
+$Warpout Type: Knossos
+$Warpout Start Sound: 220
+$Warpout End Sound: 221
+$Expl inner rad: 150.0
+$Expl outer rad: 2400.0
+$Expl damage: 400.0
+$Expl blast: 3000.0
+$Expl Propagates: YES
+$Shockwave Speed: 350.0
+$Shockwave Count: 4
+$Default PBanks: ()
+$Default SBanks: ()
+$SBank Capacity: ()
+$Shields: 0
+$Power Output: 100.0
+$Max Oclk Speed: 45.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 350000
+$Armor Type: Heavy Plate
+$Flags: ( "capital" "generate icon" "in tech database" )
+$AI Class: Captain
+$Afterburner: NO
+$Countermeasures: 0
+$Scan time: 2000
+$EngineSnd: 137
+$Closeup_pos: 0.0, 0.0, -2560
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: turret01,2,0.5
+ $Alt Subsystem Name: Medium Beam
+ $Default PBanks: ( "MMIND" )
+ $Flags: ( "check hull" )
+$Subsystem: turret02,4,0.5
+ $Alt Subsystem Name: Heavy Beam
+ $Default PBanks: ( "HMind" )
+ $Flags: ( "check hull" )
+$Subsystem: turret03,4,0.5
+ $Alt Subsystem Name: Heavy Beam
+ $Default PBanks: ( "HMind" )
+ $Flags: ( "check hull" )
+$Subsystem: turret04,4,0.5
+ $Alt Subsystem Name: Heavy Beam
+ $Default PBanks: ( "HMind" )
+ $Flags: ( "check hull" )
+$Subsystem: turret05,0.125,0.5
+ $Default PBanks: ( "MIND LR Flak" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 0, 0
+$Subsystem: turret06,0.125,0.5
+ $Default PBanks: ( "MIND LR Flak" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 180, 0
+$Subsystem: turret07,0.125,0.5
+ $Default PBanks: ( "MIND LR Flak" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 180, 0
+$Subsystem: turret08,0.125,0.5
+ $Default PBanks: ( "MIND LR Flak" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 180, 0
+$Subsystem: turret09,0.125,0.5
+ $Default PBanks: ( "MIND LR Flak" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 180, 0
+$Subsystem: turret10,0.125,0.5
+ $Default PBanks: ( "MIND LR Flak" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 180, 0
+ $Subsystem: turret11,0.125,0.5
+ $Default PBanks: ( "MIND Flak" )
+ $Flags: ( "check hull" )
+$Subsystem: turret12,0.125,0.5
+ $Alt Subsystem Name: Heavy Turret
+ $Default PBanks: ( "Shivan Megafunk Turret" )
+ $Flags: ( "check hull" )
+$Subsystem: turret13,0.125,0.5
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret14,0.125,0.5
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret15,0.125,0.5
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret16,0.125,0.5
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret17,0.125,0.5
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret18,0.125,0.5
+ $Alt Subsystem Name: Heavy Turret
+ $Default PBanks: ( "Shivan Megafunk Turret" )
+ $Flags: ( "check hull" )
+$Subsystem: turret19,0.125,0.5
+ $Alt Subsystem Name: Heavy Turret
+ $Default PBanks: ( "Shivan Megafunk Turret" )
+ $Flags: ( "check hull" )
+$Subsystem: turret20,0.125,0.5
+ $Default PBanks: ( "MIND Flak" )
+ $Flags: ( "check hull" )
+$Subsystem: turret21,0.125,0.5
+ $Default PBanks: ( "MIND Flak" )
+ $Flags: ( "check hull" )
+$Subsystem: turret22,0.125,0.5
+ $Alt Subsystem Name: Heavy Turret
+ $Default PBanks: ( "Shivan Megafunk Turret" )
+ $Flags: ( "check hull" )
+$Subsystem: turret23,0.125,0.5
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret24,0.125,0.5
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret25,0.125,0.5
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret26,0.125,0.5
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret27,0.125,0.5
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret28,0.125,0.5
+ $Alt Subsystem Name: Heavy Turret
+ $Default PBanks: ( "Shivan Megafunk Turret" )
+ $Flags: ( "check hull" )
+$Subsystem: turret29,0.125,0.5
+ $Alt Subsystem Name: Heavy Turret
+ $Default PBanks: ( "Shivan Megafunk Turret" )
+ $Flags: ( "check hull" )
+$Subsystem: turret30,0.125,0.5
+ $Default PBanks: ( "MIND Flak" )
+ $Flags: ( "check hull" )
+$Subsystem: bridge, 5,0.0
+$Subsystem: navigation, 5,0.0
+$Subsystem: weapons, 5,0.0
+$Subsystem: sensors, 5,0.0
+
+$Subsystem: communication, 5,0.0
+$Subsystem: fighterbay01, 5,0.0
+$Subsystem: fighterbay02, 5,0.0
+$Subsystem: reactor, 5,0.0
+$Subsystem: engine01, 7,0.0
+$Subsystem: engine02, 7,0.0
+
+$Name: MIND Ogdoad
+$Alt Name: Portal Generator
+$Short name: VAWAC
+$Species: Shivan
++Tech Title: MIND Ogdoad
++Tech Description: XSTR("
+Ogdoad-type
+Jump Portal Generator
+
+The Ogdoad appears to be a portal generator.
+", -1)
+$end_multi_text
+$POF file: setekh.pof
+$Detail distance: ( 0, 468, 942, 1906 )
+$Show damage: YES
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 1.0
+$Max Velocity: 0.0, 0.0, 20.0
+$Rotation time: 100.0, 100.0, 80.0
+$Rear Velocity: 0.0
+$Forward accel: 8.0
+$Forward decel: 4.0
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Warpin Type: Knossos
+$Warpin Start Sound: 220
+$Warpin End Sound: 221
+$Warpout Type: Knossos
+$Warpout Start Sound: 220
+$Warpout End Sound: 221
+$Expl inner rad: 400.0
+$Expl outer rad: 900.0
+$Expl damage: 150.0
+$Expl blast: 3000.0
+$Expl Propagates: YES
+$Shockwave Speed: 250.0
+$Shockwave Count: 2
+$Default PBanks: ()
+$Default SBanks: ()
+$SBank Capacity: ()
+$Shields: 0
+$Power Output: 20.0
+$Max Oclk Speed: 35.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 20000
+$Flags: ( "generate icon" "cruiser" "in tech database" )
+$AI Class: Captain
+$Afterburner: NO
+$Countermeasures: 0
+$Scan time: 2000
+$EngineSnd: 104
+$Closeup_pos: 0.0, 0.0, -245
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: turret01, 2, 1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret02, 2, 1.0
+ $Default PBanks: ( "MIND Flak" )
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 0, 0
+$Subsystem: turret03, 2, 1.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: navigation, 5, 0.0
+$Subsystem: communications, 5, 0.0
+$Subsystem: weapons, 5, 0.0
+$Subsystem: engine01, 8, 0.0
+$Subsystem: engine02, 8, 0.0
+$Subsystem: sensors01, 10, 0.0
+$Subsystem: radara, 10, 0.0
+
+$Name: MIND Chakra
+$Alt Name: Interdictor
+$Short name: SCruise4
+$Species: Shivan
++Tech Title: MIND Chakra
++Tech Description: XSTR("
+Chakra-Type
+Interdictor
+
+The Shivan shield projector ship Chakra is an impossibility come alive. As with the Sathanas' beams, no Terran or Vasudan engineer alive has yet been able to offer an explanation how the Shivans could possibly have managed to place a shield generator of this strengh on a cruiser sized ship, and yet, they have done it. Fitting in form and function, the vessel has been named after the disk shaped weapon used by Vishnu, which is seen by Hindus as a symbol of protection.
+", -1)
+$end_multi_text
+$POF file: AnuDictor.pof
+$Detail distance: (0, 1500, 3200)
+$Show damage: YES
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 1.0
+$Max Velocity: 0.0, 0.0, 30.0
+$Rotation time: 100.0, 100.0, 80.0
+$Rear Velocity: 0.0
+$Forward accel: 8.0
+$Forward decel: 4.0
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Warpin Type: Knossos
+$Warpin Start Sound: 220
+$Warpin End Sound: 221
+$Warpout Type: Knossos
+$Warpout Start Sound: 220
+$Warpout End Sound: 221
+$Expl inner rad: 200.0
+$Expl outer rad: 500.0
+$Expl damage: 150.0
+$Expl blast: 2000.0
+$Expl Propagates: YES
+$Shockwave Speed: 215.0
+$Shockwave Count: 2
+$Default PBanks: ()
+$Default SBanks: ()
+$SBank Capacity: ()
+$Shields: 0
+$Power Output: 30.0
+$Max Oclk Speed: 35.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 75000
+$Armor Type: Heavy Plate
+$Flags: ( "knossos" )
+$AI Class: Captain
+$Afterburner: NO
+$Countermeasures: 0
+$Scan time: 2000
+$EngineSnd: 104 ;; Engine sound of ship
+$Closeup_pos: 0.0, 0.0, -500
+$Closeup_zoom: 0.3
+$Score: 0
+$Subsystem: navigation, 8, 0.0
+$Subsystem: communications, 8, 0.0
+$Subsystem: weapons, 8, 0.0
+$Subsystem: engine, 18, 0.0
+$Subsystem: sensors, 8, 0.0
+$Subsystem: miner02va-claw1, 40, 0.0
+$Subsystem: bubblea,0.0,0.5
+ $Flags: ( "untargetable" "no aggregate" )
+
+$Name: MIND Ra
+$Alt Name: Mobile Fleet Base
+$Short name: VDestroy
+$Species: Shivan 
++Tech Title: MIND Ra
++Tech Description: XSTR("
+Ra-Type
+Mobile Fleet Base
+
+The Ra appears to be a mobile fleet base for MIND operations.
+Destruction of these vessels, whenever possible, is critical.
+", -1)
+$end_multi_text
+$POF File: Typhon.pof
+$POF Target LOD: 1
+$Detail distance: ( 0, 5749, 14999 )
+$Show damage: NO
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 1.5
+$Max Velocity: 0.0, 0.0, 15.0
+$Rotation time: 150.0, 150.0, 150.0
+$Rear Velocity: 0.0
+$Forward accel: 20.0
+$Forward decel: 10.0
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Warpin Type: Knossos
+$Warpin Start Sound: 220
+$Warpin End Sound: 221
+$Warpout Type: Knossos
+$Warpout Start Sound: 220
+$Warpout End Sound: 221
+$Expl inner rad: 150.0
+$Expl outer rad: 2400.0
+$Expl damage: 400.0
+$Expl blast: 3000.0
+$Expl Propagates: YES
+$Shockwave Speed: 380.0
+$Shockwave Count: 4
+$Default PBanks: ()
+$Default SBanks: ()
+$SBank Capacity: ()
+$Shields: 0
+$Power Output: 100.0
+$Max Oclk Speed: 45.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 250000
+$Armor Type: Heavy Plate
+$Flags: ( "capital" "generate icon" "in tech database" )
+$AI Class: Captain
+$Afterburner: NO
+$Countermeasures: 0
+$Scan time: 2000
+$EngineSnd: 137
+$Closeup_pos: 0.0, 0.0, -1860
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: turret01,0.125,0.5
+ $Alt Subsystem Name: Heavy Turret
+ $Default PBanks: ( "Shivan Megafunk Turret" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 0, 0
+$Subsystem: turret02,0.125,0.5
+ $Alt Subsystem Name: Heavy Turret
+ $Default PBanks: ( "Shivan Megafunk Turret" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 0, 0
+$Subsystem: turret03,0.125,0.5
+ $Alt Subsystem Name: Heavy Turret
+ $Default PBanks: ( "Shivan Megafunk Turret" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 0, 0
+$Subsystem: turret04,0.125,0.5
+ $Alt Subsystem Name: Heavy Turret
+ $Default PBanks: ( "Shivan Megafunk Turret" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 0, 0
+$Subsystem: turret05,0.125,0.5
+ $Alt Subsystem Name: Heavy Turret
+ $Default PBanks: ( "Shivan Megafunk Turret" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 0, 0
+$Subsystem: turret06,0.125,0.5
+ $Alt Subsystem Name: Heavy Turret
+ $Default PBanks: ( "Shivan Megafunk Turret" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 0, 0
+$Subsystem: turret07,0.125,0.5
+ $Alt Subsystem Name: Heavy Turret
+ $Default PBanks: ( "Shivan Megafunk Turret" )
+ $Turret Base RotationSnd: 254
+ $Turret Gun RotationSnd: 255
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 0, 0
+$Subsystem: turret08,0.125,0.5
+ $Default PBanks: ( "MIND Flak" )
+ $Flags: ( "check hull" )
+$Subsystem: turret09,0.125,0.5
+ $Default PBanks: ( "MIND Flak" )
+ $Flags: ( "check hull" )
+$Subsystem: turret10,0.375,0.5
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret11,0.375,0.5
+ $Default PBanks: ( "MIND Flak" )
+ $Flags: ( "check hull" )
+$Subsystem: turret12,0.375,0.5
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret13,0.375,0.5
+ $Default PBanks: ( "MIND Flak" )
+ $Flags: ( "check hull" )
+$Subsystem: turret14,0.375,0.5
+ $Default PBanks: ( "MIND Flak" )
+ $Flags: ( "check hull" )
+$Subsystem: turret15,0.375,0.5
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: turret16,0.125,0.5
+ $Flags: ( "untargetable" "damage as hull" "no aggregate" )
+$Subsystem: turret17,0.125,0.5
+ $Flags: ( "untargetable" "damage as hull" "no aggregate" )
+$Subsystem: turret18,0.125,0.5
+ $Flags: ( "untargetable" "damage as hull" "no aggregate" )
+$Subsystem: turret19,0.125,0.5
+ $Flags: ( "untargetable" "damage as hull" "no aggregate" )
+$Subsystem: turret20,0.125,0.5
+ $Flags: ( "untargetable" "damage as hull" "no aggregate" )
+$Subsystem: turret21,0.125,0.5
+ $Flags: ( "untargetable" "damage as hull" "no aggregate" )
+$Subsystem: turret22,0.125,0.5
+ $Flags: ( "untargetable" "damage as hull" "no aggregate" )
+$Subsystem: turret23,0.125,0.5
+ $Flags: ( "untargetable" "damage as hull" "no aggregate" )
+$Subsystem: turret24,0.125,0.5
+ $Flags: ( "untargetable" "damage as hull" "no aggregate" )
+$Subsystem: turret25,0.125,0.5
+ $Flags: ( "untargetable" "damage as hull" "no aggregate" )
+$Subsystem: turret26,0.125,0.5
+ $Flags: ( "untargetable" "damage as hull" "no aggregate" )
+$Subsystem: turret27,0.125,0.5
+ $Flags: ( "untargetable" "damage as hull" "no aggregate" )
+
+$Subsystem: navigation, 5,0.0
+$Subsystem: weapons, 5,0.0
+$Subsystem: sensors, 5,0.0
+$Subsystem: engine, 15,0.0
+$Subsystem: communication, 5,0.0
+$Subsystem: fighterbay 1, 0,0.0
+$Subsystem: fighterbay 2, 0,0.0
+
+$Name: MIND Abydos
+$Alt Name: Installation
+$Short name: ZodOutpost
+$Species: Shivan
++Tech Title: MIND Abydos
++Tech Description: XSTR("
+Abydos-type
+Installation
+
+The Abydos is a small, multi-purpose MIND installation often deployed in high-risk contested systems as a forward staging point. The Abydos has proved remarkably versatile, and has been observed operating in a number of roles.
+", -1)
+$end_multi_text
+$POF file: ZodOP.pof
+$Detail distance: (0, 7500, 20000, 40000)
+$Show damage: NO
+$Density: 1
+$Damp: 0.2
+$Rotdamp: 0.2
+$Max Velocity: 0.0, 0.0, 0.0
+$Rotation time: 200.0, 200.0, 200.0
+$Rear Velocity: 0.0
+$Forward accel: 0.0
+$Forward decel: 0.0
+$Slide accel: 0.0
+$Slide decel: 0.0
+$Expl inner rad: 120.0
+$Expl outer rad: 600.0
+$Expl damage: 150.0
+$Expl blast: 600.0
+$Expl Propagates: NO
+$Shockwave Speed: 0
+$Shockwave Count: 0
+$Default PBanks: ()
+$Default SBanks: ()
+$SBank Capacity: ()
+$Shields: 0
+$Power Output: 1.0
+$Max Oclk Speed: 0.0
+$Max Weapon Eng: 100.0
+$Hitpoints: 45000
+$Armor Type: Medium Plate
+$Flags: ( "cruiser" "generate icon" "in tech database" )
+$AI Class: Captain
+$Afterburner: NO
+$Countermeasures: 0
+$Scan time: 1300
+$EngineSnd: 191
+$Closeup_pos: 0.0, 0.0, -455
+$Closeup_zoom: 0.5
+$Score: 0
+$Subsystem: Turret01, 3, 5.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: Turret02, 3, 5.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: Turret03, 3, 5.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: Turret04, 3, 5.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: Turret05, 3, 5.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: Turret06, 3, 5.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: Turret07, 3, 5.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: Turret08, 3, 5.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: Turret09, 3, 5.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: Turret10, 3, 5.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: Turret11, 3, 5.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: Turret12, 3, 5.0
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
+$Subsystem: Turret13, 8, 5.0
+ $Default PBanks: ( "MIND LR Flak" )
+ $Turret Base RotationSnd: 252
+ $Turret Gun RotationSnd: 253
+ $Turret BaseSnd Volume: 1.0
+ $Turret GunSnd Volume: 1.0
+ $Turret Reset Delay: 15000
+ $Flags: ( "check hull" "reset when idle" "use multiple guns" "fire down normals" )
+ $animation: triggered
+ $type: initial
+ +relative_angle: 80, 0, 0
+$Subsystem: communication, 12.5, 0.0
+$Subsystem: weapons, 22.5, 0.0
+$Subsystem: Sensors01, 5, 0.0
+$Subsystem: Sensors02, 5, 0.0
+
+#End

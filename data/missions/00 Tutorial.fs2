@@ -1,0 +1,3390 @@
+#Mission Info
+
+$Version: 0.10
+$Name:  XSTR("Basic Training", -1)
+$Author: [`_`]
+$Created: 07/21/16 at 11:05:45
+$Modified: 02/06/18 at 12:35:25
+$Notes:
+This is a FRED2_OPEN created mission.
+$End Notes:
+
+$Mission Desc:
+ XSTR("Learn how to drive several million tons of metal.", -1)
+$end_multi_text
++Game Type Flags: 4
++Flags: 401538
++Fog Near Mult: 1.000000
+
++Fog Far Mult: 1.000000
+
++Disallow Support: 1
++Hull Repair Ceiling: 0.000000
++Subsystem Repair Ceiling: 100.000000
+
++Viewer pos: 0.000153, 500.168732, 0.000000
++Viewer orient:
+	1.000000, -0.000904, 0.000000,
+	0.000000, 0.000000, 1.000000,
+	-0.000904, -1.000000, 0.000000
+
+$Starting wing names: ( "Polydeuces#" "Alpha" "Bravo" )
+$Squadron wing names: ( "Polydeuces#" "Alpha" "Bravo" "Charlie" "Delta" )
+$Team-versus-team wing names: ( "Polydeuces#" "Zulu" )
+
+$Skybox Model: skyboxearth.pof
+
+$AI Profile: CAPSHIPCOMMAND
+
+#Sexp_variables
+
+$Variables:
+(
+		0		"AmmoSwitchCount"		"0"		"number"
+		1		"BeamLeftStatus"		"200"		"number"
+		2		"BeamRightStatus"		"200"		"number"
+		3		"Capacitor"		"100"		"number"
+		4		"HardenLevel"		"0"		"number"
+		5		"Heat"		"0"		"number"
+		6		"HeatHasCritical"		"0"		"number"
+		7		"LeftBeamTick"		"0"		"number"
+		8		"OVerride"		"0"		"number"
+		9		"PlayerTarget"		"Battuta"		"string"
+		10		"PlayerTargetSS"		"Axems house"		"string"
+		11		"Repairing"		"0"		"number"
+		12		"RightBeamsTick"		"0"		"number"
+		13		"ship-manev-timer"		"0"		"number"
+		14		"ShipTargeted"		"a whale"		"string"
+		15		"ShipTargetedRight"		"a bote"		"string"
+		16		"SHUTDOWN"		"0"		"number"
+		17		"TimeLeftEvac"		"180"		"number"
+		18		"WarpCancelB"		"0"		"number"
+		19		"WarpCancelETSE"		"0"		"number"
+		20		"WarpCancelETSS"		"0"		"number"
+		21		"WarpCancelETSW"		"0"		"number"
+		22		"WarpCancelH"		"0"		"number"
+		23		"WarpCancelP"		"0"		"number"
+		24		"WarpCancelS"		"0"		"number"
+		25		"WarpCancelSW"		"0"		"number"
+		26		"WarpCancelSWA"		"0"		"number"
+		27		"WarpCancelT"		"0"		"number"
+		28		"WarpCancelX"		"0"		"number"
+		29		"WarpCancelY"		"0"		"number"
+		30		"WarpCancelZ"		"0"		"number"
+		31		"WarpFinalB"		"0"		"number"
+		32		"WarpFinalH"		"0"		"number"
+		33		"WarpFinalP"		"0"		"number"
+		34		"WarpFinalX"		"0"		"number"
+		35		"WarpFinalY"		"0"		"number"
+		36		"WarpFinalZ"		"0"		"number"
+		37		"WarpStatus"		"-1"		"number"
+		38		"WarpUses"		"0"		"number"
+)
+
+#Command Briefing
+
+$Stage Text:
+ XSTR("welcome to capship life, we wouldn't want you behind several million tons of metal suddenly either but that's the way the war is going", -1)
+$end_multi_text
+$Ani Filename: <default>
++Wave Filename: none
+
+$Stage Text:
+ XSTR("The following is classified information, authorized for distribution to UN millitary command only. Unauthorized access is punishable under UN martial law.
+
+The $b Polydeuces is a heavily modified $b Moscow class heavy cruiser designed to maximise automatation and minimise crew requirements. Utilising state of the art power generation, she is faster and more manoeuvrable than any ship in her class. Excess power generation is stored in a $b capacitor allowing for shunting into auxiliary systems when required.
+
+Her primary armament consists of twin lateral $b pulse $b plasma $b beam emplacements. Secondary armament consists of broadside $b torpedo $b launchers for long-range engagement against capital ship targets and quad-linked artillery batteries which can fire heavy $b railgun or $b cannister $b flak rounds depending on ammunition loadout. Light antifighter fire comes from three point defense turrets or $b Trantor cluster-bomb munitions.
+
+She also has a number of automated functions which are outlined in the ship's manual. Each function is tailored to a specific combat scenario. $v Staff $v College training modules are available if you wish to go into these in more detail.", -1)
+$end_multi_text
+$Ani Filename: <default>
++Wave Filename: none
+
+#Briefing
+$start_briefing
+$num_stages: 2
+$start_stage
+$multi_text
+ XSTR("Before we can send the $b Polydeuces to engage any $r MIND forces, we'll need to familiarise you with the $b Polydeuces' ship systems. $v UN $v High $v Command has authorised a crash training course to take place immediately over low $b Earth orbit.", -1)
+$end_multi_text
+$voice: none.wav
+$camera_pos: 0.000000, 500.000000, 0.000000
+$camera_orient:
+	1.000000, -0.000904, 0.000000,
+	0.000000, 0.000000, 1.000000,
+	-0.000904, -1.000000, 0.000000
+$camera_time: 500
+$num_lines: 0
+$num_icons: 1
+$Flags: 0
+$Formula: ( true ) 
+$start_icon
+$type: 28
+$team: Friendly
+$class: UN Moscow
+$pos: -0.452000, 0.000000, 1.455882
+$label:  XSTR("Polydeuces", -1)
++id: 1
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$end_stage
+$start_stage
+$multi_text
+ XSTR("$b Alpha wing and the cruiser $b Chuikov will be your targets in this mission. You will need to utilise the $b Polydeuces' systems to ", -1)
+$end_multi_text
+$voice: none.wav
+$camera_pos: 0.000000, 500.000000, 0.000000
+$camera_orient:
+	1.000000, -0.000904, 0.000000,
+	0.000000, 0.000000, 1.000000,
+	-0.000904, -1.000000, 0.000000
+$camera_time: 500
+$num_lines: 0
+$num_icons: 3
+$Flags: 0
+$Formula: ( true ) 
+$start_icon
+$type: 28
+$team: Friendly
+$class: UN Moscow
+$pos: -0.452000, 0.000000, 109.191132
+$label:  XSTR("Polydeuces", -1)
++id: 1
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 1
+$team: Friendly
+$class: UN Lancer
+$pos: -202.893723, -0.000061, 0.000000
+$label:  XSTR("Alpha", -1)
++id: 3
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 4
+$team: Friendly
+$class: UN Kirov
+$pos: 201.841537, 0.000183, 0.000000
+$label:  XSTR("Chuikov", -1)
++id: 4
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$end_stage
+$end_briefing
+
+#Debriefing_info
+
+$Num stages: 2
+
+$Formula: ( not 
+   ( is-destroyed-delay 
+      0 
+      "Polydeuces# 1" 
+   )
+)
+$Multi text
+    XSTR("With the deployment of the Pharaoh to the Polaris-Sol wormhole, the UN presence in Polaris has been destroyed. All surviving forces in Polaris have retreated.
+
+We are requiring full combat readiness from all available naval units in expectation of a follow-up incursion into the Sol system. It is likely that you will be deployed immediately into a hot combat situation. All current standing orders apply until ordered otherwise by fleet command.", -1)
+$end_multi_text
+$Voice: none.wav
+$Recommendation text:
+    XSTR("", -1)
+$end_multi_text
+
+$Formula: ( is-destroyed-delay 
+   0 
+   "Polydeuces# 1" 
+)
+$Multi text
+    XSTR("How did you die in TRAINING?", -1)
+$end_multi_text
+$Voice: none.wav
+$Recommendation text:
+    XSTR("", -1)
+$end_multi_text
+
+#Alternate Types:
+$Alt: UN Leonov
+$Alt: UN Trition
+$Alt: Electronics
+
+#end
+
+
+#Players		;! 1 total
+
+$Starting Shipname: Polydeuces# 1
+$Ship Choices: (
+	"UN Moscow#PLAYEr"	1
+)
+
++Weaponry Pool: (
+	"Eagle SSM"	320
+	"Railgun"	1
+	"Cluster Flak Array"	1
+	"Trantor"	240
+	"Thresher"	12
+	"Reaper"	12
+	"MK-122"	2400
+	"Hegemony"	112
+)
+
+#Objects		;! 9 total
+
+$Name: Polydeuces# 1		;! Object #0
+$Class: UN Moscow#PLAYEr
+$Team: Friendly
+$Location: -5901.624023, -9150.012695, 5706.334473
+$Orientation:
+	0.000000, 0.000000, 1.000000,
+	0.000000, 1.000000, -0.000000,
+	-1.000000, 0.000000, 0.000000
+$AI Behavior: None
++AI Class: BP2-Captain
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "player-start" "guardian" )
++Flags2: ( "no-subspace-drive" )
++Respawn priority: 0
++Group: 0
++Score: 8
+
+$Name: Stafford Fortress		;! Object #1
+$Class: UN Endymion
+$Team: Friendly
+$Location: -5282.433594, -9241.200195, 5247.289551
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "guardian" )
++Flags2: ( "immobile" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Trento		;! Object #2
+$Class: UN Florence
+$Team: Friendly
+$Location: -5154.279297, -9034.305664, 5219.418457
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "guardian" )
++Flags2: ( "immobile" )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 200
+
+$Name: Alpha 1		;! Object #3
+$Class: UN Jackal
+$Team: Friendly
+$Location: 3586.537842, 0.001221, -1310.095947
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Jouster-Lvl1
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "guardian" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Score: 10
+
+$Name: Alpha 2		;! Object #4
+$Class: UN Jackal
+$Team: Friendly
+$Location: 3626.432617, 0.001236, -1307.598755
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Jouster-Lvl1
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "guardian" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Score: 10
+
+$Name: Alpha 3		;! Object #5
+$Class: UN Jackal
+$Team: Friendly
+$Location: 3574.448486, 0.001221, -1274.010742
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Jouster-Lvl1
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "guardian" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Score: 10
+
+$Name: Alpha 4		;! Object #6
+$Class: UN Jackal
+$Team: Friendly
+$Location: 3642.624023, 0.001244, -1279.758911
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Jouster-Lvl1
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "guardian" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Score: 10
+
+$Name: Chuikov		;! Object #7
+$Class: UN Kirov
+$Team: Friendly
+$Location: 4900.485352, -0.001099, 148.248535
+$Orientation:
+	-0.487482, 0.000000, 0.873134,
+	0.000000, 1.000000, 0.000000,
+	-0.873134, 0.000000, -0.487482
+$AI Behavior: None
++AI Class: Jouster-CAP
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "guardian" )
++Flags2: ( "lock-all-turrets" )
++Respawn priority: 0
++Hotkey: 7
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 500
+
+$Name: Malenchenko Fortress		;! Object #8
+$Class: UN Endymion
+$Team: Friendly
+$Location: 4811.998047, 133.395020, -1114.094849
+$Orientation:
+	0.523366, 0.000000, 0.852108,
+	0.000000, 1.000000, 0.000000,
+	-0.852108, 0.000000, 0.523366
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "escort" )
++Flags2: ( "lock-all-turrets" )
++Respawn priority: 0
++Escort priority: 99
++Group: 0
++Use Table Score:
++Score: 0
+
+#Wings		;! 2 total
+
+$Name: Polydeuces#
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Polydeuces# 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 1 total
+	"Polydeuces# 1"
+)
++Flags: ( )
+
+$Name: Alpha
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Alpha 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 4 total
+	"Alpha 1"
+	"Alpha 2"
+	"Alpha 3"
+	"Alpha 4"
+)
+$AI Goals: ( goals ( ai-guard "Malenchenko Fortress" 50 ) )
++Hotkey: 1
++Flags: ( )
+
+#Events		;! 89 total
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: --CSC script--
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( beam-lock-all "Polydeuces# 1" ) 
+   ( set-afterburner-energy 
+      0 
+      "Polydeuces# 1" 
+   )
+   ( hud-set-message 
+      "TLSTaccomE" 
+      "Overview: Repping off" 
+   )
+   ( hud-set-message 
+      "TLSTaccomD" 
+      "Overview: Hardeners off" 
+   )
+)
++Name: initialize player
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( every-time 
+   ( not 
+      ( string-equals 
+         "@PlayerTarget[Battuta]" 
+         "null" 
+      )
+   )
+   ( if-then-else 
+      ( > @RightBeamsTick[0] 0 ) 
+      ( hud-set-message 
+         "TLSTaccomB" 
+         "Overview: R Firing" 
+      )
+      ( if-then-else 
+         ( < @BeamRightStatus[200] 200 ) 
+         ( hud-set-message 
+            "TLSTaccomB" 
+            "Overview: R recharging" 
+         )
+         ( if-then-else 
+            ( is-in-box 
+               "@PlayerTarget[Battuta]" 
+               -5000 
+               1 
+               -5000 
+               5000 
+               -5000 
+               5000 
+               "Polydeuces# 1" 
+            )
+            ( hud-set-message 
+               "TLSTaccomB" 
+               "Overview: R Not in FOV" 
+            )
+            ( if-then-else 
+               ( > 
+                  ( distance-ship-subsystem 
+                     "@PlayerTarget[Battuta]" 
+                     "Polydeuces# 1" 
+                     "turret02" 
+                  )
+                  5500 
+               )
+               ( hud-set-message 
+                  "TLSTaccomB" 
+                  "Overview: R range" 
+               )
+               ( hud-set-message 
+                  "TLSTaccomB" 
+                  "Overview: R can fire" 
+               )
+            )
+         )
+      )
+   )
+)
++Name: Right beam TACHUD
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( every-time 
+   ( string-equals 
+      "null" 
+      "@PlayerTarget[Battuta]" 
+   )
+   ( hud-set-message 
+      "TLSTaccomA" 
+      "Overview: No target!" 
+   )
+   ( hud-set-message 
+      "TLSTaccomB" 
+      "Overview: No target!" 
+   )
+)
++Name: no target failsafe
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( = 0 @SHUTDOWN[0] ) 
+   ( hud-set-message 
+      "BPTaccomA" 
+      "Overview: Left beam" 
+   )
+   ( hud-set-message 
+      "BPTaccomB" 
+      "Overview: Right beam" 
+   )
+   ( hud-set-message 
+      "BPTaccomC" 
+      "Overview: Cap" 
+   )
+   ( if-then-else 
+      ( <= @Heat[0] 75 ) 
+      ( hud-set-message 
+         "BPTaccomD" 
+         "Overview: Heat" 
+      )
+      ( if-then-else 
+         ( < @Heat[0] 100 ) 
+         ( hud-set-message 
+            "BPTaccomD" 
+            "Overview: Red heat" 
+         )
+         ( hud-set-message 
+            "BPTaccomD" 
+            "Overview: Very red heat" 
+         )
+      )
+   )
+)
++Name: Status TACHUD
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( every-time 
+   ( not 
+      ( string-equals 
+         "@PlayerTarget[Battuta]" 
+         "null" 
+      )
+   )
+   ( if-then-else 
+      ( > @LeftBeamTick[0] 0 ) 
+      ( hud-set-message 
+         "TLSTaccomA" 
+         "Overview: L firing" 
+      )
+      ( if-then-else 
+         ( < @BeamLeftStatus[200] 200 ) 
+         ( hud-set-message 
+            "TLSTaccomA" 
+            "Overview: Left recharging" 
+         )
+         ( if-then-else 
+            ( is-in-box 
+               "@PlayerTarget[Battuta]" 
+               -1 
+               5000 
+               -5000 
+               5000 
+               -5000 
+               5000 
+               "Polydeuces# 1" 
+            )
+            ( hud-set-message 
+               "TLSTaccomA" 
+               "Overview: L Not in view" 
+            )
+            ( if-then-else 
+               ( > 
+                  ( distance-ship-subsystem 
+                     "@PlayerTarget[Battuta]" 
+                     "Polydeuces# 1" 
+                     "turret01" 
+                  )
+                  5500 
+               )
+               ( hud-set-message 
+                  "TLSTaccomA" 
+                  "Overview: L range" 
+               )
+               ( hud-set-message 
+                  "TLSTaccomA" 
+                  "Overview: L can fire" 
+               )
+            )
+         )
+      )
+   )
+)
++Name: Left beam TACHUD
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( = @SHUTDOWN[0] 0 ) 
+   ( if-then-else 
+      ( >= 
+         ( afterburner-energy-pct 
+            "Polydeuces# 1" 
+         )
+         100 
+      )
+      ( hud-set-message 
+         "TLSTaccomC" 
+         "Overview: AB full" 
+      )
+      ( if-then-else 
+         ( < @Capacitor[100] 20 ) 
+         ( hud-set-message 
+            "TLSTaccomC" 
+            "Overview: AB recharging" 
+         )
+         ( hud-set-message 
+            "TLSTaccomC" 
+            "Overview: AB can shunt" 
+         )
+      )
+   )
+)
++Name: Burner shunt HUD
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( set-object-position 
+      "Polydeuces Loc:1" 
+      ( get-object-x "Polydeuces# 1" ) 
+      ( get-object-y "Polydeuces# 1" ) 
+      ( get-object-z "Polydeuces# 1" ) 
+   )
+   ( key-reset-multiple "Q" ) 
+   ( key-reset-multiple "Left Arrow" ) 
+   ( key-reset-multiple "Right Arrow" ) 
+   ( when 
+      ( > @Capacitor[100] 100 ) 
+      ( modify-variable @Capacitor[100] 100 ) 
+   )
+   ( when 
+      ( > @Heat[0] 0 ) 
+      ( modify-variable 
+         @Heat[0] 
+         ( - @Heat[0] 1 ) 
+      )
+   )
+   ( when 
+      ( and 
+         ( < @Heat[0] 80 ) 
+         ( = @HeatHasCritical[0] 1 ) 
+      )
+      ( modify-variable 
+         @HeatHasCritical[0] 
+         0 
+      )
+   )
+   ( key-reset-multiple "1" ) 
+   ( key-reset-multiple "2" ) 
+   ( key-reset-multiple "Alt-J" ) 
+   ( key-reset-multiple "Shift-J" ) 
+   ( key-reset-multiple "3" ) 
+   ( script-eval "UpdateTarget()" ) 
+)
++Name: Tick tock
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( < @Capacitor[100] 100 ) 
+   ( when 
+      ( and 
+         ( > 
+            ( get-ets-value 
+               "Shield" 
+               "Polydeuces# 1" 
+            )
+            0 
+         )
+         ( < 
+            ( get-ets-value 
+               "Shield" 
+               "Polydeuces# 1" 
+            )
+            2 
+         )
+      )
+      ( modify-variable 
+         @Capacitor[100] 
+         ( + @Capacitor[100] 1 ) 
+      )
+   )
+   ( when 
+      ( and 
+         ( >= 
+            ( get-ets-value 
+               "Shield" 
+               "Polydeuces# 1" 
+            )
+            2 
+         )
+         ( < 
+            ( get-ets-value 
+               "Shield" 
+               "Polydeuces# 1" 
+            )
+            4 
+         )
+      )
+      ( modify-variable 
+         @Capacitor[100] 
+         ( + @Capacitor[100] 3 ) 
+      )
+   )
+   ( when 
+      ( and 
+         ( >= 
+            ( get-ets-value 
+               "Shield" 
+               "Polydeuces# 1" 
+            )
+            4 
+         )
+         ( < 
+            ( get-ets-value 
+               "Shield" 
+               "Polydeuces# 1" 
+            )
+            6 
+         )
+      )
+      ( modify-variable 
+         @Capacitor[100] 
+         ( + @Capacitor[100] 4 ) 
+      )
+   )
+   ( when 
+      ( and 
+         ( >= 
+            ( get-ets-value 
+               "Shield" 
+               "Polydeuces# 1" 
+            )
+            6 
+         )
+         ( < 
+            ( get-ets-value 
+               "Shield" 
+               "Polydeuces# 1" 
+            )
+            8 
+         )
+      )
+      ( modify-variable 
+         @Capacitor[100] 
+         ( + @Capacitor[100] 6 ) 
+      )
+   )
+   ( when 
+      ( and 
+         ( >= 
+            ( get-ets-value 
+               "Shield" 
+               "Polydeuces# 1" 
+            )
+            8 
+         )
+         ( < 
+            ( get-ets-value 
+               "Shield" 
+               "Polydeuces# 1" 
+            )
+            10 
+         )
+      )
+      ( modify-variable 
+         @Capacitor[100] 
+         ( + @Capacitor[100] 7 ) 
+      )
+      ( modify-variable 
+         @Heat[0] 
+         ( + @Heat[0] 1 ) 
+      )
+   )
+   ( when 
+      ( >= 
+         ( get-ets-value 
+            "Shield" 
+            "Polydeuces# 1" 
+         )
+         10 
+      )
+      ( modify-variable 
+         @Capacitor[100] 
+         ( + @Capacitor[100] 8 ) 
+      )
+      ( modify-variable 
+         @Heat[0] 
+         ( + @Heat[0] 2 ) 
+      )
+   )
+)
++Name: Regenerate capacitor
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( key-pressed "1" ) 
+      ( <= 
+         ( + 
+            @BeamRightStatus[200] 
+            @BeamLeftStatus[200] 
+         )
+         900 
+      )
+      ( >= @Capacitor[100] 20 ) 
+      ( <= @WarpStatus[-1] 0 ) 
+   )
+   ( modify-variable 
+      @BeamLeftStatus[200] 
+      ( + 
+         @BeamLeftStatus[200] 
+         @Capacitor[100] 
+      )
+   )
+   ( modify-variable 
+      @BeamRightStatus[200] 
+      ( + 
+         @BeamRightStatus[200] 
+         @Capacitor[100] 
+      )
+   )
+   ( modify-variable @Capacitor[100] 0 ) 
+)
++Name: Beam overdrive
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( > 
+         ( get-ets-value 
+            "Weapon" 
+            "Polydeuces# 1" 
+         )
+         0 
+      )
+      ( < 
+         ( get-ets-value 
+            "Weapon" 
+            "Polydeuces# 1" 
+         )
+         2 
+      )
+   )
+   ( when 
+      ( < @BeamLeftStatus[200] 350 ) 
+      ( modify-variable 
+         @BeamLeftStatus[200] 
+         ( + @BeamLeftStatus[200] 10 ) 
+      )
+   )
+   ( when 
+      ( < @BeamRightStatus[200] 350 ) 
+      ( modify-variable 
+         @BeamRightStatus[200] 
+         ( + @BeamRightStatus[200] 10 ) 
+      )
+   )
+)
++Name: Charge beam wepeng 1
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( >= 
+         ( get-ets-value 
+            "Weapon" 
+            "Polydeuces# 1" 
+         )
+         2 
+      )
+      ( < 
+         ( get-ets-value 
+            "Weapon" 
+            "Polydeuces# 1" 
+         )
+         4 
+      )
+   )
+   ( when 
+      ( < @BeamLeftStatus[200] 350 ) 
+      ( modify-variable 
+         @BeamLeftStatus[200] 
+         ( + @BeamLeftStatus[200] 12 ) 
+      )
+   )
+   ( when 
+      ( < @BeamRightStatus[200] 350 ) 
+      ( modify-variable 
+         @BeamRightStatus[200] 
+         ( + @BeamRightStatus[200] 12 ) 
+      )
+   )
+)
++Name: Charge beam wepeng 2
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( >= 
+         ( get-ets-value 
+            "Weapon" 
+            "Polydeuces# 1" 
+         )
+         4 
+      )
+      ( < 
+         ( get-ets-value 
+            "Weapon" 
+            "Polydeuces# 1" 
+         )
+         6 
+      )
+   )
+   ( when 
+      ( < @BeamLeftStatus[200] 350 ) 
+      ( modify-variable 
+         @BeamLeftStatus[200] 
+         ( + @BeamLeftStatus[200] 14 ) 
+      )
+   )
+   ( when 
+      ( < @BeamRightStatus[200] 350 ) 
+      ( modify-variable 
+         @BeamRightStatus[200] 
+         ( + @BeamRightStatus[200] 14 ) 
+      )
+   )
+)
++Name: Charge beam wepeng 3
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( >= 
+         ( get-ets-value 
+            "Weapon" 
+            "Polydeuces# 1" 
+         )
+         6 
+      )
+      ( < 
+         ( get-ets-value 
+            "Weapon" 
+            "Polydeuces# 1" 
+         )
+         8 
+      )
+   )
+   ( when 
+      ( < @BeamLeftStatus[200] 350 ) 
+      ( modify-variable 
+         @BeamLeftStatus[200] 
+         ( + @BeamLeftStatus[200] 15 ) 
+      )
+   )
+   ( when 
+      ( < @BeamRightStatus[200] 350 ) 
+      ( modify-variable 
+         @BeamRightStatus[200] 
+         ( + @BeamRightStatus[200] 15 ) 
+      )
+   )
+)
++Name: Charge beam wepeng 4
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( >= 
+         ( get-ets-value 
+            "Weapon" 
+            "Polydeuces# 1" 
+         )
+         8 
+      )
+      ( < 
+         ( get-ets-value 
+            "Weapon" 
+            "Polydeuces# 1" 
+         )
+         10 
+      )
+   )
+   ( when 
+      ( < @BeamLeftStatus[200] 350 ) 
+      ( modify-variable 
+         @BeamLeftStatus[200] 
+         ( + @BeamLeftStatus[200] 16 ) 
+      )
+   )
+   ( when 
+      ( < @BeamRightStatus[200] 350 ) 
+      ( modify-variable 
+         @BeamRightStatus[200] 
+         ( + @BeamRightStatus[200] 16 ) 
+      )
+   )
+   ( when 
+      ( or 
+         ( < @BeamLeftStatus[200] 350 ) 
+         ( < @BeamRightStatus[200] 350 ) 
+      )
+      ( modify-variable 
+         @Heat[0] 
+         ( + @Heat[0] 1 ) 
+      )
+   )
+)
++Name: Charge beam wepeng 5
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( >= 
+      ( get-ets-value 
+         "Weapon" 
+         "Polydeuces# 1" 
+      )
+      10 
+   )
+   ( when 
+      ( < @BeamLeftStatus[200] 350 ) 
+      ( modify-variable 
+         @BeamLeftStatus[200] 
+         ( + @BeamLeftStatus[200] 17 ) 
+      )
+      ( modify-variable 
+         @Heat[0] 
+         ( + @Heat[0] 1 ) 
+      )
+   )
+   ( when 
+      ( < @BeamRightStatus[200] 350 ) 
+      ( modify-variable 
+         @BeamRightStatus[200] 
+         ( + @BeamRightStatus[200] 17 ) 
+      )
+      ( modify-variable 
+         @Heat[0] 
+         ( + @Heat[0] 1 ) 
+      )
+   )
+)
++Name: Charge beam wepeng 6
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when-argument 
+   ( any-of "Chuikov" ) 
+   ( and 
+      ( targeted "<argument>" ) 
+      ( key-pressed "Left Arrow" ) 
+      ( >= @BeamLeftStatus[200] 200 ) 
+      ( <= 
+         ( distance-ship-subsystem 
+            "<argument>" 
+            "Polydeuces# 1" 
+            "turret01" 
+         )
+         5500 
+      )
+      ( is-in-box 
+         "<argument>" 
+         -5000 
+         1 
+         -5000 
+         5000 
+         -5000 
+         5000 
+         "Polydeuces# 1" 
+      )
+      ( <= @WarpStatus[-1] 0 ) 
+      ( is-iff "Hostile" "Chuikov" ) 
+   )
+   ( modify-variable 
+      @LeftBeamTick[0] 
+      ( / ( - @BeamLeftStatus[200] 150 ) 50 ) 
+   )
+   ( modify-variable 
+      @BeamLeftStatus[200] 
+      0 
+   )
+   ( modify-variable 
+      "@ShipTargeted[a whale]" 
+      "<argument>" 
+   )
+)
++Name: Fire beam left
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( > @LeftBeamTick[0] 0 ) 
+   ( fire-beam 
+      "Polydeuces# 1" 
+      "turret01" 
+      "@ShipTargeted[a whale]" 
+      "@ShipTargeted[a whale]" 
+      ( true ) 
+   )
+   ( modify-variable 
+      @LeftBeamTick[0] 
+      ( - @LeftBeamTick[0] 1 ) 
+   )
+   ( modify-variable 
+      @Heat[0] 
+      ( + @Heat[0] 2 ) 
+   )
+)
++Name: Left beams tick
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when-argument 
+   ( any-of "Chuikov" ) 
+   ( and 
+      ( targeted "<argument>" ) 
+      ( key-pressed "Right Arrow" ) 
+      ( >= @BeamRightStatus[200] 200 ) 
+      ( <= 
+         ( distance-ship-subsystem 
+            "<argument>" 
+            "Polydeuces# 1" 
+            "turret02" 
+         )
+         5500 
+      )
+      ( is-in-box 
+         "<argument>" 
+         -1 
+         5000 
+         -5000 
+         5000 
+         -5000 
+         5000 
+         "Polydeuces# 1" 
+      )
+      ( <= @WarpStatus[-1] 0 ) 
+      ( is-iff "Hostile" "Chuikov" ) 
+   )
+   ( modify-variable 
+      @RightBeamsTick[0] 
+      ( / 
+         ( - @BeamRightStatus[200] 150 ) 
+         50 
+      )
+   )
+   ( modify-variable 
+      @BeamRightStatus[200] 
+      0 
+   )
+   ( modify-variable 
+      "@ShipTargetedRight[a bote]" 
+      "<argument>" 
+   )
+)
++Name: Fire beam right
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( > @RightBeamsTick[0] 0 ) 
+   ( fire-beam 
+      "Polydeuces# 1" 
+      "turret02" 
+      "@ShipTargetedRight[a bote]" 
+      "@ShipTargetedRight[a bote]" 
+      ( true ) 
+   )
+   ( modify-variable 
+      @RightBeamsTick[0] 
+      ( - @RightBeamsTick[0] 1 ) 
+   )
+   ( modify-variable 
+      @Heat[0] 
+      ( + @Heat[0] 2 ) 
+   )
+)
++Name: Right beams tick
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( >= @Heat[0] 100 ) 
+      ( = @HeatHasCritical[0] 0 ) 
+   )
+   ( send-message 
+      "#Engineering" 
+      "High" 
+      "Engi: Heat critical" 
+   )
+   ( modify-variable 
+      @HeatHasCritical[0] 
+      1 
+   )
+)
++Name: Heat critical
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( = @OVerride[0] 0 ) 
+      ( >= @Heat[0] 120 ) 
+   )
+   ( modify-variable @SHUTDOWN[0] 1 ) 
+)
++Name: SHUTDOWN
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( = @SHUTDOWN[0] 1 ) 
+   ( player-use-ai ) 
+   ( add-goal 
+      "Polydeuces# 1" 
+      ( ai-play-dead 89 ) 
+   )
+   ( hud-disable-except-messages 1 ) 
+   ( modify-variable 
+      @Heat[0] 
+      ( - @Heat[0] 2 ) 
+   )
+   ( ignore-key 
+      -1 
+      "." 
+      "," 
+      "Q" 
+      "/" 
+      "Left Arrow" 
+      "Right Arrow" 
+      "4" 
+      "3" 
+      "2" 
+      "1" 
+   )
+   ( training-msg 
+      "Tutorial: Overheated" 
+      "Tutorial: Overheated" 
+      0 
+      1 
+   )
+)
++Name: Is shutdown
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( >= @Heat[0] 120 ) 
+      ( = @SHUTDOWN[0] 0 ) 
+   )
+   ( sabotage-subsystem 
+      "Polydeuces# 1" 
+      "Hull" 
+      ( rand-multiple 0 1 ) 
+   )
+   ( when 
+      ( >= @Heat[0] 135 ) 
+      ( sabotage-subsystem 
+         "Polydeuces# 1" 
+         "Hull" 
+         ( rand-multiple 1 3 ) 
+      )
+      ( when 
+         ( >= @Heat[0] 180 ) 
+         ( self-destruct "Polydeuces# 1" ) 
+      )
+   )
+)
++Name: Heat damage!!
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( = @SHUTDOWN[0] 1 ) 
+      ( <= @Heat[0] 90 ) 
+   )
+   ( ignore-key 
+      0 
+      "/" 
+      "." 
+      "," 
+      "Left Arrow" 
+      "Right Arrow" 
+      "Q" 
+      "4" 
+      "3" 
+      "2" 
+      "1" 
+   )
+   ( modify-variable @SHUTDOWN[0] 0 ) 
+   ( hud-disable 0 ) 
+   ( player-not-use-ai ) 
+   ( clear-goals "Polydeuces# 1" ) 
+   ( hud-disable-except-messages 0 ) 
+)
++Name: Repower
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( = @SHUTDOWN[0] 0 ) 
+      ( = @OVerride[0] 0 ) 
+      ( key-pressed "Alt-X" ) 
+   )
+   ( modify-variable @OVerride[0] 1 ) 
+   ( key-reset-multiple "Alt-X" ) 
+   ( send-message 
+      "#Engineering" 
+      "High" 
+      "Engi: Override" 
+   )
+)
++Name: Override on
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( = @SHUTDOWN[0] 0 ) 
+      ( = @OVerride[0] 1 ) 
+      ( key-pressed "Alt-X" ) 
+   )
+   ( modify-variable @OVerride[0] 0 ) 
+   ( send-message 
+      "#Engineering" 
+      "High" 
+      "Engi: Override off" 
+   )
+   ( key-reset-multiple "Alt-X" ) 
+)
++Name: Override off
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( >= 
+      ( get-object-speed-z 
+         "Polydeuces# 1" 
+         ( true ) 
+      )
+      60 
+   )
+   ( modify-variable 
+      @Heat[0] 
+      ( + @Heat[0] 2 ) 
+   )
+   ( when 
+      ( >= 
+         ( get-object-speed-z 
+            "Polydeuces# 1" 
+            ( true ) 
+         )
+         80 
+      )
+      ( modify-variable 
+         @Heat[0] 
+         ( + @Heat[0] 1 ) 
+      )
+   )
+)
++Name: Heat when over thrust
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( >= @Capacitor[100] 20 ) 
+      ( key-pressed "2" ) 
+      ( < 
+         ( afterburner-energy-pct 
+            "Polydeuces# 1" 
+         )
+         100 
+      )
+      ( <= @WarpStatus[-1] 0 ) 
+   )
+   ( key-reset-multiple "2" ) 
+   ( modify-variable 
+      @WarpCancelSWA[0] 
+      ( min 
+         ( - 
+            100 
+            ( afterburner-energy-pct 
+               "Polydeuces# 1" 
+            )
+         )
+         @Capacitor[100] 
+      )
+   )
+   ( set-afterburner-energy 
+      ( + 
+         ( afterburner-energy-pct 
+            "Polydeuces# 1" 
+         )
+         @WarpCancelSWA[0] 
+      )
+      "Polydeuces# 1" 
+   )
+   ( modify-variable 
+      @Capacitor[100] 
+      ( - @Capacitor[100] @WarpCancelSWA[0] ) 
+   )
+)
++Name: Burner shunt
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( = @WarpStatus[-1] 0 ) 
+      ( key-pressed "Alt-J" ) 
+   )
+   ( set-time-compression 1 ) 
+   ( modify-variable 
+      @WarpCancelB[0] 
+      ( get-object-bank "Polydeuces# 1" ) 
+   )
+   ( modify-variable 
+      @WarpCancelH[0] 
+      ( get-object-heading "Polydeuces# 1" ) 
+   )
+   ( modify-variable 
+      @WarpCancelP[0] 
+      ( get-object-pitch "Polydeuces# 1" ) 
+   )
+   ( modify-variable 
+      @WarpCancelX[0] 
+      ( get-object-x "Polydeuces# 1" ) 
+   )
+   ( modify-variable 
+      @WarpCancelY[0] 
+      ( get-object-y "Polydeuces# 1" ) 
+   )
+   ( modify-variable 
+      @WarpCancelZ[0] 
+      ( get-object-z "Polydeuces# 1" ) 
+   )
+   ( modify-variable @WarpStatus[-1] 1 ) 
+   ( key-reset-multiple "Alt-J" ) 
+   ( turret-lock-all "Polydeuces# 1" ) 
+   ( lock-primary-weapon "Polydeuces# 1" ) 
+   ( lock-afterburner "Polydeuces# 1" ) 
+   ( lock-secondary-weapon 
+      "Polydeuces# 1" 
+   )
+   ( modify-variable 
+      @WarpCancelS[0] 
+      ( current-speed "Polydeuces# 1" ) 
+   )
+   ( modify-variable 
+      @WarpCancelSWA[0] 
+      ( get-secondary-ammo 
+         "Polydeuces# 1" 
+         0 
+      )
+   )
+   ( modify-variable 
+      @WarpCancelSW[0] 
+      ( get-secondary-ammo 
+         "Polydeuces# 1" 
+         1 
+      )
+   )
+   ( modify-variable 
+      @WarpCancelT[0] 
+      ( get-throttle-speed "Polydeuces# 1" ) 
+   )
+   ( modify-variable 
+      @WarpCancelSW[0] 
+      ( get-secondary-ammo 
+         "Polydeuces# 1" 
+         1 
+      )
+   )
+   ( modify-variable 
+      @WarpCancelETSE[0] 
+      ( get-ets-value 
+         "Engine" 
+         "Polydeuces# 1" 
+      )
+   )
+   ( modify-variable 
+      @WarpCancelETSW[0] 
+      ( get-ets-value 
+         "Weapon" 
+         "Polydeuces# 1" 
+      )
+   )
+   ( modify-variable 
+      @WarpCancelETSS[0] 
+      ( get-ets-value 
+         "Shield" 
+         "Polydeuces# 1" 
+      )
+   )
+   ( change-ship-class 
+      "UN Moscow#Warp" 
+      "Polydeuces# 1" 
+   )
+   ( set-ets-values 
+      12 
+      0 
+      0 
+      "Polydeuces# 1" 
+   )
+   ( disable-ets "Polydeuces# 1" ) 
+)
++Name: WARP BEGIN!
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( every-time 
+   ( and 
+      ( = 1 @WarpStatus[-1] ) 
+      ( key-pressed "Alt-J" ) 
+   )
+   ( when 
+      ( and 
+         ( = 
+            ( get-throttle-speed "Polydeuces# 1" ) 
+            0 
+         )
+         ( <= 
+            ( distance 
+               "Polydeuces# 1" 
+               "Malenchenko Fortress" 
+            )
+            4000 
+         )
+      )
+      ( modify-variable @WarpStatus[-1] 2 ) 
+      ( modify-variable 
+         @WarpFinalB[0] 
+         ( get-object-bank "Polydeuces# 1" ) 
+      )
+      ( modify-variable 
+         @WarpFinalH[0] 
+         ( get-object-heading "Polydeuces# 1" ) 
+      )
+      ( modify-variable 
+         @WarpFinalP[0] 
+         ( get-object-pitch "Polydeuces# 1" ) 
+      )
+      ( modify-variable 
+         @WarpFinalX[0] 
+         ( get-object-x "Polydeuces# 1" ) 
+      )
+      ( modify-variable 
+         @WarpFinalY[0] 
+         ( get-object-y "Polydeuces# 1" ) 
+      )
+      ( modify-variable 
+         @WarpFinalZ[0] 
+         ( get-object-z "Polydeuces# 1" ) 
+      )
+      ( set-object-orientation 
+         "Polydeuces# 1" 
+         @WarpCancelP[0] 
+         @WarpCancelB[0] 
+         @WarpCancelH[0] 
+      )
+      ( set-object-position 
+         "Polydeuces# 1" 
+         @WarpCancelX[0] 
+         @WarpCancelY[0] 
+         @WarpCancelZ[0] 
+      )
+      ( set-object-speed-z 
+         "Polydeuces# 1" 
+         @WarpCancelS[0] 
+         ( true ) 
+      )
+      ( set-object-speed-x 
+         "Polydeuces# 1" 
+         0 
+         ( true ) 
+      )
+      ( set-object-speed-x 
+         "Polydeuces# 1" 
+         0 
+         ( true ) 
+      )
+      ( change-ship-class 
+         "UN Moscow#PLAYEr" 
+         "Polydeuces# 1" 
+      )
+      ( reset-time-compression ) 
+   )
+   ( key-reset-multiple "Alt-J" ) 
+)
++Name: Warp begin
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( every-time 
+   ( and 
+      ( = @WarpStatus[-1] 1 ) 
+      ( key-pressed "Shift-J" ) 
+   )
+   ( when 
+      ( = 
+         ( get-throttle-speed "Polydeuces# 1" ) 
+         0 
+      )
+      ( set-object-orientation 
+         "Polydeuces# 1" 
+         @WarpCancelP[0] 
+         @WarpCancelB[0] 
+         @WarpCancelH[0] 
+      )
+      ( set-object-position 
+         "Polydeuces# 1" 
+         @WarpCancelX[0] 
+         @WarpCancelY[0] 
+         @WarpCancelZ[0] 
+      )
+      ( modify-variable @WarpStatus[-1] 0 ) 
+      ( set-object-speed-z 
+         "Polydeuces# 1" 
+         @WarpCancelS[0] 
+         ( true ) 
+      )
+      ( set-object-speed-x 
+         "Polydeuces# 1" 
+         0 
+         ( true ) 
+      )
+      ( set-object-speed-x 
+         "Polydeuces# 1" 
+         0 
+         ( true ) 
+      )
+      ( change-ship-class 
+         "UN Moscow#PLAYEr" 
+         "Polydeuces# 1" 
+      )
+      ( turret-free-all "Polydeuces# 1" ) 
+      ( unlock-afterburner "Polydeuces# 1" ) 
+      ( unlock-primary-weapon 
+         "Polydeuces# 1" 
+      )
+      ( unlock-secondary-weapon 
+         "Polydeuces# 1" 
+      )
+      ( reset-time-compression ) 
+      ( key-reset-multiple "Shift-J" ) 
+      ( set-player-throttle-speed 
+         "Polydeuces# 1" 
+         @WarpCancelT[0] 
+      )
+      ( set-secondary-ammo 
+         "Polydeuces# 1" 
+         0 
+         @WarpCancelSWA[0] 
+      )
+      ( set-secondary-ammo 
+         "Polydeuces# 1" 
+         1 
+         @WarpCancelSW[0] 
+      )
+      ( enable-ets "Polydeuces# 1" ) 
+      ( set-ets-values 
+         @WarpCancelETSE[0] 
+         @WarpCancelETSS[0] 
+         @WarpCancelETSW[0] 
+         "Polydeuces# 1" 
+      )
+   )
+   ( key-reset-multiple "Shift-J" ) 
+)
++Name: Warp cancel
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( >= @WarpStatus[-1] 2 ) 
+      ( <= @WarpStatus[-1] 14 ) 
+   )
+   ( modify-variable 
+      @WarpStatus[-1] 
+      ( + 1 @WarpStatus[-1] ) 
+   )
+)
++Name: Warp tick-up
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( = 3 @WarpStatus[-1] ) 
+   ( modify-variable @WarpStatus[-1] 3 ) 
+   ( player-use-ai ) 
+   ( add-goal 
+      "Polydeuces# 1" 
+      ( ai-play-dead 89 ) 
+   )
+   ( ship-lat-maneuver 
+      "Polydeuces# 1" 
+      5000 
+      0 
+      0 
+      100 
+      ( true ) 
+   )
+   ( hud-display-gauge 4000 "warpout" ) 
+   ( lock-secondary-weapon 
+      "Polydeuces# 1" 
+   )
+   ( lock-primary-weapon "Polydeuces# 1" ) 
+   ( play-sound-from-table 0 0 0 "50" ) 
+   ( hud-set-max-targeting-range 1 ) 
+)
++Name: Warp cinematic
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( = @WarpStatus[-1] 7 ) 
+   ( warp-effect 
+      ( get-object-x 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         0 
+         500 
+      )
+      ( get-object-y 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         0 
+         500 
+      )
+      ( get-object-z 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         0 
+         500 
+      )
+      ( get-object-x "Polydeuces# 1" ) 
+      ( get-object-y "Polydeuces# 1" ) 
+      ( get-object-z "Polydeuces# 1" ) 
+      200 
+      10 
+      "<none>" 
+      "<none>" 
+      0 
+      1 
+   )
+)
++Name: Warp in subspace
++Repeat Count: -1
++Trigger Count: 99999
++Interval: 1
+
+$Formula: ( when 
+   ( = @WarpStatus[-1] 9 ) 
+   ( fade-out 1000 1 ) 
+)
++Name: Warp fadeout, subspace
++Repeat Count: -1
++Trigger Count: 99999
++Interval: 1
+
+$Formula: ( when 
+   ( = @WarpStatus[-1] 10 ) 
+   ( mission-set-subspace 1 ) 
+   ( fade-in 1000 1 ) 
+   ( set-object-position 
+      "Polydeuces# 1" 
+      50000 
+      -50000 
+      50000 
+   )
+   ( set-object-facing 
+      "Polydeuces# 1" 
+      50000 
+      -50000 
+      51000 
+   )
+)
++Name: Warp subspace
++Repeat Count: -1
++Trigger Count: 99999
++Interval: 1
+
+$Formula: ( when 
+   ( = 14 @WarpStatus[-1] ) 
+   ( fade-out 1000 1 ) 
+)
++Name: Warp fadein
++Repeat Count: -1
++Trigger Count: 99999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( = 15 @WarpStatus[-1] ) 
+      ( true ) 
+   )
+   ( set-object-orientation 
+      "Polydeuces# 1" 
+      @WarpFinalP[0] 
+      @WarpFinalB[0] 
+      @WarpFinalH[0] 
+   )
+   ( set-object-position 
+      "Polydeuces# 1" 
+      @WarpFinalX[0] 
+      @WarpFinalY[0] 
+      @WarpFinalZ[0] 
+   )
+   ( warp-effect 
+      ( get-object-x 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         0 
+         -500 
+      )
+      ( get-object-y 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         0 
+         -500 
+      )
+      ( get-object-z 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         0 
+         -500 
+      )
+      ( get-object-x "Polydeuces# 1" ) 
+      ( get-object-y "Polydeuces# 1" ) 
+      ( get-object-z "Polydeuces# 1" ) 
+      200 
+      10 
+      "<none>" 
+      "<none>" 
+      0 
+      1 
+   )
+   ( modify-variable @WarpStatus[-1] -1 ) 
+   ( unlock-secondary-weapon 
+      "Polydeuces# 1" 
+   )
+   ( unlock-afterburner "Polydeuces# 1" ) 
+   ( unlock-primary-weapon 
+      "Polydeuces# 1" 
+   )
+   ( set-player-throttle-speed 
+      "Polydeuces# 1" 
+      @WarpCancelT[0] 
+   )
+   ( set-secondary-ammo 
+      "Polydeuces# 1" 
+      0 
+      @WarpCancelSWA[0] 
+   )
+   ( set-secondary-ammo 
+      "Polydeuces# 1" 
+      1 
+      @WarpCancelSW[0] 
+   )
+   ( enable-ets "Polydeuces# 1" ) 
+   ( set-ets-values 
+      @WarpCancelETSE[0] 
+      @WarpCancelETSS[0] 
+      @WarpCancelETSW[0] 
+      "Polydeuces# 1" 
+   )
+   ( player-not-use-ai ) 
+   ( mission-set-subspace 0 ) 
+   ( fade-in 1000 1 ) 
+   ( hud-set-max-targeting-range 0 ) 
+   ( modify-variable 
+      @WarpUses[0] 
+      ( + @WarpUses[0] 1 ) 
+   )
+)
++Name: Warp done!
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( >= @Capacitor[100] 15 ) 
+      ( = @HardenLevel[0] 0 ) 
+      ( key-pressed "3" ) 
+   )
+   ( modify-variable @HardenLevel[0] 1 ) 
+   ( key-reset-multiple "3" ) 
+   ( set-armor-type 
+      "Polydeuces# 1" 
+      ( true ) 
+      "Hardened" 
+      "Hull" 
+   )
+   ( hud-set-message 
+      "TLSTaccomD" 
+      "Overview: Hardeners on" 
+   )
+)
++Name: Harden armor
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( = 1 @HardenLevel[0] ) 
+      ( >= @Capacitor[100] 10 ) 
+      ( <= @WarpStatus[-1] 0 ) 
+   )
+   ( modify-variable 
+      @Capacitor[100] 
+      ( - @Capacitor[100] 4 ) 
+   )
+)
++Name: Harden on
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( <= @Capacitor[100] 10 ) 
+      ( = 1 @HardenLevel[0] ) 
+   )
+   ( modify-variable @HardenLevel[0] 0 ) 
+   ( set-armor-type 
+      "Polydeuces# 1" 
+      ( false ) 
+      "Heavy Plate" 
+      "Hull" 
+   )
+   ( hud-set-message 
+      "TLSTaccomD" 
+      "Overview: Hardeners off" 
+   )
+)
++Name: Harden out of cap
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( key-pressed "3" ) 
+      ( = @HardenLevel[0] 1 ) 
+   )
+   ( modify-variable @HardenLevel[0] 0 ) 
+   ( key-reset-multiple "3" ) 
+   ( set-armor-type 
+      "Polydeuces# 1" 
+      ( false ) 
+      "Heavy Plate" 
+      "Hull" 
+   )
+   ( hud-set-message 
+      "TLSTaccomD" 
+      "Overview: Hardeners off" 
+   )
+)
++Name: Harden off
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( >= @Capacitor[100] 0 ) 
+      ( key-pressed "4" ) 
+      ( <= @WarpStatus[-1] 0 ) 
+   )
+   ( modify-variable @Repairing[0] 1 ) 
+   ( key-reset-multiple "4" ) 
+   ( hud-set-message 
+      "TLSTaccomE" 
+      "Overview: Repping on" 
+   )
+)
++Name: Repair on
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( >= @Capacitor[100] 10 ) 
+      ( = @Repairing[0] 1 ) 
+   )
+   ( repair-subsystem 
+      "Polydeuces# 1" 
+      "Hull" 
+      1 
+   )
+   ( modify-variable 
+      @Capacitor[100] 
+      ( - @Capacitor[100] 19 ) 
+   )
+   ( modify-variable 
+      @Heat[0] 
+      ( + 1 @Heat[0] ) 
+   )
+)
++Name: Repairing
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 2
+
+$Formula: ( when 
+   ( and 
+      ( <= @Capacitor[100] 20 ) 
+      ( = 1 @Repairing[0] ) 
+   )
+   ( modify-variable @Repairing[0] 0 ) 
+   ( hud-set-message 
+      "TLSTaccomE" 
+      "Overview: Repping off" 
+   )
+)
++Name: Repair out of cap
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( key-pressed "4" ) 
+      ( = @Repairing[0] 1 ) 
+   )
+   ( key-reset-multiple "4" ) 
+   ( modify-variable @Repairing[0] 0 ) 
+   ( hud-set-message 
+      "TLSTaccomE" 
+      "Overview: Repping off" 
+   )
+)
++Name: Repair off
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( every-time 
+   ( primary-fired-since 
+      "Polydeuces# 1" 
+      1 
+      1 
+   )
+   ( modify-variable 
+      @AmmoSwitchCount[0] 
+      ( + ( mission-time-msecs ) 1500 ) 
+   )
+   ( lock-primary-weapon "Polydeuces# 1" ) 
+)
++Name: lock cfa
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( every-time 
+   ( primary-fired-since 
+      "Polydeuces# 1" 
+      0 
+      1 
+   )
+   ( modify-variable 
+      @AmmoSwitchCount[0] 
+      ( + ( mission-time-msecs ) 3000 ) 
+   )
+   ( lock-primary-weapon "Polydeuces# 1" ) 
+)
++Name: lock rails
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( every-time 
+   ( and 
+      ( >= 
+         ( mission-time-msecs ) 
+         @AmmoSwitchCount[0] 
+      )
+      ( is-event-true-delay 
+         "Unlock AAAfs" 
+         0 
+      )
+   )
+   ( unlock-primary-weapon 
+      "Polydeuces# 1" 
+   )
+)
++Name: unlock prim
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( primary-fired-since 
+      "Polydeuces# 1" 
+      1 
+      1000 
+   )
+   ( modify-variable 
+      @Heat[0] 
+      ( + @Heat[0] 1 ) 
+   )
+)
++Name: Primary heat
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( secondary-fired-since 
+      "Polydeuces# 1" 
+      1 
+      1000 
+   )
+   ( modify-variable 
+      @Heat[0] 
+      ( + @Heat[0] 2 ) 
+   )
+)
++Name: Trantor heat
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( secondary-fired-since 
+      "Polydeuces# 1" 
+      0 
+      1000 
+   )
+   ( modify-variable 
+      @Heat[0] 
+      ( + @Heat[0] 1 ) 
+   )
+)
++Name: Secondary heat
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 
+      3 
+      "Polydeuces# 1" 
+   )
+   ( end-mission ) 
+)
++Name: You died!
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: --mission initializations--
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( set-object-position 
+      "Player orbit:1" 
+      ( get-object-x 
+         "Polydeuces# 1" 
+         "<none>" 
+         500 
+         0 
+         0 
+      )
+      ( get-object-y 
+         "Polydeuces# 1" 
+         "<none>" 
+         500 
+         0 
+         0 
+      )
+      ( get-object-z 
+         "Polydeuces# 1" 
+         "<none>" 
+         500 
+         0 
+         0 
+      )
+   )
+   ( set-object-position 
+      "Player orbit:2" 
+      ( get-object-x 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         500 
+         0 
+      )
+      ( get-object-y 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         500 
+         0 
+      )
+      ( get-object-z 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         500 
+         0 
+      )
+   )
+   ( set-object-position 
+      "Player orbit:3" 
+      ( get-object-x 
+         "Polydeuces# 1" 
+         "<none>" 
+         -500 
+         0 
+         0 
+      )
+      ( get-object-y 
+         "Polydeuces# 1" 
+         "<none>" 
+         -500 
+         0 
+         0 
+      )
+      ( get-object-z 
+         "Polydeuces# 1" 
+         "<none>" 
+         -500 
+         0 
+         0 
+      )
+   )
+   ( set-object-position 
+      "Player orbit:4" 
+      ( get-object-x 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         -500 
+         0 
+      )
+      ( get-object-y 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         -500 
+         0 
+      )
+      ( get-object-z 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         -500 
+         0 
+      )
+   )
+   ( set-object-position 
+      "Player down:1" 
+      ( get-object-x 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         -2000 
+         0 
+      )
+      ( get-object-y 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         -2000 
+         0 
+      )
+      ( get-object-z 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         -2000 
+         0 
+      )
+   )
+   ( set-object-position 
+      "Player up:1" 
+      ( get-object-x 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         2000 
+         0 
+      )
+      ( get-object-y 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         2000 
+         0 
+      )
+      ( get-object-z 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         2000 
+         0 
+      )
+   )
+)
++Name: Player waypoint update
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 5
+
+$Formula: ( when 
+   ( false ) 
+   ( show-subtitle-text 
+      "System: Failed" 
+      50 
+      -20 
+      ( true ) 
+      ( false ) 
+      6000 
+   )
+   ( fade-out 5000 0 ) 
+)
++Name: Failsafe end mission
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: --stage 1 warp alpha--
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( lock-afterburner "Polydeuces# 1" ) 
+   ( lock-primary-weapon "Polydeuces# 1" ) 
+   ( lock-secondary-weapon 
+      "Polydeuces# 1" 
+   )
+   ( play-sound-from-file "Music1.ogg" 1 ) 
+)
++Name: Lock everything
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message-list 
+      "Stafford Fortress" 
+      "High" 
+      "Helper: Systems check" 
+      0 
+      "Stafford Fortress" 
+      "High" 
+      "Helper: Warp to Malenchenko" 
+      10000 
+   )
+)
++Name: Warp tutorial messages
++Repeat Count: 1
++Interval: 1
++Chained: 4
+
+$Formula: ( when 
+   ( true ) 
+   ( modify-variable @WarpStatus[-1] 0 ) 
+)
++Name: actually turn on warp
++Repeat Count: 1
++Interval: 1
++Chained: 10
+
+$Formula: ( when 
+   ( not 
+      ( is-event-true-delay "Warp dir" 0 ) 
+   )
+   ( training-msg 
+      "Tutorial: Warping" 
+      "Tutorial: Warping" 
+      0 
+      1 
+   )
+)
++Name: Warp trainingmsg
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
++Chained: 3
+
+$Formula: ( when 
+   ( and 
+      ( <= 
+         ( distance 
+            "Polydeuces# 1" 
+            "Malenchenko Fortress" 
+         )
+         4000 
+      )
+      ( >= @WarpUses[0] 1 ) 
+   )
+   ( do-nothing ) 
+)
++Name: Warp dir
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Warp to Malenchenko Fortress", -1)
++Objective key:  XSTR("Alt-J", -1)
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message-list 
+      "Stafford Fortress" 
+      "High" 
+      "Helper: Good, test antifighter" 
+      0 
+      "Stafford Fortress" 
+      "High" 
+      "Helper: Fire at Alpha" 
+      10000 
+   )
+)
++Name: Antifighter training
++Repeat Count: 1
++Interval: 1
++Chained: 3
+
+$Formula: ( when 
+   ( true ) 
+   ( clear-goals "Alpha" ) 
+   ( add-goal 
+      "Alpha" 
+      ( ai-play-dead 89 ) 
+   )
+)
++Name: Make Alpha targets
++Repeat Count: 1
++Interval: 1
++Chained: 7
+
+$Formula: ( when 
+   ( true ) 
+   ( change-iff "Hostile" "Alpha" ) 
+   ( unlock-secondary-weapon 
+      "Polydeuces# 1" 
+   )
+   ( unlock-primary-weapon 
+      "Polydeuces# 1" 
+   )
+)
++Name: Unlock AAAfs
++Repeat Count: 1
++Interval: 1
++Chained: 4
+
+$Formula: ( when 
+   ( not 
+      ( is-event-true-delay 
+         "Engage Alpha" 
+         0 
+      )
+   )
+   ( training-msg 
+      "Tutorial: Antifighter guns" 
+      "Tutorial: Antifighter guns" 
+      0 
+      1 
+   )
+)
++Name: trainingmsg for alpha
++Repeat Count: -1
++Trigger Count: 9999999
++Interval: 1
++Chained: 1
+
+$Formula: ( when 
+   ( and 
+      ( <= ( hits-left "Alpha 1" ) 2 ) 
+      ( <= ( hits-left "Alpha 2" ) 2 ) 
+      ( <= ( hits-left "Alpha 3" ) 2 ) 
+      ( <= ( hits-left "Alpha 4" ) 2 ) 
+   )
+   ( do-nothing ) 
+)
++Name: Engage Alpha
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Engage Alpha", -1)
++Objective key:  XSTR("F6", -1)
+
+$Formula: ( when-argument 
+   ( any-of 
+      "Alpha 1" 
+      "Alpha 2" 
+      "Alpha 3" 
+      "Alpha 4" 
+   )
+   ( and 
+      ( <= ( hits-left "<argument>" ) 2 ) 
+      ( not 
+         ( is-event-true-delay 
+            "Engage Alpha" 
+            0 
+         )
+      )
+   )
+   ( clear-goals "<argument>" ) 
+   ( add-goal 
+      "<argument>" 
+      ( ai-play-dead 89 ) 
+   )
+   ( change-iff "Friendly" "<argument>" ) 
+   ( invalidate-argument "<argument>" ) 
+)
++Name: kill fighters 1
++Repeat Count: -1
++Trigger Count: 4
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Engage Alpha" 
+      3 
+   )
+   ( send-message 
+      "Stafford Fortress" 
+      "High" 
+      "Helper: Good, next thing" 
+   )
+   ( change-iff "Friendly" "Alpha" ) 
+   ( repair-subsystem 
+      "Alpha 1" 
+      "Hull" 
+      100 
+   )
+   ( clear-goals "Alpha" ) 
+   ( repair-subsystem 
+      "Alpha 2" 
+      "Hull" 
+      100 
+   )
+   ( repair-subsystem 
+      "Alpha 3" 
+      "Hull" 
+      100 
+   )
+   ( repair-subsystem 
+      "Alpha 4" 
+      "Hull" 
+      100 
+   )
+)
++Name: Alpha ded
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Stafford Fortress" 
+      "High" 
+      "Helper: Real combat Alpha" 
+   )
+   ( add-goal 
+      "Alpha" 
+      ( ai-chase "Polydeuces# 1" 89 ) 
+   )
+   ( change-iff "Hostile" "Alpha" ) 
+)
++Name: Alpha real fight
++Repeat Count: 1
++Interval: 1
++Chained: 5
+
+$Formula: ( when 
+   ( and 
+      ( <= ( hits-left "Alpha 1" ) 2 ) 
+      ( <= ( hits-left "Alpha 2" ) 2 ) 
+      ( <= ( hits-left "Alpha 3" ) 2 ) 
+      ( <= ( hits-left "Alpha 4" ) 2 ) 
+   )
+   ( do-nothing ) 
+)
++Name: 1v4 alpha again
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Engage Alpha", -1)
++Objective key:  XSTR("F6", -1)
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Stafford Fortress" 
+      "High" 
+      "Helper: Very good." 
+   )
+)
++Name: You win vs Alpha
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( and 
+      ( is-event-true-delay 
+         "--CSC script--" 
+         0 
+      )
+      ( <= ( hits-left "Polydeuces# 1" ) 25 ) 
+   )
+   ( send-message 
+      "Stafford Fortress" 
+      "High" 
+      "Helper: Still needs calibratio" 
+   )
+)
++Name: You lose vs Alpha????
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when-argument 
+   ( any-of 
+      "Alpha 1" 
+      "Alpha 2" 
+      "Alpha 3" 
+      "Alpha 4" 
+   )
+   ( and 
+      ( <= ( hits-left "<argument>" ) 2 ) 
+      ( is-event-true-delay 
+         "Alpha real fight" 
+         0 
+      )
+   )
+   ( clear-goals "<argument>" ) 
+   ( add-goal 
+      "<argument>" 
+      ( ai-play-dead 89 ) 
+   )
+   ( change-iff "Friendly" "<argument>" ) 
+   ( invalidate-argument "<argument>" ) 
+)
++Name: kill fighters 2
++Repeat Count: -1
++Trigger Count: 4
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: --stage 2 anticap--
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( or 
+      ( is-event-true-delay 
+         "You win vs Alpha" 
+         10 
+      )
+      ( is-event-true-delay 
+         "You lose vs Alpha????" 
+         10 
+      )
+   )
+   ( send-message 
+      "Stafford Fortress" 
+      "High" 
+      "Helper: Continue, anti-cap" 
+   )
+   ( change-iff "Friendly" "Alpha" ) 
+   ( repair-subsystem 
+      "Alpha 1" 
+      "Hull" 
+      100 
+   )
+   ( clear-goals "Alpha" ) 
+   ( repair-subsystem 
+      "Alpha 2" 
+      "Hull" 
+      100 
+   )
+   ( repair-subsystem 
+      "Alpha 3" 
+      "Hull" 
+      100 
+   )
+   ( repair-subsystem 
+      "Alpha 4" 
+      "Hull" 
+      100 
+   )
+   ( repair-subsystem 
+      "Polydeuces# 1" 
+      "Hull" 
+      100 
+   )
+   ( lock-primary-weapon "Polydeuces# 1" ) 
+   ( lock-secondary-weapon 
+      "Polydeuces# 1" 
+   )
+)
++Name: Anticap training
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( add-goal 
+      "Chuikov" 
+      ( ai-play-dead 89 ) 
+   )
+   ( change-iff "Hostile" "Chuikov" ) 
+   ( add-remove-escort "Chuikov" 50 ) 
+   ( add-goal 
+      "Alpha" 
+      ( ai-ignore-new "Chuikov" 89 ) 
+   )
+)
++Name: enemy-ify chuikov
++Repeat Count: 1
++Interval: 1
++Chained: 5
+
+$Formula: ( when 
+   ( not 
+      ( is-event-true-delay 
+         "chuikov direct hit" 
+         0 
+      )
+   )
+   ( training-msg 
+      "Tutorial: Beams" 
+      "Tutorial: Beams" 
+      0 
+      1 
+   )
+)
++Name: trainingmsg beams
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( <= ( hits-left "Chuikov" ) 97 ) 
+   ( send-message 
+      "Chuikov" 
+      "High" 
+      "Chukov: Direct hit" 
+   )
+)
++Name: chuikov direct hit
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Fire beams at Chuikov", -1)
++Objective key:  XSTR("F12", -1)
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Stafford Fortress" 
+      "High" 
+      "Helper: Cease fire" 
+   )
+   ( ship-invulnerable "Chuikov" ) 
+   ( repair-subsystem 
+      "Chuikov" 
+      "Hull" 
+      100 
+   )
+   ( change-iff "Friendly" "Chuikov" ) 
+)
++Name: chuikov hit msg
++Repeat Count: 1
++Interval: 1
++Chained: 5
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: real combat Chuikov
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: rails and missiles
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: --stage 3 advanced--
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: energy shunt
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: hardened armor and repair
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-event-true-delay 
+      "Massive attack" 
+      0 
+   )
+   ( send-message 
+      "#Magellan" 
+      "High" 
+      "Cmd: Problems" 
+   )
+)
++Name: Massive attack
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( set-subspace-drive 
+      ( true ) 
+      "Polydeuces# 1" 
+   )
+   ( modify-variable @WarpStatus[-1] -11 ) 
+)
++Name: Done!
++Repeat Count: 1
++Interval: 1
++Chained: 10
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: rtb dir
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Return to Base", -1)
++Objective key:  XSTR("Alt-J", -1)
+
+#Goals		;! 0 total
+
+
+#Waypoints		;! 4 lists total
+
+$Name: Polydeuces Loc
+$List: (		;! 1 points in list
+	( -5666.425781, -9150.012695, 5445.238770 )
+)
+
+$Name: player down
+$List: (		;! 1 points in list
+	( -5647.091797, -9150.012695, 5425.113770 )
+)
+
+$Name: player up
+$List: (		;! 1 points in list
+	( -5636.652344, -9150.012695, 5423.820801 )
+)
+
+$Name: Player orbit
+$List: (		;! 4 points in list
+	( -5661.941406, -9150.012695, 5436.039551 )
+	( -5634.410156, -9150.012695, 5440.187988 )
+	( -5625.917969, -9150.012695, 5445.902832 )
+	( -5612.830078, -9150.012695, 5444.965332 )
+)
+
+#Messages		;! 44 total
+
+$Command Sender: Stafford Fortress
+
+$Name: Tutorial: Overheated
+$Team: -1
+$MessageNew:  XSTR("Your ship has shut down from overheating
+Heat generates primarily when energy bars are maximized, or afterburners are engaged
+To override the automatic shutdown, use alt-X
+Be aware that overheating deals significant damage after overriding", -1)
+$end_multi_text
+
+$Name: Overview: Very red heat
+$Team: -1
+$MessageNew:  XSTR("Heat level: !!!$Heat GJ!!!", -1)
+$end_multi_text
+
+$Name: Overview: Red heat
+$Team: -1
+$MessageNew:  XSTR("Heat level: !$Heat GJ!", -1)
+$end_multi_text
+
+$Name: Overview: L can fire
+$Team: -1
+$MessageNew:  XSTR("Left beam: Ready", -1)
+$end_multi_text
+
+$Name: Overview: R can fire
+$Team: -1
+$MessageNew:  XSTR("Right beam: Ready", -1)
+$end_multi_text
+
+$Name: Overview: R Recharging
+$Team: -1
+$MessageNew:  XSTR("Right beam: Recharging", -1)
+$end_multi_text
+
+$Name: Overview: R range
+$Team: -1
+$MessageNew:  XSTR("Right beam: Not in range", -1)
+$end_multi_text
+
+$Name: Overview: Left recharging
+$Team: -1
+$MessageNew:  XSTR("Left beam: Recharging", -1)
+$end_multi_text
+
+$Name: Overview: L range
+$Team: -1
+$MessageNew:  XSTR("Left beam: Not in range", -1)
+$end_multi_text
+
+$Name: Overview: L firing
+$Team: -1
+$MessageNew:  XSTR("Left beam: Firing", -1)
+$end_multi_text
+
+$Name: Overview: R Firing
+$Team: -1
+$MessageNew:  XSTR("Right beam: Firing", -1)
+$end_multi_text
+
+$Name: Overview: L Not in view
+$Team: -1
+$MessageNew:  XSTR("Left beam: Not in FoV", -1)
+$end_multi_text
+
+$Name: Overview: R Not in FOV
+$Team: -1
+$MessageNew:  XSTR("Right beam: Not in FoV", -1)
+$end_multi_text
+
+$Name: Overview: No target!
+$Team: -1
+$MessageNew:  XSTR("No target for beams", -1)
+$end_multi_text
+
+$Name: Overview: Repping on
+$Team: -1
+$MessageNew:  XSTR("Repair system on (4)", -1)
+$end_multi_text
+
+$Name: Overview: Repping off
+$Team: -1
+$MessageNew:  XSTR("Repair system off (4)", -1)
+$end_multi_text
+
+$Name: Overview: Hardeners on
+$Team: -1
+$MessageNew:  XSTR("Armor hardener on (3)", -1)
+$end_multi_text
+
+$Name: Overview: Hardeners off
+$Team: -1
+$MessageNew:  XSTR("Armor hardener off (3)", -1)
+$end_multi_text
+
+$Name: Overview: Left beam
+$Team: -1
+$MessageNew:  XSTR("Left beam GW: $BeamLeftStatus", -1)
+$end_multi_text
+
+$Name: Overview: Right beam
+$Team: -1
+$MessageNew:  XSTR("Right beam GW: $BeamRightStatus", -1)
+$end_multi_text
+
+$Name: Overview: Cap
+$Team: -1
+$MessageNew:  XSTR("Capacitor GW: $Capacitor", -1)
+$end_multi_text
+
+$Name: Overview: Heat
+$Team: -1
+$MessageNew:  XSTR("Heat level: $Heat GJ", -1)
+$end_multi_text
+
+$Name: System: Failed
+$Team: -1
+$MessageNew:  XSTR("Mission Failed", -1)
+$end_multi_text
+
+$Name: Engi: Heat critical
+$Team: -1
+$MessageNew:  XSTR("Heat levels critical, sir! Reactor shutdown imminent!", -1)
+$end_multi_text
++AVI Name: Head-CM1
++Wave Name: alarm.ogg
+
+$Name: Engi: Override
+$Team: -1
+$MessageNew:  XSTR("Safeties disengaged, automatic shutdown disabled, sir.", -1)
+$end_multi_text
++AVI Name: Head-CM1
++Wave Name: messagebeep.ogg
+
+$Name: Engi: Override off
+$Team: -1
+$MessageNew:  XSTR("Engineering safeties online, shutdown override disengaged. ", -1)
+$end_multi_text
++AVI Name: Head-CM1
++Wave Name: messagebeep.ogg
+
+$Name: Overview: AB recharging
+$Team: -1
+$MessageNew:  XSTR("AB shunt recharging", -1)
+$end_multi_text
+
+$Name: Overview: AB full
+$Team: -1
+$MessageNew:  XSTR("AB energy full", -1)
+$end_multi_text
+
+$Name: Overview: AB can shunt
+$Team: -1
+$MessageNew:  XSTR("AB shunt ready (2)", -1)
+$end_multi_text
+
+$Name: Tutorial: Warping
+$Team: -1
+$MessageNew:  XSTR("Press $Alt-J$ to initiate warp sequence
+Fly to a location, then press $Alt-J$ again to warp there
+Shift-J to cancel warp sequence
+To warp or to cancel warp, you must be stationary.", -1)
+$end_multi_text
+
+$Name: Helper: Warp to Malenchenko
+$Team: -1
+$MessageNew:  XSTR("Before we can do anything else we need to test your warp drive. Warp to within three klicks of Malenchenko Fortress.", -1)
+$end_multi_text
++AVI Name: Head-CM4
++Wave Name: messagebeep.ogg
+
+$Name: Helper: Systems check
+$Team: -1
+$MessageNew:  XSTR("Commencing systems check... Reactor online. Weapons online. Engines online. All systems nominal. Good.", -1)
+$end_multi_text
++AVI Name: Head-CM4
++Wave Name: messagebeep.ogg
+
+$Name: Helper: Good, test antifighter
+$Team: -1
+$MessageNew:  XSTR("Good. Switching weapons to simulation mode. Now, familiarize yourself with your ship's point-defense weapons.", -1)
+$end_multi_text
++AVI Name: Head-CM4
++Wave Name: messagebeep.ogg
+
+$Name: Helper: Fire at Alpha
+$Team: -1
+$MessageNew:  XSTR("Alpha wing has been designated as training targets and your weapons are online. Engage Alpha wing now with flak and Trantor munitions.", -1)
+$end_multi_text
++AVI Name: Head-CM4
++Wave Name: messagebeep.ogg
+
+$Name: Helper: Good, next thing
+$Team: -1
+$MessageNew:  XSTR("Good work, Commander. Restoring Alpha wing to full now. Next, we'll see how well you hold up in a real fight.", -1)
+$end_multi_text
++AVI Name: Head-CM4
++Wave Name: messagebeep.ogg
+
+$Name: Tutorial: Antifighter guns
+$Team: -1
+$MessageNew:  XSTR("Trantors deal high damage to enemy strikecraft within 1 kilometer
+Trantor shockwaves are capable of disabling enemy bombs mid-flight
+Cluster Flak rounds are effective at long and medium ranges against strikecraft groups
+Fire at formations while closing for maximum effect", -1)
+$end_multi_text
+
+$Name: Helper: Real combat Alpha
+$Team: -1
+$MessageNew:  XSTR("Alpha wing, engage the Polydeuces. Commander, fight back and disable Alpha.", -1)
+$end_multi_text
++AVI Name: Head-CM4
++Wave Name: messagebeep.ogg
+
+$Name: Helper: Still needs calibratio
+$Team: -1
+$MessageNew:  XSTR("All ships, cease engagement. Polydeuces, is there a problem with your ordnance? Nevermind, there's no time, we'll recalibrate after the module.", -1)
+$end_multi_text
++AVI Name: Head-CM4
++Wave Name: messagebeep.ogg
+
+$Name: Helper: Continue, anti-cap
+$Team: -1
+$MessageNew:  XSTR("We'll begin anti-capital combat now. Target the Chuikov with your beam cannons.", -1)
+$end_multi_text
++AVI Name: Head-CM4
++Wave Name: messagebeep.ogg
+
+$Name: Helper: Very good.
+$Team: -1
+$MessageNew:  XSTR("Alpha, Commander, good work. Point defense is fully operational.", -1)
+$end_multi_text
++AVI Name: Head-CM4
++Wave Name: messagebeep.ogg
+
+$Name: Tutorial: Beams
+$Team: -1
+$MessageNew:  XSTR("Press $Left Arrow$ or $Right Arrow$ to fire left or right side beam cannons respectively 
+Beams must have 200GW charged to fire, and fire an additional pulse with every additional 50GW
+Press F12 to cycle between enemy warships
+Beam charge rate is determined by your weapons ETS setting", -1)
+$end_multi_text
+
+$Name: Chukov: Direct hit
+$Team: -1
+$MessageNew:  XSTR("Reading a direct hit. Polydeuces beams are fully operational, Command.", -1)
+$end_multi_text
++AVI Name: Head-CM08a.ani
++Wave Name: emptymsg.wav
+
+$Name: Helper: Cease fire
+$Team: -1
+$MessageNew:  XSTR("Good, good. Cease fire, Polydeuces.", -1)
+$end_multi_text
++AVI Name: Head-CM4
++Wave Name: messagebeep.ogg
+
+$Name: Cmd: Problems
+$Team: -1
+$MessageNew:  XSTR("Attention all UN naval assets. The Polaris wormhole is currently under massive MIND attack. All ships recieving this message are to rally at Resnik Fortress. Repeat, all ships rally at Resnik Fortress.", -1)
+$end_multi_text
++AVI Name: Head-CM1
++Wave Name: messagebeep.ogg
+
+#Reinforcements		;! 0 total
+
+
+#Background bitmaps		;! 0 total
+
+$Num stars: 0
+$Ambient light level: 8026746
+
+$Bitmap List:
+$Sun: SunSol
++Angles: 0.000000 0.000000 0.000000
++Scale: 1.000000
+$Sun: EarthWhite
++Angles: 3.839725 0.000000 6.213372
++Scale: 1.000000
+$Sun: EarthWhite
++Angles: 4.293510 0.000000 6.021386
++Scale: 1.000000
+$Sun: EarthWhite
++Angles: 4.293510 0.000000 0.209440
++Scale: 1.000000
+$Sun: EarthWhite
++Angles: 3.717551 0.000000 0.157080
++Scale: 1.000000
+
+#Asteroid Fields
+
+#Music
+
+$Event Music: None
+$Briefing Music: Aquitaine
+$Substitute Briefing Music: Aquitaine
+$Debriefing Success Music: Aquitaine
+$Debriefing Average Music: Aquitaine
+$Debriefing Fail Music: Aquitaine
+
+#End
+

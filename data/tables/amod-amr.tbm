@@ -1,0 +1,552 @@
+;;LightWeap: Anti-fighter guns on capships and lighter weapons
+;;LightWeapCAPTUR: See above, but does less damage to bombs
+;;MediumWeap: Heavier guns on fighters
+;;MediumWeapCAPTUR: See above, but does less damage to bombs
+;;HeavyWeap: The biggest fighters/bombers guns or bombs, most capship weapons
+;;HugeWeap: The biggest weapons, also armour piercers
+
+;; Armour type for missiles
+#Armor Type
+$Name:			Missile Plate
+ 
+$Damage Type:		LightWeap
+	+Calculation:	Multiplicative
+	+Value:		0.0	
+$Damage Type:		LightWeapCAPTUR
+	+Calculation:	Multiplicative
+	+Value:		0.0
+$Damage Type:		MediumWeapCAPTUR
+	+Calculation:	Multiplicative
+	+Value:		0.0
+$Damage Type:		MediumWeap
+	+Calculation:	Multiplicative
+	+Value:		0.0
+$Damage Type:		HeavyWeap
+	+Calculation:	Multiplicative
+	+Value:		0.0
+$Damage Type:		HugeWeap
+	+Calculation:	Multiplicative
+	+Value:		0.0
+$Damage Type:		MediumShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.0
+$Damage Type:		HugeShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.0
+$Damage Type:		EMPShockwave
+	+Calculation:	Multiplicative
+	+Value:		1000
+#End
+
+;;Torpedoes n bombs
+#Armor Type
+$Name:			Bomb Plate
+ 
+$Damage Type:		LightWeap
+	+Calculation:	Multiplicative
+	+Value:		1.0	
+$Damage Type:		LightWeapCAPTUR
+	+Calculation:	Multiplicative
+	+Value:		0.6666
+$Damage Type:		MediumWeapCAPTUR
+	+Calculation:	Multiplicative
+	+Value:		0.6666
+$Damage Type:		MediumWeap
+	+Calculation:	Multiplicative
+	+Value:		1.0
+$Damage Type:		HeavyWeap
+	+Calculation:	Multiplicative
+	+Value:		1.0
+$Damage Type:		HugeWeap
+	+Calculation:	Multiplicative
+	+Value:		1.0
+$Damage Type:		MediumShockwave
+	+Calculation:	Multiplicative
+	+Value:		1.0
+$Damage Type:		HugeShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.001
+$Damage Type:		EMPShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.5
+#End
+
+;; Armour type for strikecraft
+#Armor Type
+$Name:			Fighter Plate
+ 
+$Damage Type:		LightWeap
+	+Calculation:	Multiplicative
+	+Value:		1.0
+	+Weapon Piercing Effect Start Limit:	15
+	+Weapon Piercing Type:					default
+	
+$Damage Type:		LightWeapCAPTUR
+	+Calculation:	Multiplicative
+	+Value:		1.5
+	+Weapon Piercing Effect Start Limit:	15
+	+Weapon Piercing Type:					default
+
+$Damage Type:		MediumWeap
+	+Calculation:	Multiplicative
+	+Value:		0.8
+	+Weapon Piercing Effect Start Limit:	15
+	+Weapon Piercing Type:					default
+
+$Damage Type:		MediumWeapCAPTUR
+	+Calculation:	Multiplicative
+	+Value:		1.35
+	+Weapon Piercing Effect Start Limit:	15
+	+Weapon Piercing Type:					default
+
+$Damage Type:		HeavyWeap
+	+Calculation:	Multiplicative
+	+Value:		0.5
+	+Weapon Piercing Effect Start Limit:	15
+	+Weapon Piercing Type:					default
+
+$Damage Type:		HugeWeap
+	+Calculation:	Multiplicative
+	+Value:		0.5
+	+Weapon Piercing Effect Start Limit:	1
+	+Weapon Piercing Type:					none
+
+$Damage Type:		MediumShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.4
+
+$Damage Type:		EMPShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.4
+
+$Damage Type:		HugeShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.001
+
+#End
+
+;; Armour type for big strikecraft
+
+#Armor Type
+$Name:			Bomber Plate
+ 
+$Damage Type:		LightWeap
+	+Calculation:	Multiplicative
+	+Value:		1.0
+	+Weapon Piercing Effect Start Limit:	15
+	+Weapon Piercing Type:					default
+	
+$Damage Type:		LightWeapCAPTUR
+	+Calculation:	Multiplicative
+	+Value:		1.5
+	+Weapon Piercing Effect Start Limit:	15
+	+Weapon Piercing Type:					default
+
+$Damage Type:		MediumWeapCAPTUR
+	+Calculation:	Multiplicative
+	+Value:		1.5
+	+Weapon Piercing Effect Start Limit:	15
+	+Weapon Piercing Type:					default
+
+$Damage Type:		MediumWeap
+	+Calculation:	Multiplicative
+	+Value:		1.0
+	+Weapon Piercing Effect Start Limit:	15
+	+Weapon Piercing Type:					default
+
+$Damage Type:		HeavyWeap
+	+Calculation:	Multiplicative
+	+Value:		0.5
+	+Weapon Piercing Effect Start Limit:	15
+	+Weapon Piercing Type:					default
+
+$Damage Type:		HugeWeap
+	+Calculation:	Multiplicative
+	+Value:		0.5
+	+Weapon Piercing Effect Start Limit:	1
+	+Weapon Piercing Type:					none
+
+$Damage Type:		MediumShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.4
+    
+$Damage Type:		EMPShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.4
+
+$Damage Type:		HugeShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.001
+
+#End
+
+#Armor Type
+;; Armour type for light capships
+$Name:			Light Plate
+ 
+$Damage Type:		LightWeap
+	+Calculation:	Multiplicative
+	+Value:		0.8
+	+Weapon Piercing Effect Start Limit:	5
+	+Weapon Piercing Type:					default
+ 
+$Damage Type:		LightWeapCAPTUR
+	+Calculation:	Multiplicative
+	+Value:		0.8
+	+Weapon Piercing Effect Start Limit:	5
+	+Weapon Piercing Type:					default
+
+$Damage Type:		MediumWeapCAPTUR
+	+Calculation:	Multiplicative
+	+Value:		1.0
+	+Weapon Piercing Effect Start Limit:	10
+	+Weapon Piercing Type:					default
+
+$Damage Type:		MediumWeap
+	+Calculation:	Multiplicative
+	+Value:		1.0
+	+Weapon Piercing Effect Start Limit:	10
+	+Weapon Piercing Type:					default
+
+$Damage Type:		HeavyWeap
+	+Calculation:	Multiplicative
+	+Value:		1.0
+	+Weapon Piercing Effect Start Limit:	15
+	+Weapon Piercing Type:					default
+
+$Damage Type:		HugeWeap
+	+Calculation:	Multiplicative
+	+Value:		1.2
+	+Weapon Piercing Effect Start Limit:	15
+	+Weapon Piercing Type:					default
+
+$Damage Type:		MediumShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.5
+    
+$Damage Type:		EMPShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.5
+
+$Damage Type:		HugeShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.6
+
+#End
+
+#Armor Type
+;; Armour type for medium capships
+$Name:			Medium Plate
+ 
+$Damage Type:		LightWeap
+	+Calculation:	Multiplicative
+	+Value:		0.7
+	+Weapon Piercing Effect Start Limit:	1
+	+Weapon Piercing Type:					none
+ 
+$Damage Type:		LightWeapCAPTUR
+	+Calculation:	Multiplicative
+	+Value:		0.7
+	+Weapon Piercing Effect Start Limit:	1
+	+Weapon Piercing Type:					none
+
+$Damage Type:		MediumWeapCAPTUR
+	+Calculation:	Multiplicative
+	+Value:		0.9
+	+Weapon Piercing Effect Start Limit:	5
+	+Weapon Piercing Type:					default
+
+$Damage Type:		MediumWeap
+	+Calculation:	Multiplicative
+	+Value:		0.9
+	+Weapon Piercing Effect Start Limit:	5
+	+Weapon Piercing Type:					default
+
+$Damage Type:		HeavyWeap
+	+Calculation:	Multiplicative
+	+Value:		1.0
+	+Weapon Piercing Effect Start Limit:	10
+	+Weapon Piercing Type:					default
+
+$Damage Type:		HugeWeap
+	+Calculation:	Multiplicative
+	+Value:		1.1
+	+Weapon Piercing Effect Start Limit:	15
+	+Weapon Piercing Type:					default
+
+$Damage Type:		MediumShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.45
+    
+$Damage Type:		EMPShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.45
+
+$Damage Type:		HugeShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.55
+
+#End
+
+#Armor Type
+;; Armour type for heavy capships
+$Name:			Heavy Plate
+ 
+$Damage Type:		LightWeap
+	+Calculation:	Multiplicative
+	+Value:		0.5
+	+Weapon Piercing Effect Start Limit:	1
+	+Weapon Piercing Type:					none
+ 
+$Damage Type:		LightWeapCAPTUR
+	+Calculation:	Multiplicative
+	+Value:		0.5
+	+Weapon Piercing Effect Start Limit:	1
+	+Weapon Piercing Type:					none
+
+$Damage Type:		MediumWeapCAPTUR
+	+Calculation:	Multiplicative
+	+Value:		0.7
+	+Weapon Piercing Effect Start Limit:	1
+	+Weapon Piercing Type:					none
+
+$Damage Type:		MediumWeap
+	+Calculation:	Multiplicative
+	+Value:		0.7
+	+Weapon Piercing Effect Start Limit:	1
+	+Weapon Piercing Type:					none
+
+$Damage Type:		HeavyWeap
+	+Calculation:	Multiplicative
+	+Value:		1.0
+	+Weapon Piercing Effect Start Limit:	5
+	+Weapon Piercing Type:					default
+
+$Damage Type:		HugeWeap
+	+Calculation:	Multiplicative
+	+Value:		1.0
+	+Weapon Piercing Effect Start Limit:	10
+	+Weapon Piercing Type:					default
+
+$Damage Type:		MediumShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.35
+    
+$Damage Type:		EMPShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.35
+
+$Damage Type:		HugeShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.5
+#End
+
+#Armor Type
+;; HARDENED Armour type for heavy capships
+$Name:			Hardened
+ 
+$Damage Type:		LightWeap
+	+Calculation:	Multiplicative
+	+Value:		0.2
+	+Weapon Piercing Effect Start Limit:	1
+	+Weapon Piercing Type:					none
+ 
+$Damage Type:		LightWeapCAPTUR
+	+Calculation:	Multiplicative
+	+Value:		0.2
+	+Weapon Piercing Effect Start Limit:	1
+	+Weapon Piercing Type:					none
+
+$Damage Type:		MediumWeapCAPTUR
+	+Calculation:	Multiplicative
+	+Value:		0.4
+	+Weapon Piercing Effect Start Limit:	1
+	+Weapon Piercing Type:					none
+
+$Damage Type:		MediumWeap
+	+Calculation:	Multiplicative
+	+Value:		0.4
+	+Weapon Piercing Effect Start Limit:	1
+	+Weapon Piercing Type:					none
+
+$Damage Type:		HeavyWeap
+	+Calculation:	Multiplicative
+	+Value:		0.6
+	+Weapon Piercing Effect Start Limit:	3
+	+Weapon Piercing Type:					default
+
+$Damage Type:		HugeWeap
+	+Calculation:	Multiplicative
+	+Value:		0.65
+	+Weapon Piercing Effect Start Limit:	6
+	+Weapon Piercing Type:					default
+
+$Damage Type:		MediumShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.2
+    
+$Damage Type:		EMPShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.2
+
+$Damage Type:		HugeShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.2
+#End
+
+#Armor Type
+;; Panic button armour, basically invulnerability
+$Name:			PANIC
+ 
+$Damage Type:		LightWeap
+	+Calculation:	Multiplicative
+	+Value:		0.05
+	+Weapon Piercing Effect Start Limit:	1
+	+Weapon Piercing Type:					none
+ 
+$Damage Type:		LightWeapCAPTUR
+	+Calculation:	Multiplicative
+	+Value:		0.05
+	+Weapon Piercing Effect Start Limit:	1
+	+Weapon Piercing Type:					none
+
+$Damage Type:		MediumWeapCAPTUR
+	+Calculation:	Multiplicative
+	+Value:		0.05
+	+Weapon Piercing Effect Start Limit:	1
+	+Weapon Piercing Type:					none
+
+$Damage Type:		MediumWeap
+	+Calculation:	Multiplicative
+	+Value:		0.05
+	+Weapon Piercing Effect Start Limit:	1
+	+Weapon Piercing Type:					none
+
+$Damage Type:		HeavyWeap
+	+Calculation:	Multiplicative
+	+Value:		0.1
+	+Weapon Piercing Effect Start Limit:	3
+	+Weapon Piercing Type:					default
+
+$Damage Type:		HugeWeap
+	+Calculation:	Multiplicative
+	+Value:		0.1
+	+Weapon Piercing Effect Start Limit:	6
+	+Weapon Piercing Type:					default
+
+$Damage Type:		MediumShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.05
+    
+$Damage Type:		EMPShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.05
+
+$Damage Type:		HugeShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.05
+#End
+
+#Armor Type
+$Name:			EMP immune
+$Damage Type:		LightWeap
+	+Calculation:	Multiplicative
+	+Value:		0.5
+	+Weapon Piercing Effect Start Limit:	1
+	+Weapon Piercing Type:					none
+ 
+$Damage Type:		LightWeapCAPTUR
+	+Calculation:	Multiplicative
+	+Value:		0.5
+	+Weapon Piercing Effect Start Limit:	1
+	+Weapon Piercing Type:					none
+
+$Damage Type:		MediumWeapCAPTUR
+	+Calculation:	Multiplicative
+	+Value:		0.7
+	+Weapon Piercing Effect Start Limit:	1
+	+Weapon Piercing Type:					none
+
+$Damage Type:		MediumWeap
+	+Calculation:	Multiplicative
+	+Value:		0.7
+	+Weapon Piercing Effect Start Limit:	1
+	+Weapon Piercing Type:					none
+
+$Damage Type:		HeavyWeap
+	+Calculation:	Multiplicative
+	+Value:		1.0
+	+Weapon Piercing Effect Start Limit:	5
+	+Weapon Piercing Type:					default
+
+$Damage Type:		HugeWeap
+	+Calculation:	Multiplicative
+	+Value:		1.0
+	+Weapon Piercing Effect Start Limit:	10
+	+Weapon Piercing Type:					default
+
+$Damage Type:		MediumShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.35
+    
+$Damage Type:		EMPShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.0
+
+$Damage Type:		HugeShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.5
+#End
+
+#Armor Type
+;; HARDENED Armour type for heavy capships
+$Name:			Cutscene Crit
+ 
+$Damage Type:		LightWeap
+	+Calculation:	Multiplicative
+	+Value:		0.0
+	+Weapon Piercing Effect Start Limit:	1
+	+Weapon Piercing Type:					none
+ 
+$Damage Type:		LightWeapCAPTUR
+	+Calculation:	Multiplicative
+	+Value:		0.0
+	+Weapon Piercing Effect Start Limit:	1
+	+Weapon Piercing Type:					none
+
+$Damage Type:		MediumWeapCAPTUR
+	+Calculation:	Multiplicative
+	+Value:		0.0
+	+Weapon Piercing Effect Start Limit:	1
+	+Weapon Piercing Type:					none
+
+$Damage Type:		MediumWeap
+	+Calculation:	Multiplicative
+	+Value:		0.0
+	+Weapon Piercing Effect Start Limit:	1
+	+Weapon Piercing Type:					none
+
+$Damage Type:		HeavyWeap
+	+Calculation:	Multiplicative
+	+Value:		0.0
+	+Weapon Piercing Effect Start Limit:	100
+	+Weapon Piercing Type:					default
+
+$Damage Type:		HugeWeap
+	+Calculation:	Multiplicative
+	+Value:		0.0
+	+Weapon Piercing Effect Start Limit:	100
+	+Weapon Piercing Type:					default
+
+$Damage Type:		MediumShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.0
+    
+$Damage Type:		EMPShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.0
+
+$Damage Type:		HugeShockwave
+	+Calculation:	Multiplicative
+	+Value:		0.0
+#End

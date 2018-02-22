@@ -1,0 +1,32 @@
+#Primary Weapons
+
+$Name: Subach HL-7
++nocreate
+$Flags: ("player allowed" "stream")
++override
+
+$Name: Mekhu HL-7
++nocreate
+$Flags: ("player allowed" "stream")
++override
+
+$Name: Akheton SDG
++nocreate
+$Flags: ("player allowed" "Puncture")
++override
+
+#End
+
+#Secondary Weapons
+
+$Name: Rockeye
++nocreate
+$Flags: ("player allowed")
++override
+
+$Name: Tempest
++nocreate
+$Flags: ("player allowed")
++override
+
+#End

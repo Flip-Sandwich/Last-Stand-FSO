@@ -1,0 +1,32 @@
+#Conditional Hooks
+
+$Application: FS2_Open
+
+$On Game Init: [
+   ThrusterCache = {}
+   THRUSTER_ACTIVE_THRESHOLD = .01
+]
+
+$On Mission Start: [
+   ThrusterCache = {}
+]
+
+$State: GS_STATE_GAME_PLAY
+$On Frame: [
+   local numShips = #mn.Ships
+   for i=1, numShips do
+      local ship = mn.Ships[i]
+      if ship:isValid() then
+         local thrust = ship.Physics.ForwardThrust
+         local engines = (thrust > THRUSTER_ACTIVE_THRESHOLD)
+         if engines ~= ThrusterCache[i] then
+            mn.runSEXP("(set-thrusters-status !" .. tostring(engines) .. "! !" .. ship.Name .. "!)")
+            ThrusterCache[i] = engines
+         end
+      else
+         ThrusterCache[i] = nil
+      end
+   end
+]
+
+#End

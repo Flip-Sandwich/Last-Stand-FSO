@@ -1,0 +1,117 @@
+; Ranks.tbl 
+; Will contain data for :
+; 1.) player rank names
+; 2.) player rank scores
+;
+; Do not change the ordering of the sections in this table. Also do not add items to the list
+;
+;
+;
+; Casting Notes:
+;	Terran Captain 1(M) - ES  = 1_*
+;	Terran Captain 2(F) - SH  = 3_*
+
+
+
+[RANK NAMES]
+$Name:	Ensign
+$Points:	0
+$Bitmap:	medal12.pcx
+$Promotion Voice Base: none.wav
+$Promotion Text:
+
+XSTR("", -1)
+
+$end_multi_text
+
+$Name: Lieutenant Junior Grade
+$Points:	1
+$Bitmap:	medal12a.pcx
+$Promotion Voice Base: none.wav
+$Promotion Text:
+
+XSTR("", -1)
+
+$end_multi_text
+
+$Name:	Lieutenant
+$Points:	2
+$Bitmap:	medal12b.pcx
+$Promotion Voice Base: none.wav
+$Promotion Text:
+
+XSTR("", -1)
+
+$end_multi_text
+
+$Name:	Lieutenant Commander
+$Points:	3
+$Bitmap:	medal12c.pcx
+$Promotion Voice Base: none.wav
+$Promotion Text:
+
+XSTR("", -1)
+
+$end_multi_text
+
+$Name:	Commander
+$Points:	4
+$Bitmap:	medal12d.pcx
+$Promotion Voice Base: none.wav
+$Promotion Text:
+
+XSTR("", -1)
+
+$end_multi_text
+
+$Name:	Captain
+$Points:	999999995
+$Bitmap:	medal12e.pcx
+$Promotion Voice Base: none.wav
+$Promotion Text:
+
+XSTR("For your brilliance as a warship commander, tactician, and leader, Allied Command confers upon you the rank of Captain.", -1)
+
+$end_multi_text
+
+;; the Brass
+$Name:	Commodore
+$Points:	999999996
+$Bitmap:	medal12f.pcx
+$Promotion Voice Base: none.wav
+$Promotion Text:
+
+XSTR("Captain, your long and illustrious record distinguishes you as a leader of integrity, courage, and wisdom. You are duly promoted to the rank of Commodore.", -1)
+$end_multi_text
+
+$Name:	Rear Admiral
+$Points:	999999997
+$Bitmap:	medal12g.pcx
+$Promotion Voice Base: none.wav
+$Promotion Text:
+
+XSTR("On behalf of the United Nations Security Council and General Assembly, it is my honor to confer upon you the prestigious rank of Rear Admiral. Congratulations. ", -1)
+
+$end_multi_text
+
+$Name:	Vice Admiral
+$Points:	999999998
+$Bitmap:	medal12h.pcx
+$Promotion Voice Base: none.wav
+$Promotion Text:
+
+XSTR("Your career stands as a shining example of our ideals and values, and few officers have rendered greater service to the Alliance. On behalf of the United Nations Security Council and General Assembly, I hereby confer upon you the prestigious rank of Vice Admiral.", -1)
+
+$end_multi_text
+
+$Name:	Admiral
+$Points:	999999999
+$Bitmap:	medal12i.pcx
+$Promotion Voice Base: none.wav
+$Promotion Text:
+
+XSTR("Congratulations. You have earned your place in the highest echelon of allied leadership. Your character, courage, and genius are an inspiration to us all. On behalf of the United Nations Security Council and General Assembly, I hereby confer upon you the prestigious rank of Admiral. Now go pilot a fighter.", -1)
+
+$end_multi_text
+
+#End

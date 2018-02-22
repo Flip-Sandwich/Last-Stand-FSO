@@ -1,0 +1,195 @@
+#Ship Classes
+
+$Name: GTF Ulysses
++nocreate
+$Flags: ( "player_ship" "fighter" )
+
+$Name: GTF Hercules
++nocreate
+$Flags: ( "player_ship" "fighter" )
+
+$Name: GTF Loki
++nocreate
+$Flags: ( "player_ship" "fighter" )
+
+$Name: GTF Myrmidon
++nocreate
+$Flags: ( "player_ship" "fighter" )
+
+$Name: GTB Medusa
++nocreate
+$Flags: ( "player_ship" "bomber" )
+
+$Name: GTB Ursa
++nocreate
+$Flags: ( "player_ship" "bomber" )
+
+$Name: GTB Zeus
++nocreate
+$Flags: ( "player_ship" "bomber" )
+
+$Name: @GTDR Amazon
++nocreate
+$Flags: ( "fighter" )
+
+$Name: GTDR Amazon Advanced
++nocreate
+$Flags: ( "freighter" )
+
+$Name: GTS Hygeia
++nocreate
+$Flags: ( "repair_rearm" )
+
+$Name: GTFR Triton
++nocreate
+$Flags: ( "freighter" "generate icon" )
+
+$Name: GTFR Poseidon
++nocreate
+$Flags: ( "freighter" "generate icon" )
+
+$Name: TC 2
++nocreate
+$Flags: ( "cargo" )
+
+$Name: TSC 2
++nocreate
+$Flags: ( "cargo" )
+
+$Name: TAC 1
++nocreate
+$Flags: ( "cargo" )
+
+$Name: TTC 1
++nocreate
+$Flags: ( "cargo" )
+
+$Name: GTC Fenris
++nocreate
+$Flags: ( "cruiser" "generate icon" )
+
+$Name: GTC Leviathan
++nocreate
+$Flags: ( "cruiser" "generate icon" )
+
+$Name: GTM Hippocrates
++nocreate
+$Flags: ( "cruiser" "generate icon" )
+
+$Name: GTSC Faustus
++nocreate
+$Flags: ( "cruiser" "generate icon" )
+
+$Name: GTD Orion
++nocreate
+$Flags: ( "capital" "big damage" )
+
+$Name: GTD Hecate
++nocreate
+$Flags: ( "capital" "big damage" )
+
+$Name: GTI Arcadia
++nocreate
+$Flags: ( "capital" "big damage" "generate icon" )
+
+$Name: @GTT Elysium
++nocreate
+$Flags: ( "transport" )
+
+$Name: @GTT Argo
++nocreate
+$Flags: ( "transport" )
+
+$Name: GTSG Watchdog
++nocreate
+$Flags: ( "sentrygun" )
+
+$Name: GTSG Cerberus
++nocreate
+$Flags: ( "sentrygun" )
+
+$Name: GTSG Alastor
++nocreate
+$Flags: ( "sentrygun" )
+
+$Name: GTEP Hermes
++nocreate
+$Flags: ( "escapepod" )
+
+$Name: GVF Seth
++nocreate
+$Flags: ( "player_ship" "fighter" )
+
+$Name: GVF Seth
++nocreate
+$Flags: ( "player_ship" "fighter" )
+
+$Name: GVF Horus
++nocreate
+$Flags: ( "player_ship" "fighter" )
+
+$Name: GVF Thoth
++nocreate
+$Flags: ( "player_ship" "fighter" )
+
+$Name: GVB Osiris
++nocreate
+$Flags: ( "player_ship" "bomber" )
+
+$Name: GVS Nephthys
++nocreate
+$Flags: ( "repair_rearm" )
+
+$Name: GVT Isis
++nocreate
+$Flags: ( "transport" )
+
+$Name: PVFR Ma'at
++nocreate
+$Flags: ( "freighter" )
+
+$Name: GVFR Satis
++nocreate
+$Flags: ( "freighter" )
+
+$Name: GVFR Bes
++nocreate
+$Flags: ( "freighter" )
+
+$Name: VAC 5
++nocreate
+$Flags: ( "cargo" )
+
+$Name: @VAC 4
++nocreate
+$Flags: ( "cargo" )
+
+$Name: GVC Aten
++nocreate
+$Flags: ( "cruiser" )
+
+$Name: GVC Mentu
++nocreate
+$Flags: ( "cruiser" )
+
+$Name: GVD Typhon
++nocreate
+$Flags: ( "capital" "big damage" )
+
+$Name: GVSG Ankh
++nocreate
+$Flags: ( "sentrygun" )
+
+$Name: GVSG Edjo
++nocreate
+$Flags: ( "sentrygun" )
+
+$Name: GVEP Ra
++nocreate
+$Flags: ( "escapepod" )
+
+$Name: GVD Hatshepsut
++nocreate
+$Flags: ( "capital" "big damage" )
+
+#End

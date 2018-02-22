@@ -1,0 +1,121 @@
+$SCP Credits position: end
+
+XSTR("The Last Stand", -1)
+Face/[`_`]/, FREDer
+Xenocartographer, Tester, Magician, Editor
+Unfortunate Pilot Dude/Dave, Tester, Editor
+Darius, just a really swell dude
+Axem, helped too I guess
+
+XSTR("Assets pack 1", -1)
+XSTR("Effects", -1)
+Saturn BG - NASA/Hubble Archives by way of Blue Planet
+exp_merc - ???
+exp03 - Inferno
+massdriver - mediavps
+Maul - ???
+pillumImpact - ???
+RailgunImpact - Inferno
+
+XSTR("Models", -1)
+Canberra - Black Wolf
+florence - X3 by way of Darius
+Newet - Oddgrim
+Khopesh/Selket - Inferno team
+Jackal, Lancer, assorted weapons - Steve-O
+MissileL, M, S: StratComm
+Moscow - Literally too many to list by way of Darius
+Hemsut/VasGS, Ramses/ZodCarrier - Black Wolf
+
+XSTR("Music", -1)
+HTV - X Rebirth: Hammering The Void
+incursion - ???, FTL mod?
+lobby - ???
+settingsail - Machinimasound: Setting Sail
+SolarEchoes - Children of a Dead Earth: Solar Echoes
+StruggleForLife - Trauma Team: Struggle for Life
+TTV_Amb: X Rebirth: Towards the Victory
+
+XSTR("Sounds", -1)
+accelcapital, acccelsmall, capsulestop, missilelockonme - Stock sounds by way of Free Allegiance(play it!)
+bbham, dsl_02, steel_collision - Stock sounds by way of Robot Arena 2
+BigShipDieExplon, messagebeep, other explosions - Stock sounds by way of RealSpace 3
+EA beam sounds, heavy_plasma, rail_hit, railcannon - Inferno
+Judicator - ??? by way of Venice Mirror
+l_50mm, l_disrupter, l_light, l_taurus - ??? by way of Burning Heaven
+MW4* - MechWarrior 4
+Stormfire, krator, gauss - ??? by way of Shadow Genesis
+Warp sounds - EVE Online
+
+XSTR("Assets pack 2", -1)
+XSTR("Effects", -1)
+Asteroids BG - Inferno(?)
+Warp - Diaspora
+shockwaveO - Nighteyes by way of Earth Defence
+
+XSTR("Models", -1)
+Claymore, Leto - Aldo_14 and Vasudan Admiral by way of Blue Planet
+Cleopatra - Black Wolf
+Beijing/Prominence - Shivan-Hunter
+Impervious - Droid803
+Setep - Inferno
+strident - Halo by way of Darius
+warlock - Scroll of Atankharzim
+Wraith, assorted weapons - Steve-O
+
+XSTR("Music", -1)
+hl1song - Half Life: Song 19
+Music4 - RealSpace 3
+SkillAndStrength - Trauma Team: Skill and Strength
+
+XSTR("Sounds", -1)
+ED Beams: Earth Defence
+emptymsg: ???
+FTL sounds: Diaspora
+
+XSTR("Bolitho Command", -1)
+XSTR("Effects", -1)
+
+XSTR("Models", -1)
+Bolitho: Diaspora by way of Darius
+
+XSTR("Music", -1)
+bleeding - The music of Juniper's Knot by Combatplayer
+wallbreach - Kingdom of Heaven OST by Harry Gregson-Williams
+XSTR("Sounds", -1)
+
+Head-CM06-CM10 - Black Wolf
+Neptune BG - NASA/Hubble Archives by way of Blue Planet
+
+Asteria - Oddgrim
+Endymion - Black Wolf
+Kadmos/Kirov - Aldo_14
+Hercules (mark III) - Inferno
+NeoRheaZ/Borisov - Dimensional Eclipse
+Orion/Dauntless - Halo by way of Darius
+Udjat - Scroll of Atankharzim/Upgraded by Nyctaeus
+
+
+train_derailed - ???
+
+AtK - Ride to Hell Retribution: Around the King
+below - ???
+da - ???
+Endgame - Machinimasound: Endgame
+HighNoon - ???
+Galatea - Inferno
+inabapride - Persona Q: Inaba Regional Exhibition
+LifeWillContinue - Trauma Team: Life Will Continue
+Lightforce - ???
+lurg - ???
+music1-7 - RealSpace 3
+OursvinceAround - Oursvince: Around
+Outro - Grendel: Harsh Generation
+qotn: Machinimasound: Queen of the Night
+RayofLight, rolic: No one has to die
+RosaliasPetals - Trauma Team: Rosalia's Petals
+SolarEchoes - Children of a Dead Earth
+sotlb - Spec Ops the Line: The Battle
+steepfreedom - ???
+
+#end

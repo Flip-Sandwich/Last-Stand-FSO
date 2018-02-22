@@ -1,0 +1,12 @@
+#Start
+
+$Name:  exp_merc
+ $LOD:  1
+
+$name:  PillumImpact         
+ $LOD:  1
+
+$name:  RailgunImpact         
+ $LOD:  1
+
+#End

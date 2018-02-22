@@ -1,0 +1,39 @@
+#Conditional Hooks
+$Application: FS2_Open
+
+$On Game Init:
+[
+
+function UpdateTarget()
+
+    if mn.getMissionTime() > 1 then
+
+        local player = hv.Player
+
+         if player and player:isValid() and player:getBreedName() == "Ship" then
+
+            if mn.SEXPVariables["PlayerTarget"]:isValid() then
+                if player.Target:isValid() and (player.Target:getBreedName() == "Ship") then
+                    mn.SEXPVariables["PlayerTarget"].Value = player.Target.Name
+                else
+                    mn.SEXPVariables["PlayerTarget"].Value = "null"
+                end
+            end
+
+            if mn.SEXPVariables["PlayerTargetSS"]:isValid() then
+                if player.TargetSubsystem:isValid() and (player.Target:getBreedName() == "Ship") then
+                    mn.SEXPVariables["PlayerTargetSS"].Value = player.TargetSubsystem:getModelName()
+                else
+                    mn.SEXPVariables["PlayerTargetSS"].Value = "null"
+                end
+            end
+
+        end
+
+    end
+
+end
+
+]
+
+#End

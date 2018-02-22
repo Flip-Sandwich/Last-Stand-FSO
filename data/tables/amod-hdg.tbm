@@ -1,0 +1,250 @@
+$Load Retail Configuration:	YES			
+			
+#Gauge Config		
+	$Base:	(1440,900)		
+	$Min:	(1280,720)	
+	$Gauges:		
+		+Custom:		
+			Position: 	(1256,307)
+			Name:	BPTaccom
+			Text:	Polydeuces TacSys
+			X Offset:	3
+			Y Offset:	2
+			Gauge Type:	WINGMEN_STATUS
+			Slew: 	NO
+			Active by default: 	YES
+			Filename: 	directives1
+		+Custom:		
+			Position: 	(1256,319)
+			Name:	BPTaccomA
+			Text:	
+			X Offset:	5
+			Gauge Type: 	WINGMEN_STATUS
+			Slew: 	NO
+			Active by default: 	YES
+			Filename: 	directives2
+		+Custom:		
+			Position: 	(1256,328)
+			Name:	BPTaccomB
+			Text:	
+			X Offset:	5
+			Gauge Type: 	WINGMEN_STATUS
+			Slew: 	NO
+			Active by default: 	YES
+			Filename: 	directives2
+		+Custom:		
+			Position: 	(1256,337)
+			Name:	BPTaccomC
+			Text:	
+			X Offset:	5
+			Gauge Type: 	WINGMEN_STATUS
+			Slew: 	NO
+			Active by default: 	YES
+			Filename: 	directives2
+		+Custom:		
+			Position: 	(1256,346)
+			Name:	BPTaccomD
+			Text:	
+			X Offset:	5
+			Gauge Type: 	WINGMEN_STATUS
+			Slew: 	NO
+			Active by default: 	YES
+			Filename: 	directives2
+		+Custom:		
+			Position: 	(1256,355)
+			Name:	BPTaccomE
+			Text:	
+			Gauge Type: 	WINGMEN_STATUS
+			Slew: 	NO
+			Active by default: 	YES
+			Filename: 	directives3
+		+Custom:		
+			Position: 	(5,277)
+			Name:	TLSTaccom
+			Text:	Polydeuces TacSys
+			X Offset:	3
+			Y Offset:	2
+			Gauge Type:	WINGMEN_STATUS
+			Slew: 	NO
+			Active by default: 	YES
+			Filename: 	directives1
+		+Custom:		
+			Position: 	(5,289)
+			Name:	TLSTaccomA
+			Text:	
+			X Offset:	5
+			Gauge Type: 	WINGMEN_STATUS
+			Slew: 	NO
+			Active by default: 	YES
+			Filename: 	directives2
+		+Custom:		
+			Position: 	(5,298)
+			Name:	TLSTaccomB
+			Text:	
+			X Offset:	5
+			Gauge Type: 	WINGMEN_STATUS
+			Slew: 	NO
+			Active by default: 	YES
+			Filename: 	directives2
+		+Custom:		
+			Position: 	(5,307)
+			Name:	TLSTaccomC
+			Text:	
+			X Offset:	5
+			Gauge Type: 	WINGMEN_STATUS
+			Slew: 	NO
+			Active by default: 	YES
+			Filename: 	directives2
+		+Custom:		
+			Position: 	(5,316)
+			Name:	TLSTaccomD
+			Text:	
+			X Offset:	5
+			Gauge Type: 	WINGMEN_STATUS
+			Slew: 	NO
+			Active by default: 	YES
+			Filename: 	directives2
+		+Custom:		
+			Position: 	(5,325)
+			Name:	TLSTaccomE
+			Text:	
+			X Offset:	5
+			Gauge Type: 	WINGMEN_STATUS
+			Slew: 	NO
+			Active by default: 	YES
+			Filename: 	directives2
+		+Custom:		
+			Position: 	(5,334)
+			Name:	TLSTaccomF
+			Text:	
+			Gauge Type: 	WINGMEN_STATUS
+			Slew: 	NO
+			Active by default: 	YES
+			Filename: 	directives3
+	$End Gauges			
+#End
+
+#Gauge Config
+	$Base: 													(1024, 768)
+	$Required Aspect: 										Full Screen
+	$Min: 													(1024, 768)
+	$Gauges:
+		+Custom:
+			Position: 										(840, 241)
+			Name:											BPTaccom
+			Text:											Polydeuces TacSys
+			X Offset:										3
+			Y Offset:										2
+			Gauge Type:										WINGMEN_STATUS
+			Slew: 											NO
+			Active by default: 								YES
+			Filename: 										directives1
+		+Custom:
+			Position: 										(840, 253)
+			Name:											BPTaccomA
+			Text:											
+			X Offset:										5
+			Gauge Type: 									WINGMEN_STATUS
+			Slew: 											NO
+			Active by default: 								YES
+			Filename: 										directives2
+		+Custom:
+			Position: 										(840, 262)
+			Name:											BPTaccomB
+			Text:
+			X Offset:										5
+			Gauge Type: 									WINGMEN_STATUS
+			Slew: 											NO
+			Active by default: 								YES
+			Filename: 										directives2
+		+Custom:
+			Position: 										(840, 271)
+			Name:											BPTaccomC
+			Text:
+			X Offset:										5
+			Gauge Type: 									WINGMEN_STATUS
+			Slew: 											NO
+			Active by default: 								YES
+			Filename: 										directives2
+		+Custom:
+			Position: 										(840, 289)
+			Name:											BPTaccomD
+			Text:
+			X Offset:										5
+			Gauge Type: 									WINGMEN_STATUS
+			Slew: 											NO
+			Active by default: 								YES
+			Filename: 										directives2
+		+Custom:
+			Position: 										(840, 289)
+			Name:											BPTaccomE
+			Text:
+			Gauge Type: 									WINGMEN_STATUS
+			Slew: 											NO
+			Active by default: 								YES
+			Filename: 										directives3
+		+Custom:
+			Position: 										(5, 281)
+			Name:											TLSTaccom
+			Text:											Polydeuces TacSys
+			X Offset:										3
+			Y Offset:										2
+			Gauge Type:										WINGMEN_STATUS
+			Slew: 											NO
+			Active by default: 								YES
+			Filename: 										directives1
+		+Custom:
+			Position: 										(5, 293)
+			Name:											TLSTaccomA
+			Text:											
+			X Offset:										5
+			Gauge Type: 									WINGMEN_STATUS
+			Slew: 											NO
+			Active by default: 								YES
+			Filename: 										directives2
+		+Custom:
+			Position: 										(5, 302)
+			Name:											TLSTaccomB
+			Text:
+			X Offset:										5
+			Gauge Type: 									WINGMEN_STATUS
+			Slew: 											NO
+			Active by default: 								YES
+			Filename: 										directives2
+		+Custom:
+			Position: 										(5, 311)
+			Name:											TLSTaccomC
+			Text:
+			X Offset:										5
+			Gauge Type: 									WINGMEN_STATUS
+			Slew: 											NO
+			Active by default: 								YES
+			Filename: 										directives2
+		+Custom:
+			Position: 										(5, 320)
+			Name:											TLSTaccomD
+			Text:
+			X Offset:										5
+			Gauge Type: 									WINGMEN_STATUS
+			Slew: 											NO
+			Active by default: 								YES
+			Filename: 										directives2
+		+Custom:
+			Position: 										(5, 329)
+			Name:											TLSTaccomE
+			Text:
+			X Offset:										5
+			Gauge Type: 									WINGMEN_STATUS
+			Slew: 											NO
+			Active by default: 								YES
+			Filename: 										directives2
+		+Custom:
+			Position: 										(5, 338)
+			Name:											TLSTaccomF
+			Text:
+			Gauge Type: 									WINGMEN_STATUS
+			Slew: 											NO
+			Active by default: 								YES
+			Filename: 										directives3
+	$End Gauges
+#End

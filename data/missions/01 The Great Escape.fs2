@@ -1,0 +1,6156 @@
+#Mission Info
+
+$Version: 0.10
+$Name:  XSTR("The Great Escape", -1)
+$Author: [`_`]
+$Created: 07/21/16 at 11:05:45
+$Modified: 02/16/17 at 12:20:28
+$Notes:
+This is a FRED2_OPEN created mission.
+$End Notes:
+
+$Mission Desc:
+ XSTR("Evacuate Leonov station", -1)
+$end_multi_text
++Game Type Flags: 1
++Flags: 401538
++Fog Near Mult: 1.000000
+
++Fog Far Mult: 1.000000
+
++Disallow Support: 1
++Hull Repair Ceiling: 0.000000
++Subsystem Repair Ceiling: 100.000000
+
++Viewer pos: 3383.049805, 268.607147, 619.563232
++Viewer orient:
+	0.996652, -0.000900, 0.081756,
+	-0.038472, 0.877160, 0.478654,
+	-0.072144, -0.480197, 0.874189
+
+$Starting wing names: ( "Polydeuces#" "Alpha" "Bravo" )
+$Squadron wing names: ( "Polydeuces#" "Alpha" "Bravo" "Charlie" "Delta" )
+$Team-versus-team wing names: ( "Polydeuces#" "Zulu" )
+
+$Skybox Model: SKYBOXSaturn.pof
+
+$AI Profile: CAPSHIPCOMMAND
+
+#Sexp_variables
+
+$Variables:
+(
+		0		"AmmoSwitchCount"		"0"		"number"
+		1		"BeamLeftStatus"		"200"		"number"
+		2		"BeamRightStatus"		"200"		"number"
+		3		"Capacitor"		"100"		"number"
+		4		"HardenLevel"		"0"		"number"
+		5		"Heat"		"0"		"number"
+		6		"HeatHasCritical"		"0"		"number"
+		7		"LeftBeamTick"		"0"		"number"
+		8		"OVerride"		"0"		"number"
+		9		"PlayerTarget"		"Battuta"		"string"
+		10		"PlayerTargetSS"		"Axems house"		"string"
+		11		"Repairing"		"0"		"number"
+		12		"RightBeamsTick"		"0"		"number"
+		13		"ship-manev-timer"		"0"		"number"
+		14		"ShipTargeted"		"a whale"		"string"
+		15		"ShipTargetedRight"		"a bote"		"string"
+		16		"SHUTDOWN"		"0"		"number"
+		17		"TimeLeftEvac"		"180"		"number"
+		18		"WarpCancelB"		"0"		"number"
+		19		"WarpCancelETSE"		"0"		"number"
+		20		"WarpCancelETSS"		"0"		"number"
+		21		"WarpCancelETSW"		"0"		"number"
+		22		"WarpCancelH"		"0"		"number"
+		23		"WarpCancelP"		"0"		"number"
+		24		"WarpCancelS"		"0"		"number"
+		25		"WarpCancelSW"		"0"		"number"
+		26		"WarpCancelSWA"		"0"		"number"
+		27		"WarpCancelT"		"0"		"number"
+		28		"WarpCancelX"		"0"		"number"
+		29		"WarpCancelY"		"0"		"number"
+		30		"WarpCancelZ"		"0"		"number"
+		31		"WarpFinalB"		"0"		"number"
+		32		"WarpFinalH"		"0"		"number"
+		33		"WarpFinalP"		"0"		"number"
+		34		"WarpFinalX"		"0"		"number"
+		35		"WarpFinalY"		"0"		"number"
+		36		"WarpFinalZ"		"0"		"number"
+		37		"WarpStatus"		"-1"		"number"
+)
+
+#Command Briefing
+
+$Stage Text:
+ XSTR("Commander, is this channel secure? Good. You've heard the news. $r MIND forces have broken through our last lines of defense at $v Polaris. We're deploying the $b Polydeuces immediately. 
+
+I realise the ship needs more shakedown time and your crew needs more training. I'm afraid we've run out of time.
+
+Do the best you can. The $b Polydeuces is the most advanced ship in the fleet. She's small but she'll punch above her weight. The crew trusts you, Commander. Trust them to do their job and you'll fly true.", -1)
+$end_multi_text
+$Ani Filename: <default>
++Wave Filename: none
+
+#Briefing
+$start_briefing
+$num_stages: 4
+$start_stage
+$multi_text
+ XSTR("At 0820 hours Solar Coordinated Time, $r MIND forces launched a massive attack on allied holdings within the outer system. $b Trismegistus $b Station has been destroyed, along with a majority of the $b UN $b 18th $b Task $b Force, and Neptune has fallen. We believe their next target to be $b Leonov $b Station, as well as the rest of our Saturn holdings.", -1)
+$end_multi_text
+$voice: none.wav
+$camera_pos: 0.000000, 500.000000, 0.000000
+$camera_orient:
+	1.000000, -0.000904, 0.000000,
+	0.000000, 0.000000, 1.000000,
+	-0.000904, -1.000000, 0.000000
+$camera_time: 500
+$num_lines: 0
+$num_icons: 4
+$Flags: 0
+$Formula: ( true ) 
+$start_icon
+$type: 19
+$team: Hostile
+$class: MIND Newet
+$pos: 161.104431, -0.002167, 0.000000
+$label: MIND Fleet
++id: 1
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 7
+$team: Friendly
+$class: Volition Bravos
+$pos: -197.066803, -0.002075, 1.456405
+$label: Neptune
++id: 2
+$hlight: 1
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 15
+$team: Friendly
+$class: GTI Arcadia
+$pos: 1.003883, -0.002319, -58.235386
+$label: Trismegistus Station
++id: 3
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 19
+$team: Friendly
+$class: UN Moscow
+$pos: 12.650688, -0.002319, 93.174652
+$label: UN 18th Task Force
++id: 4
+$hlight: 0
+$mirror: 1
+$multi_text
+$end_multi_text
+$end_icon
+$end_stage
+$start_stage
+$multi_text
+ XSTR("Due to the overwhelming force that the $r MIND has brought into the system to conduct their assault with, we have begun the evacuation of our remaining outer system stations and the withdrawal to the inner system fortresses. You are to oversee the evacuation of $b Leonov $b Station, situated at $v Saturn and defend against any possible $r MIND offensive.", -1)
+$end_multi_text
+$voice: none.wav
+$camera_pos: 0.000000, 500.000000, 0.000000
+$camera_orient:
+	1.000000, -0.000904, 0.000000,
+	0.000000, 0.000000, 1.000000,
+	-0.000904, -1.000000, 0.000000
+$camera_time: 500
+$num_lines: 0
+$num_icons: 4
+$Flags: 0
+$Formula: ( true ) 
+$start_icon
+$type: 7
+$team: Friendly
+$class: Volition Bravos
+$pos: -217.464432, -0.001984, -2.912917
+$label: Saturn
++id: 2
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 15
+$team: Friendly
+$class: GTI Arcadia
+$pos: -1.907895, -0.002289, -87.353531
+$label: Leonov Station
++id: 5
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 28
+$team: Friendly
+$class: UN Moscow
+$pos: -6.275620, -0.002289, 71.339279
+$label: Polydeuces
++id: 7
+$hlight: 1
+$mirror: 1
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 27
+$team: Friendly
+$class: GTT Argo
+$pos: 149.463943, -0.002380, 0.000000
+$label: Evacuation
++id: 8
+$hlight: 1
+$mirror: 1
+$multi_text
+$end_multi_text
+$end_icon
+$end_stage
+$start_stage
+$multi_text
+ XSTR("We expect the $r MIND to launch forces to attack at any moment. Long-range scanners have already reported that the enemy fleet at $v Neptune has dispersed, presumably to continue the offensive. You must be prepared to defend against any number of hostiles.", -1)
+$end_multi_text
+$voice: none.wav
+$camera_pos: 0.000000, 500.000000, 0.000000
+$camera_orient:
+	1.000000, -0.000904, 0.000000,
+	0.000000, 0.000000, 1.000000,
+	-0.000904, -1.000000, 0.000000
+$camera_time: 500
+$num_lines: 0
+$num_icons: 5
+$Flags: 0
+$Formula: ( true ) 
+$start_icon
+$type: 7
+$team: Friendly
+$class: Volition Bravos
+$pos: -217.464432, -0.001984, -2.912917
+$label: Saturn
++id: 2
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 15
+$team: Friendly
+$class: GTI Arcadia
+$pos: -1.907895, -0.002289, -87.353531
+$label: Leonov Station
++id: 5
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 28
+$team: Friendly
+$class: UN Moscow
+$pos: -6.275620, -0.002289, 71.339279
+$label: Polydeuces
++id: 7
+$hlight: 0
+$mirror: 1
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 27
+$team: Friendly
+$class: GTT Argo
+$pos: 201.842560, -0.002289, -88.776711
+$label: Evacuation
++id: 8
+$hlight: 0
+$mirror: 1
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 19
+$team: Hostile
+$class: MIND Khopesh
+$pos: 223.664047, -0.002319, 65.488434
+$label: MIND Forces
++id: 9
+$hlight: 1
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$end_stage
+$start_stage
+$multi_text
+ XSTR("Should the need arise, we have two remaining wings of $b Lancer-type fighters still stationed at $b Leonov $b Station. We will launch them as nessecary to cover the evacuation.", -1)
+$end_multi_text
+$voice: none.wav
+$camera_pos: 0.000000, 500.000000, 0.000000
+$camera_orient:
+	1.000000, -0.000904, 0.000000,
+	0.000000, 0.000000, 1.000000,
+	-0.000904, -1.000000, 0.000000
+$camera_time: 500
+$num_lines: 0
+$num_icons: 5
+$Flags: 0
+$Formula: ( true ) 
+$start_icon
+$type: 7
+$team: Friendly
+$class: Volition Bravos
+$pos: -217.464432, -0.001984, -2.912917
+$label: Saturn
++id: 2
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 15
+$team: Friendly
+$class: GTI Arcadia
+$pos: -1.907895, -0.002289, -87.353531
+$label: Leonov Station
++id: 5
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 28
+$team: Friendly
+$class: UN Moscow
+$pos: -6.275620, -0.002289, 71.339279
+$label: Polydeuces
++id: 7
+$hlight: 0
+$mirror: 1
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 19
+$team: Hostile
+$class: MIND Khopesh
+$pos: 223.664047, -0.002319, 65.488434
+$label: MIND Forces
++id: 9
+$hlight: 0
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$start_icon
+$type: 1
+$team: Friendly
+$class: UN Lancer
+$pos: 210.570343, 0.000061, -91.685539
+$label: Lancer squadron
++id: 13
+$hlight: 1
+$mirror: 0
+$multi_text
+$end_multi_text
+$end_icon
+$end_stage
+$end_briefing
+
+#Debriefing_info
+
+$Num stages: 8
+
+$Formula: ( and 
+   ( is-destroyed-delay 
+      0 
+      "Polydeuces# 1" 
+   )
+   ( not 
+      ( is-destroyed-delay 0 "Memphis" ) 
+   )
+   ( not 
+      ( or 
+         ( has-arrived-delay 0 "Merneptah" ) 
+         ( has-arrived-delay 0 "Rimush" ) 
+      )
+   )
+)
+$Multi text
+    XSTR("The Polydeuces was destroyed in an engagement against the Memphis and its escorting fighter wing.", -1)
+$end_multi_text
+$Voice: none.wav
+$Recommendation text:
+    XSTR("Yell at nerdo on the forums for bad balancing, this should not be a major challenge.", -1)
+$end_multi_text
+
+$Formula: ( and 
+   ( is-destroyed-delay 
+      0 
+      "Polydeuces# 1" 
+   )
+   ( >= @Heat[0] 100 ) 
+)
+$Multi text
+    XSTR("", -1)
+$end_multi_text
+$Voice: none.wav
+$Recommendation text:
+    XSTR("Control your heat levels to prevent damage to your ship from overheating. Consider not disabling automatic shutdown, as when shutdown you dissipate heat significantly faster. Remember the main sources of heat and limit the heat generation.", -1)
+$end_multi_text
+
+$Formula: ( and 
+   ( has-arrived-delay 
+      0 
+      "Rimush" 
+      "Merneptah" 
+   )
+   ( not ( has-arrived-delay 0 "Nebty" ) ) 
+   ( is-destroyed-delay 
+      0 
+      "Polydeuces# 1" 
+   )
+)
+$Multi text
+    XSTR("The Polydeuces was destroyed in an engagement against two Khopesh cruisers, the Merneptah and Rimush.", -1)
+$end_multi_text
+$Voice: none.wav
+$Recommendation text:
+    XSTR("Use Eagle SSMs and railguns to deal damage at long range, and potentially disable a tri-beam cannon. Focus fire on the Merneptah, as it will attack you first.", -1)
+$end_multi_text
+
+$Formula: ( and 
+   ( is-destroyed-delay 
+      0 
+      "Polydeuces# 1" 
+   )
+   ( not 
+      ( is-destroyed-delay 0 "Nebty" ) 
+   )
+   ( has-arrived-delay 0 "Nebty" ) 
+)
+$Multi text
+    XSTR("The Polydeuces was destroyed by the carrier Nebty and the strikecraft launched by the Nebty.", -1)
+$end_multi_text
+$Voice: none.wav
+$Recommendation text:
+    XSTR("Use Trantor munitions to protect yourself against bombers and fighters, and use beam cannons to destroy the Nebty.", -1)
+$end_multi_text
+
+$Formula: ( and 
+   ( is-destroyed-delay 
+      0 
+      "Polydeuces# 1" 
+   )
+   ( has-arrived-delay 0 "Pharaoh" ) 
+)
+$Multi text
+    XSTR("The Polydeuces was destroyed by the enemy destroyer Pharaoh in the final stages of the evacuation of Leonov Station.", -1)
+$end_multi_text
+$Voice: none.wav
+$Recommendation text:
+    XSTR("Use the warp drive to quickly jump underneath the Pharaoh, and use your afterburners to escape its main gun field of fire when it turns to attack you. Trantor munitions are effective against enemy strikecraft.", -1)
+$end_multi_text
+
+$Formula: ( and 
+   ( not 
+      ( is-goal-true-delay 
+         "Oversee evacuation" 
+         0 
+      )
+   )
+   ( is-destroyed-delay 0 "Leonov" ) 
+)
+$Multi text
+    XSTR("Leonov Station was destroyed.", -1)
+$end_multi_text
+$Voice: none.wav
+$Recommendation text:
+    XSTR("", -1)
+$end_multi_text
+
+$Formula: ( is-destroyed-delay 0 "Savoy" ) 
+$Multi text
+    XSTR("The Savoy was destroyed before it could depart.", -1)
+$end_multi_text
+$Voice: none.wav
+$Recommendation text:
+    XSTR("Assign Alpha and Bravo wings to cover the Savoy, they can reliably hold off enemy fighters until the Savoy escapes.", -1)
+$end_multi_text
+
+$Formula: ( is-goal-true-delay 
+   "Oversee evacuation" 
+   0 
+)
+$Multi text
+    XSTR("Good work protecting the evacuation of Leonov station. The evacuation of our remaining outer system assets proceeds smoothly. The remnants of the 18th TF have already retreated to the Mars fortress, Artemisia station, and we are rebasing you there as well. We will repair and resupply your ship while there to prepare for the next engagement, as we expect the enemy to continue their assault.", -1)
+$end_multi_text
+$Voice: none.wav
+$Recommendation text:
+    XSTR("", -1)
+$end_multi_text
+
+#Alternate Types:
+$Alt: Installation
+$Alt: Freighter
+$Alt: Electronics
+
+#end
+
+
+#Players		;! 1 total
+
+$Starting Shipname: Polydeuces# 1
+$Ship Choices: (
+	"UN Moscow#PLAYEr"	1
+)
+
++Weaponry Pool: (
+	"Eagle SSM"	320
+	"Railgun"	1
+	"Cluster Flak Array"	1
+	"Trantor"	240
+	"Thresher"	16
+	"Reaper"	16
+	"MK-122"	3200
+	"Hegemony"	128
+)
+
+#Objects		;! 58 total
+
+$Name: Polydeuces# 1		;! Object #0
+$Class: UN Moscow#PLAYEr
+$Team: Friendly
+$Location: 255.172577, -500.000000, 1509.310791
+$Orientation:
+	0.000000, 0.000000, 1.000000,
+	0.000000, 1.000000, -0.000000,
+	-1.000000, 0.000000, 0.000000
+$AI Behavior: None
++AI Class: BP2-Captain
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "player-start" )
++Flags2: ( "no-subspace-drive" )
++Respawn priority: 0
++Group: 0
++Score: 8
+
+$Name: Leonov		;! Object #1
+$Class: GTI Arcadia
+$Alt: Installation
+
+$Team: Friendly
+$Location: 1500.000000, 0.000000, 1000.000000
+$Orientation:
+	-0.000000, 0.000000, 1.000000,
+	-0.000000, 1.000000, -0.000000,
+	-1.000000, -0.000000, -0.000000
+$AI Behavior: None
++AI Class: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
+$Damage: 100
++Subsystem: turret02
+$Damage: 100
++Subsystem: turret03
+$Damage: 100
++Subsystem: turret04
+$Damage: 100
++Subsystem: turret05
+$Damage: 100
++Subsystem: turret06
+$Damage: 100
++Subsystem: turret07
+$Damage: 100
++Subsystem: turret08
+$Damage: 100
++Subsystem: turret09
+$Damage: 100
++Subsystem: turret10
+$Damage: 100
++Subsystem: turret11
+$Damage: 100
++Subsystem: turret12
+$Damage: 100
++Subsystem: turret13
+$Damage: 100
++Subsystem: turret14
+$Damage: 100
++Subsystem: turret15
+$Damage: 100
++Subsystem: turret16
+$Damage: 100
++Subsystem: turret17
+$Damage: 100
++Subsystem: turret18
+$Damage: 100
++Subsystem: turret19
+$Damage: 100
++Subsystem: turret20
+$Damage: 100
++Subsystem: turret21
+$Damage: 100
++Subsystem: turret22
+$Damage: 100
++Subsystem: turret23
+$Damage: 100
++Subsystem: turret24
+$Damage: 100
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "escort" )
++Flags2: ( "lock-all-turrets" "immobile" )
++Respawn priority: 0
++Escort priority: 99
++Special Hitpoints: 200000
++Docked With: Xerxes
+$Docker Point: dock02
+$Dockee Point: Bigship docking
++Docked With: Savoy
+$Docker Point: Docking Point
+$Dockee Point: Platform C
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 800
+
+$Name: Savoy		;! Object #2
+$Class: UN Florence
+$Team: Friendly
+$Location: 912.777100, 28.189819, 434.828308
+$Orientation:
+	-1.000000, 0.000000, -0.000007,
+	0.000000, 1.000000, -0.000000,
+	0.000007, 0.000000, -1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("$Evacuees", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( is-event-true-delay "Savoy gone" 1 ) 
+$Determination: 10
++Flags: ( "cargo-known" "protect-ship" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 40000
++Docked With: Leonov
+$Docker Point: Platform C
+$Dockee Point: Docking Point
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 200
+
+$Name: Xerxes		;! Object #3
+$Class: GTFR Triton
+$Alt: Freighter
+
+$Team: Friendly
+$Location: 1392.911865, 389.835510, 674.352661
+$Orientation:
+	0.000025, -1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000,
+	-1.000000, -0.000025, 0.000000
+$AI Behavior: None
++AI Class: BP2-Lieutenant
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Primary Banks: ( "UN MG" )
++Subsystem: turret02
++Primary Banks: ( "UN MG" )
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
++Departure delay: 3
+$Departure Cue: ( <= 
+   ( distance "Xerxes" "Xerxes GO:2" ) 
+   500 
+)
+$Determination: 10
++Flags: ( "cargo-known" "protect-ship" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Special Hitpoints: 25000
++Docked With: Xerxes Cargo
+$Docker Point: Cargo Dockpoint
+$Dockee Point: Cargo Dock01
++Docked With: Leonov
+$Docker Point: Bigship docking
+$Dockee Point: dock02
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 20
+
+$Name: Xerxes Cargo		;! Object #4
+$Class: TC-TRI
+$Alt: Electronics
+
+$Team: Friendly
+$Location: 1201.952637, 390.524994, 685.273132
+$Orientation:
+	0.000021, -1.000000, -0.000000,
+	0.000108, 0.000000, 1.000000,
+	-1.000000, -0.000021, 0.000108
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Docked With: Xerxes
+$Docker Point: Cargo Dock01
+$Dockee Point: Cargo Dockpoint
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Pharaoh		;! Object #5
+$Class: MIND Pharaoh
+$Team: Hostile
+$Location: 6679.318359, -3940.699707, -3188.277832
+$Orientation:
+	0.560139, 0.000000, 0.828399,
+	0.047242, 0.998372, -0.031944,
+	-0.827051, 0.057028, 0.559227
+$AI Behavior: None
++AI Class: BP2-General
+$AI Goals: ( goals ( ai-waypoints-once "Pharah path" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Primary Banks: ( "SMind" )
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
+$Arrival Location: Hyperspace
+$Arrival Cue: ( is-destroyed-delay 
+   15 
+   "Nebty" 
+   "Merneptah" 
+   "Rimush" 
+   "Memphis" 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( or 
+   ( <= ( hits-left "Pharaoh" ) 17 ) 
+   ( is-destroyed-delay 15 "Leonov" ) 
+)
+$Determination: 10
++Flags: ( "no-shields" "escort" )
++Flags2: ( )
++Respawn priority: 0
++Escort priority: 50
++Hotkey: 7
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Warpin1		;! Object #6
+$Class: Commander
+$Team: Hostile
+$Location: -1196.627686, 0.000977, 1425.849854
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "invulnerable" "hidden-from-sensors" "stealth" )
++Flags2: ( "no-subspace-drive" "immobile" "cloaked" "no-collide" )
++Respawn priority: 0
++Group: 0
++Score: 100
+
+$Name: Warpin2		;! Object #7
+$Class: Commander
+$Team: Hostile
+$Location: -1042.234253, 0.002930, 2379.823242
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "invulnerable" "hidden-from-sensors" "stealth" "friendly-stealth-invisible" )
++Flags2: ( "immobile" "cloaked" "no-collide" )
++Respawn priority: 0
++Group: 0
++Score: 90
+
+$Name: Nebty		;! Object #8
+$Class: MIND Ramses
+$Team: Hostile
+$Location: -2102.324707, 0.000977, 1482.970825
+$Orientation:
+	-0.304300, 0.000000, -0.952576,
+	0.000000, 1.000000, 0.000000,
+	0.952576, 0.000000, -0.304300
+$AI Behavior: None
++AI Class: BP2-Colonel
+$AI Goals: ( goals ( ai-waypoints-once "Carrier" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08
++Subsystem: Turret09
+$Arrival Location: In front of ship
++Arrival Distance: 3000
+$Arrival Anchor: Warpin2
++Arrival Delay: 22
+$Arrival Cue: ( and 
+   ( or 
+      ( and 
+         ( <= 
+            ( hits-left "Merneptah" ) 
+            ( rand 20 30 ) 
+         )
+         ( is-destroyed-delay 0 "Rimush" ) 
+      )
+      ( and 
+         ( <= 
+            ( hits-left "Rimush" ) 
+            ( rand 20 30 ) 
+         )
+         ( is-destroyed-delay 0 "Merneptah" ) 
+      )
+      ( is-destroyed-delay 
+         0 
+         "Rimush" 
+         "Merneptah" 
+      )
+   )
+   ( is-destroyed-delay 0 "Memphis" ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "escort" )
++Flags2: ( )
++Respawn priority: 0
++Escort priority: 40
++Hotkey: 7
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 1100
+
+$Name: Rimush		;! Object #9
+$Class: MIND Khopesh
+$Team: Hostile
+$Location: 2825.818848, 5837.111328, -3935.827637
+$Orientation:
+	0.930928, 0.000000, 0.365203,
+	-0.324854, 0.456903, 0.828076,
+	-0.166862, -0.889516, 0.425344
+$AI Behavior: None
++AI Class: BP2-Captain
+$AI Goals: ( goals ( ai-waypoints-once "Rimush path" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06-base
++Subsystem: turret07-base
++Subsystem: turret08-base
++Subsystem: turret09-base
++Subsystem: turret10-base
++Subsystem: turret11-base
++Subsystem: turret12-base
++Subsystem: turret13-base
++Subsystem: turret14-base
++Subsystem: turret15-base
++Subsystem: turret16-base
++Subsystem: turret17-base
++Subsystem: turret18-base
+$Arrival Location: Hyperspace
++Arrival Delay: 5
+$Arrival Cue: ( is-event-true-delay "Khopesh cue" 0 ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "escort" )
++Flags2: ( )
++Respawn priority: 0
++Escort priority: 30
++Hotkey: 7
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 90
+
+$Name: Merneptah		;! Object #10
+$Class: MIND Khopesh
+$Team: Hostile
+$Location: 3668.339844, 5880.311523, -3137.725098
+$Orientation:
+	0.830451, 0.000000, 0.557092,
+	-0.500222, 0.440166, 0.745675,
+	-0.245213, -0.897916, 0.365536
+$AI Behavior: None
++AI Class: BP2-Captain
+$AI Goals: ( goals ( ai-waypoints "Polydeuces Loc" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06-base
++Subsystem: turret07-base
++Subsystem: turret08-base
++Subsystem: turret09-base
++Subsystem: turret10-base
++Subsystem: turret11-base
++Subsystem: turret12-base
++Subsystem: turret13-base
++Subsystem: turret14-base
++Subsystem: turret15-base
++Subsystem: turret16-base
++Subsystem: turret17-base
++Subsystem: turret18-base
+$Arrival Location: Hyperspace
++Arrival Delay: 5
+$Arrival Cue: ( is-event-true-delay "Khopesh cue" 0 ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "escort" )
++Flags2: ( )
++Respawn priority: 0
++Escort priority: 31
++Hotkey: 7
++Group: 0
++Use Table Score:
++Score: 90
+
+$Name: Alpha 1		;! Object #11
+$Class: UN Lancer
+$Team: Friendly
+$Location: 1959.635742, 0.000000, 1522.562988
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-General
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "ship-locked" )
++Respawn priority: 0
++Orders Accepted: 33023		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Alpha 2		;! Object #12
+$Class: UN Lancer
+$Team: Friendly
+$Location: 1918.658813, 0.000000, 1492.973145
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-General
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "ship-locked" )
++Respawn priority: 0
++Orders Accepted: 33023		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Alpha 3		;! Object #13
+$Class: UN Lancer
+$Team: Friendly
+$Location: 1918.828857, 0.000000, 1527.457397
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-General
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "ship-locked" )
++Respawn priority: 0
++Orders Accepted: 33023		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Alpha 4		;! Object #14
+$Class: UN Lancer
+$Team: Friendly
+$Location: 1967.926025, 0.000000, 1502.322998
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-General
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "ship-locked" )
++Respawn priority: 0
++Orders Accepted: 33023		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Bravo 1		;! Object #15
+$Class: UN Lancer
+$Team: Friendly
+$Location: 1956.908203, 0.000000, 1775.891357
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-General
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "ship-locked" )
++Respawn priority: 0
++Orders Accepted: 32831		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Bravo 2		;! Object #16
+$Class: UN Lancer
+$Team: Friendly
+$Location: 1967.461060, 0.000000, 1743.350586
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-General
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "ship-locked" )
++Respawn priority: 0
++Orders Accepted: 32831		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Bravo 3		;! Object #17
+$Class: UN Lancer
+$Team: Friendly
+$Location: 1896.936768, -17.648804, 1752.733521
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-General
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "ship-locked" )
++Respawn priority: 0
++Orders Accepted: 32831		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Bravo 4		;! Object #18
+$Class: UN Lancer
+$Team: Friendly
+$Location: 1922.304199, 0.000000, 1785.977905
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-General
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "ship-locked" )
++Respawn priority: 0
++Orders Accepted: 32831		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Memphis		;! Object #19
+$Class: MIND Newet
+$Team: Hostile
+$Location: -443.815674, 5903.979980, -1111.286377
+$Orientation:
+	0.776173, 0.072467, -0.626341,
+	0.613225, 0.144301, 0.776616,
+	0.146661, -0.986877, 0.067564
+$AI Behavior: None
++AI Class: BP2-Captain
+$AI Goals: ( goals ( ai-waypoints-once "Memphis path" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08
++Subsystem: Turret09
++Subsystem: Turret10
++Subsystem: Turret11
++Subsystem: Turret12
++Subsystem: Turret13
++Subsystem: Turret14
++Subsystem: Turret15
++Subsystem: Turret16
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "escort" )
++Flags2: ( )
++Respawn priority: 0
++Escort priority: 40
++Hotkey: 7
++Group: 0
++Score: 90
+
+$Name: Aquarius 1		;! Object #20
+$Class: MIND Osiris
+$Team: Hostile
+$Location: -1705.588257, -0.000427, 1549.567627
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-Captain
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 8
+
+$Name: Aquarius 2		;! Object #21
+$Class: MIND Osiris
+$Team: Hostile
+$Location: -1718.251465, -0.000427, 1671.634888
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-Captain
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 8
+
+$Name: Aquarius 3		;! Object #22
+$Class: MIND Osiris
+$Team: Hostile
+$Location: -1607.017456, -0.000427, 1559.034668
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-Captain
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 8
+
+$Name: Aquarius 4		;! Object #23
+$Class: MIND Osiris
+$Team: Hostile
+$Location: -1611.211182, -0.000427, 1696.137085
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-Captain
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 8
+
+$Name: Pisces 1		;! Object #24
+$Class: MIND Thoth
+$Team: Hostile
+$Location: -528.074036, 6421.543457, -1012.810486
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-Lieutenant
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Pisces 2		;! Object #25
+$Class: MIND Thoth
+$Team: Hostile
+$Location: -523.332275, 6421.543457, -916.118103
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-Lieutenant
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Pisces 3		;! Object #26
+$Class: MIND Thoth
+$Team: Hostile
+$Location: -483.986389, 6421.543457, -982.223450
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-Lieutenant
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Pisces 4		;! Object #27
+$Class: MIND Thoth
+$Team: Hostile
+$Location: -467.034302, 6421.543457, -917.972229
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-Lieutenant
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Pisces 5		;! Object #28
+$Class: MIND Thoth
+$Team: Hostile
+$Location: -446.949951, 6421.543457, -957.054382
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-Lieutenant
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Vulpex 1		;! Object #29
+$Class: MIND Thoth
+$Team: Hostile
+$Location: 4257.551270, -0.004395, 1152.805298
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-Captain
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Vulpex 2		;! Object #30
+$Class: MIND Thoth
+$Team: Hostile
+$Location: 4317.531738, -0.004395, 1086.900146
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-Captain
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Vulpex 3		;! Object #31
+$Class: MIND Thoth
+$Team: Hostile
+$Location: 4216.914063, 0.000305, 1020.349792
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-Captain
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Vulpex 4		;! Object #32
+$Class: MIND Thoth
+$Team: Hostile
+$Location: 4281.362793, 0.000305, 1013.031372
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-Captain
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Vulpex 5		;! Object #33
+$Class: MIND Thoth
+$Team: Hostile
+$Location: 4218.740723, 0.000305, 1061.940063
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-Captain
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 10
+
+$Name: Sydney		;! Object #34
+$Class: UN Canberra
+$Team: Friendly
+$Location: 1625.180664, -0.001099, 1921.991455
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-Major
+$AI Goals: ( goals ( ai-play-dead 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( is-event-true-delay "Evac done" 7 ) 
+$Determination: 10
++Flags: ( "cargo-known" "protect-ship" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 100
+
+$Name: Cancer 1		;! Object #35
+$Class: MIND Osiris
+$Team: Hostile
+$Location: 5828.958496, 0.000244, -2836.147949
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Jouster-Lvl1
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "no-departure-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Score: 10
+
+$Name: Cancer 2		;! Object #36
+$Class: MIND Osiris
+$Team: Hostile
+$Location: 5936.992188, 0.000015, -2749.368408
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Jouster-Lvl1
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" "no-departure-warp" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Score: 10
+
+$Name: Cygnus 1		;! Object #37
+$Class: MIND Osiris
+$Team: Hostile
+$Location: 5761.870117, 0.001831, -3066.592773
+$Orientation:
+	0.897180, 0.000000, -0.441665,
+	-0.000000, 1.000000, 0.000001,
+	0.441665, -0.000001, 0.897180
+$AI Behavior: None
++AI Class: Jouster-Lvl1
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 8
+
+$Name: Cygnus 2		;! Object #38
+$Class: MIND Osiris
+$Team: Hostile
+$Location: 5761.212402, 0.000000, -3004.076172
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Jouster-Lvl1
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 8
+
+$Name: Leo 1		;! Object #39
+$Class: MIND Serapis
+$Team: Hostile
+$Location: -2459.342773, -0.001221, 705.135132
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-Major
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Leo 2		;! Object #40
+$Class: MIND Serapis
+$Team: Hostile
+$Location: -2570.706787, -0.001221, 787.819336
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-Major
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Leo 3		;! Object #41
+$Class: MIND Serapis
+$Team: Hostile
+$Location: -2621.025879, -0.001221, 656.384521
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-Major
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Leo 4		;! Object #42
+$Class: MIND Serapis
+$Team: Hostile
+$Location: -2675.135742, -0.001221, 740.777344
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-Major
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Leo 5		;! Object #43
+$Class: MIND Serapis
+$Team: Hostile
+$Location: -2540.107422, -0.001221, 713.625854
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-Major
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Aquarius 5		;! Object #44
+$Class: MIND Osiris
+$Team: Hostile
+$Location: -1658.459229, -0.000610, 1626.480225
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-Captain
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 8
+
+$Name: Thing for mission complete		;! Object #45
+$Class: Commander
+$Team: Friendly
+$Location: 900.422302, 0.000244, 2197.741211
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "hidden-from-sensors" "stealth" "friendly-stealth-invisible" )
++Flags2: ( "cloaked" "no-collide" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Score: 12
+
+$Name: Taurus 1		;! Object #46
+$Class: MIND Serapis
+$Team: Hostile
+$Location: -2133.043213, -0.001953, 1789.315674
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-General
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Taurus 2		;! Object #47
+$Class: MIND Serapis
+$Team: Hostile
+$Location: -2105.862793, -0.001953, 1722.461548
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-General
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Taurus 3		;! Object #48
+$Class: MIND Serapis
+$Team: Hostile
+$Location: -2075.592285, -0.001953, 1857.247192
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-General
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Taurus 4		;! Object #49
+$Class: MIND Serapis
+$Team: Hostile
+$Location: -2015.671021, -0.001953, 1762.930664
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-General
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Taurus 5		;! Object #50
+$Class: MIND Serapis
+$Team: Hostile
+$Location: -2011.534058, -0.001953, 1831.478882
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: BP2-General
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Menhit		;! Object #51
+$Class: MIND Hemsut
+$Team: Hostile
+$Location: 4274.631348, -0.002686, 681.747314
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Jouster-CAP
+$AI Goals: ( goals ( ai-chase "Savoy" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: Gunship warpin point
++Arrival Delay: 1
+$Arrival Cue: ( has-arrived-delay 
+   2 
+   "Gunship warpin point" 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( destroyed-or-departed-delay 
+   7 
+   "Savoy" 
+)
+$Determination: 10
++Flags: ( "no-shields" "escort" )
++Flags2: ( )
++Respawn priority: 0
++Escort priority: 10
++Hotkey: 7
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 75
+
+$Name: Hemsut		;! Object #52
+$Class: MIND Hemsut
+$Team: Hostile
+$Location: 4025.029785, -0.000610, 573.491699
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Jouster-CAP
+$AI Goals: ( goals ( ai-chase "Savoy" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: Gunship warpin point
++Arrival Delay: 1
+$Arrival Cue: ( has-arrived-delay 
+   2 
+   "Gunship warpin point" 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( destroyed-or-departed-delay 
+   6 
+   "Savoy" 
+)
+$Determination: 10
++Flags: ( "no-shields" "escort" )
++Flags2: ( )
++Respawn priority: 0
++Escort priority: 9
++Hotkey: 7
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 75
+
+$Name: Gunship warpin point		;! Object #53
+$Class: Commander
+$Team: Friendly
+$Location: 4114.506348, -0.000610, 805.054138
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
+$Arrival Location: In front of ship
++Arrival Distance: 4000
+$Arrival Anchor: Savoy
+$Arrival Cue: ( and 
+   ( is-event-true-delay "Savoy go" 30 ) 
+   ( >= 
+      ( distance "Leonov" "Savoy" ) 
+      900 
+   )
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "hidden-from-sensors" "stealth" "friendly-stealth-invisible" )
++Flags2: ( "immobile" "cloaked" "no-collide" )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Foxtrot 1		;! Object #54
+$Class: UN Jackal
+$Team: Friendly
+$Location: -949.773682, -0.002533, 634.826294
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Jouster-Lvl3
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 33023		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Foxtrot 2		;! Object #55
+$Class: UN Jackal
+$Team: Friendly
+$Location: -946.251648, -0.002533, 728.232483
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Jouster-Lvl3
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 33023		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Foxtrot 3		;! Object #56
+$Class: UN Jackal
+$Team: Friendly
+$Location: -979.762695, -0.002533, 680.703613
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Jouster-Lvl3
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 33023		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Foxtrot 4		;! Object #57
+$Class: UN Jackal
+$Team: Friendly
+$Location: -922.820496, -0.002533, 678.955994
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Jouster-Lvl3
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 33023		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 12
+
+#Wings		;! 11 total
+
+$Name: Polydeuces#
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Polydeuces# 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 1 total
+	"Polydeuces# 1"
+)
++Flags: ( )
+
+$Name: Alpha
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Alpha 1
+
+$Arrival Location: Docking Bay
++Arrival Distance: 0
+$Arrival Anchor: Leonov
+$Arrival Cue: ( is-event-true-delay 
+   "Fighters breaking" 
+   4 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 4 total
+	"Alpha 1"
+	"Alpha 2"
+	"Alpha 3"
+	"Alpha 4"
+)
+$AI Goals: ( goals ( ai-guard "Leonov" 50 ) )
++Hotkey: 1
++Flags: ( )
+
+$Name: Bravo
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Bravo 1
+
+$Arrival Location: Docking Bay
++Arrival Distance: 0
+$Arrival Anchor: Leonov
+$Arrival Cue: ( is-event-true-delay "Gunships!" 0 ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 4 total
+	"Bravo 1"
+	"Bravo 2"
+	"Bravo 3"
+	"Bravo 4"
+)
++Hotkey: 2
++Flags: ( )
+
+$Name: Aquarius
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Aquarius 1
+
+$Arrival Location: Docking Bay
++Arrival Distance: 0
+$Arrival Anchor: Nebty
+$Arrival Cue: ( has-arrived-delay 10 "Nebty" ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 5 total
+	"Aquarius 1"
+	"Aquarius 2"
+	"Aquarius 3"
+	"Aquarius 4"
+	"Aquarius 5"
+)
+$AI Goals: ( goals ( ai-chase "Polydeuces# 1" 70 ) ( ai-chase "Leonov" 50 ) ( ai-chase-any 40 ) )
++Hotkey: 6
++Flags: ( )
+
+$Name: Pisces
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Pisces 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 5 total
+	"Pisces 1"
+	"Pisces 2"
+	"Pisces 3"
+	"Pisces 4"
+	"Pisces 5"
+)
+$AI Goals: ( goals ( ai-guard "Memphis" 80 ) )
++Hotkey: 5
++Flags: ( )
+
+$Name: Vulpex
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Vulpex 1
+
+$Arrival Location: Near Ship
++Arrival Distance: 500
+$Arrival Anchor: Gunship warpin point
+$Arrival Cue: ( has-arrived-delay 
+   2 
+   "Gunship warpin point" 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( destroyed-or-departed-delay 
+   7 
+   "Savoy" 
+)
+$Ships: (		;! 5 total
+	"Vulpex 1"
+	"Vulpex 2"
+	"Vulpex 3"
+	"Vulpex 4"
+	"Vulpex 5"
+)
+$AI Goals: ( goals ( ai-guard "Menhit" 80 ) ( ai-chase "Savoy" 60 ) ( ai-chase "Leonov" 50 ) ( ai-chase-any 40 ) )
++Hotkey: 6
++Flags: ( )
+
+$Name: Cancer
+$Waves: 2
+$Wave Threshold: 0
+$Special Ship: 0		;! Cancer 1
+
+$Arrival Location: Docking Bay
++Arrival Distance: 0
+$Arrival Anchor: Pharaoh
+$Arrival Cue: ( is-event-true-delay 
+   "Pharaoh annoyed" 
+   2 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 2 total
+	"Cancer 1"
+	"Cancer 2"
+)
+$AI Goals: ( goals ( ai-chase "Polydeuces# 1" 50 ) )
++Hotkey: 6
++Flags: ( "no-departure-warp" )
++Wave Delay Min: 5
++Wave Delay Max: 11
+
+$Name: Cygnus
+$Waves: 2
+$Wave Threshold: 0
+$Special Ship: 0		;! Cygnus 1
+
+$Arrival Location: Docking Bay
++Arrival Distance: 0
+$Arrival Anchor: Pharaoh
+$Arrival Cue: ( has-arrived-delay 15 "Cancer" ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 2 total
+	"Cygnus 1"
+	"Cygnus 2"
+)
+$AI Goals: ( goals ( ai-chase "Polydeuces# 1" 50 ) )
++Hotkey: 6
++Flags: ( )
++Wave Delay Min: 5
++Wave Delay Max: 11
+
+$Name: Leo
+$Waves: 3
+$Wave Threshold: 0
+$Special Ship: 0		;! Leo 1
+
+$Arrival Location: Docking Bay
++Arrival Distance: 0
+$Arrival Anchor: Pharaoh
+$Arrival Cue: ( has-arrived-delay 12 "Pharaoh" ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 5 total
+	"Leo 1"
+	"Leo 2"
+	"Leo 3"
+	"Leo 4"
+	"Leo 5"
+)
+$AI Goals: ( goals ( ai-guard "Pharaoh" 50 ) )
++Hotkey: 6
++Flags: ( )
++Wave Delay Min: 5
++Wave Delay Max: 11
+
+$Name: Taurus
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Taurus 1
+
+$Arrival Location: Docking Bay
++Arrival Distance: 0
+$Arrival Anchor: Nebty
+$Arrival Cue: ( has-arrived-delay 3 "Aquarius" ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 5 total
+	"Taurus 1"
+	"Taurus 2"
+	"Taurus 3"
+	"Taurus 4"
+	"Taurus 5"
+)
+$AI Goals: ( goals ( ai-chase-wing "Alpha" 60 ) ( ai-chase-wing "Bravo" 50 ) ( ai-guard-wing "Aquarius" 30 ) ( ai-chase-any 20 ) )
++Hotkey: 5
++Flags: ( )
+
+$Name: Foxtrot
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Foxtrot 1
+
+$Arrival Location: Near Ship
++Arrival Distance: 2200
+$Arrival Anchor: Cancer 1
++Arrival delay: 7
+$Arrival Cue: ( and 
+   ( < ( hits-left "Polydeuces# 1" ) 33 ) 
+   ( has-arrived-delay 0 "Cancer" ) 
+   ( not ( skill-level-at-least "Hard" ) ) 
+)
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 4 total
+	"Foxtrot 1"
+	"Foxtrot 2"
+	"Foxtrot 3"
+	"Foxtrot 4"
+)
+$AI Goals: ( goals ( ai-guard "Polydeuces# 1" 50 ) )
++Flags: ( )
+
+#Events		;! 109 total
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: --CSC script--
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( beam-lock-all "Polydeuces# 1" ) 
+   ( set-afterburner-energy 
+      0 
+      "Polydeuces# 1" 
+   )
+   ( hud-set-message 
+      "TLSTaccomE" 
+      "Overview: Repping off" 
+   )
+   ( hud-set-message 
+      "TLSTaccomD" 
+      "Overview: Hardeners off" 
+   )
+)
++Name: initialize player
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( every-time 
+   ( not 
+      ( string-equals 
+         "@PlayerTarget[Battuta]" 
+         "null" 
+      )
+   )
+   ( if-then-else 
+      ( > @RightBeamsTick[0] 0 ) 
+      ( hud-set-message 
+         "TLSTaccomB" 
+         "Overview: R Firing" 
+      )
+      ( if-then-else 
+         ( < @BeamRightStatus[200] 200 ) 
+         ( hud-set-message 
+            "TLSTaccomB" 
+            "Overview: R recharging" 
+         )
+         ( if-then-else 
+            ( is-in-box 
+               "@PlayerTarget[Battuta]" 
+               -5000 
+               1 
+               -5000 
+               5000 
+               -5000 
+               5000 
+               "Polydeuces# 1" 
+            )
+            ( hud-set-message 
+               "TLSTaccomB" 
+               "Overview: R Not in FOV" 
+            )
+            ( if-then-else 
+               ( > 
+                  ( distance-ship-subsystem 
+                     "@PlayerTarget[Battuta]" 
+                     "Polydeuces# 1" 
+                     "turret02" 
+                  )
+                  5500 
+               )
+               ( hud-set-message 
+                  "TLSTaccomB" 
+                  "Overview: R range" 
+               )
+               ( hud-set-message 
+                  "TLSTaccomB" 
+                  "Overview: R can fire" 
+               )
+            )
+         )
+      )
+   )
+)
++Name: Right beam TACHUD
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( every-time 
+   ( string-equals 
+      "null" 
+      "@PlayerTarget[Battuta]" 
+   )
+   ( hud-set-message 
+      "TLSTaccomA" 
+      "Overview: No target!" 
+   )
+   ( hud-set-message 
+      "TLSTaccomB" 
+      "Overview: No target!" 
+   )
+)
++Name: no target failsafe
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( = 0 @SHUTDOWN[0] ) 
+   ( hud-set-message 
+      "BPTaccomA" 
+      "Overview: Left beam" 
+   )
+   ( hud-set-message 
+      "BPTaccomB" 
+      "Overview: Right beam" 
+   )
+   ( hud-set-message 
+      "BPTaccomC" 
+      "Overview: Cap" 
+   )
+   ( if-then-else 
+      ( <= @Heat[0] 75 ) 
+      ( hud-set-message 
+         "BPTaccomD" 
+         "Overview: Heat" 
+      )
+      ( if-then-else 
+         ( < @Heat[0] 100 ) 
+         ( hud-set-message 
+            "BPTaccomD" 
+            "Overview: Red heat" 
+         )
+         ( hud-set-message 
+            "BPTaccomD" 
+            "Overview: Very red heat" 
+         )
+      )
+   )
+)
++Name: Status TACHUD
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( every-time 
+   ( not 
+      ( string-equals 
+         "@PlayerTarget[Battuta]" 
+         "null" 
+      )
+   )
+   ( if-then-else 
+      ( > @LeftBeamTick[0] 0 ) 
+      ( hud-set-message 
+         "TLSTaccomA" 
+         "Overview: L firing" 
+      )
+      ( if-then-else 
+         ( < @BeamLeftStatus[200] 200 ) 
+         ( hud-set-message 
+            "TLSTaccomA" 
+            "Overview: Left recharging" 
+         )
+         ( if-then-else 
+            ( is-in-box 
+               "@PlayerTarget[Battuta]" 
+               -1 
+               5000 
+               -5000 
+               5000 
+               -5000 
+               5000 
+               "Polydeuces# 1" 
+            )
+            ( hud-set-message 
+               "TLSTaccomA" 
+               "Overview: L Not in view" 
+            )
+            ( if-then-else 
+               ( > 
+                  ( distance-ship-subsystem 
+                     "@PlayerTarget[Battuta]" 
+                     "Polydeuces# 1" 
+                     "turret01" 
+                  )
+                  5500 
+               )
+               ( hud-set-message 
+                  "TLSTaccomA" 
+                  "Overview: L range" 
+               )
+               ( hud-set-message 
+                  "TLSTaccomA" 
+                  "Overview: L can fire" 
+               )
+            )
+         )
+      )
+   )
+)
++Name: Left beam TACHUD
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( = @SHUTDOWN[0] 0 ) 
+   ( if-then-else 
+      ( >= 
+         ( afterburner-energy-pct 
+            "Polydeuces# 1" 
+         )
+         100 
+      )
+      ( hud-set-message 
+         "TLSTaccomC" 
+         "Overview: AB full" 
+      )
+      ( if-then-else 
+         ( < @Capacitor[100] 20 ) 
+         ( hud-set-message 
+            "TLSTaccomC" 
+            "Overview: AB recharging" 
+         )
+         ( hud-set-message 
+            "TLSTaccomC" 
+            "Overview: AB can shunt" 
+         )
+      )
+   )
+)
++Name: Burner shunt HUD
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( set-object-position 
+      "Polydeuces Loc:1" 
+      ( get-object-x "Polydeuces# 1" ) 
+      ( get-object-y "Polydeuces# 1" ) 
+      ( get-object-z "Polydeuces# 1" ) 
+   )
+   ( key-reset-multiple "Q" ) 
+   ( key-reset-multiple "Left Arrow" ) 
+   ( key-reset-multiple "Right Arrow" ) 
+   ( key-reset-multiple "." ) 
+   ( key-reset-multiple "," ) 
+   ( key-reset-multiple "/" ) 
+   ( when 
+      ( > @Capacitor[100] 100 ) 
+      ( modify-variable @Capacitor[100] 100 ) 
+   )
+   ( when 
+      ( > @Heat[0] 0 ) 
+      ( modify-variable 
+         @Heat[0] 
+         ( - @Heat[0] 1 ) 
+      )
+   )
+   ( when 
+      ( and 
+         ( < @Heat[0] 80 ) 
+         ( = @HeatHasCritical[0] 1 ) 
+      )
+      ( modify-variable 
+         @HeatHasCritical[0] 
+         0 
+      )
+   )
+   ( key-reset-multiple "1" ) 
+   ( key-reset-multiple "2" ) 
+   ( key-reset-multiple "Alt-J" ) 
+   ( key-reset-multiple "Shift-J" ) 
+   ( key-reset-multiple "3" ) 
+   ( when 
+      ( = @AmmoSwitchCount[0] 1 ) 
+      ( modify-variable 
+         @AmmoSwitchCount[0] 
+         0 
+      )
+   )
+   ( script-eval "UpdateTarget()" ) 
+)
++Name: Tick tock
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( < @Capacitor[100] 100 ) 
+   ( when 
+      ( and 
+         ( > 
+            ( get-ets-value 
+               "Shield" 
+               "Polydeuces# 1" 
+            )
+            0 
+         )
+         ( < 
+            ( get-ets-value 
+               "Shield" 
+               "Polydeuces# 1" 
+            )
+            2 
+         )
+      )
+      ( modify-variable 
+         @Capacitor[100] 
+         ( + @Capacitor[100] 1 ) 
+      )
+   )
+   ( when 
+      ( and 
+         ( >= 
+            ( get-ets-value 
+               "Shield" 
+               "Polydeuces# 1" 
+            )
+            2 
+         )
+         ( < 
+            ( get-ets-value 
+               "Shield" 
+               "Polydeuces# 1" 
+            )
+            4 
+         )
+      )
+      ( modify-variable 
+         @Capacitor[100] 
+         ( + @Capacitor[100] 3 ) 
+      )
+   )
+   ( when 
+      ( and 
+         ( >= 
+            ( get-ets-value 
+               "Shield" 
+               "Polydeuces# 1" 
+            )
+            4 
+         )
+         ( < 
+            ( get-ets-value 
+               "Shield" 
+               "Polydeuces# 1" 
+            )
+            6 
+         )
+      )
+      ( modify-variable 
+         @Capacitor[100] 
+         ( + @Capacitor[100] 4 ) 
+      )
+   )
+   ( when 
+      ( and 
+         ( >= 
+            ( get-ets-value 
+               "Shield" 
+               "Polydeuces# 1" 
+            )
+            6 
+         )
+         ( < 
+            ( get-ets-value 
+               "Shield" 
+               "Polydeuces# 1" 
+            )
+            8 
+         )
+      )
+      ( modify-variable 
+         @Capacitor[100] 
+         ( + @Capacitor[100] 6 ) 
+      )
+   )
+   ( when 
+      ( and 
+         ( >= 
+            ( get-ets-value 
+               "Shield" 
+               "Polydeuces# 1" 
+            )
+            8 
+         )
+         ( < 
+            ( get-ets-value 
+               "Shield" 
+               "Polydeuces# 1" 
+            )
+            10 
+         )
+      )
+      ( modify-variable 
+         @Capacitor[100] 
+         ( + @Capacitor[100] 7 ) 
+      )
+      ( modify-variable 
+         @Heat[0] 
+         ( + @Heat[0] 1 ) 
+      )
+   )
+   ( when 
+      ( >= 
+         ( get-ets-value 
+            "Shield" 
+            "Polydeuces# 1" 
+         )
+         10 
+      )
+      ( modify-variable 
+         @Capacitor[100] 
+         ( + @Capacitor[100] 8 ) 
+      )
+      ( modify-variable 
+         @Heat[0] 
+         ( + @Heat[0] 2 ) 
+      )
+   )
+)
++Name: Regenerate capacitor
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( key-pressed "1" ) 
+      ( <= 
+         ( + 
+            @BeamRightStatus[200] 
+            @BeamLeftStatus[200] 
+         )
+         900 
+      )
+      ( >= @Capacitor[100] 20 ) 
+   )
+   ( modify-variable 
+      @BeamLeftStatus[200] 
+      ( + 
+         @BeamLeftStatus[200] 
+         @Capacitor[100] 
+      )
+   )
+   ( modify-variable 
+      @BeamRightStatus[200] 
+      ( + 
+         @BeamRightStatus[200] 
+         @Capacitor[100] 
+      )
+   )
+   ( modify-variable @Capacitor[100] 0 ) 
+)
++Name: Beam overdrive
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( > 
+         ( get-ets-value 
+            "Weapon" 
+            "Polydeuces# 1" 
+         )
+         0 
+      )
+      ( < 
+         ( get-ets-value 
+            "Weapon" 
+            "Polydeuces# 1" 
+         )
+         2 
+      )
+   )
+   ( when 
+      ( < @BeamLeftStatus[200] 350 ) 
+      ( modify-variable 
+         @BeamLeftStatus[200] 
+         ( + @BeamLeftStatus[200] 10 ) 
+      )
+   )
+   ( when 
+      ( < @BeamRightStatus[200] 350 ) 
+      ( modify-variable 
+         @BeamRightStatus[200] 
+         ( + @BeamRightStatus[200] 10 ) 
+      )
+   )
+)
++Name: Charge beam wepeng 1
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( >= 
+         ( get-ets-value 
+            "Weapon" 
+            "Polydeuces# 1" 
+         )
+         2 
+      )
+      ( < 
+         ( get-ets-value 
+            "Weapon" 
+            "Polydeuces# 1" 
+         )
+         4 
+      )
+   )
+   ( when 
+      ( < @BeamLeftStatus[200] 350 ) 
+      ( modify-variable 
+         @BeamLeftStatus[200] 
+         ( + @BeamLeftStatus[200] 12 ) 
+      )
+   )
+   ( when 
+      ( < @BeamRightStatus[200] 350 ) 
+      ( modify-variable 
+         @BeamRightStatus[200] 
+         ( + @BeamRightStatus[200] 12 ) 
+      )
+   )
+)
++Name: Charge beam wepeng 2
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( >= 
+         ( get-ets-value 
+            "Weapon" 
+            "Polydeuces# 1" 
+         )
+         4 
+      )
+      ( < 
+         ( get-ets-value 
+            "Weapon" 
+            "Polydeuces# 1" 
+         )
+         6 
+      )
+   )
+   ( when 
+      ( < @BeamLeftStatus[200] 350 ) 
+      ( modify-variable 
+         @BeamLeftStatus[200] 
+         ( + @BeamLeftStatus[200] 14 ) 
+      )
+   )
+   ( when 
+      ( < @BeamRightStatus[200] 350 ) 
+      ( modify-variable 
+         @BeamRightStatus[200] 
+         ( + @BeamRightStatus[200] 14 ) 
+      )
+   )
+)
++Name: Charge beam wepeng 3
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( >= 
+         ( get-ets-value 
+            "Weapon" 
+            "Polydeuces# 1" 
+         )
+         6 
+      )
+      ( < 
+         ( get-ets-value 
+            "Weapon" 
+            "Polydeuces# 1" 
+         )
+         8 
+      )
+   )
+   ( when 
+      ( < @BeamLeftStatus[200] 350 ) 
+      ( modify-variable 
+         @BeamLeftStatus[200] 
+         ( + @BeamLeftStatus[200] 15 ) 
+      )
+   )
+   ( when 
+      ( < @BeamRightStatus[200] 350 ) 
+      ( modify-variable 
+         @BeamRightStatus[200] 
+         ( + @BeamRightStatus[200] 15 ) 
+      )
+   )
+)
++Name: Charge beam wepeng 4
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( >= 
+         ( get-ets-value 
+            "Weapon" 
+            "Polydeuces# 1" 
+         )
+         8 
+      )
+      ( < 
+         ( get-ets-value 
+            "Weapon" 
+            "Polydeuces# 1" 
+         )
+         10 
+      )
+   )
+   ( when 
+      ( < @BeamLeftStatus[200] 350 ) 
+      ( modify-variable 
+         @BeamLeftStatus[200] 
+         ( + @BeamLeftStatus[200] 16 ) 
+      )
+   )
+   ( when 
+      ( < @BeamRightStatus[200] 350 ) 
+      ( modify-variable 
+         @BeamRightStatus[200] 
+         ( + @BeamRightStatus[200] 16 ) 
+      )
+   )
+   ( when 
+      ( or 
+         ( < @BeamLeftStatus[200] 350 ) 
+         ( < @BeamRightStatus[200] 350 ) 
+      )
+      ( modify-variable 
+         @Heat[0] 
+         ( + @Heat[0] 1 ) 
+      )
+   )
+)
++Name: Charge beam wepeng 5
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( >= 
+      ( get-ets-value 
+         "Weapon" 
+         "Polydeuces# 1" 
+      )
+      10 
+   )
+   ( when 
+      ( < @BeamLeftStatus[200] 350 ) 
+      ( modify-variable 
+         @BeamLeftStatus[200] 
+         ( + @BeamLeftStatus[200] 17 ) 
+      )
+      ( modify-variable 
+         @Heat[0] 
+         ( + @Heat[0] 1 ) 
+      )
+   )
+   ( when 
+      ( < @BeamRightStatus[200] 350 ) 
+      ( modify-variable 
+         @BeamRightStatus[200] 
+         ( + @BeamRightStatus[200] 17 ) 
+      )
+      ( modify-variable 
+         @Heat[0] 
+         ( + @Heat[0] 1 ) 
+      )
+   )
+)
++Name: Charge beam wepeng 6
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when-argument 
+   ( any-of 
+      "Pharaoh" 
+      "Nebty" 
+      "Merneptah" 
+      "Rimush" 
+      "Memphis" 
+      "Hemsut" 
+      "Menhit" 
+   )
+   ( and 
+      ( targeted "<argument>" ) 
+      ( key-pressed "Left Arrow" ) 
+      ( >= @BeamLeftStatus[200] 200 ) 
+      ( <= 
+         ( distance-ship-subsystem 
+            "<argument>" 
+            "Polydeuces# 1" 
+            "turret01" 
+         )
+         5500 
+      )
+      ( is-in-box 
+         "<argument>" 
+         -5000 
+         1 
+         -5000 
+         5000 
+         -5000 
+         5000 
+         "Polydeuces# 1" 
+      )
+      ( <= @WarpStatus[-1] 0 ) 
+   )
+   ( modify-variable 
+      @LeftBeamTick[0] 
+      ( / ( - @BeamLeftStatus[200] 150 ) 50 ) 
+   )
+   ( modify-variable 
+      @BeamLeftStatus[200] 
+      0 
+   )
+   ( modify-variable 
+      "@ShipTargeted[a whale]" 
+      "<argument>" 
+   )
+)
++Name: Fire beam left
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( > @LeftBeamTick[0] 0 ) 
+   ( fire-beam 
+      "Polydeuces# 1" 
+      "turret01" 
+      "@ShipTargeted[a whale]" 
+      "@ShipTargeted[a whale]" 
+      ( true ) 
+   )
+   ( modify-variable 
+      @LeftBeamTick[0] 
+      ( - @LeftBeamTick[0] 1 ) 
+   )
+   ( modify-variable 
+      @Heat[0] 
+      ( + @Heat[0] 2 ) 
+   )
+)
++Name: Left beams tick
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when-argument 
+   ( any-of 
+      "Pharaoh" 
+      "Nebty" 
+      "Merneptah" 
+      "Rimush" 
+      "Memphis" 
+      "Hemsut" 
+      "Menhit" 
+   )
+   ( and 
+      ( targeted "<argument>" ) 
+      ( key-pressed "Right Arrow" ) 
+      ( >= @BeamRightStatus[200] 200 ) 
+      ( <= 
+         ( distance-ship-subsystem 
+            "<argument>" 
+            "Polydeuces# 1" 
+            "turret02" 
+         )
+         5500 
+      )
+      ( is-in-box 
+         "<argument>" 
+         -1 
+         5000 
+         -5000 
+         5000 
+         -5000 
+         5000 
+         "Polydeuces# 1" 
+      )
+      ( <= @WarpStatus[-1] 0 ) 
+   )
+   ( modify-variable 
+      @RightBeamsTick[0] 
+      ( / 
+         ( - @BeamRightStatus[200] 150 ) 
+         50 
+      )
+   )
+   ( modify-variable 
+      @BeamRightStatus[200] 
+      0 
+   )
+   ( modify-variable 
+      "@ShipTargetedRight[a bote]" 
+      "<argument>" 
+   )
+)
++Name: Fire beam right
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( > @RightBeamsTick[0] 0 ) 
+   ( fire-beam 
+      "Polydeuces# 1" 
+      "turret02" 
+      "@ShipTargetedRight[a bote]" 
+      "@ShipTargetedRight[a bote]" 
+      ( true ) 
+   )
+   ( modify-variable 
+      @RightBeamsTick[0] 
+      ( - @RightBeamsTick[0] 1 ) 
+   )
+   ( modify-variable 
+      @Heat[0] 
+      ( + @Heat[0] 2 ) 
+   )
+)
++Name: Right beams tick
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( >= @Heat[0] 100 ) 
+      ( = @HeatHasCritical[0] 0 ) 
+   )
+   ( send-message 
+      "#Engineering" 
+      "High" 
+      "Engi: Heat critical" 
+   )
+   ( modify-variable 
+      @HeatHasCritical[0] 
+      1 
+   )
+)
++Name: Heat critical
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( = @OVerride[0] 0 ) 
+      ( >= @Heat[0] 120 ) 
+      ( <= @WarpStatus[-1] 0 ) 
+   )
+   ( modify-variable @SHUTDOWN[0] 1 ) 
+)
++Name: SHUTDOWN
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( = @SHUTDOWN[0] 1 ) 
+   ( player-use-ai ) 
+   ( add-goal 
+      "Polydeuces# 1" 
+      ( ai-play-dead 89 ) 
+   )
+   ( hud-disable-except-messages 1 ) 
+   ( modify-variable 
+      @Heat[0] 
+      ( - @Heat[0] 2 ) 
+   )
+   ( ignore-key 
+      -1 
+      "." 
+      "," 
+      "Q" 
+      "/" 
+      "Left Arrow" 
+      "Right Arrow" 
+      "4" 
+      "3" 
+      "2" 
+      "1" 
+   )
+   ( training-msg 
+      "Tutorial: Overheated" 
+      "Tutorial: Overheated" 
+      0 
+      1 
+   )
+)
++Name: Is shutdown
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( >= @Heat[0] 120 ) 
+      ( = @SHUTDOWN[0] 0 ) 
+   )
+   ( sabotage-subsystem 
+      "Polydeuces# 1" 
+      "Hull" 
+      ( rand-multiple 0 1 ) 
+   )
+   ( when 
+      ( >= @Heat[0] 135 ) 
+      ( sabotage-subsystem 
+         "Polydeuces# 1" 
+         "Hull" 
+         ( rand-multiple 1 3 ) 
+      )
+      ( when 
+         ( >= @Heat[0] 180 ) 
+         ( self-destruct "Polydeuces# 1" ) 
+      )
+   )
+)
++Name: Heat damage!!
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
++Event Log Flags: ( "first trigger" )
+
+$Formula: ( when 
+   ( and 
+      ( = @SHUTDOWN[0] 1 ) 
+      ( <= @Heat[0] 90 ) 
+   )
+   ( ignore-key 
+      0 
+      "/" 
+      "." 
+      "," 
+      "Left Arrow" 
+      "Right Arrow" 
+      "Q" 
+      "4" 
+      "3" 
+      "2" 
+      "1" 
+   )
+   ( modify-variable @SHUTDOWN[0] 0 ) 
+   ( hud-disable 0 ) 
+   ( player-not-use-ai ) 
+   ( clear-goals "Polydeuces# 1" ) 
+   ( hud-disable-except-messages 0 ) 
+)
++Name: Repower
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( = @SHUTDOWN[0] 0 ) 
+      ( = @OVerride[0] 0 ) 
+      ( key-pressed "Alt-X" ) 
+   )
+   ( modify-variable @OVerride[0] 1 ) 
+   ( key-reset-multiple "Alt-X" ) 
+   ( send-message 
+      "#Engineering" 
+      "High" 
+      "Engi: Override" 
+   )
+)
++Name: Override on
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( = @SHUTDOWN[0] 0 ) 
+      ( = @OVerride[0] 1 ) 
+      ( key-pressed "Alt-X" ) 
+   )
+   ( modify-variable @OVerride[0] 0 ) 
+   ( send-message 
+      "#Engineering" 
+      "High" 
+      "Engi: Override off" 
+   )
+   ( key-reset-multiple "Alt-X" ) 
+)
++Name: Override off
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( >= 
+      ( get-object-speed-z 
+         "Polydeuces# 1" 
+         ( true ) 
+      )
+      60 
+   )
+   ( modify-variable 
+      @Heat[0] 
+      ( + @Heat[0] 2 ) 
+   )
+   ( when 
+      ( >= 
+         ( get-object-speed-z 
+            "Polydeuces# 1" 
+            ( true ) 
+         )
+         80 
+      )
+      ( modify-variable 
+         @Heat[0] 
+         ( + @Heat[0] 1 ) 
+      )
+   )
+)
++Name: Heat when over thrust
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( >= @Capacitor[100] 20 ) 
+      ( key-pressed "2" ) 
+      ( < 
+         ( afterburner-energy-pct 
+            "Polydeuces# 1" 
+         )
+         100 
+      )
+      ( <= @WarpStatus[-1] 0 ) 
+   )
+   ( key-reset-multiple "2" ) 
+   ( modify-variable 
+      @WarpCancelSWA[0] 
+      ( min 
+         ( - 
+            100 
+            ( afterburner-energy-pct 
+               "Polydeuces# 1" 
+            )
+         )
+         @Capacitor[100] 
+      )
+   )
+   ( set-afterburner-energy 
+      ( + 
+         ( afterburner-energy-pct 
+            "Polydeuces# 1" 
+         )
+         @WarpCancelSWA[0] 
+      )
+      "Polydeuces# 1" 
+   )
+   ( modify-variable 
+      @Capacitor[100] 
+      ( - @Capacitor[100] @WarpCancelSWA[0] ) 
+   )
+)
++Name: Burner shunt
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( = @WarpStatus[-1] 0 ) 
+      ( key-pressed "Alt-J" ) 
+   )
+   ( set-time-compression 1 ) 
+   ( modify-variable 
+      @WarpCancelB[0] 
+      ( get-object-bank "Polydeuces# 1" ) 
+   )
+   ( modify-variable 
+      @WarpCancelH[0] 
+      ( get-object-heading "Polydeuces# 1" ) 
+   )
+   ( modify-variable 
+      @WarpCancelP[0] 
+      ( get-object-pitch "Polydeuces# 1" ) 
+   )
+   ( modify-variable 
+      @WarpCancelX[0] 
+      ( get-object-x "Polydeuces# 1" ) 
+   )
+   ( modify-variable 
+      @WarpCancelY[0] 
+      ( get-object-y "Polydeuces# 1" ) 
+   )
+   ( modify-variable 
+      @WarpCancelZ[0] 
+      ( get-object-z "Polydeuces# 1" ) 
+   )
+   ( modify-variable @WarpStatus[-1] 1 ) 
+   ( key-reset-multiple "Alt-J" ) 
+   ( turret-lock-all "Polydeuces# 1" ) 
+   ( lock-primary-weapon "Polydeuces# 1" ) 
+   ( lock-afterburner "Polydeuces# 1" ) 
+   ( lock-secondary-weapon 
+      "Polydeuces# 1" 
+   )
+   ( modify-variable 
+      @WarpCancelS[0] 
+      ( current-speed "Polydeuces# 1" ) 
+   )
+   ( modify-variable 
+      @WarpCancelSWA[0] 
+      ( get-secondary-ammo 
+         "Polydeuces# 1" 
+         0 
+      )
+   )
+   ( modify-variable 
+      @WarpCancelSW[0] 
+      ( get-secondary-ammo 
+         "Polydeuces# 1" 
+         1 
+      )
+   )
+   ( modify-variable 
+      @WarpCancelT[0] 
+      ( get-throttle-speed "Polydeuces# 1" ) 
+   )
+   ( modify-variable 
+      @WarpCancelSW[0] 
+      ( get-secondary-ammo 
+         "Polydeuces# 1" 
+         1 
+      )
+   )
+   ( modify-variable 
+      @WarpCancelETSE[0] 
+      ( get-ets-value 
+         "Engine" 
+         "Polydeuces# 1" 
+      )
+   )
+   ( modify-variable 
+      @WarpCancelETSW[0] 
+      ( get-ets-value 
+         "Weapon" 
+         "Polydeuces# 1" 
+      )
+   )
+   ( modify-variable 
+      @WarpCancelETSS[0] 
+      ( get-ets-value 
+         "Shield" 
+         "Polydeuces# 1" 
+      )
+   )
+   ( change-ship-class 
+      "UN Moscow#Warp" 
+      "Polydeuces# 1" 
+   )
+   ( set-ets-values 
+      12 
+      0 
+      0 
+      "Polydeuces# 1" 
+   )
+   ( disable-ets "Polydeuces# 1" ) 
+)
++Name: WARP BEGIN!
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( every-time 
+   ( and 
+      ( = 1 @WarpStatus[-1] ) 
+      ( key-pressed "Alt-J" ) 
+   )
+   ( when 
+      ( = 
+         ( get-throttle-speed "Polydeuces# 1" ) 
+         0 
+      )
+      ( modify-variable @WarpStatus[-1] 2 ) 
+      ( modify-variable 
+         @WarpFinalB[0] 
+         ( get-object-bank "Polydeuces# 1" ) 
+      )
+      ( modify-variable 
+         @WarpFinalH[0] 
+         ( get-object-heading "Polydeuces# 1" ) 
+      )
+      ( modify-variable 
+         @WarpFinalP[0] 
+         ( get-object-pitch "Polydeuces# 1" ) 
+      )
+      ( modify-variable 
+         @WarpFinalX[0] 
+         ( get-object-x "Polydeuces# 1" ) 
+      )
+      ( modify-variable 
+         @WarpFinalY[0] 
+         ( get-object-y "Polydeuces# 1" ) 
+      )
+      ( modify-variable 
+         @WarpFinalZ[0] 
+         ( get-object-z "Polydeuces# 1" ) 
+      )
+      ( set-object-orientation 
+         "Polydeuces# 1" 
+         @WarpCancelP[0] 
+         @WarpCancelB[0] 
+         @WarpCancelH[0] 
+      )
+      ( set-object-position 
+         "Polydeuces# 1" 
+         @WarpCancelX[0] 
+         @WarpCancelY[0] 
+         @WarpCancelZ[0] 
+      )
+      ( set-object-speed-z 
+         "Polydeuces# 1" 
+         @WarpCancelS[0] 
+         ( true ) 
+      )
+      ( set-object-speed-x 
+         "Polydeuces# 1" 
+         0 
+         ( true ) 
+      )
+      ( set-object-speed-x 
+         "Polydeuces# 1" 
+         0 
+         ( true ) 
+      )
+      ( change-ship-class 
+         "UN Moscow#PLAYEr" 
+         "Polydeuces# 1" 
+      )
+      ( reset-time-compression ) 
+   )
+   ( key-reset-multiple "Alt-J" ) 
+)
++Name: Warp begin
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( every-time 
+   ( and 
+      ( = @WarpStatus[-1] 1 ) 
+      ( key-pressed "Shift-J" ) 
+   )
+   ( when 
+      ( = 
+         ( get-throttle-speed "Polydeuces# 1" ) 
+         0 
+      )
+      ( set-object-orientation 
+         "Polydeuces# 1" 
+         @WarpCancelP[0] 
+         @WarpCancelB[0] 
+         @WarpCancelH[0] 
+      )
+      ( set-object-position 
+         "Polydeuces# 1" 
+         @WarpCancelX[0] 
+         @WarpCancelY[0] 
+         @WarpCancelZ[0] 
+      )
+      ( modify-variable @WarpStatus[-1] 0 ) 
+      ( set-object-speed-z 
+         "Polydeuces# 1" 
+         @WarpCancelS[0] 
+         ( true ) 
+      )
+      ( set-object-speed-x 
+         "Polydeuces# 1" 
+         0 
+         ( true ) 
+      )
+      ( set-object-speed-x 
+         "Polydeuces# 1" 
+         0 
+         ( true ) 
+      )
+      ( change-ship-class 
+         "UN Moscow#PLAYEr" 
+         "Polydeuces# 1" 
+      )
+      ( turret-free-all "Polydeuces# 1" ) 
+      ( unlock-afterburner "Polydeuces# 1" ) 
+      ( unlock-primary-weapon 
+         "Polydeuces# 1" 
+      )
+      ( unlock-secondary-weapon 
+         "Polydeuces# 1" 
+      )
+      ( reset-time-compression ) 
+      ( key-reset-multiple "Shift-J" ) 
+      ( set-player-throttle-speed 
+         "Polydeuces# 1" 
+         @WarpCancelT[0] 
+      )
+      ( set-secondary-ammo 
+         "Polydeuces# 1" 
+         0 
+         @WarpCancelSWA[0] 
+      )
+      ( set-secondary-ammo 
+         "Polydeuces# 1" 
+         1 
+         @WarpCancelSW[0] 
+      )
+      ( enable-ets "Polydeuces# 1" ) 
+      ( set-ets-values 
+         @WarpCancelETSE[0] 
+         @WarpCancelETSS[0] 
+         @WarpCancelETSW[0] 
+         "Polydeuces# 1" 
+      )
+   )
+   ( key-reset-multiple "Shift-J" ) 
+)
++Name: Warp cancel
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( >= @WarpStatus[-1] 2 ) 
+      ( <= @WarpStatus[-1] 14 ) 
+   )
+   ( modify-variable 
+      @WarpStatus[-1] 
+      ( + 1 @WarpStatus[-1] ) 
+   )
+)
++Name: Warp tick-up
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( = 3 @WarpStatus[-1] ) 
+   ( modify-variable @WarpStatus[-1] 3 ) 
+   ( player-use-ai ) 
+   ( add-goal 
+      "Polydeuces# 1" 
+      ( ai-play-dead 89 ) 
+   )
+   ( ship-lat-maneuver 
+      "Polydeuces# 1" 
+      5000 
+      0 
+      0 
+      100 
+      ( true ) 
+   )
+   ( hud-display-gauge 4000 "warpout" ) 
+   ( lock-secondary-weapon 
+      "Polydeuces# 1" 
+   )
+   ( lock-primary-weapon "Polydeuces# 1" ) 
+   ( play-sound-from-table 0 0 0 "50" ) 
+   ( hud-set-max-targeting-range 1 ) 
+)
++Name: Warp cinematic
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( = @WarpStatus[-1] 7 ) 
+   ( warp-effect 
+      ( get-object-x 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         0 
+         500 
+      )
+      ( get-object-y 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         0 
+         500 
+      )
+      ( get-object-z 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         0 
+         500 
+      )
+      ( get-object-x "Polydeuces# 1" ) 
+      ( get-object-y "Polydeuces# 1" ) 
+      ( get-object-z "Polydeuces# 1" ) 
+      200 
+      10 
+      "<none>" 
+      "<none>" 
+      0 
+      1 
+   )
+)
++Name: Warp in subspace
++Repeat Count: -1
++Trigger Count: 99999
++Interval: 1
+
+$Formula: ( when 
+   ( = @WarpStatus[-1] 9 ) 
+   ( fade-out 1000 1 ) 
+)
++Name: Warp fadeout, subspace
++Repeat Count: -1
++Trigger Count: 99999
++Interval: 1
+
+$Formula: ( when 
+   ( = @WarpStatus[-1] 10 ) 
+   ( mission-set-subspace 1 ) 
+   ( fade-in 1000 1 ) 
+   ( set-object-position 
+      "Polydeuces# 1" 
+      50000 
+      -50000 
+      50000 
+   )
+   ( set-object-facing 
+      "Polydeuces# 1" 
+      50000 
+      -50000 
+      51000 
+   )
+)
++Name: Warp subspace
++Repeat Count: -1
++Trigger Count: 99999
++Interval: 1
+
+$Formula: ( when 
+   ( = 14 @WarpStatus[-1] ) 
+   ( fade-out 1000 1 ) 
+)
++Name: Warp fadein
++Repeat Count: -1
++Trigger Count: 99999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( = 15 @WarpStatus[-1] ) 
+      ( true ) 
+   )
+   ( set-object-orientation 
+      "Polydeuces# 1" 
+      @WarpFinalP[0] 
+      @WarpFinalB[0] 
+      @WarpFinalH[0] 
+   )
+   ( set-object-position 
+      "Polydeuces# 1" 
+      @WarpFinalX[0] 
+      @WarpFinalY[0] 
+      @WarpFinalZ[0] 
+   )
+   ( warp-effect 
+      ( get-object-x 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         0 
+         -500 
+      )
+      ( get-object-y 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         0 
+         -500 
+      )
+      ( get-object-z 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         0 
+         -500 
+      )
+      ( get-object-x "Polydeuces# 1" ) 
+      ( get-object-y "Polydeuces# 1" ) 
+      ( get-object-z "Polydeuces# 1" ) 
+      200 
+      10 
+      "<none>" 
+      "<none>" 
+      0 
+      1 
+   )
+   ( modify-variable 
+      @WarpStatus[-1] 
+      -1
+   )
+   ( unlock-secondary-weapon 
+      "Polydeuces# 1" 
+   )
+   ( unlock-afterburner "Polydeuces# 1" ) 
+   ( unlock-primary-weapon 
+      "Polydeuces# 1" 
+   )
+   ( set-player-throttle-speed 
+      "Polydeuces# 1" 
+      @WarpCancelT[0] 
+   )
+   ( set-secondary-ammo 
+      "Polydeuces# 1" 
+      0 
+      @WarpCancelSWA[0] 
+   )
+   ( set-secondary-ammo 
+      "Polydeuces# 1" 
+      1 
+      @WarpCancelSW[0] 
+   )
+   ( enable-ets "Polydeuces# 1" ) 
+   ( set-ets-values 
+      @WarpCancelETSE[0] 
+      @WarpCancelETSS[0] 
+      @WarpCancelETSW[0] 
+      "Polydeuces# 1" 
+   )
+   ( player-not-use-ai ) 
+   ( mission-set-subspace 0 ) 
+   ( fade-in 1000 1 ) 
+   ( hud-set-max-targeting-range 0 ) 
+)
++Name: Warp done!
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( >= @Capacitor[100] 15 ) 
+      ( = @HardenLevel[0] 0 ) 
+      ( key-pressed "3" ) 
+      ( <= @WarpStatus[-1] 0 ) 
+   )
+   ( modify-variable @HardenLevel[0] 1 ) 
+   ( key-reset-multiple "3" ) 
+   ( set-armor-type 
+      "Polydeuces# 1" 
+      ( true ) 
+      "Hardened" 
+      "Hull" 
+   )
+   ( hud-set-message 
+      "TLSTaccomD" 
+      "Overview: Hardeners on" 
+   )
+)
++Name: Harden armor
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( = 1 @HardenLevel[0] ) 
+      ( >= @Capacitor[100] 10 ) 
+   )
+   ( modify-variable 
+      @Capacitor[100] 
+      ( - @Capacitor[100] 4 ) 
+   )
+)
++Name: Harden on
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( <= @Capacitor[100] 10 ) 
+      ( = 1 @HardenLevel[0] ) 
+   )
+   ( modify-variable @HardenLevel[0] 0 ) 
+   ( set-armor-type 
+      "Polydeuces# 1" 
+      ( false ) 
+      "Heavy Plate" 
+      "Hull" 
+   )
+   ( hud-set-message 
+      "TLSTaccomD" 
+      "Overview: Hardeners off" 
+   )
+)
++Name: Harden out of cap
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( key-pressed "3" ) 
+      ( = @HardenLevel[0] 1 ) 
+   )
+   ( modify-variable @HardenLevel[0] 0 ) 
+   ( key-reset-multiple "3" ) 
+   ( set-armor-type 
+      "Polydeuces# 1" 
+      ( false ) 
+      "Heavy Plate" 
+      "Hull" 
+   )
+   ( hud-set-message 
+      "TLSTaccomD" 
+      "Overview: Hardeners off" 
+   )
+)
++Name: Harden off
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( >= @Capacitor[100] 0 ) 
+      ( key-pressed "4" ) 
+      ( <= @WarpStatus[-1] 0 ) 
+   )
+   ( modify-variable @Repairing[0] 1 ) 
+   ( key-reset-multiple "4" ) 
+   ( hud-set-message 
+      "TLSTaccomE" 
+      "Overview: Repping on" 
+   )
+)
++Name: Repair on
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( >= @Capacitor[100] 10 ) 
+      ( = @Repairing[0] 1 ) 
+   )
+   ( repair-subsystem 
+      "Polydeuces# 1" 
+      "Hull" 
+      1 
+   )
+   ( modify-variable 
+      @Capacitor[100] 
+      ( - @Capacitor[100] 19 ) 
+   )
+   ( modify-variable 
+      @Heat[0] 
+      ( + 1 @Heat[0] ) 
+   )
+)
++Name: Repairing
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 2
+
+$Formula: ( when 
+   ( and 
+      ( <= @Capacitor[100] 20 ) 
+      ( = 1 @Repairing[0] ) 
+   )
+   ( modify-variable @Repairing[0] 0 ) 
+   ( hud-set-message 
+      "TLSTaccomE" 
+      "Overview: Repping off" 
+   )
+)
++Name: Repair out of cap
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( key-pressed "4" ) 
+      ( = @Repairing[0] 1 ) 
+   )
+   ( key-reset-multiple "4" ) 
+   ( modify-variable @Repairing[0] 0 ) 
+   ( hud-set-message 
+      "TLSTaccomE" 
+      "Overview: Repping off" 
+   )
+)
++Name: Repair off
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( every-time 
+   ( primary-fired-since 
+      "Polydeuces# 1" 
+      1 
+      1 
+   )
+   ( modify-variable 
+      @AmmoSwitchCount[0] 
+      ( + ( mission-time-msecs ) 1500 ) 
+   )
+   ( lock-primary-weapon "Polydeuces# 1" ) 
+)
++Name: lock cfa
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( every-time 
+   ( primary-fired-since 
+      "Polydeuces# 1" 
+      0 
+      1 
+   )
+   ( modify-variable 
+      @AmmoSwitchCount[0] 
+      ( + ( mission-time-msecs ) 3000 ) 
+   )
+   ( lock-primary-weapon "Polydeuces# 1" ) 
+)
++Name: lock rails
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( every-time 
+   ( >= 
+      ( mission-time-msecs ) 
+      @AmmoSwitchCount[0] 
+   )
+   ( unlock-primary-weapon 
+      "Polydeuces# 1" 
+   )
+)
++Name: unlock prim
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( primary-fired-since 
+      "Polydeuces# 1" 
+      1 
+      1000 
+   )
+   ( modify-variable 
+      @Heat[0] 
+      ( + @Heat[0] 1 ) 
+   )
+)
++Name: Primary heat
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( secondary-fired-since 
+      "Polydeuces# 1" 
+      1 
+      1000 
+   )
+   ( modify-variable 
+      @Heat[0] 
+      ( + @Heat[0] 2 ) 
+   )
+)
++Name: Trantor heat
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( secondary-fired-since 
+      "Polydeuces# 1" 
+      0 
+      1000 
+   )
+   ( modify-variable 
+      @Heat[0] 
+      ( + @Heat[0] 1 ) 
+   )
+)
++Name: Secondary heat
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 
+      3 
+      "Polydeuces# 1" 
+   )
+   ( end-mission ) 
+)
++Name: You died!
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: --mission initializations--
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( = 0 @TimeLeftEvac[180] ) 
+   ( do-nothing ) 
+)
++Name: Leonov dir
++Repeat Count: 1
++Interval: 1
++Objective:  XSTR("Protect Leonov", -1)
++Objective key:  XSTR("Oversee evacuation", -1)
+
+$Formula: ( when 
+   ( true ) 
+   ( set-armor-type 
+      "Leonov" 
+      ( true ) 
+      "Heavy Plate" 
+      "Hull" 
+   )
+)
++Name: Initialize
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( set-object-position 
+      "Player down:1" 
+      ( get-object-x "Polydeuces# 1" ) 
+      ( - 
+         ( get-object-y "Polydeuces# 1" ) 
+         1500 
+      )
+      ( get-object-z "Polydeuces# 1" ) 
+   )
+)
++Name: Player down set
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( or 
+      ( and 
+         ( is-destroyed-delay 0 "Leonov" ) 
+         ( not 
+            ( is-event-true-delay "Evac done" 0 ) 
+         )
+      )
+      ( and 
+         ( is-destroyed-delay 0 "Xerxes" ) 
+         ( is-destroyed-delay 0 "Savoy" ) 
+      )
+      ( is-destroyed-delay 0 "Sydney" ) 
+   )
+   ( show-subtitle-text 
+      "Faield" 
+      50 
+      -20 
+      ( true ) 
+      ( false ) 
+      6000 
+   )
+   ( fade-out 5000 0 ) 
+)
++Name: Failsafe end mission
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( end-mission ) ) 
++Name: You fail
++Repeat Count: 1
++Interval: 1
++Chained: 5
+
+$Formula: ( when 
+   ( true ) 
+   ( set-object-position 
+      "Warpin1" 
+      ( rand 0 3000 ) 
+      ( rand 5250 6750 ) 
+      ( rand -1000 3000 ) 
+   )
+   ( set-object-facing-object 
+      "Warpin1" 
+      "Leonov" 
+   )
+   ( set-object-position 
+      "Warpin2" 
+      ( get-object-x 
+         "Warpin1" 
+         "<none>" 
+         0 
+         0 
+         50 
+      )
+      ( get-object-y 
+         "Warpin1" 
+         "<none>" 
+         0 
+         0 
+         50 
+      )
+      ( get-object-z 
+         "Warpin1" 
+         "<none>" 
+         0 
+         0 
+         50 
+      )
+   )
+)
++Name: semirandom spawn setup
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( set-object-facing-object 
+      "Warpin2" 
+      "Warpin1" 
+   )
+)
++Name: semirandom spawn setup2
++Repeat Count: 1
++Interval: 1
++Chained: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: --newet stage--
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( > @ship-manev-timer[0] 0 ) 
+   ( modify-variable 
+      @ship-manev-timer[0] 
+      ( - @ship-manev-timer[0] 1 ) 
+   )
+)
++Name: ship-manev timer tickdown
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( > ( mission-time ) 3 ) 
+   ( send-message 
+      "Leonov" 
+      "High" 
+      "Leonov: Memphis" 
+   )
+)
++Name: It begins, destroy Memphis
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Memphis" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Memphis
++Repeat Count: 1
++Interval: 1
++Chained: 1
++Objective:  XSTR("Destroy Memphis", -1)
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "#Engineering" 
+      "High" 
+      "Engi: Repair" 
+   )
+   ( training-msg 
+      "Tutorial: Repair" 
+      "Tutorial: Repair" 
+      3 
+      8 
+   )
+)
++Name: We've taken damage
++Repeat Count: 1
++Interval: 1
++Chained: 5
+
+$Formula: ( when 
+   ( and 
+      ( is-in-box 
+         "Polydeuces# 1" 
+         ( get-object-x 
+            "Memphis" 
+            "<none>" 
+            -3000 
+            0 
+            0 
+         )
+         ( get-object-x 
+            "Memphis" 
+            "<none>" 
+            3000 
+            0 
+            0 
+         )
+         ( get-object-y 
+            "Memphis" 
+            "<none>" 
+            0 
+            -4000 
+            0 
+         )
+         ( get-object-y 
+            "Memphis" 
+            "<none>" 
+            0 
+            100 
+            0 
+         )
+         ( get-object-z 
+            "Memphis" 
+            "<none>" 
+            0 
+            0 
+            0 
+         )
+         ( get-object-z 
+            "Memphis" 
+            "<none>" 
+            0 
+            0 
+            3000 
+         )
+      )
+      ( is-event-true-delay 
+         "Memphis breaking" 
+         0 
+      )
+   )
+   ( ship-rot-maneuver 
+      "Memphis" 
+      ( rand-multiple 4500 6500 ) 
+      0 
+      100 
+      0 
+      ( true ) 
+   )
+   ( clear-goals "Memphis" ) 
+   ( modify-variable 
+      @ship-manev-timer[0] 
+      6 
+   )
+   ( ship-lat-maneuver 
+      "Memphis" 
+      4000 
+      0 
+      0 
+      50 
+      ( true ) 
+   )
+)
++Name: Memphis fightan pitch
++Repeat Count: -1
++Trigger Count: 9999999
++Interval: 15
+
+$Formula: ( when 
+   ( and 
+      ( is-in-box 
+         "Polydeuces# 1" 
+         ( get-object-x 
+            "Memphis" 
+            "<none>" 
+            -3000 
+            0 
+            0 
+         )
+         ( get-object-x 
+            "Memphis" 
+            "<none>" 
+            3000 
+            0 
+            0 
+         )
+         ( get-object-y 
+            "Memphis" 
+            "<none>" 
+            0 
+            -4000 
+            0 
+         )
+         ( get-object-y 
+            "Memphis" 
+            "<none>" 
+            0 
+            100 
+            0 
+         )
+         ( get-object-z 
+            "Memphis" 
+            "<none>" 
+            0 
+            0 
+            -3000 
+         )
+         ( get-object-z 
+            "Memphis" 
+            "<none>" 
+            0 
+            0 
+            0 
+         )
+      )
+      ( is-event-true-delay 
+         "Memphis breaking" 
+         0 
+      )
+   )
+   ( ship-rot-maneuver 
+      "Memphis" 
+      10000 
+      0 
+      0 
+      100 
+      ( true ) 
+   )
+   ( clear-goals "Memphis" ) 
+   ( modify-variable 
+      @ship-manev-timer[0] 
+      10 
+   )
+   ( ship-lat-maneuver 
+      "Memphis" 
+      10000 
+      0 
+      0 
+      100 
+      ( true ) 
+   )
+)
++Name: Memphis fightand bank
++Repeat Count: -1
++Trigger Count: 9999999
++Interval: 15
+
+$Formula: ( when 
+   ( and 
+      ( or 
+         ( <= 
+            ( distance "Polydeuces# 1" "Memphis" ) 
+            5000 
+         )
+         ( <= ( hits-left "Memphis" ) 95 ) 
+      )
+      ( true ) 
+   )
+   ( send-message 
+      "#Tactical" 
+      "High" 
+      "Tac: Fighters" 
+   )
+   ( add-goal 
+      "Pisces" 
+      ( ai-chase "Polydeuces# 1" 89 ) 
+   )
+   ( training-msg 
+      "Tutorial: Primaries" 
+      "Tutorial: Primaries" 
+      3 
+      8 
+   )
+)
++Name: Fighters breaking
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( or 
+      ( percent-ships-destroyed 50 "Pisces" ) 
+      ( <= ( hits-left "Memphis" ) 85 ) 
+      ( <= 
+         ( distance "Polydeuces# 1" "Memphis" ) 
+         4000 
+      )
+   )
+   ( send-message 
+      "#Tactical" 
+      "High" 
+      "Tac: Memphis targeting" 
+   )
+   ( clear-goals "Memphis" ) 
+   ( add-goal 
+      "Memphis" 
+      ( ai-waypoints "Player down" 89 ) 
+   )
+   ( training-msg 
+      "Tutorial: Beams" 
+      "Tutorial: Beams" 
+      3 
+      8 
+   )
+)
++Name: Memphis breaking
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( and 
+      ( = @ship-manev-timer[0] 0 ) 
+      ( is-event-true-delay 
+         "Memphis breaking" 
+         0 
+      )
+   )
+   ( add-goal 
+      "Memphis" 
+      ( ai-waypoints "Player down" 89 ) 
+   )
+   ( add-goal 
+      "Pharaoh" 
+      ( ai-waypoints-once "Pharah path" 89 ) 
+   )
+)
++Name: memphis pharaoh fioght
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: --gunship stage--
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( has-arrived-delay 
+      0 
+      "Gunship warpin point" 
+   )
+   ( set-object-position 
+      "Gunship warpin point" 
+      ( get-object-x 
+         "Gunship warpin point" 
+         "<none>" 
+         0 
+         3000 
+         0 
+      )
+      ( get-object-y 
+         "Gunship warpin point" 
+         "<none>" 
+         0 
+         3000 
+         0 
+      )
+      ( get-object-z 
+         "Gunship warpin point" 
+         "<none>" 
+         0 
+         3000 
+         0 
+      )
+   )
+)
++Name: Gunship warpin setup
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( has-arrived-delay 0 "Vulpex" ) 
+   ( send-message-list 
+      "Savoy" 
+      "High" 
+      "Savoy: Seteps" 
+      0 
+      "#Tactical" 
+      "High" 
+      "Tac: 2500m range" 
+      4500 
+   )
+)
++Name: Gunships!
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( or 
+      ( <= 
+         ( hits-left "Memphis" ) 
+         ( rand 60 75 ) 
+      )
+      ( >= ( mission-time ) ( rand 45 55 ) ) 
+   )
+   ( send-message 
+      "Savoy" 
+      "High" 
+      "Savoy: Evac done" 
+   )
+   ( add-goal "Savoy" ( ai-undock 89 ) ) 
+   ( add-goal 
+      "Savoy" 
+      ( ai-waypoints-once "Savoy escape" 80 ) 
+   )
+   ( unprotect-ship "Savoy" ) 
+   ( add-remove-escort "Savoy" 90 ) 
+)
++Name: Savoy go
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( >= 
+      ( distance "Savoy" "Leonov" ) 
+      5000 
+   )
+   ( send-message 
+      "Savoy" 
+      "High" 
+      "Savoy: Gone" 
+   )
+   ( remove-goal 
+      "Bravo" 
+      ( ai-guard "Savoy" 89 ) 
+   )
+   ( add-goal 
+      "Bravo" 
+      ( ai-guard "Polydeuces# 1" 89 ) 
+   )
+)
++Name: Savoy gone
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-disabled-delay 3 "Savoy" ) 
+   ( send-message 
+      "Savoy" 
+      "High" 
+      "Savoy: Disabled!" 
+   )
+)
++Name: Savoy disabled
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( repair-subsystem 
+      "Savoy" 
+      "Engines" 
+      75 
+   )
+   ( send-message 
+      "Savoy" 
+      "High" 
+      "Savoy: repped" 
+   )
+)
++Name: savoy fixed
++Repeat Count: 1
++Interval: 1
++Chained: 22
+
+$Formula: ( when 
+   ( is-destroyed-delay 2 "Savoy" ) 
+   ( send-message 
+      "Leonov" 
+      "High" 
+      "Leonov: Savoy ded" 
+   )
+)
++Name: Savoy destroyed!
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( is-destroyed-delay 22 "Memphis" ) 
+      ( or 
+         ( is-destroyed-delay 22 "Rimush" ) 
+         ( is-destroyed-delay 22 "Merneptah" ) 
+      )
+   )
+   ( add-goal 
+      "Xerxes" 
+      ( ai-undock 89 "Leonov" ) 
+   )
+   ( send-message 
+      "Xerxes" 
+      "High" 
+      "Xerxes: Going" 
+   )
+   ( add-remove-escort "Xerxes" 65 ) 
+)
++Name: Xerxes
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( has-undocked-delay 
+      "Xerxes" 
+      "Leonov" 
+      1 
+      3 
+   )
+   ( add-goal 
+      "Xerxes" 
+      ( ai-waypoints-once "Xerxes GO" 89 ) 
+   )
+)
++Name: Xerxes 2
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Xerxes" ) 
+   ( send-message 
+      "Xerxes" 
+      "High" 
+      "Leonov: Xerxes dead" 
+   )
+)
++Name: Xerxes destroyed!
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: --khopesh stage--
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( is-destroyed-delay 20 "Memphis" ) 
+      ( or 
+         ( is-destroyed-delay 20 "Menhit" ) 
+         ( destroyed-or-departed-delay 
+            10 
+            "Savoy" 
+         )
+         ( is-destroyed-delay 20 "Hemsut" ) 
+      )
+   )
+   ( do-nothing ) 
+)
++Name: Khopesh cue
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( >= 
+      ( distance 
+         "Merneptah" 
+         "Polydeuces# 1" 
+      )
+      3500 
+   )
+   ( cap-waypoint-speed "Merneptah" -1 ) 
+)
++Name: Merenptah 4
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( >= 
+         ( distance 
+            "Merneptah" 
+            "Polydeuces# 1" 
+         )
+         2500 
+      )
+      ( < 
+         ( distance 
+            "Merneptah" 
+            "Polydeuces# 1" 
+         )
+         3500 
+      )
+   )
+   ( cap-waypoint-speed "Merneptah" 40 ) 
+)
++Name: Merenptah 3
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( >= 
+         ( distance 
+            "Merneptah" 
+            "Polydeuces# 1" 
+         )
+         1500 
+      )
+      ( < 
+         ( distance 
+            "Merneptah" 
+            "Polydeuces# 1" 
+         )
+         2500 
+      )
+   )
+   ( cap-waypoint-speed "Merneptah" 30 ) 
+)
++Name: Merenptah 2
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( < 
+      ( distance 
+         "Merneptah" 
+         "Polydeuces# 1" 
+      )
+      1500 
+   )
+   ( cap-waypoint-speed "Merneptah" 5 ) 
+)
++Name: Merenptah 1
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( is-subsystem-destroyed-delay 
+      "Merneptah" 
+      "turret01" 
+      1 
+   )
+   ( clear-goals "Merneptah" ) 
+   ( add-goal 
+      "Merneptah" 
+      ( ai-chase "Polydeuces# 1" 89 ) 
+   )
+)
++Name: merne break
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( has-arrived-delay 2 "Rimush" ) 
+   ( send-message-list 
+      "Leonov" 
+      "High" 
+      "Leonov: Newets" 
+      0 
+      "#Tactical" 
+      "High" 
+      "Tac: Not good odds" 
+      5000 
+   )
+   ( training-msg 
+      "Tutorial: Secondary sys" 
+      "Tutorial: Secondary sys" 
+      8 
+      5 
+   )
+)
++Name: Newets inbound
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 
+      0 
+      "Merneptah" 
+      "Rimush" 
+   )
+   ( do-nothing ) 
+)
++Name: Destroy Newets
++Repeat Count: 1
++Interval: 1
++Chained: 1
++Objective:  XSTR("Destroy Rimush and Merneptah", -1)
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: --ramses stage--
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( has-arrived-delay 7 "Nebty" ) 
+   ( send-message-list 
+      "Leonov" 
+      "High" 
+      "Leonov: Nebty" 
+      0 
+      "#Tactical" 
+      "High" 
+      "Tac: Use Trantors" 
+      6000 
+   )
+   ( training-msg 
+      "Tutorial: Trantors" 
+      "Tutorial: Trantors" 
+      9 
+      5 
+   )
+)
++Name: Nebty
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Nebty" ) 
+   ( do-nothing ) 
+)
++Name: Nebty dir
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Destroy Nebty", -1)
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Aquarius" ) 
+   ( do-nothing ) 
+)
++Name: Bombers dir
++Repeat Count: 1
++Interval: 1
++Objective:  XSTR("Destroy Aquarius", -1)
++Objective key:  XSTR("F11", -1)
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: --pharaoh stage--
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( has-arrived-delay 3 "Pharaoh" ) 
+   ( change-soundtrack "<No Music>" ) 
+   ( send-message 
+      "Leonov" 
+      "High" 
+      "Leonov: Pharaoh" 
+   )
+   ( play-sound-from-file 
+      "StruggleForLife" 
+      1 
+   )
+   ( set-armor-type 
+      "Leonov" 
+      ( true ) 
+      "Hardened" 
+      "Hull" 
+   )
+)
++Name: Pharaoh!
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message 
+      "Leonov" 
+      "High" 
+      "Leonov: Pharoh2" 
+   )
+)
++Name: Pharoh msg
++Repeat Count: 1
++Interval: 1
++Chained: 6
+
+$Formula: ( when 
+   ( and 
+      ( directive-value 
+         @TimeLeftEvac[180] 
+         ( true ) 
+      )
+      ( is-destroyed-delay 
+         0 
+         "Thing for mission complete" 
+      )
+   )
+   ( do-nothing ) 
+)
++Name: Buy time dir
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Complete evacuation", -1)
++Objective key:  XSTR("Distract Pharaoh", -1)
+
+$Formula: ( when 
+   ( is-event-true-delay "Pharoh msg" 9 ) 
+   ( send-message 
+      "#Engineering" 
+      "High" 
+      "Engi: Warp ready" 
+   )
+   ( modify-variable @WarpStatus[-1] 0 ) 
+)
++Name: Warp ready
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( not 
+      ( and 
+         ( >= @WarpStatus[-1] 3 ) 
+         ( <= @WarpStatus[-1] 800 ) 
+      )
+   )
+   ( training-msg 
+      "Tutorial: Warping" 
+      "Tutorial: Warping" 
+      0 
+      1 
+   )
+)
++Name: warp tutorial
++Repeat Count: -1
++Trigger Count: 888888
++Interval: 1
++Chained: 1
+
+$Formula: ( when 
+   ( and 
+      ( > @TimeLeftEvac[180] 0 ) 
+      ( not 
+         ( is-destroyed-delay 0 "Leonov" ) 
+      )
+      ( is-event-true-delay "Pharoh msg" 0 ) 
+   )
+   ( modify-variable 
+      @TimeLeftEvac[180] 
+      ( - @TimeLeftEvac[180] 1 ) 
+   )
+)
++Name: Timer tick
++Repeat Count: -1
++Trigger Count: 240
++Interval: 1
+
+$Formula: ( when 
+   ( has-arrived-delay 2 "Foxtrot" ) 
+   ( send-message 
+      "Foxtrot 1" 
+      "High" 
+      "Foxtrot: Here" 
+   )
+)
++Name: Foxtrot here
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( != 1 @WarpStatus[-1] ) 
+      ( or 
+         ( <= ( hits-left "Pharaoh" ) 95 ) 
+         ( <= 
+            ( distance "Pharaoh" "Polydeuces# 1" ) 
+            3000 
+         )
+      )
+      ( has-arrived-delay 15 "Pharaoh" ) 
+   )
+   ( send-message 
+      "Leonov" 
+      "High" 
+      "Leonov: Pharaoh3" 
+   )
+)
++Name: Pharaoh annoyed
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( is-in-box 
+         "Polydeuces# 1" 
+         ( get-object-x 
+            "Pharaoh" 
+            "<none>" 
+            -5000 
+            0 
+            0 
+         )
+         ( get-object-x 
+            "Pharaoh" 
+            "<none>" 
+            5000 
+            0 
+            0 
+         )
+         ( get-object-y 
+            "Pharaoh" 
+            "<none>" 
+            0 
+            -5000 
+            0 
+         )
+         ( get-object-y 
+            "Pharaoh" 
+            "<none>" 
+            0 
+            500 
+            0 
+         )
+         ( get-object-z 
+            "Pharaoh" 
+            "<none>" 
+            0 
+            0 
+            -5000 
+         )
+         ( get-object-z 
+            "Pharaoh" 
+            "<none>" 
+            0 
+            0 
+            5000 
+         )
+      )
+      ( or 
+         ( <= ( hits-left "Pharaoh" ) 85 ) 
+         ( percent-ships-destroyed 50 "Cygnus" ) 
+         ( percent-ships-destroyed 50 "Cancer" ) 
+      )
+      ( != @WarpStatus[-1] 1 ) 
+   )
+   ( if-then-else 
+      ( and 
+         ( is-in-box 
+            "Polydeuces# 1" 
+            -5000 
+            0 
+            -5000 
+            500 
+            -5000 
+            5000 
+            "Pharaoh" 
+         )
+         ( skill-level-at-least "Insane" ) 
+      )
+      ( ship-rot-maneuver 
+         "Pharaoh" 
+         22000 
+         0 
+         0 
+         100 
+         ( false ) 
+      )
+      ( ship-rot-maneuver 
+         "Pharaoh" 
+         22000 
+         0 
+         0 
+         -100 
+         ( false ) 
+      )
+   )
+   ( modify-variable 
+      @ship-manev-timer[0] 
+      20 
+   )
+   ( clear-goals "Pharaoh" ) 
+)
++Name: Pharaoh angry
++Repeat Count: -1
++Trigger Count: 9999999
++Interval: 22
+
+$Formula: ( when 
+   ( true ) 
+   ( send-message-list 
+      "Leonov" 
+      "High" 
+      "Leonov: Pharaoh Angry" 
+      0 
+      "#Tactical" 
+      "High" 
+      "Tac: DIVE DIVE DIVE" 
+      3000 
+   )
+   ( training-msg 
+      "Tutorial: Afterburner shunt" 
+      "Tutorial: Afterburner shunt" 
+      6 
+      5 
+   )
+)
++Name: Angry msg
++Repeat Count: 1
++Interval: 1
++Chained: 0
+
+$Formula: ( when 
+   ( = 0 @TimeLeftEvac[180] ) 
+   ( clear-goals "Sydney" ) 
+   ( add-goal 
+      "Sydney" 
+      ( ai-waypoints-once "Syddy" 89 ) 
+   )
+   ( send-message 
+      "Sydney" 
+      "High" 
+      "Sydney: Evac done" 
+   )
+   ( deactivate-glow-maps "Leonov" ) 
+   ( deactivate-glow-points "Leonov" ) 
+   ( destroy-instantly 
+      "Thing for mission complete" 
+   )
+   ( modify-variable @WarpStatus[-1] -1 ) 
+   ( set-subspace-drive 
+      ( true ) 
+      "Polydeuces# 1" 
+   )
+)
++Name: Evac done
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( has-departed-delay 
+      0 
+      "Polydeuces# 1" 
+   )
+   ( do-nothing ) 
+)
++Name: RTB Dir
++Repeat Count: 1
++Interval: 1
++Chained: 3
++Objective:  XSTR("Return to base", -1)
++Objective key:  XSTR("Alt-J", -1)
+
+#Goals		;! 2 total
+
+$Type: Primary
++Name: Oversee evacuation
+$MessageNew:  XSTR("Oversee evacuation", -1)
+$end_multi_text
+$Formula: ( has-departed-delay 4 "Sydney" ) 
+
+$Type: Secondary
++Name: Protect all evacuating craft
+$MessageNew:  XSTR("Protect all craft that are evacuating Leonov station.", -1)
+$end_multi_text
+$Formula: ( has-departed-delay 
+   0 
+   "Xerxes" 
+   "Savoy" 
+   "Sydney" 
+)
+
+#Waypoints		;! 9 lists total
+
+$Name: Polydeuces Loc
+$List: (		;! 1 points in list
+	( -4325.820801, -0.006098, 10235.333008 )
+)
+
+$Name: Memphis path
+$List: (		;! 2 points in list
+	( -174.812561, 4387.082520, -861.535767 )
+	( -170.827255, 2340.686035, -884.969238 )
+)
+
+$Name: Rimush path
+$List: (		;! 2 points in list
+	( 2502.023438, 4992.808594, -1450.788452 )
+	( 1998.158936, 2620.431641, -637.712891 )
+)
+
+$Name: Savoy escape
+$List: (		;! 4 points in list
+	( 808.578735, 161.949295, -502.967285 )
+	( 1049.854492, 794.302551, -2483.665527 )
+	( 487.827026, 1491.032471, -4961.165039 )
+	( -2717.497070, 5186.504395, -15131.582031 )
+)
+
+$Name: Syddy
+$List: (		;! 4 points in list
+	( 1641.566772, -0.000488, 2267.211426 )
+	( 1646.766602, 236.835083, 2618.964844 )
+	( 1742.744507, 876.706055, 2983.333496 )
+	( 1818.694580, 3861.631348, 3924.277344 )
+)
+
+$Name: Xerxes GO
+$List: (		;! 2 points in list
+	( 733.068237, 759.250977, 707.061584 )
+	( -2255.927246, 1050.792603, -278.178101 )
+)
+
+$Name: Carrier
+$List: (		;! 1 points in list
+	( 1472.394043, 2023.665405, 1058.234131 )
+)
+
+$Name: Pharah path
+$List: (		;! 5 points in list
+	( 3233.852539, -3652.902832, -690.061768 )
+	( 1133.772827, -3315.407471, 1006.102905 )
+	( 561.874512, -2654.477295, 1549.299072 )
+	( 36.883301, -921.427734, 2205.742676 )
+	( 46.129395, 717.348877, 2189.438721 )
+)
+
+$Name: Player down
+$List: (		;! 1 points in list
+	( -81.736885, 0.000000, 11.003628 )
+)
+
+#Messages		;! 62 total
+
+$Command Sender: Leonov
+
+$Name: Tutorial: Overheated
+$Team: -1
+$MessageNew:  XSTR("Your ship has shut down from overheating
+Heat generates primarily when energy bars are maximized, or afterburners are engaged
+To override the automatic shutdown, use $Alt-X$
+Be aware that overheating deals significant damage after overriding", -1)
+$end_multi_text
+
+$Name: Overview: Very red heat
+$Team: -1
+$MessageNew:  XSTR("Heat level: !!!$Heat GJ!!!", -1)
+$end_multi_text
+
+$Name: Overview: Red heat
+$Team: -1
+$MessageNew:  XSTR("Heat level: !$Heat GJ!", -1)
+$end_multi_text
+
+$Name: Overview: L can fire
+$Team: -1
+$MessageNew:  XSTR("Left beam: Ready", -1)
+$end_multi_text
+
+$Name: Overview: R can fire
+$Team: -1
+$MessageNew:  XSTR("Right beam: Ready", -1)
+$end_multi_text
+
+$Name: Overview: R Recharging
+$Team: -1
+$MessageNew:  XSTR("Right beam: Recharging", -1)
+$end_multi_text
+
+$Name: Overview: R range
+$Team: -1
+$MessageNew:  XSTR("Right beam: Not in range", -1)
+$end_multi_text
+
+$Name: Overview: Left recharging
+$Team: -1
+$MessageNew:  XSTR("Left beam: Recharging", -1)
+$end_multi_text
+
+$Name: Overview: L range
+$Team: -1
+$MessageNew:  XSTR("Left beam: Not in range", -1)
+$end_multi_text
+
+$Name: Overview: L firing
+$Team: -1
+$MessageNew:  XSTR("Left beam: Firing", -1)
+$end_multi_text
+
+$Name: Overview: R Firing
+$Team: -1
+$MessageNew:  XSTR("Right beam: Firing", -1)
+$end_multi_text
+
+$Name: Overview: L Not in view
+$Team: -1
+$MessageNew:  XSTR("Left beam: Not in FoV", -1)
+$end_multi_text
+
+$Name: Overview: R Not in FOV
+$Team: -1
+$MessageNew:  XSTR("Right beam: Not in FoV", -1)
+$end_multi_text
+
+$Name: Overview: No target!
+$Team: -1
+$MessageNew:  XSTR("No target for beams", -1)
+$end_multi_text
+
+$Name: Overview: Repping on
+$Team: -1
+$MessageNew:  XSTR("Repair system on (4)", -1)
+$end_multi_text
+
+$Name: Overview: Repping off
+$Team: -1
+$MessageNew:  XSTR("Repair system off (4)", -1)
+$end_multi_text
+
+$Name: Overview: Hardeners on
+$Team: -1
+$MessageNew:  XSTR("Armor hardener on (3)", -1)
+$end_multi_text
+
+$Name: Overview: Hardeners off
+$Team: -1
+$MessageNew:  XSTR("Armor hardener off (3)", -1)
+$end_multi_text
+
+$Name: Overview: Left beam
+$Team: -1
+$MessageNew:  XSTR("Left beam GW: $BeamLeftStatus", -1)
+$end_multi_text
+
+$Name: Overview: Right beam
+$Team: -1
+$MessageNew:  XSTR("Right beam GW: $BeamRightStatus", -1)
+$end_multi_text
+
+$Name: Overview: Cap
+$Team: -1
+$MessageNew:  XSTR("Capacitor GW: $Capacitor", -1)
+$end_multi_text
+
+$Name: Overview: Heat
+$Team: -1
+$MessageNew:  XSTR("Heat level: $Heat GJ", -1)
+$end_multi_text
+
+$Name: System: Failed
+$Team: -1
+$MessageNew:  XSTR("Mission Failed", -1)
+$end_multi_text
+
+$Name: Engi: Heat critical
+$Team: -1
+$MessageNew:  XSTR("Heat levels critical, sir! Reactor shutdown imminent!", -1)
+$end_multi_text
++AVI Name: Head-CM1
++Wave Name: alarm.ogg
+
+$Name: Engi: Override
+$Team: -1
+$MessageNew:  XSTR("Safeties disengaged, automatic shutdown disabled, sir.", -1)
+$end_multi_text
++AVI Name: Head-CM1
++Wave Name: messagebeep.ogg
+
+$Name: Engi: Override off
+$Team: -1
+$MessageNew:  XSTR("Engineering safeties online, shutdown override disengaged. ", -1)
+$end_multi_text
++AVI Name: Head-CM1
++Wave Name: messagebeep.ogg
+
+$Name: Leonov: Memphis
+$Team: -1
+$MessageNew:  XSTR("Good to see you up and running, Polydeuces. We're currently evacuating cargo and evacuees to the Savoy and Sydney, and the Memphis is closing in fast. Destroy it.", -1)
+$end_multi_text
++AVI Name: Head-CM4
++Wave Name: messagebeep.ogg
+
+$Name: Tac: Fighters
+$Team: -1
+$MessageNew:  XSTR("Enemy fighters are breaking off from the Memphis and moving to attack. Use cluster flak rounds to destroy them at range, or hit them close with Trantors.", -1)
+$end_multi_text
++AVI Name: Head-CM5
++Wave Name: messagebeep.ogg
+
+$Name: Tutorial: Primaries
+$Team: -1
+$MessageNew:  XSTR("Your primary weapons have a global cooldown
+Once fired, all primaries will be locked for the duration of the weapon cooldown
+F10 to cycle through enemy fighters
+F11 to cycle through enemy bombers", -1)
+$end_multi_text
+
+$Name: Tac: Memphis targeting
+$Team: -1
+$MessageNew:  XSTR("We're reading target locks from the Memphis and it's changing course. It's on an attack path, sir. We should start engaging with our beams now.", -1)
+$end_multi_text
++AVI Name: Head-CM5
++Wave Name: messagebeep.ogg
+
+$Name: Tutorial: Beams
+$Team: -1
+$MessageNew:  XSTR("Press $Left Arrow$ or $Right Arrow$ to fire left or right side beam cannons respectively 
+Beams must have 200GW charged to fire, and fire an additional pulse with every additional 50GW
+Press F12 to cycle between enemy warships
+Beam charge rate is determined by your weapons ETS setting", -1)
+$end_multi_text
+
+$Name: Savoy: Evac done
+$Team: -1
+$MessageNew:  XSTR("This is the Savoy, we are loaded to capacity. Undocking now. Cover us.", -1)
+$end_multi_text
++AVI Name: Head-CM2
++Wave Name: messagebeep.ogg
+
+$Name: Savoy: Seteps
+$Team: -1
+$MessageNew:  XSTR("Savoy here, we have a problem. Enemy gunships and a wing of fighters are closing in.", -1)
+$end_multi_text
++AVI Name: Head-CM2
++Wave Name: messagebeep.ogg
+
+$Name: Tac: 2500m range
+$Team: -1
+$MessageNew:  XSTR("Those Hemsut gunships mount Ripper cannons with an effective range of 2500 meters. They'll tear the Savoy to shreds. We have to take them out.", -1)
+$end_multi_text
++AVI Name: Head-CM5
++Wave Name: messagebeep.ogg
+
+$Name: Savoy: Disabled!
+$Team: -1
+$MessageNew:  XSTR("This is the Savoy, our engines have been shot out. We'll need cover while we conduct emergency repairs.", -1)
+$end_multi_text
++AVI Name: Head-CM2
++Wave Name: messagebeep.ogg
+
+$Name: Savoy: repped
+$Team: -1
+$MessageNew:  XSTR("Emergency repairs completed.", -1)
+$end_multi_text
++AVI Name: Head-CM2
++Wave Name: messagebeep.ogg
+
+$Name: Savoy: Gone
+$Team: -1
+$MessageNew:  XSTR("Savoy is departing now. Thanks for the cover, Polydeuces.", -1)
+$end_multi_text
++AVI Name: Head-CM2
++Wave Name: messagebeep.ogg
+
+$Name: Leonov: Savoy ded
+$Team: -1
+$MessageNew:  XSTR("The transport Savoy has been destroyed!", -1)
+$end_multi_text
++AVI Name: Head-CM4
++Wave Name: messagebeep.ogg
+
+$Name: Engi: Repair
+$Team: -1
+$MessageNew:  XSTR("We've taken some damage during that engagement, sir. Suggest activating our repair system now while it's relatively calm.", -1)
+$end_multi_text
++AVI Name: Head-CM1
++Wave Name: messagebeep.ogg
+
+$Name: Tutorial: Repair
+$Team: -1
+$MessageNew:  XSTR("Press $4$ to activate the automatic repair system
+Nanobots are distributed throughout the ship to gradually repair hull and armor
+A large amount of capacitor is consumed, and slight heat is generated
+Capacitor recharge rate is determined by your shield ETS setting", -1)
+$end_multi_text
+
+$Name: Leonov: Newets
+$Team: -1
+$MessageNew:  XSTR("Two Khopesh cruisers have just warped in. Be aware that the Merneptah is breaking off to attack you, Polydeuces.", -1)
+$end_multi_text
++AVI Name: Head-CM4
++Wave Name: messagebeep.ogg
+
+$Name: Tac: Not good odds
+$Team: -1
+$MessageNew:  XSTR("We're going up against two enemy cruisers. Reckon we should some of our auxiliary systems to even the odds.", -1)
+$end_multi_text
++AVI Name: Head-CM5
++Wave Name: messagebeep.ogg
+
+$Name: Tutorial: Secondary sys
+$Team: -1
+$MessageNew:  XSTR("Press $1$ to activate a beam overdrive
+This rapidly transfers all available energy in the capacitor to both beam cannons
+Press $3$ to activate active armor hardening
+This will constantly drain the capacitor slightly and increase ship damage resistance
+", -1)
+$end_multi_text
+
+$Name: Leonov: Nebty
+$Team: -1
+$MessageNew:  XSTR("An enemy carrier has arrived! It's the Nebty! We're reading bomber launches, destroy them before they can do too much damage!", -1)
+$end_multi_text
++AVI Name: Head-CM4
++Wave Name: messagebeep.ogg
+
+$Name: Tac: Use Trantors
+$Team: -1
+$MessageNew:  XSTR("Those bombers are headed for us. Our Trantor defense munitions should be able to take them out, and their bombs.", -1)
+$end_multi_text
++AVI Name: Head-CM5
++Wave Name: messagebeep.ogg
+
+$Name: Tutorial: Trantors
+$Team: -1
+$MessageNew:  XSTR("Trantors are highly effective point defense munitions
+They deal high damage to enemy ships within 1 kilometer
+Trantor shockwaves are capable of disabling enemy bombs mid-flight", -1)
+$end_multi_text
+
+$Name: Xerxes: Going
+$Team: -1
+$MessageNew:  XSTR("Freighter Xerxes is undocking now. Cover our departure.", -1)
+$end_multi_text
++AVI Name: Head-CM1
++Wave Name: messagebeep.ogg
+
+$Name: Leonov: Xerxes dead
+$Team: -1
+$MessageNew:  XSTR("We have lost the Xerxes!", -1)
+$end_multi_text
++AVI Name: Head-CM4
++Wave Name: messagebeep.ogg
+
+$Name: Leonov: Pharaoh
+$Team: -1
+$MessageNew:  XSTR("Detecting a massive inbound warp signature! It's the Pharaoh!", -1)
+$end_multi_text
++AVI Name: Head-CM4
++Wave Name: messagebeep.ogg
+
+$Name: Leonov: Pharoh2
+$Team: -1
+$MessageNew:  XSTR("We're still in the process of evacuating. You must buy us some time! We estimate just three minutes until we get everyone on the Sydney.", -1)
+$end_multi_text
++AVI Name: Head-CM4
++Wave Name: messagebeep.ogg
+
+$Name: Engi: Warp ready
+$Team: -1
+$MessageNew:  XSTR("Sir, the warp drive has charged. It's risky, but we can do a tactical warp to get right under the Pharaoh.", -1)
+$end_multi_text
++AVI Name: Head-CM1
++Wave Name: messagebeep.ogg
+
+$Name: Tutorial: Warping
+$Team: -1
+$MessageNew:  XSTR("Press $Alt-J$ to initiate warp sequence
+Fly to a location, then press $Alt-J$ again to warp there
+Shift-J to cancel warp sequence
+To warp or to cancel warp, you must be stationary.", -1)
+$end_multi_text
+
+$Name: Leonov: Pharaoh3
+$Team: -1
+$MessageNew:  XSTR("The Pharaoh is launching more strikecraft. Be careful, Polydeuces.", -1)
+$end_multi_text
++AVI Name: Head-CM4
++Wave Name: messagebeep.ogg
+
+$Name: Foxtrot: Here
+$Team: -1
+$MessageNew:  XSTR("Foxtrot wing has arrived. Engaging enemy bombers.", -1)
+$end_multi_text
++AVI Name: Head-TP4
++Wave Name: messagebeep.ogg
+
+$Name: Leonov: Pharaoh Angry
+$Team: -1
+$MessageNew:  XSTR("Pharaoh is maneuvering to focus its main beams on you, Polydecues.", -1)
+$end_multi_text
++AVI Name: Head-CM4
++Wave Name: messagebeep.ogg
+
+$Name: Tac: DIVE DIVE DIVE
+$Team: -1
+$MessageNew:  XSTR("We'll need to move quickly if we're to avoid the beams. Recommend activating the afterburner shunt.", -1)
+$end_multi_text
++AVI Name: Head-CM5
++Wave Name: messagebeep.ogg
+
+$Name: Tutorial: Afterburner shunt
+$Team: -1
+$MessageNew:  XSTR("Press $2$ to activate an afterburner energy shunt
+Your ship will rapidly inject energy into the engines from the capacitor
+Be aware that afterburner usage generates significant heat", -1)
+$end_multi_text
+
+$Name: Sydney: Evac done
+$Team: -1
+$MessageNew:  XSTR("The evacuation is complete, everyone is off Leonov station. It's over, we can go now.", -1)
+$end_multi_text
++AVI Name: Head-CM5
++Wave Name: messagebeep.ogg
+
+$Name: Overview: AB recharging
+$Team: -1
+$MessageNew:  XSTR("AB shunt recharging", -1)
+$end_multi_text
+
+$Name: Overview: AB full
+$Team: -1
+$MessageNew:  XSTR("AB energy full", -1)
+$end_multi_text
+
+$Name: Overview: AB can shunt
+$Team: -1
+$MessageNew:  XSTR("AB shunt ready (2)", -1)
+$end_multi_text
+
+$Name: wtf debug
+$Team: -1
+$MessageNew:  XSTR("$ship-manev-timer
+$WarpStatus", -1)
+$end_multi_text
+
+#Reinforcements		;! 0 total
+
+
+#Background bitmaps		;! 0 total
+
+$Num stars: 0
+$Ambient light level: 8026746
+
+$Bitmap List:
+$Sun: SolSaturn
++Angles: 0.000000 3.141593 2.356194
++Scale: 1.000000
+$Sun: SaturnLight
++Angles: 0.000000 3.141590 6.143554
++Scale: 1.000000
+$Sun: SaturnLight
++Angles: 0.000000 3.141590 0.296706
++Scale: 1.000000
+$Sun: SaturnLight
++Angles: 5.916661 3.141590 0.000000
++Scale: 1.000000
+$Sun: SaturnLight
++Angles: 0.349066 3.141590 0.000000
++Scale: 1.000000
+$Sun: RingLight
++Angles: 1.099557 3.141590 0.994837
++Scale: 1.000000
+$Sun: RingLight
++Angles: 1.117010 3.141590 0.000000
++Scale: 1.000000
+$Sun: RingLight
++Angles: 0.000000 3.141590 4.974185
++Scale: 1.000000
+$Sun: RingLight
++Angles: 6.038835 3.141590 5.410516
++Scale: 1.000000
+$Sun: RingLight
++Angles: 0.174533 3.141590 5.969021
++Scale: 1.000000
+$Sun: RingLight
++Angles: 0.383972 3.141590 0.191986
++Scale: 1.000000
+$Sun: RingLight
++Angles: 0.506145 3.141590 0.750491
++Scale: 1.000000
+
+#Asteroid Fields
+
+#Music
+
+$Event Music: HTV
+$Substitute Event Music: HTV
+$Briefing Music: settingsail
+$Substitute Briefing Music: settingsail
+
+#End
+

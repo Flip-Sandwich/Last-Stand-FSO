@@ -1,0 +1,148 @@
+$Sun:		SolMars
+$Sunglow:	SunGlow
+$SunRGBI:   0.810 0.778 0.770 1.0
+$Flare:
+	+FlareCount:	6
+$FlareTexture1: SolCorona001
+$FlareTexture2: SolCorona002
+$FlareTexture3: Corona003
+$FlareTexture4: Corona004
+$FlareTexture5: Corona005
+$FlareTexture6: Corona006
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+$FlareGlow3:
+	+FlareTexture:	3
+	+FlarePos:		0.3
+	+FlareScale:	2
+$FlareGlow4:
+	+FlareTexture:	4
+	+FlarePos:		0.6
+	+FlareScale:	1
+$FlareGlow5:
+	+FlareTexture:	5
+	+FlarePos:		1.2
+	+FlareScale:	6
+$FlareGlow6:
+	+FlareTexture:	6
+	+FlarePos:		1.8
+	+FlareScale:	4
+
+$Sun:		SolSaturn
+$Sunglow:	SunGlow
+$SunRGBI:   0.323 0.310 0.307 1.0
+$Flare:
+	+FlareCount:	6
+$FlareTexture1: SolCorona001
+$FlareTexture2: SolCorona002
+$FlareTexture3: Corona003
+$FlareTexture4: Corona004
+$FlareTexture5: Corona005
+$FlareTexture6: Corona006
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+$FlareGlow3:
+	+FlareTexture:	3
+	+FlarePos:		0.3
+	+FlareScale:	2
+$FlareGlow4:
+	+FlareTexture:	4
+	+FlarePos:		0.6
+	+FlareScale:	1
+$FlareGlow5:
+	+FlareTexture:	5
+	+FlarePos:		1.2
+	+FlareScale:	6
+$FlareGlow6:
+	+FlareTexture:	6
+	+FlarePos:		1.8
+	+FlareScale:	4
+    
+$Sun:		SolNeptune
+$Sunglow:	SunGlow
+$SunRGBI:   0.183 0.175 0.173 1.0
+$Flare:
+	+FlareCount:	6
+$FlareTexture1: SolCorona001
+$FlareTexture2: SolCorona002
+$FlareTexture3: Corona003
+$FlareTexture4: Corona004
+$FlareTexture5: Corona005
+$FlareTexture6: Corona006
+$FlareGlow1:
+	+FlareTexture:	1
+	+FlarePos:		0.0
+	+FlareScale:	5
+$FlareGlow2:
+	+FlareTexture:	2
+	+FlarePos:		0.1
+	+FlareScale:	16
+$FlareGlow3:
+	+FlareTexture:	3
+	+FlarePos:		0.3
+	+FlareScale:	2
+$FlareGlow4:
+	+FlareTexture:	4
+	+FlarePos:		0.6
+	+FlareScale:	1
+$FlareGlow5:
+	+FlareTexture:	5
+	+FlarePos:		1.2
+	+FlareScale:	6
+$FlareGlow6:
+	+FlareTexture:	6
+	+FlarePos:		1.8
+	+FlareScale:	4
+
+
+
+$Sun:		SaturnLight
+$Sunglow:	SaturnLight
+$SunRGBI:	0.091 0.083 0.078 0.2
+$NoGlare:
+
+$Sun:		RingLight
+$Sunglow:	RingLight
+$SunRGBI:	0.040 0.039 0.040 0.2
+$NoGlare:
+
+
+$Sun:		EarthBrown
+$Sunglow:	EarthBrown
+$SunRGBI:	0.34 0.31 0.25 0.5
+$NoGlare:
+
+$Sun:		EarthWhite
+$Sunglow:	EarthWhite
+$SunRGBI:	0.67 0.67 0.68 0.5
+$NoGlare:
+
+$Sun:		EarthSpecular
+$Sunglow:	EarthSpecular
+$SunRGBI:	0.469 0.478 0.494 1.0
+$NoGlare:
+
+$Sun:		EarthGreen
+$Sunglow:	EarthGreen
+$SunRGBI:	0.18 0.22 0.14 0.5
+$NoGlare:
+
+$Sun:		EarthBlue
+$Sunglow:	EarthBlue
+$SunRGBI:	0.20 0.34 0.51 0.5
+$NoGlare:
+
+
+#end

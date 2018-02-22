@@ -1,0 +1,118 @@
+;; text file to contain medal information.  Does not include "rank" medals (see rank.tbl for those).
+;; medal names and which bitmap(s) are used to display them.
+
+#Medals
++Callsign Position 1024: -1, 102
+
+$Name:		Solar Liberation Star
+$Bitmap:		Medal00.pcx
++Position 1024: 81, 0
+$Num mods:	4
+
+$Name:		Hero of the Federation
+$Bitmap:		Medal01.pcx
++Position 1024: 703, 0
+$Num mods:	4
+
+$Name:		Order of Merit
+$Bitmap:		Medal02.pcx
++Position 1024: 244, 219
+$Num mods:	4
+
+$Name:		Commonwealth Service Medallion
+$Bitmap:		Medal03.pcx
++Position 1024: 360, 219
+$Num mods:	4
+
+$Name:		Intelligence Cross
+$Bitmap:		Medal04.pcx
++Position 1024: 569, 219
+$Num mods:	4
+
+$Name:		Navy Expeditionary Medal
+$Bitmap:		Medal05.pcx
++Position 1024: 686, 219
+$Num mods:	4
+
+$Name:		Meritorious Unit Commendation
+$Bitmap:		Medal06.pcx
++Position 1024: 155, 386
+$Num mods:	4
+
+$Name:		Medal of Valor
+$Bitmap:		Medal07.pcx
++Position 1024: 268, 386
+$Num mods:	4
+
+$Name:		Union Legion of Honor
+$Bitmap:		Medal08.pcx
++Position 1024: 395, 386
+$Num mods:	4
+
+$Name:		Federal Defense Citation
+$Bitmap:		Medal09.pcx
++Position 1024: 528, 386
+$Num mods:	4
+
+$Name:		Polaris Victory Star
+$Bitmap:		Medal10.pcx
++Position 1024: 654, 386
+$Num mods:	4
+
+$Name:		MIND Campaign Victory Star
+$Bitmap:		Medal11.pcx
++Position 1024: 766, 386
+$Num mods:	4
+
+$Name:		Rank
+$Bitmap:		Medal12.pcx
++Position 1024: 332, 131
+$Num mods:	10
+
+$Name:		Wings
+$Bitmap:		Medal13.pcx
++Position 1024: 452, 172
+$Num mods:	2
+
+$Name:		Ace
+$Bitmap:		Medal14.pcx
++Position 1024: 553, 131
+$Num mods:	1
++Num Kills:	99999
+$Wavefile Base: none.wav
+$Promotion Text:
+
+XSTR("", -1)
+
+$end_multi_text
+
+$Name:		Double Ace
+$Bitmap:		Medal15.pcx
++Position 1024: 596, 131
+$Num mods:	1
++Num Kills:	999999
+$Wavefile Base: none.wav
+$Promotion Text:
+
+XSTR("", -1)
+
+$end_multi_text
+
+$Name:		Triple Ace
+$Bitmap:		Medal16.pcx
++Position 1024: 639, 131
+$Num mods:	1
++Num Kills:	9999999
+$Wavefile Base: none.wav
+$Promotion Text:
+
+XSTR("", -1)
+
+$end_multi_text
+
+$Name:		UNSOC Unit Crest
+$Bitmap:		Medal17.pcx
++Position 1024: 484, 271
+$Num mods:	1
+
+#End

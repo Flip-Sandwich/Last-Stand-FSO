@@ -1,0 +1,15 @@
+; max 40 tips right now!! (Was 20, jacked up by MK on August 5, 1999.  Search for MAX_PLAYER_TIPS to change.)
+
++Tip: XSTR("In The Last Stand, you will be controlling a capital ship, not a fighter or bomber.", -1)
++Tip: XSTR("It is extremely recommended that you play the tutorial first, as The Last Stand introduces many new mechanics.", -1)
++Tip: XSTR("You can press [V] to target a turret under your reticle. This is useful for sniping enemy cannons at range.", -1)
++Tip: XSTR("If you have fighters, bombers or even capital ships under your command, remember to give them orders.", -1)
++Tip: XSTR("Remember, if you're under heavy bomber attack then use Trantor munitions to defend yourself.", -1)
++Tip: XSTR("Cluster Flak rounds are extremely effective against tightly packed waves of fighters.", -1)
++Tip: XSTR("First contact with the MIND occured in Klondike-Kayagan, where a Federal construction ship was destroyed by a MIND cruiser.", -1)
++Tip: XSTR("The MIND incursion rapidly overwhelmed both the Union and the Federation, forcing the reformation of the United Nations.", -1)
++Tip: XSTR("With the fall of Polaris, the Sol system is now the last of Humanity's fortress systems.", -1)
++Tip: XSTR("So far, we have not been able to establish any meaningful communicationns with the MIND.", -1)
++Tip: XSTR("The Mars Crisis several years ago was the last significant conflict faced by either the Union or the Federation until contact with the MIND.", -1)
+
+#end

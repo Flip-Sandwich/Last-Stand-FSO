@@ -1,0 +1,50 @@
+#IFFs
+$Traitor IFF: Traitor
+   
+$IFF Name: Friendly
+$Color: ( 128, 128, 255 )
+$Attacks: ( "Hostile" "Neutral" "Killall" "Traitor" )
+$Flags: ( "support allowed" )
+$Default Ship Flags: ( "cargo-known" )
+   	
+$IFF Name: Hostile
+$Color: ( 255, 0, 0 )
+$Attacks: ( "Friendly" "Neutral" "Traitor" "Killall" )
++Sees Friendly As: ( 255, 0, 0 )
++Sees Hostile As: ( 128, 128, 255 )
+
+$IFF Name: Killall
+$Color: ( 255, 0, 0 )
+$Attacks: ( "Friendly" "Neutral" "Traitor" "Cautious" "Unknown" )
++Sees Friendly As: ( 255, 0, 0 )
++Sees Hostile As: ( 128, 128, 255 )
+
+$IFF Name: Neutral
+$Color: ( 255, 0, 0 )
+$Attacks: ( "Friendly" "Traitor" "Killall" )									
++Sees Friendly As: ( 255, 0, 0 )
++Sees Hostile As: ( 128, 128, 255 )
++Sees Neutral As: ( 128, 128, 255 )
+
+$IFF Name: Cautious
+$Color: ( 128, 128, 128 )
+$Attacks: ( "Hostile" "Traitor" )									
++Sees Friendly As: ( 128, 128, 128 )
++Sees Cautious As: ( 128, 128, 255 )
+
+$IFF Name: Unknown
+$Color: ( 255, 0, 255 )
+$Attacks: ( "Hostile" )
++Sees Neutral As: ( 0, 255, 0 )
++Sees Traitor As: ( 0, 255, 0 )
+$Flags: ( "exempt from all teams at war" )
+
+;------------------------												
+; Traitor																
+;------------------------												
+$IFF Name: Traitor														
+$Color: ( 255, 0, 0 )													
+$Attacks: ( "Friendly" "Hostile" "Neutral" "Traitor" )			
++Sees Friendly As: ( 255, 0, 0 )										
+ 	
+#End	

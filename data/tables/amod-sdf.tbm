@@ -1,0 +1,19 @@
+#SPECIES DEFS
+
+$Species_Name:	Terran-IFN
+$Default IFF:	Friendly
+$FRED Color: 	( 0, 128, 0 )
+$MiscAnims:
+	+Debris_Texture:	debris01a
+	+Shield_Hit_ani:	shieldhit01a
+$ThrustAnims:
+	+Normal:			thruster02
+	+Afterburn:			thruster02a
+$ThrustGlows:
+	+Normal:			thrusterglow02
+	+Afterburn:			thrusterglow02a
+$AwacsMultiplier: 		1.0
+$Countermeasure Type:	Type One
+
+
+#END

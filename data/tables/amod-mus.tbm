@@ -1,0 +1,98 @@
+#SoundTrack Start ; Spec Ops The Line OST: The Battle
+$Soundtrack Name: SW0-2: SOTLBattle
++Allied Arrival Overlay: NO
+$Name: sotlb_amb.ogg	20.1	310000 ; * Ambience 
+$Name: sotlb_aarv1.ogg	2.0		360000 ; * Allied Arrival during Normal 
+$Name: sotlb_earv1.ogg	1.0		348000 ; * Enemy Arrival during Normal 
+$Name: sotlb_fight1.ogg	18.3	350000 ; * Battle 1 
+$Name: sotlb_fight2.ogg	25.8	350000 ; * Battle 2 
+$Name: sotlb_fight3.ogg	21.8	350000 ; * Battle 3 
+$Name: sotlb_aarv2.ogg	1.0		354218 ; * Allied Arrival during Battle 
+$Name: sotlb_earv2.ogg	4.2		160000 ; * Enemy Arrival during Battle 
+$Name: sotlb_aarv1.ogg	2.0		360000 ; * Victory 1 ( goal completed ) 
+$Name: sotlb_end.ogg	1.0		3696000 ; * Victory 2 ( all enemies dead, goals completed ) 
+$Name: sotlb_badend.ogg	1.0		2786000 ; * Goal Failed 
+$Name: sotlb_badend.ogg	1.0		2786000 ; * Player dies 
+#SoundTrack End ; End SoundTrack
+
+#SoundTrack Start ; Hammering The Void
+$Soundtrack Name: HTV
++Allied Arrival Overlay: NO
+$Name: TTV_Amb.ogg		8.1		320000 ; * Ambience 
+$Name: HTV_AArv.ogg		2.0		323840 ; * Allied Arrival during Normal 
+$Name: HTV_Earv1.ogg	2.0		380000 ; * Enemy Arrival during Normal 
+$Name: HTV_Fight1.ogg	5.1		480000 ; * Battle 1 
+$Name: HTV_Fight2.ogg	14.5	180000 ; * Battle 2 
+$Name: HTV_Fight3.ogg	7.7		360000 ; * Battle 3 
+$Name: HTV_AArv1.ogg	3.8		116600 ; * Allied Arrival during Battle 
+$Name: HTV_Earv2.ogg	2.0		350000 ; * Enemy Arrival during Battle 
+$Name: HTV_AArv1.ogg	3.8		116600 ; * Victory 1 ( goal completed ) 
+$Name: HTV_Win.ogg		1.0		540000 ; * Victory 2 ( all enemies dead, goals completed ) 
+$Name: HTV_Dead.ogg		1.0		700000 ; * Goal Failed 
+$Name: HTV_Dead.ogg		1.0		700000 ; * Player dies 
+#SoundTrack End ; End SoundTrack
+
+#SoundTrack Start ; Halflife 1 Song
+$Soundtrack Name: HL1
++Allied Arrival Overlay: NO
+$Name: HL1_Amb.ogg		7.0		210000 ; * Ambience 
+$Name: HL1_AArv.ogg		1.0		1 ; * Allied Arrival during Normal 
+$Name: HL1_Earv1.ogg	4.0		107500 ; * Enemy Arrival during Normal 
+$Name: HL1_Fight1.ogg	6.0		420000 ; * Battle 1 
+$Name: HL1_Fight2.ogg	4.0		420000 ; * Battle 2 
+$Name: HL1_Fight3.ogg	4.0		420000 ; * Battle 3 
+$Name: HL1_AArv.ogg		4.0		210000 ; * Allied Arrival during Battle 
+$Name: HL1_Earv2.ogg	2.0		210000 ; * Enemy Arrival during Battle 
+$Name: HL1_Win1.ogg		1.0		100600 ; * Victory 1 ( goal completed ) 
+$Name: HL1_Win2.ogg		1.0		1050000 ; * Victory 2 ( all enemies dead, goals completed ) 
+$Name: HL1_Fail.ogg		1.0		420000 ; * Goal Failed 
+$Name: HL1_Dead.ogg		1.0		1970000 ; * Player dies 
+#SoundTrack End ; End SoundTrack
+
+#SoundTrack Start ; Don't Forget
+$Soundtrack Name: DF
++Allied Arrival Overlay: NO
+$Name: DF_Amb.ogg		8.0		190000 ; * Ambience 
+$Name: DF_AArv1.ogg		1.0		190000 ; * Allied Arrival during Normal 
+$Name: DF_Earv1.ogg		2.0		150000 ; * Enemy Arrival during Normal 
+$Name: DF_Fight1.ogg	8.0 	380000 ; * Battle 1 
+$Name: DF_Fight2.ogg	8.0		380000 ; * Battle 2 
+$Name: DF_Fight3.ogg	4.0		380000 ; * Battle 3 
+$Name: DF_AArv2.ogg		3.8		130000 ; * Allied Arrival during Battle 
+$Name: DF_Earv2.ogg		2.0		107895 ; * Enemy Arrival during Battle 
+$Name: DF_Win1.ogg		1.0		100600 ; * Victory 1 ( goal completed ) 
+$Name: DF_Dead.ogg		1.0		900000 ; * Victory 2 ( all enemies dead, goals completed ) 
+$Name: DF_Fail.ogg		1.0		200000 ; * Goal Failed 
+$Name: DF_Dead.ogg		1.0		900000 ; * Player dies 
+#SoundTrack End ; End SoundTrack
+
+#Menu Music Start
+
+$Name:		Gotterdammerung
+$Filename:	Gotterdammerung.ogg
+
+$Name:		HEtheme
+$Filename:	HEtheme.ogg
+
+$Name:		Endgame
+$Filename:	Endgame.ogg
+
+$Name:		Aquitaine
+$Filename:	Galatea.ogg
+
+$Name:		incursion
+$Filename:	incursion.ogg
+
+$Name:		settingsail
+$Filename:	settingsail.ogg
+
+$Name:		LifeWillContinue
+$Filename:	LifeWillContinue.ogg
+
+$Name:		SkillAndStrength
+$Filename:	SkillAndStrength.ogg
+
+$Name:		Inabapride
+$Filename:	Inabapride.ogg
+
+#Menu Music End

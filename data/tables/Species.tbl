@@ -1,0 +1,30 @@
+; new format:
+; $Entry:				// begins entry
+; $Anim:				// anim filename, no extension
+; $AlwaysInTechRoom:			// 1 for yes, 0 for no.  if 0, must use a SEXP to make it show up in the TR
+; $Description:				// obvious
+; $end_multi_text			// end of description (and entry)
+
+$Entry:
+$Name: XSTR("United Nations",-1)
+$Anim: cb-eu
+$AlwaysInTechRoom: 1
+$Description:
+XSTR(
+"
+
+.", -1)
+$end_multi_text
+
+
+$Entry:
+$Name: XSTR("MIND",-1)
+$Anim: cb-eu
+$AlwaysInTechRoom: 1
+$Description:
+XSTR(
+"
+
+.", -1)
+$end_multi_text
+

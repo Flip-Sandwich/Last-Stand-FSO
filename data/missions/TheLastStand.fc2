@@ -1,0 +1,42 @@
+$Name: The Last Stand
+$Type: single
++Description:
+ XSTR("The Last Stand campaign.", -1)
+$end_multi_text
+$Flags: 0
+
+
++Starting Ships: ( "UN Moscow#PLAYEr"  "UN Moscow#Warp" )
+
++Starting Weapons: ( "Cluster Flak Array"  "Railgun"  "Eagle SSM"  "Trantor" )
+
+
+$Mission: 01 The Great Escape.fs2
++Flags: 0
++Main Hall: 
++Formula: ( cond
+   (
+      ( is-previous-goal-true 
+         "01 The Great Escape.fs2" 
+         "Oversee evacuation" 
+      )
+      ( next-mission "02 Rescue Force.fs2" )
+   )
+   ( ( true ) ( next-mission "01 The Great Escape.fs2" ) )
+)
+
++Level: 0
++Position: 1
+
+$Mission: 02 Rescue Force.fs2
++Flags: 0
++Main Hall: 
++Formula: ( cond
+   ( ( true ) ( next-mission "02 Rescue Force.fs2" ) )
+)
+
++Level: 1
++Position: 1
+
+#End
+

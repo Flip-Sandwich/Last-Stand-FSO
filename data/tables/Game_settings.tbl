@@ -1,0 +1,19 @@
+	#CAMPAIGN SETTINGS
+	$Default Campaign File Name: TheLastStand.fc2
+
+	#HUD SETTINGS
+	$Directive Wait Time: 5000
+
+	#SEXP SETTINGS
+	$Loop SEXPs Then Arguments: True
+    $Use Alternate Chaining Behavior: True
+    
+	#GRAPHICS SETTINGS
+	$Briefing Window FOV: 0.5
+
+	#OTHER SETTINGS
+	$Fixed Turret Collisions: True
+	$Damage Impacted Subsystem First: True
+	$Beams Use Damage Factors: True
+
+	#END
