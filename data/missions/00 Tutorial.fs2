@@ -4,7 +4,7 @@ $Version: 0.10
 $Name:  XSTR("Basic Training", -1)
 $Author: [`_`]
 $Created: 07/21/16 at 11:05:45
-$Modified: 02/06/18 at 12:35:25
+$Modified: 04/13/18 at 08:05:21
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -13,7 +13,7 @@ $Mission Desc:
  XSTR("Learn how to drive several million tons of metal.", -1)
 $end_multi_text
 +Game Type Flags: 4
-+Flags: 401538
++Flags: 401554
 +Fog Near Mult: 1.000000
 
 +Fog Far Mult: 1.000000
@@ -22,11 +22,11 @@ $end_multi_text
 +Hull Repair Ceiling: 0.000000
 +Subsystem Repair Ceiling: 100.000000
 
-+Viewer pos: 0.000153, 500.168732, 0.000000
++Viewer pos: -873.987244, -6848.840820, 1144.672974
 +Viewer orient:
-	1.000000, -0.000904, 0.000000,
-	0.000000, 0.000000, 1.000000,
-	-0.000904, -1.000000, 0.000000
+	0.877996, -0.000905, 0.478666,
+	-0.150441, 0.948803, 0.277741,
+	-0.454412, -0.315866, 0.832910
 
 $Starting wing names: ( "Polydeuces#" "Alpha" "Bravo" )
 $Squadron wing names: ( "Polydeuces#" "Alpha" "Bravo" "Charlie" "Delta" )
@@ -300,9 +300,10 @@ $Arrival Cue: ( true )
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Determination: 10
-+Flags: ( "cargo-known" "no-shields" "guardian" )
++Flags: ( "cargo-known" "no-shields" "invulnerable" )
 +Flags2: ( "immobile" )
 +Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
 +Score: 0
@@ -334,13 +335,13 @@ $Arrival Cue: ( true )
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Determination: 10
-+Flags: ( "cargo-known" "no-shields" "guardian" )
++Flags: ( "cargo-known" "no-shields" "invulnerable" )
 +Flags2: ( "immobile" )
 +Respawn priority: 0
 +Orders Accepted: 1		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 200
++Score: 0
 
 $Name: Alpha 1		;! Object #3
 $Class: UN Jackal
@@ -486,7 +487,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 500
++Score: 0
 
 $Name: Malenchenko Fortress		;! Object #8
 $Class: UN Endymion
@@ -512,10 +513,11 @@ $Arrival Cue: ( true )
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Determination: 10
-+Flags: ( "cargo-known" "no-shields" "escort" )
++Flags: ( "cargo-known" "no-shields" "escort" "invulnerable" )
 +Flags2: ( "lock-all-turrets" )
 +Respawn priority: 0
 +Escort priority: 99
++Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
 +Score: 0
@@ -1472,6 +1474,7 @@ $Formula: ( when
 +Repeat Count: -1
 +Trigger Count: 999999
 +Interval: 1
++Event Log Flags: ( "first trigger" )
 
 $Formula: ( when 
    ( and 
@@ -1800,7 +1803,8 @@ $Formula: ( every-time
    ( key-reset-multiple "Alt-J" ) 
 )
 +Name: Warp begin
-+Repeat Count: 1
++Repeat Count: -1
++Trigger Count: 999999
 +Interval: 1
 
 $Formula: ( every-time 
@@ -3022,8 +3026,8 @@ $Formula: ( when ( true ) ( do-nothing ) )
 
 $Formula: ( when 
    ( is-event-true-delay 
-      "Massive attack" 
-      0 
+      "chuikov hit msg" 
+      15 
    )
    ( send-message 
       "#Magellan" 

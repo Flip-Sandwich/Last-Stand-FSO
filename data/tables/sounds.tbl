@@ -206,26 +206,26 @@ $Name:	192	l_50mm.ogg,				0, 0.50, 1, 50, 400			; 50 mm (3d sound)
 $Name:	193	l_light.wav,			0, 0.50, 1, 50, 400			; ML 10 (3d sound)
 $Name:	194	l_disrupter.wav,		0, 0.50, 1, 50, 400			; Disrupter (3d sound)
 $Name:	195	l_taurus.ogg,			0, 0.50, 1, 50, 400			; X10 Taurus (3d sound)
-$Name:	196	MW4UAC2.wav,			0, 0.50, 1, 1500, 2500
+$Name:	196	MW4UAC2.wav,			0, 0.50, 1, 1500, 2500		; VishnuCannon
 $Name:	197	playerlaser.ogg,		0, 0.75, 1, 50, 400
 $Name:	198	train_derailed.ogg,		0, 0.50, 1, 250, 750
 $Name:	199	Krator.wav,				0, 0.70, 1, 150, 600
 $Name:	200	judicator.ogg,			0, 0.50, 1, 100, 500
 $Name:	201	Stormfire.ogg,			0, 0.60, 1, 150, 500
-$Name:	202	MaulFIRE.ogg,			0, 0.90, 1, 150, 500
+$Name:	202	MaulFIRE.ogg,			0, 1.00, 1, 1500, 3500		; FEAN Plasma H
 $Name:	203	accelsmall.ogg,			0, 0.60, 1, 200, 400		; fighter engine (3d sound)
 $Name:	204	accelsmall.ogg,			0, 0.70, 1, 300, 600		; bomber engine (3d sound)
 $Name:	205	capsulestop.ogg,		0, 0.80, 1, 400, 800		; cruiser engine (3d sound)
 $Name:	206	accelcapital.ogg,		0, 0.70, 1, 500, 1500		; capital engine (3d sound)
 $Name:	207	gauss.ogg,				0, 0.50, 1, 50, 400
 $Name:	208	dsl_02.ogg,				0, 0.60, 1, 100, 600		; Autocannon impact
-$Name:	209	steel_collision2.wav,   0, 0.80, 1, 150, 700		; H Autocannon impact
-$Name:	210	steel_collision2.wav,   0, 0.90, 1, 200, 800		; Cannon impact
-$Name:	211	flamer.ogg,		    	0, 0.90, 1, 150, 500
+$Name:	209	steel_collision.wav,	0, 0.80, 1, 150, 700		; H Autocannon impact
+$Name:	210	steel_collision2.wav,	0, 0.90, 1, 200, 800		; Cannon impact
+$Name:	211	Empty,					0, 0.50, 0
 $Name:	212	Repeater.wav,			0, 0.50, 2, 200, 1000
 $Name:	213	railgun.ogg,			0, 0.80, 2, 500, 6000		; Railgun
-$Name:	214	ShivCannon01.ogg,		0, 1.00, 1,	500, 2000 		; Shivan Cannon
-$Name:	215	ShivCannon02.ogg, 		0, 0.75, 1, 330, 1500 		; Shivan Ultra Laser
+$Name:	214	Empty,					0, 0.50, 0
+$Name:	215	Empty,					0, 0.50, 0
 $Name:	216	FTL_Cap_Arrival.ogg,	0, 0.90, 2, 2000, 6000		;; FTL Jump Cap Arrival
 $Name:	217	FTL_Cap_Depart.ogg,		0, 0.90, 2, 2000, 6000		;; FTL Jump Cap Depart
 $Name:	218	FTL_Arrival.ogg,		0, 0.50, 2, 500, 1500		;; FTL Jump Arrival
@@ -243,7 +243,7 @@ $Name:	229	ED_BFBlue.ogg,			0, 0.60, 2, 1500, 4000		; bmeson
 $Name:	230	ED_BFBlueDn.ogg,	    0, 0.60, 2, 1500, 4000		; bmeson
 $Name:	231	ED_BlueSlash.ogg,		0, 0.50, 1,	500, 2000		; hmeson
 $Name:	232	ED_BlueSlashDn.ogg,		0, 0.50, 1,	500, 2000		; hmeson
-$Name:	233	Empty,					0, 0.50, 0
+$Name:	233	MaulFIRE.ogg,			0, 0.75, 1, 750, 2000		; FEAN Plasma S
 $Name:	234	Empty,					0, 0.50, 0
 $Name:	235	Empty,					0, 0.50, 0
 $Name:	236	Empty,					0, 0.50, 0

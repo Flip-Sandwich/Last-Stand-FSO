@@ -7,13 +7,16 @@ $MiscAnims:
 	+Debris_Texture:	debris01a
 	+Shield_Hit_ani:	shieldhit01a
 $ThrustAnims:
-	+Normal:			thruster02
-	+Afterburn:			thruster02a
+	+Pri_Normal:	<none> ;thruster05
+	+Pri_Afterburn:	<none> ;thruster02a
+	+Sec_Normal:	thruster02-05
+	+Sec_Afterburn:	thruster02-05a
+	+Ter_Normal:	thruster03-05
+	+Ter_Afterburn:	thruster03-05a
 $ThrustGlows:
-	+Normal:			thrusterglow02
-	+Afterburn:			thrusterglow02a
+	+Normal:	thrusterglow05
+	+Afterburn:	thrusterglow05a
 $AwacsMultiplier: 		1.0
 $Countermeasure Type:	Type One
-
 
 #END

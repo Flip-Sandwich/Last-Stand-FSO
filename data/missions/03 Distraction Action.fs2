@@ -2841,13 +2841,6 @@ $Formula: ( when
       ( get-throttle-speed "Polydeuces# 1" ) 
    )
    ( modify-variable 
-      @WarpCancelSW[0] 
-      ( get-secondary-ammo 
-         "Polydeuces# 1" 
-         1 
-      )
-   )
-   ( modify-variable 
       @WarpCancelETSE[0] 
       ( get-ets-value 
          "Engine" 

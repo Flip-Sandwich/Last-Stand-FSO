@@ -1,6 +1,25 @@
 #Muzzle flash types
 
 $Mflash:
++name:         S_railgun_muzzle
+
++blob_name:    expmissilehit1
++blob_offset:  2.0
++blob_radius:  4.0
+
++blob_name:    expmissilehit1
++blob_offset:  2.5
++blob_radius:  5.0
+
++blob_name:    expmissilehit1
++blob_offset:  3.5
++blob_radius:  6.5
+
++blob_name:    exp_merc 
++blob_offset:  3.0 
++blob_radius:  12.0 
+
+$Mflash:
 +name:         railgun_muzzle
 
 +blob_name:    expmissilehit1

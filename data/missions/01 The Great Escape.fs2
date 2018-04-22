@@ -4,7 +4,7 @@ $Version: 0.10
 $Name:  XSTR("The Great Escape", -1)
 $Author: [`_`]
 $Created: 07/21/16 at 11:05:45
-$Modified: 02/16/17 at 12:20:28
+$Modified: 04/14/18 at 09:06:35
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -13,7 +13,7 @@ $Mission Desc:
  XSTR("Evacuate Leonov station", -1)
 $end_multi_text
 +Game Type Flags: 1
-+Flags: 401538
++Flags: 401554
 +Fog Near Mult: 1.000000
 
 +Fog Far Mult: 1.000000
@@ -22,11 +22,11 @@ $end_multi_text
 +Hull Repair Ceiling: 0.000000
 +Subsystem Repair Ceiling: 100.000000
 
-+Viewer pos: 3383.049805, 268.607147, 619.563232
++Viewer pos: 3984.406738, 2221.288818, -4995.686523
 +Viewer orient:
-	0.996652, -0.000900, 0.081756,
-	-0.038472, 0.877160, 0.478654,
-	-0.072144, -0.480197, 0.874189
+	0.762802, -0.000900, 0.646631,
+	-0.172412, 0.963515, 0.204727,
+	-0.623223, -0.267653, 0.734816
 
 $Starting wing names: ( "Polydeuces#" "Alpha" "Bravo" )
 $Squadron wing names: ( "Polydeuces#" "Alpha" "Bravo" "Charlie" "Delta" )
@@ -115,7 +115,7 @@ $type: 19
 $team: Hostile
 $class: MIND Newet
 $pos: 161.104431, -0.002167, 0.000000
-$label: MIND Fleet
+$label:  XSTR("MIND Fleet", -1)
 +id: 1
 $hlight: 0
 $mirror: 0
@@ -127,7 +127,7 @@ $type: 7
 $team: Friendly
 $class: Volition Bravos
 $pos: -197.066803, -0.002075, 1.456405
-$label: Neptune
+$label:  XSTR("Neptune", -1)
 +id: 2
 $hlight: 1
 $mirror: 0
@@ -139,7 +139,7 @@ $type: 15
 $team: Friendly
 $class: GTI Arcadia
 $pos: 1.003883, -0.002319, -58.235386
-$label: Trismegistus Station
+$label:  XSTR("Trismegistus Station", -1)
 +id: 3
 $hlight: 0
 $mirror: 0
@@ -151,7 +151,7 @@ $type: 19
 $team: Friendly
 $class: UN Moscow
 $pos: 12.650688, -0.002319, 93.174652
-$label: UN 18th Task Force
+$label:  XSTR("UN 18th Task Force", -1)
 +id: 4
 $hlight: 0
 $mirror: 1
@@ -179,7 +179,7 @@ $type: 7
 $team: Friendly
 $class: Volition Bravos
 $pos: -217.464432, -0.001984, -2.912917
-$label: Saturn
+$label:  XSTR("Saturn", -1)
 +id: 2
 $hlight: 0
 $mirror: 0
@@ -191,7 +191,7 @@ $type: 15
 $team: Friendly
 $class: GTI Arcadia
 $pos: -1.907895, -0.002289, -87.353531
-$label: Leonov Station
+$label:  XSTR("Leonov Station", -1)
 +id: 5
 $hlight: 0
 $mirror: 0
@@ -203,7 +203,7 @@ $type: 28
 $team: Friendly
 $class: UN Moscow
 $pos: -6.275620, -0.002289, 71.339279
-$label: Polydeuces
+$label:  XSTR("Polydeuces", -1)
 +id: 7
 $hlight: 1
 $mirror: 1
@@ -215,7 +215,7 @@ $type: 27
 $team: Friendly
 $class: GTT Argo
 $pos: 149.463943, -0.002380, 0.000000
-$label: Evacuation
+$label:  XSTR("Evacuation", -1)
 +id: 8
 $hlight: 1
 $mirror: 1
@@ -243,7 +243,7 @@ $type: 7
 $team: Friendly
 $class: Volition Bravos
 $pos: -217.464432, -0.001984, -2.912917
-$label: Saturn
+$label:  XSTR("Saturn", -1)
 +id: 2
 $hlight: 0
 $mirror: 0
@@ -255,7 +255,7 @@ $type: 15
 $team: Friendly
 $class: GTI Arcadia
 $pos: -1.907895, -0.002289, -87.353531
-$label: Leonov Station
+$label:  XSTR("Leonov Station", -1)
 +id: 5
 $hlight: 0
 $mirror: 0
@@ -267,7 +267,7 @@ $type: 28
 $team: Friendly
 $class: UN Moscow
 $pos: -6.275620, -0.002289, 71.339279
-$label: Polydeuces
+$label:  XSTR("Polydeuces", -1)
 +id: 7
 $hlight: 0
 $mirror: 1
@@ -279,7 +279,7 @@ $type: 27
 $team: Friendly
 $class: GTT Argo
 $pos: 201.842560, -0.002289, -88.776711
-$label: Evacuation
+$label:  XSTR("Evacuation", -1)
 +id: 8
 $hlight: 0
 $mirror: 1
@@ -291,7 +291,7 @@ $type: 19
 $team: Hostile
 $class: MIND Khopesh
 $pos: 223.664047, -0.002319, 65.488434
-$label: MIND Forces
+$label:  XSTR("MIND Forces", -1)
 +id: 9
 $hlight: 1
 $mirror: 0
@@ -319,7 +319,7 @@ $type: 7
 $team: Friendly
 $class: Volition Bravos
 $pos: -217.464432, -0.001984, -2.912917
-$label: Saturn
+$label:  XSTR("Saturn", -1)
 +id: 2
 $hlight: 0
 $mirror: 0
@@ -331,7 +331,7 @@ $type: 15
 $team: Friendly
 $class: GTI Arcadia
 $pos: -1.907895, -0.002289, -87.353531
-$label: Leonov Station
+$label:  XSTR("Leonov Station", -1)
 +id: 5
 $hlight: 0
 $mirror: 0
@@ -343,7 +343,7 @@ $type: 28
 $team: Friendly
 $class: UN Moscow
 $pos: -6.275620, -0.002289, 71.339279
-$label: Polydeuces
+$label:  XSTR("Polydeuces", -1)
 +id: 7
 $hlight: 0
 $mirror: 1
@@ -355,7 +355,7 @@ $type: 19
 $team: Hostile
 $class: MIND Khopesh
 $pos: 223.664047, -0.002319, 65.488434
-$label: MIND Forces
+$label:  XSTR("MIND Forces", -1)
 +id: 9
 $hlight: 0
 $mirror: 0
@@ -367,7 +367,7 @@ $type: 1
 $team: Friendly
 $class: UN Lancer
 $pos: 210.570343, 0.000061, -91.685539
-$label: Lancer squadron
+$label:  XSTR("Lancer squadron", -1)
 +id: 13
 $hlight: 1
 $mirror: 0
@@ -688,7 +688,7 @@ $Dockee Point: Docking Point
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 200
++Score: 0
 
 $Name: Xerxes		;! Object #3
 $Class: GTFR Triton
@@ -855,7 +855,7 @@ $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Determination: 10
 +Flags: ( "no-shields" "invulnerable" "hidden-from-sensors" "stealth" )
-+Flags2: ( "no-subspace-drive" "immobile" "cloaked" "no-collide" )
++Flags2: ( "no-subspace-drive" "immobile" "cloaked" "no_collide" )
 +Respawn priority: 0
 +Group: 0
 +Score: 100
@@ -879,7 +879,7 @@ $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Determination: 10
 +Flags: ( "no-shields" "invulnerable" "hidden-from-sensors" "stealth" "friendly-stealth-invisible" )
-+Flags2: ( "immobile" "cloaked" "no-collide" )
++Flags2: ( "immobile" "cloaked" "no_collide" )
 +Respawn priority: 0
 +Group: 0
 +Score: 90
@@ -948,7 +948,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 1100
++Score: 0
 
 $Name: Rimush		;! Object #9
 $Class: MIND Khopesh
@@ -997,7 +997,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 90
++Score: 0
 
 $Name: Merneptah		;! Object #10
 $Class: MIND Khopesh
@@ -1045,7 +1045,7 @@ $Determination: 10
 +Hotkey: 7
 +Group: 0
 +Use Table Score:
-+Score: 90
++Score: 0
 
 $Name: Alpha 1		;! Object #11
 $Class: UN Lancer
@@ -1072,7 +1072,7 @@ $Determination: 10
 +Orders Accepted: 33023		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Alpha 2		;! Object #12
 $Class: UN Lancer
@@ -1099,7 +1099,7 @@ $Determination: 10
 +Orders Accepted: 33023		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Alpha 3		;! Object #13
 $Class: UN Lancer
@@ -1126,7 +1126,7 @@ $Determination: 10
 +Orders Accepted: 33023		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Alpha 4		;! Object #14
 $Class: UN Lancer
@@ -1153,7 +1153,7 @@ $Determination: 10
 +Orders Accepted: 33023		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Bravo 1		;! Object #15
 $Class: UN Lancer
@@ -1180,7 +1180,7 @@ $Determination: 10
 +Orders Accepted: 32831		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Bravo 2		;! Object #16
 $Class: UN Lancer
@@ -1207,7 +1207,7 @@ $Determination: 10
 +Orders Accepted: 32831		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Bravo 3		;! Object #17
 $Class: UN Lancer
@@ -1234,7 +1234,7 @@ $Determination: 10
 +Orders Accepted: 32831		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Bravo 4		;! Object #18
 $Class: UN Lancer
@@ -1261,7 +1261,7 @@ $Determination: 10
 +Orders Accepted: 32831		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Memphis		;! Object #19
 $Class: MIND Newet
@@ -1335,7 +1335,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 8
++Score: 0
 
 $Name: Aquarius 2		;! Object #21
 $Class: MIND Osiris
@@ -1365,7 +1365,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 8
++Score: 0
 
 $Name: Aquarius 3		;! Object #22
 $Class: MIND Osiris
@@ -1395,7 +1395,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 8
++Score: 0
 
 $Name: Aquarius 4		;! Object #23
 $Class: MIND Osiris
@@ -1425,10 +1425,10 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 8
++Score: 0
 
 $Name: Pisces 1		;! Object #24
-$Class: MIND Thoth
+$Class: MIND Archanes
 $Team: Hostile
 $Location: -528.074036, 6421.543457, -1012.810486
 $Orientation:
@@ -1436,9 +1436,7 @@ $Orientation:
 	0.000000, 1.000000, 0.000000,
 	0.000000, 0.000000, 1.000000
 $AI Behavior: None
-+AI Class: BP2-Lieutenant
 $Cargo 1:  XSTR("Nothing", -1)
-+Initial Velocity: 33
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
@@ -1453,10 +1451,10 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Pisces 2		;! Object #25
-$Class: MIND Thoth
+$Class: MIND Archanes
 $Team: Hostile
 $Location: -523.332275, 6421.543457, -916.118103
 $Orientation:
@@ -1464,9 +1462,7 @@ $Orientation:
 	0.000000, 1.000000, 0.000000,
 	0.000000, 0.000000, 1.000000
 $AI Behavior: None
-+AI Class: BP2-Lieutenant
 $Cargo 1:  XSTR("Nothing", -1)
-+Initial Velocity: 33
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
@@ -1481,10 +1477,10 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Pisces 3		;! Object #26
-$Class: MIND Thoth
+$Class: MIND Archanes
 $Team: Hostile
 $Location: -483.986389, 6421.543457, -982.223450
 $Orientation:
@@ -1492,9 +1488,7 @@ $Orientation:
 	0.000000, 1.000000, 0.000000,
 	0.000000, 0.000000, 1.000000
 $AI Behavior: None
-+AI Class: BP2-Lieutenant
 $Cargo 1:  XSTR("Nothing", -1)
-+Initial Velocity: 33
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
@@ -1509,10 +1503,10 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Pisces 4		;! Object #27
-$Class: MIND Thoth
+$Class: MIND Archanes
 $Team: Hostile
 $Location: -467.034302, 6421.543457, -917.972229
 $Orientation:
@@ -1520,9 +1514,7 @@ $Orientation:
 	0.000000, 1.000000, 0.000000,
 	0.000000, 0.000000, 1.000000
 $AI Behavior: None
-+AI Class: BP2-Lieutenant
 $Cargo 1:  XSTR("Nothing", -1)
-+Initial Velocity: 33
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
@@ -1537,10 +1529,10 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Pisces 5		;! Object #28
-$Class: MIND Thoth
+$Class: MIND Archanes
 $Team: Hostile
 $Location: -446.949951, 6421.543457, -957.054382
 $Orientation:
@@ -1548,9 +1540,7 @@ $Orientation:
 	0.000000, 1.000000, 0.000000,
 	0.000000, 0.000000, 1.000000
 $AI Behavior: None
-+AI Class: BP2-Lieutenant
 $Cargo 1:  XSTR("Nothing", -1)
-+Initial Velocity: 33
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
@@ -1565,10 +1555,10 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Vulpex 1		;! Object #29
-$Class: MIND Thoth
+$Class: MIND Silenus
 $Team: Hostile
 $Location: 4257.551270, -0.004395, 1152.805298
 $Orientation:
@@ -1576,7 +1566,6 @@ $Orientation:
 	0.000000, 1.000000, 0.000000,
 	0.000000, 0.000000, 1.000000
 $AI Behavior: None
-+AI Class: BP2-Captain
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
 +Initial Shields: 100
@@ -1592,10 +1581,10 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Vulpex 2		;! Object #30
-$Class: MIND Thoth
+$Class: MIND Silenus
 $Team: Hostile
 $Location: 4317.531738, -0.004395, 1086.900146
 $Orientation:
@@ -1603,7 +1592,6 @@ $Orientation:
 	0.000000, 1.000000, 0.000000,
 	0.000000, 0.000000, 1.000000
 $AI Behavior: None
-+AI Class: BP2-Captain
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
 +Initial Shields: 100
@@ -1619,10 +1607,10 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Vulpex 3		;! Object #31
-$Class: MIND Thoth
+$Class: MIND Silenus
 $Team: Hostile
 $Location: 4216.914063, 0.000305, 1020.349792
 $Orientation:
@@ -1630,9 +1618,7 @@ $Orientation:
 	0.000000, 1.000000, 0.000000,
 	0.000000, 0.000000, 1.000000
 $AI Behavior: None
-+AI Class: BP2-Captain
 $Cargo 1:  XSTR("Nothing", -1)
-+Initial Velocity: 33
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
@@ -1647,10 +1633,10 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Vulpex 4		;! Object #32
-$Class: MIND Thoth
+$Class: MIND Silenus
 $Team: Hostile
 $Location: 4281.362793, 0.000305, 1013.031372
 $Orientation:
@@ -1658,9 +1644,7 @@ $Orientation:
 	0.000000, 1.000000, 0.000000,
 	0.000000, 0.000000, 1.000000
 $AI Behavior: None
-+AI Class: BP2-Captain
 $Cargo 1:  XSTR("Nothing", -1)
-+Initial Velocity: 33
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
@@ -1675,10 +1659,10 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Vulpex 5		;! Object #33
-$Class: MIND Thoth
+$Class: MIND Silenus
 $Team: Hostile
 $Location: 4218.740723, 0.000305, 1061.940063
 $Orientation:
@@ -1686,9 +1670,7 @@ $Orientation:
 	0.000000, 1.000000, 0.000000,
 	0.000000, 0.000000, 1.000000
 $AI Behavior: None
-+AI Class: BP2-Captain
 $Cargo 1:  XSTR("Nothing", -1)
-+Initial Velocity: 33
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
@@ -1703,7 +1685,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Sydney		;! Object #34
 $Class: UN Canberra
@@ -1736,7 +1718,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 100
++Score: 0
 
 $Name: Cancer 1		;! Object #35
 $Class: MIND Osiris
@@ -1822,7 +1804,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 8
++Score: 0
 
 $Name: Cygnus 2		;! Object #38
 $Class: MIND Osiris
@@ -1852,10 +1834,10 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 8
++Score: 0
 
 $Name: Leo 1		;! Object #39
-$Class: MIND Serapis
+$Class: MIND Zakros
 $Team: Hostile
 $Location: -2459.342773, -0.001221, 705.135132
 $Orientation:
@@ -1863,11 +1845,11 @@ $Orientation:
 	0.000000, 1.000000, 0.000000,
 	0.000000, 0.000000, 1.000000
 $AI Behavior: None
-+AI Class: BP2-Major
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
++Subsystem: turret01a
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -1878,10 +1860,10 @@ $Determination: 10
 +Respawn priority: 0
 +Group: 0
 +Use Table Score:
-+Score: 12
++Score: 0
 
 $Name: Leo 2		;! Object #40
-$Class: MIND Serapis
+$Class: MIND Zakros
 $Team: Hostile
 $Location: -2570.706787, -0.001221, 787.819336
 $Orientation:
@@ -1889,11 +1871,11 @@ $Orientation:
 	0.000000, 1.000000, 0.000000,
 	0.000000, 0.000000, 1.000000
 $AI Behavior: None
-+AI Class: BP2-Major
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
++Subsystem: turret01a
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -1904,10 +1886,10 @@ $Determination: 10
 +Respawn priority: 0
 +Group: 0
 +Use Table Score:
-+Score: 12
++Score: 0
 
 $Name: Leo 3		;! Object #41
-$Class: MIND Serapis
+$Class: MIND Zakros
 $Team: Hostile
 $Location: -2621.025879, -0.001221, 656.384521
 $Orientation:
@@ -1915,11 +1897,11 @@ $Orientation:
 	0.000000, 1.000000, 0.000000,
 	0.000000, 0.000000, 1.000000
 $AI Behavior: None
-+AI Class: BP2-Major
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
++Subsystem: turret01a
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -1930,10 +1912,10 @@ $Determination: 10
 +Respawn priority: 0
 +Group: 0
 +Use Table Score:
-+Score: 12
++Score: 0
 
 $Name: Leo 4		;! Object #42
-$Class: MIND Serapis
+$Class: MIND Zakros
 $Team: Hostile
 $Location: -2675.135742, -0.001221, 740.777344
 $Orientation:
@@ -1941,11 +1923,11 @@ $Orientation:
 	0.000000, 1.000000, 0.000000,
 	0.000000, 0.000000, 1.000000
 $AI Behavior: None
-+AI Class: BP2-Major
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
++Subsystem: turret01a
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -1956,10 +1938,10 @@ $Determination: 10
 +Respawn priority: 0
 +Group: 0
 +Use Table Score:
-+Score: 12
++Score: 0
 
 $Name: Leo 5		;! Object #43
-$Class: MIND Serapis
+$Class: MIND Zakros
 $Team: Hostile
 $Location: -2540.107422, -0.001221, 713.625854
 $Orientation:
@@ -1967,11 +1949,11 @@ $Orientation:
 	0.000000, 1.000000, 0.000000,
 	0.000000, 0.000000, 1.000000
 $AI Behavior: None
-+AI Class: BP2-Major
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
++Subsystem: turret01a
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -1982,7 +1964,7 @@ $Determination: 10
 +Respawn priority: 0
 +Group: 0
 +Use Table Score:
-+Score: 12
++Score: 0
 
 $Name: Aquarius 5		;! Object #44
 $Class: MIND Osiris
@@ -2012,7 +1994,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 8
++Score: 0
 
 $Name: Thing for mission complete		;! Object #45
 $Class: Commander
@@ -2034,7 +2016,7 @@ $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Determination: 10
 +Flags: ( "cargo-known" "no-shields" "hidden-from-sensors" "stealth" "friendly-stealth-invisible" )
-+Flags2: ( "cloaked" "no-collide" )
++Flags2: ( "cloaked" "no_collide" )
 +Respawn priority: 0
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
@@ -2066,7 +2048,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 12
++Score: 0
 
 $Name: Taurus 2		;! Object #47
 $Class: MIND Serapis
@@ -2094,7 +2076,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 12
++Score: 0
 
 $Name: Taurus 3		;! Object #48
 $Class: MIND Serapis
@@ -2122,7 +2104,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 12
++Score: 0
 
 $Name: Taurus 4		;! Object #49
 $Class: MIND Serapis
@@ -2150,7 +2132,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 12
++Score: 0
 
 $Name: Taurus 5		;! Object #50
 $Class: MIND Serapis
@@ -2178,7 +2160,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 12
++Score: 0
 
 $Name: Menhit		;! Object #51
 $Class: MIND Hemsut
@@ -2224,7 +2206,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 75
++Score: 0
 
 $Name: Hemsut		;! Object #52
 $Class: MIND Hemsut
@@ -2270,7 +2252,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 75
++Score: 0
 
 $Name: Gunship warpin point		;! Object #53
 $Class: Commander
@@ -2300,7 +2282,7 @@ $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Determination: 10
 +Flags: ( "cargo-known" "no-shields" "hidden-from-sensors" "stealth" "friendly-stealth-invisible" )
-+Flags2: ( "immobile" "cloaked" "no-collide" )
++Flags2: ( "immobile" "cloaked" "no_collide" )
 +Respawn priority: 0
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
@@ -2332,7 +2314,7 @@ $Determination: 10
 +Orders Accepted: 33023		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 12
++Score: 0
 
 $Name: Foxtrot 2		;! Object #55
 $Class: UN Jackal
@@ -2359,7 +2341,7 @@ $Determination: 10
 +Orders Accepted: 33023		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 12
++Score: 0
 
 $Name: Foxtrot 3		;! Object #56
 $Class: UN Jackal
@@ -2386,7 +2368,7 @@ $Determination: 10
 +Orders Accepted: 33023		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 12
++Score: 0
 
 $Name: Foxtrot 4		;! Object #57
 $Class: UN Jackal
@@ -2413,7 +2395,7 @@ $Determination: 10
 +Orders Accepted: 33023		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 12
++Score: 0
 
 #Wings		;! 11 total
 
@@ -2444,7 +2426,13 @@ $Arrival Cue: ( is-event-true-delay
    4 
 )
 $Departure Location: Hyperspace
-$Departure Cue: ( false ) 
+$Departure Cue: ( or 
+   ( is-event-true-delay "Evac done" 0 ) 
+   ( is-event-true-delay 
+      "Failsafe end mission" 
+      0 
+   )
+)
 $Ships: (		;! 4 total
 	"Alpha 1"
 	"Alpha 2"
@@ -2465,7 +2453,13 @@ $Arrival Location: Docking Bay
 $Arrival Anchor: Leonov
 $Arrival Cue: ( is-event-true-delay "Gunships!" 0 ) 
 $Departure Location: Hyperspace
-$Departure Cue: ( false ) 
+$Departure Cue: ( or 
+   ( is-event-true-delay "Evac done" 0 ) 
+   ( is-event-true-delay 
+      "Failsafe end mission" 
+      0 
+   )
+)
 $Ships: (		;! 4 total
 	"Bravo 1"
 	"Bravo 2"
@@ -2494,7 +2488,7 @@ $Ships: (		;! 5 total
 	"Aquarius 5"
 )
 $AI Goals: ( goals ( ai-chase "Polydeuces# 1" 70 ) ( ai-chase "Leonov" 50 ) ( ai-chase-any 40 ) )
-+Hotkey: 6
++Hotkey: 5
 +Flags: ( )
 
 $Name: Pisces
@@ -2514,7 +2508,7 @@ $Ships: (		;! 5 total
 	"Pisces 5"
 )
 $AI Goals: ( goals ( ai-guard "Memphis" 80 ) )
-+Hotkey: 5
++Hotkey: 3
 +Flags: ( )
 
 $Name: Vulpex
@@ -2530,10 +2524,7 @@ $Arrival Cue: ( has-arrived-delay
    "Gunship warpin point" 
 )
 $Departure Location: Hyperspace
-$Departure Cue: ( destroyed-or-departed-delay 
-   7 
-   "Savoy" 
-)
+$Departure Cue: ( false ) 
 $Ships: (		;! 5 total
 	"Vulpex 1"
 	"Vulpex 2"
@@ -2542,7 +2533,7 @@ $Ships: (		;! 5 total
 	"Vulpex 5"
 )
 $AI Goals: ( goals ( ai-guard "Menhit" 80 ) ( ai-chase "Savoy" 60 ) ( ai-chase "Leonov" 50 ) ( ai-chase-any 40 ) )
-+Hotkey: 6
++Hotkey: 3
 +Flags: ( )
 
 $Name: Cancer
@@ -2564,8 +2555,8 @@ $Ships: (		;! 2 total
 	"Cancer 2"
 )
 $AI Goals: ( goals ( ai-chase "Polydeuces# 1" 50 ) )
-+Hotkey: 6
-+Flags: ( "no-departure-warp" )
++Hotkey: 5
++Flags: ( )
 +Wave Delay Min: 5
 +Wave Delay Max: 11
 
@@ -2585,13 +2576,13 @@ $Ships: (		;! 2 total
 	"Cygnus 2"
 )
 $AI Goals: ( goals ( ai-chase "Polydeuces# 1" 50 ) )
-+Hotkey: 6
++Hotkey: 5
 +Flags: ( )
-+Wave Delay Min: 5
-+Wave Delay Max: 11
++Wave Delay Min: 8
++Wave Delay Max: 15
 
 $Name: Leo
-$Waves: 3
+$Waves: 2
 $Wave Threshold: 0
 $Special Ship: 0		;! Leo 1
 
@@ -2609,10 +2600,10 @@ $Ships: (		;! 5 total
 	"Leo 5"
 )
 $AI Goals: ( goals ( ai-guard "Pharaoh" 50 ) )
-+Hotkey: 6
++Hotkey: 5
 +Flags: ( )
-+Wave Delay Min: 5
-+Wave Delay Max: 11
++Wave Delay Min: 10
++Wave Delay Max: 22
 
 $Name: Taurus
 $Waves: 1
@@ -2633,7 +2624,7 @@ $Ships: (		;! 5 total
 	"Taurus 5"
 )
 $AI Goals: ( goals ( ai-chase-wing "Alpha" 60 ) ( ai-chase-wing "Bravo" 50 ) ( ai-guard-wing "Aquarius" 30 ) ( ai-chase-any 20 ) )
-+Hotkey: 5
++Hotkey: 3
 +Flags: ( )
 
 $Name: Foxtrot
@@ -2651,7 +2642,13 @@ $Arrival Cue: ( and
    ( not ( skill-level-at-least "Hard" ) ) 
 )
 $Departure Location: Hyperspace
-$Departure Cue: ( false ) 
+$Departure Cue: ( or 
+   ( is-event-true-delay "Evac done" 0 ) 
+   ( is-event-true-delay 
+      "Failsafe end mission" 
+      0 
+   )
+)
 $Ships: (		;! 4 total
 	"Foxtrot 1"
 	"Foxtrot 2"
@@ -2661,7 +2658,7 @@ $Ships: (		;! 4 total
 $AI Goals: ( goals ( ai-guard "Polydeuces# 1" 50 ) )
 +Flags: ( )
 
-#Events		;! 109 total
+#Events		;! 110 total
 
 $Formula: ( when ( true ) ( do-nothing ) ) 
 +Name: --CSC script--
@@ -3807,13 +3804,6 @@ $Formula: ( when
       ( get-throttle-speed "Polydeuces# 1" ) 
    )
    ( modify-variable 
-      @WarpCancelSW[0] 
-      ( get-secondary-ammo 
-         "Polydeuces# 1" 
-         1 
-      )
-   )
-   ( modify-variable 
       @WarpCancelETSE[0] 
       ( get-ets-value 
          "Engine" 
@@ -4179,10 +4169,7 @@ $Formula: ( when
       0 
       1 
    )
-   ( modify-variable 
-      @WarpStatus[-1] 
-      -1
-   )
+   ( modify-variable @WarpStatus[-1] -2 ) 
    ( unlock-secondary-weapon 
       "Polydeuces# 1" 
    )
@@ -4974,6 +4961,21 @@ $Formula: ( when
 +Interval: 1
 
 $Formula: ( when 
+   ( is-destroyed-delay 
+      0 
+      "Menhit" 
+      "Hemsut" 
+   )
+   ( do-nothing ) 
+)
++Name: Destroy Gunships
++Repeat Count: 1
++Interval: 1
++Chained: 0
++Objective:  XSTR("Destroy Gunships", -1)
++Objective key:  XSTR("F12", -1)
+
+$Formula: ( when 
    ( or 
       ( <= 
          ( hits-left "Memphis" ) 
@@ -5392,11 +5394,9 @@ $Formula: ( when
 +Interval: 1
 
 $Formula: ( when 
-   ( not 
-      ( and 
-         ( >= @WarpStatus[-1] 3 ) 
-         ( <= @WarpStatus[-1] 800 ) 
-      )
+   ( or 
+      ( = @WarpStatus[-1] 0 ) 
+      ( = @WarpStatus[-1] 1 ) 
    )
    ( training-msg 
       "Tutorial: Warping" 
@@ -5864,8 +5864,8 @@ $Name: Tutorial: Primaries
 $Team: -1
 $MessageNew:  XSTR("Your primary weapons have a global cooldown
 Once fired, all primaries will be locked for the duration of the weapon cooldown
-F10 to cycle through enemy fighters
-F11 to cycle through enemy bombers", -1)
+Press F8 to cycle through enemy fighters
+Press F10 to cycle through enemy bombers", -1)
 $end_multi_text
 
 $Name: Tac: Memphis targeting

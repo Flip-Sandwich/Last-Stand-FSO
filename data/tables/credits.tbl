@@ -66,7 +66,7 @@ Wraith, assorted weapons - Steve-O
 XSTR("Music", -1)
 hl1song - Half Life: Song 19
 Music4 - RealSpace 3
-SkillAndStrength - Trauma Team: Skill and Strength
+EmergencyProcedure - Trauma Team: Emergency Procedure
 
 XSTR("Sounds", -1)
 ED Beams: Earth Defence
@@ -114,6 +114,7 @@ Outro - Grendel: Harsh Generation
 qotn: Machinimasound: Queen of the Night
 RayofLight, rolic: No one has to die
 RosaliasPetals - Trauma Team: Rosalia's Petals
+SkillAndStrength - Trauma Team: Skill and Strength
 SolarEchoes - Children of a Dead Earth
 sotlb - Spec Ops the Line: The Battle
 steepfreedom - ???

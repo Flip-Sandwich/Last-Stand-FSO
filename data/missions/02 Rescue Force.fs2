@@ -4,7 +4,7 @@ $Version: 0.10
 $Name:  XSTR("Rescue Force", -1)
 $Author: [`_`]erman
 $Created: 07/21/16 at 11:05:45
-$Modified: 12/20/17 at 18:16:36
+$Modified: 04/17/18 at 21:19:56
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -13,7 +13,7 @@ $Mission Desc:
  XSTR("Save the Magellan", -1)
 $end_multi_text
 +Game Type Flags: 1
-+Flags: 401538
++Flags: 401554
 +Fog Near Mult: 1.000000
 
 +Fog Far Mult: 1.000000
@@ -22,11 +22,11 @@ $end_multi_text
 +Hull Repair Ceiling: 0.000000
 +Subsystem Repair Ceiling: 100.000000
 
-+Viewer pos: -914.088928, 340.472809, 896.272339
++Viewer pos: 3.065709, 3891.271240, 0.000000
 +Viewer orient:
-	-0.976326, -0.000904, -0.216302,
-	0.068566, 0.947129, -0.313443,
-	0.205149, -0.320853, -0.924644
+	1.000000, -0.000904, 0.000000,
+	0.000000, 0.000000, 1.000000,
+	-0.000904, -1.000000, 0.000000
 
 $Starting wing names: ( "Polydeuces#" "Alpha" "Bravo" )
 $Squadron wing names: ( "Polydeuces#" "Alpha" "Bravo" "Charlie" "Delta" )
@@ -40,53 +40,55 @@ $AI Profile: CAPSHIPCOMMAND
 
 $Variables:
 (
-		0		"31st-Target"		"Snaiib"		"string"
-		1		"Amber-target"		"Snaaib"		"string"
-		2		"AmmoSwitchCount"		"0"		"number"
-		3		"BeamLeftStatus"		"200"		"number"
-		4		"BeamRightStatus"		"200"		"number"
-		5		"Capacitor"		"100"		"number"
-		6		"damage-to-p1"		"0"		"number"
-		7		"damage-to-p2"		"0"		"number"
-		8		"HardenLevel"		"0"		"number"
-		9		"Heat"		"0"		"number"
-		10		"HeatHasCritical"		"0"		"number"
-		11		"LeftBeamTick"		"0"		"number"
-		12		"OVerride"		"0"		"number"
-		13		"p1-target"		"Polydeuces# 1"		"string"
-		14		"p2-target"		"Polydeuces# 1"		"string"
-		15		"PlayerTarget"		"Battuta"		"string"
-		16		"PlayerTargetSS"		"Axems house"		"string"
-		17		"Repairing"		"0"		"number"
-		18		"RightBeamsTick"		"0"		"number"
-		19		"ship-manev-timer"		"0"		"number"
-		20		"ShipTargeted"		"a whale"		"string"
-		21		"ShipTargetedRight"		"a bote"		"string"
-		22		"SHUTDOWN"		"0"		"number"
-		23		"turretNumber"		"0"		"string"
-		24		"turretVar"		"turret06"		"string"
-		25		"UN-Fleetpower"		"50"		"number"		"campaign-persistent"
-		26		"WarpCancelB"		"0"		"number"
-		27		"WarpCancelETSE"		"0"		"number"
-		28		"WarpCancelETSS"		"0"		"number"
-		29		"WarpCancelETSW"		"0"		"number"
-		30		"WarpCancelH"		"0"		"number"
-		31		"WarpCancelP"		"0"		"number"
-		32		"WarpCancelS"		"0"		"number"
-		33		"WarpCancelSW"		"0"		"number"
-		34		"WarpCancelSWA"		"0"		"number"
-		35		"WarpCancelT"		"0"		"number"
-		36		"WarpCancelX"		"0"		"number"
-		37		"WarpCancelY"		"0"		"number"
-		38		"WarpCancelZ"		"0"		"number"
-		39		"WarpFinalB"		"0"		"number"
-		40		"WarpFinalH"		"0"		"number"
-		41		"WarpFinalP"		"0"		"number"
-		42		"WarpFinalX"		"0"		"number"
-		43		"WarpFinalY"		"0"		"number"
-		44		"WarpFinalZ"		"0"		"number"
-		45		"WarpStatus"		"-1"		"number"
-		46		"WarpUses"		"0"		"number"
+		0		"31st-Order"		"Murder"		"string"
+		1		"31st-Target"		"Snaiib"		"string"
+		2		"Amber-order"		"Protect"		"string"
+		3		"Amber-target"		"Snaaib"		"string"
+		4		"AmmoSwitchCount"		"0"		"number"
+		5		"BeamLeftStatus"		"200"		"number"
+		6		"BeamRightStatus"		"200"		"number"
+		7		"Capacitor"		"100"		"number"
+		8		"damage-to-p1"		"0"		"number"
+		9		"damage-to-p2"		"0"		"number"
+		10		"HardenLevel"		"0"		"number"
+		11		"Heat"		"0"		"number"
+		12		"HeatHasCritical"		"0"		"number"
+		13		"LeftBeamTick"		"0"		"number"
+		14		"OVerride"		"0"		"number"
+		15		"p1-target"		"Polydeuces# 1"		"string"
+		16		"p2-target"		"Polydeuces# 1"		"string"
+		17		"PlayerTarget"		"Johnny boy"		"string"
+		18		"PlayerTargetSS"		"Goobers house"		"string"
+		19		"Repairing"		"0"		"number"
+		20		"RightBeamsTick"		"0"		"number"
+		21		"ship-manev-timer"		"0"		"number"
+		22		"ShipTargeted"		"a whale"		"string"
+		23		"ShipTargetedRight"		"a bote"		"string"
+		24		"SHUTDOWN"		"0"		"number"
+		25		"turretNumber"		"0"		"string"
+		26		"turretVar"		"turret06"		"string"
+		27		"UN-Fleetpower"		"50"		"number"		"campaign-persistent"
+		28		"WarpCancelB"		"0"		"number"
+		29		"WarpCancelETSE"		"0"		"number"
+		30		"WarpCancelETSS"		"0"		"number"
+		31		"WarpCancelETSW"		"0"		"number"
+		32		"WarpCancelH"		"0"		"number"
+		33		"WarpCancelP"		"0"		"number"
+		34		"WarpCancelS"		"0"		"number"
+		35		"WarpCancelSW"		"0"		"number"
+		36		"WarpCancelSWA"		"0"		"number"
+		37		"WarpCancelT"		"0"		"number"
+		38		"WarpCancelX"		"0"		"number"
+		39		"WarpCancelY"		"0"		"number"
+		40		"WarpCancelZ"		"0"		"number"
+		41		"WarpFinalB"		"0"		"number"
+		42		"WarpFinalH"		"0"		"number"
+		43		"WarpFinalP"		"0"		"number"
+		44		"WarpFinalX"		"0"		"number"
+		45		"WarpFinalY"		"0"		"number"
+		46		"WarpFinalZ"		"0"		"number"
+		47		"WarpStatus"		"-1"		"number"
+		48		"WarpUses"		"0"		"number"
 )
 
 #Command Briefing
@@ -629,7 +631,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 1100
++Score: 0
 
 $Name: Resheph		;! Object #6
 $Class: MIND Khopesh
@@ -684,7 +686,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 90
++Score: 0
 
 $Name: Hermanubis		;! Object #7
 $Class: MIND Newet
@@ -737,7 +739,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 100
++Score: 0
 
 $Name: Rem		;! Object #8
 $Class: MIND Hemsut
@@ -780,7 +782,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 75
++Score: 0
 
 $Name: Raet-Tawy		;! Object #9
 $Class: MIND Hemsut
@@ -823,7 +825,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 75
++Score: 0
 
 $Name: Shu		;! Object #10
 $Class: MIND Hemsut
@@ -866,7 +868,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 75
++Score: 0
 
 $Name: Hedetet		;! Object #11
 $Class: MIND Khopesh
@@ -976,7 +978,7 @@ $Determination: 10
 +Hotkey: 7
 +Group: 0
 +Use Table Score:
-+Score: 400
++Score: 0
 
 $Name: Tartarus		;! Object #13
 $Class: GTT Elysium
@@ -1051,7 +1053,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 1500
++Score: 0
 
 $Name: Hangzhou		;! Object #15
 $Class: UN Beijing
@@ -1097,7 +1099,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 400
++Score: 0
 
 $Name: Shenzhen		;! Object #16
 $Class: UN Beijing
@@ -1142,7 +1144,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 400
++Score: 0
 
 $Name: 31st Naval Division		;! Object #17
 $Class: Commander
@@ -1207,7 +1209,7 @@ $Determination: 10
 +Orders Accepted: 33023		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 100
++Score: 0
 
 $Name: Delta 2		;! Object #19
 $Class: UN Wraith
@@ -1238,7 +1240,7 @@ $Determination: 10
 +Orders Accepted: 33023		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 100
++Score: 0
 
 $Name: Sagittarius 1		;! Object #20
 $Class: MIND Thoth
@@ -1265,7 +1267,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Charlie 1		;! Object #21
 $Class: UN Claymore
@@ -1316,7 +1318,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Charlie 2		;! Object #23
 $Class: UN Claymore
@@ -1500,7 +1502,7 @@ $Determination: 10
 +Orders Accepted: 33023		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Foxtrot 2		;! Object #30
 $Class: UN Leto
@@ -1525,7 +1527,7 @@ $Determination: 10
 +Orders Accepted: 33023		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Gemini 1		;! Object #31
 $Class: MIND Osiris
@@ -1557,7 +1559,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 8
++Score: 0
 
 $Name: Gemini 2		;! Object #32
 $Class: MIND Osiris
@@ -1589,7 +1591,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 8
++Score: 0
 
 $Name: Gemini 3		;! Object #33
 $Class: MIND Osiris
@@ -1621,7 +1623,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 8
++Score: 0
 
 $Name: Gemini 4		;! Object #34
 $Class: MIND Osiris
@@ -1653,7 +1655,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 8
++Score: 0
 
 $Name: Aquaris 1		;! Object #35
 $Class: MIND Thoth
@@ -1682,7 +1684,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Aquaris 2		;! Object #36
 $Class: MIND Thoth
@@ -1711,7 +1713,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Aquaris 3		;! Object #37
 $Class: MIND Thoth
@@ -1740,7 +1742,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Aquaris 4		;! Object #38
 $Class: MIND Thoth
@@ -1769,7 +1771,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Aquaris 5		;! Object #39
 $Class: MIND Thoth
@@ -1798,7 +1800,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Taurus 1		;! Object #40
 $Class: MIND Setep
@@ -1809,8 +1811,8 @@ $Orientation:
 	0.000000, 1.000000, 0.000000,
 	0.000000, 0.000000, 1.000000
 $AI Behavior: None
++AI Class: Jouster-Lvl3
 $Cargo 1:  XSTR("Nothing", -1)
-+Initial Velocity: 33
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
@@ -1822,11 +1824,9 @@ $Determination: 10
 +Flags: ( "no-shields" )
 +Flags2: ( )
 +Respawn priority: 0
-+Hotkey: 6
-+Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Taurus 2		;! Object #41
 $Class: MIND Setep
@@ -1837,8 +1837,8 @@ $Orientation:
 	0.000000, 1.000000, 0.000000,
 	0.000000, 0.000000, 1.000000
 $AI Behavior: None
++AI Class: Jouster-Lvl3
 $Cargo 1:  XSTR("Nothing", -1)
-+Initial Velocity: 33
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
@@ -1850,11 +1850,9 @@ $Determination: 10
 +Flags: ( "no-shields" )
 +Flags2: ( )
 +Respawn priority: 0
-+Hotkey: 6
-+Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Amber		;! Object #42
 $Class: UN Strident
@@ -1889,7 +1887,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 200
++Score: 0
 
 $Name: Amber#order		;! Object #43
 $Class: Commander
@@ -1944,7 +1942,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Aries 2		;! Object #45
 $Class: MIND Setep
@@ -1972,7 +1970,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Minya		;! Object #46
 $Class: MIND Cleopatra
@@ -2009,7 +2007,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 500
++Score: 0
 
 $Name: Sohag		;! Object #47
 $Class: MIND Cleopatra
@@ -2046,7 +2044,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 500
++Score: 0
 
 $Name: Sagittarius 3		;! Object #48
 $Class: MIND Thoth
@@ -2073,7 +2071,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Sagittarius 4		;! Object #49
 $Class: MIND Thoth
@@ -2100,7 +2098,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Sagittarius 5		;! Object #50
 $Class: MIND Thoth
@@ -2127,7 +2125,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Capricorn 1		;! Object #51
 $Class: MIND Serapis
@@ -2154,7 +2152,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 12
++Score: 0
 
 $Name: Capricorn 2		;! Object #52
 $Class: MIND Serapis
@@ -2181,7 +2179,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 12
++Score: 0
 
 $Name: Capricorn 3		;! Object #53
 $Class: MIND Serapis
@@ -2208,7 +2206,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 12
++Score: 0
 
 $Name: Capricorn 4		;! Object #54
 $Class: MIND Serapis
@@ -2235,7 +2233,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 12
++Score: 0
 
 $Name: Capricorn 5		;! Object #55
 $Class: MIND Serapis
@@ -2262,7 +2260,7 @@ $Determination: 10
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 12
++Score: 0
 
 $Name: Charlie 3		;! Object #56
 $Class: UN Claymore
@@ -2288,7 +2286,7 @@ $Determination: 10
 +Orders Accepted: 33023		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 $Name: Foxtrot 3		;! Object #57
 $Class: UN Leto
@@ -2313,7 +2311,7 @@ $Determination: 10
 +Orders Accepted: 33023		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
-+Score: 10
++Score: 0
 
 #Wings		;! 11 total
 
@@ -2381,6 +2379,7 @@ $Ships: (		;! 5 total
 	"Scorpio 5"
 )
 $AI Goals: ( goals ( ai-guard "Snaaib" 50 ) ( ai-guard "Minya" 50 ) ( ai-guard "Sohag" 50 ) )
++Hotkey: 3
 +Flags: ( )
 
 $Name: Aquaris
@@ -2400,6 +2399,7 @@ $Ships: (		;! 5 total
 	"Aquaris 5"
 )
 $AI Goals: ( goals ( ai-guard-wing "Gemini" 67 ) ( ai-chase-any 50 ) )
++Hotkey: 3
 +Flags: ( )
 
 $Name: Gemini
@@ -2418,6 +2418,7 @@ $Ships: (		;! 4 total
 	"Gemini 4"
 )
 $AI Goals: ( goals ( ai-chase "Magellan" 70 ) ( ai-chase-any 50 ) )
++Hotkey: 5
 +Flags: ( )
 
 $Name: Foxtrot
@@ -2442,7 +2443,7 @@ $Wave Threshold: 0
 $Special Ship: 0		;! Taurus 1
 
 $Arrival Location: Near Ship
-+Arrival Distance: 13
++Arrival Distance: 25
 $Arrival Anchor: pocket three
 $Arrival Cue: ( is-event-true-delay 
    "launch pocket 3" 
@@ -2455,7 +2456,8 @@ $Ships: (		;! 2 total
 	"Taurus 2"
 )
 $AI Goals: ( goals ( ai-chase "Polydeuces# 1" 60 ) ( ai-chase "Magellan" 50 ) )
-+Flags: ( )
++Hotkey: 6
++Flags: ( "no-dynamic" )
 
 $Name: Aries
 $Waves: 1
@@ -2463,7 +2465,7 @@ $Wave Threshold: 0
 $Special Ship: 0		;! Aries 1
 
 $Arrival Location: Near Ship
-+Arrival Distance: 13
++Arrival Distance: 25
 $Arrival Anchor: pocket three
 $Arrival Cue: ( is-event-true-delay 
    "launch pocket 3" 
@@ -2476,7 +2478,8 @@ $Ships: (		;! 2 total
 	"Aries 2"
 )
 $AI Goals: ( goals ( ai-chase "Varaha" 70 ) ( ai-chase-wing "Polydeuces#" 60 ) ( ai-chase "Magellan" 50 ) )
-+Flags: ( )
++Hotkey: 6
++Flags: ( "no-dynamic" )
 
 $Name: Sagittarius
 $Waves: 1
@@ -2494,6 +2497,7 @@ $Ships: (		;! 5 total
 	"Sagittarius 4"
 	"Sagittarius 5"
 )
++Hotkey: 3
 +Flags: ( )
 
 $Name: Capricorn
@@ -2513,9 +2517,10 @@ $Ships: (		;! 5 total
 	"Capricorn 5"
 )
 $AI Goals: ( goals ( ai-guard "Snaaib" 50 ) ( ai-guard "Minya" 50 ) ( ai-guard "Sohag" 50 ) )
++Hotkey: 3
 +Flags: ( )
 
-#Events		;! 57 total
+#Events		;! 128 total
 
 $Formula: ( when ( true ) ( do-nothing ) ) 
 +Name: --CSC script--
@@ -2545,7 +2550,7 @@ $Formula: ( when
 $Formula: ( every-time 
    ( not 
       ( string-equals 
-         "@PlayerTarget[Battuta]" 
+         "@PlayerTarget[Johnny boy]" 
          "null" 
       )
    )
@@ -2563,7 +2568,7 @@ $Formula: ( every-time
          )
          ( if-then-else 
             ( is-in-box 
-               "@PlayerTarget[Battuta]" 
+               "@PlayerTarget[Johnny boy]" 
                -5000 
                1 
                -5000 
@@ -2579,7 +2584,7 @@ $Formula: ( every-time
             ( if-then-else 
                ( > 
                   ( distance-ship-subsystem 
-                     "@PlayerTarget[Battuta]" 
+                     "@PlayerTarget[Johnny boy]" 
                      "Polydeuces# 1" 
                      "turret02" 
                   )
@@ -2605,7 +2610,7 @@ $Formula: ( every-time
 $Formula: ( every-time 
    ( string-equals 
       "null" 
-      "@PlayerTarget[Battuta]" 
+      "@PlayerTarget[Johnny boy]" 
    )
    ( hud-set-message 
       "TLSTaccomA" 
@@ -2661,7 +2666,7 @@ $Formula: ( when
 $Formula: ( every-time 
    ( not 
       ( string-equals 
-         "@PlayerTarget[Battuta]" 
+         "@PlayerTarget[Johnny boy]" 
          "null" 
       )
    )
@@ -2679,7 +2684,7 @@ $Formula: ( every-time
          )
          ( if-then-else 
             ( is-in-box 
-               "@PlayerTarget[Battuta]" 
+               "@PlayerTarget[Johnny boy]" 
                -1 
                5000 
                -5000 
@@ -2695,7 +2700,7 @@ $Formula: ( every-time
             ( if-then-else 
                ( > 
                   ( distance-ship-subsystem 
-                     "@PlayerTarget[Battuta]" 
+                     "@PlayerTarget[Johnny boy]" 
                      "Polydeuces# 1" 
                      "turret01" 
                   )
@@ -3664,13 +3669,6 @@ $Formula: ( when
       ( get-throttle-speed "Polydeuces# 1" ) 
    )
    ( modify-variable 
-      @WarpCancelSW[0] 
-      ( get-secondary-ammo 
-         "Polydeuces# 1" 
-         1 
-      )
-   )
-   ( modify-variable 
       @WarpCancelETSE[0] 
       ( get-ets-value 
          "Engine" 
@@ -4345,7 +4343,6 @@ $Formula: ( when
 +Repeat Count: 1
 +Interval: 1
 
-
 $Formula: ( when ( true ) ( do-nothing ) ) 
 +Name: --command hacks--
 +Repeat Count: 1
@@ -4364,7 +4361,7 @@ $Formula: ( when
    )
    ( modify-variable 
       "@31st-Target[Snaiib]" 
-      "@PlayerTarget[Battuta]" 
+      "@PlayerTarget[Johnny boy]" 
    )
    ( add-goal 
       "Hangzhou" 
@@ -4817,7 +4814,7 @@ $Formula: ( when
    ( clear-goals "Amber" ) 
    ( modify-variable 
       "@Amber-target[Snaaib]" 
-      "@PlayerTarget[Battuta]" 
+      "@PlayerTarget[Johnny boy]" 
    )
    ( add-goal 
       "Amber" 
@@ -5350,7 +5347,7 @@ $Formula: ( when ( true ) ( end-mission ) )
 +Chained: 5
 
 $Formula: ( when ( true ) ( do-nothing ) ) 
-+Name: --snaaib stage--
++Name: --first pocket--
 +Repeat Count: 1
 +Interval: 1
 
@@ -5548,10 +5545,7 @@ $Formula: ( when
 
 $Formula: ( when 
    ( true ) 
-   ( modify-variable 
-      @WarpStatus[888] 
-      "0" 
-   )
+   ( modify-variable @WarpStatus[-1] "0" ) 
    ( send-message 
       "#Engineering" 
       "High" 
@@ -6057,6 +6051,11 @@ $Formula: ( when
 +Repeat Count: 1
 +Interval: 1
 
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: --second pocket--
++Repeat Count: 1
++Interval: 1
+
 $Formula: ( when 
    ( and 
       ( is-event-true-delay 
@@ -6353,17 +6352,27 @@ $Formula: ( when
 +Repeat Count: 1
 +Interval: 1
 
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: --third pocket--
++Repeat Count: 1
++Interval: 1
+
 $Formula: ( when 
-   ( is-event-true-delay 
-      "end pocket 1" 
-      23 
+   ( and 
+      ( is-event-true-delay 
+         "end pocket 1" 
+         23 
+      )
+      ( is-event-true-delay 
+         "end pocket 2" 
+         15 
+      )
    )
    ( do-nothing ) 
 )
 +Name: pocket 3 cue
 +Repeat Count: 1
 +Interval: 1
-+Chained: 0
 
 $Formula: ( when 
    ( true ) 
@@ -6522,6 +6531,11 @@ $Formula: ( when
    )
 )
 +Name: put 31st somewhere
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when ( true ) ( do-nothing ) ) 
++Name: --deaths and fails--
 +Repeat Count: 1
 +Interval: 1
 
@@ -7042,7 +7056,7 @@ $end_multi_text
 
 $Name: Mag: 3rd pocket
 $Team: -1
-$MessageNew:  XSTR("An enemy battlecruiser has entered the field! It's heading straight for us! Polydeuces, intercept!", -1)
+$MessageNew:  XSTR("An enemy battlecruiser has entered the field! It's heading straight for us! All friendly ships, engage that battlecruiser!", -1)
 $end_multi_text
 +AVI Name: Head-CM1
 +Wave Name: messagebeep.ogg
@@ -7088,8 +7102,8 @@ $Maximum: 4000.000000, 4000.000000, 4000.000000
 #Music
 
 $Event Music: None
-$Briefing Music: SkillAndStrength
-$Substitute Briefing Music: SkillAndStrength
+$Briefing Music: EmergencyProcedure
+$Substitute Briefing Music: EmergencyProcedure
 
 #End
 

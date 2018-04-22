@@ -75,10 +75,10 @@ $multi allow empty secondaries:                          YES
 $allow turrets target weapons freely:                    NO
 $use only single fov for turrets:                        NO
 $allow vertical dodge:                                   YES
-$force beam turrets to use normal fov:                   NO
+$force beam turrets to use normal fov:                   YES
 $fix AI class bug:                                       YES
 $turrets ignore targets radius in range checks:          NO
-$no extra collision avoidance vs player:                 YES
+$no extra collision avoidance vs player:                 NO
 $perform fewer checks for death screams:                 NO
 $advanced turret fov edge checks:                        NO
 $require turrets to have target in fov:                  NO
@@ -86,9 +86,12 @@ $all ships manage shields:                               NO
 $ai aims from ship center:                               NO
 $allow primary link at mission start:                    NO
 $allow beams to damage bombs:                            YES
-$disable weapon damage scaling for player:               YES
+$disable weapon damage scaling for player:               NO
 $countermeasures affect aspect seekers:                  YES
 $ai path mode:                                           normal
+$aspect bomb invulnerability fix:                        YES
+$glide decay requires thrust:                            NO
+$ai can slow down when attacking big ships:              YES
 
 
 $Profile Name:                                 NOT RETAIL
@@ -164,10 +167,10 @@ $multi allow empty secondaries:                          YES
 $allow turrets target weapons freely:                    NO
 $use only single fov for turrets:                        NO
 $allow vertical dodge:                                   YES
-$force beam turrets to use normal fov:                   NO
+$force beam turrets to use normal fov:                   YES
 $fix AI class bug:                                       YES
 $turrets ignore targets radius in range checks:          NO
-$no extra collision avoidance vs player:                 YES
+$no extra collision avoidance vs player:                 NO
 $perform fewer checks for death screams:                 NO
 $advanced turret fov edge checks:                        NO
 $require turrets to have target in fov:                  NO
@@ -178,5 +181,8 @@ $allow beams to damage bombs:                            YES
 $disable weapon damage scaling for player:               NO
 $countermeasures affect aspect seekers:                  NO
 $ai path mode:                                           normal
+$aspect bomb invulnerability fix:                        YES
+$glide decay requires thrust:                            NO
+$ai can slow down when attacking big ships:              YES
 
 #End

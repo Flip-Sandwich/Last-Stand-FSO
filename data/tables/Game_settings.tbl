@@ -1,3 +1,9 @@
+	#GAME SETTINGS
+	$Minimum:
+	+Major: 3
+	+Minor: 8
+	+Build: 1
+
 	#CAMPAIGN SETTINGS
 	$Default Campaign File Name: TheLastStand.fc2
 

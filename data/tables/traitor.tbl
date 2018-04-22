@@ -12,6 +12,6 @@ $end_multi_text
 $voice: none.wav
 
 $Recommendation text:
-   XSTR("Friendly ships are not valid targets... but you knew that already, right?", -1)
+   XSTR("Friendly ships are not valid targets... but besides that, how did this even happen?", -1)
 
 $end_multi_text

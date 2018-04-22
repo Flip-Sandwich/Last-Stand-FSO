@@ -78,7 +78,7 @@ $Name:		Endgame
 $Filename:	Endgame.ogg
 
 $Name:		Aquitaine
-$Filename:	Galatea.ogg
+$Filename:	SolarEchoes.ogg
 
 $Name:		incursion
 $Filename:	incursion.ogg
@@ -91,6 +91,9 @@ $Filename:	LifeWillContinue.ogg
 
 $Name:		SkillAndStrength
 $Filename:	SkillAndStrength.ogg
+
+$Name:		EmergencyProcedure
+$Filename:	EmergencyProcedure.ogg
 
 $Name:		Inabapride
 $Filename:	Inabapride.ogg
