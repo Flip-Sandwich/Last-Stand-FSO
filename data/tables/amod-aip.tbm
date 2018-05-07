@@ -81,10 +81,10 @@ $turrets ignore targets radius in range checks:          NO
 $no extra collision avoidance vs player:                 NO
 $perform fewer checks for death screams:                 NO
 $advanced turret fov edge checks:                        NO
-$require turrets to have target in fov:                  NO
-$all ships manage shields:                               NO
+$require turrets to have target in fov:                  YES
+$all ships manage shields:                               YES
 $ai aims from ship center:                               NO
-$allow primary link at mission start:                    NO
+$allow primary link at mission start:                    YES
 $allow beams to damage bombs:                            YES
 $disable weapon damage scaling for player:               NO
 $countermeasures affect aspect seekers:                  YES
@@ -173,10 +173,10 @@ $turrets ignore targets radius in range checks:          NO
 $no extra collision avoidance vs player:                 NO
 $perform fewer checks for death screams:                 NO
 $advanced turret fov edge checks:                        NO
-$require turrets to have target in fov:                  NO
+$require turrets to have target in fov:                  YES
 $all ships manage shields:                               YES
 $ai aims from ship center:                               NO
-$allow primary link at mission start:                    NO
+$allow primary link at mission start:                    YES
 $allow beams to damage bombs:                            YES
 $disable weapon damage scaling for player:               NO
 $countermeasures affect aspect seekers:                  NO

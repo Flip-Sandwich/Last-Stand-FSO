@@ -4,7 +4,7 @@ $Version: 0.10
 $Name:  XSTR("The Great Escape", -1)
 $Author: [`_`]
 $Created: 07/21/16 at 11:05:45
-$Modified: 04/14/18 at 09:06:35
+$Modified: 05/08/18 at 08:01:36
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -24,7 +24,7 @@ $end_multi_text
 
 +Viewer pos: 3984.406738, 2221.288818, -4995.686523
 +Viewer orient:
-	0.762802, -0.000900, 0.646631,
+	0.762802, -0.000899, 0.646631,
 	-0.172412, 0.963515, 0.204727,
 	-0.623223, -0.267653, 0.734816
 
@@ -1428,7 +1428,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Pisces 1		;! Object #24
-$Class: MIND Archanes
+$Class: MIND Thoth
 $Team: Hostile
 $Location: -528.074036, 6421.543457, -1012.810486
 $Orientation:
@@ -1454,7 +1454,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Pisces 2		;! Object #25
-$Class: MIND Archanes
+$Class: MIND Thoth
 $Team: Hostile
 $Location: -523.332275, 6421.543457, -916.118103
 $Orientation:
@@ -1480,7 +1480,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Pisces 3		;! Object #26
-$Class: MIND Archanes
+$Class: MIND Thoth
 $Team: Hostile
 $Location: -483.986389, 6421.543457, -982.223450
 $Orientation:
@@ -1506,7 +1506,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Pisces 4		;! Object #27
-$Class: MIND Archanes
+$Class: MIND Thoth
 $Team: Hostile
 $Location: -467.034302, 6421.543457, -917.972229
 $Orientation:
@@ -1532,7 +1532,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Pisces 5		;! Object #28
-$Class: MIND Archanes
+$Class: MIND Thoth
 $Team: Hostile
 $Location: -446.949951, 6421.543457, -957.054382
 $Orientation:
@@ -1558,7 +1558,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Vulpex 1		;! Object #29
-$Class: MIND Silenus
+$Class: MIND Serapis
 $Team: Hostile
 $Location: 4257.551270, -0.004395, 1152.805298
 $Orientation:
@@ -1584,7 +1584,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Vulpex 2		;! Object #30
-$Class: MIND Silenus
+$Class: MIND Serapis
 $Team: Hostile
 $Location: 4317.531738, -0.004395, 1086.900146
 $Orientation:
@@ -1610,7 +1610,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Vulpex 3		;! Object #31
-$Class: MIND Silenus
+$Class: MIND Serapis
 $Team: Hostile
 $Location: 4216.914063, 0.000305, 1020.349792
 $Orientation:
@@ -1636,7 +1636,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Vulpex 4		;! Object #32
-$Class: MIND Silenus
+$Class: MIND Serapis
 $Team: Hostile
 $Location: 4281.362793, 0.000305, 1013.031372
 $Orientation:
@@ -1662,7 +1662,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Vulpex 5		;! Object #33
-$Class: MIND Silenus
+$Class: MIND Serapis
 $Team: Hostile
 $Location: 4218.740723, 0.000305, 1061.940063
 $Orientation:
@@ -1837,7 +1837,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Leo 1		;! Object #39
-$Class: MIND Zakros
+$Class: MIND Osiris
 $Team: Hostile
 $Location: -2459.342773, -0.001221, 705.135132
 $Orientation:
@@ -1849,7 +1849,8 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
-+Subsystem: turret01a
++Subsystem: Turret01
++Subsystem: Turret02
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -1863,7 +1864,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Leo 2		;! Object #40
-$Class: MIND Zakros
+$Class: MIND Osiris
 $Team: Hostile
 $Location: -2570.706787, -0.001221, 787.819336
 $Orientation:
@@ -1875,7 +1876,8 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
-+Subsystem: turret01a
++Subsystem: Turret01
++Subsystem: Turret02
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -1889,7 +1891,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Leo 3		;! Object #41
-$Class: MIND Zakros
+$Class: MIND Osiris
 $Team: Hostile
 $Location: -2621.025879, -0.001221, 656.384521
 $Orientation:
@@ -1901,7 +1903,8 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
-+Subsystem: turret01a
++Subsystem: Turret01
++Subsystem: Turret02
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -1915,7 +1918,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Leo 4		;! Object #42
-$Class: MIND Zakros
+$Class: MIND Osiris
 $Team: Hostile
 $Location: -2675.135742, -0.001221, 740.777344
 $Orientation:
@@ -1927,7 +1930,8 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
-+Subsystem: turret01a
++Subsystem: Turret01
++Subsystem: Turret02
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -1941,7 +1945,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Leo 5		;! Object #43
-$Class: MIND Zakros
+$Class: MIND Osiris
 $Team: Hostile
 $Location: -2540.107422, -0.001221, 713.625854
 $Orientation:
@@ -1953,7 +1957,8 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
-+Subsystem: turret01a
++Subsystem: Turret01
++Subsystem: Turret02
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -4532,7 +4537,7 @@ $Formula: ( when
       ( is-destroyed-delay 0 "Sydney" ) 
    )
    ( show-subtitle-text 
-      "Faield" 
+      "Mission Failed" 
       50 
       -20 
       ( true ) 
@@ -4545,7 +4550,7 @@ $Formula: ( when
 +Repeat Count: 1
 +Interval: 1
 
-$Formula: ( when ( true ) ( end-mission ) ) 
+$Formula: ( when ( true ) ( end-mis sion ) ) 
 +Name: You fail
 +Repeat Count: 1
 +Interval: 1

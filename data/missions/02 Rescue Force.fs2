@@ -5327,7 +5327,7 @@ $Formula: ( when
 $Formula: ( when 
    ( is-destroyed-delay 0 "Magellan" ) 
    ( show-subtitle-text 
-      "System: Failed" 
+      "Mission Failed" 
       50 
       -20 
       ( true ) 
