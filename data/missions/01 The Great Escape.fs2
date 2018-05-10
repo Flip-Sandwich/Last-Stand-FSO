@@ -113,7 +113,7 @@ $Formula: ( true )
 $start_icon
 $type: 19
 $team: Hostile
-$class: MIND Newet
+$class: MIND Triakidae
 $pos: 161.104431, -0.002167, 0.000000
 $label:  XSTR("MIND Fleet", -1)
 +id: 1
@@ -161,7 +161,7 @@ $end_icon
 $end_stage
 $start_stage
 $multi_text
- XSTR("Due to the overwhelming force that the $r MIND has brought into the system to conduct their assault with, we have begun the evacuation of our remaining outer system stations and the withdrawal to the inner system fortresses. You are to oversee the evacuation of $b Leonov $b Station, situated at $v Saturn and defend against any possible $r MIND offensive.", -1)
+ XSTR("Due to the overwhelming force that the $r MIND has brought into the system to conduct their assault with, we have begun the evacuation of our Peledaining outer system stations and the withdrawal to the inner system fortresses. You are to oversee the evacuation of $b Leonov $b Station, situated at $v Saturn and defend against any possible $r MIND offensive.", -1)
 $end_multi_text
 $voice: none.wav
 $camera_pos: 0.000000, 500.000000, 0.000000
@@ -289,7 +289,7 @@ $end_icon
 $start_icon
 $type: 19
 $team: Hostile
-$class: MIND Khopesh
+$class: MIND Sphyrnidae
 $pos: 223.664047, -0.002319, 65.488434
 $label:  XSTR("MIND Forces", -1)
 +id: 9
@@ -301,7 +301,7 @@ $end_icon
 $end_stage
 $start_stage
 $multi_text
- XSTR("Should the need arise, we have two remaining wings of $b Lancer-type fighters still stationed at $b Leonov $b Station. We will launch them as nessecary to cover the evacuation.", -1)
+ XSTR("Should the need arise, we have two Peledaining wings of $b Lancer-type fighters still stationed at $b Leonov $b Station. We will launch them as nessecary to cover the evacuation.", -1)
 $end_multi_text
 $voice: none.wav
 $camera_pos: 0.000000, 500.000000, 0.000000
@@ -353,7 +353,7 @@ $end_icon
 $start_icon
 $type: 19
 $team: Hostile
-$class: MIND Khopesh
+$class: MIND Sphyrnidae
 $pos: 223.664047, -0.002319, 65.488434
 $label:  XSTR("MIND Forces", -1)
 +id: 9
@@ -387,17 +387,17 @@ $Formula: ( and
       "Polydeuces# 1" 
    )
    ( not 
-      ( is-destroyed-delay 0 "Memphis" ) 
+      ( is-destroyed-delay 0 "Galeatus" ) 
    )
    ( not 
       ( or 
-         ( has-arrived-delay 0 "Merneptah" ) 
-         ( has-arrived-delay 0 "Rimush" ) 
+         ( has-arrived-delay 0 "Rochei" ) 
+         ( has-arrived-delay 0 "Thazard" ) 
       )
    )
 )
 $Multi text
-    XSTR("The Polydeuces was destroyed in an engagement against the Memphis and its escorting fighter wing.", -1)
+    XSTR("The Polydeuces was destroyed in an engagement against the Galeatus and its escorting fighter wing.", -1)
 $end_multi_text
 $Voice: none.wav
 $Recommendation text:
@@ -416,14 +416,14 @@ $Multi text
 $end_multi_text
 $Voice: none.wav
 $Recommendation text:
-    XSTR("Control your heat levels to prevent damage to your ship from overheating. Consider not disabling automatic shutdown, as when shutdown you dissipate heat significantly faster. Remember the main sources of heat and limit the heat generation.", -1)
+    XSTR("Control your heat levels to prevent damage to your ship from overheating. Consider not disabling automatic shutdown, as when shutdown you dissipate heat significantly faster. Peledember the main sources of heat and limit the heat generation.", -1)
 $end_multi_text
 
 $Formula: ( and 
    ( has-arrived-delay 
       0 
-      "Rimush" 
-      "Merneptah" 
+      "Thazard" 
+      "Rochei" 
    )
    ( not ( has-arrived-delay 0 "Nebty" ) ) 
    ( is-destroyed-delay 
@@ -432,11 +432,11 @@ $Formula: ( and
    )
 )
 $Multi text
-    XSTR("The Polydeuces was destroyed in an engagement against two Khopesh cruisers, the Merneptah and Rimush.", -1)
+    XSTR("The Polydeuces was destroyed in an engagement against two Sphyrnidae cruisers, the Rochei and Thazard.", -1)
 $end_multi_text
 $Voice: none.wav
 $Recommendation text:
-    XSTR("Use Eagle SSMs and railguns to deal damage at long range, and potentially disable a tri-beam cannon. Focus fire on the Merneptah, as it will attack you first.", -1)
+    XSTR("Use Eagle SSMs and railguns to deal damage at long range, and potentially disable a tri-beam cannon. Focus fire on the Rochei, as it will attack you first.", -1)
 $end_multi_text
 
 $Formula: ( and 
@@ -462,14 +462,14 @@ $Formula: ( and
       0 
       "Polydeuces# 1" 
    )
-   ( has-arrived-delay 0 "Pharaoh" ) 
+   ( has-arrived-delay 0 "Carcharodon" ) 
 )
 $Multi text
-    XSTR("The Polydeuces was destroyed by the enemy destroyer Pharaoh in the final stages of the evacuation of Leonov Station.", -1)
+    XSTR("The Polydeuces was destroyed by the enemy destroyer Carcharodon in the final stages of the evacuation of Leonov Station.", -1)
 $end_multi_text
 $Voice: none.wav
 $Recommendation text:
-    XSTR("Use the warp drive to quickly jump underneath the Pharaoh, and use your afterburners to escape its main gun field of fire when it turns to attack you. Trantor munitions are effective against enemy strikecraft.", -1)
+    XSTR("Use the warp drive to quickly jump underneath the Carcharodon, and use your afterburners to escape its main gun field of fire when it turns to attack you. Trantor munitions are effective against enemy strikecraft.", -1)
 $end_multi_text
 
 $Formula: ( and 
@@ -503,7 +503,7 @@ $Formula: ( is-goal-true-delay
    0 
 )
 $Multi text
-    XSTR("Good work protecting the evacuation of Leonov station. The evacuation of our remaining outer system assets proceeds smoothly. The remnants of the 18th TF have already retreated to the Mars fortress, Artemisia station, and we are rebasing you there as well. We will repair and resupply your ship while there to prepare for the next engagement, as we expect the enemy to continue their assault.", -1)
+    XSTR("Good work protecting the evacuation of Leonov station. The evacuation of our Peledaining outer system assets proceeds smoothly. The Pelednants of the 18th TF have already retreated to the Mars fortress, Artemisia station, and we are rebasing you there as well. We will repair and resupply your ship while there to prepare for the next engagement, as we expect the enemy to continue their assault.", -1)
 $end_multi_text
 $Voice: none.wav
 $Recommendation text:
@@ -765,8 +765,8 @@ $Dockee Point: Cargo Dockpoint
 +Use Table Score:
 +Score: 0
 
-$Name: Pharaoh		;! Object #5
-$Class: MIND Pharaoh
+$Name: Carcharodon		;! Object #5
+$Class: MIND Carcharodon
 $Team: Hostile
 $Location: 6679.318359, -3940.699707, -3188.277832
 $Orientation:
@@ -816,13 +816,13 @@ $Arrival Location: Hyperspace
 $Arrival Cue: ( is-destroyed-delay 
    15 
    "Nebty" 
-   "Merneptah" 
-   "Rimush" 
-   "Memphis" 
+   "Rochei" 
+   "Thazard" 
+   "Galeatus" 
 )
 $Departure Location: Hyperspace
 $Departure Cue: ( or 
-   ( <= ( hits-left "Pharaoh" ) 17 ) 
+   ( <= ( hits-left "Carcharodon" ) 17 ) 
    ( is-destroyed-delay 15 "Leonov" ) 
 )
 $Determination: 10
@@ -917,25 +917,25 @@ $Arrival Cue: ( and
    ( or 
       ( and 
          ( <= 
-            ( hits-left "Merneptah" ) 
+            ( hits-left "Rochei" ) 
             ( rand 20 30 ) 
          )
-         ( is-destroyed-delay 0 "Rimush" ) 
+         ( is-destroyed-delay 0 "Thazard" ) 
       )
       ( and 
          ( <= 
-            ( hits-left "Rimush" ) 
+            ( hits-left "Thazard" ) 
             ( rand 20 30 ) 
          )
-         ( is-destroyed-delay 0 "Merneptah" ) 
+         ( is-destroyed-delay 0 "Rochei" ) 
       )
       ( is-destroyed-delay 
          0 
-         "Rimush" 
-         "Merneptah" 
+         "Thazard" 
+         "Rochei" 
       )
    )
-   ( is-destroyed-delay 0 "Memphis" ) 
+   ( is-destroyed-delay 0 "Galeatus" ) 
 )
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
@@ -950,8 +950,8 @@ $Determination: 10
 +Use Table Score:
 +Score: 0
 
-$Name: Rimush		;! Object #9
-$Class: MIND Khopesh
+$Name: Thazard		;! Object #9
+$Class: MIND Sphyrnidae
 $Team: Hostile
 $Location: 2825.818848, 5837.111328, -3935.827637
 $Orientation:
@@ -960,7 +960,7 @@ $Orientation:
 	-0.166862, -0.889516, 0.425344
 $AI Behavior: None
 +AI Class: BP2-Captain
-$AI Goals: ( goals ( ai-waypoints-once "Rimush path" 50 ) )
+$AI Goals: ( goals ( ai-waypoints-once "Thazard path" 50 ) )
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
 +Initial Shields: 100
@@ -985,7 +985,7 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Subsystem: turret18-base
 $Arrival Location: Hyperspace
 +Arrival Delay: 5
-$Arrival Cue: ( is-event-true-delay "Khopesh cue" 0 ) 
+$Arrival Cue: ( is-event-true-delay "Sphyrnidae cue" 0 ) 
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Determination: 10
@@ -999,8 +999,8 @@ $Determination: 10
 +Use Table Score:
 +Score: 0
 
-$Name: Merneptah		;! Object #10
-$Class: MIND Khopesh
+$Name: Rochei		;! Object #10
+$Class: MIND Sphyrnidae
 $Team: Hostile
 $Location: 3668.339844, 5880.311523, -3137.725098
 $Orientation:
@@ -1034,7 +1034,7 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Subsystem: turret18-base
 $Arrival Location: Hyperspace
 +Arrival Delay: 5
-$Arrival Cue: ( is-event-true-delay "Khopesh cue" 0 ) 
+$Arrival Cue: ( is-event-true-delay "Sphyrnidae cue" 0 ) 
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Determination: 10
@@ -1263,8 +1263,8 @@ $Determination: 10
 +Use Table Score:
 +Score: 0
 
-$Name: Memphis		;! Object #19
-$Class: MIND Newet
+$Name: Galeatus		;! Object #19
+$Class: MIND Triakidae
 $Team: Hostile
 $Location: -443.815674, 5903.979980, -1111.286377
 $Orientation:
@@ -1273,7 +1273,7 @@ $Orientation:
 	0.146661, -0.986877, 0.067564
 $AI Behavior: None
 +AI Class: BP2-Captain
-$AI Goals: ( goals ( ai-waypoints-once "Memphis path" 50 ) )
+$AI Goals: ( goals ( ai-waypoints-once "Galeatus path" 50 ) )
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
 +Initial Shields: 100
@@ -1558,7 +1558,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Vulpex 1		;! Object #29
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: 4257.551270, -0.004395, 1152.805298
 $Orientation:
@@ -1584,7 +1584,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Vulpex 2		;! Object #30
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: 4317.531738, -0.004395, 1086.900146
 $Orientation:
@@ -1610,7 +1610,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Vulpex 3		;! Object #31
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: 4216.914063, 0.000305, 1020.349792
 $Orientation:
@@ -1636,7 +1636,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Vulpex 4		;! Object #32
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: 4281.362793, 0.000305, 1013.031372
 $Orientation:
@@ -1662,7 +1662,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Vulpex 5		;! Object #33
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: 4218.740723, 0.000305, 1061.940063
 $Orientation:
@@ -2028,7 +2028,7 @@ $Determination: 10
 +Score: 12
 
 $Name: Taurus 1		;! Object #46
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: -2133.043213, -0.001953, 1789.315674
 $Orientation:
@@ -2056,7 +2056,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Taurus 2		;! Object #47
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: -2105.862793, -0.001953, 1722.461548
 $Orientation:
@@ -2084,7 +2084,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Taurus 3		;! Object #48
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: -2075.592285, -0.001953, 1857.247192
 $Orientation:
@@ -2112,7 +2112,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Taurus 4		;! Object #49
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: -2015.671021, -0.001953, 1762.930664
 $Orientation:
@@ -2140,7 +2140,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Taurus 5		;! Object #50
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: -2011.534058, -0.001953, 1831.478882
 $Orientation:
@@ -2167,8 +2167,8 @@ $Determination: 10
 +Use Table Score:
 +Score: 0
 
-$Name: Menhit		;! Object #51
-$Class: MIND Hemsut
+$Name: Maraenoides		;! Object #51
+$Class: MIND Coregonus
 $Team: Hostile
 $Location: 4274.631348, -0.002686, 681.747314
 $Orientation:
@@ -2213,8 +2213,8 @@ $Determination: 10
 +Use Table Score:
 +Score: 0
 
-$Name: Hemsut		;! Object #52
-$Class: MIND Hemsut
+$Name: Coregonus		;! Object #52
+$Class: MIND Coregonus
 $Team: Hostile
 $Location: 4025.029785, -0.000610, 573.491699
 $Orientation:
@@ -2512,7 +2512,7 @@ $Ships: (		;! 5 total
 	"Pisces 4"
 	"Pisces 5"
 )
-$AI Goals: ( goals ( ai-guard "Memphis" 80 ) )
+$AI Goals: ( goals ( ai-guard "Galeatus" 80 ) )
 +Hotkey: 3
 +Flags: ( )
 
@@ -2537,7 +2537,7 @@ $Ships: (		;! 5 total
 	"Vulpex 4"
 	"Vulpex 5"
 )
-$AI Goals: ( goals ( ai-guard "Menhit" 80 ) ( ai-chase "Savoy" 60 ) ( ai-chase "Leonov" 50 ) ( ai-chase-any 40 ) )
+$AI Goals: ( goals ( ai-guard "Maraenoides" 80 ) ( ai-chase "Savoy" 60 ) ( ai-chase "Leonov" 50 ) ( ai-chase-any 40 ) )
 +Hotkey: 3
 +Flags: ( )
 
@@ -2548,9 +2548,9 @@ $Special Ship: 0		;! Cancer 1
 
 $Arrival Location: Docking Bay
 +Arrival Distance: 0
-$Arrival Anchor: Pharaoh
+$Arrival Anchor: Carcharodon
 $Arrival Cue: ( is-event-true-delay 
-   "Pharaoh annoyed" 
+   "Carcharodon annoyed" 
    2 
 )
 $Departure Location: Hyperspace
@@ -2572,7 +2572,7 @@ $Special Ship: 0		;! Cygnus 1
 
 $Arrival Location: Docking Bay
 +Arrival Distance: 0
-$Arrival Anchor: Pharaoh
+$Arrival Anchor: Carcharodon
 $Arrival Cue: ( has-arrived-delay 15 "Cancer" ) 
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
@@ -2593,8 +2593,8 @@ $Special Ship: 0		;! Leo 1
 
 $Arrival Location: Docking Bay
 +Arrival Distance: 0
-$Arrival Anchor: Pharaoh
-$Arrival Cue: ( has-arrived-delay 12 "Pharaoh" ) 
+$Arrival Anchor: Carcharodon
+$Arrival Cue: ( has-arrived-delay 12 "Carcharodon" ) 
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Ships: (		;! 5 total
@@ -2604,7 +2604,7 @@ $Ships: (		;! 5 total
 	"Leo 4"
 	"Leo 5"
 )
-$AI Goals: ( goals ( ai-guard "Pharaoh" 50 ) )
+$AI Goals: ( goals ( ai-guard "Carcharodon" 50 ) )
 +Hotkey: 5
 +Flags: ( )
 +Wave Delay Min: 10
@@ -3356,13 +3356,13 @@ $Formula: ( when
 
 $Formula: ( when-argument 
    ( any-of 
-      "Pharaoh" 
+      "Carcharodon" 
       "Nebty" 
-      "Merneptah" 
-      "Rimush" 
-      "Memphis" 
-      "Hemsut" 
-      "Menhit" 
+      "Rochei" 
+      "Thazard" 
+      "Galeatus" 
+      "Coregonus" 
+      "Maraenoides" 
    )
    ( and 
       ( targeted "<argument>" ) 
@@ -3431,13 +3431,13 @@ $Formula: ( when
 
 $Formula: ( when-argument 
    ( any-of 
-      "Pharaoh" 
+      "Carcharodon" 
       "Nebty" 
-      "Merneptah" 
-      "Rimush" 
-      "Memphis" 
-      "Hemsut" 
-      "Menhit" 
+      "Rochei" 
+      "Thazard" 
+      "Galeatus" 
+      "Coregonus" 
+      "Maraenoides" 
    )
    ( and 
       ( targeted "<argument>" ) 
@@ -4550,7 +4550,7 @@ $Formula: ( when
 +Repeat Count: 1
 +Interval: 1
 
-$Formula: ( when ( true ) ( end-mis sion ) ) 
+$Formula: ( when ( true ) ( end-mission ) ) 
 +Name: You fail
 +Repeat Count: 1
 +Interval: 1
@@ -4610,7 +4610,7 @@ $Formula: ( when
 +Chained: 1
 
 $Formula: ( when ( true ) ( do-nothing ) ) 
-+Name: --newet stage--
++Name: --Triakidae stage--
 +Repeat Count: 1
 +Interval: 1
 
@@ -4631,22 +4631,22 @@ $Formula: ( when
    ( send-message 
       "Leonov" 
       "High" 
-      "Leonov: Memphis" 
+      "Leonov: Galeatus" 
    )
 )
-+Name: It begins, destroy Memphis
++Name: It begins, destroy Galeatus
 +Repeat Count: 1
 +Interval: 1
 
 $Formula: ( when 
-   ( is-destroyed-delay 0 "Memphis" ) 
+   ( is-destroyed-delay 0 "Galeatus" ) 
    ( do-nothing ) 
 )
-+Name: Destroy Memphis
++Name: Destroy Galeatus
 +Repeat Count: 1
 +Interval: 1
 +Chained: 1
-+Objective:  XSTR("Destroy Memphis", -1)
++Objective:  XSTR("Destroy Galeatus", -1)
 
 $Formula: ( when 
    ( true ) 
@@ -4672,42 +4672,42 @@ $Formula: ( when
       ( is-in-box 
          "Polydeuces# 1" 
          ( get-object-x 
-            "Memphis" 
+            "Galeatus" 
             "<none>" 
             -3000 
             0 
             0 
          )
          ( get-object-x 
-            "Memphis" 
+            "Galeatus" 
             "<none>" 
             3000 
             0 
             0 
          )
          ( get-object-y 
-            "Memphis" 
+            "Galeatus" 
             "<none>" 
             0 
             -4000 
             0 
          )
          ( get-object-y 
-            "Memphis" 
+            "Galeatus" 
             "<none>" 
             0 
             100 
             0 
          )
          ( get-object-z 
-            "Memphis" 
+            "Galeatus" 
             "<none>" 
             0 
             0 
             0 
          )
          ( get-object-z 
-            "Memphis" 
+            "Galeatus" 
             "<none>" 
             0 
             0 
@@ -4715,25 +4715,25 @@ $Formula: ( when
          )
       )
       ( is-event-true-delay 
-         "Memphis breaking" 
+         "Galeatus breaking" 
          0 
       )
    )
    ( ship-rot-maneuver 
-      "Memphis" 
+      "Galeatus" 
       ( rand-multiple 4500 6500 ) 
       0 
       100 
       0 
       ( true ) 
    )
-   ( clear-goals "Memphis" ) 
+   ( clear-goals "Galeatus" ) 
    ( modify-variable 
       @ship-manev-timer[0] 
       6 
    )
    ( ship-lat-maneuver 
-      "Memphis" 
+      "Galeatus" 
       4000 
       0 
       0 
@@ -4741,7 +4741,7 @@ $Formula: ( when
       ( true ) 
    )
 )
-+Name: Memphis fightan pitch
++Name: Galeatus fightan pitch
 +Repeat Count: -1
 +Trigger Count: 9999999
 +Interval: 15
@@ -4751,42 +4751,42 @@ $Formula: ( when
       ( is-in-box 
          "Polydeuces# 1" 
          ( get-object-x 
-            "Memphis" 
+            "Galeatus" 
             "<none>" 
             -3000 
             0 
             0 
          )
          ( get-object-x 
-            "Memphis" 
+            "Galeatus" 
             "<none>" 
             3000 
             0 
             0 
          )
          ( get-object-y 
-            "Memphis" 
+            "Galeatus" 
             "<none>" 
             0 
             -4000 
             0 
          )
          ( get-object-y 
-            "Memphis" 
+            "Galeatus" 
             "<none>" 
             0 
             100 
             0 
          )
          ( get-object-z 
-            "Memphis" 
+            "Galeatus" 
             "<none>" 
             0 
             0 
             -3000 
          )
          ( get-object-z 
-            "Memphis" 
+            "Galeatus" 
             "<none>" 
             0 
             0 
@@ -4794,25 +4794,25 @@ $Formula: ( when
          )
       )
       ( is-event-true-delay 
-         "Memphis breaking" 
+         "Galeatus breaking" 
          0 
       )
    )
    ( ship-rot-maneuver 
-      "Memphis" 
+      "Galeatus" 
       10000 
       0 
       0 
       100 
       ( true ) 
    )
-   ( clear-goals "Memphis" ) 
+   ( clear-goals "Galeatus" ) 
    ( modify-variable 
       @ship-manev-timer[0] 
       10 
    )
    ( ship-lat-maneuver 
-      "Memphis" 
+      "Galeatus" 
       10000 
       0 
       0 
@@ -4820,7 +4820,7 @@ $Formula: ( when
       ( true ) 
    )
 )
-+Name: Memphis fightand bank
++Name: Galeatus fightand bank
 +Repeat Count: -1
 +Trigger Count: 9999999
 +Interval: 15
@@ -4829,10 +4829,10 @@ $Formula: ( when
    ( and 
       ( or 
          ( <= 
-            ( distance "Polydeuces# 1" "Memphis" ) 
+            ( distance "Polydeuces# 1" "Galeatus" ) 
             5000 
          )
-         ( <= ( hits-left "Memphis" ) 95 ) 
+         ( <= ( hits-left "Galeatus" ) 95 ) 
       )
       ( true ) 
    )
@@ -4859,20 +4859,20 @@ $Formula: ( when
 $Formula: ( when 
    ( or 
       ( percent-ships-destroyed 50 "Pisces" ) 
-      ( <= ( hits-left "Memphis" ) 85 ) 
+      ( <= ( hits-left "Galeatus" ) 85 ) 
       ( <= 
-         ( distance "Polydeuces# 1" "Memphis" ) 
+         ( distance "Polydeuces# 1" "Galeatus" ) 
          4000 
       )
    )
    ( send-message 
       "#Tactical" 
       "High" 
-      "Tac: Memphis targeting" 
+      "Tac: Galeatus targeting" 
    )
-   ( clear-goals "Memphis" ) 
+   ( clear-goals "Galeatus" ) 
    ( add-goal 
-      "Memphis" 
+      "Galeatus" 
       ( ai-waypoints "Player down" 89 ) 
    )
    ( training-msg 
@@ -4882,7 +4882,7 @@ $Formula: ( when
       8 
    )
 )
-+Name: Memphis breaking
++Name: Galeatus breaking
 +Repeat Count: 1
 +Interval: 1
 +Chained: 0
@@ -4891,20 +4891,20 @@ $Formula: ( when
    ( and 
       ( = @ship-manev-timer[0] 0 ) 
       ( is-event-true-delay 
-         "Memphis breaking" 
+         "Galeatus breaking" 
          0 
       )
    )
    ( add-goal 
-      "Memphis" 
+      "Galeatus" 
       ( ai-waypoints "Player down" 89 ) 
    )
    ( add-goal 
-      "Pharaoh" 
+      "Carcharodon" 
       ( ai-waypoints-once "Pharah path" 89 ) 
    )
 )
-+Name: memphis pharaoh fioght
++Name: Galeatus Carcharodon fioght
 +Repeat Count: -1
 +Trigger Count: 999999
 +Interval: 1
@@ -4953,7 +4953,7 @@ $Formula: ( when
    ( send-message-list 
       "Savoy" 
       "High" 
-      "Savoy: Seteps" 
+      "Savoy: Pristidaes" 
       0 
       "#Tactical" 
       "High" 
@@ -4968,8 +4968,8 @@ $Formula: ( when
 $Formula: ( when 
    ( is-destroyed-delay 
       0 
-      "Menhit" 
-      "Hemsut" 
+      "Maraenoides" 
+      "Coregonus" 
    )
    ( do-nothing ) 
 )
@@ -4983,7 +4983,7 @@ $Formula: ( when
 $Formula: ( when 
    ( or 
       ( <= 
-         ( hits-left "Memphis" ) 
+         ( hits-left "Galeatus" ) 
          ( rand 60 75 ) 
       )
       ( >= ( mission-time ) ( rand 45 55 ) ) 
@@ -5072,10 +5072,10 @@ $Formula: ( when
 
 $Formula: ( when 
    ( and 
-      ( is-destroyed-delay 22 "Memphis" ) 
+      ( is-destroyed-delay 22 "Galeatus" ) 
       ( or 
-         ( is-destroyed-delay 22 "Rimush" ) 
-         ( is-destroyed-delay 22 "Merneptah" ) 
+         ( is-destroyed-delay 22 "Thazard" ) 
+         ( is-destroyed-delay 22 "Rochei" ) 
       )
    )
    ( add-goal 
@@ -5123,37 +5123,37 @@ $Formula: ( when
 +Interval: 1
 
 $Formula: ( when ( true ) ( do-nothing ) ) 
-+Name: --khopesh stage--
++Name: --Sphyrnidae stage--
 +Repeat Count: 1
 +Interval: 1
 
 $Formula: ( when 
    ( and 
-      ( is-destroyed-delay 20 "Memphis" ) 
+      ( is-destroyed-delay 20 "Galeatus" ) 
       ( or 
-         ( is-destroyed-delay 20 "Menhit" ) 
+         ( is-destroyed-delay 20 "Maraenoides" ) 
          ( destroyed-or-departed-delay 
             10 
             "Savoy" 
          )
-         ( is-destroyed-delay 20 "Hemsut" ) 
+         ( is-destroyed-delay 20 "Coregonus" ) 
       )
    )
    ( do-nothing ) 
 )
-+Name: Khopesh cue
++Name: Sphyrnidae cue
 +Repeat Count: 1
 +Interval: 1
 
 $Formula: ( when 
    ( >= 
       ( distance 
-         "Merneptah" 
+         "Rochei" 
          "Polydeuces# 1" 
       )
       3500 
    )
-   ( cap-waypoint-speed "Merneptah" -1 ) 
+   ( cap-waypoint-speed "Rochei" -1 ) 
 )
 +Name: Merenptah 4
 +Repeat Count: -1
@@ -5164,20 +5164,20 @@ $Formula: ( when
    ( and 
       ( >= 
          ( distance 
-            "Merneptah" 
+            "Rochei" 
             "Polydeuces# 1" 
          )
          2500 
       )
       ( < 
          ( distance 
-            "Merneptah" 
+            "Rochei" 
             "Polydeuces# 1" 
          )
          3500 
       )
    )
-   ( cap-waypoint-speed "Merneptah" 40 ) 
+   ( cap-waypoint-speed "Rochei" 40 ) 
 )
 +Name: Merenptah 3
 +Repeat Count: -1
@@ -5188,20 +5188,20 @@ $Formula: ( when
    ( and 
       ( >= 
          ( distance 
-            "Merneptah" 
+            "Rochei" 
             "Polydeuces# 1" 
          )
          1500 
       )
       ( < 
          ( distance 
-            "Merneptah" 
+            "Rochei" 
             "Polydeuces# 1" 
          )
          2500 
       )
    )
-   ( cap-waypoint-speed "Merneptah" 30 ) 
+   ( cap-waypoint-speed "Rochei" 30 ) 
 )
 +Name: Merenptah 2
 +Repeat Count: -1
@@ -5211,12 +5211,12 @@ $Formula: ( when
 $Formula: ( when 
    ( < 
       ( distance 
-         "Merneptah" 
+         "Rochei" 
          "Polydeuces# 1" 
       )
       1500 
    )
-   ( cap-waypoint-speed "Merneptah" 5 ) 
+   ( cap-waypoint-speed "Rochei" 5 ) 
 )
 +Name: Merenptah 1
 +Repeat Count: -1
@@ -5225,13 +5225,13 @@ $Formula: ( when
 
 $Formula: ( when 
    ( is-subsystem-destroyed-delay 
-      "Merneptah" 
+      "Rochei" 
       "turret01" 
       1 
    )
-   ( clear-goals "Merneptah" ) 
+   ( clear-goals "Rochei" ) 
    ( add-goal 
-      "Merneptah" 
+      "Rochei" 
       ( ai-chase "Polydeuces# 1" 89 ) 
    )
 )
@@ -5240,11 +5240,11 @@ $Formula: ( when
 +Interval: 1
 
 $Formula: ( when 
-   ( has-arrived-delay 2 "Rimush" ) 
+   ( has-arrived-delay 2 "Thazard" ) 
    ( send-message-list 
       "Leonov" 
       "High" 
-      "Leonov: Newets" 
+      "Leonov: Triakidaes" 
       0 
       "#Tactical" 
       "High" 
@@ -5258,23 +5258,23 @@ $Formula: ( when
       5 
    )
 )
-+Name: Newets inbound
++Name: Triakidaes inbound
 +Repeat Count: 1
 +Interval: 1
 
 $Formula: ( when 
    ( is-destroyed-delay 
       0 
-      "Merneptah" 
-      "Rimush" 
+      "Rochei" 
+      "Thazard" 
    )
    ( do-nothing ) 
 )
-+Name: Destroy Newets
++Name: Destroy Triakidaes
 +Repeat Count: 1
 +Interval: 1
 +Chained: 1
-+Objective:  XSTR("Destroy Rimush and Merneptah", -1)
++Objective:  XSTR("Destroy Thazard and Rochei", -1)
 
 $Formula: ( when ( true ) ( do-nothing ) ) 
 +Name: --ramses stage--
@@ -5325,17 +5325,17 @@ $Formula: ( when
 +Objective key:  XSTR("F11", -1)
 
 $Formula: ( when ( true ) ( do-nothing ) ) 
-+Name: --pharaoh stage--
++Name: --Carcharodon stage--
 +Repeat Count: 1
 +Interval: 1
 
 $Formula: ( when 
-   ( has-arrived-delay 3 "Pharaoh" ) 
+   ( has-arrived-delay 3 "Carcharodon" ) 
    ( change-soundtrack "<No Music>" ) 
    ( send-message 
       "Leonov" 
       "High" 
-      "Leonov: Pharaoh" 
+      "Leonov: Carcharodon" 
    )
    ( play-sound-from-file 
       "StruggleForLife" 
@@ -5348,7 +5348,7 @@ $Formula: ( when
       "Hull" 
    )
 )
-+Name: Pharaoh!
++Name: Carcharodon!
 +Repeat Count: 1
 +Interval: 1
 
@@ -5383,7 +5383,7 @@ $Formula: ( when
 +Interval: 1
 +Chained: 0
 +Objective:  XSTR("Complete evacuation", -1)
-+Objective key:  XSTR("Distract Pharaoh", -1)
++Objective key:  XSTR("Distract Carcharodon", -1)
 
 $Formula: ( when 
    ( is-event-true-delay "Pharoh msg" 9 ) 
@@ -5450,21 +5450,21 @@ $Formula: ( when
    ( and 
       ( != 1 @WarpStatus[-1] ) 
       ( or 
-         ( <= ( hits-left "Pharaoh" ) 95 ) 
+         ( <= ( hits-left "Carcharodon" ) 95 ) 
          ( <= 
-            ( distance "Pharaoh" "Polydeuces# 1" ) 
+            ( distance "Carcharodon" "Polydeuces# 1" ) 
             3000 
          )
       )
-      ( has-arrived-delay 15 "Pharaoh" ) 
+      ( has-arrived-delay 15 "Carcharodon" ) 
    )
    ( send-message 
       "Leonov" 
       "High" 
-      "Leonov: Pharaoh3" 
+      "Leonov: Carcharodon3" 
    )
 )
-+Name: Pharaoh annoyed
++Name: Carcharodon annoyed
 +Repeat Count: 1
 +Interval: 1
 
@@ -5473,42 +5473,42 @@ $Formula: ( when
       ( is-in-box 
          "Polydeuces# 1" 
          ( get-object-x 
-            "Pharaoh" 
+            "Carcharodon" 
             "<none>" 
             -5000 
             0 
             0 
          )
          ( get-object-x 
-            "Pharaoh" 
+            "Carcharodon" 
             "<none>" 
             5000 
             0 
             0 
          )
          ( get-object-y 
-            "Pharaoh" 
+            "Carcharodon" 
             "<none>" 
             0 
             -5000 
             0 
          )
          ( get-object-y 
-            "Pharaoh" 
+            "Carcharodon" 
             "<none>" 
             0 
             500 
             0 
          )
          ( get-object-z 
-            "Pharaoh" 
+            "Carcharodon" 
             "<none>" 
             0 
             0 
             -5000 
          )
          ( get-object-z 
-            "Pharaoh" 
+            "Carcharodon" 
             "<none>" 
             0 
             0 
@@ -5516,7 +5516,7 @@ $Formula: ( when
          )
       )
       ( or 
-         ( <= ( hits-left "Pharaoh" ) 85 ) 
+         ( <= ( hits-left "Carcharodon" ) 85 ) 
          ( percent-ships-destroyed 50 "Cygnus" ) 
          ( percent-ships-destroyed 50 "Cancer" ) 
       )
@@ -5532,12 +5532,12 @@ $Formula: ( when
             500 
             -5000 
             5000 
-            "Pharaoh" 
+            "Carcharodon" 
          )
          ( skill-level-at-least "Insane" ) 
       )
       ( ship-rot-maneuver 
-         "Pharaoh" 
+         "Carcharodon" 
          22000 
          0 
          0 
@@ -5545,7 +5545,7 @@ $Formula: ( when
          ( false ) 
       )
       ( ship-rot-maneuver 
-         "Pharaoh" 
+         "Carcharodon" 
          22000 
          0 
          0 
@@ -5557,9 +5557,9 @@ $Formula: ( when
       @ship-manev-timer[0] 
       20 
    )
-   ( clear-goals "Pharaoh" ) 
+   ( clear-goals "Carcharodon" ) 
 )
-+Name: Pharaoh angry
++Name: Carcharodon angry
 +Repeat Count: -1
 +Trigger Count: 9999999
 +Interval: 22
@@ -5569,7 +5569,7 @@ $Formula: ( when
    ( send-message-list 
       "Leonov" 
       "High" 
-      "Leonov: Pharaoh Angry" 
+      "Leonov: Carcharodon Angry" 
       0 
       "#Tactical" 
       "High" 
@@ -5655,13 +5655,13 @@ $List: (		;! 1 points in list
 	( -4325.820801, -0.006098, 10235.333008 )
 )
 
-$Name: Memphis path
+$Name: Galeatus path
 $List: (		;! 2 points in list
 	( -174.812561, 4387.082520, -861.535767 )
 	( -170.827255, 2340.686035, -884.969238 )
 )
 
-$Name: Rimush path
+$Name: Thazard path
 $List: (		;! 2 points in list
 	( 2502.023438, 4992.808594, -1450.788452 )
 	( 1998.158936, 2620.431641, -637.712891 )
@@ -5851,16 +5851,16 @@ $end_multi_text
 +AVI Name: Head-CM1
 +Wave Name: messagebeep.ogg
 
-$Name: Leonov: Memphis
+$Name: Leonov: Galeatus
 $Team: -1
-$MessageNew:  XSTR("Good to see you up and running, Polydeuces. We're currently evacuating cargo and evacuees to the Savoy and Sydney, and the Memphis is closing in fast. Destroy it.", -1)
+$MessageNew:  XSTR("Good to see you up and running, Polydeuces. We're currently evacuating cargo and evacuees to the Savoy and Sydney, and the Galeatus is closing in fast. Destroy it.", -1)
 $end_multi_text
 +AVI Name: Head-CM4
 +Wave Name: messagebeep.ogg
 
 $Name: Tac: Fighters
 $Team: -1
-$MessageNew:  XSTR("Enemy fighters are breaking off from the Memphis and moving to attack. Use cluster flak rounds to destroy them at range, or hit them close with Trantors.", -1)
+$MessageNew:  XSTR("Enemy fighters are breaking off from the Galeatus and moving to attack. Use cluster flak rounds to destroy them at range, or hit them close with Trantors.", -1)
 $end_multi_text
 +AVI Name: Head-CM5
 +Wave Name: messagebeep.ogg
@@ -5873,9 +5873,9 @@ Press F8 to cycle through enemy fighters
 Press F10 to cycle through enemy bombers", -1)
 $end_multi_text
 
-$Name: Tac: Memphis targeting
+$Name: Tac: Galeatus targeting
 $Team: -1
-$MessageNew:  XSTR("We're reading target locks from the Memphis and it's changing course. It's on an attack path, sir. We should start engaging with our beams now.", -1)
+$MessageNew:  XSTR("We're reading target locks from the Galeatus and it's changing course. It's on an attack path, sir. We should start engaging with our beams now.", -1)
 $end_multi_text
 +AVI Name: Head-CM5
 +Wave Name: messagebeep.ogg
@@ -5895,7 +5895,7 @@ $end_multi_text
 +AVI Name: Head-CM2
 +Wave Name: messagebeep.ogg
 
-$Name: Savoy: Seteps
+$Name: Savoy: Pristidaes
 $Team: -1
 $MessageNew:  XSTR("Savoy here, we have a problem. Enemy gunships and a wing of fighters are closing in.", -1)
 $end_multi_text
@@ -5904,7 +5904,7 @@ $end_multi_text
 
 $Name: Tac: 2500m range
 $Team: -1
-$MessageNew:  XSTR("Those Hemsut gunships mount Ripper cannons with an effective range of 2500 meters. They'll tear the Savoy to shreds. We have to take them out.", -1)
+$MessageNew:  XSTR("Those Coregonus gunships mount Ripper cannons with an effective range of 2500 meters. They'll tear the Savoy to shreds. We have to take them out.", -1)
 $end_multi_text
 +AVI Name: Head-CM5
 +Wave Name: messagebeep.ogg
@@ -5952,9 +5952,9 @@ A large amount of capacitor is consumed, and slight heat is generated
 Capacitor recharge rate is determined by your shield ETS setting", -1)
 $end_multi_text
 
-$Name: Leonov: Newets
+$Name: Leonov: Triakidaes
 $Team: -1
-$MessageNew:  XSTR("Two Khopesh cruisers have just warped in. Be aware that the Merneptah is breaking off to attack you, Polydeuces.", -1)
+$MessageNew:  XSTR("Two Sphyrnidae cruisers have just warped in. Be aware that the Rochei is breaking off to attack you, Polydeuces.", -1)
 $end_multi_text
 +AVI Name: Head-CM4
 +Wave Name: messagebeep.ogg
@@ -6010,9 +6010,9 @@ $end_multi_text
 +AVI Name: Head-CM4
 +Wave Name: messagebeep.ogg
 
-$Name: Leonov: Pharaoh
+$Name: Leonov: Carcharodon
 $Team: -1
-$MessageNew:  XSTR("Detecting a massive inbound warp signature! It's the Pharaoh!", -1)
+$MessageNew:  XSTR("Detecting a massive inbound warp signature! It's the Carcharodon!", -1)
 $end_multi_text
 +AVI Name: Head-CM4
 +Wave Name: messagebeep.ogg
@@ -6026,7 +6026,7 @@ $end_multi_text
 
 $Name: Engi: Warp ready
 $Team: -1
-$MessageNew:  XSTR("Sir, the warp drive has charged. It's risky, but we can do a tactical warp to get right under the Pharaoh.", -1)
+$MessageNew:  XSTR("Sir, the warp drive has charged. It's risky, but we can do a tactical warp to get right under the Carcharodon.", -1)
 $end_multi_text
 +AVI Name: Head-CM1
 +Wave Name: messagebeep.ogg
@@ -6039,9 +6039,9 @@ Shift-J to cancel warp sequence
 To warp or to cancel warp, you must be stationary.", -1)
 $end_multi_text
 
-$Name: Leonov: Pharaoh3
+$Name: Leonov: Carcharodon3
 $Team: -1
-$MessageNew:  XSTR("The Pharaoh is launching more strikecraft. Be careful, Polydeuces.", -1)
+$MessageNew:  XSTR("The Carcharodon is launching more strikecraft. Be careful, Polydeuces.", -1)
 $end_multi_text
 +AVI Name: Head-CM4
 +Wave Name: messagebeep.ogg
@@ -6053,9 +6053,9 @@ $end_multi_text
 +AVI Name: Head-TP4
 +Wave Name: messagebeep.ogg
 
-$Name: Leonov: Pharaoh Angry
+$Name: Leonov: Carcharodon Angry
 $Team: -1
-$MessageNew:  XSTR("Pharaoh is maneuvering to focus its main beams on you, Polydecues.", -1)
+$MessageNew:  XSTR("Carcharodon is maneuvering to focus its main beams on you, Polydecues.", -1)
 $end_multi_text
 +AVI Name: Head-CM4
 +Wave Name: messagebeep.ogg

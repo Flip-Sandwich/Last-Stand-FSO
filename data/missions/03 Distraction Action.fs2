@@ -65,7 +65,7 @@ $Variables:
 		22		"Seph-timer"		"300"		"number"
 		23		"serket-engage-status"		"2"		"number"
 		24		"serket-maneuv-timer"		"0"		"number"
-		25		"SetepChaos"		"0"		"number"
+		25		"PristidaeChaos"		"0"		"number"
 		26		"ship-manev-timer"		"0"		"number"
 		27		"ShipTargeted"		"a whale"		"string"
 		28		"ShipTargetedRight"		"a bote"		"string"
@@ -287,7 +287,7 @@ $Determination: 10
 +Score: 400
 
 $Name: Wepwawet		;! Object #3
-$Class: MIND Newet
+$Class: MIND Triakidae
 $Team: Hostile
 $Location: -585.731689, -32.701538, -1626.912598
 $Orientation:
@@ -613,7 +613,7 @@ $Determination: 10
 +Score: 12
 
 $Name: Sekhemkhet		;! Object #14
-$Class: MIND Khopesh
+$Class: MIND Sphyrnidae
 $Team: Hostile
 $Location: 755.949463, 647.863159, -999.986328
 $Orientation:
@@ -740,7 +740,7 @@ $Determination: 10
 +Score: 1100
 
 $Name: Leo 1		;! Object #17
-$Class: MIND Setep
+$Class: MIND Pristidae
 $Team: Hostile
 $Location: 374.999329, -0.003418, -563.674622
 $Orientation:
@@ -767,7 +767,7 @@ $Determination: 10
 +Score: 10
 
 $Name: Cancer 1		;! Object #18
-$Class: MIND Setep
+$Class: MIND Pristidae
 $Team: Hostile
 $Location: 511.086182, -0.003418, -613.981506
 $Orientation:
@@ -794,7 +794,7 @@ $Determination: 10
 +Score: 10
 
 $Name: Leo 2		;! Object #19
-$Class: MIND Setep
+$Class: MIND Pristidae
 $Team: Hostile
 $Location: 289.352844, -0.003418, -415.469116
 $Orientation:
@@ -821,7 +821,7 @@ $Determination: 10
 +Score: 10
 
 $Name: Cancer 2		;! Object #20
-$Class: MIND Setep
+$Class: MIND Pristidae
 $Team: Hostile
 $Location: 500.765015, -0.003418, -442.083191
 $Orientation:
@@ -993,7 +993,7 @@ $Determination: 10
 +Score: 8
 
 $Name: Taurus 1		;! Object #26
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: -670.824707, 2770.264893, -1415.140259
 $Orientation:
@@ -1021,7 +1021,7 @@ $Determination: 10
 +Score: 12
 
 $Name: Taurus 2		;! Object #27
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: -688.082336, 2770.264893, -1396.090088
 $Orientation:
@@ -1049,7 +1049,7 @@ $Determination: 10
 +Score: 12
 
 $Name: Taurus 3		;! Object #28
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: -704.547974, 2770.264893, -1430.369873
 $Orientation:
@@ -1077,7 +1077,7 @@ $Determination: 10
 +Score: 12
 
 $Name: Taurus 4		;! Object #29
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: -729.864502, 2770.264893, -1410.196289
 $Orientation:
@@ -1105,7 +1105,7 @@ $Determination: 10
 +Score: 12
 
 $Name: Taurus 5		;! Object #30
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: -768.248230, 2770.264893, -1436.312012
 $Orientation:
@@ -1238,7 +1238,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Maahes		;! Object #34
-$Class: MIND Newet
+$Class: MIND Triakidae
 $Team: Hostile
 $Location: -1010.304443, 3913.100098, -2749.513916
 $Orientation:
@@ -3584,7 +3584,7 @@ $Formula: ( when
          @CruiserChaos[0] 
          @RaChaos[0] 
          @MiscChaos[0] 
-         @SetepChaos[0] 
+         @PristidaeChaos[0] 
          @BomberChaos[0] 
       )
    )
@@ -3696,12 +3696,12 @@ $Formula: ( when-argument
       ( true ) 
    )
    ( modify-variable 
-      @SetepChaos[0] 
-      ( + @SetepChaos[0] 1 ) 
+      @PristidaeChaos[0] 
+      ( + @PristidaeChaos[0] 1 ) 
    )
    ( invalidate-argument "<argument>" ) 
 )
-+Name: Setep Chaos
++Name: Pristidae Chaos
 +Repeat Count: -1
 +Trigger Count: 9999999
 +Interval: 1
@@ -4351,10 +4351,10 @@ $Formula: ( when
    ( send-message 
       "#Command" 
       "High" 
-      "Cmd: Seteps" 
+      "Cmd: Pristidaes" 
    )
 )
-+Name: Seteps inc
++Name: Pristidaes inc
 +Repeat Count: 1
 +Interval: 1
 
@@ -4715,7 +4715,7 @@ $end_multi_text
 
 $Name: CHAOS DEBUG
 $Team: -1
-$MessageNew:  XSTR("TOTAL $Chaos MISC $MiscChaos SETEP $SetepChaos BOMBER $BomberChaos CRUISER $CruiserChaos RA $RaChaos", -1)
+$MessageNew:  XSTR("TOTAL $Chaos MISC $MiscChaos Pristidae $PristidaeChaos BOMBER $BomberChaos CRUISER $CruiserChaos RA $RaChaos", -1)
 $end_multi_text
 
 $Name: Tac: Sekh powering
@@ -4734,9 +4734,9 @@ $end_multi_text
 +AVI Name: Head-CM5
 +Wave Name: messagebeep.ogg
 
-$Name: Cmd: Seteps
+$Name: Cmd: Pristidaes
 $Team: -1
-$MessageNew:  XSTR("Setep superbombers are launching from the Ra. Be careful.", -1)
+$MessageNew:  XSTR("Pristidae superbombers are launching from the Ra. Be careful.", -1)
 $end_multi_text
 +Persona: Terran Command
 +AVI Name: Head-CM2

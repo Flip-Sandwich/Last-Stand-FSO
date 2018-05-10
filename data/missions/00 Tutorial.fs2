@@ -197,7 +197,7 @@ $Formula: ( not
    )
 )
 $Multi text
-    XSTR("With the deployment of the Pharaoh to the Polaris-Sol wormhole, the UN presence in Polaris has been destroyed. All surviving forces in Polaris have retreated.
+    XSTR("With the deployment of the Carcharodon to the Polaris-Sol wormhole, the UN presence in Polaris has been destroyed. All surviving forces in Polaris have retreated.
 
 We are requiring full combat readiness from all available naval units in expectation of a follow-up incursion into the Sol system. It is likely that you will be deployed immediately into a hot combat situation. All current standing orders apply until ordered otherwise by fleet command.", -1)
 $end_multi_text

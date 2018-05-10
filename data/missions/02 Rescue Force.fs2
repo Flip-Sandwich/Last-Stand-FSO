@@ -266,7 +266,7 @@ $Multi text
 $end_multi_text
 $Voice: none.wav
 $Recommendation text:
-    XSTR("The Dedun will directly attack the Magellan, ignoring everything on it, so you must destroy it as soon as possible.", -1)
+    XSTR("The Feresa will directly attack the Magellan, ignoring everything on it, so you must destroy it as soon as possible.", -1)
 $end_multi_text
 
 $Formula: ( and 
@@ -633,8 +633,8 @@ $Determination: 10
 +Use Table Score:
 +Score: 0
 
-$Name: Resheph		;! Object #6
-$Class: MIND Khopesh
+$Name: Zygaena		;! Object #6
+$Class: MIND Sphyrnidae
 $Team: Hostile
 $Location: 1583.346558, 8221.853516, 385.089233
 $Orientation:
@@ -688,8 +688,8 @@ $Determination: 10
 +Use Table Score:
 +Score: 0
 
-$Name: Hermanubis		;! Object #7
-$Class: MIND Newet
+$Name: Ramalheira		;! Object #7
+$Class: MIND Triakidae
 $Team: Hostile
 $Location: 1436.110596, 8504.728516, 318.275391
 $Orientation:
@@ -741,8 +741,8 @@ $Determination: 10
 +Use Table Score:
 +Score: 0
 
-$Name: Rem		;! Object #8
-$Class: MIND Hemsut
+$Name: Peled		;! Object #8
+$Class: MIND Coregonus
 $Team: Hostile
 $Location: 4237.271973, -0.006836, -3011.048584
 $Orientation:
@@ -784,8 +784,8 @@ $Determination: 10
 +Use Table Score:
 +Score: 0
 
-$Name: Raet-Tawy		;! Object #9
-$Class: MIND Hemsut
+$Name: Stigmaticus		;! Object #9
+$Class: MIND Coregonus
 $Team: Hostile
 $Location: 3782.638184, -0.006836, -3345.447998
 $Orientation:
@@ -827,8 +827,8 @@ $Determination: 10
 +Use Table Score:
 +Score: 0
 
-$Name: Shu		;! Object #10
-$Class: MIND Hemsut
+$Name: Hoyi		;! Object #10
+$Class: MIND Coregonus
 $Team: Hostile
 $Location: 4745.395020, -0.006836, -3398.664795
 $Orientation:
@@ -870,8 +870,8 @@ $Determination: 10
 +Use Table Score:
 +Score: 0
 
-$Name: Hedetet		;! Object #11
-$Class: MIND Khopesh
+$Name: Phocoena		;! Object #11
+$Class: MIND Sphyrnidae
 $Team: Hostile
 $Location: 4306.004395, -0.006836, -3498.091553
 $Orientation:
@@ -923,8 +923,8 @@ $Determination: 10
 +Group: 0
 +Score: 100
 
-$Name: Dedun		;! Object #12
-$Class: MIND Sobek
+$Name: Feresa		;! Object #12
+$Class: MIND Orcinus
 $Team: Hostile
 $Location: -723.319336, -6963.946777, -816.635010
 $Orientation:
@@ -1345,7 +1345,7 @@ $Determination: 10
 +Score: 12
 
 $Name: Scorpio 1		;! Object #24
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: 3613.580811, -0.001465, -2680.252441
 $Orientation:
@@ -1372,7 +1372,7 @@ $Determination: 10
 +Score: 10
 
 $Name: Scorpio 2		;! Object #25
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: 3653.277344, -0.001465, -2765.023438
 $Orientation:
@@ -1399,7 +1399,7 @@ $Determination: 10
 +Score: 10
 
 $Name: Scorpio 3		;! Object #26
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: 3675.341797, -0.001465, -2670.662842
 $Orientation:
@@ -1426,7 +1426,7 @@ $Determination: 10
 +Score: 10
 
 $Name: Scorpio 4		;! Object #27
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: 3725.665527, -0.001465, -2741.805420
 $Orientation:
@@ -1453,7 +1453,7 @@ $Determination: 10
 +Score: 10
 
 $Name: Scorpio 5		;! Object #28
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: 3724.840820, -0.001465, -2681.907227
 $Orientation:
@@ -1803,7 +1803,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Taurus 1		;! Object #40
-$Class: MIND Setep
+$Class: MIND Pristidae
 $Team: Hostile
 $Location: -478.306152, -7699.791992, -832.465332
 $Orientation:
@@ -1829,7 +1829,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Taurus 2		;! Object #41
-$Class: MIND Setep
+$Class: MIND Pristidae
 $Team: Hostile
 $Location: -539.293884, -7699.791992, -905.161133
 $Orientation:
@@ -1917,7 +1917,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Aries 1		;! Object #44
-$Class: MIND Setep
+$Class: MIND Pristidae
 $Team: Hostile
 $Location: -874.944580, -0.002686, -687.443848
 $Orientation:
@@ -1945,7 +1945,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Aries 2		;! Object #45
-$Class: MIND Setep
+$Class: MIND Pristidae
 $Team: Hostile
 $Location: -832.842957, -0.002686, -680.152588
 $Orientation:
@@ -2128,7 +2128,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Capricorn 1		;! Object #51
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: 4734.623047, 0.000244, -2243.392334
 $Orientation:
@@ -2155,7 +2155,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Capricorn 2		;! Object #52
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: 4732.166016, 0.000244, -2309.794922
 $Orientation:
@@ -2182,7 +2182,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Capricorn 3		;! Object #53
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: 4779.198242, 0.000000, -2275.377197
 $Orientation:
@@ -2209,7 +2209,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Capricorn 4		;! Object #54
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: 4766.872070, 0.000122, -2317.581299
 $Orientation:
@@ -2236,7 +2236,7 @@ $Determination: 10
 +Score: 0
 
 $Name: Capricorn 5		;! Object #55
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: 4822.983398, 0.000122, -2308.581787
 $Orientation:
@@ -3214,13 +3214,13 @@ $Formula: ( when-argument
       "Snaiib" 
       "Minya" 
       "Sohag" 
-      "Dedun" 
-      "Resheph" 
-      "Hedetet" 
-      "Hermanubis" 
-      "Rem" 
-      "Shu" 
-      "Raet-Tawy" 
+      "Feresa" 
+      "Zygaena" 
+      "Phocoena" 
+      "Ramalheira" 
+      "Peled" 
+      "Hoyi" 
+      "Stigmaticus" 
    )
    ( and 
       ( targeted "<argument>" ) 
@@ -3292,13 +3292,13 @@ $Formula: ( when-argument
       "Snaiib" 
       "Minya" 
       "Sohag" 
-      "Dedun" 
-      "Resheph" 
-      "Hedetet" 
-      "Hermanubis" 
-      "Rem" 
-      "Shu" 
-      "Raet-Tawy" 
+      "Feresa" 
+      "Zygaena" 
+      "Phocoena" 
+      "Ramalheira" 
+      "Peled" 
+      "Hoyi" 
+      "Stigmaticus" 
    )
    ( and 
       ( targeted "<argument>" ) 
@@ -5569,14 +5569,14 @@ $Formula: ( when
 +Interval: 1
 
 $Formula: ( when 
-   ( is-destroyed-delay 0 "Resheph" ) 
+   ( is-destroyed-delay 0 "Zygaena" ) 
    ( do-nothing ) 
 )
 +Name: kill c1 dir
 +Repeat Count: 1
 +Interval: 1
 +Chained: 0
-+Objective:  XSTR("Destroy Resheph", -1)
++Objective:  XSTR("Destroy Zygaena", -1)
 +Objective key:  XSTR("F12", -1)
 
 $Formula: ( when 
@@ -5591,34 +5591,34 @@ $Formula: ( when
 +Interval: 1
 
 $Formula: ( when 
-   ( is-destroyed-delay 0 "Hermanubis" ) 
+   ( is-destroyed-delay 0 "Ramalheira" ) 
    ( do-nothing ) 
 )
 +Name: kill c2 dir
 +Repeat Count: 1
 +Interval: 1
 +Chained: 0
-+Objective:  XSTR("Destroy Hermanubis", -1)
++Objective:  XSTR("Destroy Ramalheira", -1)
 +Objective key:  XSTR("F12", -1)
 
 $Formula: ( when 
    ( or 
       ( <= 
          ( + 
-            ( hits-left "Hermanubis" ) 
-            ( hits-left "Resheph" ) 
+            ( hits-left "Ramalheira" ) 
+            ( hits-left "Zygaena" ) 
          )
          190 
       )
       ( or 
          ( <= 
-            ( distance "Polydeuces# 1" "Resheph" ) 
+            ( distance "Polydeuces# 1" "Zygaena" ) 
             2500 
          )
          ( <= 
             ( distance 
                "Polydeuces# 1" 
-               "Hermanubis" 
+               "Ramalheira" 
             )
             2500 
          )
@@ -5632,7 +5632,7 @@ $Formula: ( when
             2000 
             -2000 
             250 
-            "Resheph" 
+            "Zygaena" 
          )
          ( is-in-box 
             "Polydeuces# 1" 
@@ -5642,17 +5642,17 @@ $Formula: ( when
             2000 
             -2000 
             250 
-            "Hermanubis" 
+            "Ramalheira" 
          )
       )
    )
-   ( clear-goals "Hermanubis" "Resheph" ) 
+   ( clear-goals "Ramalheira" "Zygaena" ) 
    ( add-goal 
-      "Resheph" 
+      "Zygaena" 
       ( ai-waypoints "Resh target loc" 89 ) 
    )
    ( add-goal 
-      "Hermanubis" 
+      "Ramalheira" 
       ( ai-waypoints "Herm go down" 89 ) 
    )
 )
@@ -5662,7 +5662,7 @@ $Formula: ( when
 
 $Formula: ( when 
    ( not 
-      ( is-destroyed-delay 0 "Hermanubis" ) 
+      ( is-destroyed-delay 0 "Ramalheira" ) 
    )
    ( set-object-position 
       "Herm go down:1" 
@@ -5675,7 +5675,7 @@ $Formula: ( when
                -1500 
                0 
             )
-            ( get-object-x "Hermanubis" ) 
+            ( get-object-x "Ramalheira" ) 
          )
          2 
       )
@@ -5688,7 +5688,7 @@ $Formula: ( when
                -1500 
                0 
             )
-            ( get-object-y "Hermanubis" ) 
+            ( get-object-y "Ramalheira" ) 
          )
          2 
       )
@@ -5701,7 +5701,7 @@ $Formula: ( when
                -1500 
                0 
             )
-            ( get-object-y "Hermanubis" ) 
+            ( get-object-y "Ramalheira" ) 
          )
          2 
       )
@@ -5739,19 +5739,19 @@ $Formula: ( when
 
 $Formula: ( when 
    ( not 
-      ( is-destroyed-delay 0 "Hermanubis" ) 
+      ( is-destroyed-delay 0 "Ramalheira" ) 
    )
    ( when 
       ( <= 
          ( distance 
-            "Hermanubis" 
+            "Ramalheira" 
             "Herm go down:2" 
          )
          100 
       )
-      ( clear-goals "Hermanubis" ) 
+      ( clear-goals "Ramalheira" ) 
       ( add-goal 
-         "Hermanubis" 
+         "Ramalheira" 
          ( ai-chase 
             "@p1-target[Polydeuces# 1]" 
             89 
@@ -5761,14 +5761,14 @@ $Formula: ( when
    ( when 
       ( >= 
          ( distance 
-            "Hermanubis" 
+            "Ramalheira" 
             "Herm go down:2" 
          )
          500 
       )
-      ( clear-goals "Hermanubis" ) 
+      ( clear-goals "Ramalheira" ) 
       ( add-goal 
-         "Hermanubis" 
+         "Ramalheira" 
          ( ai-waypoints "Herm go down" 89 ) 
       )
    )
@@ -5802,19 +5802,19 @@ $Formula: ( when
          ( - 
             ( + 
                ( get-damage-caused 
-                  "Rem" 
+                  "Peled" 
                   "Polydeuces# 1" 
                )
                ( get-damage-caused 
-                  "Raet-Tawy" 
+                  "Stigmaticus" 
                   "Polydeuces# 1" 
                )
                ( get-damage-caused 
-                  "Shu" 
+                  "Hoyi" 
                   "Polydeuces# 1" 
                )
                ( get-damage-caused 
-                  "Hedetet" 
+                  "Phocoena" 
                   "Polydeuces# 1" 
                )
             )
@@ -5857,11 +5857,11 @@ $Formula: ( when
          ( - 
             ( + 
                ( get-damage-caused 
-                  "Hermanubis" 
+                  "Ramalheira" 
                   "Polydeuces# 1" 
                )
                ( get-damage-caused 
-                  "Resheph" 
+                  "Zygaena" 
                   "Polydeuces# 1" 
                )
             )
@@ -5903,11 +5903,11 @@ $Formula: ( when
       @damage-to-p1[0] 
       ( + 
          ( get-damage-caused 
-            "Hermanubis" 
+            "Ramalheira" 
             "Polydeuces# 1" 
          )
          ( get-damage-caused 
-            "Resheph" 
+            "Zygaena" 
             "Polydeuces# 1" 
          )
       )
@@ -5916,19 +5916,19 @@ $Formula: ( when
       @damage-to-p2[0] 
       ( + 
          ( get-damage-caused 
-            "Rem" 
+            "Peled" 
             "Polydeuces# 1" 
          )
          ( get-damage-caused 
-            "Raet-Tawy" 
+            "Stigmaticus" 
             "Polydeuces# 1" 
          )
          ( get-damage-caused 
-            "Shu" 
+            "Hoyi" 
             "Polydeuces# 1" 
          )
          ( get-damage-caused 
-            "Hedetet" 
+            "Phocoena" 
             "Polydeuces# 1" 
          )
       )
@@ -5947,9 +5947,9 @@ $Formula: ( when
       )
       ( not 
          ( or 
-            ( is-destroyed-delay 0 "Resheph" ) 
+            ( is-destroyed-delay 0 "Zygaena" ) 
             ( is-subsystem-destroyed-delay 
-               "Resheph" 
+               "Zygaena" 
                "turret01" 
                0 
             )
@@ -5959,22 +5959,22 @@ $Formula: ( when
    ( when 
       ( <= 
          ( distance 
-            "Resheph" 
+            "Zygaena" 
             "@p1-target[Polydeuces# 1]" 
          )
          2000 
       )
-      ( cap-waypoint-speed "Resheph" 5 ) 
+      ( cap-waypoint-speed "Zygaena" 5 ) 
    )
    ( when 
       ( >= 
          ( distance 
-            "Resheph" 
+            "Zygaena" 
             "@p1-target[Polydeuces# 1]" 
          )
          3000 
       )
-      ( cap-waypoint-speed "Resheph" -1 ) 
+      ( cap-waypoint-speed "Zygaena" -1 ) 
    )
 )
 +Name: reshpeh slow down snipe
@@ -5985,36 +5985,36 @@ $Formula: ( when
 $Formula: ( when 
    ( and 
       ( is-subsystem-destroyed-delay 
-         "Resheph" 
+         "Zygaena" 
          "turret01" 
          0 
       )
       ( not 
-         ( is-destroyed-delay 0 "Resheph" ) 
+         ( is-destroyed-delay 0 "Zygaena" ) 
       )
    )
-   ( clear-goals "Resheph" ) 
+   ( clear-goals "Zygaena" ) 
    ( add-goal 
-      "Resheph" 
+      "Zygaena" 
       ( ai-chase 
          "@p1-target[Polydeuces# 1]" 
          89 
       )
    )
 )
-+Name: resheph close in
++Name: Zygaena close in
 +Repeat Count: -1
 +Trigger Count: 999999
 +Interval: 10
 
 $Formula: ( when 
    ( and 
-      ( has-arrived-delay 0 "Resheph" ) 
+      ( has-arrived-delay 0 "Zygaena" ) 
       ( not 
          ( or 
-            ( is-destroyed-delay 0 "Resheph" ) 
+            ( is-destroyed-delay 0 "Zygaena" ) 
             ( is-subsystem-destroyed-delay 
-               "Resheph" 
+               "Zygaena" 
                "turret01" 
                0 
             )
@@ -6042,8 +6042,8 @@ $Formula: ( when
 $Formula: ( when 
    ( is-destroyed-delay 
       0 
-      "Hermanubis" 
-      "Resheph" 
+      "Ramalheira" 
+      "Zygaena" 
    )
    ( do-nothing ) 
 )
@@ -6067,13 +6067,13 @@ $Formula: ( when
             ( = 0 @WarpUses[0] ) 
             ( or 
                ( <= 
-                  ( distance "Polydeuces# 1" "Resheph" ) 
+                  ( distance "Polydeuces# 1" "Zygaena" ) 
                   2500 
                )
                ( <= 
                   ( distance 
                      "Polydeuces# 1" 
-                     "Hermanubis" 
+                     "Ramalheira" 
                   )
                   2500 
                )
@@ -6141,9 +6141,9 @@ $Formula: ( when
 $Formula: ( when 
    ( is-destroyed-delay 
       0 
-      "Raet-Tawy" 
-      "Rem" 
-      "Raet-Tawy" 
+      "Stigmaticus" 
+      "Peled" 
+      "Stigmaticus" 
    )
    ( do-nothing ) 
 )
@@ -6166,14 +6166,14 @@ $Formula: ( when
 +Interval: 1
 
 $Formula: ( when 
-   ( is-destroyed-delay 0 "Hedetet" ) 
+   ( is-destroyed-delay 0 "Phocoena" ) 
    ( do-nothing ) 
 )
 +Name: destroy cruiser dir
 +Repeat Count: 1
 +Interval: 1
 +Chained: 0
-+Objective:  XSTR("Destroy Hedetet", -1)
++Objective:  XSTR("Destroy Phocoena", -1)
 +Objective key:  XSTR("F12", -1)
 
 $Formula: ( when 
@@ -6192,17 +6192,17 @@ $Formula: ( when
    ( when 
       ( and 
          ( is-subsystem-destroyed-delay 
-            "Hedetet" 
+            "Phocoena" 
             "turret01" 
             0 
          )
          ( not 
-            ( is-destroyed-delay 0 "Hedetet" ) 
+            ( is-destroyed-delay 0 "Phocoena" ) 
          )
       )
-      ( clear-goals "Hedetet" ) 
+      ( clear-goals "Phocoena" ) 
       ( add-goal 
-         "Hedetet" 
+         "Phocoena" 
          ( ai-chase 
             "@p2-target[Polydeuces# 1]" 
             89 
@@ -6213,18 +6213,18 @@ $Formula: ( when
       ( and 
          ( not 
             ( is-subsystem-destroyed-delay 
-               "Hedetet" 
+               "Phocoena" 
                "turret01" 
                0 
             )
          )
          ( not 
-            ( is-destroyed-delay 0 "Hedetet" ) 
+            ( is-destroyed-delay 0 "Phocoena" ) 
          )
       )
-      ( clear-goals "Hedetet" ) 
+      ( clear-goals "Phocoena" ) 
       ( add-goal 
-         "Hedetet" 
+         "Phocoena" 
          ( ai-waypoints "hed target" 89 ) 
       )
    )
@@ -6232,28 +6232,28 @@ $Formula: ( when
       ( not 
          ( is-destroyed-delay 
             0 
-            "Rem" 
-            "Shu" 
-            "Raet-Tawy" 
+            "Peled" 
+            "Hoyi" 
+            "Stigmaticus" 
          )
       )
-      ( clear-goals "Rem" "Raet-Tawy" "Shu" ) 
+      ( clear-goals "Peled" "Stigmaticus" "Hoyi" ) 
       ( add-goal 
-         "Shu" 
+         "Hoyi" 
          ( ai-chase 
             "@p2-target[Polydeuces# 1]" 
             89 
          )
       )
       ( add-goal 
-         "Raet-Tawy" 
+         "Stigmaticus" 
          ( ai-chase 
             "@p2-target[Polydeuces# 1]" 
             89 
          )
       )
       ( add-goal 
-         "Rem" 
+         "Peled" 
          ( ai-chase 
             "@p2-target[Polydeuces# 1]" 
             89 
@@ -6268,12 +6268,12 @@ $Formula: ( when
 
 $Formula: ( when 
    ( and 
-      ( has-arrived-delay 0 "Hedetet" ) 
+      ( has-arrived-delay 0 "Phocoena" ) 
       ( not 
          ( or 
-            ( is-destroyed-delay 0 "Hedetet" ) 
+            ( is-destroyed-delay 0 "Phocoena" ) 
             ( is-subsystem-destroyed-delay 
-               "Hedetet" 
+               "Phocoena" 
                "turret01" 
                0 
             )
@@ -6300,12 +6300,12 @@ $Formula: ( when
 
 $Formula: ( when 
    ( and 
-      ( has-arrived-delay 0 "Hedetet" ) 
+      ( has-arrived-delay 0 "Phocoena" ) 
       ( not 
          ( or 
-            ( is-destroyed-delay 0 "Hedetet" ) 
+            ( is-destroyed-delay 0 "Phocoena" ) 
             ( is-subsystem-destroyed-delay 
-               "Hedetet" 
+               "Phocoena" 
                "turret01" 
                0 
             )
@@ -6315,22 +6315,22 @@ $Formula: ( when
    ( when 
       ( <= 
          ( distance 
-            "Hedetet" 
+            "Phocoena" 
             "@p2-target[Polydeuces# 1]" 
          )
          2000 
       )
-      ( cap-waypoint-speed "Hedetet" 5 ) 
+      ( cap-waypoint-speed "Phocoena" 5 ) 
    )
    ( when 
       ( >= 
          ( distance 
-            "Hedetet" 
+            "Phocoena" 
             "@p2-target[Polydeuces# 1]" 
          )
          3000 
       )
-      ( cap-waypoint-speed "Hedetet" -1 ) 
+      ( cap-waypoint-speed "Phocoena" -1 ) 
    )
 )
 +Name: hed slow snipe
@@ -6341,10 +6341,10 @@ $Formula: ( when
 $Formula: ( when 
    ( is-destroyed-delay 
       0 
-      "Raet-Tawy" 
-      "Rem" 
-      "Shu" 
-      "Hedetet" 
+      "Stigmaticus" 
+      "Peled" 
+      "Hoyi" 
+      "Phocoena" 
    )
    ( do-nothing ) 
 )
@@ -6405,7 +6405,7 @@ $Formula: ( when ( true ) ( do-nothing ) )
 $Formula: ( when 
    ( is-destroyed-delay 
       3 
-      "Dedun" 
+      "Feresa" 
       "Taurus" 
       "Aries" 
    )
@@ -6713,7 +6713,7 @@ $List: (		;! 2 points in list
 	( 3707.053223, -0.004883, -1534.669189 )
 )
 
-$Name: Dedun go down
+$Name: Feresa go down
 $List: (		;! 2 points in list
 	( -1193.830933, -0.003906, -2554.398682 )
 	( -925.871033, -0.003906, -2539.769531 )
@@ -7033,7 +7033,7 @@ $end_multi_text
 
 $Name: Mag: 2 cruisers inc
 $Team: -1
-$MessageNew:  XSTR("Two enemy cruisers incoming, designations Resheph and Hermanubis.", -1)
+$MessageNew:  XSTR("Two enemy cruisers incoming, designations Zygaena and Ramalheira.", -1)
 $end_multi_text
 +Persona: Large Ship
 +AVI Name: Head-CM1

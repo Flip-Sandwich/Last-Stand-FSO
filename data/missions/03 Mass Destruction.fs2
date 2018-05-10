@@ -60,7 +60,7 @@ $Variables:
 		17		"Repairing"		"0"		"number"
 		18		"RightBeamsTick"		"0"		"number"
 		19		"Seph-timer"		"300"		"number"
-		20		"SetepChaos"		"0"		"number"
+		20		"PristidaeChaos"		"0"		"number"
 		21		"Shang-order"		"Protect"		"string"
 		22		"Shang-target"		"Polydeuces"		"string"
 		23		"ship-manev-timer"		"0"		"number"
@@ -331,7 +331,7 @@ $Determination: 10
 +Score: 8
 
 $Name: Wepwawet		;! Object #3
-$Class: MIND Newet
+$Class: MIND Triakidae
 $Team: Hostile
 $Location: -585.731689, -32.701538, -1626.912598
 $Orientation:
@@ -375,7 +375,7 @@ $Determination: 10
 +Score: 8
 
 $Name: Sagittarius 1		;! Object #4
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: 505.652344, 1058.920654, -1465.983398
 $Orientation:
@@ -401,7 +401,7 @@ $Determination: 10
 +Score: 8
 
 $Name: Sagittarius 2		;! Object #5
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: 484.768555, 1058.920654, -1369.350586
 $Orientation:
@@ -427,7 +427,7 @@ $Determination: 10
 +Score: 8
 
 $Name: Sagittarius 3		;! Object #6
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: 382.719238, 1058.920654, -1454.263184
 $Orientation:
@@ -453,7 +453,7 @@ $Determination: 10
 +Score: 8
 
 $Name: Sagittarius 4		;! Object #7
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: 354.633789, 1058.920654, -1383.585449
 $Orientation:
@@ -479,7 +479,7 @@ $Determination: 10
 +Score: 8
 
 $Name: Sagittarius 5		;! Object #8
-$Class: MIND Serapis
+$Class: MIND Auxis
 $Team: Hostile
 $Location: 254.909790, 1058.920654, -1428.023438
 $Orientation:
@@ -635,7 +635,7 @@ $Determination: 10
 +Score: 8
 
 $Name: Sekhemkhet		;! Object #14
-$Class: MIND Khopesh
+$Class: MIND Sphyrnidae
 $Team: Hostile
 $Location: 922.500854, 647.863159, -1028.375488
 $Orientation:
@@ -928,7 +928,7 @@ $Determination: 10
 +Score: 8
 
 $Name: Leo 1		;! Object #21
-$Class: MIND Setep
+$Class: MIND Pristidae
 $Team: Hostile
 $Location: 374.999329, -0.003418, -563.674622
 $Orientation:
@@ -954,7 +954,7 @@ $Determination: 10
 +Score: 8
 
 $Name: Cancer 1		;! Object #22
-$Class: MIND Setep
+$Class: MIND Pristidae
 $Team: Hostile
 $Location: 511.086182, -0.003418, -613.981506
 $Orientation:
@@ -980,7 +980,7 @@ $Determination: 10
 +Score: 8
 
 $Name: Leo 2		;! Object #23
-$Class: MIND Setep
+$Class: MIND Pristidae
 $Team: Hostile
 $Location: 289.352844, -0.003418, -415.469116
 $Orientation:
@@ -1006,7 +1006,7 @@ $Determination: 10
 +Score: 8
 
 $Name: Cancer 2		;! Object #24
-$Class: MIND Setep
+$Class: MIND Pristidae
 $Team: Hostile
 $Location: 500.765015, -0.003418, -442.083191
 $Orientation:
@@ -1491,7 +1491,7 @@ $Determination: 10
 +Score: 8
 
 $Name: Maahes		;! Object #41
-$Class: MIND Newet
+$Class: MIND Triakidae
 $Team: Hostile
 $Location: -1010.304443, 3913.100098, -2749.513916
 $Orientation:
@@ -1647,7 +1647,7 @@ $Determination: 10
 +Score: 8
 
 $Name: Vulpex 1		;! Object #46
-$Class: MIND Setep
+$Class: MIND Pristidae
 $Team: Hostile
 $Location: -947.991089, -0.002197, -3093.464111
 $Orientation:
@@ -1672,7 +1672,7 @@ $Determination: 10
 +Score: 8
 
 $Name: Vulpex 2		;! Object #47
-$Class: MIND Setep
+$Class: MIND Pristidae
 $Team: Hostile
 $Location: -874.345337, -0.002197, -3141.840820
 $Orientation:
@@ -1697,7 +1697,7 @@ $Determination: 10
 +Score: 8
 
 $Name: Vulpex 3		;! Object #48
-$Class: MIND Setep
+$Class: MIND Pristidae
 $Team: Hostile
 $Location: -965.449219, -0.002197, -3014.300293
 $Orientation:
@@ -1722,7 +1722,7 @@ $Determination: 10
 +Score: 8
 
 $Name: Vulpex 4		;! Object #49
-$Class: MIND Setep
+$Class: MIND Pristidae
 $Team: Hostile
 $Location: -877.894592, -0.002197, -3038.859375
 $Orientation:
@@ -1747,7 +1747,7 @@ $Determination: 10
 +Score: 8
 
 $Name: Vulpex 5		;! Object #50
-$Class: MIND Setep
+$Class: MIND Pristidae
 $Team: Hostile
 $Location: -808.587097, -0.002197, -3051.552979
 $Orientation:
@@ -4089,7 +4089,7 @@ $Formula: ( when
          @CruiserChaos[0] 
          @RaChaos[0] 
          @MiscChaos[0] 
-         @SetepChaos[0] 
+         @PristidaeChaos[0] 
          @BomberChaos[0] 
       )
    )
@@ -4201,12 +4201,12 @@ $Formula: ( when-argument
       ( true ) 
    )
    ( modify-variable 
-      @SetepChaos[0] 
-      ( + @SetepChaos[0] 1 ) 
+      @PristidaeChaos[0] 
+      ( + @PristidaeChaos[0] 1 ) 
    )
    ( invalidate-argument "<argument>" ) 
 )
-+Name: Setep Chaos
++Name: Pristidae Chaos
 +Repeat Count: -1
 +Trigger Count: 9999999
 +Interval: 1
@@ -4711,10 +4711,10 @@ $Formula: ( when
    ( send-message 
       "#Command" 
       "High" 
-      "Cmd: Seteps" 
+      "Cmd: Pristidaes" 
    )
 )
-+Name: Seteps inc
++Name: Pristidaes inc
 +Repeat Count: 1
 +Interval: 1
 
@@ -4722,10 +4722,10 @@ $Formula: ( when
    ( is-destroyed-delay 0 "Cancer" "Leo" ) 
    ( do-nothing ) 
 )
-+Name: Kill seteps
++Name: Kill Pristidaes
 +Repeat Count: 1
 +Interval: 1
-+Objective:  XSTR("Destroy Setep superbombers", -1)
++Objective:  XSTR("Destroy Pristidae superbombers", -1)
 +Objective key:  XSTR("F11", -1)
 
 $Formula: ( when 
@@ -5190,7 +5190,7 @@ $end_multi_text
 
 $Name: CHAOS DEBUG
 $Team: -1
-$MessageNew:  XSTR("TOTAL $Chaos MISC $MiscChaos SETEP $SetepChaos BOMBER $BomberChaos CRUISER $CruiserChaos RA $RaChaos", -1)
+$MessageNew:  XSTR("TOTAL $Chaos MISC $MiscChaos Pristidae $PristidaeChaos BOMBER $BomberChaos CRUISER $CruiserChaos RA $RaChaos", -1)
 $end_multi_text
 
 $Name: Tac: Sekh powering
@@ -5221,9 +5221,9 @@ $end_multi_text
 +AVI Name: Head-CM3
 +Wave Name: messagebeep.ogg
 
-$Name: Cmd: Seteps
+$Name: Cmd: Pristidaes
 $Team: -1
-$MessageNew:  XSTR("Setep superbombers are launching from the Ra. Be careful.", -1)
+$MessageNew:  XSTR("Pristidae superbombers are launching from the Ra. Be careful.", -1)
 $end_multi_text
 +AVI Name: Head-CM2
 +Wave Name: messagebeep.ogg

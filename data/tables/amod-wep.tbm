@@ -1595,110 +1595,6 @@ $Piercing Impact Variance: 0.01
 $Piercing Impact Particles: 10
 $Muzzleflash: railgun_muzzle
 
-;;FEAN-X BIG GUNS
-
-$Name: FeanPlasma-S
-$Model File: none
-@Laser Bitmap: Archer_Bitmap
-@Laser Glow: laserglow06
-@Laser Color: 255, 255, 255
-@Laser Color2: 255, 255, 255
-@Laser Length: 7.5
-@Laser Head Radius: 2.0
-@Laser Tail Radius: 1.5
-$Mass: 4.0
-$Velocity: 1000.0
-$Fire Wait: 9.0
-$Damage: 280
-$Damage Type: MediumWeap
-$Blast Force: 200.0
-$Inner Radius: 40.0
-$Outer Radius: 60.0
-$Shockwave Speed: 0.0
-$Armor Factor: 1.0
-$Shield Factor: 1.0
-$Subsystem Factor: 0.25
-$Lifetime: 3.0
-$Energy Consumed: 0.0
-$Cargo Size: 1.0
-$Homing: NO
-$LaunchSnd: 233
-$ImpactSnd: 88
-+Weapon Range: 3000
-$Flags: ( "Huge" "big ship" "same turret cooldown" )
-$Trail:
- +Start Width: 4.5
- +End Width: 1.5
- +Start Alpha: 0.7
- +End Alpha: 0.0
- +Max Life: 1.2
- +Bitmap: Archer_trail
-$Impact Explosion: exp04
-$Impact Explosion Radius: 12.0
-$Piercing Impact Explosion: exp06
-$Piercing Impact Radius: 6.0
-$Piercing Impact Velocity: 50
-$Piercing Impact Splash Velocity: -5
-$Piercing Impact Variance: 0.01
-$Piercing Impact Particles: 10
-$Muzzleflash: S_railgun_muzzle
-
-$Name: FeanPlasma-H
-+Tech Title: XSTR("Plasma Cannon", -1)
- +Tech Anim: none
-+Tech Description:
-XSTR("
-fed plas
-", -1)
-$end_multi_text
-$Model File: none
-@Laser Bitmap: Archer_Bitmap
-@Laser Glow: laserglow06
-@Laser Color: 255, 255, 255
-@Laser Color2: 255, 255, 255
-@Laser Length: 15.0
-@Laser Head Radius: 4.0
-@Laser Tail Radius: 3.5
-$Mass: 4.0
-$Velocity: 1000.0
-$Fire Wait: 9.0
-$Damage: 400
-$Damage Type: HeavyWeap
-$Blast Force: 200.0
-$Inner Radius: 40.0
-$Outer Radius: 60.0
-$Shockwave Speed: 0.0
-$Armor Factor: 1.0
-$Shield Factor: 1.0
-$Subsystem Factor: 0.25
-$Lifetime: 4.5
-$Energy Consumed: 0.0
-$Cargo Size: 1.0
-$Homing: NO
-$LaunchSnd: 202
-$ImpactSnd: 88
-+Weapon Range: 4500
-$Flags: ( "Huge" "big ship" "same turret cooldown" )
-$Trail:
- +Start Width: 9.0
- +End Width: 3.0
- +Start Alpha: 0.7
- +End Alpha: 0.0
- +Max Life: 1.2
- +Bitmap: Archer_trail
-$Impact Explosion: exp04
-$Impact Explosion Radius: 25.0
-$Piercing Impact Explosion: exp06
-$Piercing Impact Radius: 12.5
-$Piercing Impact Velocity: 50
-$Piercing Impact Splash Velocity: -5
-$Piercing Impact Variance: 0.01
-$Piercing Impact Particles: 10
-$Muzzleflash: railgun_muzzle
-$Burst Shots: 4
-$Burst Delay: 1000
-$Burst Flags: ( "fast firing" )
-
 ;;MIND STRIKECRAFT GUNS
 
 $Name: MIND Gun
@@ -2484,103 +2380,91 @@ $BeamInfo:
  +Flicker: 0.35
  +Zadd: 1
 
-;;MIND-X STRIKECRAFT GUNS
-
-$Name: MIND Gattler
+$Name: WTFBBQMind
 $Model File: none
-@Laser Bitmap: Citra_Bitmap
-@Laser Glow: Alouqua_Glow
-@Laser Color: 10, 0, 91
-@Laser Color2: 91, 0, 10
-@Laser Length: 1.0
-@Laser Head Radius: 1.4
-@Laser Tail Radius: 1.4
-$Mass: 0.2
-$Velocity: 900.0
-$Fire Wait: 0.10
-$Damage: 3
-$Damage Type: LightWeapCAPTUR
-$Armor Factor: 0.7
-$Shield Factor: 1.4
-$Subsystem Factor: 0.5
-$Lifetime: 1.0
-$Energy Consumed: 1.0
+@Laser Bitmap: laserglow01
+@Laser Color: 250, 250, 250
+@Laser Length: 0.0
+@Laser Head Radius: 0.30
+@Laser Tail Radius: 0.30
+$Mass: 100.0
+$Velocity: 750.0
+$Fire Wait: 30.0
+$Damage: 3000
+$Damage Type: HugeWeap
+$Armor Factor: 1.0
+$Shield Factor: 1.0
+$Subsystem Factor: 1.0
+$Lifetime: 10.0
+$Energy Consumed: 0.30 
 $Cargo Size: 0.0
 $Homing: NO
-$LaunchSnd: 103
-$ImpactSnd: 85
-+Weapon Range: 900
-$Flags: ()
-$Trail:
- +Start Width: 0.25
- +End Width: 0.1
- +Start Alpha: 0.4
- +End Alpha: 0.0
- +Max Life: 0.07
- +Bitmap: Alouqua_Trail
-$Impact Explosion: Shivan_Impact01
-$Impact Explosion Radius: 2.6
-$Piercing Impact Explosion: exp06
-$Piercing Impact Radius: 1.3
-$Piercing Impact Velocity: 10
-$Piercing Impact Splash Velocity: -2.5
-$Piercing Impact Variance: 0.01
-$Piercing Impact Particles: 5
-$Muzzleflash: Rmuzzle
-$FOF: 0.1
-+FOF Spread Rate: 0.02
-+FOF Reset Rate: 0.05
-+Max FOF: 0.5
-
-$Name: MIND Fragment Gun
-$Model File: none
-@Laser Bitmap: Citra_Bitmap
-@Laser Glow: Alouqua_Glow
-@Laser Color: 10, 0, 91
-@Laser Color2: 91, 0, 10
-@Laser Length: 1.0
-@Laser Head Radius: 1.4
-@Laser Tail Radius: 1.4
-$Mass: 0.2
-$Velocity: 900.0
-$Fire Wait: 0.10
-$Damage: 3
-$Damage Type: LightWeapCAPTUR
-$Armor Factor: 0.7
-$Shield Factor: 1.4
-$Subsystem Factor: 0.5
-$Lifetime: 1.0
-$Energy Consumed: 1.0
-$Cargo Size: 0.0
-$Homing: NO
-$LaunchSnd: 103
-$ImpactSnd: 85
-+Weapon Range: 900
-$Flags: ()
-$Trail:
- +Start Width: 0.25
- +End Width: 0.1
- +Start Alpha: 0.4
- +End Alpha: 0.0
- +Max Life: 0.07
- +Bitmap: Alouqua_Trail
-$Impact Explosion: Shivan_Impact01
-$Impact Explosion Radius: 2.6
-$Piercing Impact Explosion: exp06
-$Piercing Impact Radius: 1.3
-$Piercing Impact Velocity: 10
-$Piercing Impact Splash Velocity: -2.5
-$Piercing Impact Variance: 0.01
-$Piercing Impact Particles: 5
-$Muzzleflash: Rmuzzle
-$FOF: 0.1
-+FOF Spread Rate: 0.02
-+FOF Reset Rate: 0.05
-+Max FOF: 0.5
-
-;;MIND-X AA GUNS
-
-;;MIND-X BIG GUNS
+$LaunchSnd: 124
+$ImpactSnd: 88
++Weapon Range: 10000
+$Flags: ( "Big Ship" "huge" "beam" "same turret cooldown" )
+$Impact Explosion: exp04
+$Impact Explosion Radius: 50.0
+$BeamInfo:
+ +Type: 0
+ +Life: 10.0
+ +Warmup: 6000
+ +Warmdown: 5000
+ +Radius: 160.0
+ +PCount: 50
+ +PRadius: 5.0
+ +PAni: particle_yellow
+ +Miss Factor: 1.0 1.0 0.0 1.0 1.0
+ +BeamSound: 148
+ +WarmupSound: 234
+ +WarmdownSound: 160
+ +Muzzleglow: beamglow6
+ +Shots: 0
+ +ShrinkFactor: 0.0
+ +ShrinkPct: 0.0
+ +Range: 9999999.9
+ +BeamWidth: 150
+ +Beam Flash Effect: capflash
+ +Beam Flash Radius: 80
+ +Beam Piercing Effect: exp06
+ +Beam Piercing Radius: 40
+ +Beam Piercing Effect Velocity: 400
+ +Beam Piercing Splash Effect Velocity: -40
+ +Beam Piercing Effect Variance: 0.02
+ $Section:
+ +Width: 80.0
+ +Texture: VasBeam2Core
+ +RGBA Inner: 255 255 255 255
+ +RGBA Outer: 150 150 150 10
+ +Flicker: 0.1
+ +Zadd: 9
+ +Tile Factor: 10, 1
+ +Translation: -25
+ $Section:
+ +Width: 120.
+ +Texture: VasBeam2Glow
+ +RGBA Inner: 160 160 0 255
+ +RGBA Outer: 60 60 0 10
+ +Flicker: 0.3
+ +Zadd: 6
+ +Tile Factor: 10, 1
+ +Translation: -16
+ $Section:
+ +Width: 180.0
+ +Texture: VasBeam2GlowHaze
+ +RGBA Inner: 255 0 0 255
+ +RGBA Outer: 60 0 0 10
+ +Flicker: 0.4
+ +Zadd: 3
+ +Tile Factor: 10, 1
+ +Translation: -13
+ $Section:
+ +Width: 200.5
+ +Texture: OrangeFade
+ +RGBA Inner: 255 255 255 255
+ +RGBA Outer: 150 150 150 10
+ +Flicker: 0.35
+ +Zadd: 1
 
 #End
 
