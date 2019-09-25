@@ -2346,6 +2346,11 @@ $Formula: ( when
       6000 
    )
    ( fade-out 5000 0 ) 
+   ( close-sound-from-file ( false ) ) 
+   ( change-soundtrack "<No Music>" ) 
+   ( play-sound-from-file 
+      "stormshadowend" 
+   )
 )
 +Name: Failsafe end mission
 +Repeat Count: 1

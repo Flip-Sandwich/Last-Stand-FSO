@@ -4,7 +4,7 @@ $Version: 0.10
 $Name:  XSTR("The Great Escape", -1)
 $Author: [`_`]
 $Created: 07/21/16 at 11:05:45
-$Modified: 09/25/19 at 21:10:44
+$Modified: 09/25/19 at 21:23:39
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -24,7 +24,7 @@ $end_multi_text
 
 +Viewer pos: -766.398254, 787.627380, 761.620789
 +Viewer orient:
-	0.100348, -0.000900, -0.994952,
+	0.100348, -0.000899, -0.994952,
 	0.236048, 0.971471, 0.022929,
 	0.966546, -0.237157, 0.097697
 
@@ -4757,6 +4757,11 @@ $Formula: ( when
       6000 
    )
    ( fade-out 5000 0 ) 
+   ( close-sound-from-file ( false ) ) 
+   ( change-soundtrack "<No Music>" ) 
+   ( play-sound-from-file 
+      "stormshadowend" 
+   )
 )
 +Name: Failsafe end mission
 +Repeat Count: 1

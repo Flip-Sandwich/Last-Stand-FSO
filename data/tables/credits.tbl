@@ -1,21 +1,21 @@
 $SCP Credits position: end
 
 XSTR("The Last Stand", -1)
-Face/[`_`]/, FREDer
+Face/JSRNerdo/[`_`]/, FREDder
 Xenocartographer, Tester, Magician, Editor
-Unfortunate Pilot Dude/Dave, Tester, Editor
+Unfortunate Pilot Dude/Dave, Tester, Ruiner of Everything
 Darius, just a really swell dude
 Axem, helped too I guess
 
-XSTR("Assets pack 1", -1)
 XSTR("Effects", -1)
-Saturn BG - NASA/Hubble Archives by way of Blue Planet
 exp_merc - ???
 exp03 - Inferno
 massdriver - mediavps
 Maul - ???
 pillumImpact - ???
 RailgunImpact - Inferno
+Warp - Diaspora
+shockwaveO - Nighteyes by way of Earth Defence
 
 XSTR("Models", -1)
 Canberra - Black Wolf
@@ -26,6 +26,14 @@ Jackal, Lancer, assorted weapons - Steve-O
 MissileL, M, S: StratComm
 Moscow - Literally too many to list by way of Darius
 Hemsut/VasGS, Ramses/ZodCarrier - Black Wolf
+Claymore, Leto - Aldo_14 and Vasudan Admiral by way of Blue Planet
+Cleopatra - Black Wolf
+Beijing/Prominence - Shivan-Hunter
+Impervious - Droid803
+Setep - Inferno
+strident - Halo by way of Darius
+warlock - Scroll of Atankharzim
+Wraith, assorted weapons - Steve-O
 
 XSTR("Music", -1)
 HTV - X Rebirth: Hammering The Void
@@ -35,6 +43,9 @@ settingsail - Machinimasound: Setting Sail
 SolarEchoes - Children of a Dead Earth: Solar Echoes
 StruggleForLife - Trauma Team: Struggle for Life
 TTV_Amb: X Rebirth: Towards the Victory
+hl1song - Half Life: Song 19
+Music4 - RealSpace 3
+EmergencyProcedure - Trauma Team: Emergency Procedure
 
 XSTR("Sounds", -1)
 accelcapital, acccelsmall, capsulestop, missilelockonme - Stock sounds by way of Free Allegiance(play it!)
@@ -46,32 +57,18 @@ l_50mm, l_disrupter, l_light, l_taurus - ??? by way of Burning Heaven
 MW4* - MechWarrior 4
 Stormfire, krator, gauss - ??? by way of Shadow Genesis
 Warp sounds - EVE Online
+ED Beams: Earth Defence
+emptymsg: ???
+FTL sounds: Diaspora
+
+XSTR("Miscellaneous", -1)
+Saturn BG - NASA/Hubble Archives by way of Blue Planet
+Asteroids BG - Inferno(?)
+Head-CM06-CM10 - Black Wolf
 
 XSTR("Assets pack 2", -1)
 XSTR("Effects", -1)
 Asteroids BG - Inferno(?)
-Warp - Diaspora
-shockwaveO - Nighteyes by way of Earth Defence
-
-XSTR("Models", -1)
-Claymore, Leto - Aldo_14 and Vasudan Admiral by way of Blue Planet
-Cleopatra - Black Wolf
-Beijing/Prominence - Shivan-Hunter
-Impervious - Droid803
-Setep - Inferno
-strident - Halo by way of Darius
-warlock - Scroll of Atankharzim
-Wraith, assorted weapons - Steve-O
-
-XSTR("Music", -1)
-hl1song - Half Life: Song 19
-Music4 - RealSpace 3
-EmergencyProcedure - Trauma Team: Emergency Procedure
-
-XSTR("Sounds", -1)
-ED Beams: Earth Defence
-emptymsg: ???
-FTL sounds: Diaspora
 
 XSTR("Bolitho Command", -1)
 XSTR("Effects", -1)
@@ -82,9 +79,10 @@ Bolitho: Diaspora by way of Darius
 XSTR("Music", -1)
 bleeding - The music of Juniper's Knot by Combatplayer
 wallbreach - Kingdom of Heaven OST by Harry Gregson-Williams
+
 XSTR("Sounds", -1)
 
-Head-CM06-CM10 - Black Wolf
+XSTR("Miscellaneous", -1)
 Neptune BG - NASA/Hubble Archives by way of Blue Planet
 
 Asteria - Oddgrim
@@ -94,7 +92,6 @@ Hercules (mark III) - Inferno
 NeoRheaZ/Borisov - Dimensional Eclipse
 Orion/Dauntless - Halo by way of Darius
 Udjat - Scroll of Atankharzim/Upgraded by Nyctaeus
-
 
 train_derailed - ???
 

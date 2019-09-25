@@ -56,8 +56,6 @@ $end_multi_text
 +Tech Title: XSTR("Vigilante GC-13 Plasma Gun", -1)
 +Tech Anim: Tech_GTW_UD-8_Kayser
 +Tech Description: XSTR("Vigilante GC-13
-Plasma Gun
-
 The Vigilante GC-13 is an effective weapon for use against all enemy vessels. The primary armament of the Shrike attack fighter, the Vigilante uses a magnetic containment system to direct a bolt of plasma from an internal reactor to a target, producing devastating results. The Vigilante is capable of wreaking havoc on anything from a Proton fighter to a Borisov cruiser.", -1)
 $end_multi_text
 $Tech Model: wep_kayser_tech.pof
@@ -117,9 +115,6 @@ $end_multi_text
 +Tech Title: XSTR("Portanis C-12 Cannon", -1)
 +Tech Anim: Tech_GTW-5a_Prometheus_R
 +Tech Description: XSTR("
-Portanis C-12
-Cannon
-
 The Portanis C-12 is a medium cannon mountable on all modern Union ships capable of utilizing the Modular Weapons Framework. The C-12 is well-adapted to any role, including anti-fighter, anti-bomber and anti-turret work. While accuracy is superior to that of the Darsij autocannon, the Porantis still suffers from an inherent degree of inaccuracy. Pilots must be aware that, similarly to the Darsij autocannon, the Porantis requires ammunition to function.
 ", -1)
 $end_multi_text
@@ -181,9 +176,6 @@ $end_multi_text
 +Tech Title: XSTR("Darsij P-294 Autocannon", -1)
 +Tech Anim: Tech_GTW_ML-70
 +Tech Description: XSTR("
-Darsij P-294
-Autocannon
-
 The Darsij P-294 Autocannon is a powerful medium to close range engagement weapon. Currently the Union's most damaging weapon in terms of sheer fire volume that can be mounted onto a modular weapons slot, the Darsij trades finesse for brutality. While suffering from ammunition feed issues owing to a relatively inefficent magazine feed system, the Darsij is still a highly effective weapon. Pilots must be aware that the Darsij's penetration is subpar against heavily armoured targets, such as the Borisov cruiser.
 ", -1)
 $end_multi_text
@@ -292,9 +284,6 @@ $end_multi_text
 +Tech Title: XSTR("Torrika KB-1 Plasma Gun", -1)
 +Tech Anim: Tech_Subach_HL-7
 +Tech Description: XSTR("
-Torrika KB-1
-Plasma Gun
-
 The first fighter-mounted plasma cannon developed, the Torrika KB-1 fires a bolt of excited plasma at its target, causing massive damage from both the impact of the bolt and the effects of the superheated plasma on hull plating. The Torrika's unique mechanism gives it many advantages over other Modular Weapons Framework weapons, such as the longest range of all Union strikecraft weapons.
 ", -1)
 $end_multi_text
@@ -2588,9 +2577,6 @@ $end_multi_text
 +Tech Title: XSTR("Djinn", -1)
 +Tech Anim: Tech_GTI_TAG_Missile_C
 +Tech Description: XSTR("
-Djinn
-Advanced Seeker Missile
-
 The Union's Djinn missle is the most sophisticated weapon in the Union arsenal. Not only is it the longest range missile used by the Union Fighter Corps, but advanced fuzzy-logic circuitry enables it to absolutely guarantee a hit on any and all targets. The missile's warhead is wrapped in a shell of ultra-dense depleted uranium, ensuring maximum penetration into the hull of its target before the warhead detonates.
 ", -1)
 $end_multi_text
@@ -2660,9 +2646,6 @@ $end_multi_text
 +Tech Title: XSTR("Neutron", -1)
 +Tech Anim: Tech_GTM_MX-6_Tempest
 +Tech Description: XSTR("
-Neutron
-Dumbfire
-
 The Neutron missile was developed as a short range, massively powerful dumbfire missile. Utilizing the latest in warhead technology, the Neutron can pack more firepower into a smaller space than any other missile due to the lack of a bulky tracking mechanism. The Neutron is effective as an anti-ship missile against capital ships and even slower strikecraft, such as the Federal Wraith.
 ", -1)
 $end_multi_text
@@ -2723,9 +2706,6 @@ $end_multi_text
 +Tech Title: XSTR("Spear", -1)
 +Tech Anim: Tech_Harpoon
 +Tech Description: XSTR("
-Spear
-Standard Anti-Ship Missile
-
 The Spear was developed as an improvement over the old Meteor missile. A longer-ranged missile with a more powerful warhead, a shorter lock time, and longer range, the Spear surpasses the Meteor in every way. The Spear is expected to play a vital role in Union Fighter Corps doctrine in the following years, allowing Union craft to take down hostile fighters with ease.
 ", -1)
 $end_multi_text
@@ -2796,9 +2776,6 @@ $end_multi_text
 +Tech Title: XSTR("Zeus", -1)
 +Tech Anim: Tech_GTM-4_Hornet
 +Tech Description: XSTR("
-Zeus
-Friend-or-Foe Swarm Missile
-
 ", -1)
 $end_multi_text
 $Tech Model: newhornet_tech.pof
@@ -2865,9 +2842,6 @@ $end_multi_text
 +Tech Title: XSTR("Thunder", -1)
 +Tech Anim: Tech_Tornado
 +Tech Description: XSTR("
-Thunder
-Heat-seeking Missile
-
 ", -1)
 $end_multi_text
 $Tech Model: bombardier-tech.pof
@@ -2942,9 +2916,6 @@ $end_multi_text
 +Tech Title: XSTR("Typhoon", -1)
 +Tech Anim: Tech_Cyclops
 +Tech Description: XSTR("
-Typhoon
-Standard Anti-Capital Bomb
-
 ", -1)
 $end_multi_text
 $Tech Model: cyclops-tech.pof
