@@ -2484,6 +2484,92 @@ $BeamInfo:
  +Flicker: 0.35
  +Zadd: 1
 
+$Name: WTFBBQMind
+$Model File: none
+@Laser Bitmap: laserglow01
+@Laser Color: 250, 250, 250
+@Laser Length: 0.0
+@Laser Head Radius: 0.30
+@Laser Tail Radius: 0.30
+$Mass: 100.0
+$Velocity: 750.0
+$Fire Wait: 30.0
+$Damage: 3000
+$Damage Type: HugeWeap
+$Armor Factor: 1.0
+$Shield Factor: 1.0
+$Subsystem Factor: 1.0
+$Lifetime: 10.0
+$Energy Consumed: 0.30 
+$Cargo Size: 0.0
+$Homing: NO
+$LaunchSnd: 124
+$ImpactSnd: 88
++Weapon Range: 10000
+$Flags: ( "Big Ship" "huge" "beam" "same turret cooldown" )
+$Impact Explosion: exp04
+$Impact Explosion Radius: 50.0
+$BeamInfo:
+ +Type: 0
+ +Life: 10.0
+ +Warmup: 6000
+ +Warmdown: 5000
+ +Radius: 160.0
+ +PCount: 50
+ +PRadius: 5.0
+ +PAni: particle_yellow
+ +Miss Factor: 1.0 1.0 0.0 1.0 1.0
+ +BeamSound: 148
+ +WarmupSound: 234
+ +WarmdownSound: 160
+ +Muzzleglow: beamglow6
+ +Shots: 0
+ +ShrinkFactor: 0.0
+ +ShrinkPct: 0.0
+ +Range: 9999999.9
+ +BeamWidth: 150
+ +Beam Flash Effect: capflash
+ +Beam Flash Radius: 80
+ +Beam Piercing Effect: exp06
+ +Beam Piercing Radius: 40
+ +Beam Piercing Effect Velocity: 400
+ +Beam Piercing Splash Effect Velocity: -40
+ +Beam Piercing Effect Variance: 0.02
+ $Section:
+ +Width: 80.0
+ +Texture: VasBeam2Core
+ +RGBA Inner: 255 255 255 255
+ +RGBA Outer: 150 150 150 10
+ +Flicker: 0.1
+ +Zadd: 9
+ +Tile Factor: 10, 1
+ +Translation: -25
+ $Section:
+ +Width: 120.
+ +Texture: VasBeam2Glow
+ +RGBA Inner: 160 160 0 255
+ +RGBA Outer: 60 60 0 10
+ +Flicker: 0.3
+ +Zadd: 6
+ +Tile Factor: 10, 1
+ +Translation: -16
+ $Section:
+ +Width: 180.0
+ +Texture: VasBeam2GlowHaze
+ +RGBA Inner: 255 0 0 255
+ +RGBA Outer: 60 0 0 10
+ +Flicker: 0.4
+ +Zadd: 3
+ +Tile Factor: 10, 1
+ +Translation: -13
+ $Section:
+ +Width: 200.5
+ +Texture: OrangeFade
+ +RGBA Inner: 255 255 255 255
+ +RGBA Outer: 150 150 150 10
+ +Flicker: 0.35
+ +Zadd: 1
+
 ;;MIND-X STRIKECRAFT GUNS
 
 $Name: MIND Gattler

@@ -1779,7 +1779,7 @@ $AI Class: Captain
 $Afterburner: NO
 $Countermeasures: 0
 $Scan time: 9000
-$EngineSnd: -191
+$EngineSnd: 191
 $Closeup_pos: 0.0, 1.0, -1500
 $Closeup_zoom: 0.5
 $Score: 0
@@ -4777,7 +4777,7 @@ The only known vessel of destroyer classification, the Pharaoh is the most power
 The firepower of the Pharaoh is greater than that of most UN task forces, and scans indicate that the Pharaoh has considerable excess energy reserves, the purpose of which is unknown. If we cannot stop the Pharaoh, we do not expect to be able to defeat the MIND.
 ", -1)
 $end_multi_text
-$POF file: capital2V-01.pof
+$POF file: MIND_Pharaoh.pof
 $Detail distance: ( 0, 4104, 8208, 16419 )
 $Show damage: NO
 $Density: 1
@@ -4969,6 +4969,10 @@ $Subsystem: turret29,0.125,0.5
 $Subsystem: turret30,0.125,0.5
  $Default PBanks: ( "MIND Flak" )
  $Flags: ( "check hull" )
+$Subsystem: turretBFG,25.0,0.5
+ $Alt Subsystem Name: Superweapon
+ $Default PBanks: ( "WTFBBQMind" )
+ $Flags: ( "check hull" "untargetable" "damage as hull" )
 $Subsystem: bridge, 5,0.0
 $Subsystem: navigation, 5,0.0
 $Subsystem: weapons, 5,0.0
