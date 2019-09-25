@@ -4,7 +4,7 @@ $Version: 0.10
 $Name:  XSTR("The Great Escape", -1)
 $Author: [`_`]
 $Created: 07/21/16 at 11:05:45
-$Modified: 05/08/18 at 08:01:36
+$Modified: 09/25/19 at 20:21:41
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -22,11 +22,11 @@ $end_multi_text
 +Hull Repair Ceiling: 0.000000
 +Subsystem Repair Ceiling: 100.000000
 
-+Viewer pos: 3984.406738, 2221.288818, -4995.686523
++Viewer pos: 4587.375977, 856.896606, -62.537766
 +Viewer orient:
-	0.762802, -0.000899, 0.646631,
-	-0.172412, 0.963515, 0.204727,
-	-0.623223, -0.267653, 0.734816
+	0.955527, -0.000899, 0.294902,
+	-0.206068, 0.713311, 0.669868,
+	-0.210959, -0.700847, 0.681403
 
 $Starting wing names: ( "Polydeuces#" "Alpha" "Bravo" )
 $Squadron wing names: ( "Polydeuces#" "Alpha" "Bravo" "Charlie" "Delta" )
@@ -41,49 +41,50 @@ $AI Profile: CAPSHIPCOMMAND
 $Variables:
 (
 		0		"AmmoSwitchCount"		"0"		"number"
-		1		"BeamLeftStatus"		"200"		"number"
-		2		"BeamRightStatus"		"200"		"number"
-		3		"Capacitor"		"100"		"number"
-		4		"HardenLevel"		"0"		"number"
-		5		"Heat"		"0"		"number"
-		6		"HeatHasCritical"		"0"		"number"
-		7		"LeftBeamTick"		"0"		"number"
-		8		"OVerride"		"0"		"number"
-		9		"PlayerTarget"		"Battuta"		"string"
-		10		"PlayerTargetSS"		"Axems house"		"string"
-		11		"Repairing"		"0"		"number"
-		12		"RightBeamsTick"		"0"		"number"
-		13		"ship-manev-timer"		"0"		"number"
-		14		"ShipTargeted"		"a whale"		"string"
-		15		"ShipTargetedRight"		"a bote"		"string"
-		16		"SHUTDOWN"		"0"		"number"
-		17		"TimeLeftEvac"		"180"		"number"
-		18		"WarpCancelB"		"0"		"number"
-		19		"WarpCancelETSE"		"0"		"number"
-		20		"WarpCancelETSS"		"0"		"number"
-		21		"WarpCancelETSW"		"0"		"number"
-		22		"WarpCancelH"		"0"		"number"
-		23		"WarpCancelP"		"0"		"number"
-		24		"WarpCancelS"		"0"		"number"
-		25		"WarpCancelSW"		"0"		"number"
-		26		"WarpCancelSWA"		"0"		"number"
-		27		"WarpCancelT"		"0"		"number"
-		28		"WarpCancelX"		"0"		"number"
-		29		"WarpCancelY"		"0"		"number"
-		30		"WarpCancelZ"		"0"		"number"
-		31		"WarpFinalB"		"0"		"number"
-		32		"WarpFinalH"		"0"		"number"
-		33		"WarpFinalP"		"0"		"number"
-		34		"WarpFinalX"		"0"		"number"
-		35		"WarpFinalY"		"0"		"number"
-		36		"WarpFinalZ"		"0"		"number"
-		37		"WarpStatus"		"-1"		"number"
+		1		"BeamLeftStatus"		"75"		"number"
+		2		"BeamRightStatus"		"75"		"number"
+		3		"CalcTemp"		"0"		"number"
+		4		"Capacitor"		"100"		"number"
+		5		"HardenLevel"		"0"		"number"
+		6		"Heat"		"0"		"number"
+		7		"HeatHasCritical"		"0"		"number"
+		8		"LeftBeamTick"		"0"		"number"
+		9		"OVerride"		"0"		"number"
+		10		"PlayerTarget"		"null"		"string"
+		11		"PlayerTargetSS"		"Axems house"		"string"
+		12		"Repairing"		"0"		"number"
+		13		"RightBeamsTick"		"0"		"number"
+		14		"ship-manev-timer"		"0"		"number"
+		15		"ShipTargeted"		"a whale"		"string"
+		16		"ShipTargetedRight"		"a bote"		"string"
+		17		"SHUTDOWN"		"0"		"number"
+		18		"TimeLeftEvac"		"180"		"number"
+		19		"WarpCancelB"		"0"		"number"
+		20		"WarpCancelETSE"		"0"		"number"
+		21		"WarpCancelETSS"		"0"		"number"
+		22		"WarpCancelETSW"		"0"		"number"
+		23		"WarpCancelH"		"0"		"number"
+		24		"WarpCancelP"		"0"		"number"
+		25		"WarpCancelS"		"0"		"number"
+		26		"WarpCancelSW"		"0"		"number"
+		27		"WarpCancelSWA"		"0"		"number"
+		28		"WarpCancelT"		"0"		"number"
+		29		"WarpCancelX"		"0"		"number"
+		30		"WarpCancelY"		"0"		"number"
+		31		"WarpCancelZ"		"0"		"number"
+		32		"WarpFinalB"		"0"		"number"
+		33		"WarpFinalH"		"0"		"number"
+		34		"WarpFinalP"		"0"		"number"
+		35		"WarpFinalX"		"0"		"number"
+		36		"WarpFinalY"		"0"		"number"
+		37		"WarpFinalZ"		"0"		"number"
+		38		"WarpStatus"		"-1"		"number"
 )
 
 #Command Briefing
 
 $Stage Text:
- XSTR("Commander, is this channel secure? Good. You've heard the news. $r MIND forces have broken through our last lines of defense at $v Polaris. We're deploying the $b Polydeuces immediately. 
+ XSTR("Commander, is this channel secure? Good. You've heard the news. $r MIND forces have broken through our last lines of defence at $v Polaris. We're deploying the $b Polydeuces immediately. 
 
 I realise the ship needs more shakedown time and your crew needs more training. I'm afraid we've run out of time.
 
@@ -812,6 +813,7 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Subsystem: turret28
 +Subsystem: turret29
 +Subsystem: turret30
++Subsystem: turretBFG
 $Arrival Location: Hyperspace
 $Arrival Cue: ( is-destroyed-delay 
    15 
@@ -2189,9 +2191,7 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Subsystem: Turret04
 +Subsystem: Turret05
 +Subsystem: Turret06
-$Arrival Location: Near Ship
-+Arrival Distance: 500
-$Arrival Anchor: Gunship warpin point
+$Arrival Location: Hyperspace
 +Arrival Delay: 1
 $Arrival Cue: ( has-arrived-delay 
    2 
@@ -2235,9 +2235,7 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Subsystem: Turret04
 +Subsystem: Turret05
 +Subsystem: Turret06
-$Arrival Location: Near Ship
-+Arrival Distance: 500
-$Arrival Anchor: Gunship warpin point
+$Arrival Location: Hyperspace
 +Arrival Delay: 1
 $Arrival Cue: ( has-arrived-delay 
    2 
@@ -2274,7 +2272,7 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Shields: 100
 +Subsystem: Pilot
 $Arrival Location: In front of ship
-+Arrival Distance: 4000
++Arrival Distance: 4500
 $Arrival Anchor: Savoy
 $Arrival Cue: ( and 
    ( is-event-true-delay "Savoy go" 30 ) 
@@ -2663,7 +2661,7 @@ $Ships: (		;! 4 total
 $AI Goals: ( goals ( ai-guard "Polydeuces# 1" 50 ) )
 +Flags: ( )
 
-#Events		;! 110 total
+#Events		;! 105 total
 
 $Formula: ( when ( true ) ( do-nothing ) ) 
 +Name: --CSC script--
@@ -2671,19 +2669,45 @@ $Formula: ( when ( true ) ( do-nothing ) )
 +Interval: 1
 
 $Formula: ( when 
-   ( true ) 
+   ( is-ship-class 
+      "UN Moscow#PLAYEr" 
+      "Polydeuces# 1" 
+   )
    ( beam-lock-all "Polydeuces# 1" ) 
    ( set-afterburner-energy 
       0 
       "Polydeuces# 1" 
    )
    ( hud-set-message 
-      "TLSTaccomE" 
+      "TLSTaccomF" 
       "Overview: Repping off" 
    )
    ( hud-set-message 
-      "TLSTaccomD" 
+      "TLSTaccomE" 
       "Overview: Hardeners off" 
+   )
+   ( when-argument 
+      ( any-of 
+         "TLSTaccom" 
+         "TLSTaccomA" 
+         "TLSTaccomB" 
+         "TLSTaccomC" 
+         "TLSTaccomD" 
+         "TLSTaccomE" 
+         "TLSTaccomF" 
+         "TLSTaccomG" 
+         "BPTaccom" 
+         "BPTaccomA" 
+         "BPTaccomB" 
+         "BPTaccomC" 
+         "BPTaccomD" 
+         "BPTaccomE" 
+      )
+      ( true ) 
+      ( hud-set-custom-gauge-active 
+         ( true ) 
+         "<argument>" 
+      )
    )
 )
 +Name: initialize player
@@ -2691,69 +2715,9 @@ $Formula: ( when
 +Interval: 1
 
 $Formula: ( every-time 
-   ( not 
-      ( string-equals 
-         "@PlayerTarget[Battuta]" 
-         "null" 
-      )
-   )
-   ( if-then-else 
-      ( > @RightBeamsTick[0] 0 ) 
-      ( hud-set-message 
-         "TLSTaccomB" 
-         "Overview: R Firing" 
-      )
-      ( if-then-else 
-         ( < @BeamRightStatus[200] 200 ) 
-         ( hud-set-message 
-            "TLSTaccomB" 
-            "Overview: R recharging" 
-         )
-         ( if-then-else 
-            ( is-in-box 
-               "@PlayerTarget[Battuta]" 
-               -5000 
-               1 
-               -5000 
-               5000 
-               -5000 
-               5000 
-               "Polydeuces# 1" 
-            )
-            ( hud-set-message 
-               "TLSTaccomB" 
-               "Overview: R Not in FOV" 
-            )
-            ( if-then-else 
-               ( > 
-                  ( distance-ship-subsystem 
-                     "@PlayerTarget[Battuta]" 
-                     "Polydeuces# 1" 
-                     "turret02" 
-                  )
-                  5500 
-               )
-               ( hud-set-message 
-                  "TLSTaccomB" 
-                  "Overview: R range" 
-               )
-               ( hud-set-message 
-                  "TLSTaccomB" 
-                  "Overview: R can fire" 
-               )
-            )
-         )
-      )
-   )
-)
-+Name: Right beam TACHUD
-+Repeat Count: 1
-+Interval: 1
-
-$Formula: ( every-time 
    ( string-equals 
       "null" 
-      "@PlayerTarget[Battuta]" 
+      "@PlayerTarget[null]" 
    )
    ( hud-set-message 
       "TLSTaccomA" 
@@ -2806,115 +2770,8 @@ $Formula: ( when
 +Trigger Count: 999999
 +Interval: 1
 
-$Formula: ( every-time 
-   ( not 
-      ( string-equals 
-         "@PlayerTarget[Battuta]" 
-         "null" 
-      )
-   )
-   ( if-then-else 
-      ( > @LeftBeamTick[0] 0 ) 
-      ( hud-set-message 
-         "TLSTaccomA" 
-         "Overview: L firing" 
-      )
-      ( if-then-else 
-         ( < @BeamLeftStatus[200] 200 ) 
-         ( hud-set-message 
-            "TLSTaccomA" 
-            "Overview: Left recharging" 
-         )
-         ( if-then-else 
-            ( is-in-box 
-               "@PlayerTarget[Battuta]" 
-               -1 
-               5000 
-               -5000 
-               5000 
-               -5000 
-               5000 
-               "Polydeuces# 1" 
-            )
-            ( hud-set-message 
-               "TLSTaccomA" 
-               "Overview: L Not in view" 
-            )
-            ( if-then-else 
-               ( > 
-                  ( distance-ship-subsystem 
-                     "@PlayerTarget[Battuta]" 
-                     "Polydeuces# 1" 
-                     "turret01" 
-                  )
-                  5500 
-               )
-               ( hud-set-message 
-                  "TLSTaccomA" 
-                  "Overview: L range" 
-               )
-               ( hud-set-message 
-                  "TLSTaccomA" 
-                  "Overview: L can fire" 
-               )
-            )
-         )
-      )
-   )
-)
-+Name: Left beam TACHUD
-+Repeat Count: 1
-+Interval: 1
-
-$Formula: ( when 
-   ( = @SHUTDOWN[0] 0 ) 
-   ( if-then-else 
-      ( >= 
-         ( afterburner-energy-pct 
-            "Polydeuces# 1" 
-         )
-         100 
-      )
-      ( hud-set-message 
-         "TLSTaccomC" 
-         "Overview: AB full" 
-      )
-      ( if-then-else 
-         ( < @Capacitor[100] 20 ) 
-         ( hud-set-message 
-            "TLSTaccomC" 
-            "Overview: AB recharging" 
-         )
-         ( hud-set-message 
-            "TLSTaccomC" 
-            "Overview: AB can shunt" 
-         )
-      )
-   )
-)
-+Name: Burner shunt HUD
-+Repeat Count: -1
-+Trigger Count: 999999
-+Interval: 1
-
 $Formula: ( when 
    ( true ) 
-   ( set-object-position 
-      "Polydeuces Loc:1" 
-      ( get-object-x "Polydeuces# 1" ) 
-      ( get-object-y "Polydeuces# 1" ) 
-      ( get-object-z "Polydeuces# 1" ) 
-   )
-   ( key-reset-multiple "Q" ) 
-   ( key-reset-multiple "Left Arrow" ) 
-   ( key-reset-multiple "Right Arrow" ) 
-   ( key-reset-multiple "." ) 
-   ( key-reset-multiple "," ) 
-   ( key-reset-multiple "/" ) 
-   ( when 
-      ( > @Capacitor[100] 100 ) 
-      ( modify-variable @Capacitor[100] 100 ) 
-   )
    ( when 
       ( > @Heat[0] 0 ) 
       ( modify-variable 
@@ -2932,11 +2789,6 @@ $Formula: ( when
          0 
       )
    )
-   ( key-reset-multiple "1" ) 
-   ( key-reset-multiple "2" ) 
-   ( key-reset-multiple "Alt-J" ) 
-   ( key-reset-multiple "Shift-J" ) 
-   ( key-reset-multiple "3" ) 
    ( when 
       ( = @AmmoSwitchCount[0] 1 ) 
       ( modify-variable 
@@ -2946,7 +2798,7 @@ $Formula: ( when
    )
    ( script-eval "UpdateTarget()" ) 
 )
-+Name: Tick tock
++Name: Every second ticks
 +Repeat Count: -1
 +Trigger Count: 999999
 +Interval: 1
@@ -3084,6 +2936,10 @@ $Formula: ( when
          ( + @Heat[0] 2 ) 
       )
    )
+   ( when 
+      ( > @Capacitor[100] 100 ) 
+      ( modify-variable @Capacitor[100] 100 ) 
+   )
 )
 +Name: Regenerate capacitor
 +Repeat Count: -1
@@ -3091,246 +2947,263 @@ $Formula: ( when
 +Interval: 1
 
 $Formula: ( when 
-   ( and 
-      ( key-pressed "1" ) 
-      ( <= 
+   ( < @BeamLeftStatus[75] 150 ) 
+   ( when 
+      ( and 
+         ( > 
+            ( get-ets-value 
+               "Weapon" 
+               "Polydeuces# 1" 
+            )
+            0 
+         )
+         ( < 
+            ( get-ets-value 
+               "Weapon" 
+               "Polydeuces# 1" 
+            )
+            2 
+         )
+      )
+      ( modify-variable 
+         @BeamLeftStatus[75] 
+         ( + @BeamLeftStatus[75] 4 ) 
+      )
+   )
+   ( when 
+      ( and 
+         ( >= 
+            ( get-ets-value 
+               "Weapon" 
+               "Polydeuces# 1" 
+            )
+            2 
+         )
+         ( < 
+            ( get-ets-value 
+               "Weapon" 
+               "Polydeuces# 1" 
+            )
+            4 
+         )
+      )
+      ( modify-variable 
+         @BeamLeftStatus[75] 
+         ( + @BeamLeftStatus[75] 5 ) 
+      )
+   )
+   ( when 
+      ( and 
+         ( >= 
+            ( get-ets-value 
+               "Weapon" 
+               "Polydeuces# 1" 
+            )
+            4 
+         )
+         ( < 
+            ( get-ets-value 
+               "Weapon" 
+               "Polydeuces# 1" 
+            )
+            6 
+         )
+      )
+      ( modify-variable 
+         @BeamLeftStatus[75] 
          ( + 
-            @BeamRightStatus[200] 
-            @BeamLeftStatus[200] 
+            @BeamLeftStatus[75] 
+            ( rand-multiple 5 6 ) 
          )
-         900 
-      )
-      ( >= @Capacitor[100] 20 ) 
-   )
-   ( modify-variable 
-      @BeamLeftStatus[200] 
-      ( + 
-         @BeamLeftStatus[200] 
-         @Capacitor[100] 
-      )
-   )
-   ( modify-variable 
-      @BeamRightStatus[200] 
-      ( + 
-         @BeamRightStatus[200] 
-         @Capacitor[100] 
-      )
-   )
-   ( modify-variable @Capacitor[100] 0 ) 
-)
-+Name: Beam overdrive
-+Repeat Count: -1
-+Trigger Count: 999999
-+Interval: 1
-
-$Formula: ( when 
-   ( and 
-      ( > 
-         ( get-ets-value 
-            "Weapon" 
-            "Polydeuces# 1" 
-         )
-         0 
-      )
-      ( < 
-         ( get-ets-value 
-            "Weapon" 
-            "Polydeuces# 1" 
-         )
-         2 
       )
    )
    ( when 
-      ( < @BeamLeftStatus[200] 350 ) 
+      ( and 
+         ( >= 
+            ( get-ets-value 
+               "Weapon" 
+               "Polydeuces# 1" 
+            )
+            6 
+         )
+         ( < 
+            ( get-ets-value 
+               "Weapon" 
+               "Polydeuces# 1" 
+            )
+            8 
+         )
+      )
       ( modify-variable 
-         @BeamLeftStatus[200] 
-         ( + @BeamLeftStatus[200] 10 ) 
+         @BeamLeftStatus[75] 
+         ( + @BeamLeftStatus[75] 6 ) 
       )
    )
    ( when 
-      ( < @BeamRightStatus[200] 350 ) 
+      ( and 
+         ( >= 
+            ( get-ets-value 
+               "Weapon" 
+               "Polydeuces# 1" 
+            )
+            8 
+         )
+         ( < 
+            ( get-ets-value 
+               "Weapon" 
+               "Polydeuces# 1" 
+            )
+            10 
+         )
+      )
       ( modify-variable 
-         @BeamRightStatus[200] 
-         ( + @BeamRightStatus[200] 10 ) 
+         @BeamLeftStatus[75] 
+         ( + @BeamLeftStatus[75] 7 ) 
+      )
+      ( modify-variable 
+         @Heat[0] 
+         ( + @Heat[0] 1 ) 
       )
    )
-)
-+Name: Charge beam wepeng 1
-+Repeat Count: -1
-+Trigger Count: 999999
-+Interval: 1
-
-$Formula: ( when 
-   ( and 
+   ( when 
       ( >= 
-         ( get-ets-value 
-            "Weapon" 
-            "Polydeuces# 1" 
-         )
-         2 
-      )
-      ( < 
-         ( get-ets-value 
-            "Weapon" 
-            "Polydeuces# 1" 
-         )
-         4 
-      )
-   )
-   ( when 
-      ( < @BeamLeftStatus[200] 350 ) 
-      ( modify-variable 
-         @BeamLeftStatus[200] 
-         ( + @BeamLeftStatus[200] 12 ) 
-      )
-   )
-   ( when 
-      ( < @BeamRightStatus[200] 350 ) 
-      ( modify-variable 
-         @BeamRightStatus[200] 
-         ( + @BeamRightStatus[200] 12 ) 
-      )
-   )
-)
-+Name: Charge beam wepeng 2
-+Repeat Count: -1
-+Trigger Count: 999999
-+Interval: 1
-
-$Formula: ( when 
-   ( and 
-      ( >= 
-         ( get-ets-value 
-            "Weapon" 
-            "Polydeuces# 1" 
-         )
-         4 
-      )
-      ( < 
-         ( get-ets-value 
-            "Weapon" 
-            "Polydeuces# 1" 
-         )
-         6 
-      )
-   )
-   ( when 
-      ( < @BeamLeftStatus[200] 350 ) 
-      ( modify-variable 
-         @BeamLeftStatus[200] 
-         ( + @BeamLeftStatus[200] 14 ) 
-      )
-   )
-   ( when 
-      ( < @BeamRightStatus[200] 350 ) 
-      ( modify-variable 
-         @BeamRightStatus[200] 
-         ( + @BeamRightStatus[200] 14 ) 
-      )
-   )
-)
-+Name: Charge beam wepeng 3
-+Repeat Count: -1
-+Trigger Count: 999999
-+Interval: 1
-
-$Formula: ( when 
-   ( and 
-      ( >= 
-         ( get-ets-value 
-            "Weapon" 
-            "Polydeuces# 1" 
-         )
-         6 
-      )
-      ( < 
-         ( get-ets-value 
-            "Weapon" 
-            "Polydeuces# 1" 
-         )
-         8 
-      )
-   )
-   ( when 
-      ( < @BeamLeftStatus[200] 350 ) 
-      ( modify-variable 
-         @BeamLeftStatus[200] 
-         ( + @BeamLeftStatus[200] 15 ) 
-      )
-   )
-   ( when 
-      ( < @BeamRightStatus[200] 350 ) 
-      ( modify-variable 
-         @BeamRightStatus[200] 
-         ( + @BeamRightStatus[200] 15 ) 
-      )
-   )
-)
-+Name: Charge beam wepeng 4
-+Repeat Count: -1
-+Trigger Count: 999999
-+Interval: 1
-
-$Formula: ( when 
-   ( and 
-      ( >= 
-         ( get-ets-value 
-            "Weapon" 
-            "Polydeuces# 1" 
-         )
-         8 
-      )
-      ( < 
          ( get-ets-value 
             "Weapon" 
             "Polydeuces# 1" 
          )
          10 
       )
-   )
-   ( when 
-      ( < @BeamLeftStatus[200] 350 ) 
       ( modify-variable 
-         @BeamLeftStatus[200] 
-         ( + @BeamLeftStatus[200] 16 ) 
-      )
-   )
-   ( when 
-      ( < @BeamRightStatus[200] 350 ) 
-      ( modify-variable 
-         @BeamRightStatus[200] 
-         ( + @BeamRightStatus[200] 16 ) 
-      )
-   )
-   ( when 
-      ( or 
-         ( < @BeamLeftStatus[200] 350 ) 
-         ( < @BeamRightStatus[200] 350 ) 
+         @BeamLeftStatus[75] 
+         ( + 
+            @BeamLeftStatus[75] 
+            ( rand-multiple 7 8 ) 
+         )
       )
       ( modify-variable 
          @Heat[0] 
-         ( + @Heat[0] 1 ) 
+         ( + @Heat[0] 2 ) 
       )
    )
 )
-+Name: Charge beam wepeng 5
++Name: Regenerate left beam
 +Repeat Count: -1
 +Trigger Count: 999999
 +Interval: 1
 
 $Formula: ( when 
-   ( >= 
-      ( get-ets-value 
-         "Weapon" 
-         "Polydeuces# 1" 
+   ( < @BeamRightStatus[75] 150 ) 
+   ( when 
+      ( and 
+         ( > 
+            ( get-ets-value 
+               "Weapon" 
+               "Polydeuces# 1" 
+            )
+            0 
+         )
+         ( < 
+            ( get-ets-value 
+               "Weapon" 
+               "Polydeuces# 1" 
+            )
+            2 
+         )
       )
-      10 
+      ( modify-variable 
+         @BeamRightStatus[75] 
+         ( + @BeamRightStatus[75] 4 ) 
+      )
    )
    ( when 
-      ( < @BeamLeftStatus[200] 350 ) 
+      ( and 
+         ( >= 
+            ( get-ets-value 
+               "Weapon" 
+               "Polydeuces# 1" 
+            )
+            2 
+         )
+         ( < 
+            ( get-ets-value 
+               "Weapon" 
+               "Polydeuces# 1" 
+            )
+            4 
+         )
+      )
       ( modify-variable 
-         @BeamLeftStatus[200] 
-         ( + @BeamLeftStatus[200] 17 ) 
+         @BeamRightStatus[75] 
+         ( + @BeamRightStatus[75] 5 ) 
+      )
+   )
+   ( when 
+      ( and 
+         ( >= 
+            ( get-ets-value 
+               "Weapon" 
+               "Polydeuces# 1" 
+            )
+            4 
+         )
+         ( < 
+            ( get-ets-value 
+               "Weapon" 
+               "Polydeuces# 1" 
+            )
+            6 
+         )
+      )
+      ( modify-variable 
+         @BeamRightStatus[75] 
+         ( + 
+            @BeamRightStatus[75] 
+            ( rand-multiple 5 6 ) 
+         )
+      )
+   )
+   ( when 
+      ( and 
+         ( >= 
+            ( get-ets-value 
+               "Weapon" 
+               "Polydeuces# 1" 
+            )
+            6 
+         )
+         ( < 
+            ( get-ets-value 
+               "Weapon" 
+               "Polydeuces# 1" 
+            )
+            8 
+         )
+      )
+      ( modify-variable 
+         @BeamRightStatus[75] 
+         ( + @BeamRightStatus[75] 6 ) 
+      )
+   )
+   ( when 
+      ( and 
+         ( >= 
+            ( get-ets-value 
+               "Weapon" 
+               "Polydeuces# 1" 
+            )
+            8 
+         )
+         ( < 
+            ( get-ets-value 
+               "Weapon" 
+               "Polydeuces# 1" 
+            )
+            10 
+         )
+      )
+      ( modify-variable 
+         @BeamRightStatus[75] 
+         ( + @BeamRightStatus[75] 7 ) 
       )
       ( modify-variable 
          @Heat[0] 
@@ -3338,72 +3211,142 @@ $Formula: ( when
       )
    )
    ( when 
-      ( < @BeamRightStatus[200] 350 ) 
+      ( >= 
+         ( get-ets-value 
+            "Weapon" 
+            "Polydeuces# 1" 
+         )
+         10 
+      )
       ( modify-variable 
-         @BeamRightStatus[200] 
-         ( + @BeamRightStatus[200] 17 ) 
+         @BeamRightStatus[75] 
+         ( + 
+            @BeamRightStatus[75] 
+            ( rand-multiple 7 8 ) 
+         )
       )
       ( modify-variable 
          @Heat[0] 
-         ( + @Heat[0] 1 ) 
+         ( + @Heat[0] 2 ) 
       )
    )
 )
-+Name: Charge beam wepeng 6
++Name: Regenerate right beam
 +Repeat Count: -1
 +Trigger Count: 999999
 +Interval: 1
 
-$Formula: ( when-argument 
-   ( any-of 
-      "Pharaoh" 
-      "Nebty" 
-      "Merneptah" 
-      "Rimush" 
-      "Memphis" 
-      "Hemsut" 
-      "Menhit" 
+$Formula: ( every-time 
+   ( not 
+      ( string-equals 
+         "@PlayerTarget[null]" 
+         "null" 
+      )
    )
-   ( and 
-      ( targeted "<argument>" ) 
-      ( key-pressed "Left Arrow" ) 
-      ( >= @BeamLeftStatus[200] 200 ) 
-      ( <= 
-         ( distance-ship-subsystem 
-            "<argument>" 
+   ( if-then-else 
+      ( > @LeftBeamTick[0] 0 ) 
+      ( hud-set-message 
+         "TLSTaccomA" 
+         "Overview: L firing" 
+      )
+      ( if-then-else 
+         ( < @BeamLeftStatus[75] 75 ) 
+         ( hud-set-message 
+            "TLSTaccomA" 
+            "Overview: Left recharging" 
+         )
+         ( if-then-else 
+            ( not 
+               ( is-in-turret-fov 
+                  "@PlayerTarget[null]" 
+                  "Polydeuces# 1" 
+                  "turret01" 
+               )
+            )
+            ( hud-set-message 
+               "TLSTaccomA" 
+               "Overview: L Not in view" 
+            )
+            ( if-then-else 
+               ( > 
+                  ( distance-ship-subsystem 
+                     "@PlayerTarget[null]" 
+                     "Polydeuces# 1" 
+                     "turret01" 
+                  )
+                  5500 
+               )
+               ( hud-set-message 
+                  "TLSTaccomA" 
+                  "Overview: L range" 
+               )
+               ( if-then-else 
+                  ( > @BeamLeftStatus[75] 160 ) 
+                  ( hud-set-message 
+                     "TLSTaccomA" 
+                     "Overview: L overdriven" 
+                  )
+                  ( hud-set-message 
+                     "TLSTaccomA" 
+                     "Overview: L can fire" 
+                  )
+               )
+            )
+         )
+      )
+   )
+)
++Name: Left beam TACHUD
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( every-time 
+   ( key-pressed "Left Arrow" ) 
+   ( key-reset-multiple "Left Arrow" ) 
+   ( when-argument 
+      ( any-of 
+         "Pharaoh" 
+         "Nebty" 
+         "Merneptah" 
+         "Rimush" 
+         "Memphis" 
+         "Hemsut" 
+         "Menhit" 
+      )
+      ( and 
+         ( targeted "<argument>" ) 
+         ( >= @BeamLeftStatus[75] 75 ) 
+         ( <= 
+            ( distance-ship-subsystem 
+               "<argument>" 
+               "Polydeuces# 1" 
+               "turret01" 
+            )
+            5500 
+         )
+         ( is-in-turret-fov 
+            "@PlayerTarget[null]" 
             "Polydeuces# 1" 
             "turret01" 
          )
-         5500 
+         ( <= @WarpStatus[-1] 0 ) 
       )
-      ( is-in-box 
+      ( modify-variable 
+         @LeftBeamTick[0] 
+         ( / ( - @BeamLeftStatus[75] 50 ) 25 ) 
+      )
+      ( modify-variable 
+         @BeamLeftStatus[75] 
+         0 
+      )
+      ( modify-variable 
+         "@ShipTargeted[a whale]" 
          "<argument>" 
-         -5000 
-         1 
-         -5000 
-         5000 
-         -5000 
-         5000 
-         "Polydeuces# 1" 
       )
-      ( <= @WarpStatus[-1] 0 ) 
-   )
-   ( modify-variable 
-      @LeftBeamTick[0] 
-      ( / ( - @BeamLeftStatus[200] 150 ) 50 ) 
-   )
-   ( modify-variable 
-      @BeamLeftStatus[200] 
-      0 
-   )
-   ( modify-variable 
-      "@ShipTargeted[a whale]" 
-      "<argument>" 
    )
 )
 +Name: Fire beam left
-+Repeat Count: -1
-+Trigger Count: 999999
++Repeat Count: 1
 +Interval: 1
 
 $Formula: ( when 
@@ -3421,7 +3364,7 @@ $Formula: ( when
    )
    ( modify-variable 
       @Heat[0] 
-      ( + @Heat[0] 2 ) 
+      ( + @Heat[0] 3 ) 
    )
 )
 +Name: Left beams tick
@@ -3429,59 +3372,117 @@ $Formula: ( when
 +Trigger Count: 999999
 +Interval: 1
 
-$Formula: ( when-argument 
-   ( any-of 
-      "Pharaoh" 
-      "Nebty" 
-      "Merneptah" 
-      "Rimush" 
-      "Memphis" 
-      "Hemsut" 
-      "Menhit" 
+$Formula: ( every-time 
+   ( not 
+      ( string-equals 
+         "@PlayerTarget[null]" 
+         "null" 
+      )
    )
-   ( and 
-      ( targeted "<argument>" ) 
-      ( key-pressed "Right Arrow" ) 
-      ( >= @BeamRightStatus[200] 200 ) 
-      ( <= 
-         ( distance-ship-subsystem 
-            "<argument>" 
+   ( if-then-else 
+      ( > @RightBeamsTick[0] 0 ) 
+      ( hud-set-message 
+         "TLSTaccomB" 
+         "Overview: R Firing" 
+      )
+      ( if-then-else 
+         ( < @BeamRightStatus[75] 75 ) 
+         ( hud-set-message 
+            "TLSTaccomB" 
+            "Overview: R recharging" 
+         )
+         ( if-then-else 
+            ( not 
+               ( is-in-turret-fov 
+                  "@PlayerTarget[null]" 
+                  "Polydeuces# 1" 
+                  "turret02" 
+               )
+            )
+            ( hud-set-message 
+               "TLSTaccomB" 
+               "Overview: R Not in FOV" 
+            )
+            ( if-then-else 
+               ( > 
+                  ( distance-ship-subsystem 
+                     "@PlayerTarget[null]" 
+                     "Polydeuces# 1" 
+                     "turret02" 
+                  )
+                  5500 
+               )
+               ( hud-set-message 
+                  "TLSTaccomB" 
+                  "Overview: R range" 
+               )
+               ( if-then-else 
+                  ( > @BeamRightStatus[75] 160 ) 
+                  ( hud-set-message 
+                     "TLSTaccomB" 
+                     "Overview: R overdriven" 
+                  )
+                  ( hud-set-message 
+                     "TLSTaccomB" 
+                     "Overview: R can fire" 
+                  )
+               )
+            )
+         )
+      )
+   )
+)
++Name: Right beam TACHUD
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( every-time 
+   ( key-pressed "Right Arrow" ) 
+   ( key-reset-multiple "Right Arrow" ) 
+   ( when-argument 
+      ( any-of 
+         "Pharaoh" 
+         "Nebty" 
+         "Merneptah" 
+         "Rimush" 
+         "Memphis" 
+         "Hemsut" 
+         "Menhit" 
+      )
+      ( and 
+         ( targeted "<argument>" ) 
+         ( >= @BeamRightStatus[75] 75 ) 
+         ( <= 
+            ( distance-ship-subsystem 
+               "<argument>" 
+               "Polydeuces# 1" 
+               "turret02" 
+            )
+            5500 
+         )
+         ( is-in-turret-fov 
+            "@PlayerTarget[null]" 
             "Polydeuces# 1" 
             "turret02" 
          )
-         5500 
+         ( <= @WarpStatus[-1] 0 ) 
       )
-      ( is-in-box 
+      ( modify-variable 
+         @RightBeamsTick[0] 
+         ( / ( - @BeamRightStatus[75] 50 ) 25 ) 
+      )
+      ( modify-variable 
+         @BeamRightStatus[75] 
+         0 
+      )
+      ( modify-variable 
+         "@ShipTargetedRight[a bote]" 
          "<argument>" 
-         -1 
-         5000 
-         -5000 
-         5000 
-         -5000 
-         5000 
-         "Polydeuces# 1" 
       )
-      ( <= @WarpStatus[-1] 0 ) 
-   )
-   ( modify-variable 
-      @RightBeamsTick[0] 
-      ( / 
-         ( - @BeamRightStatus[200] 150 ) 
-         50 
-      )
-   )
-   ( modify-variable 
-      @BeamRightStatus[200] 
-      0 
-   )
-   ( modify-variable 
-      "@ShipTargetedRight[a bote]" 
-      "<argument>" 
    )
 )
 +Name: Fire beam right
-+Repeat Count: -1
-+Trigger Count: 999999
++Repeat Count: 1
 +Interval: 1
 
 $Formula: ( when 
@@ -3499,7 +3500,7 @@ $Formula: ( when
    )
    ( modify-variable 
       @Heat[0] 
-      ( + @Heat[0] 2 ) 
+      ( + @Heat[0] 3 ) 
    )
 )
 +Name: Right beams tick
@@ -3531,7 +3532,6 @@ $Formula: ( when
    ( and 
       ( = @OVerride[0] 0 ) 
       ( >= @Heat[0] 120 ) 
-      ( <= @WarpStatus[-1] 0 ) 
    )
    ( modify-variable @SHUTDOWN[0] 1 ) 
 )
@@ -3564,6 +3564,7 @@ $Formula: ( when
       "3" 
       "2" 
       "1" 
+      "Spacebar" 
    )
    ( training-msg 
       "Tutorial: Overheated" 
@@ -3623,6 +3624,7 @@ $Formula: ( when
       "3" 
       "2" 
       "1" 
+      "Spacebar" 
    )
    ( modify-variable @SHUTDOWN[0] 0 ) 
    ( hud-disable 0 ) 
@@ -3672,6 +3674,7 @@ $Formula: ( when
 +Repeat Count: -1
 +Trigger Count: 999999
 +Interval: 1
++Event Log Flags: ( "first trigger" )
 
 $Formula: ( when 
    ( >= 
@@ -3704,56 +3707,12 @@ $Formula: ( when
 +Trigger Count: 999999
 +Interval: 1
 
-$Formula: ( when 
-   ( and 
-      ( >= @Capacitor[100] 20 ) 
-      ( key-pressed "2" ) 
-      ( < 
-         ( afterburner-energy-pct 
-            "Polydeuces# 1" 
-         )
-         100 
-      )
-      ( <= @WarpStatus[-1] 0 ) 
-   )
-   ( key-reset-multiple "2" ) 
-   ( modify-variable 
-      @WarpCancelSWA[0] 
-      ( min 
-         ( - 
-            100 
-            ( afterburner-energy-pct 
-               "Polydeuces# 1" 
-            )
-         )
-         @Capacitor[100] 
-      )
-   )
-   ( set-afterburner-energy 
-      ( + 
-         ( afterburner-energy-pct 
-            "Polydeuces# 1" 
-         )
-         @WarpCancelSWA[0] 
-      )
-      "Polydeuces# 1" 
-   )
-   ( modify-variable 
-      @Capacitor[100] 
-      ( - @Capacitor[100] @WarpCancelSWA[0] ) 
-   )
-)
-+Name: Burner shunt
-+Repeat Count: -1
-+Trigger Count: 999999
-+Interval: 1
-
-$Formula: ( when 
+$Formula: ( every-time 
    ( and 
       ( = @WarpStatus[-1] 0 ) 
       ( key-pressed "Alt-J" ) 
    )
-   ( set-time-compression 1 ) 
+   ( key-reset-multiple "Alt-J" ) 
    ( modify-variable 
       @WarpCancelB[0] 
       ( get-object-bank "Polydeuces# 1" ) 
@@ -3779,7 +3738,6 @@ $Formula: ( when
       ( get-object-z "Polydeuces# 1" ) 
    )
    ( modify-variable @WarpStatus[-1] 1 ) 
-   ( key-reset-multiple "Alt-J" ) 
    ( turret-lock-all "Polydeuces# 1" ) 
    ( lock-primary-weapon "Polydeuces# 1" ) 
    ( lock-afterburner "Polydeuces# 1" ) 
@@ -3840,10 +3798,10 @@ $Formula: ( when
       "Polydeuces# 1" 
    )
    ( disable-ets "Polydeuces# 1" ) 
+   ( set-time-compression 1 ) 
 )
 +Name: WARP BEGIN!
-+Repeat Count: -1
-+Trigger Count: 999999
++Repeat Count: 1
 +Interval: 1
 
 $Formula: ( every-time 
@@ -3851,6 +3809,7 @@ $Formula: ( every-time
       ( = 1 @WarpStatus[-1] ) 
       ( key-pressed "Alt-J" ) 
    )
+   ( key-reset-multiple "Alt-J" ) 
    ( when 
       ( = 
          ( get-throttle-speed "Polydeuces# 1" ) 
@@ -3914,7 +3873,6 @@ $Formula: ( every-time
       )
       ( reset-time-compression ) 
    )
-   ( key-reset-multiple "Alt-J" ) 
 )
 +Name: Warp begin
 +Repeat Count: 1
@@ -3925,6 +3883,7 @@ $Formula: ( every-time
       ( = @WarpStatus[-1] 1 ) 
       ( key-pressed "Shift-J" ) 
    )
+   ( key-reset-multiple "Shift-J" ) 
    ( when 
       ( = 
          ( get-throttle-speed "Polydeuces# 1" ) 
@@ -3994,11 +3953,9 @@ $Formula: ( every-time
          "Polydeuces# 1" 
       )
    )
-   ( key-reset-multiple "Shift-J" ) 
 )
 +Name: Warp cancel
-+Repeat Count: -1
-+Trigger Count: 999999
++Repeat Count: 1
 +Interval: 1
 
 $Formula: ( when 
@@ -4174,7 +4131,7 @@ $Formula: ( when
       0 
       1 
    )
-   ( modify-variable @WarpStatus[-1] -2 ) 
+   ( modify-variable @WarpStatus[-1] -1 ) 
    ( unlock-secondary-weapon 
       "Polydeuces# 1" 
    )
@@ -4213,162 +4170,366 @@ $Formula: ( when
 +Trigger Count: 999999
 +Interval: 1
 
+$Formula: ( every-time 
+   ( key-pressed "1" ) 
+   ( key-reset-multiple "1" ) 
+   ( when 
+      ( and 
+         ( or 
+            ( <= @BeamLeftStatus[75] 200 ) 
+            ( <= @BeamRightStatus[75] 200 ) 
+         )
+         ( >= @Capacitor[100] 20 ) 
+         ( <= @WarpStatus[-1] 0 ) 
+      )
+      ( modify-variable @CalcTemp[0] 0 ) 
+      ( when 
+         ( < @BeamLeftStatus[75] 200 ) 
+         ( modify-variable 
+            @CalcTemp[0] 
+            ( + 
+               @CalcTemp[0] 
+               ( min 
+                  ( / @Capacitor[100] 2 ) 
+                  ( - 200 @BeamLeftStatus[75] ) 
+               )
+            )
+         )
+         ( modify-variable 
+            @BeamLeftStatus[75] 
+            ( min 
+               200 
+               ( + 
+                  ( / @Capacitor[100] 2 ) 
+                  @BeamLeftStatus[75] 
+               )
+            )
+         )
+      )
+      ( when 
+         ( < @BeamRightStatus[75] 200 ) 
+         ( modify-variable 
+            @CalcTemp[0] 
+            ( + 
+               @CalcTemp[0] 
+               ( min 
+                  ( / @Capacitor[100] 2 ) 
+                  ( - 200 @BeamRightStatus[75] ) 
+               )
+            )
+         )
+         ( modify-variable 
+            @BeamRightStatus[75] 
+            ( min 
+               200 
+               ( + 
+                  ( / @Capacitor[100] 2 ) 
+                  @BeamRightStatus[75] 
+               )
+            )
+         )
+      )
+      ( modify-variable 
+         @Capacitor[100] 
+         ( - @Capacitor[100] @CalcTemp[0] ) 
+      )
+   )
+)
++Name: Beam overdrive proc
++Repeat Count: 1
++Interval: 1
+
 $Formula: ( when 
-   ( and 
-      ( >= @Capacitor[100] 15 ) 
-      ( = @HardenLevel[0] 0 ) 
-      ( key-pressed "3" ) 
-      ( <= @WarpStatus[-1] 0 ) 
+   ( = @SHUTDOWN[0] 0 ) 
+   ( if-then-else 
+      ( and 
+         ( >= @BeamLeftStatus[75] 200 ) 
+         ( >= 
+            @BeamLeftStatus[75] 
+            @BeamRightStatus[75] 
+         )
+      )
+      ( hud-set-message 
+         "TLSTaccomC" 
+         "Overview: Overcharge already" 
+      )
+      ( if-then-else 
+         ( < @Capacitor[100] 20 ) 
+         ( hud-set-message 
+            "TLSTaccomC" 
+            "Overview: Overcharge cap" 
+         )
+         ( hud-set-message 
+            "TLSTaccomC" 
+            "Overview: Overcharge ready" 
+         )
+      )
    )
-   ( modify-variable @HardenLevel[0] 1 ) 
+)
++Name: Beam overdrive HUD
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( every-time 
+   ( key-pressed "2" ) 
+   ( key-reset-multiple "2" ) 
+   ( when 
+      ( and 
+         ( >= @Capacitor[100] 20 ) 
+         ( < 
+            ( afterburner-energy-pct 
+               "Polydeuces# 1" 
+            )
+            95 
+         )
+         ( <= @WarpStatus[-1] 0 ) 
+      )
+      ( modify-variable 
+         @CalcTemp[0] 
+         ( min 
+            ( - 
+               100 
+               ( afterburner-energy-pct 
+                  "Polydeuces# 1" 
+               )
+            )
+            @Capacitor[100] 
+         )
+      )
+      ( set-afterburner-energy 
+         ( + 
+            ( afterburner-energy-pct 
+               "Polydeuces# 1" 
+            )
+            @CalcTemp[0] 
+         )
+         "Polydeuces# 1" 
+      )
+      ( modify-variable 
+         @Capacitor[100] 
+         ( - @Capacitor[100] @CalcTemp[0] ) 
+      )
+   )
+)
++Name: Burner shunt
++Repeat Count: 1
++Interval: 1
+
+$Formula: ( when 
+   ( = @SHUTDOWN[0] 0 ) 
+   ( if-then-else 
+      ( >= 
+         ( afterburner-energy-pct 
+            "Polydeuces# 1" 
+         )
+         95 
+      )
+      ( hud-set-message 
+         "TLSTaccomD" 
+         "Overview: AB full" 
+      )
+      ( if-then-else 
+         ( < @Capacitor[100] 20 ) 
+         ( hud-set-message 
+            "TLSTaccomD" 
+            "Overview: AB recharging" 
+         )
+         ( hud-set-message 
+            "TLSTaccomD" 
+            "Overview: AB can shunt" 
+         )
+      )
+   )
+)
++Name: Burner shunt HUD
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( every-time 
+   ( key-pressed "3" ) 
    ( key-reset-multiple "3" ) 
-   ( set-armor-type 
-      "Polydeuces# 1" 
-      ( true ) 
-      "Hardened" 
-      "Hull" 
-   )
-   ( hud-set-message 
-      "TLSTaccomD" 
-      "Overview: Hardeners on" 
+   ( when 
+      ( <= @WarpStatus[-1] 0 ) 
+      ( if-then-else 
+         ( = @HardenLevel[0] 1 ) 
+         ( when 
+            ( true ) 
+            ( modify-variable @HardenLevel[0] 0 ) 
+            ( set-armor-type 
+               "Polydeuces# 1" 
+               ( false ) 
+               "Heavy Plate" 
+               "Hull" 
+            )
+            ( hud-set-message 
+               "TLSTaccomE" 
+               "Overview: Hardeners off" 
+            )
+         )
+         ( when 
+            ( >= @Capacitor[100] 15 ) 
+            ( modify-variable @HardenLevel[0] 1 ) 
+            ( set-armor-type 
+               "Polydeuces# 1" 
+               ( false ) 
+               "Heavy Plate" 
+               "Hull" 
+            )
+            ( hud-set-message 
+               "TLSTaccomE" 
+               "Overview: Hardeners on" 
+            )
+         )
+      )
    )
 )
 +Name: Harden armor
-+Repeat Count: -1
-+Trigger Count: 999999
++Repeat Count: 1
 +Interval: 1
 
 $Formula: ( when 
    ( and 
       ( = 1 @HardenLevel[0] ) 
-      ( >= @Capacitor[100] 10 ) 
-   )
-   ( modify-variable 
-      @Capacitor[100] 
-      ( - @Capacitor[100] 4 ) 
-   )
-)
-+Name: Harden on
-+Repeat Count: -1
-+Trigger Count: 999999
-+Interval: 1
-
-$Formula: ( when 
-   ( and 
-      ( <= @Capacitor[100] 10 ) 
-      ( = 1 @HardenLevel[0] ) 
-   )
-   ( modify-variable @HardenLevel[0] 0 ) 
-   ( set-armor-type 
-      "Polydeuces# 1" 
-      ( false ) 
-      "Heavy Plate" 
-      "Hull" 
-   )
-   ( hud-set-message 
-      "TLSTaccomD" 
-      "Overview: Hardeners off" 
-   )
-)
-+Name: Harden out of cap
-+Repeat Count: -1
-+Trigger Count: 999999
-+Interval: 1
-
-$Formula: ( when 
-   ( and 
-      ( key-pressed "3" ) 
-      ( = @HardenLevel[0] 1 ) 
-   )
-   ( modify-variable @HardenLevel[0] 0 ) 
-   ( key-reset-multiple "3" ) 
-   ( set-armor-type 
-      "Polydeuces# 1" 
-      ( false ) 
-      "Heavy Plate" 
-      "Hull" 
-   )
-   ( hud-set-message 
-      "TLSTaccomD" 
-      "Overview: Hardeners off" 
-   )
-)
-+Name: Harden off
-+Repeat Count: -1
-+Trigger Count: 999999
-+Interval: 1
-
-$Formula: ( when 
-   ( and 
-      ( >= @Capacitor[100] 0 ) 
-      ( key-pressed "4" ) 
       ( <= @WarpStatus[-1] 0 ) 
    )
-   ( modify-variable @Repairing[0] 1 ) 
-   ( key-reset-multiple "4" ) 
-   ( hud-set-message 
-      "TLSTaccomE" 
-      "Overview: Repping on" 
+   ( if-then-else 
+      ( >= @Capacitor[100] 5 ) 
+      ( modify-variable 
+         @Capacitor[100] 
+         ( - @Capacitor[100] 4 ) 
+      )
+      ( modify-variable @HardenLevel[0] 0 ) 
+      ( set-armor-type 
+         "Polydeuces# 1" 
+         ( false ) 
+         "Heavy Plate" 
+         "Hull" 
+      )
+      ( hud-set-message 
+         "TLSTaccomE" 
+         "Overview: Hardeners cap" 
+      )
    )
 )
-+Name: Repair on
++Name: Harden on tick
 +Repeat Count: -1
 +Trigger Count: 999999
 +Interval: 1
 
 $Formula: ( when 
    ( and 
-      ( >= @Capacitor[100] 10 ) 
-      ( = @Repairing[0] 1 ) 
+      ( = 0 @HardenLevel[0] ) 
+      ( <= @WarpStatus[-1] 0 ) 
    )
-   ( repair-subsystem 
-      "Polydeuces# 1" 
-      "Hull" 
-      1 
-   )
-   ( modify-variable 
-      @Capacitor[100] 
-      ( - @Capacitor[100] 19 ) 
-   )
-   ( modify-variable 
-      @Heat[0] 
-      ( + 1 @Heat[0] ) 
+   ( if-then-else 
+      ( >= @Capacitor[100] 15 ) 
+      ( hud-set-message 
+         "TLSTaccomE" 
+         "Overview: Hardeners off" 
+      )
+      ( hud-set-message 
+         "TLSTaccomE" 
+         "Overview: Hardeners cap" 
+      )
    )
 )
-+Name: Repairing
++Name: Harden off HUD
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( every-time 
+   ( key-pressed "4" ) 
+   ( key-reset-multiple "4" ) 
+   ( when 
+      ( <= @WarpStatus[-1] 0 ) 
+      ( if-then-else 
+         ( = @Repairing[0] 1 ) 
+         ( when 
+            ( <= @WarpStatus[-1] 0 ) 
+            ( modify-variable @Repairing[0] 0 ) 
+            ( hud-set-message 
+               "TLSTaccomF" 
+               "Overview: Repping off" 
+            )
+         )
+         ( when 
+            ( and 
+               ( >= @Capacitor[100] 20 ) 
+               ( <= @WarpStatus[-1] 0 ) 
+            )
+            ( modify-variable @Repairing[0] 1 ) 
+            ( hud-set-message 
+               "TLSTaccomF" 
+               "Overview: Repping on" 
+            )
+         )
+      )
+   )
+)
++Name: Repair system
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 1
+
+$Formula: ( when 
+   ( and 
+      ( = @Repairing[0] 1 ) 
+      ( <= @WarpStatus[-1] 0 ) 
+   )
+   ( if-then-else 
+      ( >= @Capacitor[100] 19 ) 
+      ( when 
+         ( true ) 
+         ( repair-subsystem 
+            "Polydeuces# 1" 
+            "Hull" 
+            1 
+         )
+         ( modify-variable 
+            @Capacitor[100] 
+            ( - @Capacitor[100] 19 ) 
+         )
+         ( modify-variable 
+            @Heat[0] 
+            ( + 1 @Heat[0] ) 
+         )
+      )
+      ( when 
+         ( true ) 
+         ( modify-variable @Repairing[0] 0 ) 
+         ( hud-set-message 
+            "TLSTaccomF" 
+            "Overview: Repping cap" 
+         )
+      )
+   )
+)
++Name: Repairing tick
 +Repeat Count: -1
 +Trigger Count: 999999
 +Interval: 2
 
 $Formula: ( when 
    ( and 
-      ( <= @Capacitor[100] 20 ) 
-      ( = 1 @Repairing[0] ) 
+      ( = @Repairing[0] 0 ) 
+      ( <= @WarpStatus[-1] 0 ) 
    )
-   ( modify-variable @Repairing[0] 0 ) 
-   ( hud-set-message 
-      "TLSTaccomE" 
-      "Overview: Repping off" 
-   )
-)
-+Name: Repair out of cap
-+Repeat Count: -1
-+Trigger Count: 999999
-+Interval: 1
-
-$Formula: ( when 
-   ( and 
-      ( key-pressed "4" ) 
-      ( = @Repairing[0] 1 ) 
-   )
-   ( key-reset-multiple "4" ) 
-   ( modify-variable @Repairing[0] 0 ) 
-   ( hud-set-message 
-      "TLSTaccomE" 
-      "Overview: Repping off" 
+   ( if-then-else 
+      ( >= @Capacitor[100] 19 ) 
+      ( hud-set-message 
+         "TLSTaccomF" 
+         "Overview: Repping off" 
+      )
+      ( hud-set-message 
+         "TLSTaccomF" 
+         "Overview: Repping cap" 
+      )
    )
 )
-+Name: Repair off
++Name: Repair off HUD
 +Repeat Count: -1
 +Trigger Count: 999999
 +Interval: 1
@@ -4483,6 +4644,68 @@ $Formula: ( when ( true ) ( do-nothing ) )
 +Interval: 1
 
 $Formula: ( when 
+   ( true ) 
+   ( set-object-position 
+      "Player down:1" 
+      ( get-object-x 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         -2000 
+         0 
+      )
+      ( get-object-y 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         -2000 
+         0 
+      )
+      ( get-object-z 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         -2000 
+         0 
+      )
+   )
+   ( set-object-position 
+      "Player up:1" 
+      ( get-object-x 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         2000 
+         0 
+      )
+      ( get-object-y 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         2000 
+         0 
+      )
+      ( get-object-z 
+         "Polydeuces# 1" 
+         "<none>" 
+         0 
+         2000 
+         0 
+      )
+   )
+   ( set-object-position 
+      "Polydeuces Loc:1" 
+      ( get-object-x "Polydeuces# 1" ) 
+      ( get-object-y "Polydeuces# 1" ) 
+      ( get-object-z "Polydeuces# 1" ) 
+   )
+)
++Name: Player waypoint update
++Repeat Count: -1
++Trigger Count: 999999
++Interval: 5
+
+$Formula: ( when 
    ( = 0 @TimeLeftEvac[180] ) 
    ( do-nothing ) 
 )
@@ -4503,23 +4726,6 @@ $Formula: ( when
 )
 +Name: Initialize
 +Repeat Count: 1
-+Interval: 1
-
-$Formula: ( when 
-   ( true ) 
-   ( set-object-position 
-      "Player down:1" 
-      ( get-object-x "Polydeuces# 1" ) 
-      ( - 
-         ( get-object-y "Polydeuces# 1" ) 
-         1500 
-      )
-      ( get-object-z "Polydeuces# 1" ) 
-   )
-)
-+Name: Player down set
-+Repeat Count: -1
-+Trigger Count: 999999
 +Interval: 1
 
 $Formula: ( when 
@@ -4550,7 +4756,7 @@ $Formula: ( when
 +Repeat Count: 1
 +Interval: 1
 
-$Formula: ( when ( true ) ( end-mis sion ) ) 
+$Formula: ( when ( true ) ( end-mission ) ) 
 +Name: You fail
 +Repeat Count: 1
 +Interval: 1
@@ -4916,32 +5122,64 @@ $Formula: ( when ( true ) ( do-nothing ) )
 
 $Formula: ( when 
    ( has-arrived-delay 
-      0 
+      1 
       "Gunship warpin point" 
    )
    ( set-object-position 
-      "Gunship warpin point" 
+      "Menhit" 
       ( get-object-x 
          "Gunship warpin point" 
          "<none>" 
-         0 
+         ( rand-multiple 300 600 ) 
          3000 
          0 
       )
       ( get-object-y 
          "Gunship warpin point" 
          "<none>" 
-         0 
+         ( rand-multiple 300 600 ) 
          3000 
          0 
       )
       ( get-object-z 
          "Gunship warpin point" 
          "<none>" 
-         0 
+         ( rand-multiple 300 600 ) 
          3000 
          0 
       )
+   )
+   ( set-object-facing-object 
+      "Menhit" 
+      "Savoy" 
+   )
+   ( set-object-position 
+      "Hemsut" 
+      ( get-object-x 
+         "Gunship warpin point" 
+         "<none>" 
+         0 
+         3000 
+         ( rand-multiple 0 300 ) 
+      )
+      ( get-object-y 
+         "Gunship warpin point" 
+         "<none>" 
+         0 
+         3000 
+         ( rand-multiple 0 300 ) 
+      )
+      ( get-object-z 
+         "Gunship warpin point" 
+         "<none>" 
+         0 
+         3000 
+         ( rand-multiple 0 300 ) 
+      )
+   )
+   ( set-object-facing-object 
+      "Hemsut" 
+      "Savoy" 
    )
 )
 +Name: Gunship warpin setup
@@ -5648,9 +5886,14 @@ $Formula: ( has-departed-delay
    "Sydney" 
 )
 
-#Waypoints		;! 9 lists total
+#Waypoints		;! 10 lists total
 
 $Name: Polydeuces Loc
+$List: (		;! 1 points in list
+	( -4325.820801, -0.006098, 10235.333008 )
+)
+
+$Name: Player up
 $List: (		;! 1 points in list
 	( -4325.820801, -0.006098, 10235.333008 )
 )
@@ -5708,7 +5951,7 @@ $List: (		;! 1 points in list
 	( -81.736885, 0.000000, 11.003628 )
 )
 
-#Messages		;! 62 total
+#Messages		;! 68 total
 
 $Command Sender: Leonov
 
@@ -5716,118 +5959,8 @@ $Name: Tutorial: Overheated
 $Team: -1
 $MessageNew:  XSTR("Your ship has shut down from overheating
 Heat generates primarily when energy bars are maximized, or afterburners are engaged
-To override the automatic shutdown, use $Alt-X$
+To override the automatic shutdown, use alt-X
 Be aware that overheating deals significant damage after overriding", -1)
-$end_multi_text
-
-$Name: Overview: Very red heat
-$Team: -1
-$MessageNew:  XSTR("Heat level: !!!$Heat GJ!!!", -1)
-$end_multi_text
-
-$Name: Overview: Red heat
-$Team: -1
-$MessageNew:  XSTR("Heat level: !$Heat GJ!", -1)
-$end_multi_text
-
-$Name: Overview: L can fire
-$Team: -1
-$MessageNew:  XSTR("Left beam: Ready", -1)
-$end_multi_text
-
-$Name: Overview: R can fire
-$Team: -1
-$MessageNew:  XSTR("Right beam: Ready", -1)
-$end_multi_text
-
-$Name: Overview: R Recharging
-$Team: -1
-$MessageNew:  XSTR("Right beam: Recharging", -1)
-$end_multi_text
-
-$Name: Overview: R range
-$Team: -1
-$MessageNew:  XSTR("Right beam: Not in range", -1)
-$end_multi_text
-
-$Name: Overview: Left recharging
-$Team: -1
-$MessageNew:  XSTR("Left beam: Recharging", -1)
-$end_multi_text
-
-$Name: Overview: L range
-$Team: -1
-$MessageNew:  XSTR("Left beam: Not in range", -1)
-$end_multi_text
-
-$Name: Overview: L firing
-$Team: -1
-$MessageNew:  XSTR("Left beam: Firing", -1)
-$end_multi_text
-
-$Name: Overview: R Firing
-$Team: -1
-$MessageNew:  XSTR("Right beam: Firing", -1)
-$end_multi_text
-
-$Name: Overview: L Not in view
-$Team: -1
-$MessageNew:  XSTR("Left beam: Not in FoV", -1)
-$end_multi_text
-
-$Name: Overview: R Not in FOV
-$Team: -1
-$MessageNew:  XSTR("Right beam: Not in FoV", -1)
-$end_multi_text
-
-$Name: Overview: No target!
-$Team: -1
-$MessageNew:  XSTR("No target for beams", -1)
-$end_multi_text
-
-$Name: Overview: Repping on
-$Team: -1
-$MessageNew:  XSTR("Repair system on (4)", -1)
-$end_multi_text
-
-$Name: Overview: Repping off
-$Team: -1
-$MessageNew:  XSTR("Repair system off (4)", -1)
-$end_multi_text
-
-$Name: Overview: Hardeners on
-$Team: -1
-$MessageNew:  XSTR("Armor hardener on (3)", -1)
-$end_multi_text
-
-$Name: Overview: Hardeners off
-$Team: -1
-$MessageNew:  XSTR("Armor hardener off (3)", -1)
-$end_multi_text
-
-$Name: Overview: Left beam
-$Team: -1
-$MessageNew:  XSTR("Left beam GW: $BeamLeftStatus", -1)
-$end_multi_text
-
-$Name: Overview: Right beam
-$Team: -1
-$MessageNew:  XSTR("Right beam GW: $BeamRightStatus", -1)
-$end_multi_text
-
-$Name: Overview: Cap
-$Team: -1
-$MessageNew:  XSTR("Capacitor GW: $Capacitor", -1)
-$end_multi_text
-
-$Name: Overview: Heat
-$Team: -1
-$MessageNew:  XSTR("Heat level: $Heat GJ", -1)
-$end_multi_text
-
-$Name: System: Failed
-$Team: -1
-$MessageNew:  XSTR("Mission Failed", -1)
 $end_multi_text
 
 $Name: Engi: Heat critical
@@ -5850,6 +5983,166 @@ $MessageNew:  XSTR("Engineering safeties online, shutdown override disengaged. "
 $end_multi_text
 +AVI Name: Head-CM1
 +Wave Name: messagebeep.ogg
+
+$Name: Overview: Very red heat
+$Team: -1
+$MessageNew:  XSTR("Heat level: !!!$Heat %!!!", -1)
+$end_multi_text
+
+$Name: Overview: Red heat
+$Team: -1
+$MessageNew:  XSTR("Heat level: !$Heat %!", -1)
+$end_multi_text
+
+$Name: Overview: Heat
+$Team: -1
+$MessageNew:  XSTR("Heat level: $Heat %", -1)
+$end_multi_text
+
+$Name: Overview: Cap
+$Team: -1
+$MessageNew:  XSTR("Capacitor: $Capacitor %", -1)
+$end_multi_text
+
+$Name: Overview: Right beam
+$Team: -1
+$MessageNew:  XSTR("Right beam: $BeamRightStatus %", -1)
+$end_multi_text
+
+$Name: Overview: R can fire
+$Team: -1
+$MessageNew:  XSTR("Right beam: Ready", -1)
+$end_multi_text
+
+$Name: Overview: R overdriven
+$Team: -1
+$MessageNew:  XSTR("Right beam: Ready, overdriven!", -1)
+$end_multi_text
+
+$Name: Overview: R Recharging
+$Team: -1
+$MessageNew:  XSTR("Right beam: Recharging", -1)
+$end_multi_text
+
+$Name: Overview: R range
+$Team: -1
+$MessageNew:  XSTR("Right beam: Not in range", -1)
+$end_multi_text
+
+$Name: Overview: R Not in FOV
+$Team: -1
+$MessageNew:  XSTR("Right beam: Not in FoV", -1)
+$end_multi_text
+
+$Name: Overview: R Firing
+$Team: -1
+$MessageNew:  XSTR("Right beam: Firing", -1)
+$end_multi_text
+
+$Name: Overview: Left beam
+$Team: -1
+$MessageNew:  XSTR("Left beam: $BeamLeftStatus %", -1)
+$end_multi_text
+
+$Name: Overview: L can fire
+$Team: -1
+$MessageNew:  XSTR("Left beam: Ready", -1)
+$end_multi_text
+
+$Name: Overview: L overdriven
+$Team: -1
+$MessageNew:  XSTR("Left beam: Ready, overdriven!", -1)
+$end_multi_text
+
+$Name: Overview: Left recharging
+$Team: -1
+$MessageNew:  XSTR("Left beam: Recharging", -1)
+$end_multi_text
+
+$Name: Overview: L range
+$Team: -1
+$MessageNew:  XSTR("Left beam: Not in range", -1)
+$end_multi_text
+
+$Name: Overview: L Not in view
+$Team: -1
+$MessageNew:  XSTR("Left beam: Not in FoV", -1)
+$end_multi_text
+
+$Name: Overview: L firing
+$Team: -1
+$MessageNew:  XSTR("Left beam: Firing", -1)
+$end_multi_text
+
+$Name: Overview: No target!
+$Team: -1
+$MessageNew:  XSTR("Invalid target for beams", -1)
+$end_multi_text
+
+$Name: Overview: Overcharge ready
+$Team: -1
+$MessageNew:  XSTR("Beam overdrive ready (1)", -1)
+$end_multi_text
+
+$Name: Overview: Overcharge cap
+$Team: -1
+$MessageNew:  XSTR("Beam overdrive charging", -1)
+$end_multi_text
+
+$Name: Overview: Overcharge already
+$Team: -1
+$MessageNew:  XSTR("Beams overdriven", -1)
+$end_multi_text
+
+$Name: Overview: AB recharging
+$Team: -1
+$MessageNew:  XSTR("AB shunt recharging", -1)
+$end_multi_text
+
+$Name: Overview: AB full
+$Team: -1
+$MessageNew:  XSTR("AB energy full", -1)
+$end_multi_text
+
+$Name: Overview: AB can shunt
+$Team: -1
+$MessageNew:  XSTR("AB shunt ready (2)", -1)
+$end_multi_text
+
+$Name: Overview: Hardeners on
+$Team: -1
+$MessageNew:  XSTR("Armour hardener on (3)", -1)
+$end_multi_text
+
+$Name: Overview: Hardeners off
+$Team: -1
+$MessageNew:  XSTR("Armour hardener off (3)", -1)
+$end_multi_text
+
+$Name: Overview: Hardeners cap
+$Team: -1
+$MessageNew:  XSTR("Capacitor is empty (3)", -1)
+$end_multi_text
+
+$Name: Overview: Repping on
+$Team: -1
+$MessageNew:  XSTR("Repair system on (4)", -1)
+$end_multi_text
+
+$Name: Overview: Repping off
+$Team: -1
+$MessageNew:  XSTR("Repair system off (4)", -1)
+$end_multi_text
+
+$Name: Overview: Repping cap
+$Team: -1
+$MessageNew:  XSTR("Capacitor is empty (4)", -1)
+$end_multi_text
+
+$Name: System: Failed
+$Team: -1
+$MessageNew:  XSTR("Mission Failed", -1)
+$end_multi_text
 
 $Name: Leonov: Memphis
 $Team: -1
@@ -5947,7 +6240,7 @@ $end_multi_text
 $Name: Tutorial: Repair
 $Team: -1
 $MessageNew:  XSTR("Press $4$ to activate the automatic repair system
-Nanobots are distributed throughout the ship to gradually repair hull and armor
+Nanobots are distributed throughout the ship to gradually repair hull and armour
 A large amount of capacitor is consumed, and slight heat is generated
 Capacitor recharge rate is determined by your shield ETS setting", -1)
 $end_multi_text
@@ -5970,8 +6263,8 @@ $Name: Tutorial: Secondary sys
 $Team: -1
 $MessageNew:  XSTR("Press $1$ to activate a beam overdrive
 This rapidly transfers all available energy in the capacitor to both beam cannons
-Press $3$ to activate active armor hardening
-This will constantly drain the capacitor slightly and increase ship damage resistance
+Press $3$ to activate active armour hardening
+This will slowly drain the capacitor and increase ship damage resistance
 ", -1)
 $end_multi_text
 
@@ -5984,14 +6277,14 @@ $end_multi_text
 
 $Name: Tac: Use Trantors
 $Team: -1
-$MessageNew:  XSTR("Those bombers are headed for us. Our Trantor defense munitions should be able to take them out, and their bombs.", -1)
+$MessageNew:  XSTR("Those bombers are headed for us. Our Trantor defence munitions should be able to take them out, and their bombs.", -1)
 $end_multi_text
 +AVI Name: Head-CM5
 +Wave Name: messagebeep.ogg
 
 $Name: Tutorial: Trantors
 $Team: -1
-$MessageNew:  XSTR("Trantors are highly effective point defense munitions
+$MessageNew:  XSTR("Trantors are highly effective point defence munitions
 They deal high damage to enemy ships within 1 kilometer
 Trantor shockwaves are capable of disabling enemy bombs mid-flight", -1)
 $end_multi_text
@@ -6080,27 +6373,6 @@ $MessageNew:  XSTR("The evacuation is complete, everyone is off Leonov station. 
 $end_multi_text
 +AVI Name: Head-CM5
 +Wave Name: messagebeep.ogg
-
-$Name: Overview: AB recharging
-$Team: -1
-$MessageNew:  XSTR("AB shunt recharging", -1)
-$end_multi_text
-
-$Name: Overview: AB full
-$Team: -1
-$MessageNew:  XSTR("AB energy full", -1)
-$end_multi_text
-
-$Name: Overview: AB can shunt
-$Team: -1
-$MessageNew:  XSTR("AB shunt ready (2)", -1)
-$end_multi_text
-
-$Name: wtf debug
-$Team: -1
-$MessageNew:  XSTR("$ship-manev-timer
-$WarpStatus", -1)
-$end_multi_text
 
 #Reinforcements		;! 0 total
 

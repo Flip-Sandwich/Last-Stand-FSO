@@ -12,7 +12,7 @@ $Load Retail Configuration:	YES
 			Y Offset:	2
 			Gauge Type:	WINGMEN_STATUS
 			Slew: 	NO
-			Active by default: 	YES
+			Active by default: 	NO
 			Filename: 	directives1
 		+Custom:		
 			Position: 	(1256,319)
@@ -21,7 +21,7 @@ $Load Retail Configuration:	YES
 			X Offset:	5
 			Gauge Type: 	WINGMEN_STATUS
 			Slew: 	NO
-			Active by default: 	YES
+			Active by default: 	NO
 			Filename: 	directives2
 		+Custom:		
 			Position: 	(1256,328)
@@ -30,7 +30,7 @@ $Load Retail Configuration:	YES
 			X Offset:	5
 			Gauge Type: 	WINGMEN_STATUS
 			Slew: 	NO
-			Active by default: 	YES
+			Active by default: 	NO
 			Filename: 	directives2
 		+Custom:		
 			Position: 	(1256,337)
@@ -39,7 +39,7 @@ $Load Retail Configuration:	YES
 			X Offset:	5
 			Gauge Type: 	WINGMEN_STATUS
 			Slew: 	NO
-			Active by default: 	YES
+			Active by default: 	NO
 			Filename: 	directives2
 		+Custom:		
 			Position: 	(1256,346)
@@ -48,7 +48,7 @@ $Load Retail Configuration:	YES
 			X Offset:	5
 			Gauge Type: 	WINGMEN_STATUS
 			Slew: 	NO
-			Active by default: 	YES
+			Active by default: 	NO
 			Filename: 	directives2
 		+Custom:		
 			Position: 	(1256,355)
@@ -56,7 +56,7 @@ $Load Retail Configuration:	YES
 			Text:	
 			Gauge Type: 	WINGMEN_STATUS
 			Slew: 	NO
-			Active by default: 	YES
+			Active by default: 	NO
 			Filename: 	directives3
 		+Custom:		
 			Position: 	(5,277)
@@ -66,7 +66,7 @@ $Load Retail Configuration:	YES
 			Y Offset:	2
 			Gauge Type:	WINGMEN_STATUS
 			Slew: 	NO
-			Active by default: 	YES
+			Active by default: 	NO
 			Filename: 	directives1
 		+Custom:		
 			Position: 	(5,289)
@@ -75,7 +75,7 @@ $Load Retail Configuration:	YES
 			X Offset:	5
 			Gauge Type: 	WINGMEN_STATUS
 			Slew: 	NO
-			Active by default: 	YES
+			Active by default: 	NO
 			Filename: 	directives2
 		+Custom:		
 			Position: 	(5,298)
@@ -84,7 +84,7 @@ $Load Retail Configuration:	YES
 			X Offset:	5
 			Gauge Type: 	WINGMEN_STATUS
 			Slew: 	NO
-			Active by default: 	YES
+			Active by default: 	NO
 			Filename: 	directives2
 		+Custom:		
 			Position: 	(5,307)
@@ -93,7 +93,7 @@ $Load Retail Configuration:	YES
 			X Offset:	5
 			Gauge Type: 	WINGMEN_STATUS
 			Slew: 	NO
-			Active by default: 	YES
+			Active by default: 	NO
 			Filename: 	directives2
 		+Custom:		
 			Position: 	(5,316)
@@ -102,7 +102,7 @@ $Load Retail Configuration:	YES
 			X Offset:	5
 			Gauge Type: 	WINGMEN_STATUS
 			Slew: 	NO
-			Active by default: 	YES
+			Active by default: 	NO
 			Filename: 	directives2
 		+Custom:		
 			Position: 	(5,325)
@@ -111,15 +111,24 @@ $Load Retail Configuration:	YES
 			X Offset:	5
 			Gauge Type: 	WINGMEN_STATUS
 			Slew: 	NO
-			Active by default: 	YES
+			Active by default: 	NO
 			Filename: 	directives2
 		+Custom:		
 			Position: 	(5,334)
 			Name:	TLSTaccomF
 			Text:	
+			X Offset:	5
 			Gauge Type: 	WINGMEN_STATUS
 			Slew: 	NO
-			Active by default: 	YES
+			Active by default: 	NO
+			Filename: 	directives2
+		+Custom:		
+			Position: 	(5,343)
+			Name:	TLSTaccomG
+			Text:	
+			Gauge Type: 	WINGMEN_STATUS
+			Slew: 	NO
+			Active by default: 	NO
 			Filename: 	directives3
 	$End Gauges			
 #End
@@ -137,7 +146,7 @@ $Load Retail Configuration:	YES
 			Y Offset:										2
 			Gauge Type:										WINGMEN_STATUS
 			Slew: 											NO
-			Active by default: 								YES
+			Active by default: 								NO
 			Filename: 										directives1
 		+Custom:
 			Position: 										(840, 253)
@@ -146,7 +155,7 @@ $Load Retail Configuration:	YES
 			X Offset:										5
 			Gauge Type: 									WINGMEN_STATUS
 			Slew: 											NO
-			Active by default: 								YES
+			Active by default: 								NO
 			Filename: 										directives2
 		+Custom:
 			Position: 										(840, 262)
@@ -155,7 +164,7 @@ $Load Retail Configuration:	YES
 			X Offset:										5
 			Gauge Type: 									WINGMEN_STATUS
 			Slew: 											NO
-			Active by default: 								YES
+			Active by default: 								NO
 			Filename: 										directives2
 		+Custom:
 			Position: 										(840, 271)
@@ -164,7 +173,7 @@ $Load Retail Configuration:	YES
 			X Offset:										5
 			Gauge Type: 									WINGMEN_STATUS
 			Slew: 											NO
-			Active by default: 								YES
+			Active by default: 								NO
 			Filename: 										directives2
 		+Custom:
 			Position: 										(840, 289)
@@ -173,7 +182,7 @@ $Load Retail Configuration:	YES
 			X Offset:										5
 			Gauge Type: 									WINGMEN_STATUS
 			Slew: 											NO
-			Active by default: 								YES
+			Active by default: 								NO
 			Filename: 										directives2
 		+Custom:
 			Position: 										(840, 289)
@@ -181,7 +190,7 @@ $Load Retail Configuration:	YES
 			Text:
 			Gauge Type: 									WINGMEN_STATUS
 			Slew: 											NO
-			Active by default: 								YES
+			Active by default: 								NO
 			Filename: 										directives3
 		+Custom:
 			Position: 										(5, 281)
@@ -191,7 +200,7 @@ $Load Retail Configuration:	YES
 			Y Offset:										2
 			Gauge Type:										WINGMEN_STATUS
 			Slew: 											NO
-			Active by default: 								YES
+			Active by default: 								NO
 			Filename: 										directives1
 		+Custom:
 			Position: 										(5, 293)
@@ -200,7 +209,7 @@ $Load Retail Configuration:	YES
 			X Offset:										5
 			Gauge Type: 									WINGMEN_STATUS
 			Slew: 											NO
-			Active by default: 								YES
+			Active by default: 								NO
 			Filename: 										directives2
 		+Custom:
 			Position: 										(5, 302)
@@ -209,7 +218,7 @@ $Load Retail Configuration:	YES
 			X Offset:										5
 			Gauge Type: 									WINGMEN_STATUS
 			Slew: 											NO
-			Active by default: 								YES
+			Active by default: 								NO
 			Filename: 										directives2
 		+Custom:
 			Position: 										(5, 311)
@@ -218,7 +227,7 @@ $Load Retail Configuration:	YES
 			X Offset:										5
 			Gauge Type: 									WINGMEN_STATUS
 			Slew: 											NO
-			Active by default: 								YES
+			Active by default: 								NO
 			Filename: 										directives2
 		+Custom:
 			Position: 										(5, 320)
@@ -227,7 +236,7 @@ $Load Retail Configuration:	YES
 			X Offset:										5
 			Gauge Type: 									WINGMEN_STATUS
 			Slew: 											NO
-			Active by default: 								YES
+			Active by default: 								NO
 			Filename: 										directives2
 		+Custom:
 			Position: 										(5, 329)
@@ -236,15 +245,24 @@ $Load Retail Configuration:	YES
 			X Offset:										5
 			Gauge Type: 									WINGMEN_STATUS
 			Slew: 											NO
-			Active by default: 								YES
+			Active by default: 								NO
 			Filename: 										directives2
 		+Custom:
 			Position: 										(5, 338)
 			Name:											TLSTaccomF
 			Text:
+			X Offset:										5
 			Gauge Type: 									WINGMEN_STATUS
 			Slew: 											NO
-			Active by default: 								YES
+			Active by default: 								NO
+			Filename: 										directives2
+		+Custom:
+			Position: 										(5, 347)
+			Name:											TLSTaccomG
+			Text:
+			Gauge Type: 									WINGMEN_STATUS
+			Slew: 											NO
+			Active by default: 								NO
 			Filename: 										directives3
 	$End Gauges
 #End

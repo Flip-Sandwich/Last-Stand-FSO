@@ -261,11 +261,11 @@ $Rearm Rate: 400.0
 +Weapon Range: 2000
 $Flags: ( "player allowed" "cycle" "ballistic" )
 $Trail:
- +Start Width: 0.8
- +End Width: 0.25
- +Start Alpha: 0.8
- +End Alpha: 0.4
- +Max Life: 0.1
+ +Start Width: 1.2
+ +End Width: 1.0
+ +Start Alpha: 1.0
+ +End Alpha: 0.2
+ +Max Life: 1.2
  +Bitmap: Maxim_Trail
 $Icon: iconflail
 $Anim: Flail2
@@ -2570,104 +2570,6 @@ $BeamInfo:
  +Flicker: 0.35
  +Zadd: 1
 
-;;MIND-X STRIKECRAFT GUNS
-
-$Name: MIND Gattler
-$Model File: none
-@Laser Bitmap: Citra_Bitmap
-@Laser Glow: Alouqua_Glow
-@Laser Color: 10, 0, 91
-@Laser Color2: 91, 0, 10
-@Laser Length: 1.0
-@Laser Head Radius: 1.4
-@Laser Tail Radius: 1.4
-$Mass: 0.2
-$Velocity: 900.0
-$Fire Wait: 0.10
-$Damage: 3
-$Damage Type: LightWeapCAPTUR
-$Armor Factor: 0.7
-$Shield Factor: 1.4
-$Subsystem Factor: 0.5
-$Lifetime: 1.0
-$Energy Consumed: 1.0
-$Cargo Size: 0.0
-$Homing: NO
-$LaunchSnd: 103
-$ImpactSnd: 85
-+Weapon Range: 900
-$Flags: ()
-$Trail:
- +Start Width: 0.25
- +End Width: 0.1
- +Start Alpha: 0.4
- +End Alpha: 0.0
- +Max Life: 0.07
- +Bitmap: Alouqua_Trail
-$Impact Explosion: Shivan_Impact01
-$Impact Explosion Radius: 2.6
-$Piercing Impact Explosion: exp06
-$Piercing Impact Radius: 1.3
-$Piercing Impact Velocity: 10
-$Piercing Impact Splash Velocity: -2.5
-$Piercing Impact Variance: 0.01
-$Piercing Impact Particles: 5
-$Muzzleflash: Rmuzzle
-$FOF: 0.1
-+FOF Spread Rate: 0.02
-+FOF Reset Rate: 0.05
-+Max FOF: 0.5
-
-$Name: MIND Fragment Gun
-$Model File: none
-@Laser Bitmap: Citra_Bitmap
-@Laser Glow: Alouqua_Glow
-@Laser Color: 10, 0, 91
-@Laser Color2: 91, 0, 10
-@Laser Length: 1.0
-@Laser Head Radius: 1.4
-@Laser Tail Radius: 1.4
-$Mass: 0.2
-$Velocity: 900.0
-$Fire Wait: 0.10
-$Damage: 3
-$Damage Type: LightWeapCAPTUR
-$Armor Factor: 0.7
-$Shield Factor: 1.4
-$Subsystem Factor: 0.5
-$Lifetime: 1.0
-$Energy Consumed: 1.0
-$Cargo Size: 0.0
-$Homing: NO
-$LaunchSnd: 103
-$ImpactSnd: 85
-+Weapon Range: 900
-$Flags: ()
-$Trail:
- +Start Width: 0.25
- +End Width: 0.1
- +Start Alpha: 0.4
- +End Alpha: 0.0
- +Max Life: 0.07
- +Bitmap: Alouqua_Trail
-$Impact Explosion: Shivan_Impact01
-$Impact Explosion Radius: 2.6
-$Piercing Impact Explosion: exp06
-$Piercing Impact Radius: 1.3
-$Piercing Impact Velocity: 10
-$Piercing Impact Splash Velocity: -2.5
-$Piercing Impact Variance: 0.01
-$Piercing Impact Particles: 5
-$Muzzleflash: Rmuzzle
-$FOF: 0.1
-+FOF Spread Rate: 0.02
-+FOF Reset Rate: 0.05
-+Max FOF: 0.5
-
-;;MIND-X AA GUNS
-
-;;MIND-X BIG GUNS
-
 #End
 
 #Secondary Weapons
@@ -3465,13 +3367,13 @@ $Piercing Impact Particles: 25
 $Muzzleflash: heavyflak
 $Pspew:
  +Type: Plume
- +Count: 3
- +Time: 50
- +Vel: 0.95
- +Radius: 2.5
- +Life: 0.2
+ +Count: 2
+ +Time: 25
+ +Vel: 0.0
+ +Radius: 4.0
+ +Life: 0.05
  +Scale: 0.2
- +Bitmap: missilespew03
+ +Bitmap: exp06b
 $Weapon Hitpoints: 200
 $Armor Type: Bomb Plate
 
@@ -3493,7 +3395,7 @@ $Shockwave Damage Type: EMPShockwave
 $Blast Force: 600.0
 $Inner Radius: 120.0
 $Outer Radius: 240.0
-$Shockwave Speed: 190
+$Shockwave Speed: 360
 $Armor Factor: 1.0
 $Shield Factor: 0.1
 $Subsystem Factor: 0.1
@@ -3838,23 +3740,23 @@ $Impact Explosion Radius: 25.0
 $Pspew:
  +index: 0
  +type: plume
- +Count: 10
- +Time: 20
- +Vel: 0.85
- +Radius: 0.1
- +Life: 0.3
- +Scale: 1.0
+ +Count: 2
+ +Time: 50
+ +Vel: 0.95
+ +Radius: 0.5
+ +Life: 0.5
+ +Scale: 0.25
  +Z Scale: 1
  +Bitmap: missilespew04
 $Pspew:
  +index: 1
  +type: sparkler
- +Count: 2
- +Time: 20
- +Vel: 0.75
- +Radius: 0.1
- +Life: 0.3
- +Scale: 1.0
+ +Count: 1
+ +Time: 1
+ +Vel: 0.5
+ +Radius: 0.25
+ +Life: 0.5
+ +Scale: 0.25
  +Z Scale: 1
  +Bitmap: missilespew04
 $Weapon Hitpoints: 50
@@ -4104,9 +4006,9 @@ $Model File: S_Trebuchet.pof
 $POF target LOD: 0
 $Detail distance: ( 0, 7, 29 )
 $Mass: 20.0
-$Velocity: 300.0
+$Velocity: 200.0
 $Fire Wait: 10.0
-$Damage: 500
+$Damage: 1250
 $Damage Type: HeavyWeap
 $Arm radius: 250.0
 $Shockwave Damage Type: HugeShockwave
@@ -4114,17 +4016,10 @@ $Blast Force: 160.0
 $Inner Radius: 25.0
 $Outer Radius: 75.0
 $Shockwave Speed: 50
-$Dinky shockwave:
- +Shockwave damage: 50
- +Shockwave Damage Type: MediumShockwave
- +Blast Force: 10.0
- +Inner Radius: 5.0
- +Outer Radius: 5.0
- +Shockwave Speed: 5
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 0.5
-$Lifetime: 8.0
+$Lifetime: 12.5
 $Energy Consumed: 0.0
 $Cargo Size: 1.0
 $Homing: YES
@@ -4137,12 +4032,12 @@ $Homing: YES
 $LaunchSnd: 92
 $ImpactSnd: 88
 $FlyBySnd: -1
-$Rearm Rate: 0.5
+$Rearm Rate: 0.25
 +Weapon Range: 2400
 +Weapon Min Range: 250
 $Flags: ( "huge" "particle spew" "bomb" "no radius doubling" "in tech database" )
 $Trail:
- +Start Width: 1.0
+ +Start Width: 2.0
  +End Width: 0.0
  +Start Alpha: 1.0
  +End Alpha: 0.0
@@ -4158,25 +4053,25 @@ $Piercing Impact Variance: 20000
 $Piercing Impact Particles: 10
 $Pspew:
  +Index: 0
- +Type: Plume
+ +Type: Default
  +Count: 3
- +Time: 25
- +Vel: 0.95
- +Radius: 0.5
- +Life: 0.1
+ +Time: 1
+ +Vel: 0.0
+ +Radius: 10.0
+ +Life: 1.0
  +Scale: 0.1
  +Bitmap: missilespew06
 $Pspew:
  +Index: 1
  +Type: Sparkler
- +Count: 1
+ +Count: 2
  +Time: 1
  +Vel: 0.0
- +Radius: 0.5
- +Life: 0.1
- +Scale: 0.0
+ +Radius: 10.0
+ +Life: 2.0
+ +Scale: 1.0
  +Bitmap: missilespew06
-$Weapon Hitpoints: 50
+$Weapon Hitpoints: 200
 $Armor Type: Bomb Plate
 $Thruster Flame Effect: missilethruster06
 $Thruster Glow Effect: missileglow06
@@ -4186,9 +4081,9 @@ $Model File: S_MegaBomb.pof
 $POF target LOD: 0
 $Detail distance: ( 0, 10, 40 )
 $Mass: 20.0
-$Velocity: 500.0
+$Velocity: 200.0
 $Fire Wait: 5.0
-$Damage: 1000
+$Damage: 2500
 $Damage Type: HugeWeap
 $Arm radius: 250.0
 $Shockwave Damage Type: HugeShockwave
@@ -4196,19 +4091,12 @@ $Blast Force: 160.0
 $Inner Radius: 50.0
 $Outer Radius: 250.0
 $Shockwave Speed: 100
-$Dinky shockwave:
- +Shockwave damage: 100
- +Shockwave Damage Type: HugeShockwave
- +Blast Force: 20.0
- +Inner Radius: 10.0
- +Outer Radius: 10.0
- +Shockwave Speed: 10
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 0.5
-$Lifetime: 2.5
+$Lifetime: 5.5
 $Energy Consumed: 0.0
-$Cargo Size: 0.25
+$Cargo Size: 1.0
 $Homing: YES
  +Type: ASPECT
  +Turn Time: 3.2
@@ -4223,7 +4111,7 @@ $Rearm Rate: 0.5
 +Weapon Range: 1000
 $Flags: ( "huge" "particle spew" "bomb" "no radius doubling" )
 $Trail:
- +Start Width: 1.4
+ +Start Width: 3.0
  +End Width: 0.0
  +Start Alpha: 1.0
  +End Alpha: 0.0
@@ -4239,25 +4127,25 @@ $Piercing Impact Variance: 20000
 $Piercing Impact Particles: 10
 $Pspew:
  +Index: 0
- +Type: Plume
+ +Type: Default
  +Count: 3
- +Time: 25
- +Vel: 0.95
- +Radius: 1.0
- +Life: 0.1
+ +Time: 1
+ +Vel: 0.0
+ +Radius: 20.0
+ +Life: 1.0
  +Scale: 0.1
  +Bitmap: missilespew06
 $Pspew:
  +Index: 1
  +Type: Sparkler
- +Count: 1
+ +Count: 2
  +Time: 1
  +Vel: 0.0
- +Radius: 1.0
- +Life: 0.1
- +Scale: 0.0
+ +Radius: 20.0
+ +Life: 2.0
+ +Scale: 1.0
  +Bitmap: missilespew06
-$Weapon Hitpoints: 100
+$Weapon Hitpoints: 250
 $Armor Type: Bomb Plate
 $Thruster Flame Effect: missilethruster06
 $Thruster Glow Effect: missileglow06
@@ -4287,7 +4175,7 @@ $Countermeasure:
 $Pspew:
  +Count: 1
  +Time: 1
- +Vel: 1.5
+ +Vel: 0.0
  +Radius: 0.6
  +Life: 0.025
  +Scale: 0.00005
@@ -4315,8 +4203,8 @@ $Shockwave damage: 100
 $Shockwave Damage Type: EMPShockwave
 $Blast Force: 50.0
 $Inner Radius: 80.0
-$Outer Radius: 200.0
-$Shockwave Speed: 150.0
+$Outer Radius: 250.0
+$Shockwave Speed: 1000.0
 $Armor Factor: 0.1
 $Shield Factor: 1.0
 $Subsystem Factor: 1.0
@@ -4329,8 +4217,8 @@ $ImpactSnd: 88
 $FlyBySnd: -1
 $Rearm Rate: 2.0
 $Flags: ( "countermeasure" "EMP" "ciws" "same emp time for capships" )
-$EMP Intensity: 100.0
-$EMP Time: 1.0
+$EMP Intensity: 10.0
+$EMP Time: 0.5
 $Countermeasure:
  +Heat Effectiveness: 5
  +Aspect Effectiveness: 5
