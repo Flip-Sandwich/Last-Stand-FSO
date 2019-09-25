@@ -4003,7 +4003,7 @@ $Score: 0
 $Subsystem: turret01,15,1.0
  $Alt Subsystem Name: Tri-Beam
  $Default PBanks: ( "SMind" )
- $flags: ( "collide submodel" "check hull" "salvo mode" )
+ $flags: ( "collide submodel" "check hull" "salvo mode" "share fire direction" )
 $Subsystem: turret02,3.0,1.0
  $Default PBanks: ( "Shivan Turret Laser" )
  $Flags: ( "check hull" )

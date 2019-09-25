@@ -4,7 +4,7 @@ $Version: 0.10
 $Name:  XSTR("Battle of Earth", -1)
 $Author: [`_`]
 $Created: 07/21/16 at 11:05:45
-$Modified: 09/25/19 at 21:06:36
+$Modified: 09/25/19 at 21:09:09
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -22,11 +22,11 @@ $end_multi_text
 +Hull Repair Ceiling: 0.000000
 +Subsystem Repair Ceiling: 100.000000
 
-+Viewer pos: 1451.572021, 11158.696289, -5471.231934
++Viewer pos: 1888.281860, 3754.680420, -9737.185547
 +Viewer orient:
 	1.000000, -0.000904, 0.000000,
-	0.000404, 0.447129, 0.894470,
-	-0.000809, -0.894469, 0.447129
+	0.000839, 0.927752, 0.373196,
+	-0.000337, -0.373196, 0.927753
 
 $Starting wing names: ( "Polydeuces#" "Alpha" "Bravo" )
 $Squadron wing names: ( "Polydeuces#" "Alpha" "Bravo" "Charlie" "Delta" )
@@ -155,11 +155,11 @@ $Ship Choices: (
 $Name: Polydeuces# 1		;! Object #0
 $Class: UN Leto
 $Team: Friendly
-$Location: -1620.732666, 91.187500, -1593.072510
+$Location: -1400.600464, 1092.300049, -4305.722168
 $Orientation:
-	0.000000, 0.000000, 1.000000,
-	0.000000, 1.000000, -0.000000,
-	-1.000000, 0.000000, 0.000000
+	0.963414, 0.000000, -0.268019,
+	0.046003, 0.985159, 0.165362,
+	0.264042, -0.171642, 0.949116
 $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
@@ -186,6 +186,7 @@ $Orientation:
 $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
++Initial Shields: 100
 +Subsystem: Pilot
 +Subsystem: Turret01
 +Subsystem: Turret02
@@ -198,10 +199,11 @@ $Arrival Cue: ( true )
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Determination: 10
-+Flags: ( "cargo-known" )
++Flags: ( "cargo-known" "no-shields" )
 +Flags2: ( )
 +Respawn priority: 0
 +Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
 +Use Table Score:
 +Score: 0
 
@@ -216,6 +218,7 @@ $Orientation:
 $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
++Initial Shields: 100
 +Subsystem: Pilot
 +Subsystem: Turret01
 +Subsystem: Turret02
@@ -228,10 +231,11 @@ $Arrival Cue: ( true )
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Determination: 10
-+Flags: ( "cargo-known" )
++Flags: ( "cargo-known" "no-shields" )
 +Flags2: ( )
 +Respawn priority: 0
 +Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
 +Use Table Score:
 +Score: 0
 
@@ -246,6 +250,7 @@ $Orientation:
 $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
++Initial Shields: 100
 +Subsystem: Pilot
 +Subsystem: turret01
 +Subsystem: turret02
@@ -256,10 +261,11 @@ $Arrival Cue: ( true )
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Determination: 10
-+Flags: ( "cargo-known" )
++Flags: ( "cargo-known" "no-shields" )
 +Flags2: ( )
 +Respawn priority: 0
 +Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
 +Use Table Score:
 +Score: 0
 
@@ -274,6 +280,7 @@ $Orientation:
 $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
++Initial Shields: 100
 +Subsystem: Pilot
 +Subsystem: turret01
 +Subsystem: turret02
@@ -284,17 +291,18 @@ $Arrival Cue: ( true )
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Determination: 10
-+Flags: ( "cargo-known" )
++Flags: ( "cargo-known" "no-shields" )
 +Flags2: ( )
 +Respawn priority: 0
 +Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
 +Use Table Score:
 +Score: 0
 
 $Name: Magellan		;! Object #5
 $Class: UN Magellan
 $Team: Friendly
-$Location: -11.009766, -523.683594, -2025.908203
+$Location: -11.009766, 36.052429, -2025.908203
 $Orientation:
 	0.993956, 0.043759, -0.100680,
 	0.000000, 0.917121, 0.398609,
@@ -302,6 +310,7 @@ $Orientation:
 $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
++Initial Shields: 100
 +Subsystem: Pilot
 +Subsystem: turret01
 +Subsystem: turret02
@@ -360,11 +369,12 @@ $Arrival Cue: ( true )
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Determination: 10
-+Flags: ( "cargo-known" "escort" )
++Flags: ( "cargo-known" "no-shields" "escort" )
 +Flags2: ( )
 +Respawn priority: 0
 +Escort priority: 99
 +Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
 +Use Table Score:
 +Score: 0
 
@@ -379,6 +389,7 @@ $Orientation:
 $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
++Initial Shields: 100
 +Subsystem: Pilot
 +Subsystem: turret01
 +Subsystem: turret02
@@ -396,10 +407,11 @@ $Arrival Cue: ( true )
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Determination: 10
-+Flags: ( "cargo-known" )
++Flags: ( "cargo-known" "no-shields" )
 +Flags2: ( )
 +Respawn priority: 0
 +Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
 +Use Table Score:
 +Score: 0
 
@@ -414,6 +426,7 @@ $Orientation:
 $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
++Initial Shields: 100
 +Subsystem: Pilot
 +Subsystem: turret01
 +Subsystem: turret02
@@ -431,17 +444,18 @@ $Arrival Cue: ( true )
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Determination: 10
-+Flags: ( "cargo-known" )
++Flags: ( "cargo-known" "no-shields" )
 +Flags2: ( )
 +Respawn priority: 0
 +Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
 +Use Table Score:
 +Score: 0
 
 $Name: Berlin		;! Object #8
 $Class: UN Moscow
 $Team: Friendly
-$Location: -23.703369, 505.929688, -1146.977051
+$Location: -23.703369, 1029.985474, -1146.977051
 $Orientation:
 	1.000000, 0.000000, 0.000000,
 	0.000000, 1.000000, 0.000000,
@@ -449,6 +463,7 @@ $Orientation:
 $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
++Initial Shields: 100
 +Subsystem: Pilot
 +Subsystem: turret01
 +Subsystem: turret02
@@ -466,17 +481,18 @@ $Arrival Cue: ( true )
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Determination: 10
-+Flags: ( "cargo-known" )
++Flags: ( "cargo-known" "no-shields" )
 +Flags2: ( )
 +Respawn priority: 0
 +Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
 +Use Table Score:
 +Score: 0
 
 $Name: Pharaoh		;! Object #9
 $Class: MIND Pharaoh
 $Team: Hostile
-$Location: 64.921631, 37.961914, 3054.688965
+$Location: 24.719238, 37.961914, 1366.600098
 $Orientation:
 	-0.998829, 0.000000, 0.048389,
 	-0.010087, 0.978031, -0.208216,
@@ -484,6 +500,7 @@ $Orientation:
 $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
++Initial Shields: 100
 +Subsystem: Pilot
 +Subsystem: turret01
 +Subsystem: turret02
@@ -522,11 +539,12 @@ $Arrival Cue: ( true )
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Determination: 10
-+Flags: ( "escort" )
++Flags: ( "no-shields" "escort" )
 +Flags2: ( )
 +Respawn priority: 0
 +Escort priority: 98
 +Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
 +Use Table Score:
 +Score: 0
 
@@ -541,6 +559,7 @@ $Orientation:
 $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
++Initial Shields: 100
 +Subsystem: Pilot
 +Subsystem: turret01
 +Subsystem: turret02
@@ -569,10 +588,11 @@ $Arrival Cue: ( true )
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Determination: 10
-+Flags: ( )
++Flags: ( "no-shields" )
 +Flags2: ( )
 +Respawn priority: 0
 +Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
 +Use Table Score:
 +Score: 0
 
@@ -587,6 +607,7 @@ $Orientation:
 $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
++Initial Shields: 100
 +Subsystem: Pilot
 +Subsystem: turret01
 +Subsystem: turret02
@@ -611,10 +632,11 @@ $Arrival Cue: ( true )
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Determination: 10
-+Flags: ( )
++Flags: ( "no-shields" )
 +Flags2: ( )
 +Respawn priority: 0
 +Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
 +Use Table Score:
 +Score: 0
 
@@ -629,6 +651,7 @@ $Orientation:
 $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
++Initial Shields: 100
 +Subsystem: Pilot
 +Subsystem: turret01
 +Subsystem: turret02
@@ -653,10 +676,11 @@ $Arrival Cue: ( true )
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Determination: 10
-+Flags: ( )
++Flags: ( "no-shields" )
 +Flags2: ( )
 +Respawn priority: 0
 +Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
 +Use Table Score:
 +Score: 0
 
@@ -671,6 +695,7 @@ $Orientation:
 $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
++Initial Shields: 100
 +Subsystem: Pilot
 +Subsystem: turret01
 +Subsystem: turret02
@@ -695,10 +720,11 @@ $Arrival Cue: ( true )
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Determination: 10
-+Flags: ( )
++Flags: ( "no-shields" )
 +Flags2: ( )
 +Respawn priority: 0
 +Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
 +Use Table Score:
 +Score: 0
 
