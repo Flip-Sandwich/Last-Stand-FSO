@@ -4,7 +4,7 @@ $Version: 0.10
 $Name:  XSTR("The Great Escape", -1)
 $Author: [`_`]
 $Created: 07/21/16 at 11:05:45
-$Modified: 09/25/19 at 21:23:39
+$Modified: 09/26/19 at 10:24:46
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -22,11 +22,11 @@ $end_multi_text
 +Hull Repair Ceiling: 0.000000
 +Subsystem Repair Ceiling: 100.000000
 
-+Viewer pos: -766.398254, 787.627380, 761.620789
++Viewer pos: -5521.167969, 2448.685059, -546.850464
 +Viewer orient:
-	0.100348, -0.000899, -0.994952,
-	0.236048, 0.971471, 0.022929,
-	0.966546, -0.237157, 0.097697
+	-0.108068, -0.000899, -0.994143,
+	0.440525, 0.896419, -0.048698,
+	0.891212, -0.443207, -0.096478
 
 $Starting wing names: ( "Polydeuces#" "Alpha" "Bravo" )
 $Squadron wing names: ( "Polydeuces#" "Alpha" "Bravo" "Charlie" "Delta" )
@@ -790,8 +790,11 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Subsystem: turret01
 +Primary Banks: ( "SMind" )
 +Subsystem: turret02
++Primary Banks: ( "BMind" )
 +Subsystem: turret03
++Primary Banks: ( "BMind" )
 +Subsystem: turret04
++Primary Banks: ( "BMind" )
 +Subsystem: turret05
 +Subsystem: turret06
 +Subsystem: turret07
@@ -3883,6 +3886,7 @@ $Formula: ( every-time
 +Name: Warp begin
 +Repeat Count: 1
 +Interval: 1
++Event Log Flags: ( "first trigger" )
 
 $Formula: ( every-time 
    ( and 
@@ -5970,8 +5974,8 @@ $Name: Tutorial: Overheated
 $Team: -1
 $MessageNew:  XSTR("Your ship has shut down from overheating
 Heat generates primarily when energy bars are maximized, or afterburners are engaged
-To override the automatic shutdown, use alt-X
-Be aware that overheating deals significant damage after overriding", -1)
+To override automatic shutdown, use alt-X
+Be aware that overheating deals significant damage if override is enabled", -1)
 $end_multi_text
 
 $Name: Engi: Heat critical
@@ -6187,7 +6191,7 @@ $end_multi_text
 $Name: Tutorial: Beams
 $Team: -1
 $MessageNew:  XSTR("Press $Left Arrow$ or $Right Arrow$ to fire left or right side beam cannons respectively 
-Beams must have 200GW charged to fire, and fire an additional pulse with every additional 50GW
+Beams must be at least 75% charged to fire, and fire an additional pulse with every additional 25% charge up to 150%
 Press F12 to cycle between enemy warships
 Beam charge rate is determined by your weapons ETS setting", -1)
 $end_multi_text
@@ -6273,9 +6277,9 @@ $end_multi_text
 $Name: Tutorial: Secondary sys
 $Team: -1
 $MessageNew:  XSTR("Press $1$ to activate a beam overdrive
-This rapidly transfers all available energy in the capacitor to both beam cannons
+Transfer capacitor energy to the beams, allowing charges of up to 200%
 Press $3$ to activate active armour hardening
-This will slowly drain the capacitor and increase ship damage resistance
+Ship damage resistance is significantly increased at the cost of slight capacitor drain
 ", -1)
 $end_multi_text
 
@@ -6296,8 +6300,8 @@ $end_multi_text
 $Name: Tutorial: Trantors
 $Team: -1
 $MessageNew:  XSTR("Trantors are highly effective point defence munitions
-They deal high damage to enemy ships within 1 kilometer
-Trantor shockwaves are capable of disabling enemy bombs mid-flight", -1)
+Inflict heavy damage to hostile strikecraft within a 1 kilometre radius of your ship
+Trantor shockwaves are capable of detonating enemy bombs mid-flight", -1)
 $end_multi_text
 
 $Name: Xerxes: Going
@@ -6339,8 +6343,8 @@ $Name: Tutorial: Warping
 $Team: -1
 $MessageNew:  XSTR("Press $Alt-J$ to initiate warp sequence
 Fly to a location, then press $Alt-J$ again to warp there
-Shift-J to cancel warp sequence
-To warp or to cancel warp, you must be stationary.", -1)
+$Shift-J$ to cancel warp sequence
+To confirm warp or cancel a warp, your throttle while in location select mode must be 0", -1)
 $end_multi_text
 
 $Name: Leonov: Pharaoh3
@@ -6374,7 +6378,7 @@ $end_multi_text
 $Name: Tutorial: Afterburner shunt
 $Team: -1
 $MessageNew:  XSTR("Press $2$ to activate an afterburner energy shunt
-Your ship will rapidly inject energy into the engines from the capacitor
+Transfers available capacitor energy to afterburner reserves
 Be aware that afterburner usage generates significant heat", -1)
 $end_multi_text
 

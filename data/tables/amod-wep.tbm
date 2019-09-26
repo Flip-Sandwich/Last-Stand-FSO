@@ -48,7 +48,7 @@ $Pspew:
 $Name: Vigilante GC-13
 +Title: XSTR("Vigilante GC-13 Plasma Gun", -1)
 +Description: XSTR("
-Damage Rating: 34
+Damage Rating: 28
 RoF: 4.0 rounds per second
 Range: 2450m
 ", -1)
@@ -70,7 +70,7 @@ $Model File: none
 $Mass: 0.15
 $Velocity: 700.0
 $Fire Wait: 0.25
-$Damage: 20
+$Damage: 28
 $Damage Type: MediumWeap
 $Armor Factor: 1.0
 $Shield Factor: 0.5
@@ -107,7 +107,7 @@ $FOF: 0.4
  $Name: Portanis C-12
 +Title: XSTR("C-12 Cannon", -1)
 +Description: XSTR("
-Damage Rating: 55
+Damage Rating: 40
 RoF: 3 rounds per second
 Range: 2250m
 ", -1)
@@ -130,7 +130,7 @@ $Model File: none
 $Mass: 0.5
 $Velocity: 750.0
 $Fire Wait: 0.33333
-$Damage: 28
+$Damage: 40
 $Damage Type: MediumWeap
 $Armor Factor: 1.0
 $Shield Factor: 1.0
@@ -168,7 +168,7 @@ $FOF: 0.25
 $Name: Darsij P-294
 +Title: XSTR("Darsij P-294 Autocannon", -1)
 +Description: XSTR("
-Damage Rating: 26
+Damage Rating: 20
 RoF: 6.67 rounds per second
 Range: 2000m
 ", -1)
@@ -191,7 +191,7 @@ $Model File: none
 $Mass: 0.1
 $Velocity: 1000.0
 $Fire Wait: 0.15
-$Damage: 18
+$Damage: 20
 $Damage Type: LightWeap
 $Armor Factor: 1.0
 $Shield Factor: 1.0
@@ -276,7 +276,7 @@ $Name: Torrika KB-1
 +Title: XSTR("Torrika KB-1 Plasma Gun", -1)
 +Description:
 XSTR("
-Damage Rating: 75
+Damage Rating: 65
 RoF: 2.0 rounds per second
 Range: 3000m
 ", -1)
@@ -299,7 +299,7 @@ $Model File: none
 $Mass: 0.5
 $Velocity: 600.0
 $Fire Wait: 0.5
-$Damage: 40
+$Damage: 65
 $Damage Type: MediumWeap
 $Armor Factor: 1.0
 $Shield Factor: 1.0
@@ -828,7 +828,7 @@ $Name: Thresher
 +Title: XSTR("Thresher", -1)
 +Description:
 XSTR("
-Damage Rating: 70
+Damage Rating: 55
 RoF: 2.5 rounds per second
 Range: 1600
 ", -1)
@@ -846,7 +846,7 @@ $External Model File: GUN-Tachyon.pof
 $Mass: 0.15
 $Velocity: 800.0
 $Fire Wait: 0.4
-$Damage: 30
+$Damage: 55
 $Damage Type: MediumWeap
 $Armor Factor: 1.0
 $Shield Factor: 0.8
@@ -875,7 +875,7 @@ $Name: Reaper
 +Title: XSTR("Reaper", -1)
 +Description:
 XSTR("
-Damage Rating: 20
+Damage Rating: 12
 RoF: 8.0 rounds per second
 Range: 2750
 ", -1)
@@ -893,7 +893,7 @@ $External Model File: GUN-AvengerIII.pof
 $Mass: 0.15
 $Velocity: 1100.0
 $Fire Wait: 0.125
-$Damage: 8
+$Damage: 12
 $Damage Type: LightWeap
 $Armor Factor: 1.0
 $Shield Factor: 1.0
@@ -924,8 +924,8 @@ $Name: Scythe
 +Title: XSTR("Scythe", -1)
 +Description:
 XSTR("
-Damage Rating: 50
-RoF: 5.0 rounds per second
+Damage Rating: 32
+RoF: 3.0 rounds per second
 Range: 2250
 ", -1)
 $end_multi_text
@@ -939,10 +939,10 @@ $External Model File: GUN-Pilum.pof
 @Laser Length: 7.0
 @Laser Head Radius: 3.0
 @Laser Tail Radius: 2.0
-$Mass: 0.5
+$Mass: 0.05
 $Velocity: 750.0
-$Fire Wait: 0.2
-$Damage: 15
+$Fire Wait: 0.3333
+$Damage: 32
 $Damage Type: LightWeap
 $Armor Factor: 1.0
 $Shield Factor: 1.0
@@ -3978,8 +3978,8 @@ $POF target LOD: 0
 $Detail distance: ( 0, 7, 29 )
 $Mass: 20.0
 $Velocity: 200.0
-$Fire Wait: 10.0
-$Damage: 1250
+$Fire Wait: 17.5
+$Damage: 800
 $Damage Type: HeavyWeap
 $Arm radius: 250.0
 $Shockwave Damage Type: HugeShockwave
@@ -4053,8 +4053,8 @@ $POF target LOD: 0
 $Detail distance: ( 0, 10, 40 )
 $Mass: 20.0
 $Velocity: 200.0
-$Fire Wait: 5.0
-$Damage: 2500
+$Fire Wait: 25.0
+$Damage: 1800
 $Damage Type: HugeWeap
 $Arm radius: 250.0
 $Shockwave Damage Type: HugeShockwave

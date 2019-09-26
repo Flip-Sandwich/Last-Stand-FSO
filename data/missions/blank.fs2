@@ -2392,8 +2392,8 @@ $Name: Tutorial: Overheated
 $Team: -1
 $MessageNew:  XSTR("Your ship has shut down from overheating
 Heat generates primarily when energy bars are maximized, or afterburners are engaged
-To override the automatic shutdown, use alt-X
-Be aware that overheating deals significant damage after overriding", -1)
+To override automatic shutdown, use alt-X
+Be aware that overheating deals significant damage if override is enabled", -1)
 $end_multi_text
 
 $Name: Engi: Heat critical
