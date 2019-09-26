@@ -790,11 +790,11 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Subsystem: turret01
 +Primary Banks: ( "SMind" )
 +Subsystem: turret02
-+Primary Banks: ( "BMind" )
++Primary Banks: ( "MMind" )
 +Subsystem: turret03
-+Primary Banks: ( "BMind" )
++Primary Banks: ( "MMind" )
 +Subsystem: turret04
-+Primary Banks: ( "BMind" )
++Primary Banks: ( "MMind" )
 +Subsystem: turret05
 +Subsystem: turret06
 +Subsystem: turret07

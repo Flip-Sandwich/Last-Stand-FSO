@@ -333,14 +333,15 @@ $Name: Cluster Flak Array
 Along with the Trantor cluster munition, the cluster flak round was developed by the Union as a counter to the increasing superiority of Federal strikecraft over their Union counterparts. Capable of being fired from either a specialised battery or a standard railgun array, the cluster flak round is especially lethal to any tight formations of strikecraft.
 ", -1)
 $end_multi_text
-$Model File: blip.pof
+$Model File: dup.pof
 $Mass: 0.2
 $Velocity: 1500.0
 $Fire Wait: 1.5
 $Damage: 50
 $Damage Type: LightWeapCAPTUR
+$Detonation Radius: 25
 $Flak Detonation Accuracy: 15
-$Flak Targeting Accuracy: 15
+$Flak Targeting Accuracy: 30
 $Untargeted Flak Range Penalty: 0
 $Shockwave Damage Type: MediumShockwave
 $Blast Force: 100.0
@@ -363,7 +364,7 @@ $Trail:
  +End Width: 0.0
  +Start Alpha: 1.0
  +End Alpha: 0.0
- +Max Life: 0.10
+ +Max Life: 0.25
  +Bitmap: Flak_trail
 $Icon: iconKayser
 $Anim: Kayser
@@ -378,18 +379,19 @@ $Pspew:
  +Life: 0.0125
  +Scale: 0.025
  +Bitmap: Cmuzzle_0001
-$FOF: 0.3
+$FOF: 0.5
 $Shots: 4
 
 $Name: Cluster Fuck Array
-$Model File: blip.pof
+$Model File: dup.pof
 $Mass: 0.2
 $Velocity: 1500.0
 $Fire Wait: 1.5
 $Damage: 50
 $Damage Type: LightWeap
-$Flak Detonation Accuracy: 25
-$Flak Targeting Accuracy: 25
+$Detonation Radius: 25
+$Flak Detonation Accuracy: 15
+$Flak Targeting Accuracy: 30
 $Untargeted Flak Range Penalty: 0
 $Shockwave Damage Type: MediumShockwave
 $Blast Force: 100.0
@@ -399,20 +401,20 @@ $Shockwave Speed: 0.0
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 0.2
-$Lifetime: 1.5
+$Lifetime: 1.7
 $Energy Consumed: 0.5
 $Cargo Size: 1.0
 $Homing: NO
 $LaunchSnd: 116
 $ImpactSnd: 117
-+Weapon Range: 2250
++Weapon Range: 2500
 $Flags: ( "Big Ship" "particle spew" "flak" )
 $Trail:
  +Start Width: 3.5
  +End Width: 0.0
  +Start Alpha: 1.0
  +End Alpha: 0.0
- +Max Life: 0.10
+ +Max Life: 0.25
  +Bitmap: Flak_trail
 $Icon: iconKayser
 $Anim: Kayser
@@ -427,7 +429,7 @@ $Pspew:
  +Life: 0.0125
  +Scale: 0.025
  +Bitmap: Cmuzzle_0001
-$FOF: 1.0
+$FOF: 1.25
 $Burst Shots: 4
 $Burst Delay: 1
 $Burst Flags: ( "fast firing" )
@@ -540,13 +542,13 @@ $Damage Type: HugeWeap
 $Armor Factor: 1.0
 $Shield Factor: 0.1
 $Subsystem Factor: 0.75
-$Lifetime: 2.0
+$Lifetime: 2.5
 $Energy Consumed: 5.00
 $Cargo Size: 0.0
 $Homing: NO
 $LaunchSnd: 213
 $ImpactSnd: 88
-+Weapon Range: 4000
++Weapon Range: 5000
 $Flags: ( "Huge" "particle spew" "same turret cooldown" "in tech database" "player allowed" )
 $Trail:
  +Start Width: 8
