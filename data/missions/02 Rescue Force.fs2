@@ -4,7 +4,7 @@ $Version: 0.10
 $Name:  XSTR("Rescue Force", -1)
 $Author: [`_`]erman
 $Created: 07/21/16 at 11:05:45
-$Modified: 09/25/19 at 20:32:58
+$Modified: 09/28/19 at 10:32:36
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -22,11 +22,11 @@ $end_multi_text
 +Hull Repair Ceiling: 0.000000
 +Subsystem Repair Ceiling: 100.000000
 
-+Viewer pos: 5.575405, 6667.482910, 0.000000
++Viewer pos: 3366.534912, 11713.306641, -7016.290039
 +Viewer orient:
-	1.000000, -0.000904, 0.000000,
-	0.000000, 0.000000, 1.000000,
-	-0.000904, -1.000000, 0.000000
+	0.999872, -0.000902, -0.015954,
+	0.005826, 0.950270, 0.311373,
+	0.014880, -0.311426, 0.950154
 
 $Starting wing names: ( "Polydeuces#" "Alpha" "Bravo" )
 $Squadron wing names: ( "Polydeuces#" "Alpha" "Bravo" "Charlie" "Delta" )
@@ -491,7 +491,7 @@ $Departure Cue: ( or
          "Magellan" 
          "center rad check:1" 
       )
-      6000 
+      6500 
    )
    ( is-event-true-delay 
       "end pocket 3" 
@@ -523,7 +523,7 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Shields: 100
 +Subsystem: Pilot
 $Arrival Location: Near Ship
-+Arrival Distance: 5000
++Arrival Distance: 7000
 $Arrival Anchor: Magellan
 $Arrival Cue: ( true ) 
 $Departure Location: Hyperspace
@@ -552,7 +552,7 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Shields: 100
 +Subsystem: Pilot
 $Arrival Location: Near Ship
-+Arrival Distance: 8500
++Arrival Distance: 11500
 $Arrival Anchor: Magellan
 $Arrival Cue: ( true ) 
 $Departure Location: Hyperspace
@@ -581,7 +581,7 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Shields: 100
 +Subsystem: Pilot
 $Arrival Location: Near Ship
-+Arrival Distance: 5600
++Arrival Distance: 7600
 $Arrival Anchor: Magellan
 $Arrival Cue: ( true ) 
 $Departure Location: Hyperspace
@@ -3134,7 +3134,7 @@ $Formula: ( every-time
                      "Polydeuces# 1" 
                      "turret01" 
                   )
-                  5500 
+                  6500 
                )
                ( hud-set-message 
                   "TLSTaccomA" 
@@ -3182,7 +3182,7 @@ $Formula: ( every-time
                "Polydeuces# 1" 
                "turret01" 
             )
-            5500 
+            6500 
          )
          ( is-in-turret-fov 
             "@PlayerTarget[null]" 
@@ -3270,7 +3270,7 @@ $Formula: ( every-time
                      "Polydeuces# 1" 
                      "turret02" 
                   )
-                  5500 
+                  6500 
                )
                ( hud-set-message 
                   "TLSTaccomB" 
@@ -3318,7 +3318,7 @@ $Formula: ( every-time
                "Polydeuces# 1" 
                "turret02" 
             )
-            5500 
+            6500 
          )
          ( is-in-turret-fov 
             "@PlayerTarget[null]" 
@@ -5579,7 +5579,7 @@ $Formula: ( when
    ( or 
       ( <= 
          ( distance "Snaaib" "Polydeuces# 1" ) 
-         4000 
+         6000 
       )
       ( <= 
          ( + 
@@ -5624,7 +5624,7 @@ $Formula: ( when
 $Formula: ( when 
    ( <= 
       ( distance "Minya" "Polydeuces# 1" ) 
-      3500 
+      5000 
    )
    ( cap-waypoint-speed "Minya" 5 ) 
 )
@@ -5635,7 +5635,7 @@ $Formula: ( when
 $Formula: ( when 
    ( <= 
       ( distance "Sohag" "Polydeuces# 1" ) 
-      3500 
+      5000 
    )
    ( cap-waypoint-speed "Sohag" 5 ) 
 )
@@ -5790,34 +5790,34 @@ $Formula: ( when
       ( or 
          ( <= 
             ( distance "Polydeuces# 1" "Resheph" ) 
-            2500 
+            3500 
          )
          ( <= 
             ( distance 
                "Polydeuces# 1" 
                "Hermanubis" 
             )
-            2500 
+            3500 
          )
       )
       ( or 
          ( is-in-box 
             "Polydeuces# 1" 
-            -2000 
-            2000 
-            -2000 
-            2000 
-            -2000 
+            -3500 
+            3500 
+            -3500 
+            3500 
+            -3500 
             250 
             "Resheph" 
          )
          ( is-in-box 
             "Polydeuces# 1" 
-            -2000 
-            2000 
-            -2000 
-            2000 
-            -2000 
+            -3500 
+            3500 
+            -3500 
+            3500 
+            -3500 
             250 
             "Hermanubis" 
          )
@@ -6245,14 +6245,14 @@ $Formula: ( when
             ( or 
                ( <= 
                   ( distance "Polydeuces# 1" "Resheph" ) 
-                  2500 
+                  3500 
                )
                ( <= 
                   ( distance 
                      "Polydeuces# 1" 
                      "Hermanubis" 
                   )
-                  2500 
+                  3500 
                )
             )
          )
@@ -6599,7 +6599,7 @@ $Formula: ( when
             "Magellan" 
             "center rad check:1" 
          )
-         5900 
+         6400 
       )
       ( is-event-true-delay 
          "end pocket 3" 
@@ -7307,7 +7307,7 @@ $Density: 50
 +Field Debris Type: 0
 +Field Debris Type: 1
 +Field Debris Type: 2
-$Average Speed: 5.000486
+$Average Speed: 5.000928
 $Minimum: -4000.000000, -4000.000000, -4000.000000
 $Maximum: 4000.000000, 4000.000000, 4000.000000
 

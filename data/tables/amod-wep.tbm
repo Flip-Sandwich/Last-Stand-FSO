@@ -67,21 +67,21 @@ $Model File: none
 @Laser Length: 12.0
 @Laser Head Radius: 0.9
 @Laser Tail Radius: 0.9
-$Mass: 0.15
-$Velocity: 700.0
+$Mass: 0.01
+$Velocity: 1050.0
 $Fire Wait: 0.25
 $Damage: 28
 $Damage Type: MediumWeap
 $Armor Factor: 1.0
 $Shield Factor: 0.5
 $Subsystem Factor: 0.75
-$Lifetime: 3.5
+$Lifetime: 2.4
 $Energy Consumed: 0.95
 $Cargo Size: 0.0
 $Homing: NO
 $LaunchSnd: 200
 $ImpactSnd: 85
-+Weapon Range: 2450
++Weapon Range: 2520
 $Flags: ( "player allowed" "particle spew" "in tech database" )
 $Icon: iconKayser
 $Anim: Kayser
@@ -127,22 +127,22 @@ $Model File: none
 @Laser Length: 7.0
 @Laser Head Radius: 3.0
 @Laser Tail Radius: 2.0
-$Mass: 0.5
-$Velocity: 750.0
+$Mass: 0.1
+$Velocity: 1150.0
 $Fire Wait: 0.33333
 $Damage: 40
 $Damage Type: MediumWeap
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 0.75
-$Lifetime: 3.0
+$Lifetime: 2.0
 $Energy Consumed: 0.4
 $Cargo Size: 0.1
 $Homing: NO
 $LaunchSnd: 192
 $ImpactSnd: 210
 $Rearm Rate: 150.0
-+Weapon Range: 2250
++Weapon Range: 2300
 $Flags: ( "player allowed" "particle spew" "ballistic" )
 $Icon: iconPromR
 $Anim: PromR
@@ -188,15 +188,15 @@ $Model File: none
 @Laser Length: 3.5
 @Laser Head Radius: 2.5
 @Laser Tail Radius: 2.0
-$Mass: 0.1
-$Velocity: 1000.0
+$Mass: 0.025
+$Velocity: 1500.0
 $Fire Wait: 0.15
 $Damage: 20
 $Damage Type: LightWeap
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 0.75
-$Lifetime: 2.0
+$Lifetime: 1.35
 $Energy Consumed: 0.1
 $Cargo Size: 0.5
 $Homing: NO
@@ -296,21 +296,21 @@ $Model File: none
 @Laser Length: 15.0
 @Laser Head Radius: 1.80
 @Laser Tail Radius: 1.80
-$Mass: 0.5
-$Velocity: 600.0
+$Mass: 0.01
+$Velocity: 900.0
 $Fire Wait: 0.5
 $Damage: 65
 $Damage Type: MediumWeap
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 0.75
-$Lifetime: 5.0
+$Lifetime: 3.5
 $Energy Consumed: 1.5
 $Cargo Size: 0.0
 $Homing: NO
 $LaunchSnd: 80
 $ImpactSnd: 85
-+Weapon Range: 3000
++Weapon Range: 3150
 $Flags: ( "player allowed" "cycle" "in tech database" )
 $Icon: iconSD4
 $Anim: SD4
@@ -335,10 +335,11 @@ Along with the Trantor cluster munition, the cluster flak round was developed by
 $end_multi_text
 $Model File: dup.pof
 $Mass: 0.2
-$Velocity: 1500.0
+$Velocity: 2000.0
 $Fire Wait: 1.5
 $Damage: 50
 $Damage Type: LightWeapCAPTUR
+$Detonation Range: 4990
 $Detonation Radius: 25
 $Flak Detonation Accuracy: 15
 $Flak Targeting Accuracy: 30
@@ -351,13 +352,13 @@ $Shockwave Speed: 0.0
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 0.2
-$Lifetime: 3.0
+$Lifetime: 2.5
 $Energy Consumed: 0.5
 $Cargo Size: 1.0
 $Homing: NO
 $LaunchSnd: 116
 $ImpactSnd: 117
-+Weapon Range: 4500
++Weapon Range: 5000
 $Flags: ( "player allowed" "particle spew" "flak" "in tech database" )
 $Trail:
  +Start Width: 3.5
@@ -385,10 +386,11 @@ $Shots: 4
 $Name: Cluster Fuck Array
 $Model File: dup.pof
 $Mass: 0.2
-$Velocity: 1500.0
+$Velocity: 2000.0
 $Fire Wait: 1.5
 $Damage: 50
 $Damage Type: LightWeap
+$Detonation Range: 1990
 $Detonation Radius: 25
 $Flak Detonation Accuracy: 15
 $Flak Targeting Accuracy: 30
@@ -401,13 +403,13 @@ $Shockwave Speed: 0.0
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 0.2
-$Lifetime: 1.7
+$Lifetime: 1.0
 $Energy Consumed: 0.5
 $Cargo Size: 1.0
 $Homing: NO
 $LaunchSnd: 116
 $ImpactSnd: 117
-+Weapon Range: 2500
++Weapon Range: 2000
 $Flags: ( "Big Ship" "particle spew" "flak" )
 $Trail:
  +Start Width: 3.5
@@ -449,14 +451,15 @@ $Model File: none
 @Laser Head Radius: 2.0
 @Laser Tail Radius: 1.2
 $Mass: 0.4
-$Velocity: 450.0
+$Velocity: 700.0
 $Fire Wait: 0.2
 $Damage: 20.0
 $Damage Type: LightWeapCAPTUR
+$Detonation Range: 2440
 $Armor Factor: 1.0
 $Shield Factor: 0.5
 $Subsystem Factor: 0.5
-$Lifetime: 6.0
+$Lifetime: 3.5
 $Energy Consumed: 0.30
 $Cargo Size: 0.0
 $Homing: NO
@@ -488,20 +491,21 @@ $Model File: none
 @Laser Head Radius: 3.0
 @Laser Tail Radius: 2.0
 $Mass: 0.4
-$Velocity: 600.0
+$Velocity: 900.0
 $Fire Wait: 0.2
 $Damage: 30.0
 $Damage Type: LightWeapCAPTUR
+$Detonation Range: 2690
 $Armor Factor: 1.0
 $Shield Factor: 0.5
 $Subsystem Factor: 0.5
-$Lifetime: 4.5
+$Lifetime: 3.0
 $Energy Consumed: 0.30
 $Cargo Size: 0.0
 $Homing: NO
 $LaunchSnd: 195
 $ImpactSnd: 209
-+Weapon Range: 2600
++Weapon Range: 2700
 $Flags: ( "Big Ship" )
 $Impact Explosion: MS_Impact
 $Impact Explosion Radius: 3.0
@@ -539,16 +543,17 @@ $Velocity: 2000.0
 $Fire Wait: 3.0
 $Damage: 750
 $Damage Type: HugeWeap
+$Detonation Range: 6240
 $Armor Factor: 1.0
 $Shield Factor: 0.1
 $Subsystem Factor: 0.75
-$Lifetime: 2.5
+$Lifetime: 3.125
 $Energy Consumed: 5.00
 $Cargo Size: 0.0
 $Homing: NO
 $LaunchSnd: 213
 $ImpactSnd: 88
-+Weapon Range: 5000
++Weapon Range: 6250
 $Flags: ( "Huge" "particle spew" "same turret cooldown" "in tech database" "player allowed" )
 $Trail:
  +Start Width: 8
@@ -590,16 +595,17 @@ $Velocity: 2000.0
 $Fire Wait: 5.0
 $Damage: 500
 $Damage Type: HeavyWeap
+$Detonation Range: 4990
 $Armor Factor: 1.0
 $Shield Factor: 0.1
 $Subsystem Factor: 0.1
-$Lifetime: 2.0
+$Lifetime: 2.5
 $Energy Consumed: 5.00
 $Cargo Size: 0.0
 $Homing: NO
 $LaunchSnd: 213
 $ImpactSnd: 88
-+Weapon Range: 4000
++Weapon Range: 5000
 $Flags: ( "Huge" "particle spew" "same turret cooldown" "player allowed" )
 $Trail:
  +Start Width: 8
@@ -641,20 +647,20 @@ $Model File: none
 @Laser Head Radius: 0.30
 @Laser Tail Radius: 0.30
 $Mass: 100.0
-$Velocity: 100000.0
+$Velocity: 1000000.0
 $Fire Wait: 20.0
 $Damage: 450
 $Damage Type: HugeWeap
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 1.0
-$Lifetime: 0.07
+$Lifetime: 0.006
 $Energy Consumed: 0.30
 $Cargo Size: 0.0
 $Homing: NO
 $LaunchSnd: 125
 $ImpactSnd: 88
-+Weapon Range: 5000
++Weapon Range: 6000
 $Flags: ( "Big Ship" "huge" "beam" "in tech database" )
 $Icon: icongun05
 $Anim: LoadGun07
@@ -678,7 +684,7 @@ $BeamInfo:
  +Shots: 0
  +ShrinkFactor: 0.1
  +ShrinkPct: 1.8
- +Range: 6000
+ +Range: 7000
  +Attenuation: 0.9
  +Beam Flash Effect: capflash
  +Beam Flash Radius: 4.0
@@ -735,20 +741,20 @@ $Model File: none
 @Laser Head Radius: 0.30
 @Laser Tail Radius: 0.30
 $Mass: 100.0
-$Velocity: 100000.0
+$Velocity: 1000000.0
 $Fire Wait: 20.0
 $Damage: 450
 $Damage Type: HugeWeap
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 1.0
-$Lifetime: 0.07
+$Lifetime: 0.06
 $Energy Consumed: 0.30
 $Cargo Size: 0.0
 $Homing: NO
 $LaunchSnd: 125
 $ImpactSnd: 88
-+Weapon Range: 5000
++Weapon Range: 6000
 $Flags: ( "Big Ship" "huge" "beam" )
 $Icon: icongun05
 $Anim: LoadGun07
@@ -772,7 +778,7 @@ $BeamInfo:
  +Shots: 0
  +ShrinkFactor: 0.1
  +ShrinkPct: 1.8
- +Range: 6000
+ +Range: 7000
  +Attenuation: 0.9
  +Beam Flash Effect: capflash
  +Beam Flash Radius: 4.0
@@ -845,15 +851,15 @@ $External Model File: GUN-Tachyon.pof
 @Laser Length: 12.0
 @Laser Head Radius: 0.9
 @Laser Tail Radius: 0.9
-$Mass: 0.15
-$Velocity: 800.0
+$Mass: 0.01
+$Velocity: 1000.0
 $Fire Wait: 0.4
 $Damage: 55
 $Damage Type: MediumWeap
 $Armor Factor: 1.0
 $Shield Factor: 0.8
 $Subsystem Factor: 0.75
-$Lifetime: 2.0
+$Lifetime: 1.6
 $Energy Consumed: 1.5
 $Cargo Size: 0.0
 $Homing: NO
@@ -892,22 +898,22 @@ $External Model File: GUN-AvengerIII.pof
 @Laser Length: 3.0
 @Laser Head Radius: 2.0
 @Laser Tail Radius: 1.5
-$Mass: 0.15
-$Velocity: 1100.0
+$Mass: 0.05
+$Velocity: 1400.0
 $Fire Wait: 0.125
 $Damage: 12
 $Damage Type: LightWeap
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 0.75
-$Lifetime: 2.5
+$Lifetime: 2.0
 $Energy Consumed: 0.05
 $Cargo Size: 0.05
 $Homing: NO
 $LaunchSnd: 199
 $ImpactSnd: 209
 $Rearm Rate: 250.0
-+Weapon Range: 2750
++Weapon Range: 2800
 $Flags: ( "player allowed" "ballistic" )
 $Icon: iconKayser
 $Anim: Kayser
@@ -942,21 +948,21 @@ $External Model File: GUN-Pilum.pof
 @Laser Head Radius: 3.0
 @Laser Tail Radius: 2.0
 $Mass: 0.05
-$Velocity: 750.0
+$Velocity: 940.0
 $Fire Wait: 0.3333
 $Damage: 32
 $Damage Type: LightWeap
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 0.75
-$Lifetime: 3.0
+$Lifetime: 2.25
 $Energy Consumed: 0.4
 $Cargo Size: 0.1
 $Homing: NO
 $LaunchSnd: 192
 $ImpactSnd: 210
 $Rearm Rate: 250.0
-+Weapon Range: 2250
++Weapon Range: 2115
 $Flags: ( "player allowed" "shudder" "stream" "ballistic" "particle spew" )
 $Icon: iconKayser
 $Anim: Kayser
@@ -980,6 +986,14 @@ $Pspew:
 $FOF: 0.1
 
 $Name: TMeson#Uriel
++Title: XSTR("Archer", -1)
++Description:
+XSTR("
+Damage Rating: 32
+RoF: 3.0 rounds per second
+Range: 1400
+", -1)
+$end_multi_text
 $Model File: none
 @Laser Bitmap: laserglow01
 @Laser Color: 250, 250, 250
@@ -994,14 +1008,16 @@ $Damage Type: HugeWeap
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 1.0
-$Lifetime: 0.015
+$Lifetime: 0.019
 $Energy Consumed: 0.30
 $Cargo Size: 0.0
 $Homing: NO
 $LaunchSnd: 125
 $ImpactSnd: 88
-+Weapon Range: 1400
++Weapon Range: 1900
 $Flags: ( "beam" "player allowed" )
+$Icon: iconMaxim
+$Anim: Maxim
 $Impact Explosion: exp04
 $Impact Explosion Radius: 3.0
 $BeamInfo:
@@ -1027,7 +1043,7 @@ $BeamInfo:
  +Shots: 1
  +ShrinkFactor: 0.25
  +ShrinkPct: 0.1
- +Range: 1500.0
+ +Range: 1900.0
  +Beam Flash Effect: capflash
  +Beam Flash Radius: 2.0
  +Beam Piercing Effect: exp03
@@ -1090,14 +1106,15 @@ $Model File: none
 @Laser Head Radius: 1.0
 @Laser Tail Radius: 1.0
 $Mass: 0.4
-$Velocity: 400.0
+$Velocity: 600.0
 $Fire Wait: 0.5
 $Damage: 35
 $Damage Type: LightWeapCAPTUR
+$Detonation Range: 2690
 $Armor Factor: 1.0
 $Shield Factor: 0.5
 $Subsystem Factor: 0.5
-$Lifetime: 7.0
+$Lifetime: 4.5
 $Energy Consumed: 0.01
 $Cargo Size: 0.0
 $Homing: NO
@@ -1126,20 +1143,21 @@ $Model File: none
 @Laser Head Radius: 2.5
 @Laser Tail Radius: 2.5
 $Mass: 0.4
-$Velocity: 500.0
+$Velocity: 750.0
 $Fire Wait: 0.5
 $Damage: 75
 $Damage Type: LightWeapCAPTUR
+$Detonation Range: 2740
 $Armor Factor: 1.0
 $Shield Factor: 0.5
 $Subsystem Factor: 0.5
-$Lifetime: 5.5
+$Lifetime: 3.67
 $Energy Consumed: 0.01
 $Cargo Size: 0.0
 $Homing: NO
 $LaunchSnd: 110
 $ImpactSnd: 85
-+Weapon Range: 2700
++Weapon Range: 2750
 $Flags: ( "Big Ship" )
 $Impact Explosion: Vapula_Impact
 $Impact Explosion Radius: 5.0
@@ -1179,7 +1197,7 @@ $Cargo Size: 0.0
 $Homing: NO
 $LaunchSnd: 125
 $ImpactSnd: 88
-+Weapon Range: 1500
++Weapon Range: 1900
 $Flags: ( "Big Ship" "beam" "in tech database" )
 $Impact Explosion: exp04
 $Impact Explosion Radius: 5.0
@@ -1206,7 +1224,7 @@ $BeamInfo:
  +Shots: 1
  +ShrinkFactor: 0.25
  +ShrinkPct: 0.1
- +Range: 2000.0
+ +Range: 2400.0
  +Beam Flash Effect: capflash
  +Beam Flash Radius: 3.0
  +Beam Piercing Effect: exp03
@@ -1274,7 +1292,7 @@ $Cargo Size: 0.0
 $Homing: NO
 $LaunchSnd: 125
 $ImpactSnd: 88
-+Weapon Range: 1500
++Weapon Range: 1900
 $Flags: ( "Big Ship" "huge" "beam" "same turret cooldown" )
 $Impact Explosion: exp04
 $Impact Explosion Radius: 7.5
@@ -1301,7 +1319,7 @@ $BeamInfo:
  +Shots: 0
  +ShrinkFactor: 0.25
  +ShrinkPct: 0.2
- +Range: 2000.0
+ +Range: 2400.0
  +Beam Flash Effect: capflash
  +Beam Flash Radius: 6.0
  +Beam Piercing Effect: exp03
@@ -1367,7 +1385,7 @@ $Cargo Size: 0.0
 $Homing: NO
 $LaunchSnd: 125
 $ImpactSnd: 88
-+Weapon Range: 1500
++Weapon Range: 1900
 $Flags: ( "Big Ship" "huge" "beam" "same turret cooldown" )
 $Impact Explosion: exp04
 $Impact Explosion Radius: 7.5
@@ -1394,7 +1412,7 @@ $BeamInfo:
  +Shots: 0
  +ShrinkFactor: 0.25
  +ShrinkPct: 0.2
- +Range: 2000.0
+ +Range: 2400.0
  +Beam Flash Effect: capflash
  +Beam Flash Radius: 6.0
  +Beam Piercing Effect: exp03
@@ -1460,7 +1478,7 @@ $Cargo Size: 0.0
 $Homing: NO
 $LaunchSnd: 125
 $ImpactSnd: 88
-+Weapon Range: 4000
++Weapon Range: 5000
 $Flags: ( "Big Ship" "huge" "beam" "same turret cooldown" )
 $Impact Explosion: exp04
 $Impact Explosion Radius: 7.5
@@ -1488,7 +1506,7 @@ $BeamInfo:
  +Shots: 0
  +ShrinkFactor: 0.25
  +ShrinkPct: 0.2
- +Range: 5000.0
+ +Range: 6000.0
  +Beam Flash Effect: capflash
  +Beam Flash Radius: 20.0
  +Beam Piercing Effect: exp03
@@ -1550,10 +1568,11 @@ $Model File: none
 @Laser Head Radius: 10.0
 @Laser Tail Radius: 10.0
 $Mass: 4.0
-$Velocity: 1800.0
+$Velocity: 2100.0
 $Fire Wait: 6.5
 $Damage: 1100
 $Damage Type: HeavyWeap
+$Detonation Range: 3490
 $Blast Force: 200.0
 $Inner Radius: 40.0
 $Outer Radius: 60.0
@@ -1561,13 +1580,13 @@ $Shockwave Speed: 0.0
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 0.25
-$Lifetime: 1.5
+$Lifetime: 1.67
 $Energy Consumed: 0.0
 $Cargo Size: 1.0
 $Homing: NO
 $LaunchSnd: 196
 $ImpactSnd: 88
-+Weapon Range: 2700
++Weapon Range: 3500
 $Flags: ( "Huge" "in tech database" "big ship" "same turret cooldown" )
 $Trail:
  +Start Width: 5.0
@@ -1602,6 +1621,7 @@ $Velocity: 1000.0
 $Fire Wait: 9.0
 $Damage: 280
 $Damage Type: MediumWeap
+$Detonation Range: 3740
 $Blast Force: 200.0
 $Inner Radius: 40.0
 $Outer Radius: 60.0
@@ -1609,13 +1629,13 @@ $Shockwave Speed: 0.0
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 0.25
-$Lifetime: 3.0
+$Lifetime: 3.75
 $Energy Consumed: 0.0
 $Cargo Size: 1.0
 $Homing: NO
 $LaunchSnd: 233
 $ImpactSnd: 88
-+Weapon Range: 3000
++Weapon Range: 3750
 $Flags: ( "Huge" "big ship" "same turret cooldown" )
 $Trail:
  +Start Width: 4.5
@@ -1655,6 +1675,7 @@ $Velocity: 1000.0
 $Fire Wait: 9.0
 $Damage: 400
 $Damage Type: HeavyWeap
+$Detonation Range: 5690
 $Blast Force: 200.0
 $Inner Radius: 40.0
 $Outer Radius: 60.0
@@ -1662,13 +1683,13 @@ $Shockwave Speed: 0.0
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 0.25
-$Lifetime: 4.5
+$Lifetime: 5.7
 $Energy Consumed: 0.0
 $Cargo Size: 1.0
 $Homing: NO
 $LaunchSnd: 202
 $ImpactSnd: 88
-+Weapon Range: 4500
++Weapon Range: 5700
 $Flags: ( "Huge" "big ship" "same turret cooldown" )
 $Trail:
  +Start Width: 9.0
@@ -1894,6 +1915,7 @@ $Velocity: 666.0
 $Fire Wait: 0.25
 $Damage: 20
 $Damage Type: HeavyWeap
+$Detonation Range: 990
 $Armor Factor: 1.0
 $Shield Factor: 0.2
 $Subsystem Factor: 0.5
@@ -1931,6 +1953,7 @@ $Velocity: 700.0
 $Fire Wait: 1.0
 $Damage: 45
 $Damage Type: LightWeapCAPTUR
+$Detonation Range: 1040
 $Blast Force: 30.0
 $Inner Radius: 10.0
 $Outer Radius: 15.0
@@ -1978,6 +2001,7 @@ $Velocity: 700.0
 $Fire Wait: 1.0
 $Damage: 45
 $Damage Type: LightWeapCAPTUR
+$Detonation Range: 2090
 $Blast Force: 30.0
 $Inner Radius: 10.0
 $Outer Radius: 15.0
@@ -2032,16 +2056,17 @@ $Velocity: 500.0
 $Fire Wait: 0.25
 $Damage: 30
 $Damage Type: HeavyWeap
+$Detonation Range: 3240
 $Armor Factor: 1.0
 $Shield Factor: 0.2
 $Subsystem Factor: 0.5
-$Lifetime: 2.5
+$Lifetime: 6.5
 $Energy Consumed: 1.0
 $Cargo Size: 0.0
 $Homing: NO
 $LaunchSnd: 194
 $ImpactSnd: 85
-+Weapon Range: 2500
++Weapon Range: 3250
 $Flags: ( "big ship" "huge" )
 $Trail:
  +Start Width: 0.75
@@ -2070,6 +2095,7 @@ $Name: Shivan Turret Laser
 $Velocity: 750.0
 $Fire Wait: 0.9
 $Damage Type: MediumWeapCAPTUR
+$Detonation Range: 1990
 $Lifetime: 3.0
 +Weapon Range: 2000
 $Impact Explosion: Shivan_Impact01
@@ -2092,6 +2118,7 @@ $Name: Shivan Weak Turret Laser
 $Velocity: 750.0
 $Fire Wait: 0.9
 $Damage Type: MediumWeapCAPTUR
+$Detonation Range: 1990
 $Lifetime: 3.0
 +Weapon Range: 2000
 $Impact Explosion: Shivan_Impact01
@@ -2114,6 +2141,7 @@ $Name: Shivan Megafunk Turret
 $Velocity: 900.0
 $Fire Wait: 2.25
 $Damage Type: HeavyWeap
+$Detonation Range: 3090
 $Lifetime: 3.5
 +Weapon Range: 3100
 $Impact Explosion: Shivan_Impact01
@@ -2155,7 +2183,7 @@ $Cargo Size: 0.0
 $Homing: NO
 $LaunchSnd: 124
 $ImpactSnd: 88
-+Weapon Range: 3000
++Weapon Range: 3750
 $Flags: ( "Big Ship" "huge" "beam" "in tech database" "same turret cooldown" )
 $Impact Explosion: exp04
 $Impact Explosion Radius: 10.0
@@ -2177,7 +2205,7 @@ $BeamInfo:
  +Shots: 0
  +ShrinkFactor: 0.0
  +ShrinkPct: 0.0
- +Range: 3500.0
+ +Range: 4750.0
  +Beam Flash Effect: capflash
  +Beam Flash Radius: 10.5
  +Beam Piercing Effect: exp03
@@ -2241,7 +2269,7 @@ $Cargo Size: 0.0
 $Homing: NO
 $LaunchSnd: 124
 $ImpactSnd: 88
-+Weapon Range: 3500
++Weapon Range: 4375
 $Flags: ( "Big Ship" "huge" "beam" "same turret cooldown" )
 $Impact Explosion: exp04
 $Impact Explosion Radius: 10.0
@@ -2262,7 +2290,7 @@ $BeamInfo:
  +Shots: 0
  +ShrinkFactor: 0.0
  +ShrinkPct: 0.0
- +Range: 4000.0
+ +Range: 5375.0
  +Beam Flash Effect: capflash
  +Beam Flash Radius: 16.5
  +Beam Piercing Effect: exp03
@@ -2326,7 +2354,7 @@ $Cargo Size: 0.0
 $Homing: NO
 $LaunchSnd: 124
 $ImpactSnd: 88
-+Weapon Range: 4000
++Weapon Range: 5000
 $Flags: ( "Big Ship" "huge" "beam" "same turret cooldown" )
 $Impact Explosion: exp04
 $Impact Explosion Radius: 10.0
@@ -2347,7 +2375,7 @@ $BeamInfo:
  +Shots: 0
  +ShrinkFactor: 0.0
  +ShrinkPct: 0.0
- +Range: 4500.0
+ +Range: 6000.0
  +Beam Flash Effect: capflash
  +Beam Flash Radius: 30.0
  +Beam Piercing Effect: exp03
@@ -2411,7 +2439,7 @@ $Cargo Size: 0.0
 $Homing: NO
 $LaunchSnd: 124
 $ImpactSnd: 88
-+Weapon Range: 4500
++Weapon Range: 5625
 $Flags: ( "Big Ship" "huge" "beam" "same turret cooldown" )
 $Impact Explosion: exp04
 $Impact Explosion Radius: 10.0
@@ -2432,7 +2460,7 @@ $BeamInfo:
  +Shots: 0
  +ShrinkFactor: 0.0
  +ShrinkPct: 0.0
- +Range: 5000.0
+ +Range: 6625.0
  +Beam Flash Effect: capflash
  +Beam Flash Radius: 30.0
  +Beam Piercing Effect: exp03
@@ -2496,7 +2524,7 @@ $Cargo Size: 0.0
 $Homing: NO
 $LaunchSnd: 124
 $ImpactSnd: 88
-+Weapon Range: 10000
++Weapon Range: 100000
 $Flags: ( "Big Ship" "huge" "beam" "same turret cooldown" )
 $Impact Explosion: exp04
 $Impact Explosion Radius: 50.0
@@ -2572,7 +2600,7 @@ $Name: Djinn
 +Description:
 XSTR("
 Advanced Seeking System
-3600m Range
+3500m Range
 95 Warhead Rating
 ", -1)
 $end_multi_text
@@ -2585,8 +2613,8 @@ $end_multi_text
 $Tech Model: tag-c-tech.pof
 $Model File: tagc.pof
 $Detail distance: ( 0, 10, 39 )
-$Mass: 33.3
-$Velocity: 300.0
+$Mass: 10.0
+$Velocity: 500.0
 $Fire Wait: 3.0
 $Damage: 95
 $Damage Type: MediumWeap
@@ -2597,7 +2625,7 @@ $Shockwave Speed: 0
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 0.5
-$Lifetime: 12.0
+$Lifetime: 7.5
 $Energy Consumed: 0.0
 $Cargo Size: 6.6660
 $Homing: YES
@@ -2614,7 +2642,7 @@ $LaunchSnd: 95
 $ImpactSnd: 88
 $FlyBySnd: -1
 $Rearm Rate: 0.5
-+Weapon Range: 3600
++Weapon Range: 3500
 $Flags: ( "player allowed" "in tech database" )
 $Trail:
  +Start Width: 0.72
@@ -2641,7 +2669,7 @@ $Name: Neutron
 +Description:
 XSTR("
 Dumbfire
-1400m Range
+1600m Range
 30 Warhead Rating
 ", -1)
 $end_multi_text
@@ -2654,8 +2682,8 @@ $end_multi_text
 $Tech Model: tempest_tech.pof
 $Model File: tempest.pof
 $Detail distance: ( 0, 3, 11 )
-$Mass: 5.0
-$Velocity: 560.0
+$Mass: 2.5
+$Velocity: 800.0
 $Fire Wait: 0.333
 $Damage: 30
 $Damage Type: LightWeap
@@ -2666,7 +2694,7 @@ $Shockwave Speed: 0
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 0.5
-$Lifetime: 2.5
+$Lifetime: 2.0
 $Energy Consumed: 0.0
 $Cargo Size: 1.0
 $Homing: NO
@@ -2674,7 +2702,7 @@ $LaunchSnd: 92
 $ImpactSnd: 88
 $FlyBySnd: -1
 $Rearm Rate: 10.0
-+Weapon Range: 1400
++Weapon Range: 1600
 $Flags: ( "player allowed" "in tech database" )
 $Trail:
  +Start Width: 0.183514
@@ -2683,8 +2711,8 @@ $Trail:
  +End Alpha: 0.0
  +Max Life: 1.9
  +Bitmap: missiletrail05
-$Icon: iconHornet
-$Anim: hornet
+$Icon: iconTempest
+$Anim: Tempest
 $Impact Explosion: ExpMissileHit1
 $Impact Explosion Radius: 6.88
 $Piercing Impact Explosion: exp06
@@ -2701,7 +2729,7 @@ $Name: Spear
 +Description:
 XSTR("
 Standard Anti-Ship Missile
-2000m Range, 1.00 manoeuvrability rating
+2100m Range, 1.00 manoeuvrability rating
 110 Warhead Rating
 ", -1)
 $end_multi_text
@@ -2714,8 +2742,8 @@ $end_multi_text
 $Tech Model: crossbow_tech.pof
 $Model File: crossbow.pof
 $Detail distance: ( 0, 5, 21 )
-$Mass: 20.0
-$Velocity: 500.0
+$Mass: 10.0
+$Velocity: 600.0
 $Fire Wait: 2.0
 $Damage: 110
 $Damage Type: MediumWeap
@@ -2743,7 +2771,7 @@ $LaunchSnd: 91
 $ImpactSnd: 88
 $FlyBySnd: -1
 $Rearm Rate: 2.5
-+Weapon Range: 2000
++Weapon Range: 2100
 $Flags: ( "player allowed" "in tech database" )
 $Trail:
  +Start Width: 0.3
@@ -2770,7 +2798,7 @@ $Name: Zeus
 +Description:
 XSTR("
 Friend-or-Foe Swarm Missile
-2000m Range, 1.30 manoeuvrability rating
+2250m Range, 1.30 manoeuvrability rating
 25 Warhead Rating
 Fires in packs of 4
 ", -1)
@@ -2783,8 +2811,8 @@ $end_multi_text
 $Tech Model: newhornet_tech.pof
 $Model File: newhornet.pof
 $Detail distance: ( 0, 3, 11 )
-$Mass: 25.0
-$Velocity: 400.0
+$Mass: 5.0
+$Velocity: 500.0
 $Fire Wait: 3.0
 $Damage: 25
 $Damage Type: MediumWeap
@@ -2795,7 +2823,7 @@ $Shockwave Speed: 0
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 0.5
-$Lifetime: 4.0
+$Lifetime: 4.75
 $Energy Consumed: 0.0
 $Cargo Size: 1.25
 $Homing: YES
@@ -2809,7 +2837,7 @@ $LaunchSnd: 91
 $ImpactSnd: 88
 $FlyBySnd: -1
 $Rearm Rate: 2.5
-+Weapon Range: 1600
++Weapon Range: 2100
 $Flags: ( "player allowed" "in tech database" )
 $Trail:
  +Start Width: 0.3
@@ -2836,7 +2864,7 @@ $Name: Thunder
 +Description:
 XSTR("
 Heat-seeking Missile
-2000m Range, 1.10 manoeuvrability rating
+2500m Range, 1.10 manoeuvrability rating
 45 Warhead Rating
 Fires in packs of 2
 ", -1)
@@ -2849,8 +2877,8 @@ $end_multi_text
 $Tech Model: bombardier-tech.pof
 $Model File: bombardier.pof
 $Detail distance: ( 0, 3, 12 )
-$Mass: 25.0
-$Velocity: 460.0
+$Mass: 5.0
+$Velocity: 500.0
 $Fire Wait: 1.25
 $Damage: 45
 $Damage Type: MediumWeap
@@ -2861,7 +2889,7 @@ $Shockwave Speed: 0
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 0.5
-$Lifetime: 5.0
+$Lifetime: 5.5
 $Energy Consumed: 0.0
 $Cargo Size: 2.0
 $Homing: YES
@@ -2878,7 +2906,7 @@ $LaunchSnd: 91
 $ImpactSnd: 88
 $FlyBySnd: -1
 $Rearm Rate: 2.5
-+Weapon Range: 2300
++Weapon Range: 2500
 $Flags: ( "player allowed" "in tech database" "corkscrew" )
 $Trail:
  +Start Width: 0.3
@@ -2935,7 +2963,7 @@ $Shockwave Speed: 50
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 0.5
-$Lifetime: 4.5
+$Lifetime: 4.25
 $Energy Consumed: 0.0
 $Cargo Size: 10.0
 $Homing: YES
@@ -2984,8 +3012,8 @@ $Thruster Glow Effect: missileglow04
 
 $Name: Mosquito
 $Model File: MX-50.pof
-$Mass: 15.0
-$Velocity: 500.0
+$Mass: 10.0
+$Velocity: 750.0
 $Fire Wait: 2.0
 $Damage: 50
 $Damage Type: MediumWeap
@@ -2998,7 +3026,7 @@ $Shockwave Speed: 20
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 0.5
-$Lifetime: 4.0
+$Lifetime: 2.9
 $Energy Consumed: 0.0
 $Cargo Size: 4.0
 $Homing: YES
@@ -3036,7 +3064,7 @@ $Thruster Glow Effect: missileglow01
 $Name: Hornet SSM
 $Model File: MissileS.pof
 $Mass: 20.0
-$Velocity: 270.0
+$Velocity: 330.0
 $Fire Wait: 5.0
 $Damage: 250
 $Damage Type: MediumWeap
@@ -3054,7 +3082,7 @@ $Dinky shockwave:
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 0.1
-$Lifetime: 18.2
+$Lifetime: 18.0
 $Energy Consumed: 0.0
 $Cargo Size: 0.5
 $Homing: YES
@@ -3069,7 +3097,7 @@ $LaunchSnd: 92
 $ImpactSnd: 88
 $FlyBySnd: -1
 $Rearm Rate: 0.5
-+Weapon Range: 4500
++Weapon Range: 5500
 $Flags: ( "Big Ship" "huge" "Bomb" "same turret cooldown" "no radius doubling" "No Dumbfire" "no lifeleft penalty" "no subsystem homing" )
 $Trail:
  +Start Width: 0.2
@@ -3096,7 +3124,7 @@ $Thruster Glow Effect: missileglow02
 $Name: Albatross SSM
 $Model File: MissileM.pof
 $Mass: 20.0
-$Velocity: 225.0
+$Velocity: 280.0
 $Fire Wait: 10.0
 $Damage: 1100
 $Damage Type: HugeWeap
@@ -3114,7 +3142,7 @@ $Dinky shockwave:
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 0.1
-$Lifetime: 26.2
+$Lifetime: 28.0
 $Energy Consumed: 0.0
 $Cargo Size: 0.5
 $Homing: YES
@@ -3131,7 +3159,7 @@ $LaunchSnd: 92
 $ImpactSnd: 88
 $FlyBySnd: -1
 $Rearm Rate: 0.5
-+Weapon Range: 6000
++Weapon Range: 7500
 $Flags: ( "Big Ship" "huge" "Bomb" "same turret cooldown" "no radius doubling" "No Dumbfire" "no lifeleft penalty" "no subsystem homing" )
 $Trail:
  +Start Width: 0.4
@@ -3158,7 +3186,7 @@ $Thruster Glow Effect: missileglow02
 $Name: Eagle SSM#NPC
 $Model File: MissileM.pof
 $Mass: 20.0
-$Velocity: 270.0
+$Velocity: 330.0
 $Fire Wait: 10.0
 $Damage: 700
 $Damage Type: HeavyWeap
@@ -3176,7 +3204,7 @@ $Dinky shockwave:
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 0.1
-$Lifetime: 23.2
+$Lifetime: 23.0
 $Energy Consumed: 0.0
 $Cargo Size: 0.5
 $Homing: YES
@@ -3193,7 +3221,7 @@ $LaunchSnd: 92
 $ImpactSnd: 88
 $FlyBySnd: -1
 $Rearm Rate: 0.5
-+Weapon Range: 6000
++Weapon Range: 7500
 $Flags: ( "Big Ship" "huge" "Bomb" "same turret cooldown" "no radius doubling" "No Dumbfire" "no lifeleft penalty" "no subsystem homing" )
 $Trail:
  +Start Width: 0.4
@@ -3227,7 +3255,7 @@ The Eagle is a type of ship-to-ship missile carried by Union capital ships for e
 $end_multi_text
 $Model File: MissileM.pof
 $Mass: 20.0
-$Velocity: 270.0
+$Velocity: 350.0
 $Fire Wait: 10.0
 $Damage: 700
 $Damage Type: HeavyWeap
@@ -3245,7 +3273,7 @@ $Dinky shockwave:
 $Armor Factor: 1.0
 $Shield Factor: 0.1
 $Subsystem Factor: 0.1
-$Lifetime: 23.2
+$Lifetime: 23.0
 $Energy Consumed: 0.0
 $Cargo Size: 1.0
 $Homing: YES
@@ -3261,7 +3289,7 @@ $LaunchSnd: 92
 $ImpactSnd: 88
 $FlyBySnd: -1
 $Rearm Rate: 0.5
-+Weapon Range: 6000
++Weapon Range: 7500
 $Flags: ( "in tech database" "Player allowed" "huge" "Bomb" "same turret cooldown" "no radius doubling" "no lifeleft penalty" "no subsystem homing" )
 $Trail:
  +Start Width: 0.4
@@ -3306,7 +3334,7 @@ $Dinky shockwave:
 $Armor Factor: 1.0
 $Shield Factor: 0.1
 $Subsystem Factor: 1.0
-$Lifetime: 20.0
+$Lifetime: 27.0
 $Energy Consumed: 0.0
 $Cargo Size: 10.0
 $Homing: YES
@@ -3320,7 +3348,7 @@ $LaunchSnd: 92
 $ImpactSnd: 88
 $FlyBySnd: -1
 $Rearm Rate: 1
-+Weapon Range: 5000
++Weapon Range: 6500
 $Flags: ( "Big Ship" "huge" "Bomb" "same turret cooldown" "no radius doubling" "No Dumbfire" "no lifeleft penalty" "no subsystem homing" "particle spew" )
 $Trail:
  +Start Width: 1.5
@@ -3497,7 +3525,7 @@ $Name: MK-122
 +Description:
 XSTR("
 Dumbfire Rocket
-2250m Range, 750m/s velocity
+2500m Range, 1000m/s velocity
 Warhead Rating: 10
 ", -1)
 $end_multi_text
@@ -3505,8 +3533,8 @@ $tech model: MISSILE-Hellfire.pof
 $Model File: MISSILE-Hellfire.pof
 $Detail distance: (0)
 $External Model File: POD-Hellfire.pof
-$Mass: 3.0
-$Velocity: 750.0
+$Mass: 1.0
+$Velocity: 1000.0
 $Fire Wait: 0.125
 $Damage: 10
 $Damage Type: LightWeap
@@ -3517,7 +3545,7 @@ $Shockwave Speed: 0
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 0.5
-$Lifetime: 3.0
+$Lifetime: 2.5
 $Energy Consumed: 0.0
 $Cargo Size: 0.2
 $Homing: NO
@@ -3525,7 +3553,7 @@ $LaunchSnd: 201
 $ImpactSnd: 117
 $FlyBySnd: -1
 $Rearm Rate: 20.0
-+Weapon Range: 2250
++Weapon Range: 2500
 $Flags: ( "player allowed" )
 $Trail:
  +Start Width: 0.1
@@ -3549,7 +3577,7 @@ $Name: Hegemony
 +Title: XSTR("Hegemony", -1)
 +Description: XSTR("
 Standard Anti-Ship Missile
-1750m Range, 0.75 manoeuvrability
+1875m Range, 0.75 manoeuvrability
 Warhead Rating: 100
 ", -1)
 $end_multi_text
@@ -3557,8 +3585,8 @@ $tech model: MISSILE-Dirk.pof
 $Model File: MISSILE-Dirk.pof
 $Detail distance: (0)
 $External Model File: POD-DirkHC.pof
-$Mass: 10.0
-$Velocity: 500.0
+$Mass: 5.0
+$Velocity: 625.0
 $Fire Wait: 1.0
 $Damage: 100
 $Damage Type: MediumWeap
@@ -3586,7 +3614,7 @@ $LaunchSnd: 201
 $ImpactSnd: 117
 $FlyBySnd: -1
 $Rearm Rate: 20.0
-+Weapon Range: 1750
++Weapon Range: 1875
 $Flags: ( "player allowed" )
 $Trail:
  +Start Width: 0.25
@@ -3610,7 +3638,7 @@ $Name: Seismic
 +Title: XSTR("Seismic", -1)
 +Description: XSTR("
 Anti-Ship Swarm Missile
-1400m Range, 1.0 manoeuvrability
+1650m Range, 1.0 manoeuvrability
 Warhead Rating: 40
 Fires in packs of 3
 ", -1)
@@ -3619,8 +3647,8 @@ $tech model: MISSILE-Dart.pof
 $Model File: MISSILE-Dart.pof
 $Detail distance: (0)
 $External Model File: POD-Dart.pof
-$Mass: 10.0
-$Velocity: 400.0
+$Mass: 3.3
+$Velocity: 550.0
 $Fire Wait: 1.0
 $Damage: 40
 $Damage Type: MediumWeap
@@ -3648,7 +3676,7 @@ $LaunchSnd: 201
 $ImpactSnd: 117
 $FlyBySnd: -1
 $Rearm Rate: 20.0
-+Weapon Range: 1400
++Weapon Range: 1650
 $Flags: ( "player allowed" )
 $Trail:
  +Start Width: 0.25
@@ -3740,7 +3768,7 @@ $Thruster Glow Effect: missileglow04
 $Name: Type 77 VLS
 $Model File: cyclops.pof
 $Mass: 20.0
-$Velocity: 300.0
+$Velocity: 400.0
 $Fire Wait: 15.0
 $Damage: 500
 $Damage Type: HeavyWeap
@@ -3778,7 +3806,7 @@ $LaunchSnd: 92
 $ImpactSnd: 88
 $FlyBySnd: -1
 $Rearm Rate: 0.5
-+Weapon Range: 7500
++Weapon Range: 9500
 $Flags: ( "Big Ship" "huge" "Bomb" "same turret cooldown" "no radius doubling" "No Dumbfire" "no lifeleft penalty" "no subsystem homing" )
 $Trail:
  +Start Width: 0.5
@@ -3803,7 +3831,7 @@ $Thruster Glow Effect: missileglow04
 $Name: Hammer SSM
 $Model File: harbinger.pof
 $Mass: 20.0
-$Velocity: 300.0
+$Velocity: 400.0
 $Fire Wait: 5.0
 $Damage: 1600
 $Damage Type: HeavyWeap
@@ -3838,7 +3866,7 @@ $LaunchSnd: 92
 $ImpactSnd: 88
 $FlyBySnd: -1
 $Rearm Rate: 0.5
-+Weapon Range: 7500
++Weapon Range: 9500
 $Flags: ( "Big Ship" "huge" "Bomb" "same turret cooldown" "no radius doubling" "No Dumbfire" "no lifeleft penalty" "no subsystem homing" )
 $Trail:
  +Start Width: 0.5
@@ -4044,7 +4072,7 @@ $Pspew:
  +Life: 2.0
  +Scale: 1.0
  +Bitmap: missilespew06
-$Weapon Hitpoints: 200
+$Weapon Hitpoints: 100
 $Armor Type: Bomb Plate
 $Thruster Flame Effect: missilethruster06
 $Thruster Glow Effect: missileglow06
@@ -4054,7 +4082,7 @@ $Model File: S_MegaBomb.pof
 $POF target LOD: 0
 $Detail distance: ( 0, 10, 40 )
 $Mass: 20.0
-$Velocity: 200.0
+$Velocity: 145.0
 $Fire Wait: 25.0
 $Damage: 1800
 $Damage Type: HugeWeap
@@ -4067,7 +4095,7 @@ $Shockwave Speed: 100
 $Armor Factor: 1.0
 $Shield Factor: 1.0
 $Subsystem Factor: 0.5
-$Lifetime: 5.5
+$Lifetime: 12.0
 $Energy Consumed: 0.0
 $Cargo Size: 1.0
 $Homing: YES
@@ -4081,7 +4109,7 @@ $LaunchSnd: 92
 $ImpactSnd: 88
 $FlyBySnd: -1
 $Rearm Rate: 0.5
-+Weapon Range: 1000
++Weapon Range: 1600
 $Flags: ( "huge" "particle spew" "bomb" "no radius doubling" )
 $Trail:
  +Start Width: 3.0
@@ -4118,7 +4146,7 @@ $Pspew:
  +Life: 2.0
  +Scale: 1.0
  +Bitmap: missilespew06
-$Weapon Hitpoints: 250
+$Weapon Hitpoints: 200
 $Armor Type: Bomb Plate
 $Thruster Flame Effect: missilethruster06
 $Thruster Glow Effect: missileglow06

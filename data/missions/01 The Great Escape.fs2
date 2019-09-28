@@ -4,7 +4,7 @@ $Version: 0.10
 $Name:  XSTR("The Great Escape", -1)
 $Author: [`_`]
 $Created: 07/21/16 at 11:05:45
-$Modified: 09/26/19 at 10:24:46
+$Modified: 09/28/19 at 10:30:57
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -22,11 +22,11 @@ $end_multi_text
 +Hull Repair Ceiling: 0.000000
 +Subsystem Repair Ceiling: 100.000000
 
-+Viewer pos: -5521.167969, 2448.685059, -546.850464
++Viewer pos: -14786.967773, 8799.725586, -437.444672
 +Viewer orient:
-	-0.108068, -0.000899, -0.994143,
-	0.440525, 0.896419, -0.048698,
-	0.891212, -0.443207, -0.096478
+	-0.281318, -0.000900, -0.959614,
+	0.321581, 0.942089, -0.095157,
+	0.904127, -0.335363, -0.264737
 
 $Starting wing names: ( "Polydeuces#" "Alpha" "Bravo" )
 $Squadron wing names: ( "Polydeuces#" "Alpha" "Bravo" "Charlie" "Delta" )
@@ -774,7 +774,7 @@ $Dockee Point: Cargo Dockpoint
 $Name: Pharaoh		;! Object #5
 $Class: MIND Pharaoh
 $Team: Hostile
-$Location: 6679.318359, -3940.699707, -3188.277832
+$Location: 6818.029297, -4626.367188, -3477.708008
 $Orientation:
 	0.560139, 0.000000, 0.828399,
 	0.047242, 0.998372, -0.031944,
@@ -921,7 +921,7 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Subsystem: Turret08
 +Subsystem: Turret09
 $Arrival Location: In front of ship
-+Arrival Distance: 3000
++Arrival Distance: 4500
 $Arrival Anchor: Warpin2
 +Arrival Delay: 22
 $Arrival Cue: ( and 
@@ -964,7 +964,7 @@ $Determination: 10
 $Name: Rimush		;! Object #9
 $Class: MIND Khopesh
 $Team: Hostile
-$Location: 2825.818848, 5837.111328, -3935.827637
+$Location: 4578.955566, 7590.298828, -5331.859375
 $Orientation:
 	0.930928, 0.000000, 0.365203,
 	-0.324854, 0.456903, 0.828076,
@@ -1013,7 +1013,7 @@ $Determination: 10
 $Name: Merneptah		;! Object #10
 $Class: MIND Khopesh
 $Team: Hostile
-$Location: 3668.339844, 5880.311523, -3137.725098
+$Location: 6354.558105, 7633.499023, -3978.674805
 $Orientation:
 	0.830451, 0.000000, 0.557092,
 	-0.500222, 0.440166, 0.745675,
@@ -1277,7 +1277,7 @@ $Determination: 10
 $Name: Memphis		;! Object #19
 $Class: MIND Newet
 $Team: Hostile
-$Location: -443.815674, 5903.979980, -1111.286377
+$Location: -443.815674, 8642.252930, -1111.286377
 $Orientation:
 	0.776173, 0.072467, -0.626341,
 	0.613225, 0.144301, 0.776616,
@@ -2281,7 +2281,7 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Shields: 100
 +Subsystem: Pilot
 $Arrival Location: In front of ship
-+Arrival Distance: 4500
++Arrival Distance: 6000
 $Arrival Anchor: Savoy
 $Arrival Cue: ( and 
    ( is-event-true-delay "Savoy go" 30 ) 
@@ -3283,7 +3283,7 @@ $Formula: ( every-time
                      "Polydeuces# 1" 
                      "turret01" 
                   )
-                  5500 
+                  6500 
                )
                ( hud-set-message 
                   "TLSTaccomA" 
@@ -3331,7 +3331,7 @@ $Formula: ( every-time
                "Polydeuces# 1" 
                "turret01" 
             )
-            5500 
+            6500 
          )
          ( is-in-turret-fov 
             "@PlayerTarget[null]" 
@@ -3419,7 +3419,7 @@ $Formula: ( every-time
                      "Polydeuces# 1" 
                      "turret02" 
                   )
-                  5500 
+                  6500 
                )
                ( hud-set-message 
                   "TLSTaccomB" 
@@ -3467,7 +3467,7 @@ $Formula: ( every-time
                "Polydeuces# 1" 
                "turret02" 
             )
-            5500 
+            6500 
          )
          ( is-in-turret-fov 
             "@PlayerTarget[null]" 
@@ -5051,7 +5051,7 @@ $Formula: ( when
       ( or 
          ( <= 
             ( distance "Polydeuces# 1" "Memphis" ) 
-            5000 
+            6000 
          )
          ( <= ( hits-left "Memphis" ) 95 ) 
       )
@@ -5083,7 +5083,7 @@ $Formula: ( when
       ( <= ( hits-left "Memphis" ) 85 ) 
       ( <= 
          ( distance "Polydeuces# 1" "Memphis" ) 
-         4000 
+         5500 
       )
    )
    ( send-message 
@@ -5261,7 +5261,7 @@ $Formula: ( when
 $Formula: ( when 
    ( >= 
       ( distance "Savoy" "Leonov" ) 
-      5000 
+      6000 
    )
    ( send-message 
       "Savoy" 
@@ -5404,7 +5404,7 @@ $Formula: ( when
          "Merneptah" 
          "Polydeuces# 1" 
       )
-      3500 
+      4500 
    )
    ( cap-waypoint-speed "Merneptah" -1 ) 
 )
@@ -5420,14 +5420,14 @@ $Formula: ( when
             "Merneptah" 
             "Polydeuces# 1" 
          )
-         2500 
+         3000 
       )
       ( < 
          ( distance 
             "Merneptah" 
             "Polydeuces# 1" 
          )
-         3500 
+         4500 
       )
    )
    ( cap-waypoint-speed "Merneptah" 40 ) 
@@ -5451,7 +5451,7 @@ $Formula: ( when
             "Merneptah" 
             "Polydeuces# 1" 
          )
-         2500 
+         3000 
       )
    )
    ( cap-waypoint-speed "Merneptah" 30 ) 
@@ -5706,7 +5706,7 @@ $Formula: ( when
          ( <= ( hits-left "Pharaoh" ) 95 ) 
          ( <= 
             ( distance "Pharaoh" "Polydeuces# 1" ) 
-            3000 
+            4500 
          )
       )
       ( has-arrived-delay 15 "Pharaoh" ) 
@@ -5728,14 +5728,14 @@ $Formula: ( when
          ( get-object-x 
             "Pharaoh" 
             "<none>" 
-            -5000 
+            -6000 
             0 
             0 
          )
          ( get-object-x 
             "Pharaoh" 
             "<none>" 
-            5000 
+            6000 
             0 
             0 
          )
@@ -5743,7 +5743,7 @@ $Formula: ( when
             "Pharaoh" 
             "<none>" 
             0 
-            -5000 
+            -6000 
             0 
          )
          ( get-object-y 
@@ -5758,14 +5758,14 @@ $Formula: ( when
             "<none>" 
             0 
             0 
-            -5000 
+            -6000 
          )
          ( get-object-z 
             "Pharaoh" 
             "<none>" 
             0 
             0 
-            5000 
+            6000 
          )
       )
       ( or 
@@ -5779,12 +5779,12 @@ $Formula: ( when
       ( and 
          ( is-in-box 
             "Polydeuces# 1" 
-            -5000 
+            -6000 
             0 
-            -5000 
+            -6000 
             500 
-            -5000 
-            5000 
+            -6000 
+            6000 
             "Pharaoh" 
          )
          ( skill-level-at-least "Insane" ) 
@@ -6181,6 +6181,13 @@ Press F8 to cycle through enemy fighters
 Press F10 to cycle through enemy bombers", -1)
 $end_multi_text
 
+$Name: Tutorial: Eagles
+$Team: -1
+$MessageNew:  XSTR("Eagle SSMs are anti-capital-ship munitions
+They have a range of up to 7500 metres
+Eagle SSMs are ineffective against close or fast moving targets", -1)
+$end_multi_text
+
 $Name: Tac: Memphis targeting
 $Team: -1
 $MessageNew:  XSTR("We're reading target locks from the Memphis and it's changing course. It's on an attack path, sir. We should start engaging with our beams now.", -1)
@@ -6192,7 +6199,7 @@ $Name: Tutorial: Beams
 $Team: -1
 $MessageNew:  XSTR("Press $Left Arrow$ or $Right Arrow$ to fire left or right side beam cannons respectively 
 Beams must be at least 75% charged to fire, and fire an additional pulse with every additional 25% charge up to 150%
-Press F12 to cycle between enemy warships
+Press F12 to cycle between warships
 Beam charge rate is determined by your weapons ETS setting", -1)
 $end_multi_text
 
@@ -6212,7 +6219,7 @@ $end_multi_text
 
 $Name: Tac: 2500m range
 $Team: -1
-$MessageNew:  XSTR("Those Hemsut gunships mount Ripper cannons with an effective range of 2500 meters. They'll tear the Savoy to shreds. We have to take them out.", -1)
+$MessageNew:  XSTR("Those Hemsut gunships mount Ripper cannons with an effective range of 3000 meters. They'll tear the Savoy to shreds. We have to take them out.", -1)
 $end_multi_text
 +AVI Name: Head-CM5
 +Wave Name: messagebeep.ogg
@@ -6300,7 +6307,7 @@ $end_multi_text
 $Name: Tutorial: Trantors
 $Team: -1
 $MessageNew:  XSTR("Trantors are highly effective point defence munitions
-Inflict heavy damage to hostile strikecraft within a 1 kilometre radius of your ship
+Inflict heavy damage to hostile strikecraft within a 1000 metre radius of your ship
 Trantor shockwaves are capable of detonating enemy bombs mid-flight", -1)
 $end_multi_text
 

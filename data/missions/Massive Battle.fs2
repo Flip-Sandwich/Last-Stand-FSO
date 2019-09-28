@@ -1,19 +1,20 @@
 #Mission Info
 
 $Version: 0.10
-$Name:  XSTR("Battle of Earth", -1)
-$Author: [`_`]
-$Created: 07/21/16 at 11:05:45
-$Modified: 09/25/19 at 21:09:09
+$Name:  XSTR("Massive Battle", -1)
+$Author: face
+$Created: 02/05/17 at 14:49:16
+$Modified: 09/26/19 at 14:24:13
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
 
 $Mission Desc:
- XSTR("Massive battle time YAY", -1)
+ XSTR("Put mission description here
+", -1)
 $end_multi_text
 +Game Type Flags: 1
-+Flags: 401554
++Flags: 263296
 +Fog Near Mult: 1.000000
 
 +Fog Far Mult: 1.000000
@@ -22,64 +23,19 @@ $end_multi_text
 +Hull Repair Ceiling: 0.000000
 +Subsystem Repair Ceiling: 100.000000
 
-+Viewer pos: 1888.281860, 3754.680420, -9737.185547
++Viewer pos: -2160.783936, 1771.833130, 4382.250000
 +Viewer orient:
-	1.000000, -0.000904, 0.000000,
-	0.000839, 0.927752, 0.373196,
-	-0.000337, -0.373196, 0.927753
+	-0.998786, 0.000002, -0.049251,
+	0.014469, 0.955881, -0.293396,
+	0.047078, -0.293753, -0.954721
 
-$Starting wing names: ( "Polydeuces#" "Alpha" "Bravo" )
-$Squadron wing names: ( "Polydeuces#" "Alpha" "Bravo" "Charlie" "Delta" )
-$Team-versus-team wing names: ( "Polydeuces#" "Zulu" )
+$Starting wing names: ( "Cronus#" "Alpha" "Bravo" )
+$Squadron wing names: ( "Cronus#" "Alpha" "Bravo" "Charlie" "Delta" )
+$Team-versus-team wing names: ( "Cronus#" "Alpha" )
 
 $Skybox Model: skyboxearth.pof
 
-$AI Profile: CAPSHIPCOMMAND
-
-#Sexp_variables
-
-$Variables:
-(
-		0		"AmmoSwitchCount"		"0"		"number"
-		1		"BeamLeftStatus"		"200"		"number"
-		2		"BeamRightStatus"		"200"		"number"
-		3		"Capacitor"		"100"		"number"
-		4		"HardenLevel"		"0"		"number"
-		5		"Heat"		"0"		"number"
-		6		"HeatHasCritical"		"0"		"number"
-		7		"LeftBeamTick"		"0"		"number"
-		8		"OVerride"		"0"		"number"
-		9		"PlayerTarget"		"Battuta"		"string"
-		10		"PlayerTargetSS"		"Axems house"		"string"
-		11		"Repairing"		"0"		"number"
-		12		"RightBeamsTick"		"0"		"number"
-		13		"ship-manev-timer"		"0"		"number"
-		14		"ShipTargeted"		"a whale"		"string"
-		15		"ShipTargetedRight"		"a bote"		"string"
-		16		"SHUTDOWN"		"0"		"number"
-		17		"TimeLeftEvac"		"180"		"number"
-		18		"WarpCancelB"		"0"		"number"
-		19		"WarpCancelETSE"		"0"		"number"
-		20		"WarpCancelETSS"		"0"		"number"
-		21		"WarpCancelETSW"		"0"		"number"
-		22		"WarpCancelH"		"0"		"number"
-		23		"WarpCancelP"		"0"		"number"
-		24		"WarpCancelS"		"0"		"number"
-		25		"WarpCancelSW"		"0"		"number"
-		26		"WarpCancelSWA"		"0"		"number"
-		27		"WarpCancelT"		"0"		"number"
-		28		"WarpCancelX"		"0"		"number"
-		29		"WarpCancelY"		"0"		"number"
-		30		"WarpCancelZ"		"0"		"number"
-		31		"WarpFinalB"		"0"		"number"
-		32		"WarpFinalH"		"0"		"number"
-		33		"WarpFinalP"		"0"		"number"
-		34		"WarpFinalX"		"0"		"number"
-		35		"WarpFinalY"		"0"		"number"
-		36		"WarpFinalZ"		"0"		"number"
-		37		"WarpStatus"		"-1"		"number"
-		38		"WarpUses"		"0"		"number"
-)
+$AI Profile: NOT RETAIL
 
 #Command Briefing
 
@@ -90,76 +46,121 @@ $end_briefing
 
 #Debriefing_info
 
-$Num stages: 2
-
-$Formula: ( not 
-   ( is-destroyed-delay 
-      0 
-      "Polydeuces# 1" 
-   )
-)
-$Multi text
-    XSTR("With the deployment of the Pharaoh to the Polaris-Sol wormhole, the UN presence in Polaris has been destroyed. All surviving forces in Polaris have retreated.
-
-We are requiring full combat readiness from all available naval units in expectation of a follow-up incursion into the Sol system. It is likely that you will be deployed immediately into a hot combat situation. All current standing orders apply until ordered otherwise by fleet command.", -1)
-$end_multi_text
-$Voice: none.wav
-$Recommendation text:
-    XSTR("", -1)
-$end_multi_text
-
-$Formula: ( is-destroyed-delay 
-   0 
-   "Polydeuces# 1" 
-)
-$Multi text
-    XSTR("How did you die in TRAINING?", -1)
-$end_multi_text
-$Voice: none.wav
-$Recommendation text:
-    XSTR("", -1)
-$end_multi_text
-
-#Alternate Types:
-$Alt: UN Leonov
-$Alt: UN Trition
-$Alt: Electronics
-
-#end
-
+$Num stages: 0
 
 #Players		;! 1 total
 
-$Starting Shipname: Polydeuces# 1
+$Starting Shipname: Cronus# 1
 $Ship Choices: (
-	"UN Moscow#PLAYEr"	1
+	"GTF Ulysses"	5
+	"GTF Hercules"	5
+	"GTF Hercules Mark II"	5
+	"GTF Ares"	5
+	"GTF Erinyes"	5
+	"GTF Loki"	5
+	"GTF Pegasus"	5
+	"GTF Perseus"	5
+	"GTF Myrmidon"	5
+	"SF Mara (terrans)"	5
+	"GTB Artemis"	5
+	"GTB Artemis D.H."	5
+	"GTB Medusa"	5
+	"GTB Ursa"	5
+	"GTB Zeus"	5
+	"GTB Boanerges"	5
+	"GVF Ptah"	5
+	"Commander"	5
 )
 
 +Weaponry Pool: (
-	"Eagle SSM"	80
-	"Railgun"	0
-	"Cluster Flak Array"	0
-	"Trantor"	120
-	"Thresher"	8
-	"Reaper"	8
-	"MK-122"	1600
-	"Hegemony"	64
+	"Subach HL-7"	16
+	"Subach HL-D"	16
+	"Mekhu HL-7"	16
+	"Mekhu HL-7D"	16
+	"Akheton SDG"	16
+	"Morning Star"	16
+	"MorningStar D"	16
+	"Prometheus R"	16
+	"Prometheus S"	16
+	"Prometheus D"	16
+	"Maxim"	16
+	"Maxim D"	16
+	"UD-8 Kayser"	16
+	"UD-D Kayser"	16
+	"Circe"	16
+	"Lamprey"	16
+	"Thresher"	16
+	"Reaper"	16
+	"Scythe"	16
+	"Cluster Flak Array"	16
+	"Railgun"	16
+	"Railgun#Magellan"	16
+	"Rockeye"	500
+	"Rockeye D"	500
+	"Tempest"	500
+	"Tempest D"	500
+	"Hornet"	500
+	"Hornet D"	500
+	"Hornet#Weak"	500
+	"Tornado"	500
+	"Tornado D"	500
+	"Harpoon"	500
+	"Harpoon D"	500
+	"Harpoon#Weak"	500
+	"Trebuchet"	500
+	"TAG-A"	500
+	"TAG-B"	500
+	"TAG-C"	500
+	"Piranha"	500
+	"Stiletto II"	500
+	"Infyrno"	500
+	"Infyrno D"	500
+	"Cyclops"	500
+	"Cyclops#short"	500
+	"Helios"	500
+	"EMP Adv."	500
+	"Rockeye#Shivan"	500
+	"Rockeye D#Shivan"	500
+	"Tempest#Shivan"	500
+	"Tempest D#Shivan"	500
+	"Hornet#Shivan"	500
+	"Hornet D#Shivan"	500
+	"Hornet#Weak#Shivan"	500
+	"Tornado#Shivan"	500
+	"Tornado D#Shivan"	500
+	"Harpoon#Shivan"	500
+	"Harpoon D#Shivan"	500
+	"Harpoon#Weak#Shivan"	500
+	"Trebuchet#Shivan"	500
+	"Piranha#Shivan"	500
+	"Shivan Disruptor"	500
+	"Shivan Area Bomb"	500
+	"Shivan Bomb"	500
+	"Shivan Bomb#Short"	500
+	"Shivan Megabomb"	500
+	"EMP Adv.#Shivan"	500
+	"MK-122"	500
+	"Hegemony"	500
+	"Eagle SSM"	500
+	"Trantor"	500
+	"Port"	0
+	"SBoard"	0
 	"Portanis C-12"	1
 	"Torrika KB-1"	1
 	"Djinn"	6
 	"Spear"	10
 )
 
-#Objects		;! 14 total
+#Objects		;! 58 total
 
-$Name: Polydeuces# 1		;! Object #0
+$Name: Cronus# 1		;! Object #0
 $Class: UN Leto
 $Team: Friendly
-$Location: -1400.600464, 1092.300049, -4305.722168
+$Location: -1226.406494, -0.002441, 2187.605957
 $Orientation:
-	0.963414, 0.000000, -0.268019,
-	0.046003, 0.985159, 0.165362,
-	0.264042, -0.171642, 0.949116
+	-0.969306, 0.000000, 0.245861,
+	0.000000, 1.000000, 0.000000,
+	-0.245861, 0.000000, -0.969306
 $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
@@ -169,84 +170,20 @@ $Arrival Cue: ( false )
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Determination: 10
-+Flags: ( "cargo-known" "player-start" "guardian" )
-+Flags2: ( "no-subspace-drive" )
++Flags: ( "cargo-known" "player-start" )
++Flags2: ( )
 +Respawn priority: 0
 +Group: 0
 +Score: 8
 
-$Name: Armstrong Fortress		;! Object #1
-$Class: UN Endymion
-$Team: Friendly
-$Location: 1751.961914, 0.000000, -3139.947510
+$Name: Pharaoh		;! Object #1
+$Class: MIND Pharaoh
+$Team: Hostile
+$Location: -2034.322510, -0.002930, -3224.792480
 $Orientation:
-	0.961056, 0.000000, 0.276356,
-	0.000000, 1.000000, 0.000000,
-	-0.276356, 0.000000, 0.961056
-$AI Behavior: None
-$Cargo 1:  XSTR("Nothing", -1)
-+Initial Hull: 100
-+Initial Shields: 100
-+Subsystem: Pilot
-+Subsystem: Turret01
-+Subsystem: Turret02
-+Subsystem: Turret03
-+Subsystem: Turret04
-+Subsystem: Turret05
-+Subsystem: Turret06
-$Arrival Location: Hyperspace
-$Arrival Cue: ( true ) 
-$Departure Location: Hyperspace
-$Departure Cue: ( false ) 
-$Determination: 10
-+Flags: ( "cargo-known" "no-shields" )
-+Flags2: ( )
-+Respawn priority: 0
-+Orders Accepted: 0		;! note that this is a bitfield!!!
-+Group: 0
-+Use Table Score:
-+Score: 0
-
-$Name: Volkov Fortress		;! Object #2
-$Class: UN Endymion
-$Team: Friendly
-$Location: -2071.228760, 0.000000, -3114.926270
-$Orientation:
-	0.963771, 0.000000, -0.266731,
-	0.000000, 1.000000, 0.000000,
-	0.266731, 0.000000, 0.963771
-$AI Behavior: None
-$Cargo 1:  XSTR("Nothing", -1)
-+Initial Hull: 100
-+Initial Shields: 100
-+Subsystem: Pilot
-+Subsystem: Turret01
-+Subsystem: Turret02
-+Subsystem: Turret03
-+Subsystem: Turret04
-+Subsystem: Turret05
-+Subsystem: Turret06
-$Arrival Location: Hyperspace
-$Arrival Cue: ( true ) 
-$Departure Location: Hyperspace
-$Departure Cue: ( false ) 
-$Determination: 10
-+Flags: ( "cargo-known" "no-shields" )
-+Flags2: ( )
-+Respawn priority: 0
-+Orders Accepted: 0		;! note that this is a bitfield!!!
-+Group: 0
-+Use Table Score:
-+Score: 0
-
-$Name: Borman Station		;! Object #3
-$Class: UN Asteria
-$Team: Friendly
-$Location: 4093.444824, 0.000000, -1158.076172
-$Orientation:
-	-0.019202, 0.000000, 0.999816,
-	0.000000, 1.000000, 0.000000,
-	-0.999816, 0.000000, -0.019202
+	1.000000, 0.000000, 0.000000,
+	0.000000, 0.985585, 0.169182,
+	0.000000, -0.169182, 0.985585
 $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
@@ -256,59 +193,57 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Subsystem: turret02
 +Subsystem: turret03
 +Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
++Subsystem: turret23
++Subsystem: turret24
++Subsystem: turret25
++Subsystem: turret26
++Subsystem: turret27
++Subsystem: turret28
++Subsystem: turret29
++Subsystem: turret30
++Subsystem: turretBFG
++Primary Banks: ( "" )
 $Arrival Location: Hyperspace
 $Arrival Cue: ( true ) 
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Determination: 10
-+Flags: ( "cargo-known" "no-shields" )
++Flags: ( "no-shields" "escort" )
 +Flags2: ( )
 +Respawn priority: 0
-+Orders Accepted: 0		;! note that this is a bitfield!!!
++Escort priority: 20
 +Group: 0
-+Use Table Score:
-+Score: 0
++Score: 8
 
-$Name: Stafford Station		;! Object #4
-$Class: UN Asteria
-$Team: Friendly
-$Location: -3991.962646, 0.006836, -1146.261719
-$Orientation:
-	0.060759, 0.000000, 0.998153,
-	0.000000, 1.000000, 0.000000,
-	-0.998153, 0.000000, 0.060759
-$AI Behavior: None
-$Cargo 1:  XSTR("Nothing", -1)
-+Initial Hull: 100
-+Initial Shields: 100
-+Subsystem: Pilot
-+Subsystem: turret01
-+Subsystem: turret02
-+Subsystem: turret03
-+Subsystem: turret04
-$Arrival Location: Hyperspace
-$Arrival Cue: ( true ) 
-$Departure Location: Hyperspace
-$Departure Cue: ( false ) 
-$Determination: 10
-+Flags: ( "cargo-known" "no-shields" )
-+Flags2: ( )
-+Respawn priority: 0
-+Orders Accepted: 0		;! note that this is a bitfield!!!
-+Group: 0
-+Use Table Score:
-+Score: 0
-
-$Name: Magellan		;! Object #5
+$Name: Magellan		;! Object #2
 $Class: UN Magellan
 $Team: Friendly
-$Location: -11.009766, 36.052429, -2025.908203
+$Location: -1987.302124, -0.003906, 1663.887573
 $Orientation:
-	0.993956, 0.043759, -0.100680,
-	0.000000, 0.917121, 0.398609,
-	0.109778, -0.396200, 0.911578
+	-0.998295, 0.000000, 0.058374,
+	-0.034861, 0.802096, -0.596177,
+	-0.046822, -0.597196, -0.800728
 $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
@@ -372,8 +307,127 @@ $Determination: 10
 +Flags: ( "cargo-known" "no-shields" "escort" )
 +Flags2: ( )
 +Respawn priority: 0
-+Escort priority: 99
++Escort priority: 80
 +Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Kalinin		;! Object #3
+$Class: UN Kirov
+$Team: Friendly
+$Location: -1098.738281, 680.168457, 1120.568237
+$Orientation:
+	-0.996928, 0.000000, 0.078327,
+	0.000000, 1.000000, 0.000000,
+	-0.078327, 0.000000, -0.996928
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Kirov		;! Object #4
+$Class: UN Kirov
+$Team: Friendly
+$Location: -2873.020752, 695.102905, 1055.520508
+$Orientation:
+	-0.998295, 0.000000, 0.058374,
+	0.000000, 1.000000, 0.000000,
+	-0.058374, 0.000000, -0.998295
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Indefatigable		;! Object #5
+$Class: UN Dauntless
+$Team: Friendly
+$Location: -2863.471680, -750.051270, 1126.997314
+$Orientation:
+	-0.999597, 0.000000, 0.028404,
+	0.000000, 1.000000, 0.000000,
+	-0.028404, 0.000000, -0.999597
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
 +Score: 0
@@ -381,13 +435,14 @@ $Determination: 10
 $Name: Castor		;! Object #6
 $Class: UN Moscow
 $Team: Friendly
-$Location: -994.300537, 0.000000, -1122.706055
+$Location: -2815.680176, -0.005859, 1008.077637
 $Orientation:
-	1.000000, 0.000000, 0.000000,
+	-0.992998, 0.000000, 0.118131,
 	0.000000, 1.000000, 0.000000,
-	0.000000, 0.000000, 1.000000
+	-0.118131, 0.000000, -0.992998
 $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
@@ -415,16 +470,17 @@ $Determination: 10
 +Use Table Score:
 +Score: 0
 
-$Name: Polydeuces		;! Object #7
+$Name: Caesar		;! Object #7
 $Class: UN Moscow
 $Team: Friendly
-$Location: 995.615723, 0.000000, -1147.350098
+$Location: -2235.572754, -1038.233398, 1391.475586
 $Orientation:
-	1.000000, 0.000000, 0.000000,
+	-0.975548, 0.000000, -0.219783,
 	0.000000, 1.000000, 0.000000,
-	0.000000, 0.000000, 1.000000
+	0.219783, 0.000000, -0.975548
 $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
@@ -452,16 +508,17 @@ $Determination: 10
 +Use Table Score:
 +Score: 0
 
-$Name: Berlin		;! Object #8
+$Name: Polydeuces		;! Object #8
 $Class: UN Moscow
 $Team: Friendly
-$Location: -23.703369, 1029.985474, -1146.977051
+$Location: -1117.052734, -0.003418, 1302.319824
 $Orientation:
-	1.000000, 0.000000, 0.000000,
+	-0.999768, 0.000000, -0.021591,
 	0.000000, 1.000000, 0.000000,
-	0.000000, 0.000000, 1.000000
+	0.021591, 0.000000, -0.999768
 $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
@@ -489,16 +546,1800 @@ $Determination: 10
 +Use Table Score:
 +Score: 0
 
-$Name: Pharaoh		;! Object #9
-$Class: MIND Pharaoh
+$Name: Chongqing		;! Object #9
+$Class: UN Beijing
+$Team: Friendly
+$Location: -1475.017822, -0.004883, -59.669434
+$Orientation:
+	-0.999136, 0.000000, -0.041581,
+	0.000000, 1.000000, 0.000000,
+	0.041581, 0.000000, -0.999136
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08a
++Subsystem: Turret09a
++Subsystem: Turret10a
++Subsystem: Turret11a
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Wuhan		;! Object #10
+$Class: UN Beijing
+$Team: Friendly
+$Location: -922.547119, -0.005371, -76.856934
+$Orientation:
+	-0.999135, 0.000000, -0.041581,
+	0.000000, 1.000000, 0.000000,
+	0.041581, 0.000000, -0.999135
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08a
++Subsystem: Turret09a
++Subsystem: Turret10a
++Subsystem: Turret11a
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Shenzhen		;! Object #11
+$Class: UN Beijing
+$Team: Friendly
+$Location: -2448.692139, -0.005371, 5.084229
+$Orientation:
+	-0.999135, 0.000000, -0.041581,
+	0.000000, 1.000000, 0.000000,
+	0.041581, 0.000000, -0.999135
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08a
++Subsystem: Turret09a
++Subsystem: Turret10a
++Subsystem: Turret11a
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Hangzhou		;! Object #12
+$Class: UN Beijing
+$Team: Friendly
+$Location: -2629.350098, -530.187012, 5.760010
+$Orientation:
+	-0.999135, 0.000000, -0.041581,
+	0.000000, 1.000000, 0.000000,
+	0.041581, 0.000000, -0.999135
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08a
++Subsystem: Turret09a
++Subsystem: Turret10a
++Subsystem: Turret11a
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Samar		;! Object #13
+$Class: UN Strident
+$Team: Friendly
+$Location: -3071.411377, 208.323975, -44.954102
+$Orientation:
+	-0.999999, 0.000000, -0.001593,
+	0.000000, 1.000000, 0.000000,
+	0.001593, 0.000000, -0.999999
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Score: 400
+
+$Name: Manus		;! Object #14
+$Class: UN Strident#Hornetts
+$Team: Friendly
+$Location: -1570.787476, 388.955078, -108.608032
+$Orientation:
+	-0.999135, 0.000000, -0.041581,
+	0.000000, 1.000000, 0.000000,
+	0.041581, 0.000000, -0.999135
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Score: 400
+
+$Name: Narasimha		;! Object #15
+$Class: UN Vishnu
+$Team: Friendly
+$Location: -1531.448975, 446.088379, 1135.912598
+$Orientation:
+	-0.999933, 0.000000, -0.011592,
+	0.000000, 1.000000, 0.000000,
+	0.011592, 0.000000, -0.999933
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Shiva		;! Object #16
+$Class: UN Vishnu
+$Team: Friendly
+$Location: -1432.496826, -332.670898, 760.676331
+$Orientation:
+	-0.998669, 0.000000, -0.051570,
+	0.000000, 1.000000, 0.000000,
+	0.051570, 0.000000, -0.998669
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Kalki		;! Object #17
+$Class: UN Vishnu
+$Team: Friendly
+$Location: -2946.055664, 425.732910, 1021.175049
+$Orientation:
+	-0.999597, 0.000000, 0.028403,
+	0.000000, 1.000000, 0.000000,
+	-0.028403, 0.000000, -0.999597
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Varaha		;! Object #18
+$Class: UN Vishnu
+$Team: Friendly
+$Location: -2426.262207, -0.007324, 955.622437
+$Orientation:
+	-0.999597, 0.000000, 0.028403,
+	0.000000, 1.000000, 0.000000,
+	-0.028403, 0.000000, -0.999597
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Rama		;! Object #19
+$Class: UN Vishnu
+$Team: Friendly
+$Location: -2960.240723, -530.185547, 1150.342041
+$Orientation:
+	-0.999597, 0.000000, 0.028403,
+	0.000000, 1.000000, 0.000000,
+	-0.028403, 0.000000, -0.999597
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Ushakov		;! Object #20
+$Class: UN Kirov
+$Team: Friendly
+$Location: -1618.964355, -657.175293, 848.472229
+$Orientation:
+	-0.992998, 0.000000, 0.118131,
+	0.000000, 1.000000, 0.000000,
+	-0.118131, 0.000000, -0.992998
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Resnik Fortress		;! Object #21
+$Class: UN Endymion
+$Team: Friendly
+$Location: -412.071045, 0.000488, 2418.208008
+$Orientation:
+	-0.969451, 0.000000, 0.245284,
+	-0.000000, 1.000000, -0.000001,
+	-0.245284, -0.000001, -0.969451
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" "escort" )
++Flags2: ( )
++Respawn priority: 0
++Escort priority: 90
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Lanao		;! Object #22
+$Class: UN Strident#Hornetts
+$Team: Friendly
+$Location: -1488.597412, -332.668945, -149.538452
+$Orientation:
+	-0.976244, 0.000000, 0.216675,
+	0.000000, 1.000000, 0.000000,
+	-0.216675, 0.000000, -0.976244
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Score: 400
+
+$Name: Nanjing		;! Object #23
+$Class: UN Beijing
+$Team: Friendly
+$Location: -2588.093018, 425.734619, -86.067627
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08a
++Subsystem: Turret09a
++Subsystem: Turret10a
++Subsystem: Turret11a
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Thutmose		;! Object #24
+$Class: MIND Ramses
 $Team: Hostile
-$Location: 24.719238, 37.961914, 1366.600098
+$Location: -268.593262, -0.004883, -2557.989014
 $Orientation:
-	-0.998829, 0.000000, 0.048389,
-	-0.010087, 0.978031, -0.208216,
-	-0.047326, -0.208460, -0.976885
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
 $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08
++Subsystem: Turret09
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Nebty		;! Object #25
+$Class: MIND Ramses
+$Team: Hostile
+$Location: -3480.732178, -0.004883, -2467.352295
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08
++Subsystem: Turret09
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Sobek		;! Object #26
+$Class: MIND Sobek
+$Team: Hostile
+$Location: -449.502441, -559.774414, -2149.628662
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Amun		;! Object #27
+$Class: MIND Sobek
+$Team: Hostile
+$Location: -3287.242920, -559.774414, -2124.287109
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret15
++Subsystem: turret16
++Subsystem: turret17
++Subsystem: turret18
++Subsystem: turret19
++Subsystem: turret20
++Subsystem: turret21
++Subsystem: turret22
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Maahes		;! Object #28
+$Class: MIND Newet
+$Team: Hostile
+$Location: -1952.967773, 749.722168, -1730.968628
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 0.819648, 0.572868,
+	0.000000, -0.572868, 0.819648
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08
++Subsystem: Turret09
++Subsystem: Turret10
++Subsystem: Turret11
++Subsystem: Turret12
++Subsystem: Turret13
++Subsystem: Turret14
++Subsystem: Turret15
++Subsystem: Turret16
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Geb		;! Object #29
+$Class: MIND Newet
+$Team: Hostile
+$Location: -415.851074, 806.162659, -2006.908325
+$Orientation:
+	1.000000, 0.000000, -0.000000,
+	0.000000, 0.819648, 0.572868,
+	0.000000, -0.572868, 0.819648
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08
++Subsystem: Turret09
++Subsystem: Turret10
++Subsystem: Turret11
++Subsystem: Turret12
++Subsystem: Turret13
++Subsystem: Turret14
++Subsystem: Turret15
++Subsystem: Turret16
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Wepwawet		;! Object #30
+$Class: MIND Newet
+$Team: Hostile
+$Location: -681.723145, 818.456116, -2024.497314
+$Orientation:
+	1.000000, 0.000000, -0.000000,
+	0.000000, 0.819648, 0.572868,
+	0.000000, -0.572868, 0.819648
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08
++Subsystem: Turret09
++Subsystem: Turret10
++Subsystem: Turret11
++Subsystem: Turret12
++Subsystem: Turret13
++Subsystem: Turret14
++Subsystem: Turret15
++Subsystem: Turret16
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Memphis		;! Object #31
+$Class: MIND Newet
+$Team: Hostile
+$Location: -1188.271729, 822.490112, -2030.269287
+$Orientation:
+	1.000000, 0.000000, -0.000000,
+	0.000000, 0.819648, 0.572868,
+	0.000000, -0.572868, 0.819648
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08
++Subsystem: Turret09
++Subsystem: Turret10
++Subsystem: Turret11
++Subsystem: Turret12
++Subsystem: Turret13
++Subsystem: Turret14
++Subsystem: Turret15
++Subsystem: Turret16
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Giza		;! Object #32
+$Class: MIND Khopesh
+$Team: Hostile
+$Location: -3718.135742, -705.162476, -2182.769775
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06-base
++Subsystem: turret07-base
++Subsystem: turret08-base
++Subsystem: turret09-base
++Subsystem: turret10-base
++Subsystem: turret11-base
++Subsystem: turret12-base
++Subsystem: turret13-base
++Subsystem: turret14-base
++Subsystem: turret15-base
++Subsystem: turret16-base
++Subsystem: turret17-base
++Subsystem: turret18-base
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Merneptah		;! Object #33
+$Class: MIND Khopesh
+$Team: Hostile
+$Location: -917.524780, 376.456909, -2232.494873
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06-base
++Subsystem: turret07-base
++Subsystem: turret08-base
++Subsystem: turret09-base
++Subsystem: turret10-base
++Subsystem: turret11-base
++Subsystem: turret12-base
++Subsystem: turret13-base
++Subsystem: turret14-base
++Subsystem: turret15-base
++Subsystem: turret16-base
++Subsystem: turret17-base
++Subsystem: turret18-base
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Sekhemkhet		;! Object #34
+$Class: MIND Khopesh
+$Team: Hostile
+$Location: -2304.976074, 464.634766, -1958.931763
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06-base
++Subsystem: turret07-base
++Subsystem: turret08-base
++Subsystem: turret09-base
++Subsystem: turret10-base
++Subsystem: turret11-base
++Subsystem: turret12-base
++Subsystem: turret13-base
++Subsystem: turret14-base
++Subsystem: turret15-base
++Subsystem: turret16-base
++Subsystem: turret17-base
++Subsystem: turret18-base
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Rimush		;! Object #35
+$Class: MIND Khopesh
+$Team: Hostile
+$Location: -968.281250, -440.583496, -2142.401367
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06-base
++Subsystem: turret07-base
++Subsystem: turret08-base
++Subsystem: turret09-base
++Subsystem: turret10-base
++Subsystem: turret11-base
++Subsystem: turret12-base
++Subsystem: turret13-base
++Subsystem: turret14-base
++Subsystem: turret15-base
++Subsystem: turret16-base
++Subsystem: turret17-base
++Subsystem: turret18-base
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Wosret		;! Object #36
+$Class: MIND Hemsut
+$Team: Hostile
+$Location: -3401.061035, -0.005249, -1578.365967
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Nubia		;! Object #37
+$Class: MIND Hemsut
+$Team: Hostile
+$Location: -1123.067383, -0.005127, -1684.859253
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Khensit		;! Object #38
+$Class: MIND Hemsut
+$Team: Hostile
+$Location: -3187.489746, -0.005615, -1604.872314
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Menhit		;! Object #39
+$Class: MIND Hemsut
+$Team: Hostile
+$Location: -3309.405029, -0.005493, -1421.927002
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Hemsut		;! Object #40
+$Class: MIND Hemsut
+$Team: Hostile
+$Location: -2291.075928, -0.005737, -1320.017334
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Nephthys		;! Object #41
+$Class: MIND Hemsut
+$Team: Hostile
+$Location: -918.115967, -0.005371, -1543.540649
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Satis		;! Object #42
+$Class: MIND Hemsut
+$Team: Hostile
+$Location: -791.433228, -0.005127, -1721.353394
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Hu		;! Object #43
+$Class: MIND Hemsut
+$Team: Hostile
+$Location: -654.855591, -0.005737, -1563.572876
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Invincible		;! Object #44
+$Class: UN Dauntless
+$Team: Friendly
+$Location: -3388.586670, -0.000244, 696.109192
+$Orientation:
+	-0.985314, 0.000000, -0.170752,
+	0.000000, 1.000000, 0.000000,
+	0.170752, 0.000000, -0.985314
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Inflexible		;! Object #45
+$Class: UN Dauntless
+$Team: Friendly
+$Location: -799.856689, -0.000977, 535.410522
+$Orientation:
+	-0.998295, 0.000000, 0.058374,
+	0.000000, 1.000000, 0.000000,
+	-0.058374, 0.000000, -0.998295
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Vajradhara		;! Object #46
+$Class: UN Vishnu
+$Team: Friendly
+$Location: -2275.159424, -0.000977, -68.460999
+$Orientation:
+	-0.999831, 0.000000, 0.018406,
+	0.000000, 1.000000, 0.000000,
+	-0.018406, 0.000000, -0.999831
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Durga		;! Object #47
+$Class: UN Vishnu
+$Team: Friendly
+$Location: -1856.621948, -0.000977, -109.249695
+$Orientation:
+	-0.949735, 0.000000, 0.313054,
+	0.000000, 1.000000, 0.000000,
+	-0.313054, 0.000000, -0.949735
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Surigao		;! Object #48
+$Class: UN Strident#Hornetts
+$Team: Friendly
+$Location: -2852.275146, -364.780762, -50.202057
+$Orientation:
+	-0.999135, 0.000000, -0.041581,
+	0.000000, 1.000000, 0.000000,
+	0.041581, 0.000000, -0.999135
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Score: 400
+
+$Name: Shanghai		;! Object #49
+$Class: UN Beijing
+$Team: Friendly
+$Location: -1638.042480, 0.000732, -157.734497
+$Orientation:
+	-0.987480, 0.000000, 0.157746,
+	0.000000, 1.000000, 0.000000,
+	-0.157746, 0.000000, -0.987480
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08a
++Subsystem: Turret09a
++Subsystem: Turret10a
++Subsystem: Turret11a
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Cleopatra		;! Object #51
+$Class: MIND Ramses
+$Team: Hostile
+$Location: -3116.826904, -615.822510, -1860.803833
+$Orientation:
+	0.995004, 0.000000, -0.099833,
+	0.000000, 1.000000, 0.000000,
+	0.099833, 0.000000, 0.995004
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08
++Subsystem: Turret09
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Faiyum		;! Object #52
+$Class: MIND Khopesh
+$Team: Hostile
+$Location: 214.927490, 0.000488, -1325.760620
+$Orientation:
+	0.932327, 0.000000, 0.361615,
+	0.000000, 1.000000, 0.000000,
+	-0.361615, 0.000000, 0.932327
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06-base
++Subsystem: turret07-base
++Subsystem: turret08-base
++Subsystem: turret09-base
++Subsystem: turret10-base
++Subsystem: turret11-base
++Subsystem: turret12-base
++Subsystem: turret13-base
++Subsystem: turret14-base
++Subsystem: turret15-base
++Subsystem: turret16-base
++Subsystem: turret17-base
++Subsystem: turret18-base
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Asyut		;! Object #54
+$Class: MIND Newet
+$Team: Hostile
+$Location: -390.391724, -1079.033447, -1743.342285
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08
++Subsystem: Turret09
++Subsystem: Turret10
++Subsystem: Turret11
++Subsystem: Turret12
++Subsystem: Turret13
++Subsystem: Turret14
++Subsystem: Turret15
++Subsystem: Turret16
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Akmim		;! Object #55
+$Class: MIND Newet
+$Team: Hostile
+$Location: -3378.762451, -1079.033447, -1752.329102
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
++Subsystem: Turret07
++Subsystem: Turret08
++Subsystem: Turret09
++Subsystem: Turret10
++Subsystem: Turret11
++Subsystem: Turret12
++Subsystem: Turret13
++Subsystem: Turret14
++Subsystem: Turret15
++Subsystem: Turret16
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Skory		;! Object #56
+$Class: UN Borisov
+$Team: Friendly
+$Location: -3781.915039, 1119.440430, 1029.242554
+$Orientation:
+	-0.999933, 0.000000, -0.011592,
+	0.000000, 1.000000, 0.000000,
+	0.011592, 0.000000, -0.999933
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Zhodino		;! Object #57
+$Class: UN Borisov
+$Team: Friendly
+$Location: -869.850586, -658.166504, 489.363525
+$Orientation:
+	-0.932902, 0.000000, 0.360130,
+	0.000000, 1.000000, 0.000000,
+	-0.360130, 0.000000, -0.932902
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Molodechno		;! Object #58
+$Class: UN Borisov
+$Team: Friendly
+$Location: -4379.922852, 0.000000, 651.305481
+$Orientation:
+	-0.974028, 0.000000, -0.226427,
+	0.000000, 1.000000, 0.000000,
+	0.226427, 0.000000, -0.974028
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Initial Shields: 100
++Subsystem: Pilot
++Subsystem: Turret01
++Subsystem: Turret02
++Subsystem: Turret03
++Subsystem: Turret04
++Subsystem: Turret05
++Subsystem: Turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "no-shields" )
++Flags2: ( )
++Respawn priority: 0
++Orders Accepted: 1		;! note that this is a bitfield!!!
++Group: 0
++Use Table Score:
++Score: 0
+
+$Name: Udjat		;! Object #59
+$Class: MIND Udjat
+$Team: Hostile
+$Location: -3674.473633, 790.599731, -1841.144531
+$Orientation:
+	0.945005, 0.000000, -0.327055,
+	0.089198, 0.962091, 0.257731,
+	0.314656, -0.272730, 0.909181
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
 +Initial Hull: 100
 +Initial Shields: 100
 +Subsystem: Pilot
@@ -525,15 +2366,6 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Subsystem: turret21
 +Subsystem: turret22
 +Subsystem: turret23
-+Subsystem: turret24
-+Subsystem: turret25
-+Subsystem: turret26
-+Subsystem: turret27
-+Subsystem: turret28
-+Subsystem: turret29
-+Subsystem: turret30
-+Subsystem: turretBFG
-+Primary Banks: ( "" )
 $Arrival Location: Hyperspace
 $Arrival Cue: ( true ) 
 $Departure Location: Hyperspace
@@ -542,187 +2374,7 @@ $Determination: 10
 +Flags: ( "no-shields" "escort" )
 +Flags2: ( )
 +Respawn priority: 0
-+Escort priority: 98
-+Orders Accepted: 0		;! note that this is a bitfield!!!
-+Group: 0
-+Use Table Score:
-+Score: 0
-
-$Name: MIND Sobek 10		;! Object #10
-$Class: MIND Sobek
-$Team: Hostile
-$Location: -1099.036865, 0.000000, 2071.062012
-$Orientation:
-	-0.998295, 0.000000, 0.058374,
-	0.000000, 1.000000, 0.000000,
-	-0.058374, 0.000000, -0.998295
-$AI Behavior: None
-$Cargo 1:  XSTR("Nothing", -1)
-+Initial Hull: 100
-+Initial Shields: 100
-+Subsystem: Pilot
-+Subsystem: turret01
-+Subsystem: turret02
-+Subsystem: turret03
-+Subsystem: turret04
-+Subsystem: turret05
-+Subsystem: turret06
-+Subsystem: turret07
-+Subsystem: turret08
-+Subsystem: turret09
-+Subsystem: turret10
-+Subsystem: turret11
-+Subsystem: turret12
-+Subsystem: turret13
-+Subsystem: turret14
-+Subsystem: turret15
-+Subsystem: turret16
-+Subsystem: turret17
-+Subsystem: turret18
-+Subsystem: turret19
-+Subsystem: turret20
-+Subsystem: turret21
-+Subsystem: turret22
-$Arrival Location: Hyperspace
-$Arrival Cue: ( true ) 
-$Departure Location: Hyperspace
-$Departure Cue: ( false ) 
-$Determination: 10
-+Flags: ( "no-shields" )
-+Flags2: ( )
-+Respawn priority: 0
-+Orders Accepted: 0		;! note that this is a bitfield!!!
-+Group: 0
-+Use Table Score:
-+Score: 0
-
-$Name: MIND Khopesh 11		;! Object #11
-$Class: MIND Khopesh
-$Team: Hostile
-$Location: 3047.196289, 0.000000, 2070.278320
-$Orientation:
-	-0.998829, 0.000000, 0.048388,
-	0.000000, 1.000000, 0.000000,
-	-0.048388, 0.000000, -0.998829
-$AI Behavior: None
-$Cargo 1:  XSTR("Nothing", -1)
-+Initial Hull: 100
-+Initial Shields: 100
-+Subsystem: Pilot
-+Subsystem: turret01
-+Subsystem: turret02
-+Subsystem: turret03
-+Subsystem: turret04
-+Subsystem: turret05
-+Subsystem: turret06-base
-+Subsystem: turret07-base
-+Subsystem: turret08-base
-+Subsystem: turret09-base
-+Subsystem: turret10-base
-+Subsystem: turret11-base
-+Subsystem: turret12-base
-+Subsystem: turret13-base
-+Subsystem: turret14-base
-+Subsystem: turret15-base
-+Subsystem: turret16-base
-+Subsystem: turret17-base
-+Subsystem: turret18-base
-$Arrival Location: Hyperspace
-$Arrival Cue: ( true ) 
-$Departure Location: Hyperspace
-$Departure Cue: ( false ) 
-$Determination: 10
-+Flags: ( "no-shields" )
-+Flags2: ( )
-+Respawn priority: 0
-+Orders Accepted: 0		;! note that this is a bitfield!!!
-+Group: 0
-+Use Table Score:
-+Score: 0
-
-$Name: MIND Khopesh 12		;! Object #12
-$Class: MIND Khopesh
-$Team: Hostile
-$Location: 2061.349854, 0.000000, 2101.413574
-$Orientation:
-	-0.999135, 0.000000, -0.041581,
-	0.000000, 1.000000, 0.000000,
-	0.041581, 0.000000, -0.999135
-$AI Behavior: None
-$Cargo 1:  XSTR("Nothing", -1)
-+Initial Hull: 100
-+Initial Shields: 100
-+Subsystem: Pilot
-+Subsystem: turret01
-+Subsystem: turret02
-+Subsystem: turret03
-+Subsystem: turret04
-+Subsystem: turret05
-+Subsystem: turret06-base
-+Subsystem: turret07-base
-+Subsystem: turret08-base
-+Subsystem: turret09-base
-+Subsystem: turret10-base
-+Subsystem: turret11-base
-+Subsystem: turret12-base
-+Subsystem: turret13-base
-+Subsystem: turret14-base
-+Subsystem: turret15-base
-+Subsystem: turret16-base
-+Subsystem: turret17-base
-+Subsystem: turret18-base
-$Arrival Location: Hyperspace
-$Arrival Cue: ( true ) 
-$Departure Location: Hyperspace
-$Departure Cue: ( false ) 
-$Determination: 10
-+Flags: ( "no-shields" )
-+Flags2: ( )
-+Respawn priority: 0
-+Orders Accepted: 0		;! note that this is a bitfield!!!
-+Group: 0
-+Use Table Score:
-+Score: 0
-
-$Name: MIND Khopesh 13		;! Object #13
-$Class: MIND Khopesh
-$Team: Hostile
-$Location: 958.968384, 0.000000, 2071.555176
-$Orientation:
-	-0.996673, 0.000000, -0.081502,
-	0.000000, 1.000000, 0.000000,
-	0.081502, 0.000000, -0.996673
-$AI Behavior: None
-$Cargo 1:  XSTR("Nothing", -1)
-+Initial Hull: 100
-+Initial Shields: 100
-+Subsystem: Pilot
-+Subsystem: turret01
-+Subsystem: turret02
-+Subsystem: turret03
-+Subsystem: turret04
-+Subsystem: turret05
-+Subsystem: turret06-base
-+Subsystem: turret07-base
-+Subsystem: turret08-base
-+Subsystem: turret09-base
-+Subsystem: turret10-base
-+Subsystem: turret11-base
-+Subsystem: turret12-base
-+Subsystem: turret13-base
-+Subsystem: turret14-base
-+Subsystem: turret15-base
-+Subsystem: turret16-base
-+Subsystem: turret17-base
-+Subsystem: turret18-base
-$Arrival Location: Hyperspace
-$Arrival Cue: ( true ) 
-$Departure Location: Hyperspace
-$Departure Cue: ( false ) 
-$Determination: 10
-+Flags: ( "no-shields" )
-+Flags2: ( )
-+Respawn priority: 0
++Escort priority: 4
 +Orders Accepted: 0		;! note that this is a bitfield!!!
 +Group: 0
 +Use Table Score:
@@ -730,17 +2382,17 @@ $Determination: 10
 
 #Wings		;! 1 total
 
-$Name: Polydeuces#
+$Name: Cronus#
 $Waves: 1
 $Wave Threshold: 0
-$Special Ship: 0		;! Polydeuces# 1
+$Special Ship: 0		;! Cronus# 1
 
 $Arrival Location: Hyperspace
 $Arrival Cue: ( true ) 
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Ships: (		;! 1 total
-	"Polydeuces# 1"
+	"Cronus# 1"
 )
 +Flags: ( )
 
@@ -761,8 +2413,8 @@ $Ships: (		;! 1 total
 
 #Background bitmaps		;! 0 total
 
-$Num stars: 0
-$Ambient light level: 8026746
+$Num stars: 2000
+$Ambient light level: 11316396
 
 $Bitmap List:
 $Sun: SunSol
@@ -785,13 +2437,9 @@ $Sun: EarthWhite
 
 #Music
 
-$Event Music: DF
-$Substitute Event Music: DF
-$Briefing Music: Aquitaine
-$Substitute Briefing Music: Aquitaine
-$Debriefing Success Music: Aquitaine
-$Debriefing Average Music: Aquitaine
-$Debriefing Fail Music: Aquitaine
+$Event Music: SW0-2: SOTLBattle
+$Substitute Event Music: SW0-2: SOTLBattle
+$Briefing Music: None
 
 #End
 

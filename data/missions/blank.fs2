@@ -804,7 +804,7 @@ $Formula: ( every-time
                      "Polydeuces# 1" 
                      "turret01" 
                   )
-                  5500 
+                  6500 
                )
                ( hud-set-message 
                   "TLSTaccomA" 
@@ -852,7 +852,7 @@ $Formula: ( every-time
                "Polydeuces# 1" 
                "turret01" 
             )
-            5500 
+            6500 
          )
          ( is-in-turret-fov 
             "@PlayerTarget[null]" 
@@ -940,7 +940,7 @@ $Formula: ( every-time
                      "Polydeuces# 1" 
                      "turret02" 
                   )
-                  5500 
+                  6500 
                )
                ( hud-set-message 
                   "TLSTaccomB" 
@@ -988,7 +988,7 @@ $Formula: ( every-time
                "Polydeuces# 1" 
                "turret02" 
             )
-            5500 
+            6500 
          )
          ( is-in-turret-fov 
             "@PlayerTarget[null]" 

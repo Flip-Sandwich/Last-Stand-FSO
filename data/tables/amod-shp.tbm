@@ -45,9 +45,9 @@ $Name: UN Leto
 $Alt Name: Light Fighter
 $Short name: CivFighter
 $Species: Terran
-+Type: XSTR("Light Fighter", -1)
-+Maneuverability: XSTR("Good", -1)
-+Armor: XSTR("Light", -1)
++Type: XSTR("Space Superiority", -1)
++Maneuverability: XSTR("3.6/3.5/4.0", -1)
++Armor: XSTR("550 Armour Rating + 200 Shield Rating", -1)
 +Manufacturer: XSTR("Nankam Aeronautical", -1)
 +Tech Title: UNF Leto
 +Tech Description: XSTR("
@@ -63,7 +63,7 @@ $Detail distance: (0, 67, 202, 632)
 $Density: 1
 $Damp: 0.25
 $Rotdamp: 0.35
-$Max Velocity: 0.0, 0.0, 135.0
+$Max Velocity: 0.0, 0.0, 150.0
 $Rotation time: 3.6, 3.5, 4.0
 $Rear Velocity: 0.0
 $Forward accel: 3.0
@@ -79,26 +79,27 @@ $Shockwave Speed: 0.0
 $Allowed PBanks: ( "Torrika KB-1" "Darsij P-294" "Portanis C-12" )
 $Default PBanks: ( "Torrika KB-1" "Portanis C-12" )
 $Pbank Capacity: ( 30, 30 )
-$Allowed SBanks: ( "Djinn" "Neutron" "Spear" )
+$Allowed SBanks: ( "Djinn" "Neutron" "Spear" "Zeus" "Thunder" )
 $Default SBanks: ( "Djinn" "Spear" )
 $SBank Capacity: ( 40, 40 )
-$Shields: 150
+$Shields: 200
 $Shield Color: 100 100 255
 $Power Output: 3.0
 $Shield Regeneration Rate: 0.02
 $Weapon Regeneration Rate: 0.04
-$Max Oclk Speed: 75.0
+$Max Oclk Speed: 165.0
 $Max Weapon Eng: 150.0
-$Hitpoints: 300
+$Hitpoints: 550
 $Armor Type: Fighter Plate
+$Shield Armor Type: Fighter Plate
 $Flags: ( "player_ship" "generate icon" "in tech database" "fighter" )
 $AI Class: Captain
 $Afterburner: YES
  +Aburn Max Vel: 0.0, 0.0, 210.0
- +Aburn For accel: 1.1
+ +Aburn For accel: 1.4
  +Aburn Fuel: 300.0
- +Aburn Burn Rate: 4.0
- +Aburn Rec Rate: 0.0
+ +Aburn Burn Rate: 5.0
+ +Aburn Rec Rate: 1.0
 $Countermeasures: 15
 $Scan time: 2000
 $EngineSnd: 126
@@ -124,9 +125,9 @@ $Name: UN Claymore
 $Alt Name: Strike Fighter
 $Short name: CivFighter
 $Species: Terran
-+Type: XSTR("Strike Fighter", -1)
-+Maneuverability: XSTR("Moderate", -1)
-+Armor: XSTR("Heavy", -1)
++Type: XSTR("Multi-role", -1)
++Maneuverability: XSTR("4.5/4.0/3.8", -1)
++Armor: XSTR("710 Armour Rating + 200 Shield Rating", -1)
 +Manufacturer: XSTR("Nankam Aeronautical", -1)
 +Tech Title: UNF/A Claymore
 +Tech Description: XSTR("
@@ -142,7 +143,7 @@ $Detail distance: (0, 180, 300)
 $Density: 1
 $Damp: 0.25
 $Rotdamp: 0.35
-$Max Velocity: 0.0, 0.0, 110.0
+$Max Velocity: 0.0, 0.0, 120.0
 $Rotation time: 4.5, 4.0, 3.8
 $Rear Velocity: 0.0
 $Forward accel: 3.0
@@ -158,18 +159,19 @@ $Shockwave Speed: 0.0
 $Allowed PBanks: ( "Torrika KB-1" "Darsij P-294" "Portanis C-12" ) ( "Vigilante GC-13" )
 $Default PBanks: ( "Portanis C-12" "Vigilante GC-13" )
 $Pbank Capacity: ( 50, 0 )
-$Allowed SBanks: ( "Djinn" "Neutron" "Spear" )
+$Allowed SBanks: ( "Djinn" "Neutron" "Spear" "Zeus" "Thunder" )
 $Default SBanks: ( "Djinn" "Neutron" )
 $SBank Capacity: ( 60, 60 )
-$Shields: 150
+$Shields: 200
 $Shield Color: 100 100 255
 $Power Output: 4.0
 $Shield Regeneration Rate: 0.027
 $Weapon Regeneration Rate: 0.027
-$Max Oclk Speed: 95.0
+$Max Oclk Speed: 150.0
 $Max Weapon Eng: 150.0
-$Hitpoints: 700
+$Hitpoints: 710
 $Armor Type: Fighter Plate
+$Shield Armor Type: Fighter Plate
 $Flags: ( "generate icon" "player_ship" "in tech database" "fighter" )
 $AI Class: Jouster-Lvl2
 $Afterburner: YES
@@ -203,9 +205,9 @@ $Name: UN Hercules
 $Alt Name: Heavy Fighter
 $Short name: INFHerc3
 $Species: Terran
-+Type: XSTR("Heavy Fighter", -1)
-+Maneuverability: XSTR("Moderate", -1)
-+Armor: XSTR("Heavy", -1)
++Type: XSTR("Heavy Multi-Role", -1)
++Maneuverability: XSTR("4.3/4.3/4.8", -1)
++Armor: XSTR("720 Armour Rating + 300 Shield Rating", -1)
 +Manufacturer: XSTR("RNI Systems", -1)
 +Tech Title: UNF/A Hercules
 +Tech Description: XSTR("
@@ -222,7 +224,7 @@ $Show damage: YES
 $Density: 1
 $Damp: 0.2
 $Rotdamp: 0.35
-$Max Velocity: 0.0, 0.0, 105.0
+$Max Velocity: 0.0, 0.0, 115.0
 $Rotation time: 4.3, 4.3, 4.8
 $Rear Velocity: 0.0
 $Forward accel: 3.0
@@ -238,23 +240,24 @@ $Shockwave Speed: 0.0
 $Allowed PBanks: ( "Torrika KB-1" "Darsij P-294" "Portanis C-12" )
 $Default PBanks: ( "Torrika KB-1" )
 $Pbank Capacity: ( 100 )
-$Allowed SBanks: ( "Djinn" "Neutron" "Spear" )
+$Allowed SBanks: ( "Djinn" "Neutron" "Spear" "Zeus" "Thunder" )
 $Default SBanks: ( "Neutron" "Djinn" "Spear" )
 $SBank Capacity: ( 50, 50, 60 )
-$Shields: 250
+$Shields: 300
 $Shield Color: 100 100 255
 $Power Output: 8.0
 $Shield Regeneration Rate: 0.054
 $Weapon Regeneration Rate: 0.08
-$Max Oclk Speed: 80.0
+$Max Oclk Speed: 150.0
 $Max Weapon Eng: 200.0
-$Hitpoints: 700
+$Hitpoints: 720
 $Armor Type: Fighter Plate
+$Shield Armor Type: Fighter Plate
 $Flags: ( "generate icon" "player_ship" "fighter" "in tech database" )
 $AI Class: Captain
 $Afterburner: YES
- +Aburn Max Vel: 0.0, 0.0, 140.0
- +Aburn For accel: 0.75
+ +Aburn Max Vel: 0.0, 0.0, 160.0
+ +Aburn For accel: 0.4
  +Aburn Fuel: 500.0
  +Aburn Burn Rate: 50.0
  +Aburn Rec Rate: 35.0
@@ -320,9 +323,9 @@ $Alt Name: Tactical Bomber
 $Short name: TBomb4
 $Species: Terran
 +Type: XSTR("Tactical Bomber", -1)
-+Maneuverability: XSTR("Poor", -1)
-+Armor: XSTR("Very Heavy", -1)
-+Manufacturer: XSTR("Boeing", -1)
++Maneuverability: XSTR("4.0/5.2/5.2", -1)
++Armor: XSTR("950 Armour Rating + 400 Shield Rating", -1)
++Manufacturer: XSTR("RNI Systems", -1)
 +Tech Title: UNB Medusa
 +Tech Description: XSTR("
 UNB Medusa - Tactical Bomber
@@ -338,7 +341,7 @@ $Show damage: YES
 $Density: 1
 $Damp: 0.35
 $Rotdamp: 0.55
-$Max Velocity: 0.0, 0.0, 90.0
+$Max Velocity: 0.0, 0.0, 100.0
 $Rotation time: 4.0, 5.2, 5.2
 $Forward accel: 3.5
 $Forward decel: 0.55
@@ -353,24 +356,25 @@ $Shockwave Speed: 0.0
 $Allowed PBanks: ( "Torrika KB-1" "Darsij P-294" "Portanis C-12" )
 $Default PBanks: ( "Portanis C-12" )
 $Pbank Capacity: ( 60 )
-$Allowed SBanks: ( "Djinn" "Neutron" "Spear" "Typhoon" )
+$Allowed SBanks: ( "Djinn" "Neutron" "Spear" "Zeus" "Thunder" "Typhoon" )
 $Default SBanks: ( "Djinn" "Typhoon" "Typhoon" )
 $SBank Capacity: ( 40, 80, 80 )
 $Shields: 400
 $Shield Color: 100 100 255
 $Power Output: 4.0
-$Max Oclk Speed: 65.0
+$Max Oclk Speed: 130.0
 $Max Weapon Eng: 100.0
 $Hitpoints: 950
 $Armor Type: Bomber Plate
+$Shield Armor Type: Bomber Plate
 $Flags: ( "generate icon" "player_ship" "in tech database" "bomber" )
 $AI Class: Jouster-Lvl2
 $Afterburner: YES
- +Aburn Max Vel: 0.0, 0.0, 120.0
- +Aburn For accel: 0.7
+ +Aburn Max Vel: 0.0, 0.0, 185.0
+ +Aburn For accel: 1.6
  +Aburn Fuel: 300.0
- +Aburn Burn Rate: 50.0
- +Aburn Rec Rate: 25.0
+ +Aburn Burn Rate: 8.0
+ +Aburn Rec Rate: 2.0
 $Countermeasures: 35
 $Scan time: 2000
 $EngineSnd: 127
@@ -460,7 +464,7 @@ $Detail distance: (0)
 $Density: 1
 $Damp: 0.2
 $Rotdamp: 0.6
-$Max Velocity: 0.0, 0.0, 45.0
+$Max Velocity: 0.0, 0.0, 60.0
 $Rotation time: 20.0, 20.0, 20.0
 $Rear Velocity: 0.0
 $Forward accel: 6.0
@@ -479,7 +483,7 @@ $Default SBanks: ()
 $SBank Capacity: ()
 $Shields: 0
 $Power Output: 60.0
-$Max Oclk Speed: 45.0
+$Max Oclk Speed: 60.0
 $Max Weapon Eng: 60.0
 $Hitpoints: 20000
 $Armor Type: Light Plate
@@ -518,7 +522,7 @@ $Detail distance: (0)
 $Density: 1
 $Damp: 0.2
 $Rotdamp: 0.6
-$Max Velocity: 0.0, 0.0, 45.0
+$Max Velocity: 0.0, 0.0, 60.0
 $Rotation time: 20.0, 20.0, 20.0
 $Rear Velocity: 0.0
 $Forward accel: 6.0
@@ -537,7 +541,7 @@ $Default SBanks: ()
 $SBank Capacity: ()
 $Shields: 0
 $Power Output: 60.0
-$Max Oclk Speed: 45.0
+$Max Oclk Speed: 60.0
 $Max Weapon Eng: 60.0
 $Hitpoints: 20000
 $Armor Type: Light Plate
@@ -585,7 +589,7 @@ $Show damage: YES
 $Density: 1
 $Damp: 0.2
 $Rotdamp: 2.0
-$Max Velocity: 0.0, 0.0, 30.0
+$Max Velocity: 0.0, 0.0, 40.0
 $Rotation time: 100.0, 100.0, 80.0
 $Rear Velocity: 0.0
 $Forward accel: 8.0
@@ -729,7 +733,7 @@ $Show damage: YES
 $Density: 1
 $Damp: 0.2
 $Rotdamp: 0.2
-$Max Velocity: 0.0, 0.0, 30.0
+$Max Velocity: 0.0, 0.0, 40.0
 $Rotation time: 60.0, 80.0, 80.0
 $Rear Velocity: 0.0
 $Forward accel: 9.0
@@ -748,7 +752,7 @@ $Default SBanks: ()
 $SBank Capacity: ()
 $Shields: 0
 $Power Output: 90.0
-$Max Oclk Speed: 30.0
+$Max Oclk Speed: 40.0
 $Max Weapon Eng: 100.0
 $Hitpoints: 65000
 $Armor Type: Heavy Plate
@@ -829,7 +833,7 @@ $Detail distance: (0, 1913)
 $Density: 1
 $Damp: 0.2
 $Rotdamp: 2.0
-$Max Velocity: 0.0, 0.0, 40.0
+$Max Velocity: 0.0, 0.0, 55.0
 $Rotation time: 60.0, 60.0, 60.0
 $Rear Velocity: 0.0
 $Forward accel: 8.0
@@ -848,7 +852,7 @@ $Default SBanks: ()
 $SBank Capacity: ()
 $Shields: 0
 $Power Output: 100.0
-$Max Oclk Speed: 60.0
+$Max Oclk Speed: 55.0
 $Max Weapon Eng: 100.0
 $Hitpoints: 50000
 $Armor Type: Medium Plate
@@ -1201,9 +1205,9 @@ $Show damage: YES
 $Density: 1
 $Damp: 0.0
 $Rotdamp: 0.0
-$Max Velocity: 50000.0, 50000.0, 50000.0
+$Max Velocity: 100000.0, 100000.0, 100000.0
 $Rotation time: 0.02, 0.02, 0.02
-$Rear Velocity: 50000.0
+$Rear Velocity: 100000.0
 $Forward accel: 0.0
 $Forward decel: 0.0
 $Slide accel: 0.0
@@ -1333,7 +1337,7 @@ $Default SBanks: ()
 $SBank Capacity: ()
 $Shields: 0
 $Power Output: 100.0
-$Max Oclk Speed: 15.0
+$Max Oclk Speed: 40.0
 $Max Weapon Eng: 100.0
 $Hitpoints: 200000
 $Armor Type: Heavy Plate
@@ -1859,9 +1863,9 @@ $Name: UN Lancer
 $Alt Name: Light Fighter
 $Short name: FTFLANCER
 $Species: Terran-IFN
-+Type: XSTR("Light Fighter", -1)
-+Maneuverability: XSTR("Very Good", -1)
-+Armor: XSTR("Light", -1)
++Type: XSTR("Space Superiority", -1)
++Maneuverability: XSTR("3.3/3.3/3.3", -1)
++Armor: XSTR("380 Armour Rating + 400 Shield Rating", -1)
 +Manufacturer: XSTR("Mikoyan", -1)
 +Tech Title: UNF  Lancer
 +Tech Description: XSTR("
@@ -1877,8 +1881,8 @@ $Show damage: YES
 $Density: 1
 $Damp: 0.25
 $Rotdamp: 0.40
-$Max Velocity: 0.0, 0.0, 125.0
-$Rotation time: 3.0, 3.0, 3.0
+$Max Velocity: 0.0, 0.0, 140.0
+$Rotation time: 3.3, 3.3, 3.3
 $Forward accel: 2.7
 $Forward decel: 2.3
 $Slide accel: 0.0
@@ -1901,15 +1905,16 @@ $Allowed PBanks: ( "Reaper" "Thresher" "Scythe" ) ( "Reaper" "Scythe" )
 $Default PBanks: ( "Thresher" "Reaper" )
 $Pbank Capacity: ( 50, 50 )
 $Show Primary Models: ( yes yes )
-$Allowed SBanks: ( "MK-122" "Hegemony" )
+$Allowed SBanks: ( "MK-122" "Hegemony" "Seismic" )
 $Default SBanks: ( "MK-122" "Hegemony" )
 $SBank Capacity: ( 40, 40 )
-$Shields: 300
+$Shields: 400
 $Power Output: 2.4
-$Max Oclk Speed: 145.0
+$Max Oclk Speed: 175.0
 $Max Weapon Eng: 130.0
-$Hitpoints: 280
+$Hitpoints: 380
 $Armor Type: Fighter Plate
+$Shield Armor Type: Fighter Plate
 $Flags: ( "generate icon" "player_ship" "in tech database" "fighter" )
 $AI Class: Captain
 $Afterburner: YES
@@ -1917,7 +1922,7 @@ $Afterburner: YES
  +Aburn For accel: 0.6
  +Aburn Fuel: 340.0
  +Aburn Burn Rate: 32.0
- +Aburn Rec Rate: 25.0
+ +Aburn Rec Rate: 10.0
 $Trails:
  +Bitmap: ABTrail
  +Width: 1.0
@@ -1943,9 +1948,9 @@ $Name: UN Jackal
 $Alt Name: Heavy Fighter
 $Short name: FTFJackal
 $Species: Terran-IFN
-+Type: XSTR("Heavy Fighter", -1)
-+Maneuverability: XSTR("Average", -1)
-+Armor: XSTR("Medium", -1)
++Type: XSTR("Multi-role", -1)
++Maneuverability: XSTR("4.3/4.3/4.3", -1)
++Armor: XSTR("450 Armour Rating + 500 Shield Rating", -1)
 +Manufacturer: XSTR("Mikoyan", -1)
 +Tech Title: UNF Jackal
 +Tech Description: XSTR("
@@ -1964,7 +1969,7 @@ $Show damage: YES
 $Density: 1
 $Damp: 0.11
 $Rotdamp: 0.30
-$Max Velocity: 0.0, 0.0, 100.0
+$Max Velocity: 0.0, 0.0, 110.0
 $Rotation time: 4.3, 4.3, 4.3
 $Forward accel: 2.6
 $Forward decel: 1.7
@@ -1986,21 +1991,22 @@ $Allowed PBanks: ( "Reaper" "Scythe" "Thresher" ) ( "Thresher" )
 $Default PBanks: ( "Reaper" "Thresher" )
 $Pbank Capacity: ( 100, 0 )
 $Show Primary Models: ( yes no )
-$Allowed SBanks: ( "Hegemony" ) ( "MK-122" )
+$Allowed SBanks: ( "Hegemony" "Seismic" "MK-122" ) ( "MK-122" )
 $Default SBanks: ( "Hegemony" "MK-122" )
 $SBank Capacity: ( 60, 40 )
 $Shields: 500
 $Power Output: 3.0
-$Max Oclk Speed: 170.0
+$Max Oclk Speed: 150.0
 $Max Weapon Eng: 50.0
 $Hitpoints: 450
 $Armor Type: Fighter Plate
+$Shield Armor Type: Fighter Plate
 $Flags: ( "generate icon" "player_ship" "in tech database" "fighter" )
 $AI Class: Jouster-Lvl2
 $Afterburner: YES
- +Aburn Max Vel: 0.0, 0.0, 170.0
- +Aburn For accel: 1.80
- +Aburn Fuel: 300.0
+ +Aburn Max Vel: 0.0, 0.0, 200.0
+ +Aburn For accel: 1.0
+ +Aburn Fuel: 500.0
  +Aburn Burn Rate: 60.0
  +Aburn Rec Rate: 10.0
 $Trails:
@@ -2395,9 +2401,9 @@ $Name: UN Wraith
 $Alt Name: Assault Fighter
 $Short name: Wraith
 $Species: Terran-IFN
-+Type: XSTR("Assault Fighter", -1)
-+Maneuverability: XSTR("Poor", -1)
-+Armor: XSTR("Heavy", -1)
++Type: XSTR("Heavy Assault", -1)
++Maneuverability: XSTR("5.0/5.0/5.0", -1)
++Armor: XSTR("740 Armour Rating + 500 Shield Rating", -1)
 +Manufacturer: XSTR("Mikoyan", -1)
 +Tech Title: UNF/A Wraith
 +Tech Description: XSTR("
@@ -2437,7 +2443,7 @@ $Allowed PBanks: ( "Reaper" "Scythe" "Thresher" ) ( "Reaper" "Scythe" ) ( "TMeso
 $Default PBanks: ( "Thresher" "Scythe" "TMeson#Uriel" )
 $Pbank Capacity: ( 100, 200, 0 )
 $Show Primary Models: ( yes yes no )
-$Allowed SBanks: ( "MK-122" "Hegemony" "Paveway" )
+$Allowed SBanks: ( "MK-122" "Seismic" "Hegemony" "Paveway" )
 $Default SBanks: ( "Paveway" "Paveway" "Hegemony" )
 $SBank Capacity: ( 40, 40, 80 )
 $Show Secondary Models: ( yes yes yes )
@@ -2448,14 +2454,15 @@ $Max Oclk Speed: 120.0
 $Max Weapon Eng: 210.0
 $Hitpoints: 740
 $Armor Type: Bomber Plate
+$Shield Armor Type: Fighter Plate
 $Flags: ( "bomber" "generate icon" "player_ship" "in tech database" )
 $AI Class: Captain
 $Afterburner: YES
- +Aburn Max Vel: 0.0, 0.0, 175.0
- +Aburn For accel: 0.6
+ +Aburn Max Vel: 0.0, 0.0, 160.0
+ +Aburn For accel: 0.8
  +Aburn Fuel: 465.0
  +Aburn Burn Rate: 72.0
- +Aburn Rec Rate: 35.0
+ +Aburn Rec Rate: 25.0
 $Trails:
  +Bitmap: ABTrail
  +Width: 1.0
@@ -2611,7 +2618,7 @@ $Show damage: YES
 $Density: 1
 $Damp: 0.2
 $Rotdamp: 1.0
-$Max Velocity: 0.0, 0.0, 55.0
+$Max Velocity: 0.0, 0.0, 70.0
 $Rotation time: 30.0, 30.0, 30.0
 $Rear Velocity: 0.0
 $Forward accel: 5.0
@@ -2637,7 +2644,7 @@ $Default SBanks: ()
 $SBank Capacity: ()
 $Shields: 0
 $Power Output: 90.0
-$Max Oclk Speed: 55.0
+$Max Oclk Speed: 70.0
 $Max Weapon Eng: 100.0
 $Hitpoints: 20000
 $Armor Type: Light Plate
@@ -2778,7 +2785,7 @@ $Show damage: YES
 $Density: 1
 $Damp: 0.2
 $Rotdamp: 2.0
-$Max Velocity: 0.0, 0.0, 60.0
+$Max Velocity: 0.0, 0.0, 75.0
 $Rotation time: 50.0, 50.0, 45.0
 $Forward accel: 8.0
 $Forward decel: 4.0
@@ -2804,7 +2811,7 @@ $Default SBanks: ()
 $SBank Capacity: ()
 $Shields: 0
 $Power Output: 100.0
-$Max Oclk Speed: 60.0
+$Max Oclk Speed: 75.0
 $Max Weapon Eng: 100.0
 $Hitpoints: 50000
 $Armor Type: Medium Plate
@@ -2865,7 +2872,7 @@ $Show damage: YES
 $Density: 1
 $Damp: 0.2
 $Rotdamp: 2.0
-$Max Velocity: 0.0, 0.0, 30.0
+$Max Velocity: 0.0, 0.0, 35.0
 $Rotation time: 38.0, 38.0, 45.0
 $Rear Velocity: 0.0
 $Forward accel: 8.0
@@ -2892,7 +2899,7 @@ $Default SBanks: ()
 $SBank Capacity: ()
 $Shields: 0
 $Power Output: 100.0
-$Max Oclk Speed: 40.0
+$Max Oclk Speed: 35.0
 $Max Weapon Eng: 100.0
 $Hitpoints: 90000
 $Armor Type: Heavy Plate
@@ -2984,7 +2991,7 @@ $Show damage: YES
 $Density: 1.2
 $Damp: 0.4
 $Rotdamp: 2.4
-$Max Velocity: 0.0, 0.0, 60.0
+$Max Velocity: 0.0, 0.0, 75.0
 $Rotation time: 45.0, 45.0, 45.0
 $Rear Velocity: 0.0
 $Forward accel: 9.0
@@ -3008,7 +3015,7 @@ $Default PBanks: ()
 $Default SBanks: ()
 $SBank Capacity: ()
 $Power Output: 100.0
-$Max Oclk Speed: 60.0
+$Max Oclk Speed: 75.0
 $Max Weapon Eng: 100.0
 $Hitpoints: 70000
 $Armor Type: Heavy Plate
@@ -3844,7 +3851,7 @@ $Density: 1
 $Damp: 3
 $Rotdamp: 9
 $Banking Constant: 0.3
-$Max Velocity: 0.0, 0.0, 25.0
+$Max Velocity: 0.0, 0.0, 35.0
 $Rotation time: 35.0, 35.0, 35.0
 $Rear Velocity: 0.0
 $Forward accel: 12.0
@@ -3870,7 +3877,7 @@ $Default SBanks: ()
 $SBank Capacity: ()
 $Shields: 0
 $Power Output: 200.0
-$Max Oclk Speed: 30.0
+$Max Oclk Speed: 35.0
 $Max Weapon Eng: 200.0
 $Hitpoints: 40000
 $Armor Type: Medium Plate
@@ -3962,7 +3969,7 @@ $Show damage: YES
 $Density: 1
 $Damp: 0.2
 $Rotdamp: 1.0
-$Max Velocity: 0.0, 0.0, 60.0
+$Max Velocity: 0.0, 0.0, 65.0
 $Rotation time: 30.0, 20.0, 30.0
 $Rear Velocity: 0.0
 $Forward accel: 5.0
@@ -3987,7 +3994,7 @@ $Default SBanks: ()
 $SBank Capacity: ()
 $Shields: 0
 $Power Output: 90.0
-$Max Oclk Speed: 90.0
+$Max Oclk Speed: 65.0
 $Max Weapon Eng: 100.0
 $Hitpoints: 75000
 $Armor Type: Heavy Plate
@@ -4211,7 +4218,7 @@ $Default SBanks: ()
 $SBank Capacity: ()
 $Shields: 0
 $Power Output: 100.0
-$Max Oclk Speed: 75.0
+$Max Oclk Speed: 50.0
 $Max Weapon Eng: 100.0
 $Hitpoints: 90000
 $Armor Type: Heavy Plate
@@ -4363,7 +4370,7 @@ $Default SBanks: ()
 $SBank Capacity: ()
 $Shields: 0
 $Power Output: 100.0
-$Max Oclk Speed: 60.0
+$Max Oclk Speed: 55.0
 $Max Weapon Eng: 100.0
 $Hitpoints: 110000
 $Armor Type: Heavy Plate
@@ -4499,7 +4506,7 @@ $Density: 1
 $Damp: 3
 $Rotdamp: 9
 $Banking Constant: 0.3
-$Max Velocity: 0.0, 0.0, 40.0
+$Max Velocity: 0.0, 0.0, 50.0
 $Rotation time: 50.0, 50.0, 50.0
 $Rear Velocity: 0.0
 $Forward accel: 5.0
@@ -4525,7 +4532,7 @@ $Default SBanks: ()
 $SBank Capacity: ()
 $Shields: 0
 $Power Output: 200.0
-$Max Oclk Speed: 60.0
+$Max Oclk Speed: 50.0
 $Max Weapon Eng: 200.0
 $Hitpoints: 120000
 $Armor Type: Heavy Plate
@@ -4633,7 +4640,7 @@ $Default SBanks: ()
 $SBank Capacity: ()
 $Shields: 0
 $Power Output: 120.0
-$Max Oclk Speed: 60.0
+$Max Oclk Speed: 55.0
 $Max Weapon Eng: 100.0
 $Hitpoints: 175000
 $Armor Type: Heavy Plate
@@ -4777,7 +4784,7 @@ $Default SBanks: ()
 $SBank Capacity: ()
 $Shields: 0
 $Power Output: 100.0
-$Max Oclk Speed: 45.0
+$Max Oclk Speed: 35.0
 $Max Weapon Eng: 100.0
 $Hitpoints: 350000
 $Armor Type: Heavy Plate
@@ -4970,7 +4977,7 @@ $Show damage: YES
 $Density: 1
 $Damp: 0.2
 $Rotdamp: 1.0
-$Max Velocity: 0.0, 0.0, 20.0
+$Max Velocity: 0.0, 0.0, 35.0
 $Rotation time: 100.0, 100.0, 80.0
 $Rear Velocity: 0.0
 $Forward accel: 8.0
@@ -5046,7 +5053,7 @@ $Show damage: NO
 $Density: 1
 $Damp: 0.2
 $Rotdamp: 1.5
-$Max Velocity: 0.0, 0.0, 15.0
+$Max Velocity: 0.0, 0.0, 20.0
 $Rotation time: 150.0, 150.0, 150.0
 $Rear Velocity: 0.0
 $Forward accel: 20.0
@@ -5071,7 +5078,7 @@ $Default SBanks: ()
 $SBank Capacity: ()
 $Shields: 0
 $Power Output: 100.0
-$Max Oclk Speed: 45.0
+$Max Oclk Speed: 20.0
 $Max Weapon Eng: 100.0
 $Hitpoints: 250000
 $Armor Type: Heavy Plate
@@ -5193,29 +5200,41 @@ $Subsystem: turret15,0.375,0.5
  $Default PBanks: ( "Shivan Turret Laser" )
  $Flags: ( "check hull" )
 $Subsystem: turret16,0.125,0.5
- $Flags: ( "untargetable" "damage as hull" "no aggregate" )
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
 $Subsystem: turret17,0.125,0.5
- $Flags: ( "untargetable" "damage as hull" "no aggregate" )
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
 $Subsystem: turret18,0.125,0.5
- $Flags: ( "untargetable" "damage as hull" "no aggregate" )
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
 $Subsystem: turret19,0.125,0.5
- $Flags: ( "untargetable" "damage as hull" "no aggregate" )
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
 $Subsystem: turret20,0.125,0.5
- $Flags: ( "untargetable" "damage as hull" "no aggregate" )
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
 $Subsystem: turret21,0.125,0.5
- $Flags: ( "untargetable" "damage as hull" "no aggregate" )
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
 $Subsystem: turret22,0.125,0.5
- $Flags: ( "untargetable" "damage as hull" "no aggregate" )
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
 $Subsystem: turret23,0.125,0.5
- $Flags: ( "untargetable" "damage as hull" "no aggregate" )
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
 $Subsystem: turret24,0.125,0.5
- $Flags: ( "untargetable" "damage as hull" "no aggregate" )
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
 $Subsystem: turret25,0.125,0.5
- $Flags: ( "untargetable" "damage as hull" "no aggregate" )
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
 $Subsystem: turret26,0.125,0.5
- $Flags: ( "untargetable" "damage as hull" "no aggregate" )
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
 $Subsystem: turret27,0.125,0.5
- $Flags: ( "untargetable" "damage as hull" "no aggregate" )
+ $Default PBanks: ( "Shivan Turret Laser" )
+ $Flags: ( "check hull" )
 
 $Subsystem: navigation, 5,0.0
 $Subsystem: weapons, 5,0.0
@@ -5343,7 +5362,7 @@ $Show damage: YES
 $Density: 1
 $Damp: 0.2
 $Rotdamp: 1.0
-$Max Velocity: 0.0, 0.0, 30.0
+$Max Velocity: 0.0, 0.0, 50.0
 $Rotation time: 100.0, 100.0, 80.0
 $Rear Velocity: 0.0
 $Forward accel: 8.0
@@ -5361,7 +5380,7 @@ $Default PBanks: ()
 $Default SBanks: ()
 $SBank Capacity: ()
 $Shields: 0
-$Power Output: 30.0
+$Power Output: 50.0
 $Max Oclk Speed: 35.0
 $Max Weapon Eng: 100.0
 $Hitpoints: 140000
